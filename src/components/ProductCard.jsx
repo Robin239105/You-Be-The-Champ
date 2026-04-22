@@ -6,6 +6,8 @@ import { useWishlistStore } from '../store/useWishlistStore';
 import Badge from './Badge';
 import Button from './Button';
 
+import { Link } from 'react-router-dom';
+
 const ProductCard = ({ product }) => {
   const addItem = useCartStore(state => state.addItem);
   const { toggleWishlist, isWishlisted } = useWishlistStore();
@@ -20,10 +22,11 @@ const ProductCard = ({ product }) => {
   const sport = product.sport || (product.categories?.[0]?.split(' > ')[0]) || 'Leagues';
 
   return (
-    <motion.div 
-      whileHover={{ y: -8 }}
-      className="group bg-card border border-gold/10 hover:border-gold/50 transition-all duration-300 shadow-xl overflow-hidden relative flex flex-col h-full"
-    >
+    <Link to={`/product/${product.id}`} className="block h-full">
+      <motion.div 
+        whileHover={{ y: -8 }}
+        className="group bg-card border border-gold/10 hover:border-gold/50 transition-all duration-300 shadow-xl overflow-hidden relative flex flex-col h-full"
+      >
       {/* Badges */}
       <div className="absolute top-4 left-4 z-10 flex flex-col gap-2">
         <Badge variant="sport">{sport}</Badge>
@@ -103,7 +106,11 @@ const ProductCard = ({ product }) => {
           </div>
           
           <button 
-            onClick={() => addItem(product)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              addItem(product);
+            }}
             className="p-3 bg-gold text-black rounded-none hover:bg-gold-light transition-all active:scale-95 group/btn overflow-hidden relative"
           >
             <ShoppingCart size={18} className="relative z-10" />
@@ -115,6 +122,7 @@ const ProductCard = ({ product }) => {
       {/* Hover Glow Effect Layer */}
       <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-gold/5 to-transparent shadow-[inset_0_0_20px_rgba(201,168,76,0.1)]" />
     </motion.div>
+    </Link>
   );
 };
 
