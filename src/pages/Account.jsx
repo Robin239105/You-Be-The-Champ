@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -10,9 +10,15 @@ import { Package, Heart, Settings, MapPin, Bell, LogOut, ChevronRight, Award, Co
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Account = () => {
-  const { user, logout } = useAuthStore();
+  const { user, logout, isAuthenticated } = useAuthStore();
   const navigate = useNavigate();
   const orders = useOrderStore(state => state.orders);
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/account/login');
+    }
+  }, [isAuthenticated, navigate]);
 
   const handleLogout = () => {
     logout();

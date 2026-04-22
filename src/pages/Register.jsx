@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
@@ -8,7 +8,14 @@ import { useAuthStore } from '../store/useAuthStore';
 
 const Register = () => {
   const login = useAuthStore(state => state.login);
+  const isAuthenticated = useAuthStore(state => state.isAuthenticated);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/account');
+    }
+  }, [isAuthenticated, navigate]);
   const [formData, setFormData] = React.useState({
     firstName: '',
     lastName: '',
