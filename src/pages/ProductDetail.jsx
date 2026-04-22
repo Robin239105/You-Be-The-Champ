@@ -246,22 +246,60 @@ const ProductDetail = () => {
               )}
 
               {activeTab === 'reviews' && (
-                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-12">
-                   {[
-                     { user: 'J. Maverick', rating: 5, date: '2 days ago', text: 'The weight of this ring is incredible. Feels like the real deal.' },
-                     { user: 'S. Thompson', rating: 5, date: '1 week ago', text: 'Perfect gift for any true fan. The stones really sparkle under light.' },
-                   ].map((review, i) => (
-                     <div key={i} className="bg-surface p-8 border border-gold/5">
-                        <div className="flex justify-between mb-4">
-                           <span className="font-cinzel text-sm text-white">{review.user}</span>
-                           <span className="text-[10px] text-ivory/30 uppercase tracking-widest">{review.date}</span>
+                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-16">
+                   {/* Review Submission Form */}
+                   <div className="bg-surface p-10 border border-gold/20 relative overflow-hidden">
+                      <div className="absolute top-0 right-0 p-6 opacity-5 pointer-events-none">
+                         <Star size={100} className="text-gold" />
+                      </div>
+                      <h4 className="font-cinzel text-lg font-bold text-gold uppercase tracking-widest mb-8">Write a Review</h4>
+                      <form className="space-y-6 relative z-10">
+                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                               <label className="block text-[10px] text-gold font-cinzel tracking-widest uppercase mb-2">Display Name</label>
+                               <input type="text" className="w-full bg-black border border-gold/10 p-4 text-white focus:border-gold outline-none transition-all" placeholder="e.g. John D." />
+                            </div>
+                            <div>
+                               <label className="block text-[10px] text-gold font-cinzel tracking-widest uppercase mb-2">Rating</label>
+                               <div className="flex gap-2 p-4 bg-black border border-gold/10">
+                                  {[1, 2, 3, 4, 5].map((star) => (
+                                    <Star 
+                                      key={star} 
+                                      size={16} 
+                                      className="cursor-pointer text-gold/20 hover:text-gold transition-colors" 
+                                    />
+                                  ))}
+                                  <span className="text-[10px] text-ivory/40 ml-2 uppercase font-cinzel">Select Stars</span>
+                               </div>
+                            </div>
+                         </div>
+                         <div>
+                            <label className="block text-[10px] text-gold font-cinzel tracking-widest uppercase mb-2">Your Championship Experience</label>
+                            <textarea rows="4" className="w-full bg-black border border-gold/10 p-4 text-white focus:border-gold outline-none transition-all resize-none" placeholder="Tell us about the quality, weight, and detail..."></textarea>
+                         </div>
+                         <Button variant="primary" className="w-full md:w-auto px-12 py-4 uppercase tracking-[3px] text-[10px]">Submit Review To Vault</Button>
+                      </form>
+                   </div>
+
+                   {/* Existing Reviews */}
+                   <div className="space-y-8">
+                      <h4 className="font-cinzel text-sm font-bold text-ivory/40 uppercase tracking-[4px] mb-8">Recent Testimonials</h4>
+                      {[
+                        { user: 'J. Maverick', rating: 5, date: '2 days ago', text: 'The weight of this ring is incredible. Feels like the real deal.' },
+                        { user: 'S. Thompson', rating: 5, date: '1 week ago', text: 'Perfect gift for any true fan. The stones really sparkle under light.' },
+                      ].map((review, i) => (
+                        <div key={i} className="bg-surface/50 p-8 border border-gold/5 hover:border-gold/20 transition-all">
+                           <div className="flex justify-between mb-4">
+                              <span className="font-cinzel text-sm text-white">{review.user}</span>
+                              <span className="text-[10px] text-ivory/30 uppercase tracking-widest">{review.date}</span>
+                           </div>
+                           <div className="flex gap-1 mb-4">
+                              {[...Array(review.rating)].map((_, j) => <Star key={j} size={10} className="fill-gold text-gold" />)}
+                           </div>
+                           <p className="text-ivory/60 font-raleway text-sm italic">"{review.text}"</p>
                         </div>
-                        <div className="flex gap-1 mb-4">
-                           {[...Array(review.rating)].map((_, j) => <Star key={j} size={10} className="fill-gold text-gold" />)}
-                        </div>
-                        <p className="text-ivory/60 font-raleway text-sm italic">"{review.text}"</p>
-                     </div>
-                   ))}
+                      ))}
+                   </div>
                 </motion.div>
               )}
            </div>

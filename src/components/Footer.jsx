@@ -38,6 +38,7 @@ const Footer = () => {
             <li><Link to="/affiliate" className="hover:text-gold transition-colors">Curator Program</Link></li>
             <li><Link to="/blog" className="hover:text-gold transition-colors">The Locker Room</Link></li>
             <li><Link to="/about" className="hover:text-gold transition-colors">Our Legacy</Link></li>
+            <li><Link to="/contact" className="hover:text-gold transition-colors">Contact</Link></li>
           </ul>
         </div>
 
@@ -45,7 +46,7 @@ const Footer = () => {
         <div>
           <h4 className="font-cinzel text-gold text-sm font-bold uppercase tracking-widest mb-8">Support</h4>
           <ul className="space-y-4 font-raleway text-xs uppercase tracking-widest text-ivory/60">
-            <li><Link to="/contact" className="hover:text-gold transition-colors">Contact Curators</Link></li>
+            <li><Link to="/contact" className="hover:text-gold transition-colors">Contact Us</Link></li>
             <li><Link to="/faq" className="hover:text-gold transition-colors">Knowledge Vault</Link></li>
             <li><Link to="/size-guide" className="hover:text-gold transition-colors">Sizing Guide</Link></li>
             <li><Link to="/shipping-policy" className="hover:text-gold transition-colors">Shipping Policy</Link></li>
