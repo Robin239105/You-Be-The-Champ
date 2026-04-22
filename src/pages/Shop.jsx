@@ -152,23 +152,23 @@ const Shop = () => {
       <Header />
       
       {/* Mobile Sticky Filter Bar */}
-      <div className="lg:hidden sticky top-20 z-40 bg-black/80 backdrop-blur-md border-b border-gold/10 px-6 py-4 flex items-center justify-between">
+      <div className="lg:hidden sticky top-[120px] z-40 bg-black/90 backdrop-blur-md border-b border-gold/10 px-6 py-4 flex items-center justify-between">
          <button 
           onClick={() => setIsMobileFilterOpen(true)}
-          className="flex items-center gap-2 text-gold font-cinzel text-[10px] font-bold tracking-widest uppercase"
+          className="flex items-center gap-2 text-gold font-cinzel text-[10px] font-bold tracking-widest uppercase py-2"
          >
-            <SlidersHorizontal size={14} />
-            Filter { (selectedSports.length + selectedEras.length) > 0 && `(${selectedSports.length + selectedEras.length})` }
+            <SlidersHorizontal size={14} className="text-gold" />
+            <span className="text-gold">Filter { (selectedSports.length + selectedEras.length) > 0 && `(${selectedSports.length + selectedEras.length})` }</span>
          </button>
          <div className="h-4 w-[1px] bg-gold/20" />
          <select 
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="bg-transparent text-gold font-cinzel text-[10px] font-bold tracking-widest uppercase outline-none"
+            className="bg-transparent text-gold font-cinzel text-[10px] font-bold tracking-widest uppercase outline-none cursor-pointer"
           >
-            <option>Featured</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
+            <option className="bg-black text-gold">Featured</option>
+            <option className="bg-black text-gold">Price: Low to High</option>
+            <option className="bg-black text-gold">Price: High to Low</option>
           </select>
       </div>
 
@@ -186,7 +186,7 @@ const Shop = () => {
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 flex flex-col lg:flex-row gap-12 relative">
         {/* Desktop Sidebar (Sticky) */}
-        <aside className="hidden lg:block w-72 h-fit sticky top-32">
+        <aside className="hidden lg:block w-72 h-fit sticky top-40">
           <FilterContent />
         </aside>
 
