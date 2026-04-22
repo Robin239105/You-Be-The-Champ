@@ -3,11 +3,15 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
-import { placeholderProducts } from '../data/placeholderProducts';
+import { productsData } from '../data/productsData';
 import { motion } from 'framer-motion';
 
 const Vintage90s = () => {
-  const vintageProducts = placeholderProducts.filter(p => p.category === 'vintage-90s' || p.badge === 'VINTAGE');
+  const vintageProducts = productsData.filter(p => {
+    // Extract year from name or description to filter for the 90s
+    const yearMatch = p.name.match(/199[0-9]/);
+    return yearMatch !== null || p.badge === 'VINTAGE';
+  });
 
   return (
     <div className="bg-black min-h-screen">

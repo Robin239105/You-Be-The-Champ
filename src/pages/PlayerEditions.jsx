@@ -4,11 +4,11 @@ import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
 import SectionDivider from '../components/SectionDivider';
-import { placeholderProducts } from '../data/placeholderProducts';
+import { productsData } from '../data/productsData';
 import { motion } from 'framer-motion';
 
 const PlayerEditions = () => {
-  const playerProducts = placeholderProducts.filter(p => p.isPlayerEdition || p.category === 'player-editions');
+  const playerProducts = productsData.slice(0, 12); // Fallback for now, can be improved with specific category logic
 
   const legends = [
     { name: 'Michael Jordan', team: 'Chicago Bulls', sport: 'NBA' },
