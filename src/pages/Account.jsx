@@ -3,11 +3,20 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { useAuthStore } from '../store/useAuthStore';
-import { Package, Heart, Settings, MapPin, Bell, LogOut, ChevronRight, Award, Copy, Check, DollarSign, Users, MousePointer2 } from 'lucide-react';
+import { useOrderStore } from '../store/useOrderStore';
+import { downloadInvoice } from '../utils/invoice';
+import { Package, Heart, Settings, MapPin, Bell, LogOut, ChevronRight, Award, Copy, Check, DollarSign, Users, MousePointer2, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Account = () => {
   const { user, logout } = useAuthStore();
+  const navigate = useNavigate();
+  const orders = useOrderStore(state => state.orders);
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
   const [activeTab, setActiveTab] = useState('orders');
   const [copied, setCopied] = useState(false);
 
@@ -59,7 +68,7 @@ const Account = () => {
             ))}
 
             <button 
-              onClick={logout}
+              onClick={handleLogout}
               className="w-full flex items-center gap-3 p-4 font-cinzel text-xs tracking-widest uppercase text-crimson hover:bg-crimson/5 transition-all"
             >
               <LogOut size={16} />
@@ -76,19 +85,38 @@ const Account = () => {
 
                {activeTab === 'orders' && (
                  <div className="space-y-6">
-                    <div className="p-6 bg-surface border border-gold/10 flex flex-col md:flex-row justify-between items-center gap-6">
-                       <div className="flex items-center gap-6">
-                          <div className="w-16 h-16 bg-black border border-gold/10 flex items-center justify-center">
-                             <Package size={24} className="text-gold/40" />
-                          </div>
-                          <div>
-                             <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">Order #CHAMP-9241-X</p>
-                             <p className="text-sm text-ivory font-bold uppercase">Processing Shipment</p>
-                             <p className="text-[9px] text-gold/60 uppercase mt-1">Placed on March 24, 2024</p>
-                          </div>
+                   {orders.length === 0 ? (
+                     <div className="py-20 text-center border border-dashed border-gold/20">
+                       <Package size={40} className="text-gold/20 mx-auto mb-4" />
+                       <p className="font-cinzel text-xs text-ivory/40 uppercase tracking-widest">No orders found yet.</p>
+                       <Link to="/shop" className="mt-4 inline-block text-gold text-[10px] font-cinzel uppercase underline">Start Shopping</Link>
+                     </div>
+                   ) : (
+                     orders.map((order) => (
+                       <div key={order.orderId} className="p-6 bg-surface border border-gold/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                         <div className="flex items-center gap-6">
+                            <div className="w-16 h-16 bg-black border border-gold/10 flex items-center justify-center">
+                               <Package size={24} className="text-gold/40" />
+                            </div>
+                            <div>
+                               <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">Order #{order.orderId}</p>
+                               <p className="text-sm text-ivory font-bold uppercase">{order.status}</p>
+                               <p className="text-[9px] text-gold/60 uppercase mt-1">Placed on {order.date}</p>
+                            </div>
+                         </div>
+                         <div className="flex items-center gap-4">
+                            <span className="text-sm font-mono text-gold mr-4">${order.finalTotal.toFixed(2)}</span>
+                            <button 
+                              onClick={() => downloadInvoice(order)}
+                              className="flex items-center gap-2 py-2 px-6 border border-gold/20 text-gold text-[10px] font-cinzel uppercase hover:bg-gold/10 transition-all"
+                            >
+                              <Download size={14} /> Invoice
+                            </button>
+                            <Button variant="outline" className="py-2 px-6 text-[10px]">Track</Button>
+                         </div>
                        </div>
-                       <Button variant="outline" className="py-2 px-6 text-[10px]">Track Order</Button>
-                    </div>
+                     ))
+                   )}
                  </div>
                )}
 

@@ -116,7 +116,7 @@ const Affiliate = () => {
            <div className="divide-y divide-gold/10">
               <BenefitRow label="Commission Rate" value="15% Per Sale" />
               <BenefitRow label="Cookie Duration" value="30 Days" />
-              <BenefitRow label="Payout Threshold" value="$50.00 USD" />
+              <BenefitRow label="Payout Threshold" value="$50.00 AUD" />
               <BenefitRow label="Support" value="Dedicated Account Manager" />
               <BenefitRow label="Marketing Assets" value="Banners, Email Templates, Product Feed" />
            </div>

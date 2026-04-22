@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const csvFilePath = path.join(__dirname, '../wc-product-export-17-4-2026-1776389555950.csv');
+const csvFilePath = path.join(__dirname, '../../wc-product-export-17-4-2026-1776389555950.csv');
 const outputFilePath = path.join(__dirname, '../src/data/productsData.js');
+const PLACEHOLDER_IMAGE = 'https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon';
 
 function parseCSV(csvText) {
   const products = [];
@@ -53,14 +54,15 @@ function parseCSV(csvText) {
     if (!lines[i].trim()) continue;
     
     const row = splitLine(lines[i]);
-    // The indices might be slightly off due to splitLine differences, but let's try mapping by header index if possible, 
-    // or just use the same indices as before but with better row data.
     
     // ID: 0, SKU: 2, Name: 4, ShortDesc: 8, Desc: 9, Price: 26, Categories: 27, Images: 30
     const categories = row[27] ? row[27].split(',').map(c => c.trim().replace(/^"|"$/g, '')) : [];
-    const images = row[30] ? row[30].split(',').map(img => img.trim().replace(/^"|"$/g, '').trim()) : [];
+    let images = row[30] ? row[30].split(',').map(img => img.trim().replace(/^"|"$/g, '').trim()) : [];
 
-    if (images.length === 0 || !images[0]) continue;
+    // Use placeholder if no images found
+    if (images.length === 0 || !images[0]) {
+      images = [PLACEHOLDER_IMAGE];
+    }
 
     products.push({
       id: row[0],

@@ -95,27 +95,37 @@ const ProductCard = ({ product }) => {
         {/* Pricing */}
         <div className="mt-auto pt-4 flex items-end justify-between">
           <div className="flex flex-col">
-            {product.onSale && (
-              <span className="text-[10px] text-ivory/30 line-through font-mono">
-                ${product.price.toFixed(2)}
+            {product.price === 0 ? (
+              <span className="text-sm font-cinzel font-bold text-gold tracking-widest uppercase">
+                Coming Soon
               </span>
+            ) : (
+              <>
+                {product.onSale && (
+                  <span className="text-[10px] text-ivory/30 line-through font-mono">
+                    ${product.price.toFixed(2)} AUD
+                  </span>
+                )}
+                <span className="text-lg font-mono font-bold text-gold">
+                  ${(product.onSale ? product.salePrice : product.price).toFixed(2)} AUD
+                </span>
+              </>
             )}
-            <span className="text-lg font-mono font-bold text-gold">
-              ${(product.onSale ? product.salePrice : product.price).toFixed(2)}
-            </span>
           </div>
           
-          <button 
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              addItem(product);
-            }}
-            className="p-3 bg-gold text-black rounded-none hover:bg-gold-light transition-all active:scale-95 group/btn overflow-hidden relative"
-          >
-            <ShoppingCart size={18} className="relative z-10" />
-            <div className="absolute inset-x-0 bottom-0 h-0.5 bg-white scale-x-0 group-hover/btn:scale-x-100 transition-transform origin-left" />
-          </button>
+          {product.price > 0 && (
+            <button 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                addItem(product);
+              }}
+              className="p-3 bg-gold text-black rounded-none hover:bg-gold-light transition-all active:scale-95 group/btn overflow-hidden relative"
+            >
+              <ShoppingCart size={18} className="relative z-10" />
+              <div className="absolute inset-x-0 bottom-0 h-0.5 bg-white scale-x-0 group-hover/btn:scale-x-100 transition-transform origin-left" />
+            </button>
+          )}
         </div>
       </div>
 

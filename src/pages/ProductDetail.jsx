@@ -120,11 +120,17 @@ const ProductDetail = () => {
               </h1>
 
               <div className="flex items-center gap-6">
-                <span className="text-4xl font-mono font-bold text-gold">${product.price.toFixed(2)}</span>
-                {product.onSale && (
-                  <span className="text-xl text-ivory/30 line-through font-mono">${product.salePrice.toFixed(2)}</span>
+                {product.price === 0 ? (
+                  <span className="text-3xl font-cinzel font-bold text-gold tracking-widest uppercase">Coming Soon</span>
+                ) : (
+                  <>
+                    <span className="text-4xl font-mono font-bold text-gold">${product.price.toFixed(2)} AUD</span>
+                    {product.onSale && (
+                      <span className="text-xl text-ivory/30 line-through font-mono">${product.salePrice.toFixed(2)} AUD</span>
+                    )}
+                  </>
                 )}
-                <Badge variant="sport">In Stock</Badge>
+                <Badge variant="sport">{product.price === 0 ? 'Pre-Release' : 'In Stock'}</Badge>
               </div>
             </div>
 
@@ -134,20 +140,21 @@ const ProductDetail = () => {
                 The ultimate symbol of team dominance. This high-grade replica features {product.material || 'premium zinc alloy'} construction with {product.plating || '18K gold'} plating and precision-set AAA+ crystals.
               </p>
 
-              {/* Purchase Actions */}
-              <div className="space-y-6">
+               <div className="space-y-6">
                 <div className="flex items-center gap-8">
                    <div className="flex items-center border border-gold/20 bg-card">
                       <button 
+                        disabled={product.price === 0}
                         onClick={() => setQuantity(q => Math.max(1, q - 1))}
-                        className="p-4 hover:text-gold transition-colors"
+                        className={`p-4 transition-colors ${product.price === 0 ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
                       >
                         <Minus size={16} />
                       </button>
-                      <span className="w-12 text-center font-mono font-bold">{quantity}</span>
+                      <span className={`w-12 text-center font-mono font-bold ${product.price === 0 ? 'opacity-20' : ''}`}>{quantity}</span>
                       <button 
+                        disabled={product.price === 0}
                         onClick={() => setQuantity(q => q + 1)}
-                        className="p-4 hover:text-gold transition-colors"
+                        className={`p-4 transition-colors ${product.price === 0 ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
                       >
                         <Plus size={16} />
                       </button>
@@ -162,20 +169,31 @@ const ProductDetail = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Button 
-                    variant="secondary" 
-                    className="w-full py-6 uppercase tracking-[3px] text-xs font-bold border-gold/20 hover:border-gold"
-                    onClick={handleAddToCart}
-                  >
-                    Add To Vault
-                  </Button>
-                  <Button 
-                    variant="primary" 
-                    className="w-full py-6 uppercase tracking-[3px] text-xs font-bold"
-                    onClick={handleBuyNow}
-                  >
-                    Direct Purchase
-                  </Button>
+                  {product.price === 0 ? (
+                    <Button 
+                      variant="primary" 
+                      className="col-span-2 py-6 uppercase tracking-[3px] text-xs font-bold"
+                    >
+                      Notify Me On Release
+                    </Button>
+                  ) : (
+                    <>
+                      <Button 
+                        variant="secondary" 
+                        className="w-full py-6 uppercase tracking-[3px] text-xs font-bold border-gold/20 hover:border-gold"
+                        onClick={handleAddToCart}
+                      >
+                        Add To Vault
+                      </Button>
+                      <Button 
+                        variant="primary" 
+                        className="w-full py-6 uppercase tracking-[3px] text-xs font-bold"
+                        onClick={handleBuyNow}
+                      >
+                        Direct Purchase
+                      </Button>
+                    </>
+                  )}
                 </div>
               </div>
 

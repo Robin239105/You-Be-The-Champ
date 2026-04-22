@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 import { productsData } from '../data/productsData';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Filter, X, ChevronDown, SlidersHorizontal } from 'lucide-react';
+import { Filter, X, ChevronDown, SlidersHorizontal, Search, RotateCcw } from 'lucide-react';
 
 const Shop = () => {
   const [selectedSports, setSelectedSports] = useState([]);
@@ -12,6 +12,8 @@ const Shop = () => {
   const [sortBy, setSortBy] = useState('Featured');
   const [currentPage, setCurrentPage] = useState(1);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showOnlySale, setShowOnlySale] = useState(false);
   const ITEMS_PER_PAGE = 20;
 
   const sports = ['NFL', 'NBA', 'NHL', 'MLB', 'Special Edition'];
@@ -36,6 +38,20 @@ const Shop = () => {
 
   const filteredProducts = useMemo(() => {
     let result = [...productsData];
+
+    // Search query filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(p => 
+        p.name.toLowerCase().includes(query) || 
+        p.sku?.toLowerCase().includes(query) ||
+        p.categories?.some(cat => cat.toLowerCase().includes(query))
+      );
+    }
+
+    if (showOnlySale) {
+      result = result.filter(p => p.onSale);
+    }
 
     if (selectedSports.length > 0) {
       result = result.filter(p => {
@@ -69,7 +85,21 @@ const Shop = () => {
     }
 
     return result;
-  }, [selectedSports, selectedEras, sortBy]);
+  }, [selectedSports, selectedEras, sortBy, searchQuery, showOnlySale]);
+
+  const getCountForSport = (sport) => {
+    return productsData.filter(p => p.categories?.some(cat => cat.toLowerCase().includes(sport.toLowerCase()))).length;
+  };
+
+  const getCountForEra = (eraRange) => {
+    return productsData.filter(p => {
+      const yearCat = p.categories?.find(cat => cat.startsWith('Champions By Year >'));
+      if (!yearCat) return false;
+      const yearMatch = yearCat.match(/\d{4}/);
+      const year = yearMatch ? parseInt(yearMatch[0]) : null;
+      return year && year >= eraRange[0] && year <= eraRange[1];
+    }).length;
+  };
 
   const toggleSport = (sport) => {
     setSelectedSports(prev => prev.includes(sport) ? prev.filter(s => s !== sport) : [...prev, sport]);
@@ -84,6 +114,8 @@ const Shop = () => {
   const clearFilters = () => {
     setSelectedSports([]);
     setSelectedEras([]);
+    setSearchQuery('');
+    setShowOnlySale(false);
     setCurrentPage(1);
   };
 
@@ -97,12 +129,44 @@ const Shop = () => {
     <>
       <div className="flex items-center justify-between mb-10">
         <h3 className="font-cinzel text-sm font-bold text-gold tracking-widest uppercase">Filters</h3>
-        {(selectedSports.length > 0 || selectedEras.length > 0) && (
-          <button onClick={clearFilters} className="text-[10px] text-ivory/40 hover:text-gold uppercase tracking-widest transition-colors">Clear All</button>
+        {(selectedSports.length > 0 || selectedEras.length > 0 || searchQuery || showOnlySale) && (
+          <button onClick={clearFilters} className="text-[10px] text-ivory/40 hover:text-gold uppercase tracking-widest transition-colors flex items-center gap-1">
+            <RotateCcw size={10} />
+            Reset
+          </button>
         )}
       </div>
 
       <div className="space-y-12">
+        {/* Search */}
+        <div>
+          <h3 className="font-cinzel text-[10px] font-bold text-ivory/40 tracking-[3px] mb-4 uppercase">Search</h3>
+          <div className="relative">
+            <input 
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Team, Player or SKU..."
+              className="w-full bg-card border border-gold/10 px-4 py-3 pl-10 text-xs text-ivory outline-none focus:border-gold/50 transition-colors font-raleway"
+            />
+            <Search size={14} className="absolute left-4 top-1/2 -translate-y-1/2 text-gold/40" />
+          </div>
+        </div>
+
+        {/* Status */}
+        <div>
+          <h3 className="font-cinzel text-[10px] font-bold text-ivory/40 tracking-[3px] mb-4 uppercase">Status</h3>
+          <button 
+            onClick={() => setShowOnlySale(!showOnlySale)}
+            className="flex items-center gap-3 group w-full text-left"
+          >
+            <div className={`w-5 h-5 border transition-all flex items-center justify-center ${showOnlySale ? 'border-gold bg-gold/10' : 'border-gold/20 group-hover:border-gold/50'}`}>
+              {showOnlySale && <div className="w-2 h-2 bg-gold" />}
+            </div>
+            <span className={`text-xs uppercase tracking-widest transition-colors ${showOnlySale ? 'text-gold' : 'text-ivory/60 group-hover:text-ivory'}`}>On Sale Items</span>
+          </button>
+        </div>
+
         <div>
           <h3 className="font-cinzel text-[10px] font-bold text-ivory/40 tracking-[3px] mb-6 uppercase">By Sport</h3>
           <div className="space-y-4">
@@ -110,12 +174,15 @@ const Shop = () => {
               <button 
                 key={sport} 
                 onClick={() => toggleSport(sport)}
-                className="flex items-center gap-3 group w-full text-left"
+                className="flex items-center justify-between group w-full text-left"
               >
-                <div className={`w-5 h-5 border transition-all flex items-center justify-center ${selectedSports.includes(sport) ? 'border-gold bg-gold/10' : 'border-gold/20 group-hover:border-gold/50'}`}>
-                  {selectedSports.includes(sport) && <div className="w-2 h-2 bg-gold" />}
+                <div className="flex items-center gap-3">
+                  <div className={`w-5 h-5 border transition-all flex items-center justify-center ${selectedSports.includes(sport) ? 'border-gold bg-gold/10' : 'border-gold/20 group-hover:border-gold/50'}`}>
+                    {selectedSports.includes(sport) && <div className="w-2 h-2 bg-gold" />}
+                  </div>
+                  <span className={`text-xs uppercase tracking-widest transition-colors ${selectedSports.includes(sport) ? 'text-gold' : 'text-ivory/60 group-hover:text-ivory'}`}>{sport}</span>
                 </div>
-                <span className={`text-xs uppercase tracking-widest transition-colors ${selectedSports.includes(sport) ? 'text-gold' : 'text-ivory/60 group-hover:text-ivory'}`}>{sport}</span>
+                <span className="text-[10px] font-mono text-ivory/20 group-hover:text-ivory/40 transition-colors">{getCountForSport(sport)}</span>
               </button>
             ))}
           </div>
@@ -128,18 +195,19 @@ const Shop = () => {
               <button 
                 key={era.label} 
                 onClick={() => toggleEra(era.label)}
-                className={`px-3 py-3 border text-[10px] font-cinzel transition-all uppercase tracking-widest ${selectedEras.includes(era.label) ? 'bg-gold text-black border-gold' : 'bg-card border-gold/10 text-ivory/50 hover:border-gold/40'}`}
+                className={`relative group px-3 py-3 border text-[10px] font-cinzel transition-all uppercase tracking-widest flex flex-col items-center justify-center gap-1 ${selectedEras.includes(era.label) ? 'bg-gold text-black border-gold' : 'bg-card border-gold/10 text-ivory/50 hover:border-gold/40'}`}
               >
-                {era.label}
+                <span>{era.label}</span>
+                <span className={`text-[8px] font-mono ${selectedEras.includes(era.label) ? 'text-black/50' : 'text-ivory/20'}`}>({getCountForEra(era.range)})</span>
               </button>
             ))}
           </div>
         </div>
 
         <div className="pt-8 border-t border-gold/10">
-          <div className="bg-gold/5 p-6 border border-gold/10">
-            <p className="text-[10px] text-gold font-cinzel tracking-widest uppercase leading-relaxed text-center">
-              All our rings are crafted from premium zinc alloy with quadruple 18K gold plating.
+          <div className="bg-gold/5 p-6 border border-gold/10 rounded-sm">
+            <p className="text-[10px] text-gold font-cinzel tracking-widest uppercase leading-relaxed text-center opacity-70">
+              Hand-crafted premium replicas.
             </p>
           </div>
         </div>
@@ -158,9 +226,19 @@ const Shop = () => {
           className="flex items-center gap-2 text-gold font-cinzel text-[10px] font-bold tracking-widest uppercase py-2"
          >
             <SlidersHorizontal size={14} className="text-gold" />
-            <span className="text-gold">Filter { (selectedSports.length + selectedEras.length) > 0 && `(${selectedSports.length + selectedEras.length})` }</span>
+            <span className="text-gold">Filter { (selectedSports.length + selectedEras.length + (searchQuery ? 1 : 0) + (showOnlySale ? 1 : 0)) > 0 && `(${selectedSports.length + selectedEras.length + (searchQuery ? 1 : 0) + (showOnlySale ? 1 : 0)})` }</span>
          </button>
          <div className="h-4 w-[1px] bg-gold/20" />
+         <div className="flex-1 px-4">
+            <input 
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search..."
+              className="w-full bg-transparent text-gold font-cinzel text-[10px] placeholder:text-gold/30 outline-none uppercase tracking-widest"
+            />
+          </div>
+          <div className="h-4 w-[1px] bg-gold/20" />
          <select 
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
@@ -192,20 +270,48 @@ const Shop = () => {
 
         {/* Product Grid Area */}
         <main className="flex-1">
-          <div className="hidden lg:flex flex-row items-center justify-between mb-12 border-b border-gold/10 pb-6 gap-4">
-            <p className="text-xs text-ivory/40 uppercase tracking-[2px] font-raleway">
-              Showing <span className="text-gold font-bold">{filteredProducts.length}</span> Results
-            </p>
-            <select 
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="bg-black border border-gold/20 font-cinzel text-[10px] py-2 px-4 text-gold outline-none focus:border-gold uppercase tracking-widest appearance-none cursor-pointer hover:bg-gold/5 transition-colors"
-            >
-              <option>Featured</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
-              <option>Newest Arrivals</option>
-            </select>
+          <div className="hidden lg:flex flex-col mb-12 border-b border-gold/10 pb-6">
+            <div className="flex flex-row items-center justify-between mb-4">
+              <p className="text-xs text-ivory/40 uppercase tracking-[2px] font-raleway">
+                Showing <span className="text-gold font-bold">{filteredProducts.length}</span> Results
+              </p>
+              <select 
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="bg-black border border-gold/20 font-cinzel text-[10px] py-2 px-4 text-gold outline-none focus:border-gold uppercase tracking-widest appearance-none cursor-pointer hover:bg-gold/5 transition-colors"
+              >
+                <option>Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest Arrivals</option>
+              </select>
+            </div>
+            
+            {/* Active Filter Chips */}
+            {(selectedSports.length > 0 || selectedEras.length > 0 || searchQuery || showOnlySale) && (
+              <div className="flex flex-wrap gap-2 mt-2">
+                {searchQuery && (
+                  <button onClick={() => setSearchQuery('')} className="flex items-center gap-2 px-3 py-1.5 bg-gold/5 border border-gold/20 text-[10px] text-gold font-cinzel uppercase tracking-widest hover:border-gold/50 transition-colors">
+                    Search: {searchQuery} <X size={10} />
+                  </button>
+                )}
+                {showOnlySale && (
+                  <button onClick={() => setShowOnlySale(false)} className="flex items-center gap-2 px-3 py-1.5 bg-gold/5 border border-gold/20 text-[10px] text-gold font-cinzel uppercase tracking-widest hover:border-gold/50 transition-colors">
+                    On Sale <X size={10} />
+                  </button>
+                )}
+                {selectedSports.map(sport => (
+                  <button key={sport} onClick={() => toggleSport(sport)} className="flex items-center gap-2 px-3 py-1.5 bg-gold/5 border border-gold/20 text-[10px] text-gold font-cinzel uppercase tracking-widest hover:border-gold/50 transition-colors">
+                    {sport} <X size={10} />
+                  </button>
+                ))}
+                {selectedEras.map(era => (
+                  <button key={era} onClick={() => toggleEra(era)} className="flex items-center gap-2 px-3 py-1.5 bg-gold/5 border border-gold/20 text-[10px] text-gold font-cinzel uppercase tracking-widest hover:border-gold/50 transition-colors">
+                    {era} <X size={10} />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 min-h-[600px]">
@@ -246,9 +352,14 @@ const Shop = () => {
               </button>
               
               <div className="flex items-center gap-2">
-                {Array.from({ length: Math.min(5, totalPages) }).map((_, i) => {
-                  const pageNum = i + 1;
-                  return (
+                {(() => {
+                  const startPage = Math.floor((currentPage - 1) / 5) * 5 + 1;
+                  const endPage = Math.min(startPage + 4, totalPages);
+                  const pages = [];
+                  for (let i = startPage; i <= endPage; i++) {
+                    pages.push(i);
+                  }
+                  return pages.map(pageNum => (
                     <button
                       key={pageNum}
                       onClick={() => {
@@ -259,8 +370,8 @@ const Shop = () => {
                     >
                       {pageNum}
                     </button>
-                  );
-                })}
+                  ));
+                })()}
               </div>
 
               <button 

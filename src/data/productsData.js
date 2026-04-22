@@ -5109,6 +5109,48 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "358",
+    "name": "1969 Stanley Cup Championship Ring - Montreal Canadiens - April-May 1969",
+    "sku": "SC069",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1969",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "359",
+    "name": "1968 Stanley Cup Championship Ring - Montreal Canadiens - May 1968",
+    "sku": "SC068",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1968",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "360",
     "name": "1967 Stanley Cup Championship Ring - Toronto Maple Leafs - April-May 1967",
     "sku": "SC067",
@@ -5172,6 +5214,883 @@ export const productsData = [
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7581-1.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7582.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7583.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "364",
+    "name": "Green Bay Packers Set - 4 Superbowl Championship Rings - SB1, SB2, SB31, SB45",
+    "sku": "FS05",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Aaron Rodgers (NFL)",
+      "All Time Greats > Bart Starr (NFL)",
+      "All Time Greats > Brett Favre (NFL)",
+      "League > NFL - National Football League > NFC North > Green Bay Packers",
+      "Teams > Green Bay Packers (NFL)",
+      "Your City > Green Bay Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "365",
+    "name": "Pittsburgh Steelers Set - 6 Superbowl Championship Rings - SB9, SB10, SB13, SB14, SB40, SB43",
+    "sku": "FS01",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Ben Rothlisberger (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "All Time Greats > Terry Bradshaw (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "366",
+    "name": "New England Patriots Set - 6 Superbowl Championship Rings - SB36, SB38, SB39, SB49, SB51, SB53",
+    "sku": "FS02",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "367",
+    "name": "Kansas City Chiefs Set - 4 Superbowl Championsship Rings - SB4, SB54, SB57, SB58",
+    "sku": "FS06",
+    "price": 0,
+    "description": "<blockquote>&nbsp;</blockquote>",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > AFC West > Kansas City Chiefs",
+      "Teams > Kansas City Chiefs (NFL)",
+      "Your City > Kansas City Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Patrick Mahomes (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "368",
+    "name": "Dallas Cowboys Set - 5 Superbowl Championship Rings - SB6, SB12, SB27, SB28, SB29",
+    "sku": "FS03",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > NFC East > Dallas Cowboys",
+      "Teams > Dallas Cowboys (NFL)",
+      "Your City > Dallas Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Roger Staubach (NFL)",
+      "All Time Greats > Troy Aikman (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "369",
+    "name": "New York Giants Set - 4 Superbowl Championship Rings - SB21, SB25, SB42, SB46",
+    "sku": "FS07",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > New York City Pro Teams",
+      "League > NFL - National Football League > NFC East > New York Giants",
+      "Teams > New York Giants (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "370",
+    "name": "Denver Broncos Set - 3 Superbowl Championship Rings - SB32, SB33, SB50",
+    "sku": "FS08",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > AFC West > Denver Broncos",
+      "Teams > Denver Broncos (NFL)",
+      "Your City > Denver Pro Teams",
+      "All Time Greats > John Elway (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Peyton Manning (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "371",
+    "name": "Philadelphia Eagles Set - 2 Superbowl Championship Rings - SB52, SB59",
+    "sku": "FS12",
+    "price": 70,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "League > NFL - National Football League > NFC East > Philadelphia Eagles",
+      "Teams > Philadelphia Eagles (NFL)",
+      "Your City > Philadelphia Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "373",
+    "name": "Oakland/ LA Raiders Set - 3 Superbowl Champuonship Rings - SB11, SB15, SB18",
+    "sku": "FS09",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Teams > Las Vegas (Oakland/Los Angeles) Raiders (NFL)",
+      "Your City > Las Vegas Pro Treams",
+      "League > NFL - National Football League > AFC West > Las Vegas Raiders",
+      "Your City > Los Angeles Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "Your City > Oakland Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "374",
+    "name": "Baltimore Ravens Set - 2 Superbowl Championship Rings - SB35, SB47",
+    "sku": "FS14",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Baltimore Pro Teams",
+      "League > NFL - National Football League > AFC North > Baltimore Ravens",
+      "Teams > Baltimore Ravens (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "375",
+    "name": "Miami Dolphins Set - 2 Superbowl Championship Rings - SB7, SB8",
+    "sku": "FS11",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Teams > Miami Dolphins (NFL)",
+      "League > NFL - National Football League > AFC East > Miami Dolpins",
+      "Your City > Miami Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "376",
+    "name": "Indianapolis Colts Set - 2 Superbowl Championship Rings - SB5, SB41",
+    "sku": "FS15",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > AFC South > Indianapolis Colts",
+      "Teams > Indianapolis Colts (NFL)",
+      "Your City > Indianapolis Pro Teams",
+      "All Time Greats > Johnny Unitas (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Peyton Manning (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "377",
+    "name": "Tampa Bay Buccaneers Set - 2 Superbowl Championship Rings - SB37, SB55",
+    "sku": "FS13",
+    "price": 70,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "League > NFL - National Football League > NFC South > Tampa Bay Buccaneers",
+      "Teams > Tampa Bay Buccaneers (NFL)",
+      "Your City > Tampa Bay Pro Teams",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "378",
+    "name": "Los Angeles Rams Set - 2 Superbowl Championship Rings - SB34, SB56",
+    "sku": "FS16",
+    "price": 70,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Kurt Warner (NFL)",
+      "Your City > Los Angeles Pro Teams",
+      "League > NFL - National Football League > NFC West > Los Angeles Rams",
+      "Teams > Los Angeles Rams (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "379",
+    "name": "Washington Redskins Set - 3 Superbowl Championship Rings - SB17, SB22, SB26",
+    "sku": "FS10",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "League > NFL - National Football League > NFC East > Washington Commanders (Redskins)",
+      "Your City > Washington Pro Teams",
+      "Teams > Washington Redskins/Commanders (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "380",
+    "name": "San Fransisco 49ers Set - 5 Superbowl Championship Rings - SB16, SB19, SB23, SB24, SB29",
+    "sku": "FS04",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Jerry Rice (NFL)",
+      "All Time Greats > Joe Montana (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "League > NFL - National Football League > NFC West > San Fransisco 49ers",
+      "Teams > San Fransisco 49ers (NFL)",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steve Young (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "381",
+    "name": "San Antonio Spurs Set - 5 NBA Finals Championship Rings - 1999, 2003, 2005, 2007, 2014",
+    "sku": "BS05",
+    "price": 130,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > David Robinson (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "382",
+    "name": "Houston Rockets Set - 2 NBA Finals Championship Rings - 1994, 1995",
+    "sku": "BS09",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Hakeem Olajuwan (NBA)",
+      "Your City > Houston Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > Houston Rockets",
+      "Teams > Houston Rockets (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "383",
+    "name": "MICHAEL JORDAN Chicago Bulls Set - 6 NBA Finals Championship Rings - 1991, 1992, 1993, 1996, 1997, 1998",
+    "sku": "BS04",
+    "price": 165,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "All Time Greats > Scottie Pippen (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "384",
+    "name": "Detroit Pistons Set - 3 NBA Finals Championship Rings - 1989, 1990, 2004",
+    "sku": "BS06",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > EC Central > Detroit Pistons",
+      "Teams > Detroit Pistons (NBA)",
+      "Your City > Detroit Pro Teams",
+      "All Time Greats > Isiah Thomas (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "385",
+    "name": "New York Knicks Set - 2 NBA Finals Championship Rings - 1970, 1973",
+    "sku": "BS08",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "Your City > New York City Pro Teams",
+      "League > NBA - National Basketball Association > EC Atlantic > New York Knicks",
+      "Teams > New York Knicks (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "386",
+    "name": "Miami Heat Set - 3 NBA Finals Championship Rings - 2006, 2012, 2013",
+    "sku": "BS07",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Dwayne Wade (NBA)",
+      "All Time Greats > Lebron James (NBA)",
+      "League > NBA - National Basketball Association > EC Southeast > Miami Heat",
+      "Teams > Miami Heat (NBA)",
+      "Your City > Miami Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "All Time Greats > Shaq O'Neal (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "387",
+    "name": "Philadelphia 76ers Set - 2 NBA Finals Championship Rings - 1967, 1983",
+    "sku": "BS10",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "League > NBA - National Basketball Association > EC Atlantic > Philadelphia 76ers",
+      "Teams > Philadelphia 76ers (NBA)",
+      "Your City > Philadelphia Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "388",
+    "name": "Houston Astros Set - 2 World Series Rings - 2017, 2022",
+    "sku": "BA19",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > MLB - Major League Baseball > AL West Division > Houston Astros",
+      "Teams > Houston Astros (MLB)",
+      "Your City > Houston Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "389",
+    "name": "Florida Marlins Set - 2 World Series Rings - 1997, 2003",
+    "sku": "BA18",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > MLB - Major League Baseball > NL East Division > Florida Marlins",
+      "Teams > Florida Marlins (MLB)",
+      "Your City > Miami Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "390",
+    "name": "Baltimore Orioles Set - 3 World Series Rings - 1966, 1970, 1983",
+    "sku": "BA11",
+    "price": 90,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > MLB - Major League Baseball > AL East Division > Baltimore Orioles",
+      "Teams > Baltimore Orioles (MLB)",
+      "Your City > Baltimore Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "391",
+    "name": "Philadelphia Phillies Set - 2 World Series Rings - 1980, 2008",
+    "sku": "BA17",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Garry Maddox (MLB)",
+      "All Time Greats > Mike Schmidt (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "League > MLB - Major League Baseball > NL East Division > Philadelphia Phillies",
+      "Teams > Philadelphia Phillies (MLB)",
+      "Your City > Philadelphia Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "392",
+    "name": "Minnesota Twins Set - 2 World Series Rings - 1987, 1991",
+    "sku": "BA21",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Minnesota Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Minnesota Twins",
+      "Teams > Minnesota Twins (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "393",
+    "name": "Kansas City Royals Set - 2 World Series Rings - 1985, 2015",
+    "sku": "BA20",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Kansas City Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Kansas City Royals",
+      "Teams > Kansas City Royals (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "394",
+    "name": "New York Mets Set - 2 World Series Rings - 1969, 1986",
+    "sku": "BA16",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > NL East Division > New York Mets",
+      "Teams > New York Mets (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "395",
+    "name": "Toronto Blue Jays Set - 2 World Series Rings - 1992, 1993",
+    "sku": "BA15",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "All Time Greats > Rickey Henderson (MLB)",
+      "League > MLB - Major League Baseball > AL East Division > Toronto Blue Jays",
+      "Teams > Toronto Blue Jays (MLB)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "396",
+    "name": "New Jersey Devils Set - 3 Stanley Cup Championship Rings - 1995, 2000, 2003",
+    "sku": "HS12",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NHL - National Hockey League > EC Metropolitan > New Jersey Devils",
+      "Teams > New Jersey Devils (NHL)",
+      "Your City > New Jersey Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "397",
+    "name": "Florida Pathers Set - 2 Stanley Cup Championship Rings - 2024, 2025",
+    "sku": "HS13",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NHL - National Hockey League > EC Atlantic > Florida Panthers",
+      "Teams > Florida Panthers (NHL)",
+      "Your City > Miami Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "398",
+    "name": "Colorado Avalanche Set - 3 Stanley Cup Championship Rings - 1996, 2001, 2022",
+    "sku": "HS11",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NHL - National Hockey League > WC Central > Colorado Avalanche",
+      "Teams > Colorado Avalanche (NHL)",
+      "Your City > Denver Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "399",
+    "name": "New York Isanders Set - 4 Stanley Cup Championship Rings - 1980, 1981, 1982, 1983",
+    "sku": "HS08",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Mike Bossy (NHL)",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Islanders",
+      "Teams > New York Islanders (NHL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "400",
+    "name": "Pittsburgh Penguins Set - 5 Stanley Cup Championship Rings - 1991, 1992, 2009, 2016, 2017",
+    "sku": "HS07",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Mario Lemieux (NHL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets",
+      "League > NHL - National Hockey League > EC Metropolitan > Pittsburgh Penguins",
+      "Teams > Pittsburgh Penguins (NHL)",
+      "Your City > Pittsburgh Pro Teams",
+      "All Time Greats > Sidney Crosby (NHL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "401",
+    "name": "Los Angeles Kings Set - 2 Stanley Cup Championship Rings - 2012, 2014",
+    "sku": "HS14",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NHL - National Hockey League > WC Pacific > Los Angeles Kings",
+      "Teams > Los Angeles Kings (NHL)",
+      "Your City > Los Angeles Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "402",
+    "name": "Edmonton Oilers Set - 5 Stanley Cup Championship Rings - 1984, 1985, 1987, 1988, 1989",
+    "sku": "HS06",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NHL - National Hockey League > WC Pacific > Edmonton Oilers",
+      "Teams > Edmonton Oilers (NHL)",
+      "Your City > Edmonton Pro Teams",
+      "All Time Greats > Mark Messier (NHL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets",
+      "All Time Greats > Wayne Gretzsky (NHL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "403",
+    "name": "Tampa Bay Lightning Set - 3 Stanley Cup Championship Rings - 2004, 2020, 2021",
+    "sku": "HS10",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets",
+      "League > NHL - National Hockey League > EC Atlantic > Tampa Bay Lightning",
+      "Teams > Tampa Bay Lightning (NHL)",
+      "Your City > Tampa Bay Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "404",
+    "name": "Philadelphia Flyers Set -   2 Stanley Cup Championship Rings - 1974, 1975",
+    "sku": "HS15",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets",
+      "League > NHL - National Hockey League > EC Metropolitan > Philadelphia Flyers",
+      "Teams > Philadelphia Flyers (NHL)",
+      "Your City > Philadelphia Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
     ],
     "isFeatured": false
   },
@@ -5621,6 +6540,33 @@ export const productsData = [
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7690.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7692.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7691.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "432",
+    "name": "New York Yankees Set - 27 World Series Rings -1923, 1927, 1928, 1932, 1936, 1937,1938, 1939, 1941, 1943, 1947, 1949, 1950, 1951, 1952, 1953, 1956, 1958, 1961,1962,1977, 1978,1996,1998, 1999, 2000, 2009 1970, 1983",
+    "sku": "BA01",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Babe Ruth (MLB)",
+      "All Time Greats > Derek Jeter (MLB)",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "All Time Greats > Roger Clemens (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
     ],
     "isFeatured": false
   },
@@ -6499,6 +7445,266 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "485",
+    "name": "Atlanta Braves (Boston) Set - 4 World Series Rings - 1914, 1957, 1995, 2021",
+    "sku": "BA10",
+    "price": 115,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > MLB - Major League Baseball > NL East Division > Atlanta Braves",
+      "Teams > Atlanta Braves (MLB)",
+      "Your City > Atlanta Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "486",
+    "name": "Detroit Tigers Set - 4 World Series Rings - 1935, 1945, 1968, 1984",
+    "sku": "BA09",
+    "price": 115,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Detroit Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Detroit Tigers",
+      "Teams > Detroit Tigers (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "487",
+    "name": "Oakland A's (Philadelphia) Set - 9 World Series Rings - 1910, 1911, 1913, 1929, 1930, 1972, 1973, 1974, 1989",
+    "sku": "BA05",
+    "price": 275,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "All Time Greats > Rickey Henderson (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "488",
+    "name": "Boston Red Sox Set - 9 World Series Rings - 1903, 1912, 1915, 1916, 1918, 2004, 2007, 2013, 2018",
+    "sku": "BA04",
+    "price": 275,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Babe Ruth (MLB)",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "All Time Greats > Cy Young (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "All Time Greats > Pedro Martinez (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "489",
+    "name": "Los Angeles Dodgers (Brooklyn) Set - 9 World Series Rings - 1955, 1959, 1963, 1965, 1981, 1988, 2020, 2024, 2025",
+    "sku": "BA03",
+    "price": 275,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Brooklyn Pro Teams",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "490",
+    "name": "Cleveland Indians Set - 2 World Series Rings - 1920, 1948",
+    "sku": "BA14",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > MLB - Major League Baseball > AL Central Division > Cleveland Guardians",
+      "Teams > Cleveland Indians (MLB)",
+      "Your City > Cleveland Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "491",
+    "name": "San Fransisco Giants Set - 8 World Series Rings - 1905, 1921, 1922, 1933, 1954, 2010, 2012, 2014",
+    "sku": "BA06",
+    "price": 240,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Willie Mays (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "492",
+    "name": "Pittsburgh Pirates Set - 5 World Series Rings - 1909, 1925, 1960, 1971, 1979",
+    "sku": "BA08",
+    "price": 130,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Honus Wagner (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "League > MLB - Major League Baseball > NL Central Division > Pittsburgh Pirates",
+      "Teams > Pittsburgh Pirates (MLB)",
+      "Your City > Pittsburgh Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "493",
+    "name": "Chicago White Sox Set - 3 World Series Rings - 1906, 1917, 2005",
+    "sku": "BA12",
+    "price": 90,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Chicago Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Chicago White Sox",
+      "Teams > Chicago White Sox (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "494",
+    "name": "Chicago Cubs Set - 3 World Series Rings - 1907, 1908, 2016 - The End of the CURSE OF THE BILLYGOAT!!!",
+    "sku": "BA13",
+    "price": 90,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > MLB - Major League Baseball > NL Central Division > Chicago Cubs",
+      "Teams > Chicago Cubs (MLB)",
+      "Your City > Chicago Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "All Time Greats > Steve Bartman (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "495",
+    "name": "Cincinnati Reds Set - 5 World Series Rings - 1919, 1940, 1975, 1976, 1990",
+    "sku": "BA07",
+    "price": 130,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Cincinnati Pro Teams",
+      "League > MLB - Major League Baseball > NL Central Division > Cincinnati Reds",
+      "Teams > Cincinnati Reds (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "496",
+    "name": "St Loius Cardinals Set - 11 World Series Rings - 1926, 1931, 1934, 1942, 1944, 1946, 1964, 1967, 1982, 2006, 2011",
+    "sku": "BA02",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "497",
     "name": "NBA Finals Series Championship Ring 1964 - Boston Celtics - April 1964",
     "sku": "NF064",
@@ -6837,6 +8043,79 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "514",
+    "name": "Los Angeles Lakers Set - 17 NBA Finals Championship Rings - 1949, 1950, 1952, 1953, 1954, 1972, 1980, 1982, 1985, 1987, 1988, 2000, 2001, 2002, 2009, 2010, 2020",
+    "sku": "BS02",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Kareem Abdul-Jabbar (NBA)",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "All Time Greats > Lebron James (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Magic Johnson (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "All Time Greats > Shaq O'Neal (NBA)",
+      "All Time Greats > Wilt Chamberlain (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "515",
+    "name": "Boston Celtics Set - 18 NBA Finals Championship Rings - 1957, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1968, 1969, 1974, 1976, 1981, 1984, 1986, 2008, 2024",
+    "sku": "BS01",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "All Time Greats > Larry Bird (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "516",
+    "name": "Golden State Warrior Set - 6 NBA Finals Championship Rings - 1956, 1975, 2015, 2017, 2018, 2022",
+    "sku": "BS03",
+    "price": 165,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "All Time Greats > Kevin Durant (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steph Curry (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "518",
     "name": "Super Bowl 38 (XXXVIII) Championship Ring - New England Patriots - February 1, 2004 *TOM BRADY RING 2*",
     "sku": "SB38",
@@ -6855,6 +8134,906 @@ export const productsData = [
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7837.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7838.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7839.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "519",
+    "name": "1980 - Your Year Gift Box - Pittsburgh Steelers, Los Angeles Lakers, Philadelphia Phillies & New York Islanders",
+    "sku": "YY080",
+    "price": 120,
+    "description": "The year that was 1980.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB - Philadelphia Phillies\r\\n\r\\nNHL - New York Islanders",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "520",
+    "name": "1981 - Your Year Gift Box - Oakland Raiders, Boston Celtics, Los Angeles Dodgers, NewY ork Islanders",
+    "sku": "YY081",
+    "price": 120,
+    "description": "The year that was 1981\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Oakland Raiders\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - New York Islanders",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "521",
+    "name": "1982 - Your Year Gift Box - San Fransisci 49ers, Los Angeles Lakers, St Louis Cardinals, New York Islanders",
+    "sku": "YY082",
+    "price": 120,
+    "description": "The year that was 1982.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -San Fransisco 49ers\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB - St Louis Cardinals\r\\n\r\\nNHL - New York Islanders",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "525",
+    "name": "1983 - Your Year Gift Box - Washington Redskins, Philadelphia 76ers, Baltimore Orioles, New York Islanders",
+    "sku": "YY083",
+    "price": 120,
+    "description": "The year that was 1983.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Washington Redskins\r\\n\r\\nNBA - Philadelphia 76ers\r\\n\r\\nMLB - Baltimore Orioles\r\\n\r\\nNHL - New York Islanders\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "528",
+    "name": "1984 -- Your Year Gift Box - Oakland Raiders, Boston Celtics, Detroit Tigers, Edmonton Oilers",
+    "sku": "YY084",
+    "price": 120,
+    "description": "The year that was 1984.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Los Angeles Raiders\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Detroit Tigers\r\\n\r\\nNHL - Edmonton Oilers\r\\n\r\\n&nbsp;\r\\n\r\\n1982 - Your Year Gift Box - Redskins, 76ers, Orioles, Islanders\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "529",
+    "name": "1985 - Your Year Gift Box - San Fransisco 49ers, Los Angeles Lakers, Kansas City Royals, Edmonton Oilers",
+    "sku": "YY085",
+    "price": 120,
+    "description": "The year that was 1985.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - San Fransisco 49ers\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB - Kansas City Royals\r\\n\r\\nNHL - Edmonton Oilers\r\\n\r\\n1982 - Your Year Gift Box - Redskins, 76ers, Orioles, Islanders\r\\n\r\\n&nbsp;\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "531",
+    "name": "1986 - Your Year Gift Box - Chicago Bears, Boston Celtics, New York Mets,Montreal Canadiens",
+    "sku": "YY086",
+    "price": 120,
+    "description": "The year that was 1986.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Chicago Bears\r\\n\r\\nNBA -Boston Celtics\r\\n\r\\nMLB - New York Mets\r\\n\r\\nNHL - Montreal Canadiens",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "532",
+    "name": "1987 - Your Year Gift Box - New York Giants, Los Angeles Lakers, Minnesota Twins, Edmonton Oilers",
+    "sku": "YY087",
+    "price": 120,
+    "description": "The year that was 1987.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New York Giants\r\\n\r\\nNBA -Los Angeles Lakers\r\\n\r\\nMLB - Minnesota Twins\r\\n\r\\nNHL - Edmonton Oilers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "537",
+    "name": "1988 - Your Year Gift Box - Washington Redskins, os Angelesc Lakers, Los Angeles Dodgers, Edmonton ilers",
+    "sku": "YY088",
+    "price": 20,
+    "description": "The year that was 1988.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Washington Redskins\r\\n\r\\nNBA -Los Angeles Lakers\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - Edmonton Oilers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "538",
+    "name": "1989 - Your Year Gift Box - San Fransisco 49ers, Detroit Pistons, Oakland A's, Calgary Flames",
+    "sku": "YY089",
+    "price": 120,
+    "description": "The year that was 1989.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - San Fransisco 49ers ( JOE Montana Ring 3)\r\\n\r\\nNBA -Detriot Pistons\r\\n\r\\nMLB - Oakland A's (Athletics)\r\\n\r\\nNHL - Calgary Flames\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "540",
+    "name": "1990 - Your Year Gift Box - San Fransisco 49ers, Detroit Pistons, Cincinnati Reds, Edmonton Oilers",
+    "sku": "YY090",
+    "price": 120,
+    "description": "The year that was 1990.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - San Fransisco 49ers ( JOE Montana Ring 4)\r\\n\r\\nNBA -Detriot Pistons\r\\n\r\\nMLB - Cincinnatti Reds\r\\n\r\\nNHL - Edmonton Oilers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "541",
+    "name": "1991 - Your Year Gift Box - New York Giants, Chicago Bulls, Minnesota Twins, Pittsburgh Penguins",
+    "sku": "YY091",
+    "price": 120,
+    "description": "The year that was 1991.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New York Giants\r\\n\r\\nNBA -Chicago Bulls - JORDAN Ring 1\r\\n\r\\nMLB - Minnesota Twins\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "542",
+    "name": "1992 - Your Year Gift Box - Washington Redskins, Chicago Bulls, Toronto blue Jays, Pittsburgh Penguins",
+    "sku": "YY092",
+    "price": 120,
+    "description": "The year that was 1992.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Washington Redskins\r\\n\r\\nNBA -Chicago Bulls - JORDAN Ring 2\r\\n\r\\nMLB - Toronto Blue Jays\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "543",
+    "name": "1993 - Your Year Gift Box - Dallas Cowboys, Chicago Bulls, Toronto blue Jays, Montreal Canadiens",
+    "sku": "YY093",
+    "price": 120,
+    "description": "The year that was 1993.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Dallas Cowboy\r\\n\r\\nNBA -Chicago Bulls - JORDAN Ring 3\r\\n\r\\nMLB - Toronto Blue Jays\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n1992 - Your Year Gift Box - Washington Redskins, Chicago Bulls, Toronto blue Jays, Pittsburgh Penguins",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "547",
+    "name": "1994 - Your Year Gift Box - Dallas Cowboys, Houston Rockets, MLB season Cancelled, New York Rangers",
+    "sku": "YY094",
+    "price": 120,
+    "description": "The year that was 1994.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Dallas Cowboy\r\\n\r\\nNBA - Houston Rockets\r\\n\r\\nMLB - Season Cancelled due to player strikes\r\\n\r\\nNHL - New York Rangers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "548",
+    "name": "1995 - Your Year Gift Box - San Fransisco 49ers, Houston Rockets, Atlanta Braves, New Jersey Devils",
+    "sku": "YY095",
+    "price": 120,
+    "description": "The year that was 1995.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - San Fransisco 49ers\r\\n\r\\nNBA - Houston Rockets\r\\n\r\\nMLB - Atlanta Braves\r\\n\r\\nNHL - New Jersey Devils\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "550",
+    "name": "1996 - Your Year Gift Box - Dallas Cowboys, Chicago Bulls, New York Yankees, Colorado Avalanche",
+    "sku": "YY096",
+    "price": 120,
+    "description": "The year that was 1996.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Dallas CowboysNBA -Chicago Bulls - JORDAN Ring 4\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - Colorado Avalanche\r\\n\r\\n1996 - Your Year Gift Box - Dallas Cowboys, Chicago Bulls, New York Yankees, Colorado Avalanche",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "552",
+    "name": "1997 - Your Year Gift Box - Green Bay Packers, Chicago Bulls, Florida Marlins, Detroit Red Wings",
+    "sku": "YY097",
+    "price": 120,
+    "description": "The year that was 1997.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Green Bay Packers\r\\n\r\\nNBA -Chicago Bulls - JORDAN Ring 5\r\\n\r\\nMLB - Florida Marlins\r\\n\r\\nNHL - Detroit Red Wings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "555",
+    "name": "1998 - Your Year Gift Box - Denver Broncos, Chicago Bulls, New York Yankees, Detroit Red Wings",
+    "sku": "YY098",
+    "price": 120,
+    "description": "The year that was 1998.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Denver Broncos\r\\n\r\\nNBA -Chicago Bulls - JORDAN Ring 6\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - Detroit Red Wings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "556",
+    "name": "1999 - Your Year Gift Box - Denver Broncos, San Antonio Spurss, New York Yankees, Dallas Stars",
+    "sku": "YY099",
+    "price": 120,
+    "description": "The year that was 1999.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Denver Broncos\r\\n\r\\nNBA -San Antonio Spurs\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - Dallas Stars\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "557",
+    "name": "2000 - Your Year Gift Box - St Louis Rams, Los Angeles Lakers, New York Yankees, New Jersey Devils",
+    "sku": "YY100",
+    "price": 120,
+    "description": "The year that was 2000.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - St Louis Ram\r\\n\r\\nNBA -Los Angeles Lakers\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - New Jersey Devils\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "559",
+    "name": "2001 - Your Year Gift Box - Baltimore Ravens, Los Angeles Lakers, Arizona Diamondbacks, Colorado Avalanche",
+    "sku": "YY101",
+    "price": 120,
+    "description": "The year that was 2001.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Baltimore Ravens\r\\n\r\\nNBA -Los Angeles Lakers\r\\n\r\\nMLB - Arizona Diamondbacks\r\\n\r\\nNHL - Colorado Avalanche\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "560",
+    "name": "2002- Your Year Gift Box - New England Patriots, Los Angeles Lakers, Anaheim Angels, Detroit Red Wings",
+    "sku": "YY102",
+    "price": 120,
+    "description": "The year that was 2002.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY ring 1\r\\n\r\\nNBA -Los Angeles Lakers\r\\n\r\\nMLB - Anaheim Angels\r\\n\r\\nNHL - Detroit Red Wings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "561",
+    "name": "2003- Your Year Gift Box - Tampa Bay Buccaneers, San Antonio Spurs, Florida Marlins, New Jersey Devils",
+    "sku": "YY103",
+    "price": 120,
+    "description": "The year that was 2003.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Tampa Bay Buccaneers\r\\n\r\\nNBA -San Antonio Spurs\r\\n\r\\nMLB - Florida Marlins\r\\n\r\\nNHL - New Jersey Devils\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "562",
+    "name": "2004- Your Year Gift Box - New England Patriots, Detroit Pistons, Boston Red Sox, Tampa Bay Lightning",
+    "sku": "YY104",
+    "price": 120,
+    "description": "The year that was 2004.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 2\r\\n\r\\nNBA -Detroit Pistons\r\\n\r\\nMLB - Boston Red Sox\r\\n\r\\nNHL - Tampa Bay Lightning\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "563",
+    "name": "2005 - Your Year Gift Box - New England Patriots, San Antonio Spurs, Chicago White Sox",
+    "sku": "YY105",
+    "price": 120,
+    "description": "The year that was 2004.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 3\r\\n\r\\nNBA -San Antonio Spurs\r\\n\r\\nMLB - Chicago White Sox\r\\n\r\\nNHL - No NHL Season due to player strikes.\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "565",
+    "name": "2006- Your Year Gift Box - Pittsburgh Steelers, Miami Heat, St Louis Cardinals, Carolina Hurricanes",
+    "sku": "YY106",
+    "price": 120,
+    "description": "The year that was 2006.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA -Miami Heat\r\\n\r\\nMLB - St Louis Cardinals\r\\n\r\\nNHL - Carolina Hurricanes\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "566",
+    "name": "2007 - Your Year Gift Box - Indianapolis Colts, San Antonio Spurs, Boston Red Sox, Anaheim Ducks",
+    "sku": "YY107",
+    "price": 120,
+    "description": "The year that was 2007.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Indianapolis Colts PEYTON MANNING Ring 1\r\\n\r\\nNBA - San Antonio Spur\r\\n\r\\nMLB -Boston Red Sox\r\\n\r\\nNHL - Anaheim Ducks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "567",
+    "name": "2008 - Your Year Gift Box - New York Giants, Boston Celtics, Philadelphia Phillies, Detroit Red Wings",
+    "sku": "YY108",
+    "price": 120,
+    "description": "The year that was 2008.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -New York Giants\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB -Philadelphia Phillies\r\\n\r\\nNHL - Detroit Red Wings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "568",
+    "name": "2009 - Your Year Gift Box - Pittsburgh Steelers, Los Angeles Lakers, New York Yankees, Pittsburgh Penguins",
+    "sku": "YY109",
+    "price": 120,
+    "description": "The year that was 2009.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Pittsburgh Steelers\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB -New York Yankees\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "569",
+    "name": "2010 - Your Year Gift Box - New Orleans Saints, Los Angeles Lakers, San Fransisco Giants, Chicago Blackhawks",
+    "sku": "YY110",
+    "price": 120,
+    "description": "The year that was 2010.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -New Orleans Saints\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB -San Fransisco Giants\r\\n\r\\nNHL - Chicago Blackhawks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "570",
+    "name": "2011 - Your Year Gift Box - Green Bay Packers, Dallas Mavericks, St Louis Cardinals, Boston Bruins",
+    "sku": "YY111",
+    "price": 120,
+    "description": "The year that was 2011.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Green Bay Packers\r\\n\r\\nNBA - Dallas Mavericks\r\\n\r\\nMLB - St Louis Cardinals\r\\n\r\\nNHL - Boston Bruins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "572",
+    "name": "2012 - Your Year Gift Box - New York Giants, Miami Heat, San Fransisco Giants, Los Angeles Kings",
+    "sku": "YY112",
+    "price": 120,
+    "description": "The year that was 2012.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -New York Giants\r\\n\r\\nNBA - Miami Heat\r\\n\r\\nMLB - San Fransisco Giants\r\\n\r\\nNHL - Los Angeles Kings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "573",
+    "name": "2013 - Your Year Gift Box - Baltimore Ravens, Miami Heat, Boston Red Sox, Chicago Blackhawks",
+    "sku": "YY113",
+    "price": 120,
+    "description": "The year that was 2013.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Baltimore Ravens\r\\n\r\\nNBA - Miami Heat\r\\n\r\\nMLB - Boston Red Sox\r\\n\r\\nNHL - Chicago Blackhawks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "574",
+    "name": "2014 - Your Year Gift Box - Seattle Seahawks, San Antonio Spurs, San Fransisco Giant, Los Angeles Kings",
+    "sku": "YY114",
+    "price": 120,
+    "description": "The year that was 2014.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Seattle Seahawks\r\\n\r\\nNBA - San Antonio Spurs\r\\n\r\\nMLB - San Fransisco Giants\r\\n\r\\nNHL - Los Angeles Kings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "575",
+    "name": "2015 - Your Year Gift Box - New England Patriots, Golden State Warriors, Kansas City Royals, Chicago Blackhawks",
+    "sku": "YY115",
+    "price": 120,
+    "description": "The year that was 2015.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 4\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Kansas City Royals\r\\n\r\\nNHL - Chicago Blackhawks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "576",
+    "name": "2016 - Your Year Gift Box -Denver Broncos, Cleveland Cavaliers, Chicago Cubs, Pittsburgh Penguins",
+    "sku": "YY116",
+    "price": 120,
+    "description": "The year that was 2016.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Denver Broncos PEYTON MANNING Ring 2\r\\n\r\\nNBA - Cleveland Cavaliers\r\\n\r\\nMLB - Chicago Cubs\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "578",
+    "name": "2017 - Your Year Gift Box -New England Patriots, Golden State Warriors, Houston Astros, Pittsburgh Penguins",
+    "sku": "YY117",
+    "price": 130,
+    "description": "The year that was 2017.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 5\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Houston Astros\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "579",
+    "name": "2018 - Your Year Gift Box - Philadelphia Eagles, Golden State Warriors, Boston Red Sox, Washington Capitals",
+    "sku": "YY118",
+    "price": 130,
+    "description": "The year that was 2018.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Philadelphia Eagles\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Boston Red Sox\r\\n\r\\nNHL - Washington Capitals\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "580",
+    "name": "2019 - Your Year Gift Box - New England Patriots, Toronto Raptors, Washington Nationals, St Louis Blues",
+    "sku": "YY119",
+    "price": 130,
+    "description": "The year that was 2019.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 6\r\\n\r\\nNBA - Toronto Raptors\r\\n\r\\nMLB - Washington Nationals\r\\n\r\\nNHL - St Louis Blues\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "581",
+    "name": "2020 - Your Year Gift Box - Kansas City Chiefs, Los Angeles Lakers, Los Angeles Dodgers, Tampa Bay Lightning",
+    "sku": "YY120",
+    "price": 140,
+    "description": "The year that was 2020.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs PATRICK MAHOMES Ring 1\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - Tampa Bay Lightning\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "582",
+    "name": "2021 - Your Year Gift Box - Tampa Bay Buccaneers, Milwaukee Bucks, Atlanta Braves, Tampa Bay Lightning",
+    "sku": "YY121",
+    "price": 140,
+    "description": "The year that was 2021.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Tampa Bay Buccaneers TOM BRADY Ring 7\r\\n\r\\nNBA - Milwaukee Bucks\r\\n\r\\nMLB - Atlanta Braves\r\\n\r\\nNHL - Tampa Bay Lightning\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "583",
+    "name": "2022 - Your Year Gift Box - Los Angeles Rams, Golden State Warriors, Houston Astros, Colorado Avalanche",
+    "sku": "YY122",
+    "price": 140,
+    "description": "The year that was 2022.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Los Angeles Rams\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Houston Astros\r\\n\r\\nNHL - Colorado Avalanche\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "584",
+    "name": "2023 - Your Year Gift Box - Kansas City Chiefs, Denver Nuggets, Texas Rangers, Las Vegas Golden Knights",
+    "sku": "YY123",
+    "price": 160,
+    "description": "The year that was 2023.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs PATRICK MAHOMES Ring 2\r\\n\r\\nNBA - Denver Nuggets\r\\n\r\\nMLB - Texas Rangers\r\\n\r\\nNHL - Las Vegas Golden Knights\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "585",
+    "name": "2024 - Your Year Gift Box - Kansas City Chiefs, Boston Celtics, Los Angeles Dodgers, Florida Panthers",
+    "sku": "YY124",
+    "price": 150,
+    "description": "The year that was 2024.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs PATRICK MAHOMES Ring 3\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - Florida Panthers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "586",
+    "name": "2025 - Your Year Gift Box - Philadelphia Eagles, Oklahoma City Thunder, Los Angeles Dodgers, Florida Panthers",
+    "sku": "YY125",
+    "price": 150,
+    "description": "The year that was 2025.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Philadelphia Eagles\r\\n\r\\nNBA - Oklahoma City Thunder\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - Florida Panthers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "587",
+    "name": "2026 - Your Year Gift Box - Seattle Seahawks, TBA, TBA, TBA",
+    "sku": "YY126",
+    "price": 0,
+    "description": "The year that was 2026.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Seattle Seahawks\r\\n\r\\nNBA - TBA\r\\n\r\\nMLB - TBA\r\\n\r\\nNHL - TBA\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "591",
+    "name": "1979 - Your Year Gift Box - Pittsburgh Steelers, Seattle Supersonics, Pittsburgh Pirates, Montreal Canadiens",
+    "sku": "YY079",
+    "price": 120,
+    "description": "The year that was 1979.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA - Seattle Supersonics\r\\n\r\\nMLB - Pittsburgh Pirates\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "613",
+    "name": "1978 - Your Year Gift Box - Dallas Cowboys, Washington Bullets, New York Yankees, Montreal Canadiens",
+    "sku": "YY078",
+    "price": 120,
+    "description": "The year that was 1978.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Dallas Cowboys\r\\n\r\\nNBA - Washington Bullets\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "614",
+    "name": "1977 - Your Year Gift Box - Oakland Raiders, Portland Trail Blazers, New York Yankees, Montreal Canadiens",
+    "sku": "YY077",
+    "price": 120,
+    "description": "The year that was 1977.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Oakland Raiders\r\\n\r\\nNBA - Portland Trail Blazers\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "615",
+    "name": "1976 - Your Year Gift Box - Pittsburgh Steelers, Boston Celtics, Cincinnati Reds, Montreal Canadiens",
+    "sku": "YY076",
+    "price": 0,
+    "description": "The year that was 1976.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Cincinnati Reds\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "616",
+    "name": "1975 - Your Year Gift Box - Pittsburgh Steelers, Golden State Warriors, Cincinnati Reds, Philadelphia Flyers",
+    "sku": "YY075",
+    "price": 120,
+    "description": "The year that was 1975.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Cincinnati Reds\r\\n\r\\nNHL - Philadelphia Flyers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "617",
+    "name": "1974 - Your Year Gift Box - Miami Dolphins, Boston Celtics, Oakland A's, Philadelphia Flyers",
+    "sku": "YY074",
+    "price": 120,
+    "description": "The year that was 1974.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Miami Dolphins\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Oakland A's\r\\n\r\\nNHL - Philadelphia Flyers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "618",
+    "name": "1973 - Your Year Gift Box - Miami Dolphins, New York Knicks, Oakland A's, Montreal Canadiens",
+    "sku": "YY073",
+    "price": 120,
+    "description": "The year that was 1973.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Miami Dolphins\r\\n\r\\nNBA - New York Knicks\r\\n\r\\nMLB - Oakland A's\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "619",
+    "name": "1972 - Your Year Gift Box - Dallas Cowboys, Los Angeles Lakers, Oakland A's, Boston Bruins",
+    "sku": "YY072",
+    "price": 120,
+    "description": "The year that was 1972.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Dallas Cowboys\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB - Oakland A's\r\\n\r\\nNHL - Boston Bruins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "621",
+    "name": "1971 - Your Year Gift Box - Baltimore Colts, Milwaukee Bucks, Pittsburgh Pirates, Montreal Canadiens",
+    "sku": "YY071",
+    "price": 120,
+    "description": "The year that was 1971.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Baltimore Colts\r\\n\r\\nNBA - Milwaukee Bucks\r\\n\r\\nMLB - Pittsburgh Pirates\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "623",
+    "name": "1970 - Your Year Gift Box - Kansas City Chiefs, New York Knicks, Baltimore Orioles, Boston Bruins",
+    "sku": "YY070",
+    "price": 120,
+    "description": "The year that was 1970.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs\r\\n\r\\nNBA - New York Knicks\r\\n\r\\nMLB - Baltimore Orioles\r\\n\r\\nNHL - Boston Bruins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "624",
+    "name": "1969 - Your Year Gift Box - New York Jets, Boston Celtics, New York Mets, Montreal Canadiens",
+    "sku": "YY069",
+    "price": 120,
+    "description": "The year that was 1969.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New York Jets\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - New York Mets\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "626",
+    "name": "1968 - Your Year Gift Box - Green Bay Packers, Boston Celtics, Detroit Tigers, Montreal Canadiens",
+    "sku": "YY068",
+    "price": 120,
+    "description": "The year that was 1968.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Green Bay Packers\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Detriot Tigers\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "627",
+    "name": "1967 - Your Year Gift Box - Green Bay Packers, Philadelphia 76ers, St Louis Cardinals, Toronto Maple Leafs12",
+    "sku": "YY067",
+    "price": 120,
+    "description": "The year that was 1967.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Green Bay Packers\r\\n\r\\nNBA - Philadelphia 76ers\r\\n\r\\nMLB - St Louis Cardinals\r\\n\r\\nNHL - Toronto Maple Leafs\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
     ],
     "isFeatured": false
   },
@@ -7063,6 +9242,86 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "643",
+    "name": "1955 Stanley Cup Championship Ring - Detroit Red Wings - April 1955",
+    "sku": "SC055",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1955",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "644",
+    "name": "1954 Stanley Cup Championship Ring - Detroit Red Wings - April 1954",
+    "sku": "SC054",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1954",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "646",
+    "name": "1953 Stanley Cup Championship Ring - Montreal Canadiens - April 1953",
+    "sku": "SC053",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1953",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "647",
+    "name": "1952 Stanley Cup Championship Ring - Detroit Red Wings - April 1952",
+    "sku": "SC052",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1952",
+      "Your City > Detroit Pro Teams",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "649",
     "name": "1951 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1951",
     "sku": "SC051",
@@ -7081,6 +9340,26 @@ export const productsData = [
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8268.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8269.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8267.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "652",
+    "name": "1950 Stanley Cup Championship Ring - Detroit Red Wings - April 1950",
+    "sku": "SC050",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1950",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
     ],
     "isFeatured": false
   },
@@ -7191,6 +9470,26 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "658",
+    "name": "1944 Stanley Cup Championship Ring - Montreal Canadiens - April 1944",
+    "sku": "SC044",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1944",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "659",
     "name": "1943 Stanley Cup Championship Ring - Detroit Red Wings - April 1943",
     "sku": "SC043",
@@ -7233,6 +9532,25 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "661",
+    "name": "1941 Stanley Cup Championship Ring - Boston Bruins - April 1941",
+    "sku": "SC041",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1941",
+      "League > NHL - National Hockey League > EC Atlantic > Boston Bruins",
+      "Teams > Boston Bruins (NHL)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "662",
     "name": "1940 Stanley Cup Championship Ring - New York Rangers - April 1940",
     "sku": "SC040",
@@ -7250,6 +9568,25 @@ export const productsData = [
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7533.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7534.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7535.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "663",
+    "name": "1939 Stanley Cup Championship Ring - Boston Bruins - April 1939",
+    "sku": "SC039",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1939",
+      "League > NHL - National Hockey League > EC Atlantic > Boston Bruins",
+      "Teams > Boston Bruins (NHL)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
     ],
     "isFeatured": false
   },
@@ -7401,6 +9738,25 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "672",
+    "name": "1931 Stanley Cup Championship Ring - Montreal Canadiens - April 1931",
+    "sku": "SC031",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1931",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "673",
     "name": "1930 Stanley Cup Championship Ring - Montreal Canadiens - April 1930",
     "sku": "SC030",
@@ -7482,6 +9838,214 @@ export const productsData = [
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7566.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7567.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7568.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "678",
+    "name": "NFL Super Bowl Champion Ring Complete Set - Every Team, Every Year - 59 Total",
+    "sku": "ALLSB",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "I want Them All"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "679",
+    "name": "NBA Finals Championship Ring Complete Set - Every Team, Every Year - 77 Total",
+    "sku": "ALLNF",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "I want Them All"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "680",
+    "name": "MLB World Series Championship Ring Complete Set - Every Team, Every Year - 121 Total",
+    "sku": "ALLWS",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "I want Them All"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "681",
+    "name": "NHL Stanley Cup Championship Ring Complete Set - Every Team, Every Year - 97 Total",
+    "sku": "ALLSC",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "I want Them All"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "682",
+    "name": "NFL, NBA, MLB, NHL - Every Championship Ring Complete Set - Every Team, Every Year - 354 Rings Total",
+    "sku": "ALLBOMB",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "I want Them All"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "683",
+    "name": "Detroit Red Wings Set - 11 Stanley Cup Championship Rings - 1936, 1937, 1943, 1950, 1952, 1954, 1955, 1997, 1998, 2002, 2008",
+    "sku": "HS03",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "684",
+    "name": "Boston Bruins Set - 6 Stanley Cup Championship Rings - 1929, 1939, 1941, 1970, 1972, 2011",
+    "sku": "HS05",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Bobby Orr (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Boston Bruins",
+      "Teams > Boston Bruins (NHL)",
+      "Your City > Boston Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "685",
+    "name": "Chicago Blackhawks Set - 6 Stanley Cup Championship Rings - 1934, 1938, 1961, 2010, 2013, 2015",
+    "sku": "HS04",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Jonathan Toews (NHL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "686",
+    "name": "New York Rangers Set - 4 Stanley Cup Championship Rings - 1928, 1933, 1940, 1994",
+    "sku": "HS09",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Mark Messier (NHL)",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Rangers",
+      "Teams > New York Rangers (NHL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "687",
+    "name": "Toronto Maple Leafs Set - 11 Stanley Cup Championship Rings - 1932, 1942, 1945, 1947, 1948, 1949, 1951, 1962, 1963, 1964, 1967",
+    "sku": "HS02",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "688",
+    "name": "Montreal Canadiens Set - 23 Stanley Cup Championship Rings - 1930, 1931, 1935, 1944, 1946, 1953, 1956, 1957, 1958, 1959, 1960, 1965, 1966, 1968, 1969, 1971, 1973, 1976, 1977, 1978, 1979, 1986, 1993",
+    "sku": "HS01",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
     ],
     "isFeatured": false
   },
@@ -7730,6 +10294,477 @@ export const productsData = [
     "isFeatured": false
   },
   {
+    "id": "2670",
+    "name": "Shaq O'Neal Set - 4 NBA Finals Championship Rings - LA Lakers 2000, 2001, 2002 & Miami Heat 2006",
+    "sku": "PS11",
+    "price": 115,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "League > NBA - National Basketball Association > EC Southeast > Miami Heat",
+      "Teams > Miami Heat (NBA)",
+      "Your City > Miami Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "All Time Greats > Shaq O'Neal (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2671",
+    "name": "Peyton Manning Set - 2 Superbowl Championship Rings - Indianapolis Colts SB41 & Denver Broncos SB50",
+    "sku": "PS13",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > AFC West > Denver Broncos",
+      "Teams > Denver Broncos (NFL)",
+      "Your City > Denver Pro Teams",
+      "League > NFL - National Football League > AFC South > Indianapolis Colts",
+      "Teams > Indianapolis Colts (NFL)",
+      "Your City > Indianapolis Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Peyton Manning (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2672",
+    "name": "Lebron James Set - 4 NBA Finals Championship Rings - Miami Heat 2012, 2013, Cleveland Cavaliers 2016 & LA Lakers 2020",
+    "sku": "PS22",
+    "price": 125,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > EC Central > Cleveland Cavaliers",
+      "Teams > Cleveland Cavaliers (NBA)",
+      "Your City > Cleveland Pro Teams",
+      "All Time Greats > Lebron James (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2673",
+    "name": "Babe Ruth Set - 7 World Series Championship Rings - Boston Red Sox 1915, 1916, 1918, New York Yankees 1923, 1927, 1928 & 1932",
+    "sku": "PS07",
+    "price": 190,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Babe Ruth (MLB)",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2674",
+    "name": "Kobe Bryant Set – 5 NBA Finals Championship Rings – LA Lakers 2000, 2001, 2002, 2009 & 2010 + Extra Retirement Lakers Ring",
+    "sku": "PS15",
+    "price": 180,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2675",
+    "name": "Joe Montana Set – 4 Superbowl Championship Rings – San Fransisco 49ers SB16, SB19, SB23 & SB24",
+    "sku": "PS05",
+    "price": 120,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Joe Montana (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "League > NFL - National Football League > NFC West > San Fransisco 49ers",
+      "Teams > San Fransisco 49ers (NFL)",
+      "Your City > San Fransisco Pro Teams"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2676",
+    "name": "John Elway Set – 2 Superbowl Championship Rings – Denver Broncos SB32 & SB33",
+    "sku": "PS16",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > AFC West > Denver Broncos",
+      "Teams > Denver Broncos (NFL)",
+      "Your City > Denver Pro Teams",
+      "All Time Greats > John Elway (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2677",
+    "name": "Terry Bradshaw Set – 4 Superbowl Championship Rings – Pittsburgh Steelers SB9, SB10, SB13 & SB14",
+    "sku": "PS14",
+    "price": 120,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "All Time Greats > Terry Bradshaw (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2678",
+    "name": "Troy Aikman Set – 3 Superbowl Championship Rings – Dallas Cowboys SB27, SB28 & SB30",
+    "sku": "PS20",
+    "price": 95,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > NFC East > Dallas Cowboys",
+      "Teams > Dallas Cowboys (NFL)",
+      "Your City > Dallas Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Troy Aikman (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2679",
+    "name": "Patrick Mahomes Set – 3 Superbowl Championship Rings – Kansas City Chiefs SB54, SB57 & SB58",
+    "sku": "PS04",
+    "price": 95,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NFL - National Football League > AFC West > Kansas City Chiefs",
+      "Teams > Kansas City Chiefs (NFL)",
+      "Your City > Kansas City Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "All Time Greats > Patrick Mahomes (NFL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2680",
+    "name": "Bart Starr Set – 2 Superbowl Championship Rings – Green Bay Packers SB1 & SB2",
+    "sku": "PS03",
+    "price": 65,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Bart Starr (NFL)",
+      "League > NFL - National Football League > NFC North > Green Bay Packers",
+      "Teams > Green Bay Packers (NFL)",
+      "Your City > Green Bay Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2681",
+    "name": "Tim Duncan Set – 5 NBA Finals Championship Rings – San Antonio Spurs 1999, 2002, 2005, 2007 & 2014",
+    "sku": "PS08",
+    "price": 150,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2682",
+    "name": "Steph Curry Set – 4 NBA Finals Championship Rings – Golden State Warriors 2015, 2017, 2018 & 2022",
+    "sku": "PS06",
+    "price": 125,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steph Curry (NBA)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2683",
+    "name": "Magic Johnson Set – 5 NBA Finals Championship Rings – LA Lakers 1980, 1982, 1985, 1987 & 1988",
+    "sku": "PS19",
+    "price": 140,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Magic Johnson (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2684",
+    "name": "Wayne Gretzky Set – 4 Stanley Cup Championship Rings – Edmonton Oilers 1984, 1985, 1987 & 1988",
+    "sku": "PS02",
+    "price": 110,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NHL - National Hockey League > WC Pacific > Edmonton Oilers",
+      "Teams > Edmonton Oilers (NHL)",
+      "Your City > Edmonton Pro Teams",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets",
+      "All Time Greats > Wayne Gretzsky (NHL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2685",
+    "name": "Michael Jordan Set – 6 NBA Finals Championship Rings – Chicago Bulls 1991, 1992, 1993, 1996, 1997 & 1998",
+    "sku": "PS01",
+    "price": 165,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2686",
+    "name": "Larry Bird Set – 3 NBA Finals Championship Rings – Boston Celtics 1981, 1984 & 1986",
+    "sku": "PS10",
+    "price": 90,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "All Time Greats > Larry Bird (NBA)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NBA - NBA Finals Series Championship Rings Complete Team Sets"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2687",
+    "name": "Sidney Crosby Set – 3 Stanley Cup Championship Rings – Pittsburgh Penguins 2009, 2016 & 2017",
+    "sku": "PS18",
+    "price": 95,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NHL - Stanley Cup Championship Rings Complete Team Sets",
+      "League > NHL - National Hockey League > EC Metropolitan > Pittsburgh Penguins",
+      "Teams > Pittsburgh Penguins (NHL)",
+      "Your City > Pittsburgh Pro Teams",
+      "All Time Greats > Sidney Crosby (NHL)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2688",
+    "name": "Derek Jeter Set – 5 World Series Championship Rings – New York Yankees 1996, 1998, 1999, 2000 & 2009",
+    "sku": "PS21",
+    "price": 140,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Derek Jeter (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2689",
+    "name": "Mickey Mantle Set – 7 World Series Championship Rings – New York Yankees 1951, 1952, 1953, 1956, 1958, 1961 & 1962",
+    "sku": "PS09",
+    "price": 200,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2690",
+    "name": "Joe Dimaggio Set – 9 World Series Championship Rings – New York Yankees 1936, 1937, 1938, 1939, 1941, 1947, 1949, 1950 & 1951",
+    "sku": "PS17",
+    "price": 250,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > MLB – World Series Championship Rings Complete Team Sets",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
     "id": "2691",
     "name": "Kobe Bryant Hall of Fame Induction Ring – Special Release 2020",
     "sku": "HF02",
@@ -7868,6 +10903,19 @@ export const productsData = [
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8452.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8453.png",
       "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8454.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2709",
+    "name": "1976 - Your Year Gift Box - Pittsburgh Steelers, Boston Celtics, Cincinnati Reds, Montreal Canadiens",
+    "sku": "",
+    "price": 0,
+    "description": "",
+    "shortDescription": "",
+    "categories": [],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
     ],
     "isFeatured": false
   }

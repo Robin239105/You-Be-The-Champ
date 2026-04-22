@@ -30,10 +30,12 @@ const Cart = () => {
             <div className="lg:col-span-2 space-y-6">
               {items.map(item => (
                 <div key={item.id} className="bg-card border border-gold/10 p-6 flex flex-col sm:flex-row gap-6 hover:border-gold/30 transition-colors">
-                  <div className="w-32 h-32 bg-black border border-gold/10 flex items-center justify-center flex-shrink-0">
-                     <svg className="w-16 h-16 text-gold/20" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l2.4 7.4h7.6l-6.1 4.5 2.3 7.1-6.2-4.4-6.2 4.4 2.3-7.1-6.1-4.5h7.6z" />
-                      </svg>
+                  <div className="w-32 h-32 bg-black border border-gold/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    <img 
+                      src={item.images?.[0]} 
+                      alt={item.name} 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   <div className="flex-1 flex flex-col justify-between py-2">
@@ -61,7 +63,7 @@ const Cart = () => {
                           className="px-3 py-2 hover:text-gold transition-colors"
                         ><Plus size={14}/></button>
                       </div>
-                      <span className="text-xl font-mono font-bold text-gold">${(item.price * item.quantity).toFixed(2)}</span>
+                      <span className="text-xl font-mono font-bold text-gold">${(item.price * item.quantity).toFixed(2)} AUD</span>
                     </div>
                   </div>
                 </div>
@@ -80,7 +82,7 @@ const Cart = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between text-xs text-ivory/60 uppercase tracking-widest">
                     <span>Subtotal</span>
-                    <span className="font-mono text-ivory">${getTotal().toFixed(2)}</span>
+                    <span className="font-mono text-ivory">${getTotal().toFixed(2)} AUD</span>
                   </div>
                   <div className="flex justify-between text-xs text-ivory/60 uppercase tracking-widest">
                     <span>Shipping</span>
@@ -93,8 +95,8 @@ const Cart = () => {
                 </div>
 
                 <div className="pt-6 border-t border-gold/20 flex justify-between items-end">
-                  <span className="font-cinzel text-sm font-bold text-gold uppercase tracking-widest">Total</span>
-                  <span className="font-mono text-3xl font-bold text-gold">${getTotal().toFixed(2)}</span>
+                  <span className="font-cinzel text-sm font-bold text-gold uppercase tracking-widest">Total (AUD)</span>
+                  <span className="font-mono text-3xl font-bold text-gold">${getTotal().toFixed(2)} AUD</span>
                 </div>
 
                 <Link to="/checkout" className="block w-full pt-4">
