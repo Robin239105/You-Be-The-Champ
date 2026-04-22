@@ -1,0 +1,7874 @@
+export const productsData = [
+  {
+    "id": "85",
+    "name": "Super Bowl 01 (I) Championship Ring - Green Bay Packers - January 15, 1967 *BART STARR RING 1*",
+    "sku": "SB01",
+    "price": 35,
+    "description": "<p data-start=\"931\" data-end=\"1413\">This replica ring closely follows the original white gold globe design, featuring a single 1-carat-style diamond set at the center, symbolizing the first championship. Surrounding the face reads “WORLD CHAMPIONSHIP”, with “1966” engraved to reflect the season year. The sides include the Packers “G” logo and 35–10 score detailing, with a player name panel that varies by version. The minimalist single-diamond design highlights the historic first title.</p>\r\\n<p data-start=\"1415\" data-end=\"1575\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Starr), though player name and number may vary across versions.</p>",
+    "shortDescription": "<p data-start=\"156\" data-end=\"361\"><strong>League</strong>: National Football League (NFC North)<br data-start=\"200\" data-end=\"203\" /><strong>Game</strong> <strong>Stadium</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Los Angeles Memorial Coliseum</span></span> (Los Angeles, California)<br data-start=\"280\" data-end=\"283\" /><strong>MVP</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Bart Starr</span></span> #15 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"363\" data-end=\"929\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Green Bay Packers</span></span> won the first-ever Super Bowl (AFL–NFL World Championship) with a 35–10 victory over the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Kansas City Chiefs</span></span> on January 15, 1967. The ring reflects the 1966 season, with Bart Starr (#15) throwing 2 touchdowns to earn MVP. Under Vince Lombardi, Green Bay had already built a dominant NFL dynasty pre-merger, and this win cemented their legacy. Other commonly featured rings include players like <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Paul Hornung</span></span> (#5), a key offensive figure in earlier championship runs.</p>",
+    "categories": [
+      "Champions By Year > 1967",
+      "All Time Greats > Bart Starr (NFL)",
+      "League > NFL - National Football League > NFC North > Green Bay Packers",
+      "Teams > Green Bay Packers (NFL)",
+      "Your City > Green Bay Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7840.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7842.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7841.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "87",
+    "name": "Super Bowl 02 (II)  Championship Ring - Green Bay Packers - January 14, 1968 *BART STARR RING 2*",
+    "sku": "SB02",
+    "price": 35,
+    "description": "<p data-start=\"2368\" data-end=\"2867\">This replica ring mirrors the original yellow gold build, featuring a green tourmaline football-shaped face set with three diamonds (one larger center stone with two smaller) representing back-to-back titles. The top reads “WORLD CHAMPIONS”, with team branding surrounding the face. Side details include AFL–NFL references and championship motifs, with player name engravings varying by version. The multi-diamond layout visually marks the Packers’ consecutive dominance.</p>\r\\n<p data-start=\"2869\" data-end=\"3022\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Starr), though other player versions are widely produced.</p>",
+    "shortDescription": "<p data-start=\"1631\" data-end=\"1827\"><strong>League</strong>: National Football League (NFC North)<br data-start=\"1675\" data-end=\"1678\" /><strong>Game</strong> <strong>Stadium</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Orange Bowl</span></span> (Miami, Florida)<br data-start=\"1746\" data-end=\"1749\" /><strong>MVP</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Bart Starr</span></span> #15 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"1829\" data-end=\"2366\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Green Bay Packers</span></span> secured back-to-back championships in Super Bowl II, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Oakland Raiders</span></span> 33–14 on January 14, 1968. The ring reflects the 1967 season, with Bart Starr (#15) winning his second consecutive MVP, throwing 2 touchdowns in another dominant performance. This marked the peak of Lombardi’s dynasty before his departure, with players like <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Ray Nitschke</span></span> (#66) also commonly featured in replica rings due to defensive impact.</p>",
+    "categories": [
+      "Champions By Year > 1968",
+      "All Time Greats > Bart Starr (NFL)",
+      "League > NFL - National Football League > NFC North > Green Bay Packers",
+      "Teams > Green Bay Packers (NFL)",
+      "Your City > Green Bay Pro Teams",
+      "League > NFL - National Football League",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6857.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6858.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6859.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "88",
+    "name": "Super Bowl 03 (III) Championship Ring - New York Jets - January 12, 1969",
+    "sku": "SB03",
+    "price": 35,
+    "description": "<p data-start=\"3834\" data-end=\"4291\">This replica ring reflects the original yellow gold design with a large football-shaped green stone, set with a single central diamond. The top reads “WORLD CHAMPIONS”, with Jets branding and Super Bowl III details around the face. The shoulders include game references and team insignia, while player name engravings vary depending on version. The bold green centrepiece makes this one of the most visually distinct early rings.</p>\r\\n<p data-start=\"4293\" data-end=\"4450\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Namath), though other key player versions may also become available.</p>",
+    "shortDescription": "<p data-start=\"3075\" data-end=\"3274\"><strong>League</strong>: National Football League (AFC East)<br data-start=\"3118\" data-end=\"3121\" /><strong>Game</strong> <strong>Stadium</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Orange Bowl</span></span> (Miami, Florida)<br data-start=\"3191\" data-end=\"3194\" /><strong>MVP</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Joe Namath</span></span> #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"3276\" data-end=\"3832\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">New York Jets</span></span> stunned the football world in Super Bowl III, defeating the heavily favored <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Baltimore Colts</span></span> 16–7 on January 12, 1969. The ring reflects the 1968 season, with Joe Namath (#12) famously guaranteeing victory before delivering a composed MVP performance. This remains one of the greatest upsets in sports history and helped legitimize the AFL before the merger. Players like <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Matt Snell</span></span> (#41), who rushed for over 100 yards, are also commonly featured.</p>",
+    "categories": [
+      "Champions By Year > 1969",
+      "All Time Greats > Joe Namath (NFL)",
+      "Your City > New York City Pro Teams",
+      "Teams > New York Jets (NFL)",
+      "League > NFL - National Football League",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6899.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6900.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6901.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "90",
+    "name": "Super Bowl 05 (V) Championship Ring - Baltimore Colts- January 17, 1971",
+    "sku": "SB05",
+    "price": 35,
+    "description": "<p data-start=\"6603\" data-end=\"7034\">This replica ring reflects the original yellow gold build with a blue stone centerpiece, set with a single diamond. The top reads “WORLD CHAMPIONS”, with Baltimore Colts branding around the face. The shoulders include Super Bowl V details and 16–13 score references, with a customizable player name engraving area. The bold blue-and-gold contrast reflects the Colts’ identity during their Baltimore era.</p>\r\\n<p data-start=\"7036\" data-end=\"7239\">Most popular and commonly sold replica versions of this Super Bowl ring often feature notable players like Unitas (#19), despite the official MVP being Howley, and player name engravings sometimes vary by version.</p>",
+    "shortDescription": "<p data-start=\"5812\" data-end=\"6010\"><strong>League</strong>: National Football League (AFC East)<br data-start=\"5855\" data-end=\"5858\" /><strong>Game</strong> <strong>Stadium</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Orange Bowl</span></span> (Miami, Florida)<br data-start=\"5928\" data-end=\"5931\" /><strong>MVP</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Chuck Howley</span></span> #54 — Linebacker; Super Bowl MVP</p>\r\\n<p data-start=\"6012\" data-end=\"6601\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Baltimore Colts</span></span> won Super Bowl V with a chaotic 16–13 victory over the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> on January 17, 1971. The ring reflects the 1970 season, in a game known for turnovers—remarkably, MVP Chuck Howley (#54) played for the losing Cowboys, the only time this has ever happened. Colts QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Johnny Unitas</span></span> (#19) and RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Earl Morrall</span></span> (#15) contributed to the win. The franchise later relocated to become the Indianapolis Colts, where they would win again decades later (2007).</p>",
+    "categories": [
+      "Champions By Year > 1971",
+      "Your City > Baltimore Pro Teams",
+      "League > NFL - National Football League > AFC South > Indianapolis Colts",
+      "All Time Greats > Johnny Unitas (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6638.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6639.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6640.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "91",
+    "name": "Super Bowl 06 (VI) Championship Ring - Dallas Cowboys - January 16, 1972 *ROGER STAUBACH RING 1*",
+    "sku": "SB06",
+    "price": 35,
+    "description": "<p data-start=\"991\" data-end=\"1457\">This replica ring mirrors the original yellow gold design, centered with the iconic Cowboys star, set with a single diamond symbolizing the franchise’s first championship. Surrounding the face reads “WORLD CHAMPIONS,” with team branding and Super Bowl VI details engraved around the bezel. The shoulders include the 24–3 score and Cowboys imagery, while the player name panel follows the original layout but may vary depending on version.</p>\r\\n<p data-start=\"1459\" data-end=\"1629\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Staubach), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"225\" data-end=\"440\"><strong data-start=\"225\" data-end=\"236\">League:</strong> National Football League (NFC East)<br data-start=\"272\" data-end=\"275\" /><strong data-start=\"275\" data-end=\"292\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Tulane Stadium</span></span> (New Orleans, Louisiana)<br data-start=\"355\" data-end=\"358\" /><strong data-start=\"358\" data-end=\"366\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Roger Staubach</span></span> #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"442\" data-end=\"989\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> captured their first Super Bowl title in Super Bowl VI, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Miami Dolphins</span></span> 24–3 on January 16, 1972. The ring reflects the 1971 season, ending years of playoff frustration under Tom Landry and launching the “America’s Team” identity. Roger Staubach (#12) led a balanced offense and earned MVP, while RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Duane Thomas</span></span> (#33) played a major role in controlling the game on the ground, making his ring a commonly recognized alternative.</p>",
+    "categories": [
+      "Champions By Year > 1972",
+      "League > NFL - National Football League > NFC East > Dallas Cowboys",
+      "Teams > Dallas Cowboys (NFL)",
+      "Your City > Dallas Pro Teams",
+      "All Time Greats > Roger Staubach (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6457.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6459.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6458.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "92",
+    "name": "Super Bowl 07 (VII) Championship Ring - Miami Dolphins - January 14, 1973",
+    "sku": "SB07",
+    "price": 35,
+    "description": "<p data-start=\"2442\" data-end=\"2862\">This replica ring reflects the original yellow gold construction with a blue enamel oval face, centered by a single diamond representing the perfect season. A halo of stones surrounds the center, with “MIAMI DOLPHINS WORLD CHAMPIONS” engraved across the top. The shoulders feature Super Bowl VII details and “PERFECT SEASON” references, with a player name area that may vary depending on version.</p>\r\\n<p data-start=\"2864\" data-end=\"3031\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Scott), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"1683\" data-end=\"1894\"><strong data-start=\"1683\" data-end=\"1694\">League:</strong> National Football League (AFC East)<br data-start=\"1730\" data-end=\"1733\" /><strong data-start=\"1733\" data-end=\"1750\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Los Angeles Memorial Coliseum</span></span> (Los Angeles, California)<br data-start=\"1814\" data-end=\"1817\" /><strong data-start=\"1817\" data-end=\"1825\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jake Scott</span></span> #13 — Safety; Super Bowl MVP</p>\r\\n<p data-start=\"1896\" data-end=\"2440\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Miami Dolphins</span></span> completed the only perfect season in NFL history (17–0) in Super Bowl VII, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Washington Redskins</span></span> 14–7 on January 14, 1973. The ring reflects the 1972 season, defined by Don Shula’s disciplined system and dominant defense. Jake Scott (#13) earned MVP with two interceptions, tying a Super Bowl record, while RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Larry Csonka</span></span> (#39) powered the run-heavy offense—explaining why the Dolphins’ MVPs in this era were not quarterbacks.</p>",
+    "categories": [
+      "Champions By Year > 1973",
+      "Teams > Miami Dolphins (NFL)",
+      "League > NFL - National Football League > AFC East > Miami Dolpins",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6463.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6947.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6948.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "93",
+    "name": "Super Bowl 08 (VIII) Championship Ring - Miami Dolphins - January 13, 1974",
+    "sku": "SB08",
+    "price": 35,
+    "description": "<p data-start=\"3800\" data-end=\"4246\">This replica ring closely follows the original yellow gold and blue enamel design, now featuring two central diamonds placed side-by-side to represent consecutive championships. The top reads “MIAMI DOLPHINS WORLD CHAMPIONS,” with shoulders detailing Super Bowl VIII, the 24–7 score, and “BACK TO BACK” elements. The player name engraving area mirrors the original but may vary across versions, maintaining the same structure.</p>\r\\n<p data-start=\"4248\" data-end=\"4416\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Csonka), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"3086\" data-end=\"3298\"><strong data-start=\"3086\" data-end=\"3097\">League:</strong> National Football League (AFC East)<br data-start=\"3133\" data-end=\"3136\" /><strong data-start=\"3136\" data-end=\"3153\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Rice Stadium</span></span> (Houston, Texas)<br data-start=\"3210\" data-end=\"3213\" /><strong data-start=\"3213\" data-end=\"3221\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Larry Csonka</span></span> #39 — Running back; Super Bowl MVP</p>\r\\n<p data-start=\"3300\" data-end=\"3798\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Miami Dolphins</span></span> secured back-to-back championships in Super Bowl VIII, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Minnesota Vikings</span></span> 24–7 on January 13, 1974. The ring reflects the 1973 season, immediately following their perfect run. Larry Csonka (#39) dominated with 145 rushing yards and 2 touchdowns, earning MVP and reinforcing Miami’s physical, run-first identity, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Bob Griese</span></span> (#12) efficiently managed the offense.</p>\r\\n<p data-start=\"3800\" data-end=\"4246\"></p>",
+    "categories": [
+      "Champions By Year > 1974",
+      "Teams > Miami Dolphins (NFL)",
+      "League > NFL - National Football League > AFC East > Miami Dolpins",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6467.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6468.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6469.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "94",
+    "name": "Super Bowl 09 (IX) Championship Ring - Pittsburgh Steelers - January 12, 1975 *TERRY BRADSHAW RING 1*",
+    "sku": "SB09",
+    "price": 35,
+    "description": "<p data-start=\"5210\" data-end=\"5648\">This replica ring mirrors the original yellow gold construction with a black onyx-style football-shaped face, centered by a single diamond representing the first championship. The top reads “WORLD CHAMPIONS,” with shoulders displaying Super Bowl IX details and the 16–6 score. The player name section follows the original format but may vary depending on version, maintaining authenticity to the team-issued rings.</p>\r\\n<p data-start=\"5650\" data-end=\"5818\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Harris), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"4474\" data-end=\"4695\"><strong data-start=\"4474\" data-end=\"4485\">League:</strong> National Football League (AFC North)<br data-start=\"4522\" data-end=\"4525\" /><strong data-start=\"4525\" data-end=\"4542\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Tulane Stadium</span></span> (New Orleans, Louisiana)<br data-start=\"4607\" data-end=\"4610\" /><strong data-start=\"4610\" data-end=\"4618\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Franco Harris</span></span> #32 — Running back; Super Bowl MVP</p>\r\\n<p data-start=\"4697\" data-end=\"5208\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pittsburgh Steelers</span></span> won their first Super Bowl in Super Bowl IX, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Minnesota Vikings</span></span> 16–6 on January 12, 1975. The ring reflects the 1974 season, launching the Steelers’ legendary 1970s dynasty under Chuck Noll. Franco Harris (#32) earned MVP with 158 rushing yards and a touchdown, while the “Steel Curtain” defense dominated—players like Quarterback Terry Bradshaw (#12) and <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Mean Joe Greene</span></span> (#75) are also commonly featured due to their impact and popularity.</p>",
+    "categories": [
+      "Champions By Year > 1975",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Terry Bradshaw (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7831.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7832.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7833.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "96",
+    "name": "Super Bowl 10 (X) Championship Ring - Pittsburgh Steelers - January 18, 1976 *TERRY BRADSHAW RING 2*",
+    "sku": "SB10",
+    "price": 35,
+    "description": "<p data-start=\"1343\" data-end=\"1883\">This replica ring follows the original yellow gold and black onyx-style design, featuring two diamonds set into the face to represent the Steelers’ two championships. The top reads “WORLD CHAMPIONS,” with shoulders displaying Super Bowl X details and the 21–17 score. The player name engraving area follows the original team-issued format but may vary depending on version, meaning different player names and numbers (such as Harris, Bradshaw, or Swann) can appear while keeping the same overall championship design.</p>\r\\n<p data-start=\"1885\" data-end=\"2058\">Most popular and commonly sold replica versions of this Super Bowl ring often feature the previous year's MVP and significant contributor to the Steelers back-to-back titles (Harris), this particular year's MVP’s (Swann), or their consistently strong QB through these years (Bradshaw). As player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"393\" data-end=\"603\"><strong data-start=\"393\" data-end=\"404\">League:</strong> National Football League (AFC North)<br data-start=\"441\" data-end=\"444\" /><strong data-start=\"444\" data-end=\"461\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Orange Bowl</span></span> (Miami, Florida)<br data-start=\"516\" data-end=\"519\" /><strong data-start=\"519\" data-end=\"527\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Lynn Swann</span></span> #88 — Wide receiver; Super Bowl MVP</p>\r\\n<p data-start=\"605\" data-end=\"1341\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pittsburgh Steelers</span></span> secured back-to-back titles in Super Bowl X, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> 21–17 on January 18, 1976. The ring reflects the 1975 season, continuing one of the NFL’s greatest dynasties under Chuck Noll. MVP Lynn Swann (#88) delivered 161 receiving yards and a touchdown with iconic acrobatic catches, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Terry Bradshaw</span></span> (#12) led the offense in clutch moments. RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Franco Harris</span></span> (#32), a key figure in both Super Bowl IX and X, remained one of the team’s most consistent and popular players—his role in the Steelers’ early dynasty is a major reason his ring version is widely produced and sought after.</p>",
+    "categories": [
+      "Champions By Year > 1976",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Terry Bradshaw (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6887.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6889.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6888.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "97",
+    "name": "Super Bowl 11 (XI) Championship Ring - Oakland Raiders - January 9, 1977",
+    "sku": "SB11",
+    "price": 35,
+    "description": "This replica ring reflects the original white gold design with a black onyx-style rectangular face, centred by a single large diamond amongst many smaller ones representing the franchise’s first title. The top reads \"OAKLAND RAIDERS\" with “WORLD CHAMPIONS,” framing the bottom of the ring. The shoulders include Super Bowl XI details and the 32–14 score, with classic Raiders shield elements. The player name panel varies by version, matching the original rings issued to the team.\r\\n\r\\nMost popular and commonly sold replica versions of this Super Bowl year's ring feature the MVP's name (<span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Biletnikoff), though versions could potentially vary with engravings of player names.</span></span>",
+    "shortDescription": "<p data-start=\"209\" data-end=\"424\"><strong data-start=\"209\" data-end=\"220\">League:</strong> National Football League (AFC West)<br data-start=\"256\" data-end=\"259\" /><strong data-start=\"259\" data-end=\"276\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Rose Bowl</span></span> (Pasadena, California)<br data-start=\"337\" data-end=\"340\" /><strong data-start=\"340\" data-end=\"348\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Fred Biletnikoff</span></span> #25 — Wide receiver; Super Bowl MVP</p>\r\\n<p data-start=\"426\" data-end=\"1094\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Oakland Raiders</span></span> claimed their first Super Bowl title in Super Bowl XI, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Minnesota Vikings</span></span> 32–14 on January 9, 1977. The ring reflects the 1976 season, capping years of near-misses under Al Davis’ “commitment to excellence” era. MVP Fred Biletnikoff (#25) controlled the game with precise route-running, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Ken Stabler</span></span> (#12) led the offense and RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Clarence Davis</span></span> (#23) contributed in a balanced attack. Stabler’s leadership and long-term impact with the franchise are key reasons his ring version is also widely produced alongside the MVP.</p>",
+    "categories": [
+      "Champions By Year > 1977",
+      "Teams > Las Vegas (Oakland/Los Angeles) Raiders (NFL)",
+      "Your City > Las Vegas Pro Treams",
+      "League > NFL - National Football League > AFC West > Las Vegas Raiders",
+      "Your City > Oakland Pro Teams",
+      "Your City > Pittsburgh Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6913.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6914.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6915.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "98",
+    "name": "Super Bowl 12 (XII) Championship Ring - Dallas Cowboys - January 15, 1978 *ROGER STAUBACH RING 2*",
+    "sku": "SB12",
+    "price": 35,
+    "description": "<p data-start=\"1934\" data-end=\"2273\">This replica ring is crafted in yellow gold with a bold rectangular face, featuring two large round diamonds stacked vertically, each set inside a blue-accented star, symbolizing the franchise’s two Super Bowl championships. The face is surrounded by multiple smaller diamonds, with “DALLAS COWBOYS WORLD CHAMPIONS” engraved around the border. One shoulder displays “SUPER BOWL XII” and the 27–10 score, while the other features a detailed Cowboys helmet design with “1977”. The layered, diamond-heavy design reflects the team’s growing dominance in the late 1970s.</p>\r\\n<p data-start=\"2639\" data-end=\"3148\">The player name engraving area mirrors the original format but may vary depending on version, with different player names appearing across replicas. Most popular and commonly sold replica versions of this Super Bowl ring often feature Staubach or the co-MVPs (Martin/White), this version currently features Martin's ring.</p>",
+    "shortDescription": "<p data-start=\"1813\" data-end=\"2022\"><strong data-start=\"1813\" data-end=\"1824\">League:</strong> National Football League (NFC East)<br data-start=\"1860\" data-end=\"1863\" /><strong data-start=\"1863\" data-end=\"1880\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Louisiana Superdome</span></span> (New Orleans, Louisiana)<br data-start=\"1943\" data-end=\"1946\" /><strong data-start=\"1946\" data-end=\"1954\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Harvey Martin</span></span> #79 — Defensive end; Co-MVP</p>\r\\n<p data-start=\"2024\" data-end=\"2637\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> dominated Super Bowl XII, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Denver Broncos</span></span> 27–10 on January 15, 1978. The ring reflects the 1977 season, highlighting one of the most defensive-driven Super Bowl wins ever. Co-MVP Harvey Martin (#79) and <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Randy White</span></span> (#54) led a relentless defense, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Roger Staubach</span></span> (#12) guided the offense. Martin's ring is highly sought after due to his outstanding performance, however Staubach’s leadership and popularity make his ring version another common version.</p>",
+    "categories": [
+      "Champions By Year > 1978",
+      "Teams > Dallas Cowboys (NFL)",
+      "Your City > Dallas Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "All Time Greats > Roger Staubach (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6647.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6648.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6649.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "99",
+    "name": "Super Bowl 13 (XIII) Championship Ring - Pittsburgh Steelers - January 21, 1979 *TERRY BRADSHAW RING 3*",
+    "sku": "SB13",
+    "price": 35,
+    "description": "<p data-start=\"4217\" data-end=\"4697\">This replica ring follows the original yellow gold and black onyx-style design, now featuring three diamonds set into the face to represent the Steelers’ three championships. The top reads “WORLD CHAMPIONS,” with shoulders displaying Super Bowl XIII details and the 35–31 score. The player name panel reflects the original team-issued format but may vary depending on version, allowing different player names while maintaining the same championship design.</p>\r\\n<p data-start=\"4699\" data-end=\"4869\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Bradshaw), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"3399\" data-end=\"3611\"><strong data-start=\"3399\" data-end=\"3410\">League:</strong> National Football League (AFC North)<br data-start=\"3447\" data-end=\"3450\" /><strong data-start=\"3450\" data-end=\"3467\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Orange Bowl</span></span> (Miami, Florida)<br data-start=\"3524\" data-end=\"3527\" /><strong data-start=\"3527\" data-end=\"3535\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Terry Bradshaw</span></span> #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"3613\" data-end=\"4215\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pittsburgh Steelers</span></span> claimed their third Super Bowl title in Super Bowl XIII, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> 35–31 on January 21, 1979 in one of the greatest games ever played. The ring reflects the 1978 season, showcasing the peak of their dynasty. MVP Terry Bradshaw (#12) threw 4 touchdown passes, while WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Lynn Swann</span></span> (#88) and RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Franco Harris</span></span> (#32) were key contributors—Harris’ continued dominance across multiple championships is why his ring version remains highly popular.</p>",
+    "categories": [
+      "Champions By Year > 1979",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Terry Bradshaw (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6880.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6881.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6882.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "100",
+    "name": "Super Bowl 14 (XIV) Championship Ring - Pittsburgh Steelers - January 20, 1980 *TERRY BRADSHAW RING 4*",
+    "sku": "SB14",
+    "price": 35,
+    "description": "<p data-start=\"5752\" data-end=\"6183\">This replica ring mirrors the original yellow gold and black onyx-style face, now set with four diamonds representing the Steelers’ four championships. The top reads “WORLD CHAMPIONS,” with shoulders displaying Super Bowl XIV details and the 31–19 score. The player name engraving area follows the original layout but may vary depending on version, maintaining consistency with earlier rings in the dynasty.</p>\r\\n<p data-start=\"6185\" data-end=\"6355\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Bradshaw), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"4928\" data-end=\"5146\"><strong data-start=\"4928\" data-end=\"4939\">League:</strong> National Football League (AFC North)<br data-start=\"4976\" data-end=\"4979\" /><strong data-start=\"4979\" data-end=\"4996\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Rose Bowl</span></span> (Pasadena, California)<br data-start=\"5059\" data-end=\"5062\" /><strong data-start=\"5062\" data-end=\"5070\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Terry Bradshaw</span></span> #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"5148\" data-end=\"5750\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pittsburgh Steelers</span></span> secured their fourth Super Bowl title in Super Bowl XIV, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Los Angeles Rams</span></span> 31–19 on January 20, 1980. The ring reflects the 1979 season, completing their second set of back-to-back championships and cementing their 1970s dynasty. Bradshaw (#12) earned his second Super Bowl MVP, throwing 3 touchdowns, while players like <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Franco Harris</span></span> (#32) remained central to their sustained success—his presence across all four titles contributes to the popularity of his ring versions.</p>",
+    "categories": [
+      "Champions By Year > 1980",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Terry Bradshaw (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6890.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6891.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6892.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "102",
+    "name": "Super Bowl 15 (XV) Championship Ring -  Oakland Raiders - January 25, 1981",
+    "sku": "SB15",
+    "price": 35,
+    "description": "<p data-start=\"7221\" data-end=\"7660\">This replica ring reflects the original white gold design with a black onyx-style face, now featuring two diamonds symbolizing the Raiders’ two championships. The top reads “WORLD CHAMPIONS,” with shoulders displaying Super Bowl XV details and the 27–10 score, alongside Raiders shield imagery. The player name panel mirrors the original design but may vary depending on version, consistent with team-issued rings.</p>\r\\n<p data-start=\"7662\" data-end=\"7832\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Plunkett), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"6409\" data-end=\"6628\"><strong data-start=\"6409\" data-end=\"6420\">League:</strong> National Football League (AFC West)<br data-start=\"6456\" data-end=\"6459\" /><strong data-start=\"6459\" data-end=\"6476\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Louisiana Superdome</span></span> (New Orleans, Louisiana)<br data-start=\"6541\" data-end=\"6544\" /><strong data-start=\"6544\" data-end=\"6552\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jim Plunkett</span></span> #16 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"6630\" data-end=\"7219\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Oakland Raiders</span></span> returned to the top in Super Bowl XV, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Philadelphia Eagles</span></span> 27–10 on January 25, 1981. The ring reflects the 1980 season, highlighted by one of the greatest underdog runs in NFL history—Plunkett (#16), a former No.1 pick turned backup, led the Raiders as a wild card team to victory. RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Marcus Allen</span></span> (future MVP) and WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Cliff Branch</span></span> (#21) were also key contributors, with Branch’s big-play ability making his ring a commonly recognized option.</p>",
+    "categories": [
+      "Champions By Year > 1981",
+      "Teams > Las Vegas (Oakland/Los Angeles) Raiders (NFL)",
+      "Your City > Las Vegas Pro Treams",
+      "League > NFL - National Football League > AFC West > Las Vegas Raiders",
+      "League > NFL - National Football League",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6910.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6911.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6912.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "103",
+    "name": "Super Bowl 16 (XVI) Championship Ring - San Fransisco 49ers - January 24, 1982 *JOE MONTANA RING 1*",
+    "sku": "SB16",
+    "price": 35,
+    "description": "<p data-start=\"1024\" data-end=\"1714\">This replica ring closely follows the original yellow gold football-shaped design, featuring a large central round stone surrounded by two concentric rows of smaller stones, forming a distinctive layered football appearance. The outer border reads “SAN FRANCISCO” across the top and “WORLD CHAMPIONS” along the bottom in bold black enamel. The shoulders display Super Bowl XVI details and team branding, including football imagery and season references. The player name panel mirrors the original layout but may vary depending on version, while the stone arrangement replicates the original diamond placement in shape and spacing for a high-quality visual match.</p>\r\\n<p data-start=\"1716\" data-end=\"1885\" data-is-last-node=\"\" data-is-only-node=\"\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Montana), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"132\" data-end=\"342\"><strong data-start=\"132\" data-end=\"143\">League:</strong> National Football League (NFC West)<br data-start=\"179\" data-end=\"182\" /><strong data-start=\"182\" data-end=\"199\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pontiac Silverdome</span></span> (Pontiac, Michigan)<br data-start=\"257\" data-end=\"260\" /><strong data-start=\"260\" data-end=\"268\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Joe Montana</span></span> #16 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"344\" data-end=\"879\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">San Francisco 49ers</span></span> won their first Super Bowl in Super Bowl XVI, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Cincinnati Bengals</span></span> 26–21 on January 24, 1982. The ring reflects the 1981 season, launching a new dynasty under Bill Walsh’s innovative West Coast offense. MVP Joe Montana (#16) threw 2 touchdowns, while WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dwight Clark</span></span> (#87), famous for “The Catch” in the NFC Championship, remained a popular figure tied to this title—making his ring version commonly sought after.</p>",
+    "categories": [
+      "Champions By Year > 1982",
+      "All Time Greats > Joe Montana (NFL)",
+      "League > NFL - National Football League > NFC West > San Fransisco 49ers",
+      "Teams > San Fransisco 49ers (NFL)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6734.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6736.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6735.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "104",
+    "name": "Super Bowl 17 (XVII) Championship Ring - Washington Redskins - January 30, 1983",
+    "sku": "sb17",
+    "price": 35,
+    "description": "<p data-start=\"968\" data-end=\"1720\">This replica ring mirrors the original yellow gold football-shaped design with a bold red enamel football centerpiece, surrounding a central round stone. Two rows of smaller stones form an oval pattern within the football shape, replicating the original diamond layout. The top of the face reads “WASHINGTON REDSKINS,” with “WORLD CHAMPIONS” engraved along the bottom border. One shoulder displays “SUPER BOWL XVII” with Lombardi Trophy imagery, while the opposite side shows the player name “RIGGINS,” jersey number 44, and team logo panel.</p>\r\\n<p data-start=\"968\" data-end=\"1720\">The side name panel follows the original personalized format and may vary depending on version, but most popularly are sold with the MVP’s name (Riggins).</p>",
+    "shortDescription": "<p data-start=\"1561\" data-end=\"1775\"><strong data-start=\"1561\" data-end=\"1572\">League:</strong> National Football League (NFC East)<br data-start=\"1608\" data-end=\"1611\" /><strong data-start=\"1611\" data-end=\"1628\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Rose Bowl</span></span> (Pasadena, California)<br data-start=\"1689\" data-end=\"1692\" /><strong data-start=\"1692\" data-end=\"1700\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">John Riggins</span></span> #44 — Running back; Super Bowl MVP</p>\r\\n<p data-start=\"1777\" data-end=\"2317\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Washington Redskins</span></span> captured Super Bowl XVII, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Miami Dolphins</span></span> 27–17 on January 30, 1983. The ring reflects the 1982 strike-shortened season, where Washington’s physical rushing attack defined their success. MVP John Riggins (#44) rushed for a Super Bowl-record 166 yards and a touchdown, including the iconic fourth-down run, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Joe Theismann</span></span> (#7) efficiently led the offense—his leadership making his ring version a common alternative.</p>",
+    "categories": [
+      "Champions By Year > 1983",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "League > NFL - National Football League > NFC East > Washington Commanders (Redskins)",
+      "Your City > Washington Pro Teams",
+      "Teams > Washington Redskins/Commanders (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6632.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6633.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6634.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "105",
+    "name": "Super Bowl 18 (XVIII) Championship Ring - Los Angeles Raiders - January 22, 1984",
+    "sku": "SB18",
+    "price": 35,
+    "description": "<p data-start=\"3867\" data-end=\"4350\">This replica ring mirrors the original, with a sleek silver and black onyx-style face, featuring three diamond-encrusted oval shapes, representing the franchise’s three championships across two cities (Oakland and Los Angeles). The top reads “WORLD CHAMPIONS,” with “LOS ANGELES RAIDERS” engraved around the face, with other smaller stones adding a dazzling touch by framing the left and right sides of the bold rectangular championship ring. The shoulders include Super Bowl XVIII details and the 38–9 score.</p>\r\\n<p data-start=\"4352\" data-end=\"4519\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Allen), though player name engravings could potentially vary sometimes.</p>",
+    "shortDescription": "<p data-start=\"3007\" data-end=\"3219\"><strong data-start=\"3007\" data-end=\"3018\">League:</strong> National Football League (AFC West)<br data-start=\"3054\" data-end=\"3057\" /><strong data-start=\"3057\" data-end=\"3074\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Tampa Stadium</span></span> (Tampa, Florida)<br data-start=\"3131\" data-end=\"3134\" /><strong data-start=\"3134\" data-end=\"3142\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Marcus Allen</span></span> #32 — Running back; Super Bowl MVP</p>\r\\n<p data-start=\"3221\" data-end=\"3865\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Los Angeles Raiders</span></span> dominated Super Bowl XVIII, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Washington Redskins</span></span> 38–9 on January 22, 1984. The ring reflects the 1983 season, marking the franchise’s first championship after relocating from Oakland to Los Angeles in 1982, a move driven by owner Al Davis. MVP Marcus Allen (#32) delivered one of the greatest performances ever with 191 rushing yards and 2 touchdowns, including a legendary 74-yard run, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jim Plunkett</span></span> (#16) led efficiently—his continued success across multiple titles contributing to demand for his ring version.</p>",
+    "categories": [
+      "Champions By Year > 1984",
+      "Teams > Las Vegas (Oakland/Los Angeles) Raiders (NFL)",
+      "Your City > Las Vegas Pro Treams",
+      "League > NFL - National Football League > AFC West > Las Vegas Raiders",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7590.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7591.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7592.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "106",
+    "name": "Super Bowl 19 (XIX) Championship Ring - San Fransisco 49ers - January 20, 1985 *JOE MONTANA RING 2*",
+    "sku": "SB19",
+    "price": 35,
+    "description": "<p data-start=\"1089\" data-end=\"1900\">This replica ring closely follows the original white-gold style square face, featuring two large marquise-shaped stones to represent the franchise's two Lombardi trophies won in both Super Bowl victories. These are surrounded by multiple smaller stones forming a rectangular border, mimicking the original diamond layout. The top border reads “WORLD”, while the sides read “SAN FRANCISCO FORTY NINERS” and “CHAMPIONS.” One shoulder shows Super Bowl XIX details and the 38–16 score, while the opposite shoulder includes the helmet logo, season year “1984\".</p>\r\\n<p data-start=\"1902\" data-end=\"2111\" data-is-last-node=\"\" data-is-only-node=\"\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Montana), though player name engravings could potentially vary sometimes, including coach versions such as Walsh.</p>",
+    "shortDescription": "<p data-start=\"4578\" data-end=\"4795\"><strong data-start=\"4578\" data-end=\"4589\">League:</strong> National Football League (NFC West)<br data-start=\"4625\" data-end=\"4628\" /><strong data-start=\"4628\" data-end=\"4645\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Stanford Stadium</span></span> (Stanford, California)<br data-start=\"4708\" data-end=\"4711\" /><strong data-start=\"4711\" data-end=\"4719\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Joe Montana</span></span> #16 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"4797\" data-end=\"5325\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">San Francisco 49ers</span></span> dominated Super Bowl XIX, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Miami Dolphins</span></span> 38–16 on January 20, 1985. The ring reflects the 1984 season, one of the greatest in NFL history (15–1). Joe Montana (#16) earned MVP with 3 passing touchdowns and a rushing score, while WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jerry Rice</span></span> #80 was emerging as a future superstar. The name Walsh seen on some versions refers to head coach <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Bill Walsh</span></span>, architect of the West Coast offense; coach-issued rings like his are popular due to his massive influence on multiple championships and Hall of Fame legacy.</p>",
+    "categories": [
+      "Champions By Year > 1985",
+      "All Time Greats > Joe Montana (NFL)",
+      "League > NFL - National Football League > NFC West > San Fransisco 49ers",
+      "Teams > San Fransisco 49ers (NFL)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6719.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6720.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6721.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "107",
+    "name": "Super Bowl 20 (XX) Championship Ring - Chicago Bears - January 26, 1986",
+    "sku": "SB20",
+    "price": 35,
+    "description": "<p data-start=\"6746\" data-end=\"7225\">This replica ring mirrors the original yellow gold construction, featuring a large “C” logo centerpiece set against a dark background, surrounded by multiple diamonds forming a bold face design. The top reads “WORLD CHAMPIONS,” with shoulders displaying Super Bowl XX details and the 46–10 score, along with Bears branding.</p>\r\\n<p data-start=\"6746\" data-end=\"7225\">The player name engraving may vary, but most commonly, RB Payton's (#34) version is highly is sought after, due to his legendary career and popularity amongst fans, despite him not being the quarterback or MVP this year.</p>",
+    "shortDescription": "<p data-start=\"5986\" data-end=\"6208\"><strong data-start=\"5986\" data-end=\"5997\">League:</strong> National Football League (NFC North)<br data-start=\"6034\" data-end=\"6037\" /><strong data-start=\"6037\" data-end=\"6054\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Louisiana Superdome</span></span> (New Orleans, Louisiana)<br data-start=\"6119\" data-end=\"6122\" /><strong data-start=\"6122\" data-end=\"6130\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Richard Dent</span></span> #95 — Defensive end; Super Bowl MVP</p>\r\\n<p data-start=\"6210\" data-end=\"6744\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Chicago Bears</span></span> dominated Super Bowl XX, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">New England Patriots</span></span> 46–10 on January 26, 1986. The ring reflects the 1985 season, one of the most dominant teams ever, led by the legendary “46 defense.” MVP Richard Dent (#95) recorded 1.5 sacks and forced turnovers, while RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Walter Payton</span></span> (#34), one of the greatest players in NFL history, remains one of the most commonly featured names on replica rings despite not scoring in the game.</p>",
+    "categories": [
+      "Champions By Year > 1986",
+      "Teams > Chicago Bears (NFL)",
+      "Your City > Chicago Pro Teams",
+      "League > NFL - National Football League > NFC East > New York Giants",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6755.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6756.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6757.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "108",
+    "name": "Super Bowl 21 (XXI) Championship Ring - New York Giants - January 25, 1987",
+    "sku": "SB21",
+    "price": 35,
+    "description": "This high-quality replica ring closely mimics the original gold and blue-stone, trophy-centered design: a large sapphire blue face with a diamond-studded Lombardi Trophy at the center, surrounded by raised lettering reading “1986 GIANTS WORLD CHAMPIONS.” The shanks include a Giants helmet, the full season record including the playoffs, and the Super Bowl score with NFC/game logos.\r\\n\r\\nReplica versions most often use Taylor's name due to his popularity and significant role in achieving the Giant's first win, however MVP Simms is another commonly sold version.",
+    "shortDescription": "<p data-start=\"46\" data-end=\"259\"><strong data-start=\"46\" data-end=\"57\">League:</strong> National Football League (NFC East)<br data-start=\"93\" data-end=\"96\" /><strong data-start=\"96\" data-end=\"113\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Rose Bowl</span></span> (Pasadena, California)<br data-start=\"174\" data-end=\"177\" /><strong data-start=\"177\" data-end=\"185\" data-is-only-node=\"\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Phil Simms</span></span> #11 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"261\" data-end=\"930\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">New York Giants</span></span> won their first Super Bowl of the modern era in Super Bowl XXI, beating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Denver Broncos</span></span> 39–20 on January 25, 1987. The ring reflects the 1986 season, when Bill Parcells and Bill Belichick helped turn a bruising, defense-led roster into champions. Phil Simms (#11) earned MVP with a near-flawless 22-of-25, 268-yard, 3-touchdown performance, while LB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Lawrence Taylor</span></span> #56 remained the team’s most feared star and a very popular engraved alternative on replica versions because of his era-defining dominance and fan recognition.</p>",
+    "categories": [
+      "Champions By Year > 1987",
+      "Your City > New York City Pro Teams",
+      "League > NFL - National Football League > NFC East > New York Giants",
+      "Teams > New York Giants (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6725.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6727.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6726.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "110",
+    "name": "Super Bowl 22 (XXII) Championship Ring - Washington Redskins - January 31, 1988",
+    "sku": "SB22",
+    "price": 35,
+    "description": "This replica ring is one of the more distinctive late-1980s designs, following the original gold football face built from diamonds arranged around two small Lombardi Trophies representing their second Super Bowl win, with rows of red ruby-style accents and raised text reading “WASHINGTON REDSKINS WORLD CHAMPIONS 1987.” The original side panels carried the final score, team logo, “Hail to the Redskins,” and a personalized name/helmet panel.\r\\n\r\\nReplica versions most often use Doug Williams or Timmy Smith for the engraved player name.",
+    "shortDescription": "<p data-start=\"1697\" data-end=\"1911\"><strong data-start=\"1697\" data-end=\"1708\">League:</strong> National Football League (NFC East)<br data-start=\"1744\" data-end=\"1747\" /><strong data-start=\"1747\" data-end=\"1764\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jack Murphy Stadium</span></span> (San Diego, California)<br data-start=\"1826\" data-end=\"1829\" /><strong data-start=\"1829\" data-end=\"1837\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Doug Williams</span></span> #17 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"1913\" data-end=\"2617\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Washington Redskins</span></span> exploded to a 42–10 win over the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Denver Broncos</span></span> in Super Bowl XXII on January 31, 1988. The ring reflects the 1987 season, a strike-disrupted year that Washington survived with unusual depth before catching fire in the playoffs. Doug Williams (#17) made history as the first Black quarterback to start and win a Super Bowl, throwing 4 touchdown passes in a stunning second quarter barrage, while RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Timmy Smith</span></span> #49 rushed for a then-record 204 yards—a huge reason his engraved version is also popular, despite Williams being the MVP.</p>",
+    "categories": [
+      "Champions By Year > 1988",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "League > NFL - National Football League > NFC East > Washington Commanders (Redskins)",
+      "Your City > Washington Pro Teams",
+      "Teams > Washington Redskins/Commanders (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7828.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7829.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7830.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "111",
+    "name": "Super Bowl 23 (XXIII) Championship Ring - San Fransisco 49ers - January 22, 1989 *JOE MONTANA RING 3*",
+    "sku": "SB23",
+    "price": 35,
+    "description": "This replica ring is modeled on the original gold, football-themed face built from diamonds forming a figural football and three miniature Lombardi Trophies comprised of oval-shaped diamonds against a dark background, to celebrate the franchise’s third title. Around the face, the original raised text announced “San Francisco, World Champions,” while the shanks added a 49ers helmet, the season year, Super Bowl score details, and “Team of the 80s” messaging with extra trophy imagery.\r\\n\r\\nReplica versions most often use Montana or Rice, with the matching player number engraved depending on the version.",
+    "shortDescription": "<p data-start=\"3386\" data-end=\"3607\"><strong data-start=\"3386\" data-end=\"3397\">League:</strong> National Football League (NFC West)<br data-start=\"3433\" data-end=\"3436\" /><strong data-start=\"3436\" data-end=\"3453\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Joe Robbie Stadium</span></span> (Miami Gardens, Florida)<br data-start=\"3518\" data-end=\"3521\" /><strong data-start=\"3521\" data-end=\"3529\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jerry Rice</span></span> #80 — Wide receiver; Super Bowl MVP</p>\r\\n<p data-start=\"3609\" data-end=\"4308\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">San Francisco 49ers</span></span> edged the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Cincinnati Bengals</span></span> 20–16 in Super Bowl XXIII on January 22, 1989, and the ring reflects the 1988 season. This was the title that truly stamped San Francisco as a dynasty: Joe Montana (#16) authored the famous 92-yard game-winning drive, but Jerry Rice (#80) took MVP after 11 catches for 215 yards and a touchdown, one of the greatest receiving performances in Super Bowl history. Montana-engraved versions are still extremely common because of his “Joe Cool” reputation, while Rice versions are just as appealing for fans who want the actual MVP name on the ring.</p>",
+    "categories": [
+      "Champions By Year > 1989",
+      "All Time Greats > Jerry Rice (NFL)",
+      "All Time Greats > Joe Montana (NFL)",
+      "League > NFL - National Football League > NFC West > San Fransisco 49ers",
+      "Teams > San Fransisco 49ers (NFL)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8317.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8318.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8319.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8320.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "112",
+    "name": "Super Bowl 24 (XXIV) Championship Ring - San Fransisco 49ers - January 28, 1990 *JOE MONTANA RING 4*",
+    "sku": "SB24",
+    "price": 35,
+    "description": "This replica ring closely mirrors the original square gold-style face, highlighted by four prominent marquise/football-shaped stones representing the franchise’s four Super Bowl championships at the time, surrounded by rows of smaller stones forming a dense diamond-style border. Raised lettering reads “WORLD” across the top with “SAN FRANCISCO FORTY NINERS CHAMPIONS” framing the face. The shoulders typically include Super Bowl XXIV branding, season year “1989,” helmet imagery, and the 55–10 score, with a personalized name panel such as Owens depending on the version. Replica versions most often use Montana or Rice, though player name engravings — including Owens — could potentially vary sometimes while the championship design remains consistent.",
+    "shortDescription": "<p data-start=\"5140\" data-end=\"5359\"><strong data-start=\"5140\" data-end=\"5151\">League:</strong> National Football League (NFC West)<br data-start=\"5187\" data-end=\"5190\" /><strong data-start=\"5190\" data-end=\"5207\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Louisiana Superdome</span></span> (New Orleans, Louisiana)<br data-start=\"5272\" data-end=\"5275\" /><strong data-start=\"5275\" data-end=\"5283\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Joe Montana</span></span> #16 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"5361\" data-end=\"5968\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">San Francisco 49ers</span></span> dominated the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Denver Broncos</span></span> 55–10 in Super Bowl XXIV on January 28, 1990, with the ring reflecting the 1989 season, the peak of their late-1980s dynasty. Joe Montana (#16) earned MVP after throwing 5 touchdown passes, while WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jerry Rice</span></span> #80 caught 3 touchdowns and helped drive the record-setting offense. The Owens engraving seen on some replica versions refers to <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Brent Jones</span></span> teammate <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Owens</span></span> (defensive/roster member depending on issuance), whose ring versions are occasionally produced because team-issued rings were given to a wide range of contributors; these less common player engravings appeal to collectors seeking unique roster names rather than just the marquee MVP or quarterback.</p>",
+    "categories": [
+      "Champions By Year > 1990",
+      "All Time Greats > Jerry Rice (NFL)",
+      "All Time Greats > Joe Montana (NFL)",
+      "League > NFL - National Football League > NFC West > San Fransisco 49ers",
+      "Teams > San Fransisco 49ers (NFL)",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steve Young (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7804.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7805.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7806.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "113",
+    "name": "Super Bowl 25 (XXV) Championship Ring - New York Giants - January 27, 1991",
+    "sku": "SB25",
+    "price": 35,
+    "description": "This replica ring accurately embodies the original aqua blue-stone and yellow gold Giants design, updated for the franchise’s second Super Bowl win with two larger football-shaped stones and a border of smaller stones around them. Original examples are described with raised “GIANTS 1990 WORLD CHAMPIONS” lettering and shanks featuring the recipient name, season record, helmet motif, and game scores (Giants 20-Bills 19). Most commonly, fans desire Lawrence Taylor's (#56) version due to his critical role in upholding the Giant's defence, however other player's, such as Hostetler or Anderson can be commonly sought after as well.",
+    "shortDescription": "<p data-start=\"6817\" data-end=\"7029\"><strong data-start=\"6817\" data-end=\"6828\">League:</strong> National Football League (NFC East)<br data-start=\"6864\" data-end=\"6867\" /><strong data-start=\"6867\" data-end=\"6884\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Tampa Stadium</span></span> (Tampa, Florida)<br data-start=\"6941\" data-end=\"6944\" /><strong data-start=\"6944\" data-end=\"6952\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Ottis Anderson</span></span> #24 — Running back; Super Bowl MVP</p>\r\\n<p data-start=\"7031\" data-end=\"7726\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">New York Giants</span></span> beat the favored <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Buffalo Bills</span></span> 20–19 in Super Bowl XXV on January 27, 1991, and the ring reflects the 1990 season. This title came through control, patience, and a masterful defensive plan against Buffalo’s no-huddle offense. Ottis Anderson (#24) rushed for 102 yards and a touchdown to win MVP, but QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jeff Hostetler</span></span> #15 became a hugely popular engraved alternative because he stepped in for the injured Phil Simms and calmly guided the playoff run; replica listings also show strong interest in Lawrence Taylor (#56), the face of the defense.</p>",
+    "categories": [
+      "Champions By Year > 1991",
+      "Your City > New York City Pro Teams",
+      "League > NFL - National Football League > NFC East > New York Giants",
+      "Teams > New York Giants (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7798.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7800.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7799.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "114",
+    "name": "Super Bowl 26 (XXVI) Championship Ring - Washington Redskins - January 26, 1992",
+    "sku": "SB26",
+    "price": 35,
+    "description": "This replica ring closely follows the original yellow-gold oval design, featuring a diamond-filled football shape across the face with three prominent round stones aligned diagonally, surrounded by multiple smaller stones replicating the original diamond arrangement. The border reads “WASHINGTON REDSKINS WORLD CHAMPIONS.” One shoulder displays “SUPER BOWL XXVI,” the 37–24 score, and stadium imagery, while the opposite side shows “CONKLIN,” three Lombardi trophies labeled XVII, XXII, XXVI, and the team logo, referencing Washington’s three championships. The engraving panels, trophy icons, and dense stone layout replicate the original design closely, with the personalized name (such as Conklin) varying depending on the replica version. Replica versions most often use Rypien, though player name engravings — including Conklin — could potentially vary sometimes while the championship design remains consistent.",
+    "shortDescription": "<p data-start=\"8564\" data-end=\"8783\"><strong data-start=\"8564\" data-end=\"8575\">League:</strong> National Football League (NFC East)<br data-start=\"8611\" data-end=\"8614\" /><strong data-start=\"8614\" data-end=\"8631\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Hubert H. Humphrey Metrodome</span></span> (Minneapolis, Minnesota)<br data-start=\"8696\" data-end=\"8699\" /><strong data-start=\"8699\" data-end=\"8707\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Mark Rypien</span></span> #11 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"8785\" data-end=\"9399\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Washington Redskins</span></span> reigned victorious in Super Bowl XXVI, beating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Buffalo Bills</span></span> 37–24 on January 26, 1992, and the ring reflects the 1991 season widely regarded as one of the most complete teams ever assembled. Mark Rypien (#11) earned MVP after throwing for 292 yards and 2 touchdowns, while WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Gary Clark</span></span> #84 and WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Art Monk</span></span> #81 were key contributors. The Conklin engraving refers to <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Conklin</span></span>, with less-common names like him often appealing to collectors wanting authentic roster-based engravings rather than only star players.</p>",
+    "categories": [
+      "Champions By Year > 1992",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "League > NFL - National Football League > NFC East > Washington Commanders (Redskins)",
+      "Your City > Washington Pro Teams",
+      "Teams > Washington Redskins/Commanders (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6635.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6636.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6637.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "115",
+    "name": "Super Bowl 27 (XXVII) Championship Ring - Dallas Cowboys - January 31, 1993 *TROY AIKMAN RING 1*",
+    "sku": "SB27",
+    "price": 35,
+    "description": "This replica ring accurately follows the original yellow gold, football-shaped, diamond-covered face with a Cowboys star at center and raised “Dallas Cowboys” text around the edges. This 1990s era style includes details such as an engraved player's surname, jersey number and position, the team’s full record, plus the Super Bowl XXVII logo and 52–17 score on the shanks.  Aikman (MVP) is the most commonly sought after version, with other versions sometimes featuring legendary wide receivers Irvin or Harper.",
+    "shortDescription": "<p data-start=\"10097\" data-end=\"10313\"><strong data-start=\"10097\" data-end=\"10108\">League:</strong> National Football League (NFC East)<br data-start=\"10144\" data-end=\"10147\" /><strong data-start=\"10147\" data-end=\"10164\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Rose Bowl</span></span> (Pasadena, California)<br data-start=\"10227\" data-end=\"10230\" /><strong data-start=\"10230\" data-end=\"10238\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Troy Aikman</span></span> #8 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"10315\" data-end=\"10984\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> announced their 1990s dynasty in Super Bowl XXVII, hammering the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Buffalo Bills</span></span> 52–17 on January 31, 1993. The ring reflects the 1992 season, when Jimmy Johnson’s roster-building finally exploded into a title. Troy Aikman (#8) won MVP with 273 yards and 4 touchdowns, while WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Michael Irvin</span></span> #88 and WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Alvin Harper</span></span> #80 were both major part of the show—Harper’s famous long touchdown and Irvin’s “Playmaker” status allow for their rings to be commonly sold versions in the fanbase.</p>",
+    "categories": [
+      "Champions By Year > 1993",
+      "League > NFL - National Football League > NFC East > Dallas Cowboys",
+      "Teams > Dallas Cowboys (NFL)",
+      "Your City > Dallas Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Troy Aikman (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6607.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6608.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6609.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "116",
+    "name": "Super Bowl 28 (XXVIII) Championship Ring - Dallas Cowboys - January 30, 1994 *TROY AIKMAN RING 2*",
+    "sku": "SB28",
+    "price": 35,
+    "description": "Embodying this championship ring's flashier four-title look: a gold face with four large football-shaped stones representing the Cowboys’ four Super Bowl championships to that point, this ring emphasises the dynastic power of the Cowboys at this time, earning a fan-given title of being \"America's team\". A perimeter of smaller stones and raised “Dallas Cowboys” text borders the edges, with richly engraved shanks with the player panel, NFL branding, Super Bowl XXVIII references, and score details. Replica versions most often use Irvin, after solidifying a reputation of being a fan-favourite in this era, with Aikman, or Emmitt Smith also being popular versions of this spectacular replica memorabilia.",
+    "shortDescription": "<p data-start=\"11707\" data-end=\"11921\"><strong data-start=\"11707\" data-end=\"11718\">League:</strong> National Football League (NFC East)<br data-start=\"11754\" data-end=\"11757\" /><strong data-start=\"11757\" data-end=\"11774\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Georgia Dome</span></span> (Atlanta, Georgia)<br data-start=\"11833\" data-end=\"11836\" /><strong data-start=\"11836\" data-end=\"11844\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Emmitt Smith</span></span> #22 — Running back; Super Bowl MVP</p>\r\\n<p data-start=\"11923\" data-end=\"12562\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> won back-to-back titles in Super Bowl XXVIII, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Buffalo Bills</span></span> 30–13 on January 30, 1994. The ring reflects the 1993 season, with Emmitt Smith (#22) powering through for 132 rushing yards and 2 touchdowns after Dallas overturned an early deficit. Even so, replica demand often leans toward Troy Aikman (#8) or Michael Irvin (#88) engravings because those names remain huge fan favorites from the triplets era, and at least one major replica retailer prominently sells this ring as an Irvin version.</p>",
+    "categories": [
+      "Champions By Year > 1994",
+      "League > NFL - National Football League > NFC East > Dallas Cowboys",
+      "Teams > Dallas Cowboys (NFL)",
+      "Your City > Dallas Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Troy Aikman (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6703.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6704.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6705.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "117",
+    "name": "Super Bowl 29 (XXIX) Championship Ring - San Fransisco 49ers - January 29, 1995",
+    "sku": "SB29",
+    "price": 35,
+    "description": "As an accurate imitation of one of the most diamond-heavy 49ers designs: the original face was described as a sea of diamonds featuring five miniature Lombardi Trophies, marking the first franchise to reach five Super Bowl titles. The border typically reads “1994 Forty Niners,” while the shanks carry the recipient name, another group of trophies, the 16–3 record, and logos for the team, the NFL’s 75th anniversary, and Super Bowl XXIX above the score. Steve Young's ring is considered the most popular version amongst fans due to his emerging star status in the team, though Jerry Rice engravings are also popular amongst fans.",
+    "shortDescription": "<p data-start=\"13297\" data-end=\"13515\"><strong data-start=\"13297\" data-end=\"13308\">League:</strong> National Football League (NFC West)<br data-start=\"13344\" data-end=\"13347\" /><strong data-start=\"13347\" data-end=\"13364\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Joe Robbie Stadium</span></span> (Miami Gardens, Florida)<br data-start=\"13429\" data-end=\"13432\" /><strong data-start=\"13432\" data-end=\"13440\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Steve Young</span></span> #8 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"13517\" data-end=\"14052\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">San Francisco 49ers</span></span> won Super Bowl XXIX in spectacular style, beating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">San Diego Chargers</span></span> 49–26 on January 29, 1995. The ring reflects the 1994 season, the year Steve Young (#8) finally stepped fully out of Joe Montana’s shadow and threw a Super Bowl-record 6 touchdown passes. WR <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jerry Rice</span></span> #80 added 3 touchdown catches, so both Young and Rice engravings hold strong appeal in the replica market.</p>",
+    "categories": [
+      "Champions By Year > 1995",
+      "All Time Greats > Jerry Rice (NFL)",
+      "League > NFL - National Football League > NFC West > San Fransisco 49ers",
+      "Teams > San Fransisco 49ers (NFL)",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steve Young (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7801.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7802.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7803.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "118",
+    "name": "Super Bowl 30 (XXX) Championship Ring - Dallas Cowboys - January 28, 1996 *TROY AIKMAN RING 3*",
+    "sku": "SB30",
+    "price": 35,
+    "description": "<p data-start=\"15710\" data-end=\"15796\">Echoing the famously oversized original,  described as the biggest Super Bowl ring ever created at the time, with five carats of diamonds and 81 stones, this replica tells the story of the Cowboys’ fifth championship, marking their place as the second team to now reach five Super Bowl victories. Exuding a high-1990s luxury look, the face features a large diamond-built star with raised “Dallas Cowboys” lettering, while the shanks include the recipient name/number, NFL logo, score details, and a nod to Texas Stadium. Aikman's ring is widely regarded as the most sought after version, though Emmitt Smith, Irvin, or Brown engravings have been known to be popular as well.</p>",
+    "shortDescription": "<p data-start=\"14887\" data-end=\"15097\"><strong data-start=\"14887\" data-end=\"14898\">League:</strong> National Football League (NFC East)<br data-start=\"14934\" data-end=\"14937\" /><strong data-start=\"14937\" data-end=\"14954\">Game Stadium:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Sun Devil Stadium</span></span> (Tempe, Arizona)<br data-start=\"15011\" data-end=\"15014\" /><strong data-start=\"15014\" data-end=\"15022\">MVP:</strong> <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Larry Brown</span></span> #24 — Cornerback; Super Bowl MVP</p>\r\\n<p data-start=\"15099\" data-end=\"15708\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Dallas Cowboys</span></span> beat the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pittsburgh Steelers</span></span> 27–17 in Super Bowl XXX on January 28, 1996, and the ring reflects the 1995 season. This was Dallas’ third title in four years, even after the coaching change from Jimmy Johnson to Barry Switzer. Larry Brown (#24) won MVP with two huge interceptions, but replica demand usually swings harder toward Troy Aikman (#8) because he remained the public face of the dynasty, with Emmitt Smith (#22) and Michael Irvin (#88) also highly collectible names from that era.</p>",
+    "categories": [
+      "Champions By Year > 1996",
+      "League > NFL - National Football League > NFC East > Dallas Cowboys",
+      "Teams > Dallas Cowboys (NFL)",
+      "Your City > Dallas Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Troy Aikman (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6716.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6717.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6718.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "119",
+    "name": "Super Bowl 31 (XXXI) Championship Ring - Green Bay Packers - January 26, 1997",
+    "sku": "SB31",
+    "price": 35,
+    "description": "The ring itself is bold, confident, and unmistakably ‘90s Green Bay — a rich yellow gold base with a deep green centrepiece, carrying the Packers’ iconic “G” logo set into a field of shimmering stones. Surrounding it, a cluster of smaller stones radiates outward, giving the face a layered, almost glowing effect under light. The top edge reads “WORLD CHAMPIONS”, while the shoulders carry detailed engravings including “SUPER BOWL XXXI,” the 35–21 score, season references, and team branding. On versions engraved FAVRE #4, the name sits cleanly along the side panel above structured detailing, tying the ring directly to the quarterback who brought Green Bay back to the top.\r\\n\r\\nThe layout, colours, and stone placement stay true to the championship design, with only the player name panel shifting depending on the version.",
+    "shortDescription": "<p data-start=\"136\" data-end=\"317\"><strong data-start=\"136\" data-end=\"147\">League:</strong> National Football League (NFC North)<br data-start=\"184\" data-end=\"187\" /><strong data-start=\"187\" data-end=\"204\">Game Stadium:</strong> Louisiana Superdome (New Orleans, Louisiana)<br data-start=\"249\" data-end=\"252\" /><strong data-start=\"252\" data-end=\"260\">MVP:</strong> Desmond Howard #81 — Return specialist; Super Bowl MVP</p>\r\\n<p data-start=\"319\" data-end=\"948\">The Green Bay Packers ended a 29-year championship drought in Super Bowl XXXI, defeating the New England Patriots 35–21 on January 26, 1997. The ring reflects the 1996 season, where Brett Favre (#4) led one of the league’s most explosive offenses, cementing himself as the face of the franchise and a back-to-back MVP at the time. While Desmond Howard (#81) took Super Bowl MVP with a game-breaking 99-yard kickoff return, Favre’s leadership, arm strength, and larger-than-life personality are exactly why his name is so heavily tied to this ring and remains one of the most recognisable engravings from this era.</p>",
+    "categories": [
+      "Champions By Year > 1997",
+      "All Time Greats > Brett Favre (NFL)",
+      "League > NFL - National Football League > NFC North > Green Bay Packers",
+      "Teams > Green Bay Packers (NFL)",
+      "Your City > Green Bay Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6860.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6861.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6862.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "121",
+    "name": "Super Bowl 32 (XXXII) Championship Ring - Denver Broncos - January 25, 1998 *JOHN ELWAY RING 1*",
+    "sku": "SB32",
+    "price": 35,
+    "description": "The ring is crafted in yellow gold with bold black enamel accents, creating a rugged, high-contrast look. The top features a large Lombardi Trophy centerpiece framed by three prominent stones, symbolising Denver’s first championship. Along the edges, “DENVER BRONCOS” and “WORLD CHAMPIONS” are engraved in raised lettering. One shoulder shows “DAVIS” above the #30, alongside a small Broncos helmet and the 1997 season year, while the opposite side displays Super Bowl XXXII branding, the 31–24 score, and team identifiers. A row of rectangular stones runs along the shoulder edge, adding depth and sparkle, while textured gold surfaces give the ring a powerful, celebratory feel — perfectly matching the underdog triumph it represents.",
+    "shortDescription": "<p data-start=\"51\" data-end=\"221\"><strong data-start=\"51\" data-end=\"62\">League:</strong> National Football League (AFC West)<br data-start=\"98\" data-end=\"101\" /><strong data-start=\"101\" data-end=\"118\">Game Stadium:</strong> Qualcomm Stadium (San Diego, California)<br data-start=\"159\" data-end=\"162\" data-is-only-node=\"\" /><strong data-start=\"162\" data-end=\"170\">MVP:</strong> Terrell Davis #30 — Running back; Super Bowl MVP</p>\r\\n<p data-start=\"223\" data-end=\"969\">The Denver Broncos stunned the heavily favoured Green Bay Packers 31–24 in Super Bowl XXXII, finally delivering the franchise’s first championship after years of near misses. The 1997 season became legendary for John Elway’s determination to silence critics, highlighted by his iconic helicopter dive for a first down, but it was running back Terrell Davis (#30) who powered the win, rushing for 157 yards and three touchdowns despite battling a migraine. This particular ring featuring Davis #30 captures that gritty performance, while Elway’s leadership and long-awaited breakthrough still loom large in the story — a quick note that player engravings can vary slightly depending on version, though the core design remains the same.</p>",
+    "categories": [
+      "Champions By Year > 1998",
+      "League > NFL - National Football League > AFC West > Denver Broncos",
+      "Teams > Denver Broncos (NFL)",
+      "Your City > Denver Pro Teams",
+      "All Time Greats > John Elway (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6923.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6924.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6925.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "122",
+    "name": "Super Bowl 33 (XXXIII) Championship Ring - Denver Broncos - January 31, 1999 *JOHN ELWAY RING 2*",
+    "sku": "SB33",
+    "price": 35,
+    "description": "The ring has a much more intricate, layered look than the previous year — built in yellow gold with a bright, diamond-covered white gold-style face. At the centre sits a large Broncos logo brought to life with orange and red stones, surrounded by a dense field of smaller clear stones that give the entire face a shimmering, almost textured appearance. The top edge reads “WORLD” and the bottom “CHAMPIONS,” framing the design cleanly. Along the shoulder, a row of rectangular-cut stones adds a sharp, structured contrast to the round stones on the face. One side panel is engraved ELWAY #7, alongside the Broncos helmet and 1998 season, while the opposite side features Super Bowl XXXIII, the 34–19 score, and detailed game branding. The mix of coloured stones, layered textures, and strong side engravings gives this ring a more premium, “final chapter” feel — perfectly matching Elway’s last game and second championship.",
+    "shortDescription": "<p data-start=\"57\" data-end=\"217\"><strong data-start=\"57\" data-end=\"68\">League:</strong> National Football League (AFC West)<br data-start=\"104\" data-end=\"107\" /><strong data-start=\"107\" data-end=\"124\">Game Stadium:</strong> Pro Player Stadium (Miami, Florida)<br data-start=\"160\" data-end=\"163\" /><strong data-start=\"163\" data-end=\"171\">MVP:</strong> John Elway #7 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"219\" data-end=\"828\">The Denver Broncos went back-to-back, defeating the Atlanta Falcons 34–19 in Super Bowl XXXIII, closing out the 1998 season with a perfect ending to John Elway’s career. At 38 years old, Elway (#7) delivered a composed MVP performance, throwing for 336 yards and a touchdown, finally retiring on top after years of Super Bowl heartbreak. Terrell Davis (#30) remained the engine of the offense, but this ring — engraved ELWAY #7 — captures the moment the franchise icon finished his legacy as one of the greatest quarterbacks of all time, with leadership and resilience that defined an era.</p>",
+    "categories": [
+      "Champions By Year > 1999",
+      "League > NFL - National Football League > AFC West > Denver Broncos",
+      "Teams > Denver Broncos (NFL)",
+      "Your City > Denver Pro Teams",
+      "All Time Greats > John Elway (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6916.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6917.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6918.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "123",
+    "name": "Super Bowl 34 (XXXIV) Championship Ring - St Louis Rams - January 30, 2000",
+    "sku": "SB34",
+    "price": 35,
+    "description": "The ring features a rich yellow gold build with a wide, rectangular face packed tightly with shimmering stones, giving it a dense, glittering look under light. At the centre sits a raised Lombardi Trophy, highlighted by a marquise-shaped stone at the top, with rows of smaller stones cascading downward to form the trophy silhouette. Around it, clusters of clear stones fill the background, while subtle blue and gold accents spell out “RAMS” across the middle. The top edge reads “WORLD” and the bottom “CHAMPIONS,” framing the face. A row of channel-set rectangular stones runs along the shoulder edge, adding structure and depth. One side panel shows WARNER #13 with the Rams helmet and 1999 season reference, while the opposite shoulder features Super Bowl XXXIV, the 23–16 score, and detailed game branding. The combination of the raised trophy, tightly packed stones, and bold engraved panels gives the ring a bright, celebratory feel that reflects the explosive “Greatest Show on Turf” championship.",
+    "shortDescription": "<p data-start=\"1590\" data-end=\"1748\"><strong data-start=\"1590\" data-end=\"1601\">League:</strong> National Football League (NFC West)<br data-start=\"1637\" data-end=\"1640\" /><strong data-start=\"1640\" data-end=\"1657\">Game Stadium:</strong> Georgia Dome (Atlanta, Georgia)<br data-start=\"1689\" data-end=\"1692\" /><strong data-start=\"1692\" data-end=\"1700\">MVP:</strong> Kurt Warner #13 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"1750\" data-end=\"2347\">The St. Louis Rams shocked the league in Super Bowl XXXIV, defeating the Tennessee Titans 23–16 in one of the most dramatic finishes ever — remembered for “The Tackle” on the final play. The 1999 season marked the rise of “The Greatest Show on Turf,” with Kurt Warner (#13), a former grocery store worker turned NFL MVP, throwing for 414 yards and 2 touchdowns. Running back Marshall Faulk (#28) and wide receiver Isaac Bruce (#80), who caught the game-winning touchdown, remain huge names tied to this ring — though Warner’s story is what makes this version especially compelling.</p>",
+    "categories": [
+      "Champions By Year > 2000",
+      "All Time Greats > Kurt Warner (NFL)",
+      "Your City > Los Angeles Pro Teams",
+      "League > NFL - National Football League > NFC West > Los Angeles Rams",
+      "Teams > Los Angeles Rams (NFL)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6722.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6723.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6724.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "124",
+    "name": "Super Bowl 35 (XXXV) Championship Ring - Baltimore Ravens - January 28, 2001",
+    "sku": "SB35",
+    "price": 35,
+    "description": "The ring is bold and commanding, built in yellow gold with a dark, textured face that makes the stones stand out sharply. At the centre sits the Ravens shield logo with the raven's face set against a shiny red background, and a bright red stone for the raven's eye, surrounded by a cluster of clear stones that create a tight, powerful frame. The top reads “WORLD CHAMPIONS”, while the shoulders carry detailed engravings including Super Bowl XXXV, the 34–7 score, and team imagery. On the LEWIS #52 side, his name and number sit cleanly above structured detailing, while the opposite panel features season references and branding. The overall design feels heavy, aggressive, and unapologetic — just like the defence it represents, with a small note that player engravings can occasionally vary.",
+    "shortDescription": "<p data-start=\"57\" data-end=\"220\"><strong data-start=\"57\" data-end=\"68\">League:</strong> National Football League (AFC North)<br data-start=\"105\" data-end=\"108\" /><strong data-start=\"108\" data-end=\"125\">Game Stadium:</strong> Raymond James Stadium (Tampa, Florida)<br data-start=\"164\" data-end=\"167\" /><strong data-start=\"167\" data-end=\"175\">MVP:</strong> Ray Lewis #52 — Linebacker; Super Bowl MVP</p>\r\\n<p data-start=\"222\" data-end=\"816\">The Baltimore Ravens dominated the New York Giants 34–7 in Super Bowl XXXV, capping the 2000 season with one of the greatest defensive performances in NFL history. Ray Lewis (#52) led a relentless unit that allowed almost nothing all postseason, earning MVP and cementing his reputation as the emotional leader of the team. Safety Rod Woodson (#26) brought veteran presence, while the defence itself became the identity — this ring, engraved LEWIS #52, captures the heart of that dominance, with his intensity and leadership making him one of the most iconic defensive players ever.</p>",
+    "categories": [
+      "Champions By Year > 2001",
+      "Your City > Baltimore Pro Teams",
+      "League > NFL - National Football League > AFC North > Baltimore Ravens",
+      "Teams > Baltimore Ravens (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6854.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6855.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6856.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "125",
+    "name": "Super Bowl 36 (XXXVI) Championship Ring - New England Patriots - February 2, 2002 *TOM BRADY RING 1*",
+    "sku": "SB36",
+    "price": 35,
+    "description": "The ring shifts to a white-gold style finish, giving it a brighter, modern look compared to earlier designs. The face is dominated by the Patriots logo in blue and red enamel, surrounded by tightly packed rows of small clear stones arranged in sweeping, diagonal bands that create a flowing, almost motion-like effect across the top. A football-shaped stone sits near the top edge beneath “WORLD,” while “CHAMPIONS” anchors the bottom border. The shoulders continue the clean, structured layout — one side features BRADY #12 above detailed championship text, while the opposite panel highlights Super Bowl XXXVI, the 20–17 score, and Patriots branding inside a circular emblem. Thin rows of channel-set stones run along the edge of the face, framing the logo and adding depth. The combination of silver-toned metal, bold team colours, and layered stone placement gives the ring a sharp, contemporary feel that reflects the beginning of New England’s dynasty.",
+    "shortDescription": "<p data-start=\"1600\" data-end=\"1769\"><strong data-start=\"1600\" data-end=\"1611\">League:</strong> National Football League (AFC East)<br data-start=\"1647\" data-end=\"1650\" /><strong data-start=\"1650\" data-end=\"1667\">Game Stadium:</strong> Louisiana Superdome (New Orleans, Louisiana)<br data-start=\"1712\" data-end=\"1715\" /><strong data-start=\"1715\" data-end=\"1723\">MVP:</strong> Tom Brady #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"1771\" data-end=\"2258\">The New England Patriots shocked the St. Louis Rams 20–17 in Super Bowl XXXVI, beginning a dynasty no one saw coming. The 2001 season introduced Tom Brady (#12), a sixth-round pick who stepped in and calmly led a game-winning drive to secure the Patriots’ first championship. Kicker Adam Vinatieri (#4) sealed it with the final field goal, while players like Ty Law (#24) made huge defensive plays — but this ring, engraved BRADY #12, marks the exact moment his legacy began.</p>",
+    "categories": [
+      "Champions By Year > 2002",
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7834.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7836.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7835.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "126",
+    "name": "Super Bowl 37 (XXXVII) Championship Ring - Tampa Bay Buccaneers - January 26, 2003",
+    "sku": "SB37",
+    "price": 35,
+    "description": "The ring features a yellow gold base with a football-shaped face covered in tightly packed stones, creating a bright, textured surface. At the centre sits a raised Lombardi Trophy, with rows of stones forming the football outline beneath “TAMPA BAY BUCCANEERS” at the top and “WORLD CHAMPIONS” along the bottom. The shoulders are deeply engraved — one side shows JACKSON #34 above defensive-themed detailing, while the opposite panel highlights Super Bowl XXXVII, the 48–21 score, and stadium imagery. The layered stone placement, bold lettering, and strong trophy centrepiece give the ring a heavy, defensive-minded feel matching Tampa Bay’s historic performance.",
+    "shortDescription": "<p data-start=\"58\" data-end=\"224\"><strong data-start=\"58\" data-end=\"69\">League:</strong> National Football League (NFC South)<br data-start=\"106\" data-end=\"109\" /><strong data-start=\"109\" data-end=\"126\">Game Stadium:</strong> Qualcomm Stadium (San Diego, California)<br data-start=\"167\" data-end=\"170\" /><strong data-start=\"170\" data-end=\"178\">MVP:</strong> Dexter Jackson #34 — Safety; Super Bowl MVP</p>\r\\n<p data-start=\"226\" data-end=\"825\">The Tampa Bay Buccaneers delivered a dominant defensive performance in Super Bowl XXXVII, defeating the Oakland Raiders 48–21 to secure their first championship. The 2002 season marked the peak of one of the greatest defences ever assembled under head coach Jon Gruden. Safety Dexter Jackson (#34) earned MVP with two interceptions, while linebacker Derrick Brooks (#55) sealed the win with a late pick-six. This ring, engraved Jackson #34, reflects the defensive identity of the team, though names like Brooks and Warren Sapp (#99) are also closely tied to the Buccaneers’ championship run.</p>",
+    "categories": [
+      "Champions By Year > 2003",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "League > NFL - National Football League > NFC South > Tampa Bay Buccaneers",
+      "Teams > Tampa Bay Buccaneers (NFL)",
+      "Your City > Tampa Bay Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6644.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6645.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6646.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "128",
+    "name": "Super Bowl 39 (XXXIX) Championship Ring - New England Patriots - February 6, 2005 *TOM BRADY RING 3*",
+    "sku": "SB39",
+    "price": 35,
+    "description": "The ring continues the white-gold style seen in earlier Patriots championships but with a more angular, diamond-heavy face. At the centre sits the Patriots logo in blue and red enamel, surrounded by rows of tightly set stones forming a shield-like shape, with three larger marquise-style stones across the top symbolising the franchise’s three championships. “WORLD” and “CHAMPIONS” frame the face, while the BRADY #12 side panel includes championship text and season references. The opposite shoulder highlights Super Bowl XXXIX, the 24–21 score, and team branding, with layered stones along the edges adding depth. The overall look is crisp and structured, reflecting the Patriots’ methodical dominance.",
+    "shortDescription": "<p data-start=\"57\" data-end=\"225\"><strong data-start=\"57\" data-end=\"68\">League:</strong> National Football League (AFC East)<br data-start=\"104\" data-end=\"107\" /><strong data-start=\"107\" data-end=\"124\">Game Stadium:</strong> Alltel Stadium (Jacksonville, Florida)<br data-start=\"163\" data-end=\"166\" /><strong data-start=\"166\" data-end=\"174\">MVP:</strong> Deion Branch #83 — Wide receiver; Super Bowl MVP</p>\r\\n<p data-start=\"227\" data-end=\"878\">The New England Patriots defeated the Philadelphia Eagles 24–21 in Super Bowl XXXIX, capturing their third championship in four seasons and solidifying one of the NFL’s early-2000s dynasties. The 2004 season showcased balance and composure, with wide receiver Deion Branch (#83) earning MVP honours after 11 receptions for 133 yards, while Tom Brady (#12) orchestrated another efficient game-winning drive. This ring, engraved BRADY #12, reflects the quarterback’s growing legacy during the Patriots’ dominant stretch, alongside key contributors like Corey Dillon (#28) and Tedy Bruschi (#54) who anchored the team’s physical identity.</p>",
+    "categories": [
+      "Champions By Year > 2005",
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6706.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6709.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6708.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6707.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "130",
+    "name": "Super Bowl 41 (XLI) Championship Ring - Indianapolis Colts - February 4, 2007 *PEYTON MANNING RING 1*",
+    "sku": "SB41",
+    "price": 35,
+    "description": "This ring carries a bold white-gold style finish with the iconic blue Colts horseshoe set prominently in the centre, outlined in deep royal blue enamel and surrounded by tightly packed clear stones that shimmer across the entire face. Above the horseshoe sit three marquise-shaped stones, representing Lombardi trophies, while “WORLD” crowns the top and “CHAMPIONS” anchors the bottom in raised lettering. The shoulders continue the polished look — one side engraved MANNING #18 with vertical stone accents, while the opposite panel highlights “XLI”, “RAIN GAME,” and season imagery tied to the Colts’ historic championship. The overall design feels clean, icy, and dominant — very much reflecting Indianapolis’ long-awaited breakthrough.",
+    "shortDescription": "<p data-start=\"58\" data-end=\"229\"><strong data-start=\"58\" data-end=\"69\">League:</strong> National Football League (AFC South)<br data-start=\"106\" data-end=\"109\" /><strong data-start=\"109\" data-end=\"126\">Game Stadium:</strong> Dolphin Stadium (Miami Gardens, Florida)<br data-start=\"167\" data-end=\"170\" /><strong data-start=\"170\" data-end=\"178\">MVP:</strong> Peyton Manning #18 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"231\" data-end=\"804\">The Indianapolis Colts defeated the Chicago Bears 29–17 in Super Bowl XLI, finally delivering Peyton Manning’s long-awaited first championship. The 2006 season ended years of playoff frustration, with Manning (#18) controlling the game in rainy conditions, while running back Joseph Addai (#29) and wide receiver Reggie Wayne (#87) provided key offensive support. The Colts’ defence, led by safety Bob Sanders (#21), tightened after halftime to secure the win, and this MANNING #18 engraving ties the ring directly to the quarterback who reshaped the franchise.</p>",
+    "categories": [
+      "Champions By Year > 2007",
+      "League > NFL - National Football League > AFC South > Indianapolis Colts",
+      "Teams > Indianapolis Colts (NFL)",
+      "Your City > Indianapolis Pro Teams",
+      "All Time Greats > Peyton Manning (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6749.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6750.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6751.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "131",
+    "name": "Super Bowl 42 (XLII) Championship Ring - New York Giants - February 3, 2008",
+    "sku": "SB42",
+    "price": 35,
+    "description": "This ring features a bright white-gold style base with a bold block “NY” Giants logo outlined in blue enamel at centre, surrounded by dense rows of clear stones that form a layered, stadium-like pattern. Four elongated stones sit near the top edge, representing Lombardi trophies, while “WORLD CHAMPIONS” frames the top and bottom in strong block lettering. One shoulder engraved MANNING #10 includes the Super Bowl XLII details and the Giants’ historic 18-0 upset, while the opposite side displays the “NY” emblem with decorative stone borders. The heavy stone layout and deep blue accents give the ring a dramatic, underdog-turned-champion feel.",
+    "shortDescription": "<p data-start=\"1439\" data-end=\"1615\"><strong data-start=\"1439\" data-end=\"1450\">League:</strong> National Football League (NFC East)<br data-start=\"1486\" data-end=\"1489\" /><strong data-start=\"1489\" data-end=\"1506\">Game Stadium:</strong> University of Phoenix Stadium (Glendale, Arizona)<br data-start=\"1556\" data-end=\"1559\" /><strong data-start=\"1559\" data-end=\"1567\">MVP:</strong> Eli Manning #10 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"1617\" data-end=\"2125\">The New York Giants stunned the undefeated New England Patriots 17–14 in one of the biggest upsets in Super Bowl history. The 2007 season ended with Eli Manning (#10) leading the iconic late touchdown drive, highlighted by the “Helmet Catch” from wide receiver David Tyree (#85). Defensive end Michael Strahan (#92) and the relentless pass rush disrupted Tom Brady all night. This MANNING #10 ring captures the moment the Giants denied a perfect season and cemented an unforgettable championship.</p>",
+    "categories": [
+      "Champions By Year > 2008",
+      "Your City > New York City Pro Teams",
+      "League > NFL - National Football League > NFC East > New York Giants",
+      "Teams > New York Giants (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6418.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6419.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6420.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "132",
+    "name": "Super Bowl 43 (XLIII) Championship Ring - Pittsburgh Steelers - February 1, 2009",
+    "sku": "SB43",
+    "price": 35,
+    "description": "This ring is built on a yellow gold base with a striking oval centre medallion showcasing the Steelers logo and three coloured stones — yellow, red, and blue — reflecting the team’s identity. Surrounding the logo are circular rows of clear stones, while six marquise stones form a crown-like shape above, symbolising the franchise’s six championships. “PITTSBURGH STEELERS WORLD CHAMPIONS” wraps the outer border in bold lettering. One shoulder engraved HARRISON #92 (or player engraving variation) displays Super Bowl XLIII details, while the opposite side highlights Arizona 23, the Lombardi Trophy imagery, and season references. The design is bold, colourful, and unmistakably Steelers.",
+    "shortDescription": "<p data-start=\"1580\" data-end=\"1778\"><strong>League</strong>: National Football League (AFC North)<br data-start=\"1624\" data-end=\"1627\" /><strong>Game</strong> <strong>Stadium</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Raymond James Stadium</span></span> (Tampa, Florida)<br data-start=\"1695\" data-end=\"1698\" /><strong>MVP</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Santonio Holmes</span></span> #10 — Wide receiver; Super Bowl MVP</p>\r\\n<p data-start=\"1780\" data-end=\"2408\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pittsburgh Steelers</span></span> captured Super Bowl XLIII (2008–2009 season) with a dramatic 27–23 win over the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Arizona Cardinals</span></span> on February 1, 2009, becoming the first franchise to win six Super Bowls. This comeback followed only three years after their fifth title, showing a second modern-era surge under coach Mike Tomlin. MVP Santonio Holmes (#10) made the iconic toe-tap game-winning catch, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Ben Roethlisberger</span></span> #7 engineered the final drive and LB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">James Harrison</span></span> #92 delivered a record 100-yard interception return.</p>",
+    "categories": [
+      "Champions By Year > 2009",
+      "All Time Greats > Ben Rothlisberger (NFL)",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6877.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6878.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6879.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "133",
+    "name": "Super Bowl 44 (XLIV) Championship Ring - New Orleans Saints - February 7, 2010",
+    "sku": "SB44",
+    "price": 35,
+    "description": "The ring features a yellow gold base with the Saints fleur-de-lis logo sitting front and centre — the logo filled with clear stones so it sparkles heavily under light. Rows of smaller stones surround it, creating a layered look, with “WORLD CHAMPIONS” stamped across the top and bottom edges. The shoulder engraved MITCHELL includes the player name and team branding, while the opposite side displays Saints vs Colts, Super Bowl XLIV, and season imagery. The overall feel is bold but classic — gold, bright stones, and that unmistakable Saints logo popping right off the face.",
+    "shortDescription": "<p data-start=\"2797\" data-end=\"2964\"><strong data-start=\"2797\" data-end=\"2808\">League:</strong> National Football League (NFC South)<br data-start=\"2845\" data-end=\"2848\" /><strong data-start=\"2848\" data-end=\"2865\">Game Stadium:</strong> Sun Life Stadium (Miami Gardens, Florida)<br data-start=\"2907\" data-end=\"2910\" /><strong data-start=\"2910\" data-end=\"2918\">MVP:</strong> Drew Brees #9 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"2966\" data-end=\"3497\">The New Orleans Saints defeated the Indianapolis Colts 31–17, capturing the franchise’s first championship in one of the most emotional victories in Super Bowl history. Drew Brees (#9) delivered a near-perfect performance, completing 32 of 39 passes, while cornerback Tracy Porter sealed the win with a dramatic interception return. This MITCHELL engraving reflects a key contributor from a roster that defined a city’s comeback after Hurricane Katrina. Brees’ leadership and accuracy still define the championship run.</p>",
+    "categories": [
+      "Champions By Year > 2010",
+      "All Time Greats > Drew Brees (NFL)",
+      "Your City > New Orleans Pro Teams",
+      "League > NFL - National Football League > NFC South > New Orleans Saints",
+      "Teams > New Orleans Saints (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6713.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6714.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6715.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "134",
+    "name": "Super Bowl 45 (XLV) Championship Ring - Green Bay Packers - February 6, 2011",
+    "sku": "SB45",
+    "price": 35,
+    "description": "This ring features a white-gold style base with the iconic Green Bay “G” logo set at centre, surrounded by multiple circular rows of clear stones and accented with a thin green and yellow enamel outline, matching the Packer's iconic logo and team colours. Four larger stones appear around the perimeter, representing championships, while “WORLD CHAMPIONS” frames the top and bottom edges. One shoulder engraved RODGERS #12 includes Lambeau Field imagery, while the opposite panel highlights Super Bowl XLV and game references. The design is symmetrical and clean, capturing the Packers’ traditional look.",
+    "shortDescription": "<p data-start=\"5146\" data-end=\"5310\"><strong data-start=\"5146\" data-end=\"5157\">League:</strong> National Football League (NFC North)<br data-start=\"5194\" data-end=\"5197\" /><strong data-start=\"5197\" data-end=\"5214\">Game Stadium:</strong> Cowboys Stadium (Arlington, Texas)<br data-start=\"5249\" data-end=\"5252\" /><strong data-start=\"5252\" data-end=\"5260\">MVP:</strong> Aaron Rodgers #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"5312\" data-end=\"5720\">The Green Bay Packers defeated the Pittsburgh Steelers 31–25 to win Super Bowl XLV. The 2010 season saw Aaron Rodgers (#12) step fully into franchise legend status, throwing 3 touchdowns and leading a young team through injuries. Wide receiver Greg Jennings (#85) and linebacker Clay Matthews (#52) were key contributors. This RODGERS #12 ring marks the Packers’ return to championship glory.</p>",
+    "categories": [
+      "Champions By Year > 2011",
+      "All Time Greats > Aaron Rodgers (NFL)",
+      "League > NFL - National Football League > NFC North > Green Bay Packers",
+      "Teams > Green Bay Packers (NFL)",
+      "Your City > Green Bay Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7491.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7492.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7493.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "135",
+    "name": "Super Bowl 46 (XLVI) Championship Ring - New York Giants - February 5, 2012",
+    "sku": "SB46",
+    "price": 35,
+    "description": "This ring carries a white-gold style finish with the Giants “NY” logo outlined in deep blue at centre, surrounded by dense rows of stones forming a layered stadium-style pattern. Four elongated stones sit near the top, representing championships, while “WORLD” and “CHAMPIONS” frame the face. The shoulder engraved MANNING #10 includes Super Bowl XLVI details and season imagery, while the opposite panel displays the Giants branding and score references. The overall design is bright, detailed, and heavy on stones.",
+    "shortDescription": "<p data-start=\"56\" data-end=\"224\"><strong data-start=\"56\" data-end=\"67\">League:</strong> National Football League (NFC East)<br data-start=\"103\" data-end=\"106\" /><strong data-start=\"106\" data-end=\"123\">Game Stadium:</strong> Lucas Oil Stadium (Indianapolis, Indiana)<br data-start=\"165\" data-end=\"168\" /><strong data-start=\"168\" data-end=\"176\">MVP:</strong> Eli Manning #10 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"226\" data-end=\"758\">The New York Giants defeated the New England Patriots 21–17 in a rematch of their earlier upset, capturing their second championship in five seasons. The 2011 season again saw Eli Manning (#10) deliver late-game composure, connecting with wide receiver Mario Manningham (#82) on a crucial sideline throw that set up the winning drive. Defensive end Justin Tuck (#91) and the pass rush pressured Tom Brady throughout. This MANNING #10 engraving reflects the calm leadership that defined another improbable postseason run.</p>",
+    "categories": [
+      "Champions By Year > 2012",
+      "Your City > New York City Pro Teams",
+      "League > NFL - National Football League > NFC East > New York Giants",
+      "Teams > New York Giants (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6710.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6711.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6712.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "137",
+    "name": "Super Bowl 47 (XLVII) Championship Ring - Baltimore Ravens - February 3, 2013",
+    "sku": "SB47",
+    "price": 35,
+    "description": "The ring features a silver oval-face design with the purple Baltimore Ravens shield logo at the centre, surrounded by multiple rows of stones. Two larger stones across the top represent the Raven's two championship wins, accentuated by “WORLD CHAMPIONS” framing the face on the left and right sides. One shoulder features the MVP's name engraved (FLACCO), team branding phrases such as \"play like a raven\" and season references. While the opposite panel highlights the  Super Bowl XLVII year (2012), the 34–31 score, and game imagery, including the Lombardi trophy. The purple-and-silver accents give the ring a distinctive Ravens identity.",
+    "shortDescription": "<p data-start=\"1299\" data-end=\"1473\"><strong data-start=\"1299\" data-end=\"1310\">League:</strong> National Football League (AFC North)<br data-start=\"1347\" data-end=\"1350\" /><strong data-start=\"1350\" data-end=\"1367\">Game Stadium:</strong> Mercedes-Benz Superdome (New Orleans, Louisiana)<br data-start=\"1416\" data-end=\"1419\" /><strong data-start=\"1419\" data-end=\"1427\">MVP:</strong> Joe Flacco #5 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"1475\" data-end=\"1949\">The Baltimore Ravens defeated the San Francisco 49ers 34–31 in the famous “Harbaugh Bowl,” highlighted by a long power outage delay. The 2012 season became Ray Lewis’ final run, with Joe Flacco (#5) throwing 3 touchdown passes in the championship. Wide receiver Jacoby Jones (#12) returned the opening second-half kickoff for a record touchdown, adding to the drama. This FLACCO #5 ring captures Baltimore’s emotional send-off for one of its defensive icons.</p>",
+    "categories": [
+      "Champions By Year > 2013",
+      "Your City > Baltimore Pro Teams",
+      "League > NFL - National Football League > AFC North > Baltimore Ravens",
+      "Teams > Baltimore Ravens (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6460.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6461.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6462.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "138",
+    "name": "Super Bowl 48 (XLVIII) Championship Ring - Seattle Seahawks - February 2, 2014",
+    "sku": "SB48",
+    "price": 35,
+    "description": "The ring features a silver-toned base with the Seahawks logo set at centre in deep navy and bright green accents, surrounded by dense rows of clear stones. “WORLD CHAMPIONS” frames the top and bottom edges, while larger stones line the perimeter. The shoulder engraved WILSON #3 includes Seattle skyline imagery and Super Bowl XLVIII details, while the opposite side highlights MetLife Stadium and the 43–8 score. The bright silver finish with blue highlights gives the ring a bold, modern Seahawks look.",
+    "shortDescription": "<p data-start=\"5490\" data-end=\"5663\"><strong data-start=\"5490\" data-end=\"5501\">League:</strong> National Football League (NFC West)<br data-start=\"5537\" data-end=\"5540\" /><strong data-start=\"5540\" data-end=\"5557\">Game Stadium:</strong> MetLife Stadium (East Rutherford, New Jersey)<br data-start=\"5603\" data-end=\"5606\" /><strong data-start=\"5606\" data-end=\"5614\">MVP:</strong> Malcolm Smith #53 — Linebacker; Super Bowl MVP</p>\r\\n<p data-start=\"5665\" data-end=\"6206\">The Seattle Seahawks dominated the Denver Broncos 43–8, delivering one of the most overwhelming defensive performances in Super Bowl history. Russell Wilson (#3) efficiently led the offence with two touchdown passes, while Malcolm Smith (#53) returned an interception for a score. The Seahawks’ “Legion of Boom” defence shut down Peyton Manning’s record-breaking offence, making this championship one of the most surprising blowouts ever. This WILSON #3 engraving reflects the young quarterback who guided Seattle to its first title.</p>",
+    "categories": [
+      "Champions By Year > 2014",
+      "Your City > Seattle Pro Teams",
+      "League > NFL - National Football League > NFC West > Seattle Seahawks",
+      "Teams > Seattle Seahawks (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6942.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6944.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6943.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "139",
+    "name": "Super Bowl 49 (XLIX) Championship Ring - New England Patriots - February 1 2014 *TOM BRADY RING 4*",
+    "sku": "SB49",
+    "price": 35,
+    "description": "<p data-start=\"4188\" data-end=\"4502\">This bold, bright, and modern rounded ring is crafted in white gold and features a large dazzling silver, blue and red Patriots logo centerpiece, surrounded by “WORLD CHAMPIONS” on the left and right sides. Four Lombardi Trophies are displayed across the top, while the shoulders show the 28–24 score and Super Bowl XLIX details. The band is engraved “Tom Brady” and “2014.”</p>\r\\n<p data-start=\"4504\" data-end=\"4681\"></p>",
+    "shortDescription": "<p data-start=\"3572\" data-end=\"3746\"><strong data-start=\"3572\" data-end=\"3583\">League:</strong> National Football League (AFC East)<br data-start=\"3619\" data-end=\"3622\" /><strong data-start=\"3622\" data-end=\"3639\">Game Stadium:</strong> University of Phoenix Stadium (Glendale, Arizona)<br data-start=\"3689\" data-end=\"3692\" /><strong data-start=\"3692\" data-end=\"3700\">MVP:</strong> Tom Brady #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"3748\" data-end=\"4154\">The New England Patriots defeated the Seattle Seahawks 28–24 in a dramatic finish remembered for Malcolm Butler’s goal-line interception. The 2014 season marked Tom Brady’s (#12) return to championship form, throwing 4 touchdowns. Tight end Rob Gronkowski (#87) and cornerback Butler (#21) played key roles. This BRADY #12 ring reflects the Patriots’ fourth championship of the dynasty era.</p>",
+    "categories": [
+      "Champions By Year > 2015",
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6464.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6465.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6466.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "140",
+    "name": "Super Bowl 50 (L) Championship Ring - Denver Broncos - February 7, 2016 *PEYTON MANNING RING 2*",
+    "sku": "SB50",
+    "price": 35,
+    "description": "The ring itself carries a bold white-gold style finish with a large “50” in gold at the centre, marking the milestone Super Bowl. Beneath the number sits the Broncos horse head logo, detailed with orange stones for the mane and outlined in navy, surrounded by dense rows of clear stones that fill the face. Three marquise-cut stones appear above the “50,” representing Lombardi trophies, while “WORLD” at the top and “CHAMPIONS” at the bottom frame the design in gold lettering. One shoulder engraved MANNING #18 features the Broncos logo and stone accents, while the opposite side includes the tribute “THIS ONE’S FOR PAT” — honouring owner Pat Bowlen — along with “DENVER BRONCOS 2015” and a Lombardi Trophy motif. Inside the band, engraved score lines list the Broncos’ playoff path to the title, including the 24–10 Super Bowl victory. The combination of gold accents, milestone “50,” and tribute details gives this ring a celebratory, legacy-driven feel fitting for Manning’s final championship.",
+    "shortDescription": "<p data-start=\"48\" data-end=\"213\"><strong data-start=\"48\" data-end=\"59\">League:</strong> National Football League (AFC West)<br data-start=\"95\" data-end=\"98\" /><strong data-start=\"98\" data-end=\"115\">Game Stadium:</strong> Levi’s Stadium (Santa Clara, California)<br data-start=\"156\" data-end=\"159\" data-is-only-node=\"\" /><strong data-start=\"159\" data-end=\"167\">MVP:</strong> Von Miller #58 — Linebacker; Super Bowl MVP</p>\r\\n<p data-start=\"215\" data-end=\"775\">The Denver Broncos defeated the Carolina Panthers 24–10, closing out the 2015 season with a defence-first performance that defined the team’s identity. Linebacker Von Miller (#58) dominated with sacks and forced fumbles, while quarterback Peyton Manning (#18) managed the game in what became the final championship of his career. This MANNING #18 engraving reflects the veteran leadership and historic send-off that made this victory especially memorable for Broncos fans, with Miller’s defensive heroics and Manning’s legacy both central to the story.</p>",
+    "categories": [
+      "Champions By Year > 2016",
+      "League > NFL - National Football League > AFC West > Denver Broncos",
+      "Teams > Denver Broncos (NFL)",
+      "Your City > Denver Pro Teams",
+      "All Time Greats > Peyton Manning (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6919.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6920.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6921.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6922.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "141",
+    "name": "Super Bowl 51 (LI) Championship Ring - New England Patriots - February 5, 2017 *TOM BRADY RING 5*",
+    "sku": "SB51",
+    "price": 35,
+    "description": "The ring features an oval-shaped white-gold style face packed with clear stones, with the Patriots logo set across a deep navy background. Multiple marquise-cut stones rise above the logo, representing Lombardi trophies, while “WORLD” and “CHAMPIONS” wrap the border in bold lettering. One shoulder engraved BRADY #12 includes “SUPER BOWL LI” and MVP references, while the opposite panel highlights the historic comeback and season imagery. The elongated shape and dense stone layout give this ring a dramatic, statement-style look fitting the largest comeback in NFL history.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (AFC East)\r\\n<strong>Game Stadium:</strong> NRG Stadium (Houston, Texas)\r\\n<strong>MVP:</strong> Tom Brady #12 — Quarterback; Super Bowl MVP</p>\r\\nThe New England Patriots completed the greatest comeback in Super Bowl history, defeating the Atlanta Falcons 34–28 in overtime after trailing 28–3. Tom Brady (#12) threw for a record 466 yards, guiding five scoring drives and cementing his legacy with a fifth championship. Running back James White (#28) scored the winning touchdown, while Julian Edelman (#11) delivered one of the most iconic catches in Super Bowl history. This BRADY #12 engraving captures the leadership behind the most dramatic title game ever played.",
+    "categories": [
+      "Champions By Year > 2017",
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6937.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6938.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6939.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "142",
+    "name": "Super Bowl 52 (LII) Championship Ring - Philadelphia Eagles - February 4, 2018",
+    "sku": "SB52",
+    "price": 35,
+    "description": "The ring features a white-gold style finish with a large green Eagles head logo at centre, surrounded by layered rows of stones. A marquise-cut stone sits above the logo, representing the Lombardi Trophy, while “WORLD CHAMPIONS” frames the top and bottom. The shoulders display FOLES #9 along with “SUPER BOWL LII,” “UNDERDOG,” and season references, including stadium imagery and score details. The heavy stone coverage and deep green accents reflect Philadelphia’s gritty underdog victory.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (NFC East)\r\\n<strong>Game Stadium:</strong> U.S. Bank Stadium (Minneapolis, Minnesota)\r\\n<strong>MVP:</strong> Nick Foles #9 — Quarterback; Super Bowl MVP</p>\r\\nThe Philadelphia Eagles defeated the New England Patriots 41–33, capturing the franchise’s first Super Bowl title. Quarterback Nick Foles (#9) delivered a legendary performance, including a touchdown reception on the famous “Philly Special.” Tight end Zach Ertz (#86) caught the go-ahead score, while the defence sealed the win late. This FOLES #9 engraving reflects the backup-turned-hero who led one of the most memorable championship runs.",
+    "categories": [
+      "Champions By Year > 2018",
+      "League > NFL - National Football League > NFC East > Philadelphia Eagles",
+      "Teams > Philadelphia Eagles (NFL)",
+      "Your City > Philadelphia Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7424.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7425.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7426.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "143",
+    "name": "Super Bowl 53 (LIII) Championship Ring - New England Patriots - February 3, 2019 *TOM BRADY RING 6*",
+    "sku": "SB53",
+    "price": 35,
+    "description": "<div class=\"relative basis-auto flex-col -mb-(--composer-overlap-px) [--composer-overlap-px:28px] grow flex\">\r\\n<div class=\"flex flex-col text-sm pb-25\"><article class=\"text-token-text-primary w-full focus:outline-none [--shadow-height:45px] has-data-writing-block:pointer-events-none has-data-writing-block:-mt-(--shadow-height) has-data-writing-block:pt-(--shadow-height) [&amp;:has([data-writing-block])&gt;*]:pointer-events-auto scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]\" dir=\"auto\" tabindex=\"-1\" data-turn-id=\"bae2af41-37d2-453f-82ae-652c0b0ace7a\" data-testid=\"conversation-turn-32\" data-scroll-anchor=\"true\" data-turn=\"assistant\">\r\\n<div class=\"text-base my-auto mx-auto pb-10 [--thread-content-margin:--spacing(4)] @w-sm/main:[--thread-content-margin:--spacing(6)] @w-lg/main:[--thread-content-margin:--spacing(16)] px-(--thread-content-margin)\">\r\\n<div class=\"[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn\" tabindex=\"-1\">\r\\n<div class=\"flex max-w-full flex-col grow\">\r\\n<div class=\"min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal [.text-message+&amp;]:mt-1\" dir=\"auto\" data-message-author-role=\"assistant\" data-message-id=\"bae2af41-37d2-453f-82ae-652c0b0ace7a\" data-message-model-slug=\"gpt-5-3\">\r\\n<div class=\"flex w-full flex-col gap-1 empty:hidden first:pt-[1px]\">\r\\n<div class=\"markdown prose dark:prose-invert w-full wrap-break-word dark markdown-new-styling\">\r\\n<p data-start=\"4663\" data-end=\"5061\">Brady's 6th ring features a rectangular white-gold face with the Patriots logo at centre, surrounded by dense rows of stones, and 6 larger oval-cut diamonds to represent the incredible sixth patriots win under Brady's leadership. “WORLD CHAMPIONS” frames the border, while blue accent stones appear along the edge. The shoulders include BRADY #12, season references, and “WE ARE STILL HERE,” along with Super Bowl LIII details. The squared, stone-heavy design gives the ring a bold championship aesthetic. The original ring that this replica accurately follows made waves in setting a new precedent for Super Bowl ring design. Being lavishly decorated with over 400 diamonds, the level of detail matches the legendary Patriots dynasty, and is known as one of the most elaborate championship rings ever produced.</p>\r\\n\r\\n</div>\r\\n</div>\r\\n</div>\r\\n</div>\r\\n</div>\r\\n</div>\r\\n</article></div>\r\\n</div>",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (AFC East)\r\\n<strong>Game Stadium:</strong> Mercedes-Benz Stadium (Atlanta, Georgia)\r\\n<strong>MVP:</strong> Julian Edelman #11 — Wide Receiver; Super Bowl MVP</p>\r\\nThe New England Patriots defeated the Los Angeles Rams 13–3 in a defensive battle. Wide receiver Julian Edelman (#11) earned MVP honours with 141 receiving yards, while Tom Brady (#12) secured his sixth championship. The Patriots defence dominated throughout, limiting the Rams offence. This BRADY #12 engraving reflects the dynasty’s continued success and historic sixth title.",
+    "categories": [
+      "Champions By Year > 2019",
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6934.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6935.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6936.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "144",
+    "name": "Super Bowl 54 (LIV) Championship Ring - Kansas City Chiefs - February 2, 2020 *PATRICK MAHOMES RING 1*",
+    "sku": "SB54",
+    "price": 35,
+    "description": "Mahomes' first ring sets the tone for the start of his legendary career so far, and another productive comeback for the Chiefs. Featuring a gold and silver-toned design with the Chiefs arrowhead logo over a red background, surrounded by rows of stones. Marquise-cut stones sit above the logo, while “WORLD CHAMPIONS” frames the outer border. One shoulder engraved MAHOMES #15 includes “BE GREAT,” while the opposite side shows KC 31 – SF 20, “SUPER BOWL 2019,” and playoff scores inside the band. The layered gold accents and bright red highlights create a celebratory championship look.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (AFC West)\r\\n<strong>Game Stadium:</strong> Hard Rock Stadium (Miami Gardens, Florida)\r\\n<strong>MVP:</strong> Patrick Mahomes #15 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"286\" data-end=\"734\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Kansas City Chiefs</span></span> ended a 50-year championship drought in Super Bowl LIV (2019–2020 season), defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">San Francisco 49ers</span></span> 31–20 on February 2, 2020 after trailing by 10 in the fourth quarter. Young Quarterback Patrick Mahomes (#15) engineered this famous fourth-quarter comeback, throwing two late touchdown passes. Tight end Travis Kelce (#87) and wide receiver Tyreek Hill (#10) played key roles. The ring reflects the 2019 season, with Mahomes orchestrating a late comeback and earning Super Bowl MVP, becoming one of the youngest quarterbacks to do so and launching a new NFL dynasty.</p>",
+    "categories": [
+      "Champions By Year > 2020",
+      "League > NFL - National Football League > AFC West > Kansas City Chiefs",
+      "Teams > Kansas City Chiefs (NFL)",
+      "Your City > Kansas City Pro Teams",
+      "All Time Greats > Patrick Mahomes (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7484.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7485.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7486.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "145",
+    "name": "Super Bowl 55 (LV) Championship Ring - Tampa Bay Buccaneers - February 7, 2021 *TOM BRADY RING 7*",
+    "sku": "SB55",
+    "price": 40,
+    "description": "Brady's seventh ring features a large circular gold design packed with stones surrounding the Buccaneers flag logo. Two marquise-cut stones sit above the centre, while “WORLD CHAMPIONS” curves around the border. The shoulder engraved BRADY #12 includes “ONE TEAM ONE CAUSE,” while the opposite side displays SUPER BOWL LV, TB 31 – KC 9, and season references. The ring also features a removable top revealing a miniature stadium, making it one of the most intricate Super Bowl ring designs.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (NFC South)\r\\n<strong>Game Stadium:</strong> Raymond James Stadium (Tampa, Florida)\r\\n<strong>MVP:</strong> Tom Brady #12 — Quarterback; Super Bowl MVP</p>\r\\nThe Tampa Bay Buccaneers defeated the Kansas City Chiefs 31–9, becoming the first team to win a Super Bowl in their home stadium. Tom Brady (#12) threw three touchdowns, while Rob Gronkowski (#87) scored twice. The Buccaneers defence pressured Patrick Mahomes throughout. This BRADY #12 engraving reflects Brady’s seventh championship and first with Tampa Bay. Brady not only earned his seventh Super Bowl ring this year, but his fifth Super Bowl MVP title, and defied all odds switching to the Buccaneers, becoming the first player to win championships in both conferences.",
+    "categories": [
+      "Champions By Year > 2021",
+      "Your City > Boston Pro Teams",
+      "Teams > New England Patriots (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "League > NFL - National Football League > NFC South > Tampa Bay Buccaneers",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6930.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6932.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6931.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6933.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "146",
+    "name": "Super Bowl 56 (LVI) Championship Ring - Los Angeles Rams - February 13, 2022",
+    "sku": "SB56",
+    "price": 40,
+    "description": "The ring features a white-gold and gold-accented oval design with the LA Rams logo at centre, surrounded by dense rows of stones. Multiple marquise-cut stones sit above the logo, while “WORLD CHAMPIONS” frames the border. One shoulder engraved DONALD #99 includes “WE NOT ME,” while the opposite panel shows RAMS 23 – CIN 20, “SUPER BOWL LVI,” and season imagery. The top of the ring opens to reveal a miniature SoFi Stadium interior, making it one of the most detailed championship rings ever produced.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (NFC West)\r\\n<strong>Game Stadium:</strong> SoFi Stadium (Inglewood, California)\r\\n<strong>MVP:</strong> Cooper Kupp #10 — Wide Receiver; Super Bowl MVP</p>\r\\nThe Los Angeles Rams defeated the Cincinnati Bengals 23–20, winning their first championship since relocating back to Los Angeles. Cooper Kupp (#10) caught the winning touchdown, while defensive tackle Aaron Donald (#99) sealed the game with a final defensive stop. This DONALD #99 engraving reflects the defensive leader central to the Rams’ championship identity.",
+    "categories": [
+      "Champions By Year > 2022",
+      "Your City > Los Angeles Pro Teams",
+      "League > NFL - National Football League > NFC West > Los Angeles Rams",
+      "Teams > Los Angeles Rams (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7812.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7814.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7813.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7815.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7816.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "147",
+    "name": "Super Bowl 57 (LVII) Championship Ring - Kansas City Chiefs - February 12, 2023 *PATRICK MAHOMES RING 2*",
+    "sku": "SB57",
+    "price": 40,
+    "description": "Patrick Mahomes' second Super Bowl ring features a bold white-gold and yellow-gold two-tone design with the Chiefs arrowhead logo layered over a deep red background, surrounded by rows of clear stones. Three marquise stones above the logo represent Lombardi trophies, while gold vertical accents frame the oval face. One shoulder engraved MAHOMES #15 includes season references and MVP markings, while the opposite side displays “CHIEFS KINGDOM,” “LVII,” and the 38–35 score. The layered gold elements and red highlights give the ring a powerful championship look reflecting Kansas City’s modern dynasty.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (AFC West)\r\\n<strong>Game Stadium:</strong> State Farm Stadium (Glendale, Arizona)\r\\n<strong>MVP:</strong> Patrick Mahomes #15 — Quarterback; Super Bowl MVP</p>\r\\nThe Kansas City Chiefs defeated the Philadelphia Eagles 38–35 in a high-scoring battle that cemented Patrick Mahomes (#15) as the face of the modern NFL. Playing through an ankle injury, Mahomes led second-half touchdown drives while tight end Travis Kelce (#87) and running back Isiah Pacheco (#10) contributed key scores. This MAHOMES #15 engraving reflects his second Super Bowl title and continued rise as one of the league’s defining players.",
+    "categories": [
+      "Champions By Year > 2023",
+      "League > NFL - National Football League > AFC West > Kansas City Chiefs",
+      "Teams > Kansas City Chiefs (NFL)",
+      "Your City > Kansas City Pro Teams",
+      "All Time Greats > Patrick Mahomes (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7602.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7604.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7603.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7605.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "148",
+    "name": "Super Bowl 58 (LVIII) Championship Ring - Kansas City Chiefs - February 11, 2024 *PATRICK MAHOMES RING 3*",
+    "sku": "SB58",
+    "price": 40,
+    "description": "Mahomes' third ring carries a two-tone gold and white-gold design with the Chiefs logo set over a bright red background and surrounded by dense rows of stones. Three marquise stones sit above the logo to represent the Chiefs third Super Bowl ring under Mahomes' guidance in this new dynasty. Additional gold detailing lines the outer oval. One shoulder engraved MAHOMES #15 includes MVP references, while the opposite panel highlights “BACK-TO-BACK,” “LVIII,” and the 25–22 overtime score. The top of the ring opens to reveal interior championship details, reinforcing the back-to-back dynasty theme.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (AFC West)\r\\n<strong>Game Stadium:</strong> Allegiant Stadium (Las Vegas, Nevada)\r\\n<strong>MVP:</strong> Patrick Mahomes #15 — Quarterback; Super Bowl MVP</p>\r\\nThe Kansas City Chiefs defeated the San Francisco 49ers 25–22 in overtime, becoming back-to-back champions. Patrick Mahomes (#15) led the game-winning drive in overtime, throwing the final touchdown pass and securing his third championship. Tight end Travis Kelce (#87) remained a crucial target, while the defence delivered late stops. The ring reflects the 2023 season, with Mahomes leading another game-winning drive and earning his third Super Bowl MVP, placing him among the all-time greats.",
+    "categories": [
+      "Champions By Year > 2024",
+      "League > NFL - National Football League > AFC West > Kansas City Chiefs",
+      "Teams > Kansas City Chiefs (NFL)",
+      "Your City > Kansas City Pro Teams",
+      "All Time Greats > Patrick Mahomes (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6893.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6894.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6895.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6896.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6897.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6898.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "149",
+    "name": "Super Bowl 59 (LIX) Championship Ring - Philadelphia Eagles - February 9, 2025",
+    "sku": "SB59",
+    "price": 45,
+    "description": "The ring features a white-gold base with a large Eagles head logo over a deep green radial background, surrounded by dense rows of stones. Two marquise stones sit above the logo, representing Lombardi trophies. “WORLD CHAMPIONS” frames the outer edge, while green accent stones run along the sides. One shoulder engraved HURTS #1 includes MVP references, while the opposite panel shows EAGLES, LIX, and the 40–22 score. The top of the ring opens to reveal detailed interior engravings, and release exterior wings to emphasise the Eagles mascot, completing one of the most intricate modern championship designs.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> National Football League (NFC East)\r\\n<strong>Game Stadium:</strong> Caesars Superdome (New Orleans, Louisiana)\r\\n<strong>MVP:</strong> Jalen Hurts #1 — Quarterback; Super Bowl MVP</p>\r\\nThe Philadelphia Eagles defeated the Kansas City Chiefs 40–22, powered by Jalen Hurts (#1) delivering a dominant performance through the air and on the ground. The Eagles defence forced key turnovers, while the offence controlled the tempo throughout. This HURTS #1 engraving reflects the quarterback’s leadership in securing Philadelphia’s championship.",
+    "categories": [
+      "Champions By Year > 2025",
+      "League > NFL - National Football League > NFC East > Philadelphia Eagles",
+      "Teams > Philadelphia Eagles (NFL)",
+      "Your City > Philadelphia Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7808.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7807.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7809.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7811.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7810.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "150",
+    "name": "Super Bowl 60 (LX) Championship Ring - Seattle Seahawks - February 8, 2026 - CONCEPT RING",
+    "sku": "SB60",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2026",
+      "Your City > Seattle Pro Teams",
+      "League > NFL - National Football League > NFC West > Seattle Seahawks",
+      "Teams > Seattle Seahawks (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7672.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6769.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6768.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6770.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "153",
+    "name": "1965 World Series Championship Ring - Los Angeles Dodgers - October, 1965",
+    "sku": "WS065",
+    "price": 35,
+    "description": "The 1965 Los Angeles Dodgers World Series ring features a gold circular face with deep blue enamel centre and a raised central stone. “LOS ANGELES WORLD CHAMPIONS” surrounds the face. The shoulders showcase “1965 Dodgers” script, bat-and-ball imagery, and facsimile-style signature engraving, all set within black enamel panels. The bold blue-and-gold colour scheme and detailed baseball motifs make this ring a striking representation of the Dodgers’ pitching-dominated victory.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Los Angeles Dodgers defeated Minnesota Twins (4–3)\r\\n<strong>Series Standout:</strong> Sandy Koufax — Pitcher</p>\r\\nBack with another win, losing only one year between their winning titles, the Dodgers captured the 1965 championship in seven games, highlighted by Sandy Koufax’s legendary performance. Koufax pitched three complete games, including a Game 7 shutout, solidifying one of the greatest World Series pitching efforts in history.",
+    "categories": [
+      "Champions By Year > 1965",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6752.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6753.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6754.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "154",
+    "name": "1966 World Series Championship Ring - Baltimore Orioles - October, 1966",
+    "sku": "WS066",
+    "price": 35,
+    "description": "The Baltimore Oriole's first ever World Series ring features a bold square gold face with deep black enamel, framing a diamond-shaped setting holding a raised central stone. “BALTIMORE ORIOLES WORLD CHAMPIONS” wraps tightly around the face in thick raised lettering. The shoulders are packed with symbolism — one side engraved “F. ROBINSON” above a stylised bird crest and “1966,” while the opposite panel features crossed bats, baseball stitching, and stadium-style detailing, tying directly to the Orioles’ offensive power. The contrast between matte black enamel and polished gold gives the ring a sharp, commanding presence fitting a historic sweep.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Baltimore Orioles defeated Los Angeles Dodgers (4–0)\r\\n<strong>Series Standout:</strong> Frank Robinson — Right Fielder (Triple Crown winner, AL MVP)</p>\r\\nDeclaring their first victory in 1966, the Baltimore Orioles delivered one of the most dominant performances in World Series history, sweeping the defending champion Dodgers. Baltimore’s pitching staff shut out Los Angeles for 33 consecutive innings, still one of the longest scoreless streaks in World Series play. Frank Robinson — whose name appears on this ring — capped his historic Triple Crown season by hitting two home runs and leading Baltimore to its first-ever World Series title.",
+    "categories": [
+      "Champions By Year > 1966",
+      "League > MLB - Major League Baseball > AL East Division > Baltimore Orioles",
+      "Teams > Baltimore Orioles (MLB)",
+      "Your City > Baltimore Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7045.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7046.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7047.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "155",
+    "name": "1967 World Series Championship Ring - St Louis Cardinals - October, 1967",
+    "sku": "WS067",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1967 St. Louis Cardinals World Series ring features a rounded square muted bronze face with a deep black enamel centre. A large circular clear diamond sits in the middle, mounted within a raised gold diamond-shaped setting accented by four smaller yellow stones at each corner, set against the black enamel face panel. The outer border of the face reads “WORLD CHAMPIONS” in bold bronze lettering against black enamel. One shoulder displays a detailed relief of Busch Stadium with “ST. LOUIS CARDINALS” engraved within a banner at the top, and “1967” in a banner at the bottom. The opposite shoulder is engraved “SCHOENDIENST” (Red Schoendienst — manager, championship leader) at the top of the dark panel, followed by a cardinal perched on a bat set (team logo), with “MGR” (manager) engraved in a banner at the bottom. The combination of black enamel, raised gold lettering, and multi-stone centre reflects late-1960s championship ring styling and marks a more modern, refined design compared to earlier Cardinals rings.</span>",
+    "shortDescription": "<b>1967 World Series — St. Louis Cardinals</b><b>\r\\n</b> <b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League — NL Central*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> St. Louis Cardinals defeated Boston Red Sox (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bob Gibson — Pitcher; key contributors: Lou Brock, Tim McCarver, Orlando Cepeda</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1967 St. Louis Cardinals secured their eighth World Series championship by defeating the Boston Red Sox in a dramatic seven-game series remembered for dominant pitching and clutch hitting. The Cardinals jumped ahead early, but Boston fought back to force Game 7, where Bob Gibson delivered a complete-game victory, striking out 10 batters and cementing his reputation as one of baseball’s most dominant postseason pitchers. Redbird speedster Lou Brock contributed key offense and baserunning, while Tim McCarver’s Game 5 home run became one of the pivotal moments of the series. Manager Red Schoendienst — whose name appears on this ring — guided the Cardinals to the title after previously winning championships with the organization as a player (1946) and later adding this 1967 managerial victory, giving him two total World Series titles with St. Louis in different roles. This championship marked the Cardinals’ return to prominence following their 1964 title and reinforced their strong 1960s era. The franchise has competed as the St. Louis Cardinals throughout modern World Series history, maintaining continuity as one of baseball’s most successful clubs.</span>",
+    "categories": [
+      "Champions By Year > 1967",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8072.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8073.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8075.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "158",
+    "name": "1968 World Series Championship Ring - Detroit Tigers, October, 1968",
+    "sku": "WS068",
+    "price": 35,
+    "description": "Coming back with an updated, bold, and sophisticated design 23 years after their last win, the Detroit Tigers ring showcases a gold oval face with black enamel centre, surrounded by “DETROIT TIGERS WORLD CHAMPIONS.” A central stone sits inside a diamond-shaped beaded frame, creating a layered vintage aesthetic. One shoulder is engraved with the surname of the team's incredibly talented right fielder, “KALINE”, displayed above crossed bats and a vintage script team insignia. While the opposite panel features a raised roaring tiger head and raised, closed paw (in a fist to represent the endurance in their comeback), and the year (1968), symbolising Detroit’s aggressive comeback. The textured black background and heavy gold lettering give this ring a rugged, but sleek, powerhouse feel.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Detroit Tigers defeated St. Louis Cardinals (4–3)\r\\n<strong>Series Standout:</strong> Mickey Lolich — Pitcher; key contributor: Al Kaline — Right Fielder</p>\r\\nComing back from a 23-year drought, the Detroit Tigers mounted a historic, unexpected comeback from a 3–1 series deficit to defeat the Cardinals, one of the most dramatic turnarounds in World Series history. Al Kaline — whose name appears on this ring — hit .379 for the series, while Mickey Lolich won three complete games. The championship marked Detroit’s third World Series title and remains one of the franchise’s defining moments.",
+    "categories": [
+      "Champions By Year > 1968",
+      "Your City > Detroit Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Detroit Tigers",
+      "Teams > Detroit Tigers (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6740.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6742.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6741.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "160",
+    "name": "1969 World Series Championship Ring - New York Mets - October, 1969",
+    "sku": "WS069",
+    "price": 35,
+    "description": "Declaring their first World Series win, the New York Mets 1969 championship ring features a bold square gold face with vibrant blue enamel, highlighting a raised diamond-shaped setting with a raised, sparkling central stone. “NEW YORK METS WORLD CHAMPIONS 1969” frames the face. The shoulders display Shea Stadium imagery and Mets logo detailing, carved into textured gold panels. The bright blue enamel ties directly to team colours, giving the ring a celebratory, energetic feel reflecting the Miracle Mets story.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> New York Mets defeated Baltimore Orioles (4–1)\r\\n<strong>Series Standout:</strong> Donn Clendenon — First Baseman; key contributors: Tom Seaver, Jerry Koosman</p>\r\\nThe “Miracle Mets” stunned baseball in 1969 with their first championship title, defeating the heavily favoured Orioles just seven years after the franchise’s founding. Tom Seaver anchored the pitching staff, while Donn Clendenon’s power hitting secured the upset. This was the Mets’ first World Series title and one of the greatest underdog victories in sports history.",
+    "categories": [
+      "Champions By Year > 1969",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > NL East Division > New York Mets",
+      "Teams > New York Mets (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6577.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6578.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6579.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "161",
+    "name": "1971 World Series Championship Ring - Pittsburgh Pirates - October, 1971",
+    "sku": "WS071",
+    "price": 35,
+    "description": "Featuring an updated, eye-catching design, the 1971 Pittsburgh Pirates World Series ring has a bold circular gold face with black enamel centre, framing a raised central stone. “PITTSBURGH PIRATES WORLD CHAMPIONS 1971” wraps around the top. One shoulder displays the MVP's engraved name, “CLEMENTE”, and Pirates logo imagery, while the opposite panel features a pirate head emblem, tying directly to the team identity. The black enamel contrast and raised lettering create a strong, classic 1970s championship design.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Pittsburgh Pirates defeated Baltimore Orioles (4–3)\r\\n<strong>Series Standout:</strong> Roberto Clemente — Right Fielder (World Series MVP)</p>\r\\nThe Pirates came back with another win after 11 years, defeating the Orioles in seven games, highlighted by Roberto Clemente’s outstanding performance — batting .414 with clutch hits throughout the series. Clemente, whose name appears on this ring, earned World Series MVP honours, delivering Pittsburgh its fourth championship. The series also featured the first all-minority starting lineup in Game 4, marking a historic moment in baseball.",
+    "categories": [
+      "Champions By Year > 1971",
+      "League > MLB - Major League Baseball > NL Central Division > Pittsburgh Pirates",
+      "Teams > Pittsburgh Pirates (MLB)",
+      "Your City > Pittsburgh Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6413.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6415.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6414.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "162",
+    "name": "1972 World Series Championship Ring - Oakland A's - October, 1972",
+    "sku": "WS072",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1972 Oakland Athletics World Series ring features a round pale yellow-gold face with a sage-green enamel centre that acts as a background for a diamond-shaped gold mount holding a circular clear stone. The outer black enamel border reads “WORLD CHAMPIONS,” with “1972” split across the sides of the face. The entire ring is made of a pale yellow-gold colour that is also used for the engraved details on the black enamel shoulder panels. One shoulder displays the classic “A’s” logo in green enamel engraved on a baseball, with “OAKLAND” engraved at the top, and “FINLEY” (team owner, dynasty architect) at the bottom. The opposite shoulder highlights bold text reading “WORLD SERIES” along with the series score “4–3”, referencing Oakland’s victory over Cincinnati, along with additional championship text. The combination of green and gold enamel reflects the distinctive Athletics colour scheme introduced during the Finley era, while the clean round face and bold lettering represent early-1970s championship ring styling.</span>",
+    "shortDescription": "<b>1972 World Series — Oakland Athletics</b><b>\r\\n</b> <b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League — AL West)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Oakland Athletics defeated Cincinnati Reds (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Gene Tenace — Catcher; key contributors: Reggie Jackson, Catfish Hunter, Rollie Fingers</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1972 Oakland Athletics captured their first World Series championship since relocating from Kansas City and their first overall title since 1930, defeating the Cincinnati Reds in a tightly contested seven-game series. Oakland took an early lead, but the Reds battled back to force a decisive Game 7, where the Athletics prevailed 4–3. Gene Tenace delivered one of the most surprising performances in World Series history, hitting four home runs in the series despite limited regular-season production. Reggie Jackson provided power hitting, while pitchers Catfish Hunter and Rollie Fingers anchored the staff. Charles O. “Charlie” Finley — whose name appears on this ring — served as the team’s owner and architect of the roster, overseeing the club’s rise into a dynasty; under his leadership, the Athletics won three consecutive championships (1972, 1973, 1974). Finley became widely known for his colourful personality, innovative marketing ideas, and influence on team identity, including the use of green-and-gold uniforms. This victory marked the beginning of Oakland’s early-1970s dynasty. The franchise competed as the Philadelphia Athletics (1901–1954), Kansas City Athletics (1955–1967), and Oakland Athletics (1968–present), maintaining the “Athletics” identity throughout.</span>",
+    "categories": [
+      "Champions By Year > 1972",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7942.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7943.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7944.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "163",
+    "name": "1973 World Series Championship Ring - Oakland A's - October, 1973",
+    "sku": "WS073",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Celebrating their back-to-back win (and second out of 3 consecutive wins), the 1973 Oakland Athletics World Series ring uses the exact same round pale yellow-gold design introduced in 1972, with a green enamel centre surrounding a diamond-shaped gold mount holding a circular clear stone. The outer black enamel border again reads “WORLD CHAMPIONS,” with the only face variation being the updated “1973” year placement across the border. One shoulder remains nearly identical to the 1972 version, featuring the circular “A’s” logo set within a baseball-themed panel, “OAKLAND” engraved at the top, and the name “HERMAN” replacing the previous engraved name (player-specific variation). The opposite shoulder is slightly modified, now reading “A’s 4 REDS 3” style layout updated to reflect the 1973 matchup, with bold engraved lettering referencing the championship result and opponent. The consistent green-and-gold enamel colour scheme continues the Athletics’ early-1970s dynasty styling, with only minor year and name changes distinguishing the 1973 ring from the 1972 design.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League — AL West)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Oakland Athletics defeated New York Mets (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Reggie Jackson — Right Fielder; key contributors: Catfish Hunter, Rollie Fingers, Bert Campaneris</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1973 Oakland Athletics secured their second consecutive World Series championship — the middle title in their three-peat dynasty (1972–1974) — by defeating the New York Mets in a seven-game series. Oakland fell behind early as the Mets took advantage of strong pitching, but the Athletics rallied to win three of the final four games, clinching the series 4–3. Reggie Jackson delivered key offensive production, while Catfish Hunter anchored the pitching staff and Rollie Fingers provided crucial late-inning relief. Charlie Finley’s roster-building approach again proved decisive, as the Athletics combined power hitting with dominant pitching depth. The victory reinforced Oakland’s emergence as baseball’s premier early-1970s powerhouse. The franchise maintained the “Athletics” identity through relocations from Philadelphia (1901–1954) to Kansas City (1955–1967) and finally Oakland (1968–present), with the 1973 title strengthening the Oakland-era legacy.</span>",
+    "categories": [
+      "Champions By Year > 1973",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7945.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7946.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7947.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "168",
+    "name": "1974 World Series Championship Ring - Oakland A's - October, 1974",
+    "sku": "WS074",
+    "price": 35,
+    "description": "The ring features a bright gold oval face with an eye-catching leaf-green green enamel centre, showcasing the classic “A’s” logo raised prominently in gold. “OAKLAND A’s WORLD CHAMPIONS” circles the face in bold lettering. The shoulders are uniquely expressive — one side displays a large green shamrock motif with “1974” repeated, symbolising luck and dynasty dominance, while the opposite panel includes “FINGERS”, for the team's pitcher (Rollie Fingers), with the Athletics crest and detailed texturing. The green enamel pops vividly against the gold, creating a ring that feels vibrant and celebratory — perfectly matching the swagger of the 1970s A’s.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Oakland Athletics defeated Los Angeles Dodgers (4–1)\r\\n<strong>Series Standout:</strong> Rollie Fingers — Pitcher; key contributors: Reggie Jackson, Joe Rudi</p>\r\\nThe Oakland A’s completed a three-peat dynasty (1972–1974) that also marked their first winning appearance in the World Series, by defeating the Dodgers in five games. Rollie Fingers — whose name appears on this ring — anchored the bullpen and delivered clutch late-inning pitching throughout the series. Oakland’s core of Reggie Jackson, Catfish Hunter, and Joe Rudi solidified one of baseball’s most colourful championship runs, with the 1974 title marking their third consecutive World Series victory.",
+    "categories": [
+      "Champions By Year > 1974",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6299.jpeg",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6396.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6397.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "171",
+    "name": "1975 World Series Championship Ring - Cincinnati Reds - October, 1975",
+    "sku": "WS075",
+    "price": 35,
+    "description": "In their first of two consecutive wins, the Cincinnati Reds 1975 World Series ring features a luxurious, depth-filled design, with a bold rectangular gold face with a rich, cherry-red enamel centre, holding a diamond-shaped setting and central stone. “CINCINNATI REDS CHAMPIONS 1975” wraps around the face in thick raised lettering. The shoulders are deeply detailed — one side features the engraved surname (\"ROSE\") of the third baseman and a key contributor to the team's success, alongside “THE BIG RED MACHINE” insignia, while the opposite panel includes team crest, bats, and championship text. The vibrant red enamel and squared design give the ring a powerful, modern 1970s presence reflecting the dominance of Cincinnati’s lineup.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Cincinnati Reds defeated Boston Red Sox (4–3)\r\\n<strong>Series Standout:</strong> Pete Rose — Third Baseman; key contributors: Joe Morgan, Johnny Bench</p>\r\\nMarking the first out of two consecutive wins, the “Big Red Machine” cemented its place in history by defeating Boston in a dramatic seven-game classic, widely considered one of the greatest World Series ever played. Pete Rose — whose name appears on this ring — set the tone with aggressive play and clutch hitting, while Joe Morgan’s Game 7 single sealed Cincinnati’s third championship and first of back-to-back titles.",
+    "categories": [
+      "Champions By Year > 1975",
+      "Your City > Cincinnati Pro Teams",
+      "League > MLB - Major League Baseball > NL Central Division > Cincinnati Reds",
+      "Teams > Cincinnati Reds (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6564.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6565.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6566.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "172",
+    "name": "1976 World Series Championship Ring - Cincinnati Reds - October, 1976",
+    "sku": "WS076",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1976 Cincinnati Reds World Series ring features a bold square bright yellow-gold face with a central circular clear stone set within a geometric championship tropy design composed of vertical engraved lines (flags) radiating around the centre. A smaller circular gold baseball appears beneath the main stone, creating a layered architectural effect. The outer border reads “CINCINNATI REDS ‘76 WORLD CHAMPIONS”. One shoulder displays an engraved stadium façade with “REDS 4 YANKS 50” and championship detailing, while the opposite shoulder is engraved “BENCH” (Johnny Bench — catcher, dynasty cornerstone) above “BIG RED MACHINE,” referencing the team’s famous nickname, with the “C” team logo at the bottom. Both panels are set in bright yellow-gold detailing set against horizontally lined backgrounds that create a textured look. The heavy engraved gold construction and geometric styling reflect mid-1970s championship ring aesthetics and emphasise the Reds’ dominant dynasty era.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League — NL West)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Cincinnati Reds defeated New York Yankees (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Johnny Bench — Catcher; key contributors: Joe Morgan, Pete Rose, Tony Pérez</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1976 Cincinnati Reds completed one of the most dominant runs in baseball history, sweeping the New York Yankees 4–0 to capture their second consecutive championship and finish the famed “Big Red Machine” dynasty at its peak. The Reds controlled every game of the series, showcasing balanced offense and elite pitching, with Johnny Bench delivering standout performances both offensively and defensively. Bench, whose name appears on this ring, served as the team’s All-Star catcher and franchise cornerstone; by 1976 he had won two championships (1975, 1976) and would finish his Hall of Fame career with those two titles. Joe Morgan, Pete Rose, and Tony Pérez provided consistent offensive production, while the Reds’ pitching staff limited the Yankees’ lineup. The 1976 sweep followed Cincinnati’s dramatic seven-game victory in 1975, cementing back-to-back championships (1975–1976) and establishing the Reds as one of baseball’s greatest teams. The franchise competed as the Cincinnati Reds throughout modern World Series history, with the 1976 title representing the pinnacle of their 1970s dominance.</span>",
+    "categories": [
+      "Champions By Year > 1976",
+      "Your City > Cincinnati Pro Teams",
+      "League > MLB - Major League Baseball > NL Central Division > Cincinnati Reds",
+      "Teams > Cincinnati Reds (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7959.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7960.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7961.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "173",
+    "name": "1970 World Series Championship Ring - Baltimore Orioles - October, 1970",
+    "sku": "WS070",
+    "price": 35,
+    "description": "Displaying an incredibly intricate, modified design to celebrate another win and starting a new decade off with a bang, the 1970 Baltimore Orioles ring features a rounded gold face with raised lettering, surrounding a central stone set within layered circular and geometric detailing that mimics a stadium. “BALTIMORE ORIOLES WORLD CHAMPIONS” wraps around the face. One shoulder displays bird logo imagery and “1970”, while the opposite side includes detailed baseball-themed engravings. The heavier gold finish and raised lettering give the ring a strong, vintage championship presence.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Baltimore Orioles defeated Cincinnati Reds (4–1)\r\\n<strong>Series Standout:</strong> Brooks Robinson — Third Baseman</p>\r\\nThe Orioles captured their second championship in five years, defeating the Reds behind Brooks Robinson’s legendary defensive play — widely considered the greatest third base performance in World Series history. Baltimore dominated offensively and defensively, reinforcing their late-1960s dynasty, and claiming the first title in the 1970s era.",
+    "categories": [
+      "Champions By Year > 1970",
+      "League > MLB - Major League Baseball > AL East Division > Baltimore Orioles",
+      "Teams > Baltimore Orioles (MLB)",
+      "Your City > Baltimore Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7138.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7139.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7140.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "174",
+    "name": "1977 World Series Championship Ring - New York Yankees - October, 1977",
+    "sku": "WS077",
+    "price": 35,
+    "description": "Marking their comeback with an updated, sparkling design, the New York Yankees 1977 World Series ring features a large raised “NY” logo encrusted with stones, set against a deep blue enamel background. “NEW YORK YANKEES WORLD CHAMPIONS” surrounds the face in bold lettering. One shoulder engraved “MUNSON” includes signature-style text and “1977,” while the opposite panel displays stadium imagery and pride-themed text. The oversized NY logo and stone detailing make this ring one of the most visually striking of the late 1970s.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated Los Angeles Dodgers (4–2)\r\\n<strong>Series Standout:</strong> Reggie Jackson — Right Fielder; key contributor: Thurman Munson — Catcher</p>\r\\nThe Yankees captured their first championship since 1962, and the first of two consecutive wins, highlighted by Reggie Jackson’s legendary three home runs in Game 6. Captain Thurman Munson — whose name appears on this ring — provided leadership and consistent hitting throughout the postseason. This victory marked the beginning of a new Yankees championship era.",
+    "categories": [
+      "Champions By Year > 1977",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6809.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6811.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6810.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "175",
+    "name": "1978 World Series Championship Ring - New York Yankees - October, 1978",
+    "sku": "WS078",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1978 New York Yankees World Series ring features a rounded square muted-gold face with a deep navy-blue enamel centre. A circular clear stone sits in the middle, mounted within a small gold diamond-shaped setting, surrounded by a border of small clear stones. The outer face reads “WORLD CHAMPIONS” in bold engraved lettering, with radiating line engravings extending outward from the centre and engraved stars on the sides of the borders. One shoulder displays stadium imagery, a championship trophy, and a baseball and bat, with “Yankees” script written over the trophy. Both shoulder panels feature textured black recessed backgrounds with horizontal rows of small gold dots. The opposite shoulder features a large Yankees logo panel engraved “JOHNSON” (player-specific variation) above the team emblem. Additional details include “1978” engraved around the logo, and championship details such as the score (4-1) set in a horseshoe shaped banner at the bottom. The multi-stone face and strong enamel contrast reflect the flashy late-1970s championship ring style used during the Yankees’ Bronx Zoo era.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League — AL East)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> New York Yankees defeated Los Angeles Dodgers (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bucky Dent — Shortstop; key contributors: Reggie Jackson, Ron Guidry, Graig Nettles</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1978 New York Yankees captured their second consecutive World Series championship, defeating the Los Angeles Dodgers 4–2 and completing back-to-back titles (1977–1978). The Yankees dropped two of the first three games before rallying behind dominant pitching and timely hitting, winning three straight to clinch the series. Bucky Dent, already famous for his tie-breaking home run in the playoff game against Boston that forced the Yankees into the postseason, continued his clutch performance in the World Series. Reggie Jackson provided power hitting, while Ron Guidry anchored the pitching staff during his Cy Young-winning season. This championship came during one of the most dramatic comeback seasons in Yankees history, as New York overcame a significant mid-season deficit to overtake the Boston Red Sox in the standings. The victory marked the Yankees’ 22nd championship and reinforced their late-1970s resurgence. The franchise has competed as the New York Yankees since 1913, maintaining its status as baseball’s most decorated championship team.</span>",
+    "categories": [
+      "Champions By Year > 1978",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8076.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8077.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8078.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "176",
+    "name": "1996 World Series Championship Ring - New York Yankees - October, 1996",
+    "sku": "WS096",
+    "price": 35,
+    "description": "Marking their comeback with a slightly updated design, the 1996 New York Yankees ring features a blue enamel centre with raised NY logo covered in stones, surrounded by a yellow-gold border that reads “WORLD CHAMPIONS 1996.” One shoulder is engraved “WETTELAND” (pitcher and MVP), positioned above banners that read \"COURAGE\" and \"HEART\" and the championship trophy. The other shoulder displays stadium imagery and the Yankees insignia. The clean blue enamel and diamond NY logo reflect the beginning of the modern Yankees dynasty.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated Atlanta Braves (4–2)\r\\n<strong>Series Standout:</strong> John Wetteland — Pitcher (World Series MVP); key contributors: Derek Jeter, Bernie Williams, Andy Pettitte</p>\r\\nEnding an 18-year championship drought, the New York Yankees 1996 World Series ring launched one of baseball’s greatest dynasties. The Yankees rallied from an 0-2 deficit to defeat the Braves, with rookie Derek Jeter beginning his legendary career and Andy Pettitte delivering key postseason performances.",
+    "categories": [
+      "Champions By Year > 1996",
+      "All Time Greats > Derek Jeter (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6408.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6410.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6409.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "177",
+    "name": "1998 World Series Championship Ring - New York Yankees - October, 1998",
+    "sku": "WS098",
+    "price": 35,
+    "description": "Not long after their last win, and starting their consecutive 3-win dynastic era, the New York Yankees 1998 World Series ring features a slightly updated design, with a rounded deep blue enamel centre with a diamond-covered NY logo, surrounded by stones and championship lettering. One shoulder is engraved “PETTITTE” (starting pitcher), positioned above Yankees stadium imagery and the championship trophy with “TRADITION” text below. The opposite shoulder displays their entire year's season stats, including postseason (125 wins, 50 losses), the team logo in the middle, and “BEST EVER” at the bottom, referencing the widespread popularity and incredible winning history of the Yankees. The stone-heavy NY logo and deep blue enamel highlight the start of the late-1990s Yankees dynasty.",
+    "shortDescription": "<strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated San Diego Padres (4–0)\r\\n<strong>Series Standout:</strong> Scott Brosius — Third Baseman (World Series MVP); key contributors: Derek Jeter, Bernie Williams, Andy Pettitte\r\\n\r\\nBeginning the first of their three consecutive championships — just two years after their 1996 win — the New York Yankees 1998 World Series ring celebrates a historic 114-win season (not including postseason scores). The Yankees also won with a sweep (4-0), affirming the unstoppable force of their legendary team. Andy Pettitte, whose name appears on this ring, anchored the rotation as the Yankees dominated the postseason.",
+    "categories": [
+      "Champions By Year > 1998",
+      "All Time Greats > Derek Jeter (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8082.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8084.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8083.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "178",
+    "name": "1999 World Series Championship Ring - New York Yankees - October, 1999",
+    "sku": "WS099",
+    "price": 35,
+    "description": "Marking the second of their 3 consecutive wins, the 1999 New York Yankees World Series ring features a very different look that reflects their joy and prominence in this dynastic era with a fully diamond-paved NY logo on a fully diamond-paved gold face, surrounded by stones and bold “1999” lettering. One shoulder is engraved “RIVERA” (closer/pitcher), positioned above Yankees Stadium imagery and the championship trophy with \"25th\" printed over the top of the trophy to mark their 25th ever win in world series history. The other side features a banner that reads \"THE COUNTRY'S TEAM\" above the team logo and stadium details, and a repeated motif of it being their 25th title, reinforcing the Yankees’ overwhelming dominance. The heavy stone setting makes this one of the most luxurious rings of the dynasty era.",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> New York Yankees defeated Atlanta Braves (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> Mariano Rivera — Closer (World Series MVP); key contributors: Derek Jeter, Bernie Williams, Roger Clemens</span>\r\\n\r\\nContinuing the second of their three consecutive championships, the New York Yankees 1999 World Series ring represents the height of the late-1990s dynasty. The Yankees swept Atlanta behind dominant pitching from Mariano Rivera and clutch hitting from Derek Jeter, securing their 25th World Series title and further cementing one of baseball’s greatest eras.",
+    "categories": [
+      "Champions By Year > 1999",
+      "All Time Greats > Derek Jeter (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7623.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7624.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7625.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "179",
+    "name": "2000 World Series Championship Ring - New York Yankees - October, 2000",
+    "sku": "WS100",
+    "price": 35,
+    "description": "The 2000 New York Yankees World Series ring features a yellow-gold design with a rounded-square face covered in clear stones, forming the iconic “NY” logo through open spaces backed by blue enamel accents. “WORLD CHAMPIONS” appears across the top of the face, while “2000” is engraved along the bottom, with rectangular clear stones set on each side framing the centre. One shoulder is engraved with the player surname “JETER” (shortstop), positioned above a championship trophy with “26th” written across the centre, highlighting the Yankees’ 26th World Series title and reinforcing their dominance. For example, the team with the second-most wins in World Series history at this point (1903-2000) had won only 9 championships in comparison (Oakland Athletics, previously called Philadelphia Athletics). Beneath this imagery the word “TRADITION” is engraved, and the background features a pattern of small raised gold circles. The opposite shoulder shows the Yankee Stadium façade with the team’s circular logo in front, also set over the same raised gold circle pattern, with “PRIDE” engraved below the design. Originally founded as the Baltimore Orioles in 1901 before relocating to New York in 1903 and adopting the Yankees name in 1913, the franchise remained in New York through 2000, with this championship completing their three consecutive titles.",
+    "shortDescription": "<p data-start=\"43\" data-end=\"313\"><strong data-start=\"43\" data-end=\"67\">League and division:</strong> Major League Baseball (American League East)<br data-start=\"112\" data-end=\"115\" /><strong data-start=\"115\" data-end=\"133\">Series Result:</strong> New York Yankees defeated New York Mets (4–1)<br data-start=\"179\" data-end=\"182\" data-is-only-node=\"\" /><strong data-start=\"182\" data-end=\"202\">Series Standout:</strong> Derek Jeter — Shortstop (World Series MVP); key contributors: Mariano Rivera, Bernie Williams, Andy Pettitte</p>\r\\n<p data-start=\"315\" data-end=\"893\">Completing their three-peat championship run, the 2000 New York Yankees World Series title marked the culmination of one of baseball’s most dominant modern dynasties, highlighted by their “Subway Series” victory over the crosstown Mets. Derek Jeter batted .409 in the series with two home runs, including the leadoff homer in Game 4, while Mariano Rivera allowed just one run across five appearances and Bernie Williams provided consistent offensive production. The Yankees controlled much of the series, outscoring the Mets 22–9 and capturing their 26th championship overall.</p>",
+    "categories": [
+      "Champions By Year > 2000",
+      "All Time Greats > Derek Jeter (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "All Time Greats > Roger Clemens (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6612.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6613.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6614.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "180",
+    "name": "2009 World Series Championship Ring - New York Yankees - October, 2009",
+    "sku": "WS109",
+    "price": 35,
+    "description": "Celebrating their 27th championship in a much more refined and modern style, the 2009 New York Yankees World Series ring features a silver-toned rounded-square face with the interlocking “NY” logo fully formed from clear stones and set over deep blue enamel. Four large diamond-shaped clear stones sit in each corner of a circular stone-encrusted diamond shape framing the \"NY\" logo, with smaller round stones filling the outer border, giving the face a bright layered look. One shoulder displays “WORLD CHAMPIONS” above a detailed stadium image, with “2009” and “UNITY” engraved at the bottom. The opposite shoulder is engraved “JETER” (shortstop) at the top above the logo set within a circle, with “TRADITION” engraved on the bottom. Both shoulders use dark recessed backgrounds with raised silver details, creating contrast with the cleaner blue-and-diamond face.",
+    "shortDescription": "<p data-start=\"43\" data-end=\"325\"><strong data-start=\"43\" data-end=\"67\">League and division:</strong> Major League Baseball (American League East)<br data-start=\"112\" data-end=\"115\" /><strong data-start=\"115\" data-end=\"133\">Series Result:</strong> New York Yankees defeated Philadelphia Phillies (4–2)<br data-start=\"187\" data-end=\"190\" /><strong data-start=\"190\" data-end=\"210\">Series Standout:</strong> Hideki Matsui — Designated Hitter (World Series MVP); key contributors: Derek Jeter, Mariano Rivera, CC Sabathia</p>\r\\n<p data-start=\"327\" data-end=\"758\">Winning their first championship in nine years, the 2009 New York Yankees captured their 27th World Series title in the inaugural season of the new Yankee Stadium. Hideki Matsui drove in six runs in Game 6, tying a World Series record, while Mariano Rivera closed out the series and Derek Jeter provided consistent leadership. The Yankees outscored Philadelphia 32–20 across six games to secure their return to championship form.</p>",
+    "categories": [
+      "Champions By Year > 2009",
+      "All Time Greats > Derek Jeter (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6476.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6477.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6478.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "181",
+    "name": "1979 World Series Championship Ring - Pittsburgh Pirates - October, 1979",
+    "sku": "WS079",
+    "price": 35,
+    "description": "Showcasing a new, simpler, but eye-catching design, the Pittsburgh Pirates 1979 World Series ring features a bold gold face with black enamel background, showcasing a raised diamond-stone “P” logo. “PITTSBURGH PIRATES WORLD CHAMPIONS” surrounds the face. One shoulder features the engraved surname (“MADLOCK”) of the third baseman who contributed heavily to the team's success, with \"we are family\" inscribed directly underneath, and gold pirate imagery encompassing the rest of the panel. While the opposite side features 1979 championship text, a depiction of the game stadium, and star motifs. The black-and-gold colour scheme perfectly reflects the Pirates’ iconic identity.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Pittsburgh Pirates defeated Baltimore Orioles (4–3)\r\\n<strong>Series Standout:</strong> Willie Stargell — First Baseman; key contributor: Bill Madlock — Third Baseman</p>\r\\nThe “We Are Family” Pirates rallied from a 3–1 deficit to defeat Baltimore in seven games. Willie Stargell delivered clutch home runs, while Bill Madlock — whose name appears on this ring — contributed key offensive production. The victory gave Pittsburgh its fifth World Series title and cemented one of baseball’s most beloved championship teams.",
+    "categories": [
+      "Champions By Year > 1979",
+      "League > MLB - Major League Baseball > NL Central Division > Pittsburgh Pirates",
+      "Teams > Pittsburgh Pirates (MLB)",
+      "Your City > Pittsburgh Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7063.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7064.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7065.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "182",
+    "name": "1980 World Series Championship Ring - Philadelphia Phillies - October, 1980",
+    "sku": "WS080",
+    "price": 35,
+    "description": "The Philadelphia Phillies 1980 World Series ring celebrates their first win with a royal-looking, renovated design, featuring a gold circular face with bright red enamel centre, highlighting a raised Phillies “P” logo surrounded by stones. “PHILADELPHIA PHILLIES WORLD CHAMPIONS” frames the face. The shoulders display “SCHMIDT”, the team's third baseman and MVP, above a textured depiction of the game stadium and game scores across the bottom of the panel. Whereas the other side displays the winning year (1980), liberty bell imagery, and \"world champions phillies\" printed on the bottom.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Philadelphia Phillies defeated Kansas City Royals (4–2)\r\\n<strong>Series Standout:</strong> Mike Schmidt — Third Baseman (World Series MVP)</p>\r\\nThe Phillies captured their first World Series title in franchise history, led by Mike Schmidt’s power hitting. Schmidt — whose name appears on this ring — hit two home runs and earned World Series MVP honours, while veteran leadership from Steve Carlton and Pete Rose helped Philadelphia secure the championship.",
+    "categories": [
+      "Champions By Year > 1980",
+      "All Time Greats > Garry Maddox (MLB)",
+      "All Time Greats > Mike Schmidt (MLB)",
+      "League > MLB - Major League Baseball > NL East Division > Philadelphia Phillies",
+      "Teams > Philadelphia Phillies (MLB)",
+      "Your City > Philadelphia Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7201.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7203.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7202.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "183",
+    "name": "2008 World Series Championship Ring - Philadelphia Phillies - October, 2008",
+    "sku": "WS108",
+    "price": 35,
+    "description": "Ending their long wait in a lavish, modern style, the 2008 Philadelphia Phillies World Series ring features a sparkling silver-toned round face filled with small round clear stones, centred with the red “P” logo outlined in white and red enamel and filled with the same clear stones that the entire face is filled with. “WORLD CHAMPIONS” is written in simple silver text against black banners on the top and bottom of the face, while vertical rows of circular clear stones set inside small square silver boxes run down both outer sides of the face panel. One shoulder shows “2008” engraved at the top above series scores (4-1 against Tampa Bay) and a championship trophy design, all set against a dark striped background with raised silver details. The opposite shoulder displays “PHILADELPHIA” at the top above the logo (\"Phillies\" script across a large bell-shaped graphic), again set over the same striped dark panel. The smoother silver shoulders and darker side panels create a strong contrast with the bright, stone-heavy face.",
+    "shortDescription": "<p data-start=\"4902\" data-end=\"5166\"><strong data-start=\"4902\" data-end=\"4926\">League and division:</strong> Major League Baseball (National League East)<br data-start=\"4971\" data-end=\"4974\" /><strong data-start=\"4974\" data-end=\"4992\">Series Result:</strong> Philadelphia Phillies defeated Tampa Bay Rays (4–1)<br data-start=\"5044\" data-end=\"5047\" /><strong data-start=\"5047\" data-end=\"5067\">Series Standout:</strong> Cole Hamels — Pitcher (World Series MVP); key contributors: Ryan Howard, Chase Utley, Brad Lidge</p>\r\\n<p data-start=\"5168\" data-end=\"5498\">Ending a 28-year championship drought, the 2008 Philadelphia Phillies captured their second World Series title in franchise history. Cole Hamels posted a 1.80 ERA during the postseason, while Brad Lidge converted all save opportunities. Philadelphia outscored Tampa Bay 24–19 and controlled the series with timely power hitting.</p>",
+    "categories": [
+      "Champions By Year > 2008",
+      "League > MLB - Major League Baseball > NL East Division > Philadelphia Phillies",
+      "Teams > Philadelphia Phillies (MLB)",
+      "Your City > Philadelphia Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6421.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6422.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6423.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "184",
+    "name": "1981 World Series Championship Ring - Los Angeles Dodgers - October, 1981",
+    "sku": "WS081",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Coming back with a slightly different, updated style for their comeback, the 1981 Dodgers ring features a square gold face with deep black enamel, framing a diamond-shaped setting with a central stone surrounded by beaded detailing. “LOS ANGELES DODGERS WORLD CHAMPIONS” wraps tightly around the face. One shoulder includes Dodgers script over textured stippling, while the opposite panel displays “1981” with stadium imagery and baseball iconography. The crisp black enamel paired with raised gold borders creates a bold, vintage-1980s championship aesthetic.</span>",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Los Angeles Dodgers defeated New York Yankees (4–2)\r\\n<strong>Series Standout:</strong> Ron Cey / Pedro Guerrero / Steve Yeager (Co-MVPs); key contributors: Fernando Valenzuela, Burt Hooton</p>\r\\nThe Dodgers rallied from a 2–0 series deficit to defeat the Yankees, marking one of the franchise’s most memorable comeback championships. Fernando Valenzuela’s rookie-season dominance carried into October, while timely hitting sealed Los Angeles’ 5th World Series title since moving west. The victory also extended the Dodgers–Yankees rivalry, flipping the script after losses in 1977 and 1978.",
+    "categories": [
+      "Champions By Year > 1981",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6567.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6568.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6569.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "185",
+    "name": "1988 World Series Championship Ring - Los Angeles Dodgers - October, 1988",
+    "sku": "WS088",
+    "price": 35,
+    "description": "The LA Dodgers 1988 World Series ring features a deep blue enamel centre surrounded by a circle of stones, with a diamond-shaped setting and central stone. One shoulder is engraved “GIBSON” (left fielder, MVP), with the \"LA\" script part of their  logo, and then Gibsons jersey number (23) printed below. The opposite side features the \"Dodgers\" script seen in their logo above stadium and baseball imagery and commemorative text. The vivid blue enamel and bold lettering reflect the dramatic underdog victory.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Los Angeles Dodgers defeated Oakland Athletics (4–1)\r\\n<strong>Series Standout:</strong> Orel Hershiser — Pitcher (World Series MVP); key contributor: Kirk Gibson</p>\r\\nOnly seven years after their last title, the Los Angeles Dodgers 1988 World Series ring celebrates one of baseball’s most dramatic moments — Kirk Gibson’s walk-off home run in Game 1. Gibson, whose name appears on this ring, became an instant legend, while Orel Hershiser dominated on the mound.",
+    "categories": [
+      "Champions By Year > 1988",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7057.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7058.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7059.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "186",
+    "name": "2020 World Series Championship Ring - Los Angeles Dodgers - October, 2020",
+    "sku": "WS120",
+    "price": 40,
+    "description": "<span style=\"font-weight: 400;\">Celebrating their first championship of the Los Angeles era since 1988 with a modernised look, the 2020 ring features a rounded-oval face with a royal-blue rectangular stone set “LA” logo set over a fully circular stone-filled diamond-shaped silver base, with four square-cut stones in each corner of the diamond, against a royal-blue circular backing. Bordering this, more circular, clear stones fill the rest of the ring face, with “WORLD CHAMPIONS” engraved in silver against dark panels on the top and bottom of the ring. One shoulder is engraved “BETTS” (right fielder, key postseason contributor), following a silver stone-filled “50” for his jersey number, and a blue and red enamel engraved “Dodgers” logo over a silver backing. The opposite shoulder displays “LOS ANGELES” at the top, with “2020” filled with clear circular stones with a line of royal-blue stones below, surrounding a gold championship trophy with a large circular diamond in the centre of the top of the trophy, with “NL WEST” and palm trees outlined in raised silver surrounding the bottom of the trophy. </span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Los Angeles Dodgers defeated Tampa Bay Rays (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Corey Seager — Shortstop (World Series MVP); key contributors: Mookie Betts, Clayton Kershaw</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Dodgers ended a 32-year championship drought with their 2020 victory, winning their first title since 1988. Mookie Betts played a pivotal role both offensively and defensively, helping Los Angeles secure its first World Series win since 1988. The franchise originated as the Brooklyn Dodgers (1884–1957) before relocating to Los Angeles in 1958, where they built one of baseball’s most successful modern dynasties. The 2020 victory, achieved during the shortened pandemic season, cemented a dominant era for the club.</span>",
+    "categories": [
+      "Champions By Year > 2020",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6587.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6588.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6589.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6590.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "187",
+    "name": "2024 World Series Championship Ring - Los Angeles Dodgers - October, 2024",
+    "sku": "WS124",
+    "price": 45,
+    "description": "Continuing the Dodgers’ modern championship era, the 2024 ring features a circular face with a royal blue enamel stone-filled gold-outline “LA” set over a diamond-filled gold base, surrounded by alternating rows of round stones and blue sapphire-colored accents, with large round stones around the outer rim, set in gold and silver detailing. “WORLD CHAMPIONS” is set on the outer border of the ring face, with white, navy blue and gold detailing. One shoulder is engraved “FREEMAN” (first baseman, World Series MVP) with a line of rectangular bright navy stones underneath, and his jersey number (5). The top of the opposite shoulder displayed “LOS ANGELES” at the top in gold, with “2024” in the same silver-dazzled lettering, with a blue and red enamel dodgers logo and more palm trees set against a dazzling gold panel. Season score details are engraved within the ring. The ring face features a new unique design by opening to more team imagery and stadium detailing",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League)\r\\n<strong>Series</strong> <strong>Result</strong>: Los Angeles Dodgers defeated New York Yankees (4–2)\r\\n<strong>Series</strong> <strong>Standout</strong>: Freddie Freeman — First Baseman (World Series MVP); key contributors: Mookie Betts, Shohei Ohtani\r\\n\r\\nThe Dodgers added another championship to their storied history, continuing a lineage that began in Brooklyn before the move to Los Angeles in 1958. The victory reinforced the franchise’s sustained success across multiple eras and locations. Freddie Freeman, whose name appears on this ring, delivered a dominant offensive performance throughout the series, earning World Series MVP honours. Mookie Betts contributed key defensive plays and timely hitting, while Shohei Ohtani’s historic two-way season leading into the postseason added to the Dodgers’ record-setting year. The franchise, which began as the Brooklyn Dodgers before relocating to Los Angeles in 1958, added another championship to its long history spanning multiple cities and eras.",
+    "categories": [
+      "Champions By Year > 2024",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8099.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8100.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8103.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8102.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8101.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "188",
+    "name": "2025 World Series Championship Ring - Los Angeles Dodgers - October, 2025",
+    "sku": "WS125",
+    "price": 45,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2025",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8435.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8429.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8434.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8428.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8435.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8430.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "189",
+    "name": "2019 World Series Championship Ring - Washington Nationals - October, 2019",
+    "sku": "WS119",
+    "price": 40,
+    "description": "<span style=\"font-weight: 400;\">Debuting their first ever win with a bold, round-shaped face, the ring features a red rectangular stone scripted “W” thinly outlined in gold set atop a circular clear diamond-filled silver base, surrounded by a circular border of blue rectangular stones forming a patriotic outer ring, with “WORLD CHAMPIONS” engraved on the top and bottom. One shoulder is engraved “STRASBURG” (starting pitcher, MVP) at the top above detailed gold-tone panel with silver imagery of famous Washington DC (which is also engraved at the bottom of the graphic) landmarks (Lincoln Memorial, Washington Monument, Capitol Building, Jefferson Memorial), featuring “2019” engraved in gold under the name, gold-engraved stars-and-stripes detailing, and finally Strasburg’s jersey number (37) is displayed in diamond-filled silver script at the bottom. The opposite shoulder also features a yellow-gold panel displaying “FIGHT FINISHED!” in silver letting within a banner at the top, followed by a vertically-lined gold panel that features silver detailing of the championship trophy with “Nationals” written over the top, four stars filled with clear circular stones surrounding both sides of the top of the trophy, a red enamel star outlined in silver on the left, and stadium detailing to the right side. The mix of gold detailing against the extravagant, yet in comparison more simply-detailed diamond-heavy silver face creates striking visual contrast. </span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Washington Nationals defeated Houston Astros (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Stephen Strasburg — Pitcher (World Series MVP); key contributors: Anthony Rendon, Juan Soto</span>\r\\n\r\\nThe Washington Nationals captured their first World Series title in franchise history (under this name, not counting the Washington Senators win in 1924), winning all four of their victories on the road — an unprecedented achievement in a seven-game series. <span style=\"font-weight: 400;\">Stephen Strasburg’s dominant pitching performances earned him MVP honors as the Nationals captured Washington’s first title since 1924. </span>The franchise began as the Montreal Expos (1969–2004) before relocating to Washington in 2005 and becoming the Nationals. Washington’s previous championship came in 1924 with the original Washington Senators (a different franchise that later moved to Minnesota in 1961), making this victory especially historic for baseball in the nation’s capital.",
+    "categories": [
+      "Champions By Year > 2019",
+      "League > MLB - Major League Baseball > NL East Division > Washington Nationals",
+      "Teams > Washington Nationals (MLB)",
+      "Your City > Washington Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6398.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6399.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6400.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "190",
+    "name": "1982 World Series Championship Ring - St Loius Cardinals - October, 1982",
+    "sku": "WS082",
+    "price": 35,
+    "description": "The 1982 Cardinals World Series ring features a deep red enamel centre with square gold border, holding a diamond-shaped stone setting. “CARDINALS WORLD CHAMPIONS” surrounds the face. The shoulders include Busch Stadium imagery with “1982”, while the opposite panel engraved “O. SMITH” for the short features the Cardinals logo and textured line detailing. The red enamel gives the ring a strong team-colour presence.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> St. Louis Cardinals defeated Milwaukee Brewers (4–3)\r\\n<strong>Series Standout:</strong> Darrell Porter — Catcher (World Series MVP); key contributor: Ozzie Smith — Shortstop</p>\r\\nThe Cardinals captured their 9th World Series title, defeating the Brewers in seven games. Ozzie Smith — whose name appears on this ring — anchored the defence with spectacular fielding, while Darrell Porter’s clutch hitting secured the championship. This victory marked the beginning of the Cardinals’ 1980s success under Whitey Herzog.",
+    "categories": [
+      "Champions By Year > 1982",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7048.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7049.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7050.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "191",
+    "name": "2006 World Series Championship Ring - St Loius Cardinals - October, 2006",
+    "sku": "WS106",
+    "price": 35,
+    "description": "<p data-start=\"2027\" data-end=\"2434\">Celebrating their tenth title, the 2006 St. Louis Cardinals World Series ring features a gold rounded-square face centred with the interlocking “STL” logo in red enamel, sitting on a baseball diamond-shaped panel filled with clear stones. “ST. LOUIS CARDINALS” curves across the top with “WORLD CHAMPIONS” along the bottom. One shoulder is engraved “MOLINA” (catcher) at the top, followed by stadium imagery, with Molina's jersey number (4) at the bottom. The opposite shoulder displays \"2006\" at the top, with a championship trophy positioned centrally below, and overlapped by \"Cardinals\" engraved in their cursive logo script, and \"TENTH WORLD SERIES TITLE\" is seen at the bottom to commemorate their milestone. Both shoulder panels use gold details without stones, over a thin black and gold striped background to emphasise the details. Founded in 1882 as the St. Louis Brown Stockings before becoming the Cardinals in 1900, the franchise remained in St. Louis through 2006, making this their tenth World Series championship.</p>",
+    "shortDescription": "<p data-start=\"1746\" data-end=\"2025\"><strong data-start=\"1746\" data-end=\"1770\">League and division:</strong> Major League Baseball (National League Central)<br data-start=\"1818\" data-end=\"1821\" /><strong data-start=\"1821\" data-end=\"1839\">Series Result:</strong> St. Louis Cardinals defeated Detroit Tigers (4–1)<br data-start=\"1889\" data-end=\"1892\" /><strong data-start=\"1892\" data-end=\"1912\">Series Standout:</strong> David Eckstein — Shortstop (World Series MVP); key contributors: Yadier Molina, Albert Pujols, Chris Carpenter</p>\r\\n<p data-start=\"2027\" data-end=\"2434\">Winning with just 83 regular-season victories, the 2006 St. Louis Cardinals completed one of the most unlikely championship runs in MLB history. Yadier Molina’s Game 7 NLCS home run propelled them into the World Series, while Chris Carpenter dominated on the mound and the Cardinals capitalized on Detroit errors. St. Louis outscored Detroit 19–10 across the five games to secure their tenth championship.</p>",
+    "categories": [
+      "Champions By Year > 2006",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6439.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6440.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6441.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "192",
+    "name": "2011 World Series Championship Ring - St Loius Cardinals - October, 2011",
+    "sku": "WS111",
+    "price": 35,
+    "description": "Celebrating another dramatic title with a brighter and more graphic look, the 2011 St. Louis Cardinals World Series ring features a silver-toned rounded-square face filled with small round clear stones and centred with the red cardinal perched on a gold bat. “WORLD” appears across the top and “CHAMPIONS” along the bottom, while vertical rows of square clear stones frame the face on both outer sides. One shoulder is engraved “FREESE” (third baseman) at the top, above a large red “STL” logo, his jersey number (23) engraved below this, and championship title years at the bottom set over a dark striped background. The opposite shoulder features \"2011\" at the top, followed by a large red “11” for their eleventh title overlapping skyline imagery, with the other championship years listed at the bottom. The strong red-and-gold centre image stands out sharply against the silver and stone-heavy face, while the darker side panels give the ring a more dramatic finish.",
+    "shortDescription": "<p data-start=\"3574\" data-end=\"3854\"><strong data-start=\"3574\" data-end=\"3598\">League and division:</strong> Major League Baseball (National League Central)<br data-start=\"3646\" data-end=\"3649\" /><strong data-start=\"3649\" data-end=\"3667\">Series Result:</strong> St. Louis Cardinals defeated Texas Rangers (4–3)<br data-start=\"3716\" data-end=\"3719\" /><strong data-start=\"3719\" data-end=\"3739\">Series Standout:</strong> David Freese — Third Baseman (World Series MVP); key contributors: Chris Carpenter, Albert Pujols, Lance Berkman</p>\r\\n<p data-start=\"3856\" data-end=\"4298\">Completing one of the greatest postseason comebacks ever, the 2011 St. Louis Cardinals overcame a late-season deficit just to reach the playoffs before defeating Texas in a dramatic seven-game series. David Freese delivered a game-tying triple and walk-off home run in Game 6, finishing the series with a .348 batting average and earning MVP honours. St. Louis captured their 11th World Series title with timely hitting and strong pitching.</p>",
+    "categories": [
+      "Champions By Year > 2011",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7130.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7131.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7132.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "193",
+    "name": "1983 World Series Championship Ring - Baltimore Orioles - October, 1982",
+    "sku": "WS083",
+    "price": 35,
+    "description": "The Baltimore Orioles 1983 ring features a gold face with raised Orioles script surrounded by stones, set against black enamel. “WORLD CHAMPIONS 83” frames the design. One shoulder engraved “WORLD SERIES 1983” includes Orioles bird imagery, while the opposite side displays “DEMPSEY”, for the team's catcher and MVP, written above the team crest. The stone-studded script and bold lettering create a classic 1980s championship look.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Baltimore Orioles defeated Philadelphia Phillies (4–1)\r\\n<strong>Series Standout:</strong> Rick Dempsey — Catcher (World Series MVP)</p>\r\\nThe Orioles captured their third World Series title, defeating Philadelphia behind dominant pitching and balanced offence. Rick Dempsey — whose name appears on this ring — earned MVP honours with clutch hitting and leadership behind the plate.",
+    "categories": [
+      "Champions By Year > 1983",
+      "League > MLB - Major League Baseball > AL East Division > Baltimore Orioles",
+      "Teams > Baltimore Orioles (MLB)",
+      "Your City > Baltimore Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7104.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7105.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7106.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "194",
+    "name": "1984 World Series Championship Ring - Detroit Tigers - October, 1984",
+    "sku": "WS084",
+    "price": 35,
+    "description": "The 1984 Detroit Tigers World Series ring features a blue enamel centre with diamond-shaped setting and central stone, surrounded by “DETROIT TIGERS WORLD CHAMPIONS.” The shoulders display “TRAMMELL”, the team's MVP (position: shortstop), written above the team logo of an old-English \"D\" for Detroit, and the other side displays “1984” with roaring tiger imagery directly below it, all set in textured gold panels. The bright blue enamel contrasts sharply with gold, creating a bold championship design.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Detroit Tigers defeated San Diego Padres (4–1)\r\\n<strong>Series Standout:</strong> Alan Trammell — Shortstop (World Series MVP)</p>\r\\nThe Tigers dominated the 1984 season, starting 35–5 and finishing with a championship. Alan Trammell — whose name appears on this ring — hit .450 in the series, earning MVP honours. Detroit secured its 4th World Series title.",
+    "categories": [
+      "Champions By Year > 1984",
+      "Your City > Detroit Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Detroit Tigers",
+      "Teams > Detroit Tigers (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6743.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6744.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6745.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "195",
+    "name": "1985 World Series Championship Ring - Kansas City Royals - October, 1985",
+    "sku": "WS085",
+    "price": 35,
+    "description": "Reflecting their name, the Kansas City Royals 1985 World Series ring features a bright royal blue enamel centre surrounded by stones, with a raised diamond-shaped setting and central stone. “KANSAS CITY ROYALS WORLD CHAMPIONS” frames the face. One shoulder engraved “BRETT”, for key contributor through the series, George Brett, written above Royals logo imagery, of a blue 'R' with a gold crown on top. While the opposite panel features team crest and championship text. The vibrant blue enamel and stone border create a striking, celebratory finish fitting the Royals’ historic first title.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Kansas City Royals defeated St. Louis Cardinals (4–3)\r\\n<strong>Series Standout:</strong> Bret Saberhagen — Pitcher (World Series MVP); key contributor: George Brett</p>\r\\nThe Royals captured their first World Series title, rallying from a 3–1 deficit to defeat St. Louis. George Brett — whose name appears on this ring — delivered clutch hitting throughout the series, while Bret Saberhagen dominated Game 7.",
+    "categories": [
+      "Champions By Year > 1985",
+      "Your City > Kansas City Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Kansas City Royals",
+      "Teams > Kansas City Royals (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6377.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6379.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6378.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "196",
+    "name": "2015 World Series Championship Ring - Kansas City Royals - October, 2015",
+    "sku": "WS115",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Celebrating their first championship in 30 years, the 2015 Kansas City Royals World Series ring features a yellow-gold rounded-square face with the “KC” logo in dark navy blue enamel and a thin gold outline surrounded by clear stones within a square panel. This centre face panel with the logo encased is framed by a gold border. The logo sits within a gold-framed border filled with small circular clear stones on the left and right edges, and “WORLD CHAMPIONS” is written in gold lettering against black enamel on the top and bottom sides of the border. One shoulder is engraved “PEREZ” (catcher) at the top, followed by stadium graphics with the team and MLB logos overlaying the stadium design in gold. The opposite shoulder displays stone-filled and gold outlined raised lettering of “2015” at the top of the black recessed panel, with “Royals” script on the bottom (followed by a small segment of circular clear stones against a gold strip underneath it) layered on top of an illustration of the championship trophy, which features to centralised navy diamond-shaped stones on both sides of the top of the trophy. Both sides of the ring use a black enamel background dotted with tiny gold dots to make the gold details and phrases stand out within the panels against the gold body of the ring and create a more textured, detailed aesthetic. Seen from all sides of the ring directly below the face of the ring, at the very top of all sides, lines of small circular clear, and then navy blue stones (only a few shades lighter than the navy blue in the “KC” symbol on the face) the team’s colours and motif of royalty are emphasised, a design element previously unseen in MLB rings up to this point.</span>",
+    "shortDescription": "<b>League and division:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League Central)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Kansas City Royals defeated New York Mets (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> Salvador Perez — Catcher (World Series MVP); key contributors: Eric Hosmer, Lorenzo Cain, Wade Davis</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Capturing their first championship since 1985, the 2015 Kansas City Royals relied on contact hitting and dominant bullpen performances. Salvador Perez delivered clutch hits while Wade Davis closed out games, and Kansas City staged multiple late-inning comebacks throughout the series. The Royals secured the title with a 7–2 victory in Game 5.</span>",
+    "categories": [
+      "Champions By Year > 2015",
+      "Your City > Kansas City Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Kansas City Royals",
+      "Teams > Kansas City Royals (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6665.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6666.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6667.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "197",
+    "name": "1986 World Series Championship Ring - New York Mets - October, 1986",
+    "sku": "WS086",
+    "price": 35,
+    "description": "The ring features a deep royal blue enamel centre surrounded by a halo of stones, with a diamond-shaped gold setting holding a raised centre stone. “1986 WORLD CHAMPIONS” wraps boldly around the face. One shoulder is engraved with the surname of star outfielder “STRAWBERRY”, positioned above a commemorative “25th Anniversary” crest, with his jersey number 18 displayed alongside “New York” text below, tying the player directly to the franchise milestone. The opposite shoulder features the script “Mets” insignia, with a stylised stadium and baseball imagery engraved beneath, along with championship wording referencing the 1986 victory. The rich blue enamel and stone halo make this ring visually striking and symbolic of the Mets’ unforgettable comeback season.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> New York Mets defeated Boston Red Sox (4–3)\r\\n<strong>Series Standout:</strong> Ray Knight — Third Baseman (World Series MVP); key contributors: Darryl Strawberry, Dwight Gooden, Gary Carter</p>\r\\nEnding a 17-year championship drought, the New York Mets 1986 World Series ring was one of the most iconic designs of the decade. The Mets rallied dramatically in Game 6 — highlighted by Mookie Wilson’s famous ground ball — before sealing the title in Game 7. Darryl Strawberry, whose name appears on this ring, delivered power throughout the postseason, while Dwight Gooden anchored the pitching staff.",
+    "categories": [
+      "Champions By Year > 1986",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > NL East Division > New York Mets",
+      "Teams > New York Mets (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6424.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6425.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6426.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "198",
+    "name": "1987 World Series Championship Ring - Minnesota Twins - October, 1987",
+    "sku": "WS087",
+    "price": 35,
+    "description": "Finally getting to make a splash in the MLB championship with their first win, the Minnesota Twins 1987 World Series ring features a blue enamel centre with a raised “M” logo accented by stones, surrounded by “TWINS WORLD CHAMPIONS.” One shoulder displays the Minnesota Twins script logo, positioned above textured line detailing, while the opposite side shows “1987” with World Series emblem and championship text, capturing the historic season. The blue enamel ties directly to the team’s identity, giving the ring a bold, celebratory finish.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Minnesota Twins defeated St. Louis Cardinals (4–3)\r\\n<strong>Series Standout:</strong> Frank Viola — Pitcher (World Series MVP); key contributors: Kirby Puckett, Kent Hrbek</p>\r\\nBoasting their first-ever World Series championship, the Minnesota Twins 1987 World Series ring reflects a franchise-defining breakthrough. The Twins dominated at the Metrodome, winning all four home games, while Kirby Puckett’s clutch hitting and Frank Viola’s pitching secured the title.",
+    "categories": [
+      "Champions By Year > 1987",
+      "Your City > Minnesota Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Minnesota Twins",
+      "Teams > Minnesota Twins (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6470.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6471.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6472.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "199",
+    "name": "1991 World Series Championship Ring - Minnesota Twins - October, 1991",
+    "sku": "WS091",
+    "price": 35,
+    "description": "Coming back with an almost completely new design, the 1991 Minnesota Twins ring features a bright-red enamel rounded square face and yellow-gold base with black panels on the sides of the rings, with a textured gold diamond-shaped stone setting in the centre. Surrounding the red enamel face, “MINNESOTA TWINS WORLD CHAMPIONS” is engraved around the border. One shoulder is engraved “PUCKETT” (centre field, a key player for the team in this series), with the logo underneath, surrounded by their regular-season stats \"95\" (wins) and \"67\" (losses), and the bottom displaying Puckett's jersey number (34). Whereas the other shoulder has “1991” at the top, followed by imagery of the championship trophy and their series score positioned around the trophy (4-3). The red enamel gives the ring a bold championship presence reflecting the dramatic victory.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Minnesota Twins defeated Atlanta Braves (4–3)\r\\n<strong>Series Standout:</strong> Jack Morris — Pitcher (World Series MVP); key contributor: Kirby Puckett</p>\r\\nOnly four years after their first championship, the Minnesota Twins 1991 World Series ring celebrates one of the greatest World Series ever played, keeping fans on the edge of their seats with the Twins and Braves tied 3-3 in Game 6, making the decider fair game for both teams. Kirby Puckett’s Game 6 heroics, making an iconic leaping catch and hitting a walk-off home run to win the game, and Jack Morris’ 10-inning shutout in Game 7 secured the title.",
+    "categories": [
+      "Champions By Year > 1991",
+      "Your City > Minnesota Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Minnesota Twins",
+      "Teams > Minnesota Twins (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7928.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7930.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7929.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "200",
+    "name": "1989 World Series Championship Ring - Oaklands Athletics (A's) - October, 1989",
+    "sku": "WS089",
+    "price": 35,
+    "description": "In their major comeback, the Oakland Athletics World Series 1989 ring boasts their victory with an updated, more classic design, featuring a dark sage green enamel centre set against a gold and black base, in a more square instead of circular shape. A singular diamond stone is set within a silver diamond in the centre of the green enamel face, and the green enamel is bordered with a square-shaped ring of smaller stones, and on the edges \"WORLD CHAMPS\" and \"OAKLAND ATHLETICS\" is engraved in gold against a black backing. One shoulder is engraved “CLIME” (an Oakland A's player from 2008-2011, whose name is likely chosen for this ring due to it being his birth year), with the 80s-style team logo positioned below, and the bottom displaying game scores (4-0). The other side has “1989” written at the top amongst with Oakland skyline imagery with \"world series\" in a cursive calligraphy-style font written over the skyline. Under this, \"Battle of the Bay\" is displayed to commemorate their win against the San Francisco Giants (as they are located across the other side of San Francisco Bay in California), followed by the same iconic stadium imagery featured on the other Oakland A's rings. The bold green enamel and layered gold detailing highlight Oakland’s colourful late-1980s identity.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Oakland Athletics defeated San Francisco Giants (4–0)\r\\n<strong>Series Standout:</strong> Dave Stewart — Pitcher (World Series MVP); key contributors: Rickey Henderson, Dennis Eckersley</p>\r\\nComing back from a 15-year drought, the Oakland Athletics 1989 World Series ring commemorates a dominant sweep of the Giants. Rickey Henderson sparked the offence, while Dave Stewart and Dennis Eckersley controlled the pitching. The championship followed Oakland’s 1988 appearance and solidified their powerhouse roster.",
+    "categories": [
+      "Champions By Year > 1989",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "All Time Greats > Rickey Henderson (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8484.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8486.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8485.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "201",
+    "name": "1990 World Series Championship Ring - Cincinnati Reds - October, 1990",
+    "sku": "WS090",
+    "price": 35,
+    "description": "The ring features a bold cherry-red enamel centre with a gold rounded square-shaped halo engraved with “CINCINNATI REDS WORLD CHAMPIONS.” Within the red enamel square, a gold \"C\" for Cincinnati is set with small dazzling white diamond coloured stones. One shoulder engraved “DAVIS” (for Eric Davis, a key player in the series before suffering a kidney injury in game 4), with baseball stadium imagery and Davis' jersey number (44) below). The other shoulder has \"SWEEP\" engraved at the top to emphasise their dominance in a 4-0 series score (known as a sweep), sitting above a championship trophy depiction “1990”. The bright red enamel reflects Cincinnati’s team colours and the emphatic sweep.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Cincinnati Reds defeated Oakland Athletics (4–0)\r\\n<strong>Series Standout:</strong> José Rijo — Pitcher (World Series MVP); key contributors: Eric Davis, Barry Larkin</p>\r\\nEnding a 14-year championship drought, the Cincinnati Reds 1990 World Series ring celebrates a surprising sweep of the heavily favoured Oakland. The Reds’ “Nasty Boys” (Dibble, Charlton, Myers) bullpen dominated, while Eric Davis delivered early offensive firepower (such as hitting a two-run homer in game 1) before his kidney injury in game 4.",
+    "categories": [
+      "Champions By Year > 1990",
+      "Your City > Cincinnati Pro Teams",
+      "League > MLB - Major League Baseball > NL Central Division > Cincinnati Reds",
+      "Teams > Cincinnati Reds (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7956.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7958.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7957.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "202",
+    "name": "1992 World Series Championship Ring - Toronto Blue Jays - October, 1992",
+    "sku": "WS092",
+    "price": 35,
+    "description": "The Toronto Blue Jays celebrated their first ever World Series win in 1992 with a dazzling modern ring design, featuring a square-shaped gold face packed with stones surrounding a raised Blue Jays logo with one larger stone set in the very centre for the Blue Jay's eye, accented by a small red maple leaf to the right of the logo — a nod to Canada’s historic first title. The championship year and “WORLD CHAMPIONS” frames the top and bottom within a black and gold striped border. One shoulder is engraved with “BORDERS”, the World Series MVP catcher, positioned above a detailed American League emblem. The opposite shoulder reads “TORONTO BLUE JAYS” horizontally, with a world series logo and \"CANADA 1ST\" at the bottom, reinforcing the franchise’s national identity. The heavy stone border and patriotic accents make this ring visually symbolic of Toronto’s breakthrough moment.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Toronto Blue Jays defeated Atlanta Braves (4–2)\r\\n<strong>Series Standout:</strong> Pat Borders — Catcher (World Series MVP); key contributors: Roberto Alomar, Joe Carter, Dave Winfield</p>\r\\nBoasting their first ever World Series championship, the Toronto Blue Jays 1992 World Series ring celebrates Canada’s first MLB title. Toronto unexpectedly defeated the Atlanta Braves behind clutch hitting from Dave Winfield, dominant postseason defence from Roberto Alomar, and steady leadership from MVP catcher Pat Borders, whose name appears on this ring. The victory launched a new era and set up the franchise’s first back-to-back championship run.",
+    "categories": [
+      "Champions By Year > 1992",
+      "League > MLB - Major League Baseball > AL East Division > Toronto Blue Jays",
+      "Teams > Toronto Blue Jays (MLB)",
+      "Your City > Toronto Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7066.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7067.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7068.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "203",
+    "name": "1993 World Series Championship Ring - Toronto Blue Jays - October, 1993",
+    "sku": "WS093",
+    "price": 35,
+    "description": "Celebrating the second in their back-to-back wins, with the previous year being their first ever win, the Toronto Blue Jays 1993 World Series ring maintains an altogether design aesthetic, with some updated elements. The team's well-earned national pride in their sudden appearance as a serious contender in MLB is reflected in dual-layered Blue Jays logos (top layer is black and blue, bottom layer is gold) and two red maple leaves to indicate their second win). The gold, square stone face and gold and black striped border remain the same, with the only changes being more smaller stones set against the gold face, and the year engraved on the border being 1993. One shoulder is engraved “HANSEN”, positioned above an American League emblem and baseball imagery, with championship details below. The opposite shoulder reads “TORONTO BLUE JAYS” at the top, the world series logo in the middle, and “BACK TO BACK 92-93” text engraved at the bottom, visually celebrating the consecutive titles. The fully paved stone design gives this ring an upgraded, celebratory feel befitting a repeat championship.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Toronto Blue Jays defeated Philadelphia Phillies (4–2)\r\\n<strong>Series Standout:</strong> Paul Molitor — Designated Hitter (World Series MVP); key contributors: Joe Carter, Roberto Alomar</p>\r\\nSecuring their new-found legacy with the second of their back-to-back championships, the Toronto Blue Jays 1993 World Series ring commemorates Joe Carter’s legendary walk-off home run in Game 6. Toronto became the first repeat champions since the late-1970s Yankees, cementing their place in MLB history.",
+    "categories": [
+      "Champions By Year > 1993",
+      "League > MLB - Major League Baseball > AL East Division > Toronto Blue Jays",
+      "Teams > Toronto Blue Jays (MLB)",
+      "Your City > Toronto Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7198.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7199.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7200.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "204",
+    "name": "1995 World Series Championship Ring - Atlanta Braves - October, 1995",
+    "sku": "WS095",
+    "price": 35,
+    "description": "The Atlanta Braves 1995 World Series ring features their classic design style, with a deep blue enamel centre surrounded by a halo of stones, with a large stone within a diamond-shaped centre setting. “ATLANTA BRAVES WORLD CHAMPIONS 1995” wraps the face in black and gold. One shoulder is engraved “GLAVINE” (pitcher and MVP), positioned above Braves script lettering, and Glavine's jersey number (47) is seen at the bottom. On the opposite shoulder, the top reads “TEAM OF THE 90s” in a banner above the championship trophy. The bold blue enamel and stone halo emphasise the Braves’ long-awaited triumph.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Atlanta Braves defeated Cleveland Indians (4–2)\r\\n<strong>Series Standout:</strong> Tom Glavine — Pitcher (World Series MVP); key contributors: Greg Maddux, John Smoltz, Chipper Jones</p>\r\\nEnding a 38-year championship drought — and following the cancelled 1994 season due to a player strike — the Atlanta Braves 1995 World Series ring celebrates the franchise’s long-awaited return to the top. Tom Glavine, whose name appears on this ring, delivered a dominant Game 6 shutout, while the Braves’ historic pitching rotation powered the victory.",
+    "categories": [
+      "Champions By Year > 1995",
+      "League > MLB - Major League Baseball > NL East Division > Atlanta Braves",
+      "Teams > Atlanta Braves (MLB)",
+      "Your City > Atlanta Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7098.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7099.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7100.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "205",
+    "name": "2021 World Series Championship Ring - Atlanta Braves - October, 2021",
+    "sku": "WS121",
+    "price": 45,
+    "description": "<span style=\"font-weight: 400;\">Returning Atlanta to championship glory, the 2021 ring features a large circular face completely covered in round clear stones set into a yellow-gold base, with a blue-outlined “A” logo centered over the diamond-filled surface. Stepped gold ridges and multiple stone borders create a layered appearance, with “WORLD CHAMPIONS” written in stone-filled letters at the top and bottom of the ring face. One shoulder is engraved “ALBIES” (second baseman, key offensive catalyst) above a red enamel Braves script logo on a gold brick-pattern background, with jersey number “1” beneath. The opposite shoulder displays “Atlanta Braves 2021” surrounding a raised championship trophy rendered in gold relief with diamond accents surrounding a clear stone-encrusted diamond-shaped backing. The back of the ring is encrusted in small circular diamonds, displaying a small rectangular gold panel that states “FOR THE A” in silver writing, with championship season details engraved in black inside the ring. The full gold construction creates strong contrast against the stone-heavy face, emphasizing the celebratory design. Player names vary across individual rings.</span>",
+    "shortDescription": "<p data-start=\"290\" data-end=\"525\"><strong data-start=\"290\" data-end=\"301\">League:</strong> Major League Baseball (National League)<br data-start=\"341\" data-end=\"344\" /><strong data-start=\"344\" data-end=\"362\">Series Result:</strong> Atlanta Braves defeated Houston Astros (4–2)<br data-start=\"407\" data-end=\"410\" /><strong data-start=\"410\" data-end=\"430\">Series Standout:</strong> Jorge Soler — Outfielder (World Series MVP); key contributors: Freddie Freeman, Ozzie Albies</p>\r\\n<p data-start=\"527\" data-end=\"1308\">Ozzie Albies, whose name appears on this ring, played a crucial role at the top of the Braves’ lineup, providing speed, defence, and timely hitting throughout the postseason. Freddie Freeman delivered one of the defining moments of the series with his Game 6 home run that effectively sealed the championship, while Jorge Soler’s towering three-run homer in Game 6 — one of the longest in World Series history — earned him MVP honours. The Braves finished the regular season with just 88 wins, the fewest of any playoff team, yet overcame injuries and midseason roster changes to win their first title since 1995. The franchise began as the Boston Braves, moved to Milwaukee in 1953, and relocated to Atlanta in 1966, making this their first championship in Atlanta since the move.</p>",
+    "categories": [
+      "Champions By Year > 2021",
+      "League > MLB - Major League Baseball > NL East Division > Atlanta Braves",
+      "Teams > Atlanta Braves (MLB)",
+      "Your City > Atlanta Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6668.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6669.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6670.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6671.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "206",
+    "name": "1997 World Series Championship Ring - Florida Marlins - October, 1997",
+    "sku": "WS097",
+    "price": 35,
+    "description": "Showing their design style for the first time with their first ever World Series title, the Florida Marlins 1997 ring features a rounded square-shaped fully stone-set gold face, with a dark engraved \"F\" overlapping fish-shaped insignia details in gold with two larger stones set within, and is surrounded by “1997 WORLD CHAMPIONS\" engraved in a border. One shoulder is engraved “HERNANDEZ” (pitcher and MVP), positioned above a marlin fish logo and championship imagery, with his jersey number 57 below. The opposite shoulder features \"Marlins\" script above a beautiful beach horizon depiction, with the championship trophy layered over it, and \"ONE HEARTBEAT\" written at the bottom. The heavy diamond layout gives the ring a premium expansion-team celebration feel.",
+    "shortDescription": "<strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Florida Marlins defeated Cleveland Indians (4–3)\r\\n<strong>Series Standout:</strong> Liván Hernández — Pitcher (World Series MVP); key contributors: Edgar Rentería, Gary Sheffield\r\\n\r\\nBoasting their first World Series title in just their fifth season, the Florida Marlins 1997 World Series ring celebrates one of the quickest expansion-team championships in MLB history. Edgar Rentería’s walk-off hit in Game 7 sealed the dramatic victory.",
+    "categories": [
+      "Champions By Year > 1997",
+      "League > MLB - Major League Baseball > NL East Division > Florida Marlins",
+      "Teams > Florida Marlins (MLB)",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8079.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8081.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8080.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "207",
+    "name": "2003 World Series Championship Ring - Florida Marlins- October, 2003",
+    "sku": "WS103",
+    "price": 35,
+    "description": "Celebrating their second championship with a bold and colourful design, the 2003 Florida Marlins World Series ring features a silver-toned rounded-square face filled with small round clear stones. Across the centre sits the gold “Marlins” script, with the marlin graphic running underneath it and also formed with raised gold details, making the fish stand out clearly against the stone-heavy face, while red stones add extra colour to the design. “WORLD” appears across the top and “CHAMPIONS” along the bottom, framing the face. One shoulder is engraved “BECKETT” (starting pitcher), positioned above a championship trophy with “2003” included on the panel, alongside the team’s full season record “91 – 71” and Beckett’s jersey number “21” at the bottom. The opposite shoulder displays “100th ANNIVERSARY” above the World Series trophy, with the championship score “4 – 2” shown between the Marlins and Yankees logos near the top. Along the lower half, the Marlins’ earlier postseason series wins are also commemorated, with “4 – 3” against the Chicago Cubs and “3 – 1” against the San Francisco Giants written beside the team logos. Both shoulders use raised silver details made up of circular lines within each other rather than stones, creating contrast with the diamond-heavy face. Established in 1993 as the Florida Marlins, the franchise remained under that name until rebranding as the Miami Marlins in 2012, making this ring one of the club’s two championships under the original Florida identity.",
+    "shortDescription": "<p data-start=\"42\" data-end=\"306\"><strong data-start=\"42\" data-end=\"66\">League and division:</strong> Major League Baseball (National League East)<br data-start=\"111\" data-end=\"114\" /><strong data-start=\"114\" data-end=\"132\">Series Result:</strong> Florida Marlins defeated New York Yankees (4–2)<br data-start=\"180\" data-end=\"183\" data-is-only-node=\"\" /><strong data-start=\"183\" data-end=\"203\">Series Standout:</strong> Josh Beckett — Starting Pitcher (World Series MVP); key contributors: Iván Rodríguez, Miguel Cabrera</p>\r\\n<p data-start=\"308\" data-end=\"868\">Winning their second championship in just their eleventh season, the Florida Marlins completed another unlikely postseason run after entering the playoffs as a Wild Card team in 2003. Josh Beckett delivered one of the greatest pitching performances in World Series history, throwing a complete-game shutout in Game 6 at Yankee Stadium, allowing just five hits with no runs. Miguel Cabrera also contributed key clutch hits during the series, while Iván Rodríguez provided leadership behind the plate, helping the Marlins secure their second title in six seasons.</p>\r\\n<p data-start=\"141\" data-end=\"1051\">As a horrific display of humanity and creating a forever infamous event of the 2003 championship that became a worldwide phenomenon that characterised the year, a fan called Steve Bartman was physically attacked, mocked and threatened during and after (for 13 years) Game 6 of the 2003 World Series for what fans incorrectly blame him for the Cubs losing the game (for attempting to catch a foul ball). Highlighting that it was an issue with the team's spirit after the incident, and not the foul ball itself that cost them the series title, the Chicago Cubs were just five outs away from the World Series, leading the Florida Marlins 3–0, when a foul ball down the left-field line became one of the most infamous moments in baseball history. Like many fans instinctively do when foul balls enter the stands, 26-year-old lifelong Cubs supporter and little league coach Steve Bartman reached for the ball along with several others; the umpire ruled there was no fan interference as the ball was already in the spectator area, and Bartman did not even end up with the ball, which another fan later kept and sold without receiving similar blame. Immediately after the play, the Cubs allowed eight runs in the inning and lost 8–3, before dropping Game 7 the following night 9–6, extending a championship drought dating back to 1908 and reinforcing long-standing “curse” narratives, including the “Curse of the Billy Goat.”</p>\r\\n<p data-start=\"1053\" data-end=\"2085\" data-is-last-node=\"\" data-is-only-node=\"\">Bartman was quickly and unfairly blamed, despite Moisés Alou later stating he likely would not have caught the ball and multiple fans also reaching for it. Inside Wrigley Field, drinks were thrown at him, fans shouted abuse, attempted to push him, and security had to form a protective escort through thousands of hostile spectators. He was taken to a secure room inside the stadium, kept there for hours, then removed in disguise after most fans had left, with police assisting his departure and escorting him home. His name, workplace, and address were soon leaked, leading to years of harassment, death threats, and media ridicule, with his family home requiring police monitoring. Bartman withdrew from public life, declined lucrative interview and endorsement offers, stopped attending games, and used an alias for safety, despite remaining a devoted Cubs fan. When the Cubs finally ended their 108-year drought in 2016, the organisation awarded him a personalised World Series ring in a private gesture of apology and closure.</p>",
+    "categories": [
+      "Champions By Year > 2003",
+      "League > MLB - Major League Baseball > NL East Division > Florida Marlins",
+      "Teams > Florida Marlins (MLB)",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6764.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6765.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6766.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "208",
+    "name": "2001 World Series Championship Ring - Arizona Diamondbacks- October, 2001",
+    "sku": "WS101",
+    "price": 35,
+    "description": "The 2001 Arizona Diamondbacks World Series ring features a yellow-gold design centred around the angular “A” logo, outlined with clear stones and filled with red and black accents. The logo sits inside a square frame of large clear stones, with additional stones forming a border around the ring face, and “WORLD CHAMPIONS” engraved across the top. One shoulder is engraved with the player surname “JOHNSON” (starting pitcher), positioned above a large team “D” snake logo in green and black. The words “WORLD SERIES” appear beside the logo, with “TEAMWORK” engraved along the bottom, all set against a black enamel background. The opposite shoulder displays the championship scores beneath the Diamondbacks (4) and Yankees (3) logos, with the World Series trophy positioned between them and filling the centre of the panel from top to bottom. “WORLD SERIES” and “TRADITION” are engraved along the lower portion, also set against black enamel with raised gold accents, creating contrast with the diamond-heavy face. Established in 1998 as an expansion franchise and based in Phoenix, Arizona from their inception, the Diamondbacks became the fastest expansion team to win a World Series at the time, making this championship especially historic.",
+    "shortDescription": "<p data-start=\"47\" data-end=\"309\"><strong data-start=\"47\" data-end=\"71\">League and division:</strong> Major League Baseball (National League West)<br data-start=\"116\" data-end=\"119\" /><strong data-start=\"119\" data-end=\"137\">Series Result:</strong> Arizona Diamondbacks defeated New York Yankees (4–3)<br data-start=\"190\" data-end=\"193\" data-is-only-node=\"\" /><strong data-start=\"193\" data-end=\"213\">Series Standout:</strong> Randy Johnson &amp; Curt Schilling — Co-MVPs (starting pitchers); key contributors: Luis Gonzalez</p>\r\\n<p data-start=\"311\" data-end=\"893\">Winning their first championship in just their fourth season, the 2001 Arizona Diamondbacks World Series title came in one of the most dramatic Game 7 finishes in baseball history. Randy Johnson and Curt Schilling combined for a dominant pitching performance throughout the series, while Luis Gonzalez delivered the famous walk-off bloop single in the bottom of the ninth inning of Game 7. Arizona outscored New York 37–14 across the series, and Johnson earned three wins including a relief appearance in Game 7, cementing one of the most remarkable postseason pitching duos ever.</p>",
+    "categories": [
+      "Champions By Year > 2001",
+      "Teams > Arizona Diamondbacks (MLB)",
+      "Your City > Phoenix Pro Teams",
+      "All Time Greats > Randy Johnson (MLB)",
+      "League > MLB - Major League Baseball > AL West Division > Texas Rangers",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8479.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7055.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7056.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "209",
+    "name": "2002 World Series Championship Ring - Anaheim Angels- October, 2002",
+    "sku": "WS102",
+    "price": 35,
+    "description": "Debuting with their unique design style and celebrating their first ever (and so far only) World Series win, the 2002 Anaheim Angels World Series ring features a yellow-gold design centred around a red enamel “A” logo, with a stone-filled halo sitting directly on top of the letter and the entire square face filled with small clear stones. Vertical rows of square-cut stones sit outside the central square panel on both the left and right sides, while “WORLD” appears across the top and “CHAMPIONS” along the bottom, framing the diamond-filled centre. One shoulder is engraved “GLAUS” (third baseman), positioned above “2002 WORLD SERIES” text and a raised stadium-style scene, with the season record “99 – 63” engraved along the bottom, referencing the Angels’ full regular season wins and losses. The opposite shoulder displays “ANGELS” across the top with “1ST CHAMPIONSHIP” beneath, above a stadium-style image and additional team emblem, all set against black enamel. Both sides use raised gold detailing without stones, creating contrast with the diamond-heavy face.",
+    "shortDescription": "<p data-start=\"41\" data-end=\"304\"><strong data-start=\"41\" data-end=\"65\">League and division:</strong> Major League Baseball (American League West)<br data-start=\"110\" data-end=\"113\" /><strong data-start=\"113\" data-end=\"131\">Series Result:</strong> Anaheim Angels defeated San Francisco Giants (4–3)<br data-start=\"182\" data-end=\"185\" data-is-only-node=\"\" /><strong data-start=\"185\" data-end=\"205\">Series Standout:</strong> Troy Glaus — Third Baseman (World Series MVP); key contributors: Tim Salmon, Francisco Rodríguez</p>\r\\n<p data-start=\"306\" data-end=\"855\">Marking their first ever win since joining MLB in 1961, the Anaheim Angels won their first (and as of now, only) World Series in 2002. The Angels staged a dramatic comeback in Game 6, rallying from a 5–0 deficit to defeat the Giants, before winning Game 7 the following night. Troy Glaus batted .385 with three home runs and eight RBIs in the series, while rookie closer Francisco Rodríguez recorded five postseason wins, helping secure one of the most memorable first titles in World Series history.</p>",
+    "categories": [
+      "Champions By Year > 2002",
+      "League > MLB - Major League Baseball > AL West Division > Anaheim Angels",
+      "Teams > Anaheim Angels (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8085.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8087.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8086.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "210",
+    "name": "2005 World Series Championship Ring - Chicago White Sox - October, 2005",
+    "sku": "WS105",
+    "price": 35,
+    "description": "Celebrating their long-awaited return to the top with a new modern, yet elegant design, the 2005 Chicago White Sox World Series ring features a black oval face centred with the classic “Sox” script formed from clear stones set in gold lettering, set against black enamel and surrounded by a border of round stones set against gold. One of the shoulders says \"WORLD CHAMPIONS\" in raised gold lettering at the top, followed by \"2005\". The other shoulder is engraved “KONERKO” (first baseman), positioned above their full season stats (99 wins, 63 losses) and the Major League Baseball of a man holding a bat, comprised of red, white and blue enamel in a rectangle shape, and at the bottom, Konerko's jersey number is written (14). Both shoulders include a background of small raised circular patterns and bold, yet minimal raised lettering, creating contrast with the diamond-heavy face. Originally founded in 1901 as the Chicago White Stockings before shortening to White Sox in 1904, the franchise remained in Chicago, making this victory their first title in 88 years",
+    "shortDescription": "<p data-start=\"44\" data-end=\"317\"><strong data-start=\"44\" data-end=\"68\">League and division:</strong> Major League Baseball (American League Central)<br data-start=\"116\" data-end=\"119\" /><strong data-start=\"119\" data-end=\"137\">Series Result:</strong> Chicago White Sox defeated Houston Astros (4–0)<br data-start=\"185\" data-end=\"188\" /><strong data-start=\"188\" data-end=\"208\">Series Standout:</strong> Jermaine Dye — Right Fielder (World Series MVP); key contributors: Paul Konerko, Mark Buehrle, Bobby Jenks</p>\r\\n<p data-start=\"319\" data-end=\"768\">Breaking an 88-year championship drought dating back to 1917 (which was also their only other win), the 2005 Chicago White Sox completed one of the most dominant postseason runs in MLB history. The pitching staff threw four complete games in the ALCS and then swept Houston, while Paul Konerko delivered a grand slam in Game 2 and Jermaine Dye batted .438 in the series. Chicago allowed just five total runs across four World Series games, sealing one of the most decisive sweeps ever.</p>",
+    "categories": [
+      "Champions By Year > 2005",
+      "Your City > Chicago Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Chicago White Sox",
+      "Teams > Chicago White Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6677.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6678.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6679.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "211",
+    "name": "2016 World Series Championship Ring - Chicago Cubs - October, 2016",
+    "sku": "WS116",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Celebrating a much-anticipated, incredible comeback of ending a 108-year championship drought, the 2016 Chicago Cubs World Series ring embraces an eye-catching modernised design. Featuring a silver-toned rounded-square face with the circular Cubs “C” logo in cherry-red square stones set within a square navy-blue stone-filled ring, entirely surrounded by circular clear stones within and outside the blue circle. “WORLD CHAMPIONS\" appears across the top and bottom outer border of the face in raised silver engraving against black enamel segments, and circular clear stones on the left and right sides of the border. One shoulder is engraved “ZOBRIST” (second baseman/outfielder) at the top above a championship banner, his jersey number (18), and additional detailing of small stars surrounding the banner, all in silver detailing. The opposite shoulder displays Wrigley Field imagery, with “2016” at the top, and “WRIGLEY FIELD / HOME OF CHICAGO CUBS / CUBS WIN” written within a sign on the top of the stadium imagery. An illustration of a championship trophy is also seen overlaying the silver stadium details at the bottom, with a large circular clear stone seen dazzling within the top of the trophy.</span>",
+    "shortDescription": "<b>League and division:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League Central)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Chicago Cubs defeated Cleveland Indians (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> Ben Zobrist — Second Baseman (World Series MVP); key contributors: Kris Bryant, Anthony Rizzo, Jon Lester</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Ending a 108-year championship drought, the 2016 Chicago Cubs completed one of the most historic victories in baseball history. Ben Zobrist delivered the Game 7 RBI double in the 10th inning, while Jon Lester anchored the pitching staff. Chicago overcame a 3–1 series deficit to win their first championship since 1908.</span>\r\\n\r\\nIn 2017, following the Chicago Cubs’ 2016 World Series victory, the organization presented Steve Bartman with a personalised championship ring engraved with his name as a private gesture of reconciliation. Bartman, who had remained out of the public eye for years, said through a spokesperson that he was deeply touched and honoured by the unexpected act, viewing it as a meaningful step toward closure after more than a decade of scrutiny. Staying true to his moral character and lifelong fear for his safety by living a quiet, private life (using an alias, no social media, declining any interviews/appearances/communication with the media), Bartman refused an attempt of fans trying to crowd-find a ticket for him to attend the 2016 game, insisting they donate the money towards a charity instead.",
+    "categories": [
+      "Champions By Year > 2016",
+      "League > MLB - Major League Baseball > NL Central Division > Chicago Cubs",
+      "Teams > Chicago Cubs (MLB)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Steve Bartman (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6774.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6775.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6776.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "212",
+    "name": "2023 World Series Championship Ring - Texas Rangers - October, 2023",
+    "sku": "WS123",
+    "price": 45,
+    "description": "<strong>League</strong>: Major League Baseball (American League)\r\\n<strong>Series</strong> <strong>Result</strong>: Texas Rangers defeated Arizona Diamondbacks (4–1)\r\\n<strong>Series</strong> <strong>Standout</strong>: Corey Seager — Shortstop (World Series MVP); key contributors: Marcus Semien, Nathan Eovaldi\r\\n\r\\nThe Rangers captured their first World Series title in franchise history in 2023, after rebranding/relocating from being known as the ‘Washington Senators’ (1961-1971) to the ‘Texas Rangers’ (1972-present). Their 2023 victory marked the franchise’s long-awaited breakthrough, completing a dominant postseason run. Corey Seager, whose name appears on this ring, delivered multiple clutch hits including a crucial Game 1 tying home run that shifted the tone of the series. Marcus Semien sealed the championship with a late Game 5 home run, while Nathan Eovaldi anchored the pitching staff with a 5–0 postseason record. The Rangers set a record by going 11–0 on the road during the postseason — the best road record in MLB playoff history. Originally established as the Washington Senators (1961–1971) before relocating to Texas in 1972, this victory marked the franchise’s first World Series championship.",
+    "shortDescription": "<span style=\"font-weight: 400;\">Marking the Rangers’ first championship, the 2023 ring features a revolutionary design, with a turning circular face, with a red and blue “T” logo made of colored stones over a baseball-textured background, that spins from a white baseball-lined circular face logo with red and blue stones, to a blue-stoned circular face logo with a rectangular clear stoned-face “T” with red stone details surrounding it. On the outside of the turning “T” logo, the face of the ring is bordered by two layers of circular clear stones, and a final outer border of rectangular clear stones, with “WORLD CHAMPIONS” filled in with circular clear stones against a silver ring base, with another layer ring of circular clear stones on the outside of that, seen on each shoulder of the ring. One shoulder engraved “SEAGER” (shortstop, World Series MVP) includes his jersey number (5) set in clear circular stones. The opposite shoulder highlights championship details, with a raised silver detailed championship trophy with a large circular stone in the centre of the top of the trophy. When the entire face of the ring is detached, in a new modern feature, “11-0 ROAD DOMINANCE” can be seen inscribed inside, referencing the Rangers’ undefeated road postseason run, revealing interior detailing. The hinged construction and layered stonework create one of the most elaborate modern championship designs. Player names vary.</span>",
+    "categories": [
+      "Champions By Year > 2023",
+      "Your City > Dallas Pro Teams",
+      "League > MLB - Major League Baseball > AL West Division > Texas Rangers",
+      "Teams > Texas Rangers (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7938.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7931.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7937.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7936.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7934.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7933.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7932.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "214",
+    "name": "2004 World Series Championship Ring - Boston Red Sox - October, 2004",
+    "sku": "WS104",
+    "price": 35,
+    "description": "The 2004 Boston Red Sox World Series ring features a silver-toned design centred around a red “B” logo positioned atop a large central diamond shape composed of smaller stone-filled diamond patterns, all set within a square blue enamel background. White enamel accents surround portions of the square face, while a border of small clear stones frames the “WORLD CHAMPIONS” text and outlines the ring face. One shoulder is engraved “ORTIZ” (designated hitter), positioned above Fenway Park imagery alongside “1918–2004” inscriptions referencing the championship drought. The opposite shoulder displays “GREATEST COMEBACK IN HISTORY” text with Red Sox insignia and postseason graphics celebrating the dramatic ALCS rally. Originally founded as the Boston Americans in 1901 before adopting the Red Sox name in 1908, the franchise remained in Boston through 2004, making this breakthrough especially meaningful for one of baseball’s oldest teams. The layered enamel and multi-diamond arrangement give the ring a distinctive geometric look, with replica versions sharing the same layout while player name engravings may vary.",
+    "shortDescription": "<p data-start=\"1162\" data-end=\"1436\"><strong data-start=\"1162\" data-end=\"1231\">League and division: Major League Baseball (American League East)</strong><br data-start=\"1231\" data-end=\"1234\" /><strong data-start=\"1234\" data-end=\"1252\">Series Result:</strong> Boston Red Sox defeated St. Louis Cardinals (4–0)<br data-start=\"1302\" data-end=\"1305\" /><strong data-start=\"1305\" data-end=\"1325\">Series Standout:</strong> Manny Ramirez — Outfielder (World Series MVP); key contributors: David Ortiz, Pedro Martínez, Curt Schilling</p>\r\\n<p data-start=\"1438\" data-end=\"1980\">Ending the legendary 86-year “Curse of the Bambino” drought, the 2004 Boston Red Sox World Series championship represents one of the most historic moments in baseball history, highlighted by their unprecedented comeback from a 3–0 ALCS deficit against the Yankees before sweeping St. Louis. David Ortiz delivered clutch late-inning heroics throughout the postseason while Manny Ramirez batted .412 in the World Series, and Pedro Martínez anchored a dominant pitching staff that held the Cardinals to just three total runs across four games.</p>",
+    "categories": [
+      "Champions By Year > 2004",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "All Time Greats > David Ortiz (MLB)",
+      "All Time Greats > Pedro Martinez (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6845.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6846.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6847.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "215",
+    "name": "2007 World Series Championship Ring - Boston Red Sox - October, 2007",
+    "sku": "WS107",
+    "price": 35,
+    "description": "Continuing their modern dynasty era, the 2007 Boston Red Sox World Series ring features a silver-toned rounded-square face with the red socks logo made of red and white enamel set inside a large diamond shape that includes diamond-shaped clear stones (2 on the end of the top left side, 1 in the middle of the bottom, and 3 on the end of the top right side of the large diamond frame), overlapping a large blue square enamel background. One shoulder is engraved “ORTIZ” (designated hitter) at the top, followed by a red and white enamel \"B\" with silver-detailed trophies around both sides of it, and \"RED SOX 2007\" on the bottom. The opposite shoulder celebrates their \"7th WORLD SERIES CHAMPIONSHIP\" in an engraving at the top, positioned above  Fenway Park stadium imagery in silver and black. Both shoulders use raised silver circular pattern detailing rather than stones. Founded in 1901 as the Boston Americans before becoming the Red Sox in 1908, the franchise remained in Boston, with this title marking their second championship in four seasons.",
+    "shortDescription": "<p data-start=\"3390\" data-end=\"3660\"><strong data-start=\"3390\" data-end=\"3414\">League and division:</strong> Major League Baseball (American League East)<br data-start=\"3459\" data-end=\"3462\" /><strong data-start=\"3462\" data-end=\"3480\">Series Result:</strong> Boston Red Sox defeated Colorado Rockies (4–0)<br data-start=\"3527\" data-end=\"3530\" /><strong data-start=\"3530\" data-end=\"3550\">Series Standout:</strong> Mike Lowell — Third Baseman (World Series MVP); key contributors: David Ortiz, Josh Beckett, Dustin Pedroia</p>\r\\n<p data-start=\"3662\" data-end=\"3982\">Just three years after ending the 'Curse of the Bambino', the 2007 Boston Red Sox secured another dominant championship run. Boston swept Colorado while Josh Beckett went 2–0 in the series and Mike Lowell drove in four runs. The Red Sox outscored the Rockies 29–10, reinforcing their status as baseball’s new powerhouse.</p>",
+    "categories": [
+      "Champions By Year > 2007",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "All Time Greats > David Ortiz (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6830.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6831.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6832.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "216",
+    "name": "2013 World Series Championship Ring - Boston Red Sox - October, 2013",
+    "sku": "WS113",
+    "price": 35,
+    "description": "Returning to a more traditional oval design, the 2013 Boston Red Sox World Series ring features a silver-toned oval face with the red socks logo in red enamel set against a blue enamel background with vertical striping. “BOSTON RED SOX” curves along the left edge and “WORLD CHAMPIONS” along the right, with “2013” engraved at the bottom. One shoulder is engraved “ORTIZ” (designated hitter) at the top, followed by championship trophies representing the franchise’s previous titles (2004, 2007, 2013), with “34” for Ortiz’s jersey number placed prominently at the bottom. The opposite shoulder shows a circular “B” logo with “STRONG,” referencing the “Boston Strong” theme following the Boston Marathon events, set over a textured silver background, with \"2013\" at the bottom.",
+    "shortDescription": "<p data-start=\"1592\" data-end=\"1871\"><strong data-start=\"1592\" data-end=\"1616\">League and division:</strong> Major League Baseball (American League East)<br data-start=\"1661\" data-end=\"1664\" /><strong data-start=\"1664\" data-end=\"1682\">Series Result:</strong> Boston Red Sox defeated St. Louis Cardinals (4–2)<br data-start=\"1732\" data-end=\"1735\" /><strong data-start=\"1735\" data-end=\"1755\">Series Standout:</strong> David Ortiz — Designated Hitter (World Series MVP); key contributors: Jon Lester, Dustin Pedroia, Shane Victorino</p>\r\\n<p data-start=\"1873\" data-end=\"2254\">Winning their third championship in ten seasons, the 2013 Boston Red Sox defeated St. Louis in six games, highlighted by David Ortiz’s historic performance. Ortiz batted .688 with two home runs and six RBIs, reaching base in 13 of 16 plate appearances. Strong pitching from Jon Lester and timely hitting helped Boston secure the title in front of their home crowd at Fenway Park.</p>",
+    "categories": [
+      "Champions By Year > 2013",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "All Time Greats > David Ortiz (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6615.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6616.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6617.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "217",
+    "name": "2018 World Series Championship Ring - Boston Red Sox - October, 2018",
+    "sku": "WS118",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Winning their fourth title in 15 seasons, the 2018 Boston Red Sox World Series ring features a silver-toned rounded-square face centred with the red “B” logo in red rectangular mosaic enamel tiling set against a blue enamel background made of the same rectangular shapes. “WORLD CHAMPIONS” is engraved in silver script against small black panels along the top and bottom of the outer edges of the ring face, with the left and right sides of the border fit with small rectangular panels filled with square clear stones. One shoulder is engraved “PEARCE” (first baseman) above a scoreboard-style panel showing “2018” and additional championship details, with Pearce’s jersey number (25) displayed prominently, lined with stones at the bottom of the panel. The opposite shoulder displays “BOSTON RED SOX” written in silver writing at the top of the black recessed panel, with a large silver banner in the middle underneath it displaying the red socks logo and season details (119 wins, 2018), surrounded by a series of championship years arranged within a banner-style design. The bottom curve of the ring features an engraved phrase against a black panel, “TEAM FOR THE AGES”, and more detailed engravings are seen inside the ring.</span>",
+    "shortDescription": "<b>League and division:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League East)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Red Sox defeated Los Angeles Dodgers (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> Steve Pearce — First Baseman (World Series MVP); key contributors: Mookie Betts, David Price, J.D. Martinez</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Winning a franchise-record 108 regular-season games, the 2018 Boston Red Sox dominated throughout the postseason. Steve Pearce hit three home runs in the final two games, while David Price delivered strong pitching performances. Boston secured its fourth championship in 15 seasons.</span>",
+    "categories": [
+      "Champions By Year > 2018",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6824.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6825.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6826.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "218",
+    "name": "2017 World Series Championship Ring - Houston Astros - October, 2017",
+    "sku": "WS117",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Celebrating the franchise’s first championship, the 2017 Houston Astros World Series ring features a round face centred with the “H” logo made of clear and yellow rectangular stones over an orange star, set against a bright blue enamel circle. Surrounding this blue circle backing, a large border of circular clear stones with “WORLD CHAMPIONS” engraved within gold rectangular panels at the top and bottom of the edges of the ring face. One shoulder is engraved “CORREA” (shortstop) above a skyline-style graphic and championship detailing. The opposite shoulder displays “2017” in raised script at the top, with a sparkling raised trophy beneath featuring a large central stone at the top of the trophy, all set within a recessed panel. The inside of the ring also features season scores engraved in black.</span>",
+    "shortDescription": "<b>League and division:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League West)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Houston Astros defeated Los Angeles Dodgers (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> George Springer — Outfielder (World Series MVP); key contributors: Carlos Correa, José Altuve, Justin Verlander</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Winning their first championship in franchise history, the 2017 Houston Astros captured the title in a dramatic seven-game series. George Springer hit five home runs, tying the World Series record, while Carlos Correa contributed key clutch hits. Houston secured the championship with a 5–1 victory in Game 7.</span>",
+    "categories": [
+      "Champions By Year > 2017",
+      "League > MLB - Major League Baseball > AL West Division > Houston Astros",
+      "Teams > Houston Astros (MLB)",
+      "Your City > Houston Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8095.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8096.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8097.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8098.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "219",
+    "name": "2022 World Series Championship Ring - Houston Astros - October, 2022",
+    "sku": "WS122",
+    "price": 45,
+    "description": "Winning their second championship in franchise history, the 2022 ring features a rounded square face with the Astros star logo. Incorporating a rectangular-shaped clear stone-filled “H” over an orange stone-filled and gold and diamond-encrusted star, against a circular clear stone-filled backing with a bright royal-blue stone-filled square border. Following the outer edgers of this, a clear stone-filled border is seen with “WORLD CHAMPIONS” engraved against gold panels at the top and bottom of the ring face. One shoulder is engraved “VALDEZ” (starting pitcher, key Game 2 and postseason performer) above raised stadium details, two red circular stones, and his jersey number (59) set within circular gold stones. The opposite shoulder includes “2022” outlined in circular silver stones set against gold backing surrounding a large gold-detailed depiction of a championship trophy with a large circular clear stone in the centre of the middle of the top of the trophy. A yellow star is seen on the left, and a blue star is seen on the right of the trophy imagery. More engraved season details are displayed within the inside of the ring. Gold highlights contrast with the diamond-heavy face, emphasizing the modern championship style. Player names vary across versions.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League)\r\\n<strong>Series</strong> <strong>Result</strong>: Houston Astros defeated Philadelphia Phillies (4–2)\r\\n<strong>Series</strong> <strong>Standout</strong>: Jeremy Peña — Shortstop (World Series MVP); key contributors: Framber Valdez, Yordan Álvarez\r\\n\r\\nThe Astros secured their second World Series title, highlighted by dominant pitching and a combined no-hitter in Game 4. Framber Valdez, whose name appears on this ring, delivered one of the most dominant pitching performances of the series in Game 2, throwing 6.1 innings while allowing just one run, helping shift momentum back to Houston. Jeremy Peña became the first rookie position player to win the title of World Series MVP, while Yordan Álvarez’s towering Game 6 home run provided the decisive blow. The Astros also recorded only the second combined no-hitter in World Series history in Game 4, a rare and historic pitching achievement. The franchise began as the Houston Colt .45s (1962–1964) before becoming the Astros in 1965 to reflect Houston’s space-age identity, and this victory marked their second championship.",
+    "categories": [
+      "Champions By Year > 2022",
+      "League > MLB - Major League Baseball > AL West Division > Houston Astros",
+      "Teams > Houston Astros (MLB)",
+      "Your City > Houston Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7572.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7573.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7574.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "220",
+    "name": "2010 World Series Championship Ring - San Fransisco Giants - October, 2010",
+    "sku": "WS110",
+    "price": 35,
+    "description": "Featuring a clean and modern look, the 2010 San Francisco Giants World Series ring uses a silver-toned rounded-square face with a large “SF” logo formed from clear stones, set against small silver dotted-pattern in a small circle, with \"WORLD CHAMPIONS\" engraved in a circular border around it, and then another border of groups of small circular clear stones. One shoulder displays “BOCHY” (manager) engraved across the bottom of a championship trophy design, with a large diamond set at the top of the trophy within a sunken rectangular panel where all details are raised in silver. The opposite shoulder shows “2010” at the top with the Golden Gate Bridge running through the centre of the panel, also set in raised silver detailing within the recessed panel. Both sides have minimal additional decoration, emphasizing the clean silver design and creating contrast with the sparkling, detailed face. Originally founded in 1883 as the New York Gothams before becoming the Giants in 1885 and relocating to San Francisco in 1958, this championship marked their first title in San Francisco.",
+    "shortDescription": "<p data-start=\"1821\" data-end=\"2092\"><strong data-start=\"1821\" data-end=\"1845\">League and division:</strong> Major League Baseball (National League West)<br data-start=\"1890\" data-end=\"1893\" /><strong data-start=\"1893\" data-end=\"1911\">Series Result:</strong> San Francisco Giants defeated Texas Rangers (4–1)<br data-start=\"1961\" data-end=\"1964\" /><strong data-start=\"1964\" data-end=\"1984\">Series Standout:</strong> Edgar Rentería — Shortstop (World Series MVP); key contributors: Tim Lincecum, Buster Posey, Brian Wilson</p>\r\\n<p data-start=\"2094\" data-end=\"2531\">Breaking a 56-year championship drought dating back to their 1954 title, the 2010 San Francisco Giants captured their first championship since moving to San Francisco. Manager Bruce Bochy played a crucial role after taking over in 2006, building a pitching-focused roster that led to championships in 2010, 2012, and 2014. Tim Lincecum dominated on the mound, while Edgar Rentería delivered key home runs including the Game 5 clincher.</p>",
+    "categories": [
+      "Champions By Year > 2010",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6451.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6452.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6453.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "221",
+    "name": "2012 World Series Championship Ring - San Fransisco Giants - October, 2012",
+    "sku": "WS112",
+    "price": 35,
+    "description": "Celebrating their second title in three seasons, the 2012 San Francisco Giants World Series ring features a silver-toned rounded-square face filled with small round clear stones, centred with the interlocking “SF” logo formed from stones and outlined in dark detailing. “WORLD” appears at the top and “CHAMPIONS” at the bottom, with rectangular vertical stone borders running along both sides of the face. One shoulder is engraved “POSEY” (catcher) at the top above a stadium graphic and \"2012\". The opposite side has the series score “4–0,” referencing the Giants’ sweep of Detroit, along with other postseason game scores. Both shoulders use textured dark backgrounds with raised silver elements, creating contrast with the bright, stone-heavy face.",
+    "shortDescription": "<p data-start=\"47\" data-end=\"325\"><strong data-start=\"47\" data-end=\"71\">League and division:</strong> Major League Baseball (National League West)<br data-start=\"116\" data-end=\"119\" /><strong data-start=\"119\" data-end=\"137\">Series Result:</strong> San Francisco Giants defeated Detroit Tigers (4–0)<br data-start=\"188\" data-end=\"191\" data-is-only-node=\"\" /><strong data-start=\"191\" data-end=\"211\">Series Standout:</strong> Pablo Sandoval — Third Baseman (World Series MVP); key contributors: Buster Posey, Madison Bumgarner, Matt Cain</p>\r\\n<p data-start=\"327\" data-end=\"779\">Completing a dominant postseason run, the 2012 San Francisco Giants swept the Detroit Tigers to secure their second championship in three seasons. Pablo Sandoval hit three home runs in Game 1 and batted .500 for the series, while Buster Posey provided leadership behind the plate and Madison Bumgarner delivered key pitching performances. The Giants outscored Detroit 16–6 across the four games, reinforcing their pitching-first championship formula.</p>",
+    "categories": [
+      "Champions By Year > 2012",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8088.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8089.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8090.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "222",
+    "name": "2014 World Series Championship Ring - San Francisco Giants - October, 2014",
+    "sku": "WS114",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Marking their third championship in five seasons, the 2014 San Francisco Giants World Series ring features a silver-toned rounded-square face with a gold-outlined “SF” logo formed from clear stones and set against a field of smaller stones. Large circular stones sit around the top and bottom white enamel borders of the face, with “WORLD” and “CHAMPIONS” engraved in white against black enamel along the outer left and right edges of the border. One shoulder is engraved “BUMGARNER” in silver (starting pitcher) at the top above a stylised stadium graphic in gold set against a black background, with “40” referencing his jersey number. The opposite shoulder displays three championship trophies in silver and gold arranged to represent the 2010, 2012 and 2014 titles, with “2014” engraved along the bottom of the panel. Post season scores are engraved on the inside of the ring.</span>",
+    "shortDescription": "<b>League and division:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League West)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> San Francisco Giants defeated Kansas City Royals (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> Madison Bumgarner — Pitcher (World Series MVP); key contributors: Buster Posey, Pablo Sandoval, Hunter Pence</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Winning their third championship in five seasons, the 2014 San Francisco Giants secured another title behind Madison Bumgarner’s historic postseason performance. Bumgarner threw a complete-game shutout in Game 5 and recorded a five-inning save in Game 7, finishing the series with a 0.43 ERA. The Giants outlasted Kansas City in a tightly contested seven-game series.</span>",
+    "categories": [
+      "Champions By Year > 2014",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8091.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8092.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8093.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8094.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "223",
+    "name": "NBA Finals Series Championship Ring 2025 - Oklahoma City Thunder - June 2025",
+    "sku": "NF125",
+    "price": 45,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2025",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > Oklahoma City Pro Teams",
+      "League > NBA - National Basketball Association > WC Northwest > Oklahoma City Thunder",
+      "Teams > Oklahoma City Thunder (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6593.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6594.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6595.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6592.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6597.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "224",
+    "name": "NBA Finals Series Championship Ring 2024 - Boston Celtics - June 2024",
+    "sku": "NF124",
+    "price": 45,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2024",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6698.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6699.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6700.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6701.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6702.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "225",
+    "name": "NBA Finals Series Championship Ring 2023 - Denver Nuggets - June 2023",
+    "sku": "NF123",
+    "price": 48,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2023",
+      "League > NBA - National Basketball Association > WC Northwest > Denver Nuggets",
+      "Teams > Denver Nuggets (NBA)",
+      "Your City > Denver Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6792.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6793.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6794.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6795.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "226",
+    "name": "NBA Finals Series Championship Ring 2022 - Golden State Warriors - June 2022",
+    "sku": "NF122",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2022",
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steph Curry (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7668.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7669.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7671.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7670.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "227",
+    "name": "NBA Finals Series Championship Ring 2021 - Milwaukee Bucks - July 2021",
+    "sku": "NF121",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2021",
+      "League > NBA - National Basketball Association > EC Central > Milwaukee Bucks",
+      "Teams > Milwaukee Bucks (NBA)",
+      "Your City > Milwaukee Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8138.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8139.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8140.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8141.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "228",
+    "name": "NBA Finals Series Championship Ring 2020 - Los Angeles Lakers - September 2020",
+    "sku": "NF120",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2020",
+      "All Time Greats > Lebron James (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6641.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6642.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6643.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "229",
+    "name": "NBA Finals Series Championship Ring 2019 - Toronto Raptors - May-June 2019",
+    "sku": "NF119",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2019",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > Toronto Pro Teams",
+      "League > NBA - National Basketball Association > EC Atlantic > Toronto Raptors",
+      "Teams > Toronto Raptors (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6680.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6681-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6682.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "230",
+    "name": "NBA Finals Series Championship Ring 2018 - Golden State Warriors - May-June 2018",
+    "sku": "NF118",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2018",
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "All Time Greats > Kevin Durant (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steph Curry (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6433.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6435.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6434.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "231",
+    "name": "NBA Finals Series Championship Ring 2017 - Golden State Warriors - June 2017",
+    "sku": "NF117",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2017",
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "All Time Greats > Kevin Durant (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steph Curry (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7761.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7763.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7762.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "232",
+    "name": "NBA Finals Series Championship Ring 2016 - Cleveland Cavaliers - June 2016",
+    "sku": "NF116",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2016",
+      "League > NBA - National Basketball Association > EC Central > Cleveland Cavaliers",
+      "Teams > Cleveland Cavaliers (NBA)",
+      "Your City > Cleveland Pro Teams",
+      "All Time Greats > Lebron James (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6805.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6807.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6806.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "233",
+    "name": "NBA Finals Series Championship Ring 2015 - Golden State Warriors - June 2015",
+    "sku": "NF115",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2015",
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Fransisco Pro Teams",
+      "All Time Greats > Steph Curry (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7030.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7031.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7032.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "234",
+    "name": "NBA Finals Series Championship Ring 2014 - San Antonio Spurs - June 2014",
+    "sku": "NF114",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2014",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6662.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6663.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6664.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "235",
+    "name": "NBA Finals Series Championship Ring 2013 - Miami Heat - June 2013",
+    "sku": "NF113",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2013",
+      "All Time Greats > Dwayne Wade (NBA)",
+      "League",
+      "All Time Greats > Lebron James (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Miami Heat (NBA)",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6604.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6605.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6606.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "236",
+    "name": "NBA Finals Series Championship Ring 2012 - Miami Heat - June 2012",
+    "sku": "NF112",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2012",
+      "All Time Greats > Dwayne Wade (NBA)",
+      "All Time Greats > Lebron James (NBA)",
+      "League > NBA - National Basketball Association > EC Southeast > Miami Heat",
+      "Teams > Miami Heat (NBA)",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6601.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6602.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6603.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "237",
+    "name": "NBA Finals Series Championship Ring 2011 - Dallas Mavericks - May-June 2011",
+    "sku": "NF111",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2011",
+      "League > NBA - National Basketball Association > WC Southwest > Dallas Mavericks",
+      "Teams > Dallas Mavericks (NBA)",
+      "Your City > Dallas Pro Teams",
+      "All Time Greats > Dirk Nowitzski (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6540.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6541.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6542.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "238",
+    "name": "NBA Finals Series Championship Ring 2010 - Los Angeles Lakers - June 2010",
+    "sku": "NF110",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2010",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6525.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6527.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6526.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "239",
+    "name": "NBA Finals Series Championship Ring 2009 - Los Angeles Lakers - June 2009",
+    "sku": "NF109",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2009",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6522.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6523.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6524.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "240",
+    "name": "NBA Finals Series Championship Ring 2008 - Boston Celtics - June 2008",
+    "sku": "NF108",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2008",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "All Time Greats > Kevin Garnett (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6802.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6803.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6804.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "241",
+    "name": "NBA Finals Series Championship Ring 2007 - San Antonio Spurs - June 2007",
+    "sku": "NF107",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2007",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6659.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6660.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6661.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "242",
+    "name": "NBA Finals Series Championship Ring 2006 - Miami Heat - June 2006",
+    "sku": "NF106",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2006",
+      "All Time Greats > Dwayne Wade (NBA)",
+      "League > NBA - National Basketball Association > EC Southeast > Miami Heat",
+      "Teams > Miami Heat (NBA)",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Shaq O'Neal (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6598.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6599.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6600.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "243",
+    "name": "NBA Finals Series Championship Ring 2005 - San Antonio Spurs - June 2005",
+    "sku": "NF105",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2005",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6656.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6658.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6657.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "244",
+    "name": "NBA Finals Series Championship Ring 2004 - Detroit Pistons - June 2004",
+    "sku": "NF104",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2004",
+      "League > NBA - National Basketball Association > EC Central > Detroit Pistons",
+      "Teams > Detroit Pistons (NBA)",
+      "Your City > Detroit Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6546.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6547.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6542.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "245",
+    "name": "NBA Finals Series Championship Ring 2003 - San Antonio Spurs - June 2003",
+    "sku": "NF103",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2003",
+      "All Time Greats > David Robinson (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6653.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6654.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6655.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "246",
+    "name": "NBA Finals Series Championship Ring 2002 - Los Angeles Lakers - June 2002",
+    "sku": "NF102",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2002",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Shaq O'Neal (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6516.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6517.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6518.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "247",
+    "name": "NBA Finals Series Championship Ring 2001 - Los Angeles Lakers - June 2001",
+    "sku": "NF101",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2001",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Shaq O'Neal (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6513.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6514.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6515.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "248",
+    "name": "NBA Finals Series Championship Ring 2000 - Los Angeles Lakers - June 2000",
+    "sku": "NF100",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2000",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Shaq O'Neal (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6510.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6511.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6512.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "249",
+    "name": "NBA Finals Series Championship Ring 1999 - San Antonio Spurs - June 1999",
+    "sku": "NF099",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1999",
+      "All Time Greats > David Robinson (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6650.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6651.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6652.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "250",
+    "name": "NBA Finals Series Championship Ring 1998 - Chicago Bulls - June 1998 - MICHAEL JORDAN RING 6",
+    "sku": "NF098",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1998",
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Scottie Pippen (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6404.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6406.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6405.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "251",
+    "name": "NBA Finals Series Championship Ring 1997 - Chicago Bulls - June 1997 - MICHAEL JORDAN RING 5",
+    "sku": "NF097",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1997",
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Scottie Pippen (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6430.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6431.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6432.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "252",
+    "name": "NBA Finals Series Championship Ring 1996 - Chicago Bulls - June 1996 - MICHAEL JORDAN RING 4",
+    "sku": "NF096",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1996",
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Scottie Pippen (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7101.jpeg",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7102.jpeg",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7103.jpeg"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "253",
+    "name": "NBA Finals Series Championship Ring 1995 - Houston Rockets - June 1995",
+    "sku": "NF095",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1995 Houston Rockets championship ring introduces a bold new design that directly celebrates their consecutive titles while evolving from the 1994 structure. The rounded-square face is crafted in bright yellow gold and features a textured dark central background showcasing two gold championship trophy motifs—each styled as a basketball above a hoop filled with small clear stones to replicate netting—symbolising the back-to-back victories. Surrounding this centre is a gold border set with small circular clear stones, enhancing brilliance before transitioning to the outermost border, which features a dark backing with raised gold text reading “ROCKETS” at the top, “94” and “95” on either side, and “WORLD CHAMPIONS” wrapping along the bottom. One shoulder panel is engraved “OLAJUWON” (center, back-to-back Finals MVP and franchise icon), positioned above the Rockets logo and his jersey number “34,” all set against a textured dark background within a geometric panel. The opposite shoulder prominently displays “BACK 2 BACK” at the top, reinforcing the historic achievement, with the NBA logo—featuring its gold silhouette and red and blue enamel—set over a stylised gold American flag motif beneath it. The combination of symbolic imagery, darker contrast backgrounds, and celebratory inscriptions reflects the mid-1990s evolution toward storytelling in ring design, capturing both the Rockets’ identity and their historic repeat championship run.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Western Conference — Midwest Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Houston Rockets defeated Orlando Magic (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Hakeem Olajuwon — Center (Finals MVP); key contributors: Clyde Drexler, Shaquille O’Neal (opponent)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Houston Rockets secured their second consecutive NBA championship in 1995, completing a dominant back-to-back run (1994–1995) with a 4–0 sweep of the Orlando Magic. Hakeem Olajuwon, whose name appears on this ring, delivered another masterclass performance to claim his second straight Finals MVP, firmly establishing himself as the league’s most dominant center of the era. At this point, Olajuwon had won 2 championships (1994, 1995)—both with Houston—and would finish his career with these two titles, widely regarded as one of the greatest centers in NBA history due to his elite footwork, scoring versatility, and defensive impact. The Rockets entered the playoffs as a lower seed but produced one of the most remarkable championship runs ever, defeating multiple higher-ranked teams before sweeping a young Orlando squad led by Shaquille O’Neal and Penny Hardaway. The series is also remembered for Houston’s composure under pressure, reinforcing their “Clutch City” identity established the year prior. Founded as the San Diego Rockets (1967–1971) before relocating to Houston (1971–present), the franchise cemented its place in NBA history with this back-to-back achievement.</span>",
+    "categories": [
+      "Champions By Year > 1995",
+      "All Time Greats > Hakeem Olajuwan (NBA)",
+      "Your City > Houston Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > Houston Rockets",
+      "Teams > Houston Rockets (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6780.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6781.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6782.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "254",
+    "name": "NBA Finals Series Championship Ring 1994 - Houston Rockets - June 1994",
+    "sku": "NF094",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1994 Houston Rockets championship ring introduces a bold and structured rectangular design, crafted in champagne gold with strong contrasts and symbolic detailing. The ring face features a rectangular gold base centred around a basketball logo with “HOUSTON ROCKETS” written across it, encircled by a vivid red enamel ring that reinforces the team’s colours. Surrounding the centre is a border of evenly spaced circular clear stones, adding brilliance before transitioning to the outermost frame, which features fine gold striping beneath engraved text reading “WORLD CHAMPIONS 1994.” One shoulder panel displays “OLAJUWON” (center, Finals MVP and franchise cornerstone) engraved at the top, above detailed imagery of a basketball and Houston skyline, with his jersey number “34” positioned at the bottom—highlighting both his individual dominance and connection to the city. The opposite shoulder features “CLUTCH CITY” engraved at the top, a defining phrase of this championship run, followed by the NBA logo—retaining its gold silhouette with red and blue enamel accents—and season scoring details beneath. Both shoulders are set against textured black and gold dotted backgrounds, creating depth and contrast that became a defining stylistic element of mid-1990s championship rings.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Western Conference — Midwest Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Houston Rockets defeated New York Knicks (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Hakeem Olajuwon — Center (Finals MVP); key contributors: Patrick Ewing (opponent), Vernon Maxwell</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Houston Rockets captured their first NBA championship in franchise history in 1994, defeating the New York Knicks 4–3 in a tightly contested seven-game series. Hakeem Olajuwon, whose name appears on this ring, delivered one of the most dominant two-way Finals performances ever by a center, earning Finals MVP honours through elite scoring, rim protection, and leadership. At this point, Olajuwon secured his first championship (1994) and would go on to win a second consecutive title in 1995, both with Houston, solidifying his legacy as one of the greatest centers in NBA history. The series was a defensive battle, with multiple close games, ultimately decided in Game 7 where Olajuwon’s presence proved decisive against fellow star center Patrick Ewing. This championship is also widely remembered for ending a 12-year championship drought for the city of Houston and earning the team the nickname “Clutch City” due to their composure in high-pressure moments throughout the playoffs. Founded as the San Diego Rockets (1967–1971) before relocating to Houston (1971–present), the franchise reached its long-awaited breakthrough with this victory.</span>",
+    "categories": [
+      "Champions By Year > 1994",
+      "All Time Greats > Hakeem Olajuwan (NBA)",
+      "Your City > Houston Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > Houston Rockets",
+      "Teams > Houston Rockets (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6796.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6797.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6798.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "255",
+    "name": "NBA Finals Series Championship Ring 1993 - Chicago Bulls - June 1993 - MICHAEL JORDAN RING 3",
+    "sku": "NF093",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1993 Chicago Bulls championship ring introduces a striking and completely unique design, symbolising the significance of their three-peat achievement. The ring is crafted in a rich champagne-gold tone and features a bold downward-pointing triangular face—one of the most distinctive shapes seen in championship ring history. The face is fully paved with small circular clear stones, creating a shimmering backdrop for a large, raised ruby-red enamel Bulls logo that dominates the centre, giving the ring a powerful and aggressive visual identity. One shoulder panel features a textured gold-dotted background with “JORDAN” (shooting guard, Finals MVP and global icon) engraved at the top, flanked by detailed championship scoring references on either side of a basketball-and-hoop motif, with his iconic jersey number “23” at the base. The opposite shoulder carries “WORLD CHAMPIONS” at the top, with the NBA logo—featuring its gold silhouette and red and blue enamel—splitting the year “1993” across both sides, and “3-PEAT” engraved at the bottom to commemorate the historic run. The combination of the unconventional triangular shape, fully stone-covered face, and bold enamel centrepiece marks a dramatic evolution in design, reflecting both the rarity of a three-peat and the Bulls’ dominance during this era.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Eastern Conference — Central Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Chicago Bulls defeated Phoenix Suns (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Michael Jordan — Shooting Guard (Finals MVP); key contributors: Scottie Pippen, Charles Barkley (opponent)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Chicago Bulls completed their first historic three-peat in 1993, defeating the Phoenix Suns 4–2 to secure their third consecutive NBA championship (1991–1993). Michael Jordan, whose name appears on this ring, delivered one of the greatest Finals performances in league history, averaging an incredible 41.0 points per game to earn his third straight Finals MVP. At this point, Jordan had now claimed 3 championships (1991, 1992, 1993) and would go on to win a total of 6 (adding 1996–1998), all with the Bulls, solidifying his legacy as arguably the greatest player of all time. The series was highly competitive, with league MVP Charles Barkley leading Phoenix, but Chicago’s experience and clutch execution proved decisive. The Finals are especially remembered for John Paxson’s championship-winning three-pointer in Game 6, sealing the title and completing the dynasty’s first chapter. This victory marked the peak of the Bulls’ early dominance before Jordan’s brief retirement shortly after the season. Founded in 1966 (Chicago Bulls, 1966–present), the franchise cemented its place as a global powerhouse during this era.</span>",
+    "categories": [
+      "Champions By Year > 1993",
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Scottie Pippen (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6537.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6538.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6539.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "256",
+    "name": "NBA Finals Series Championship Ring 1992 - Chicago Bulls - June 1992 - MICHAEL JORDAN RING 2",
+    "sku": "NF092",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1992 Chicago Bulls championship ring introduces a bold redesign that reflects both their back-to-back success and the growing prominence of player-driven legacy. The ring features a bright yellow-gold base with a distinctive rectangular face, a departure from the rounded-square shape used in 1991. The face is dominated by a large “BULLS” wordmark, rendered in gold and filled with small clear stones, set against a deep black enamel rectangular background framed by a thin gold inner border. Surrounding this centre is a thick gold outer border embedded with circular clear stones, adding brilliance and a more luxurious feel compared to the previous year. One shoulder panel features a textured gold-dotted background with “WORLD CHAMPIONS” engraved at the top, followed by the NBA logo—retaining its gold silhouette with red and blue enamel—splitting the years “91” and “92” to commemorate consecutive titles, with “BACK TO BACK” engraved at the bottom. The opposite shoulder is engraved “JORDAN” (shooting guard, Finals MVP and emerging global icon), accompanied by detailed championship scoring references flanking basketball-and-hoop imagery, with his iconic jersey number “23” at the base. The structured rectangular face, increased use of stones, and emphasis on back-to-back achievements mark a clear evolution in design, mirroring the Bulls’ transition from first-time champions to a fully established dynasty.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Eastern Conference — Central Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Chicago Bulls defeated Portland Trail Blazers (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Michael Jordan — Shooting Guard (Finals MVP); key contributors: Scottie Pippen, Clyde Drexler (opponent)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Chicago Bulls secured their second consecutive NBA championship in 1992, defeating the Portland Trail Blazers 4–2 to complete the first half of their eventual three-peat (1991–1993). Michael Jordan, whose name appears on this ring, delivered another legendary Finals performance to claim his second Finals MVP, further cementing his rise as the most dominant player in basketball. At this stage, Jordan had now won 2 championships (1991, 1992) and would go on to win a total of 6 (1991–1993, 1996–1998), all with the Bulls. The series is best remembered for Jordan’s iconic “shrug game” in Game 1, where he hit six three-pointers in the first half and famously shrugged his shoulders in disbelief—one of the most recognisable moments in NBA history. After taking a 3–1 series lead, Chicago closed out the Blazers in Game 6, showcasing their growing confidence and control as a dynasty in the making. Supported by Scottie Pippen’s elite two-way play and team cohesion under coach Phil Jackson, the Bulls proved their 1991 title was no fluke. Founded in 1966 (Chicago Bulls, 1966–present), this victory solidified their transformation into a dominant global franchise.</span>",
+    "categories": [
+      "Champions By Year > 1992",
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Scottie Pippen (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6786.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6787.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6788.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "257",
+    "name": "NBA Finals Series Championship Ring 1991 - Chicago Bulls - June 1991 - MICHAEL JORDAN RING 1",
+    "sku": "NF091",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1991 Chicago Bulls championship ring introduces a completely new and iconic design, reflecting the arrival of a new NBA dynasty. The ring is crafted in pale yellow gold with a bold rounded-square face, centred around a striking black enamel panel. Dominating the face is a large, raised gold Bulls logo—featuring the fierce bull head—set beneath the engraved word “BULLS” in polished gold lettering. Surrounding the central panel is a thin gold border lined with small circular clear stones, adding brilliance while maintaining a clean, focused design. The shoulder panels feature a textured gold dotted background, creating depth behind the raised engravings. One shoulder is engraved “JORDAN” (shooting guard, Finals MVP and emerging global icon), alongside detailed championship elements including a basketball dropping into a hoop, season performance references, and his iconic jersey number “23” at the base. The structured geometric layout and heavy use of black enamel contrast mark a clear shift into the modern era of championship ring design, emphasising bold team identity and individual legacy—perfectly mirroring the rise of Michael Jordan and the Chicago Bulls dynasty.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Eastern Conference — Central Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Result</strong>: Chicago Bulls defeated Los Angeles Lakers (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Standout</strong>: Michael Jordan — Shooting Guard (Finals MVP); key contributors: Scottie Pippen, Horace Grant</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Chicago Bulls captured their first NBA championship in franchise history in 1991, defeating the Los Angeles Lakers 4–1 to begin one of the most dominant dynasties the sport has ever seen. Michael Jordan, whose name appears on this ring, delivered a defining performance to secure his first of six championships (1991–1993, 1996–1998), establishing himself as the face of the league and one of the greatest players of all time. At this point in his career, this was his first title—he would go on to win five more, all with Chicago, forming two separate three-peats that defined the 1990s. Jordan averaged over 30 points per game in the series, highlighted by his iconic mid-air “switch hands” layup in Game 2, symbolising his creativity and control under pressure. Supported by Scottie Pippen’s all-around brilliance and Horace Grant’s defensive presence, the Bulls overcame an early Game 1 loss to win four straight, marking a statement victory over a veteran Lakers team led by Magic Johnson. Founded in 1966 (Chicago Bulls, 1966–present), this championship marked the beginning of Chicago’s transformation into a global basketball powerhouse.</span>",
+    "categories": [
+      "Champions By Year > 1991",
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Scottie Pippen (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6445.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6446.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "258",
+    "name": "NBA Finals Series Championship Ring 1990 - Detroit Pistons - June 1990",
+    "sku": "NF090",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1990 Detroit Pistons championship ring evolves directly from the 1989 design, maintaining its structural layout while refining details to celebrate their back-to-back success. The rounded square face is crafted in a rich champagne-gold tone, featuring a central circular clear stone set within a textured gold diamond-shaped frame. This centrepiece sits against a bold orange-red enamel square, which is surrounded by a border of small clear stones that enhance brilliance and depth. The outermost border retains a finely lined gold background, with engraved text reading “DETROIT PISTONS” at the top, “89” and “90” split along the sides to commemorate consecutive titles, and “WORLD CHAMPIONS” along the bottom. One shoulder panel is engraved “BACK TO BACK” at the top, reinforcing the achievement, with detailed imagery of two basketballs above a hoop and the Pistons logo layered over the centre, followed by season and championship scoring details at the base. The opposite shoulder is engraved “THOMAS” (point guard, Finals MVP and team leader), with additional championship details flanking the NBA logo—featuring its gold silhouette and signature red and blue enamel accents—set within a geometric panel backed by a gold-dotted textured field. The consistent use of structured panels, enamel colour contrasts, and symbolic inscriptions reflects both continuity with late-1980s ring design trends and the Pistons’ identity as a disciplined, championship-driven unit.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Eastern Conference — Central Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Detroit Pistons defeated Portland Trail Blazers (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Isiah Thomas — Point Guard (Finals MVP); key contributors: Joe Dumars, Dennis Rodman, Bill Laimbeer</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Detroit Pistons secured their second consecutive NBA championship in 1990, defeating the Portland Trail Blazers 4–1 to complete a dominant back-to-back run (1989–1990) following their first-ever title the year prior. Isiah Thomas, whose name appears on this ring, led the team with poise and control, earning Finals MVP honours as the floor general of the feared “Bad Boys.” Thomas dictated the tempo throughout the series, supported by Joe Dumars’ elite perimeter scoring and defence, Dennis Rodman’s relentless rebounding and versatility, and Bill Laimbeer’s physical interior presence. After sweeping the Lakers in 1989, Detroit continued its dominance by overpowering Portland with suffocating defence and disciplined execution, dropping just one game in the Finals. This victory cemented the Pistons as one of the most formidable back-to-back champions in NBA history, built on toughness, depth, and identity. Originally established as the Fort Wayne Pistons (1941–1957) before relocating to Detroit (1957–present), the franchise reached its peak during this late-1980s era.</span>",
+    "categories": [
+      "Champions By Year > 1990",
+      "League > NBA - National Basketball Association > EC Central > Detroit Pistons",
+      "Teams > Detroit Pistons (NBA)",
+      "Your City > Detroit Pro Teams",
+      "All Time Greats > Isiah Thomas (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6401.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6402.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6403.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "259",
+    "name": "NBA Finals Series Championship Ring 1989 - Detroit Pistons - June 1989",
+    "sku": "NF089",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1989 Detroit Pistons championship ring introduces a bold yet refined design that blends mid-1980s styling with the team’s distinct identity. The rounded square face is crafted in pale yellow gold, featuring a large circular clear stone at the top of the central panel, symbolising a basketball positioned above a gold hoop motif filled with smaller clear stones to represent the netting. This central imagery is set within a vivid red enamel circular backdrop outlined in gold, which sits inside a striking navy-blue square enamel field—creating a strong contrast that reflects the Pistons’ team colours. Surrounding the face, a finely lined gold outer border carries engraved text reading “DETROIT PISTONS 1989 WORLD CHAMPIONS.” One shoulder panel features the iconic “BAD BOYS” inscription at the top, followed by detailed championship references including opponent imagery and scores, with “DEFENSE” engraved at the bottom—highlighting the team’s defining philosophy. The opposite shoulder is engraved “DUMARS” (shooting guard, Finals MVP and defensive anchor), with season and Finals scoring details flanking the NBA logo, which retains its gold silhouette with red and blue enamel accents. Both shoulders are set within triangular panels filled with fine horizontal gold striping, adding texture and depth. The combination of bold enamel colouring, symbolic messaging, and structured geometry reflects both the Pistons’ gritty identity and the late-1980s evolution toward more narrative-driven championship ring designs.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Eastern Conference — Central Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Detroit Pistons defeated Los Angeles Lakers (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Joe Dumars — Guard (Finals MVP); key contributors: Isiah Thomas, Dennis Rodman, Bill Laimbeer</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Detroit Pistons captured their first NBA championship in franchise history in 1989 with a dominant 4–0 sweep over the Los Angeles Lakers, firmly establishing the era of the infamous “Bad Boys.” Joe Dumars, whose name appears on this ring, delivered a composed and efficient Finals performance to earn MVP honours, showcasing elite two-way play as a shooting guard. Isiah Thomas, the team’s fiery leader and point guard, orchestrated the offense despite playing through injury, while Dennis Rodman’s defensive intensity and rebounding, alongside Bill Laimbeer’s physical interior presence, defined Detroit’s identity. The Pistons’ relentless defensive pressure and physical style overwhelmed a Lakers team hampered by injuries to key stars, resulting in one of the most decisive Finals outcomes of the decade. After falling just short in the 1988 Finals, this victory marked a powerful redemption arc and the beginning of back-to-back championships (1989–1990), cementing Detroit’s place among the NBA’s most feared teams. Originally founded as the Fort Wayne Pistons (1941–1957) before relocating to Detroit (1957–present), the franchise achieved its long-awaited breakthrough with this title.</span>",
+    "categories": [
+      "Champions By Year > 1989",
+      "League > NBA - National Basketball Association > EC Central > Detroit Pistons",
+      "Teams > Detroit Pistons (NBA)",
+      "Your City > Detroit Pro Teams",
+      "All Time Greats > Isiah Thomas (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6534.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6535.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6536.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "261",
+    "name": "NBA Finals Series Championship Ring 1988 - Los Angeles Lakers - June 1988",
+    "sku": "NF088",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1988 Los Angeles Lakers championship ring builds directly upon the 1987 design while introducing refined detailing to celebrate their consecutive titles. The rounded square face remains crafted in pale yellow gold, featuring a large central clear stone encircled by a polished gold bezel, set against a rich deep blue-purple enamel square that reflects the Lakers’ signature colours. Surrounding this centre, a prominent gold border is filled with multiple smaller clear stones, adding brilliance and elevating the ring’s visual presence compared to the simpler 1987 layout. The outermost border retains the finely lined black background with raised gold text reading “WORLD CHAMPIONS LAKERS 1988.” One shoulder panel displays “BACK TO BACK” prominently at the top, reinforcing the consecutive championships, with the NBA league logo beneath—featuring its gold player silhouette and red and blue enamel—flanked by the years “1987” and “1988” along each side. The opposite shoulder is engraved “JOHNSON” (point guard, generational leader and dynasty cornerstone) above the Lakers logo and detailed championship scoring references, all set against a dark, gold-dotted textured background within the geometric panel. The added stone border, bold inscriptions, and continuity of structure reflect both the Lakers’ sustained dominance and the late-1980s trend toward more elaborate, celebratory championship ring designs.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Western Conference — Pacific Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Los Angeles Lakers defeated Detroit Pistons (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: James Worthy — Forward (Finals MVP); key contributors: Magic Johnson, Kareem Abdul-Jabbar</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Los Angeles Lakers completed a hard-fought back-to-back championship run in 1988, defeating the Detroit Pistons 4–3 in a physically intense and tightly contested seven-game series. James Worthy delivered a legendary Game 7 performance—recording a triple-double (36 points, 16 rebounds, 10 assists)—to earn Finals MVP honours. Magic Johnson, whose name appears on this ring, continued to orchestrate the “Showtime” offense with elite playmaking, while Kareem Abdul-Jabbar contributed crucial veteran leadership and scoring in what would be the final championship season of his career. The series swung dramatically, with Detroit pushing the Lakers to the brink before Los Angeles rallied to secure the title on home court. This victory marked the Lakers’ fifth championship of the 1980s, fulfilling their “Drive for Five” ambition and cementing their dynasty as the defining team of the decade. Originally founded as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles (1960–present), the franchise further solidified its legacy as one of the most dominant in NBA history.</span>",
+    "categories": [
+      "Champions By Year > 1988",
+      "All Time Greats > Kareem Abdul-Jabbar (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Magic Johnson (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6427.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6428.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6429.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "262",
+    "name": "NBA Finals Series Championship Ring 1987 - Los Angeles Lakers - June 1987",
+    "sku": "NF087",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1987 Los Angeles Lakers championship ring introduces a bold and distinctive design, moving away from the enamel-heavy styles of earlier in the decade toward a cleaner, high-contrast presentation. Crafted in pale yellow gold, the ring features a rounded square face with a striking white enamel central panel. Set within this panel are five clear stones arranged in a cross-like formation—one central stone surrounded by four positioned at each corner—symbolising both the team’s “Drive for Five” championship ambition during the 1980s and the collective strength of the Lakers’ core lineup. Surrounding the centre, the outer border features finely lined black detailing beneath raised gold text reading “WORLD CHAMPION LAKERS 1987,” enhancing contrast and depth. One shoulder displays a geometric panel with a black dotted background, engraved “JOHNSON” (point guard, Finals MVP and generational leader) at the top, with the NBA logo beneath—retaining its red and blue enamel with a gold player silhouette—flanked by championship scoring details. The opposite shoulder mirrors this structure, featuring the phrase “DRIVE FOR FIVE” prominently engraved above the Lakers logo, followed by additional season scoring details. The combination of symbolic stone arrangement, bold text integration, and high-contrast detailing reflects a continued evolution toward storytelling-driven championship ring design, celebrating both team identity and dynastic achievement.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Western Conference — Pacific Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Los Angeles Lakers defeated Boston Celtics (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Magic Johnson — Guard (Finals MVP); key contributors: Kareem Abdul-Jabbar, James Worthy</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Los Angeles Lakers secured their fourth championship of the 1980s in 1987, defeating their long-time rivals, the Boston Celtics, 4–2 in another iconic chapter of the NBA’s greatest rivalry. Magic Johnson, whose name appears on this ring, delivered one of the defining moments of his career with the famous “junior skyhook” in Game 4, helping swing the series in the Lakers’ favour and earning Finals MVP honours. Johnson’s elite playmaking and leadership defined the “Showtime” era, while Kareem Abdul-Jabbar continued to provide veteran presence and interior scoring at center—adding to a legendary career that would ultimately include six championships (1971 with Milwaukee; 1980, 1982, 1985, 1987, 1988 with the Lakers). James Worthy contributed with athletic scoring and versatility, rounding out a dominant core. The Lakers controlled the series with pace and offensive efficiency, reinforcing their status as the defining dynasty of the decade. This title also fulfilled the team’s “Drive for Five” goal—winning five championships in the 1980s—further cementing their legacy. The franchise, originally founded as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles (1960–present), continued to build on one of the most successful dynasties in basketball history.</span>",
+    "categories": [
+      "Champions By Year > 1987",
+      "All Time Greats > Kareem Abdul-Jabbar (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Magic Johnson (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6543.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6544.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6545.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "263",
+    "name": "NBA Finals Series Championship Ring 1986 - Boston Celtics - May-June 1986",
+    "sku": "NF086",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1986 Boston Celtics championship ring closely mirrors the bold structural redesign introduced in 1985, while adapting its visual identity to reflect the Celtics’ branding. Crafted in white gold, the ring features a rounded square face with a large circular clear stone positioned at the top, symbolising a basketball, set above a gold basketball hoop motif filled with small clear stones to represent the netting. This central imagery is layered over a vibrant parakeet-green enamel shamrock, creating a strong focal point within the pale gold-toned central panel. Surrounding the face, the outer border displays “BOSTON CELTICS WORLD CHAMPIONS” in raised lettering. One shoulder features the elongated “1986” split by the NBA league logo, which retains its red and blue enamel colouring with a gold player silhouette, all set within a geometric panel with a finely dotted textured background. The opposite shoulder is engraved “BIRD” (forward, Finals MVP and franchise icon) at the top, above detailed championship imagery including a player holding a basketball, the number “16” marking the franchise’s 16th title, and a “PRIDE” banner at the base. The combination of white gold construction, layered symbolic imagery, and refined textures reflects the continued evolution toward bold, identity-driven championship ring designs in the mid-1980s.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Eastern Conference — Atlantic Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Boston Celtics defeated Houston Rockets (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Larry Bird — Forward (Finals MVP); key contributors: Kevin McHale, Robert Parish</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics captured their 16th NBA championship in 1986, defeating the Houston Rockets 4–2 in a series that showcased one of the greatest teams in basketball history. Larry Bird, whose name appears on this ring, led the Celtics with elite all-around play, earning his second Finals MVP while dominating as a forward with scoring, rebounding, and playmaking. Bird would finish his career with three championships (1981, 1984, 1986), all with Boston, and is widely regarded as one of the greatest players of all time due to his competitiveness, versatility, and leadership during the Celtics’ 1980s dynasty. Kevin McHale delivered exceptional post scoring, while Robert Parish anchored the defense and interior presence. The Celtics were nearly unbeatable at home that season, compiling one of the most dominant records in NBA history, and carried that form into the Finals. Houston, led by Hakeem Olajuwon and Ralph Sampson, pushed Boston at times, but the Celtics’ depth and experience ultimately secured the title. This championship marked Boston’s third title in six years (1981–1986), further solidifying their dominance in the decade. The franchise, founded in 1946 and continuously based in Boston, extended its legacy as one of the NBA’s most decorated teams.</span>",
+    "categories": [
+      "Champions By Year > 1986",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "All Time Greats > Larry Bird (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6531.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6532.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6533.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "264",
+    "name": "NBA Finals Series Championship Ring 1985 - Los Angeles Lakers - May-June 1985",
+    "sku": "NF085",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1985 Los Angeles Lakers championship ring introduces a striking evolution in both material and visual identity, blending elements of the bold 1984 redesign with distinctive new features. The ring is crafted in white gold, giving it a brighter, cooler-toned appearance compared to the traditional yellow-gold styles. The rounded square face features a vivid lavender-purple enamel background, representing the Lakers’ iconic colours, with a large circular clear stone representing a basketball, set at the top of a gold basketball hoop motif filled with multiple smaller clear stones, creating a layered, dimensional centrepiece. Surrounding the face beyond the square purple centre, a polished gold outer border displays “LOS ANGELES LAKERS WORLD CHAMPIONS” in raised lettering. One shoulder presents “ABDUL JABBAR” (center, Finals MVP and all-time great) engraved at the top of the geometric panel, followed by the elongated “1985” split by the NBA league logo, which retains its red and blue enamel colouring with a gold player silhouette, all set in raised gold against a clean, polished background. The opposite shoulder features the phrase “PURPLE REIGN” prominently engraved—both a nod to the Lakers’ team colours and their dominant 1980s era, while also referencing the cultural impact of Prince’s iconic “Purple Rain”—above the Lakers logo and detailed championship scoring engravings. The combination of white gold, bold enamel colour, and thematic text elements reflects a continued shift toward more expressive, era-defining championship ring designs.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Western Conference — Pacific Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong>Series</strong> <strong>Result</strong>: Los Angeles Lakers defeated Boston Celtics (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong>Series</strong> <strong>Standout</strong>: Kareem Abdul-Jabbar — Center (Finals MVP); key contributors: Magic Johnson, James Worthy</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Los Angeles Lakers captured the 1985 NBA championship with a 4–2 series victory over the Boston Celtics, delivering a historic breakthrough by defeating Boston in the Finals for the first time after years of previous losses to their rivals. Kareem Abdul-Jabbar, whose name appears on this ring, led the team at center with a dominant resurgence performance at age 38, earning Finals MVP honours while averaging over 25 points per game across the series. Abdul-Jabbar, one of the greatest players in NBA history, would finish his career with six championships (1971 with Milwaukee; 1980, 1982, 1985, 1987, 1988 with the Lakers), and remained the league’s all-time leading scorer for decades. Magic Johnson orchestrated the fast-paced “Showtime” offense with elite playmaking, while James Worthy provided athletic scoring support. The Lakers rebounded from a heavy Game 1 loss—famously dubbed the “Memorial Day Massacre”—to win four of the next five games, showcasing resilience and adjustments that ultimately secured the title. This victory marked a defining moment in the Lakers-Celtics rivalry and solidified the Lakers as the dominant force of the mid-1980s. The franchise, originally the Minneapolis Lakers (1947–1960) before relocating to Los Angeles (1960–present), continued to build on its legacy as one of the NBA’s premier dynasties.</span>",
+    "categories": [
+      "Champions By Year > 1985",
+      "All Time Greats > Kareem Abdul-Jabbar (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Magic Johnson (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6504.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6505.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6506.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "265",
+    "name": "NBA Finals Series Championship Ring 1984 - Boston Celtics - May-June 1984",
+    "sku": "NF084",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1984 Boston Celtics championship ring introduces a bold and visually striking redesign, departing significantly from the circular, enamel-based styles of the early 1980s. The ring features a bright, highly polished yellow-gold base with a more squared face profile. At the centre sits a circular clear stone, set within a vibrant emerald green enamel shamrock that dominates the gold square face panel, symbolising the Celtics’ iconic identity. Surrounding this, the outer border forms a rounded square frame with large, overlapping engraved text reading “BOSTON CELTICS WORLD CHAMPIONS,” extending slightly toward the shoulders for a more integrated, aggressive look. One shoulder maintains the geometric panel structure with a densely dotted gold background, featuring the elongated “1984” split across both sides of the NBA league logo, which retains its red and blue enamel detailing with a gold player silhouette. The opposite shoulder is heavily textured, engraved “BIRD” (forward, Finals MVP and franchise leader) at the top, with detailed team imagery beneath, all set within a deeply engraved, high-relief panel. The shift toward bold shapes, larger lettering, and vivid enamel highlights reflects a new era of championship ring design—moving away from subtle detailing and toward more prominent, identity-driven visual statements.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Eastern Conference — Atlantic Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Result</strong>: Boston Celtics defeated Los Angeles Lakers (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Standout</strong>: Larry Bird — Forward (Finals MVP); key contributors: Kevin McHale, Robert Parish</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics reclaimed the NBA championship in 1984, defeating their historic rivals, the Los Angeles Lakers, in a dramatic seven-game series (4–3) that reignited one of the greatest rivalries in sports. Larry Bird, whose name appears on this ring, led the Celtics with elite all-around play as a forward, earning Finals MVP honours while delivering clutch performances throughout the series. Bird—widely regarded as one of the greatest players in NBA history—would go on to win three championships (1981, 1984, 1986), all with Boston, and defined the franchise’s dominance during the 1980s. The series itself was fiercely contested, with momentum swinging between both teams, including physical, high-intensity matchups that became iconic moments in NBA history. Kevin McHale and Robert Parish provided crucial frontcourt support, while Boston’s resilience at home proved decisive in Game 7. This championship marked the Celtics’ 15th title overall and their first since 1981, reinforcing their return to dominance after a brief gap. The franchise, founded in 1946 and continuously based in Boston, further cemented its legacy as one of the most successful teams in professional basketball.</span>",
+    "categories": [
+      "Champions By Year > 1984",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "All Time Greats > Larry Bird (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8148.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8149.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8150.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "266",
+    "name": "NBA Finals Series Championship Ring 1983 - Philadelphia 76ers - May 1983",
+    "sku": "NF083",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1983 Philadelphia 76ers championship ring continues the established 1981–1982 design structure, while incorporating bold team-specific colour and narrative elements. The round ring face features a large central clear stone encircled by a fine gold-dotted halo, identical in structure to prior years, but now set against a vivid ruby-red enamel circular background that reflects the 76ers’ team colours. Surrounding this, the outer border retains the engraved “NBA WORLD CHAMPIONS” text over a finely lined gold backdrop. One shoulder is engraved “MALONE” (center, Finals MVP and dominant rebounder) at the top, above detailed championship imagery including team logos and engraved series scores, all set against a textured gold-dotted background. At the bottom of this panel, the word “PERSEVERE” is prominently engraved—symbolising the franchise’s long journey back to a championship after years of near misses, including multiple Finals losses throughout the late 1970s and early 1980s, before finally breaking through with a dominant roster built around Malone and Erving. The opposite shoulder mirrors the geometric panel layout seen in previous years, featuring the elongated “1983” split by the NBA league logo, which retains its red and blue enamel colouring with a gold player silhouette, dotted background, and a “TEAM WORK” banner engraved at the bottom. The combination of strong colour identity and motivational text elements reflects a continued evolution toward storytelling and symbolism within championship ring design</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Eastern Conference — Atlantic Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Result</strong>: Philadelphia 76ers defeated Los Angeles Lakers (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Standout</strong>: Moses Malone — Center (Finals MVP); key contributors: Julius Erving, Maurice Cheeks</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Philadelphia 76ers delivered one of the most dominant Finals performances in NBA history in 1983, sweeping the Los Angeles Lakers 4–0 in a decisive championship victory. Moses Malone, whose name appears on this ring, anchored the team at center with relentless rebounding and interior scoring, earning Finals MVP honours while famously predicting a near-perfect playoff run with his “Fo’, Fo’, Fo’” (4–4–4) statement—symbolising three consecutive series sweeps. While the 76ers dropped just one game across the entire postseason, the phrase became synonymous with their dominance and confidence. Julius “Dr. J” Erving provided veteran leadership and elite scoring on the wing, while Maurice Cheeks controlled the tempo at guard. This title marked the franchise’s first championship since 1967 (when they were still building toward their modern identity after transitioning from the Syracuse Nationals (1946–1963) to the Philadelphia 76ers (1963–present)), ending a 16-year drought despite multiple Finals appearances in the intervening years. The sweep over the Lakers—who had defeated them in 1980 and 1982—served as both redemption and validation of one of the most complete rosters of the era.</span>",
+    "categories": [
+      "Champions By Year > 1983",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "League > NBA - National Basketball Association > EC Atlantic > Philadelphia 76ers",
+      "Teams > Philadelphia 76ers (NBA)",
+      "Your City > Philadelphia Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6783.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6784.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6785.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "267",
+    "name": "NBA Finals Series Championship Ring 1982 - Los Angeles Lakers - May-June 1982",
+    "sku": "NF082",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1982 Los Angeles Lakers championship ring closely follows the updated 1981 design template, with subtle but striking colour adjustments to reflect team identity. The round ring face features a large central clear stone encircled by a fine gold-spotted halo, identical in scale and structure to the previous year, but now surrounded by a deep blue-purple enamel ring that aligns with the Lakers’ iconic colour scheme. This vibrant enamel contrasts against the pale yellow-gold base, while the outer circular border retains the engraved “NBA WORLD CHAMPIONS” text over a finely lined black and gold background. One shoulder displays “ABDUL JABBAR” (center, all-time great and franchise anchor) engraved at the top, above the Lakers logo, with detailed imagery of a basketball hoop and engraved playoff scoring references below, all set against a textured gold-dotted background. The opposite shoulder mirrors the established geometric panel layout, featuring the elongated “1982” split by the NBA league logo, which maintains its red and blue enamel colouring with a gold player silhouette, with a “TEAM WORK” banner engraved at the bottom. The consistency in layout combined with team-specific colour integration highlights the early-1980s shift toward personalised yet structurally uniform championship ring designs.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Western Conference — Pacific Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Result</strong>: Los Angeles Lakers defeated Philadelphia 76ers (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Standout</strong>: Magic Johnson — Guard (Finals MVP); key contributors: Kareem Abdul-Jabbar, Jamaal Wilkes</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Los Angeles Lakers captured their second championship of the decade in 1982, defeating the Philadelphia 76ers 4–2 in a Finals rematch that mirrored their 1980 victory. Magic Johnson once again led the way, earning Finals MVP honours with his dynamic playmaking and leadership at point guard, orchestrating the fast-paced “Showtime” offense. Kareem Abdul-Jabbar, whose name appears on this ring, remained the team’s dominant interior force at center, contributing crucial scoring and rebounding throughout the series. By this stage of his career, Abdul-Jabbar had already established himself as one of the greatest players in NBA history, eventually finishing with six championships (1971 with Milwaukee; 1980, 1982, 1985, 1987, 1988 with the Lakers) and becoming the league’s all-time leading scorer for decades. Jamaal Wilkes provided consistent offensive support, particularly in key moments of the series. The Lakers’ balanced attack and experience proved decisive against a strong 76ers lineup led by Julius Erving, further cementing the franchise’s dominance in the early 1980s. Originally founded as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles (1960–present), the team continued to build on its legacy as one of basketball’s premier dynasties.</span>",
+    "categories": [
+      "Champions By Year > 1982",
+      "All Time Greats > Kareem Abdul-Jabbar (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Magic Johnson (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7110.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7111.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7112.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "268",
+    "name": "NBA Finals Series Championship Ring 1981 - Boston Celtics - May 1981",
+    "sku": "NF081",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1981 Boston Celtics championship ring introduces a refined evolution of the late-1970s design language in this new decade, blending familiar structural elements with more vibrant colour and enhanced detailing. The round ring face features a significantly larger (than previous years) central clear stone, encircled by a thin gold-spotted halo that adds texture and brilliance, followed by a rich jade-green enamel central backing that provides strong visual contrast against the pale yellow-gold base. Surrounding this, the outer circular border retains the classic “NBA WORLD CHAMPIONS” engraving, with black-lined detailing beneath the text to create depth. One shoulder continues the established geometric panel style seen throughout the 1970s, with “1981” displayed in elongated gold script split by the NBA logo, which retains its red and blue enamel colouring with a gold player silhouette. This panel is enhanced by a gold-spotted textured background and includes a banner reading “TEAM WORK” at the bottom. The opposite shoulder features “BIRD” (forward, franchise cornerstone and future three-time champion) engraved at the top, above a green enamel shamrock logo outlined in gold, with “XIV” marking the franchise’s 14th title and “CELTICS” engraved within the panel, finished with a “PRIDE” banner at the base. The introduction of coloured enamel accents and symbolic text elements reflects a shift toward more identity-driven, narrative-focused championship ring designs in the early 1980s.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Eastern Conference — Atlantic Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Result</strong>: Boston Celtics defeated Houston Rockets (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Standout</strong>: Cedric Maxwell — Forward (Finals MVP); key contributors: Larry Bird, Robert Parish</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics secured their 14th NBA championship in 1981, defeating the Houston Rockets 4–2 to begin a new era of dominance in the post-Bill Russell years. Larry Bird, whose name appears on this ring, was in just his second NBA season and already establishing himself as one of the league’s most impactful players, combining elite scoring, rebounding, and playmaking as a forward. Bird would go on to win three NBA championships (1981, 1984, 1986), all with Boston, and is widely regarded as one of the greatest players in NBA history due to his leadership, versatility, and competitive edge. Finals MVP Cedric Maxwell delivered consistent scoring throughout the series, while Robert Parish anchored the interior presence. The Celtics overcame a young and energetic Rockets team led by Moses Malone, using experience, depth, and disciplined execution to control the series after early setbacks. This title marked Boston’s first championship since 1976, signalling the beginning of the iconic 1980s Celtics dynasty. The franchise, founded in 1946 and continuously based in Boston, remains one of the most successful teams in NBA history.</span>",
+    "categories": [
+      "Champions By Year > 1981",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "All Time Greats > Larry Bird (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6692.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6693.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6694.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "269",
+    "name": "NBA Finals Series Championship Ring 1980 - Los Angeles Lakers - May 1980",
+    "sku": "NF080",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Visually, the 1980 Los Angeles Lakers championship ring closely mirrors the early-1970s Lakers design (particularly 1972), while incorporating subtle refinements in texture and contrast. The round ring face features a central clear stone set within a polished silver basketball, surrounded by a circular border with thin black horizontal line detailing behind the raised “NBA WORLD CHAMPIONS” gold text, enhancing depth compared to the flatter backgrounds of earlier versions. The shoulders maintain the classic geometric panel structure but now prominently feature tightly spaced horizontal black lines across the background for added visual texture. One shoulder is engraved “JOHNSON” (point guard, rookie Finals MVP and generational playmaker) at the top, above the Lakers logo and the engraved Finals-clinching score “123–102” at the bottom. The opposite shoulder displays the elongated “1980” split across both sides of the NBA league logo, which retains its traditional red and blue enamel colouring with a gold player silhouette at the centre. The combination of classic layout with refined texturing reflects a continuation of established championship ring styling, while subtly modernising the design for the new decade.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Western Conference — Pacific Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Result</strong>: Los Angeles Lakers defeated Philadelphia 76ers (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Standout</strong>: Magic Johnson — Guard (Finals MVP); key contributors: Kareem Abdul-Jabbar, Jamaal Wilkes</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Los Angeles Lakers captured their first championship of the 1980s in a 4–2 series victory over the Philadelphia 76ers, marking the beginning of the iconic “Showtime” era. Magic Johnson, whose name appears on this ring, delivered one of the most legendary performances in NBA Finals history—famously starting at center in Game 6 as a rookie in place of the injured Kareem Abdul-Jabbar, and recording 42 points, 15 rebounds, and 7 assists to clinch the title. At just 20 years old, Johnson became the youngest Finals MVP in NBA history. Kareem Abdul-Jabbar had dominated earlier in the series as the team’s anchor at center before injury, while Jamaal Wilkes provided crucial scoring support. This championship marked the Lakers’ first title since 1972 and signaled a dramatic resurgence for the franchise, which had transitioned from the Minneapolis Lakers (1947–1960) to Los Angeles (1960–present), ushering in a new dynasty built around fast-paced offense and star power.</span>",
+    "categories": [
+      "Champions By Year > 1980",
+      "All Time Greats > Kareem Abdul-Jabbar (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Magic Johnson (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7701.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7857.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7858.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "270",
+    "name": "NBA Finals Series Championship Ring 1979 - Seattle Supersonics - May-June 1979",
+    "sku": "NF079",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Continuing the late-1970s design evolution, the 1979 Seattle SuperSonics championship ring closely follows the established 1977–1978 style, while introducing richer contrast through updated materials and finishes. The round ring face features a central clear stone set within a glittering silver basketball, surrounded by a circular border with a sparkling dark bronze backing that enhances the raised pale yellow-gold “NBA WORLD CHAMPIONS” text. This darker, shimmering backdrop replaces the flatter textures of previous years, giving the face a deeper, more dimensional appearance. One shoulder presents the elongated “1979” split across both sides of the NBA league logo, now fully rendered in gold without the red and blue enamel seen in earlier designs, set against the same sparkling bronze panel within a geometric frame. The opposite shoulder is engraved “JOHNSON” (guard, Finals MVP and defensive anchor) above a vivid lime-green semi-circular skyline motif, representing Seattle’s cityscape, with “SEATTLE SUPERSONICS” engraved below in gold. The combination of coloured city imagery, metallic sparkle finishes, and fully gold league detailing reflects a subtle but notable shift toward more stylised, identity-driven ring designs at the end of the 1970s.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (Western Conference — Pacific Division)</span><span style=\"font-weight: 400;\">\r\\n</span><b> Series Result</b><span style=\"font-weight: 400;\">: Seattle SuperSonics defeated Washington Bullets (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout</b><span style=\"font-weight: 400;\">: Dennis Johnson — Guard (Finals MVP); key contributors: Gus Williams, Jack Sikma</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Seattle SuperSonics secured their first and only NBA championship in 1979, defeating the Washington Bullets 4–1 in a rematch of the previous year’s Finals, where they had fallen short. Dennis Johnson, whose name appears on this ring, delivered a standout two-way performance as a defensive guard, earning Finals MVP honours while leading Seattle’s disciplined, fast-paced system. Johnson—nicknamed “DJ” for his calm, composed play—would go on to win three championships in his career (1979 with Seattle; 1984 and 1986 with the Boston Celtics), cementing his reputation as one of the era’s most reliable postseason performers. Gus Williams provided explosive scoring, while Jack Sikma anchored the frontcourt with rebounding and interior presence. Unlike the tightly contested seven-game series in 1978, Seattle controlled this matchup more convincingly, using defensive adjustments and improved ball movement to limit Washington’s scoring options. This victory marked the franchise’s peak before later relocating and becoming the Oklahoma City Thunder (2008–present), with the SuperSonics identity tied to Seattle from their founding in 1967 through 2008.</span>",
+    "categories": [
+      "Champions By Year > 1979",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > Seattle Pro Teams",
+      "Teams > Seattle Supersonics (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8168.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8169.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8170.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "271",
+    "name": "NBA Finals Series Championship Ring 1978 - Washington Bullets - May-June 1978",
+    "sku": "NF078",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Closely following the previous year’s design trends, the 1978 Washington Bullets championship ring maintains the bold, all bright yellow-gold aesthetic seen in the 1977 Portland Trail Blazers ring, with heavy use of texture rather than enamel for contrast. The round ring face features a central clear stone set within a fully gold basketball motif, surrounded by a circular border with finely engraved horizontal lines forming the background to the raised “NBA WORLD CHAMPIONS” text. Both shoulders carry geometric, triangular panel layouts with densely dotted textured backgrounds. One shoulder displays the elongated engraved year “1978”, split across both sides of the NBA league logo, which is the only element retaining colour through red and blue enamel. The opposite shoulder is engraved “HAYES” (power forward/center, dominant scorer and rebounder), positioned above detailed logo imagery, all rendered in raised gold. The fully gold construction, paired with intricate texturing and minimal enamel use, reflects the late-1970s transition toward more sculpted, detail-driven championship ring designs.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"><strong>League</strong>: National Basketball Association (Eastern Conference — Atlantic Division)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Result</strong>: Washington Bullets defeated Seattle SuperSonics (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><span style=\"font-weight: 400;\"><strong> Series</strong> <strong>Standout</strong>: Wes Unseld — Center (Finals MVP); key contributors: Elvin Hayes, Bob Dandridge</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Washington Bullets captured their first NBA championship in franchise history in 1978, making both a major statement about their relocation to Washington, and their comeback from only winning in 1947 as the Baltimore Bullets (but are now known as the Washington Wizards). They made waves by edging out the Seattle SuperSonics in a tightly contested seven-game series (4–3). Elvin Hayes, whose name appears on this ring, played a crucial role as a dominant power forward/center, providing consistent scoring and rebounding throughout the series, while Wes Unseld anchored the team with leadership and defensive presence to earn Finals MVP honours. Bob Dandridge delivered clutch performances, including key scoring in the decisive Game 7. The Bullets’ victory came after falling short in the 1975 Finals, marking a determined return to the top and a redemption arc for the franchise. Notably, the team would return to the Finals again in 1979 against the same opponent, forming a rare back-to-back Finals matchup era. The franchise competed as the Baltimore Bullets (1947–1954), later becoming the Washington Bullets (1973–1997), and is now known as the Washington Wizards (1997–present).</span>",
+    "categories": [
+      "Champions By Year > 1978",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Teams > Washington Bullets (NBA)",
+      "Your City > Washington Pro Teams",
+      "League > NBA - National Basketball Association > EC Southeast > Washington Wizards"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8164.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8165.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8166.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8167.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "272",
+    "name": "NBA Finals Series Championship Ring 1977 - Portland Trail Blazers - May-June 1977",
+    "sku": "NF077",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1977 Portland Trail Blazers championship ring returns to the all gold styling seen in the 1975 design, using texture rather than colour for contrast. The round face is crafted entirely in bright yellow-gold, with a central clear stone set within a fully gold basketball motif featuring segmented panel detailing. Surrounding the centre is a circular border with finely engraved text reading “NBA WORLD CHAMPIONS,” set against textured lined gold to enhance depth without enamel. The shoulders retain the geometric panel structure but feature dense dotted backgrounds to create contrast. One shoulder displays the NBA logo in gold and blue and red enamel, between large engraved lettering that reads “1977”, within a structured frame. The opposite shoulder is engraved “WALTON” (center, Finals MVP and generational defensive anchor) above the Trail Blazers’ pinwheel logo set within a textured panel. The combination of all-gold construction, detailed engraving, and textured surfaces gives this ring a refined yet understated look, distinguishing it from the enamel-heavy variations of earlier years while maintaining the era’s core design language.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Portland Trail Blazers defeated Philadelphia 76ers (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Walton — Center (Finals MVP); key contributors: Maurice Lucas, Lionel Hollins, Julius Erving (opponent standout)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Portland Trail Blazers captured their first championship in franchise history in 1977, just seven seasons after entering the NBA in 1970, completing one of the fastest rises to a title in league history by defeating the Philadelphia 76ers 4–2 after falling behind 2–0 in the series. Bill Walton, whose name appears on this ring, delivered a dominant all-around performance to earn Finals MVP, securing the first and only championship of his career (1977). Walton controlled the game defensively, rebounding at an elite level while also acting as a playmaking centre, redefining the position. Maurice Lucas provided toughness and scoring, while Lionel Hollins contributed key offensive support. The 76ers, led by Julius “Dr. J” Erving, were heavily favored early in the series, but Portland’s chemistry, unselfish play, and adjustments led to one of the most impressive comeback victories in Finals history. This championship remains the only title in Trail Blazers history and is widely remembered as a defining moment for the franchise. </span>",
+    "categories": [
+      "Champions By Year > 1977",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > Portland Pro Teams",
+      "League > NBA - National Basketball Association > WC Northwest > Portland Trail Blazers",
+      "Teams > Portland Trail Blazers (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8160.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8161.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8162.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8163.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "273",
+    "name": "NBA Finals Series Championship Ring 1976 - Boston Celtics - May-June 1976",
+    "sku": "NF076",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1976 Boston Celtics championship ring returns to the 1972–1974 design structure while introducing a distinct bronze-toned (rose-gold) finish across the entire ring. The round face features a central clear stone set within a raised silver basketball motif, with segmented panel detailing surrounding the stone. Encircling this is a black enamel border with bold raised lettering reading “NBA WORLD CHAMPIONS,” restoring the strong contrast seen in earlier designs after the all-gold 1975 variation. The shoulders retain the angular, geometric panel structure with textured dark backgrounds. One shoulder displays the engraved year “1976,” split by the NBA logo in the ring’s rose-gold colouring, and red and blue enamel at the centre. The opposite shoulder is engraved “LEVIN” (team contributor; name varies by ring version) above a detailed championship trophy motif representing the Boston Celtics. The combination of black enamel contrast, silver centre detailing, and bronze-toned metal gives this ring a unique variation within the consistent early-1970s design era.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Phoenix Suns (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Jo Jo White — Guard (Finals MVP); key contributors: John Havlicek, Paul Silas, Dave Cowens</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics claimed their 13th championship in 1976, defeating the Phoenix Suns 4–2 in a series remembered for one of the greatest games in NBA history—Game 5’s triple-overtime thriller. Jo Jo White earned Finals MVP honours for his outstanding playmaking and scoring, securing the first championship of his career. Veteran leader John Havlicek added crucial experience and clutch moments, capturing the eighth and final championship of his career (1957, 1959–1966, 1968–1969, 1974, 1976). Dave Cowens and Paul Silas anchored the frontcourt with physical defense and rebounding. The Suns, led by Paul Westphal, pushed Boston in a competitive series, but the Celtics’ depth and experience ultimately prevailed. This victory reinforced Boston’s continued dominance into the mid-1970s, bridging the gap between their earlier dynasty and a new generation of championship teams.</span>",
+    "categories": [
+      "Champions By Year > 1976",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7758.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7759.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7760.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "274",
+    "name": "NBA Finals Series Championship Ring 1975 - Golden State Warriors - May 1975",
+    "sku": "NF075",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1975 Golden State Warriors championship ring retains the overall structure of the 1972–1974 ring designs but introduces a distinctive all-gold aesthetic. The round face is crafted entirely in pale yellow-gold, with a central clear stone set within a raised basketball-style circular motif. Surrounding the centre is a circular border with engraved text reading “NBA WORLD CHAMPIONS,” set against finely lined gold detailing instead of the earlier black enamel backing, creating contrast through texture rather than colour. The shoulders maintain the angular, geometric panel structure seen in previous years but feature more raised and detailed engraving due to the absence of enamel. One shoulder displays the engraved year “1975,” split by the NBA logo in blue and red enamel at the centre. The opposite shoulder is engraved “BARRY” (forward, Finals MVP and offensive leader) above a detailed championship trophy motif. The fully gold construction, combined with deeper engraving and textured backgrounds, marks a refined evolution of the early-1970s championship ring style.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Golden State Warriors defeated Washington Bullets (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Rick Barry — Forward (Finals MVP); key contributors: Jamaal Wilkes, Clifford Ray</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Golden State Warriors captured one of the most unexpected championships in NBA history in 1975, sweeping the heavily favored Washington Bullets 4–0. Rick Barry, whose name appears on this ring, delivered a dominant Finals performance to earn MVP honours, securing the only championship of his career (1975). Barry’s scoring, leadership, and signature underhand free-throw shooting style made him one of the most unique and effective players of his era. Jamaal Wilkes provided crucial offensive support, while Clifford Ray anchored the defense. The Warriors’ victory is often regarded as a major upset, as Washington entered the series as strong favourites. The franchise originally began as the Philadelphia Warriors (1946–1962), relocated to become the San Francisco Warriors (1962–1971), and then rebranded as the Golden State Warriors (1971–present), making this their first championship under the “Golden State” identity. </span>",
+    "categories": [
+      "Champions By Year > 1975",
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Fransisco Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8157.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8158.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8159.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "276",
+    "name": "NBA Finals Series Championship Ring 1974 - Boston Celtics - April-May 1974",
+    "sku": "NF074",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1974 Boston Celtics championship ring follows the exact same design introduced in the 1972 Los Angeles Lakers and 1973 New York Knicks rings, maintaining a consistent early-1970s style. The round face is crafted in pale yellow-gold with a central clear stone set within a raised silver basketball motif divided into panel segments. Surrounding the centre is a black enamel circular border with bold gold lettering reading “NBA WORLD CHAMPIONS.” The shoulders feature structured, angular panels with textured dark backgrounds. One shoulder is engraved “HAVLICEK” (forward, Finals MVP and franchise cornerstone) above detailed Celtics championship imagery, including the importance of the “PRIDE” they have in representing Boston with an engraving at the bottom. The opposite shoulder displays the elongated engraved year “1974,” split across the panel by the NBA logo set in gold and red and blue enamel at the centre, a defining feature of this design era. The combination of uniform structure and team-specific detailing highlights the continuity of championship ring styling during the early 1970s while distinguishing Boston’s return to the top.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"> </span><b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Milwaukee Bucks (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> John Havlicek — Forward (Finals MVP); key contributors: Dave Cowens, Jo Jo White, Kareem Abdul-Jabbar (opponent standout)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics returned to championship glory in 1974, defeating the Milwaukee Bucks 4–3 in a hard-fought seven-game series. This marked Boston’s 12th championship overall and their first since 1969, re-establishing the franchise as a dominant force after a brief post-dynasty gap. John Havlicek, whose name appears on this ring, delivered clutch performances throughout the series and earned Finals MVP, securing the eighth championship of his career (1957, 1959–1966, 1968–1969, 1974). Dave Cowens anchored the team with his all-around play, while Jo Jo White provided scoring and control in key moments. The Bucks, led by Kareem Abdul-Jabbar and Oscar Robertson, pushed Boston to the limit, including a legendary double-overtime Game 6 before the Celtics closed out the series in Game 7. This championship symbolised Boston’s successful transition from the Bill Russell era to a new generation led by Havlicek. </span>",
+    "categories": [
+      "Champions By Year > 1974",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7765.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7766.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7767.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "277",
+    "name": "NBA Finals Series Championship Ring 1973 - New York Knicks - May 1973",
+    "sku": "NF073",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1973 New York Knicks championship ring closely mirrors the 1972 Los Angeles Lakers design, reflecting the consistent styling of the early 1970s. The round face is crafted in pale yellow-gold, featuring a central clear stone set within a raised silver basketball motif divided into panel segments. Surrounding the centre is a black enamel circular border with bold gold lettering reading “NBA WORLD CHAMPIONS,” creating strong contrast. The shoulders are structured with angular, geometric panels and textured dark backgrounds. One shoulder is engraved “W. REED” (center, Finals MVP and franchise leader) above championship detailing that includes the Knicks logo, championship scores, and trophy imagery that emphasises their winning “DEFENSE” against their opponents. The opposite shoulder features the NBA logo in gold and blue and red enamel, in the middle of large engraved text that reads “1973” within a bordered panel. The near-identical structure to the 1972 Lakers ring—with only team-specific logo and year changes—highlights the era’s uniform design approach while still capturing the Knicks’ championship identity.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> New York Knicks defeated Los Angeles Lakers (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Willis Reed — Center (Finals MVP); key contributors: Walt Frazier, Dave DeBusschere, Earl Monroe</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The New York Knicks secured their second championship in franchise history in 1973, defeating the Los Angeles Lakers 4–1 in a commanding Finals performance. Willis Reed, whose name appears on this ring, delivered a dominant series and earned his second Finals MVP (also 1970), finishing his career with two championships (1970, 1973) as the heart and leader of the franchise. Walt “Clyde” Frazier controlled the tempo and provided elite playmaking, while Dave DeBusschere anchored the defense and Earl Monroe added scoring depth. This victory came against a Lakers team featuring Wilt Chamberlain and Jerry West, reinforcing the Knicks’ status as one of the most balanced and disciplined teams of the early 1970s. The franchise, established as the New York Knicks in 1946, has remained in New York without relocation, making this their second and most recent championship.</span>",
+    "categories": [
+      "Champions By Year > 1973",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > New York City Pro Teams",
+      "League > NBA - National Basketball Association > EC Atlantic > New York Knicks",
+      "Teams > New York Knicks (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7113.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7114.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7115.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "278",
+    "name": "NBA Finals Series Championship Ring 1972 - Los Angeles Lakers - April-May 1972",
+    "sku": "NF072",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1972 Los Angeles Lakers championship ring features a bold circular design that builds on the early-1970s style while refining its visual impact. The round face is crafted in pale yellow-gold with a central clear stone set within a raised silver basketball motif, divided into panel-like segments for added depth. Surrounding the centre is a black enamel circular border with raised gold lettering reading “NBA WORLD CHAMPIONS.” The contrast between the silver basketball centre and black enamel ring creates a strong, modern aesthetic. The shoulders are structured with angular, geometric panels featuring textured dark backgrounds. One shoulder prominently displays the NBA logo in red and blue enamel, sitting between a large engraving in gold of “1972”, within a dark, triangular, bordered frame. The opposite shoulder is engraved “WEST” (guard, franchise icon and team leader) above the team logo and championship text referencing the series victory. The combination of bold enamel contrast, structured shoulder panels, and refined central detailing reflects the evolution of championship ring design into a more modern, defined style during the early 1970s.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Los Angeles Lakers defeated New York Knicks (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Wilt Chamberlain — Center (Finals MVP); key contributors: Jerry West, Gail Goodrich</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Los Angeles Lakers captured the 1972 championship in dominant fashion, defeating the New York Knicks 4–1 and securing one of the most historic seasons in NBA history. Wilt Chamberlain anchored the team defensively and earned Finals MVP, winning the second and final championship of his career (1967, 1972). Jerry West—whose name appears on this ring—played a crucial leadership role, guiding the team through the postseason and finally securing his first championship after multiple Finals losses throughout the 1960s. Gail Goodrich provided consistent scoring, helping balance the Lakers’ offense. This victory capped a record-setting 33-game winning streak during the regular season, a mark that still stands as one of the greatest achievements in professional sports. </span>\r\\n\r\\n<span style=\"font-weight: 400;\">Kareem Abdul-Jabbar (center, all-time great), who joined the Lakers shortly after this championship run (1975–1989), is widely regarded as one of the greatest players in NBA history due to his record-breaking scoring, multiple MVP awards, and dominant longevity, later becoming a central figure in transforming the Lakers into a consistent championship-winning franchise after years of near-misses in the Finals. The franchise originally began as the Minneapolis Lakers (1948–1960) before relocating to Los Angeles in 1960, making this their first championship in Los Angeles since 1954 and marking the end of a long Finals drought. </span>",
+    "categories": [
+      "Champions By Year > 1972",
+      "All Time Greats > Kareem Abdul-Jabbar (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "All Time Greats > Wilt Chamberlain (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7195.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7196.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7197.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "279",
+    "name": "NBA Finals Series Championship Ring 1971 - Milwaukee Bucks - April 1971",
+    "sku": "NF071",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1971 Milwaukee Bucks championship ring follows a similar circular design language seen in the early 1970s but introduces its own distinctive detailing. The round face is crafted in pale yellow-gold with a central clear stone set within a raised silver basketball motif, mirroring the style seen in the 1970 Knicks ring. Surrounding this is a circular gold border with engraved text reading “NBA WORLD CHAMPIONS,” set against a slightly recessed dark-toned background for contrast. The shoulders feature geometric triangular panels with textured dotted backgrounds. One shoulder includes the NBA logo in blue and red enamel that sits in the middle of large engraved numbers that read “1971”, all within a structured triangular frame. The opposite shoulder is engraved “ALCINDOR” (center, Finals MVP and dominant franchise cornerstone) above detailed imagery of a deer—representing the Bucks—set within a textured panel that also features championship details. The combination of clean circular symmetry, bold engraving, and symbolic team imagery reflects the evolving yet still cohesive championship ring designs of the early 1970s.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Milwaukee Bucks defeated Baltimore Bullets (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Kareem Abdul-Jabbar (Lew Alcindor) — Center (Finals MVP); key contributors: Oscar Robertson, Bob Dandridge</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Milwaukee Bucks secured their first championship in franchise history in just their third season, sweeping the Baltimore Bullets 4–0 in a dominant Finals performance. Lew Alcindor—later known as Kareem Abdul-Jabbar, whose name appears on this ring—was the driving force behind the victory, earning Finals MVP and capturing the first of his six career championships (1971, 1980, 1982, 1985, 1987, 1988). Alcindor dominated the series offensively and defensively, while veteran point guard Oscar Robertson provided leadership and playmaking in the later stage of his Hall of Fame career. The Bucks’ rapid rise to a title is one of the fastest in professional sports history, fueled by the pairing of a generational big man and an experienced floor general. The Baltimore Bullets—who previously won the 1948 championship and would later become the Washington Bullets and eventually the Washington Wizards—were unable to contain Milwaukee’s balanced attack.</span>",
+    "categories": [
+      "Champions By Year > 1971",
+      "League > NBA - National Basketball Association > EC Central > Milwaukee Bucks",
+      "Teams > Milwaukee Bucks (NBA)",
+      "Your City > Milwaukee Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8154.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8155.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8156.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "280",
+    "name": "NBA Finals Series Championship Ring 1970 - New York Knicks - April-May 1970",
+    "sku": "NF070",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1970 New York Knicks championship ring features a circular bronze-toned gold design with a central clear stone set within a raised silver basketball motif, similar in concept to the 1969 Celtics ring but with a fully round layout. The surrounding circular border features lined detailing and raised lettering reading “NBA WORLD CHAMPIONS.” The shoulders are geometric and triangular in shape with textured dotted backgrounds in bronze-toned gold. One shoulder displays “1970” split across the panel with the NBA logo in blue, white, and red enamel centered between the numbers. The opposite shoulder is engraved “W. REED” (center, Finals MVP and team captain) above a championship trophy marked “KNICKS.” The combination of bronze-toned gold, triangular shoulder panels, and silver basketball centre gives the ring a distinctive transitional design bridging late-1960s and early-1970s championship styles.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> New York Knicks defeated Los Angeles Lakers (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> Willis Reed — Center; key contributors: Walt Frazier, Dave DeBusschere, Bill Bradley</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The New York Knicks captured their first championship in franchise history in 1970, defeating the Los Angeles Lakers 4–3 in one of the most iconic Finals ever played. The defining moment came in Game 7 when captain Willis Reed, battling a severe thigh injury, dramatically walked onto the court and scored the first two baskets, inspiring the team and Madison Square Garden crowd. Reed won Finals MVP and secured the first championship of his career (he would win again in 1973). Walt “Clyde” Frazier delivered a legendary Game 7 performance with 36 points and 19 assists, while Dave DeBusschere and Bill Bradley added key contributions. The victory established the Knicks as a major NBA power and remains one of the most memorable championship runs in league history.</span>",
+    "categories": [
+      "Champions By Year > 1970",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > New York City Pro Teams",
+      "League > NBA - National Basketball Association > EC Atlantic > New York Knicks",
+      "Teams > New York Knicks (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8151.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8152.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8153.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "281",
+    "name": "NBA Finals Series Championship Ring 1969 - Boston Celtics - April-May 1969",
+    "sku": "NF069",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1969 Boston Celtics championship ring introduces a completely new design compared to the earlier round dynasty-era styles. The square face features a central circular clear stone set within a raised silver basketball motif, positioned against an emerald green enamel square panel. Surrounding this is a black-set gold border with raised lettering. “BOSTON CELTICS” wraps across the top, “1969” is split along both sides, and “WORLD CHAMPIONS” appears along the bottom edge. The strong contrast between the emerald green enamel, silver basketball centre, and gold lettering creates a bold modern look, marking a stylistic shift from the simpler target-style rings used throughout Boston’s earlier championship run.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Los Angeles Lakers (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center (player-coach); key contributors: John Havlicek, Sam Jones, Don Nelson</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics captured the 1969 championship in one of the most memorable Finals in NBA history, defeating the heavily favored Los Angeles Lakers 4–3. This victory marked Boston’s second consecutive title and the final championship of Bill Russell’s legendary career. Russell, serving as player-coach, secured his eleventh championship (1957, 1959–1966, 1968–1969), the most by any player in NBA history. The series is remembered for Don Nelson’s famous high-bouncing jumper in Game 7, as well as Boston overcoming a Lakers team featuring Wilt Chamberlain, Jerry West, and Elgin Baylor. John Havlicek and Sam Jones also played key roles, with Jones winning the last of his ten championships. The win concluded the greatest dynasty in NBA history and Russell retired immediately afterward, ending an era that defined the league.</span>",
+    "categories": [
+      "Champions By Year > 1969",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6689.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6690.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6691.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "282",
+    "name": "NBA Finals Series Championship Ring 1968 - Boston Celtics - April-May 1968",
+    "sku": "NF068",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1968 Boston Celtics championship ring returns to the original colour scheme used throughout their dynasty from 1957–1965. The round face is crafted in pale yellow-gold with bold black enamel detailing. At the centre sits a circular clear stone enclosed within a layered white enamel circular panel with thin black lining, surrounded by textured gold and black borders forming a target-style design. The outer ring reads “WORLD CHAMPIONS” in raised gold lettering with subtle vertical black line texturing beneath. This return to the classic white-and-black central panel contrasts with the darker 1966 variation, restoring the familiar visual identity associated with Boston’s dominant championship era.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Los Angeles Lakers (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center (player-coach); key contributors: John Havlicek, Sam Jones, Bailey Howell</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics returned to championship form in 1968, defeating the Los Angeles Lakers 4–2 and reclaiming the title just one year after their streak had been broken. Bill Russell, serving as player-coach, anchored the defense and captured the tenth championship of his career (eventually finishing with 11 total: 1957, 1959–1966, 1968–1969). John Havlicek provided all-around production, while veteran Sam Jones contributed crucial scoring in one of his final championship seasons. The victory also renewed the Celtics–Lakers rivalry that had defined much of the decade. This win demonstrated Boston’s ability to reassert dominance even after the rise of Wilt Chamberlain’s 76ers in 1967, reinforcing the Celtics’ place as the era’s defining franchise.</span>",
+    "categories": [
+      "Champions By Year > 1968",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7748.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7751.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7750.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "283",
+    "name": "NBA Finals Series Championship Ring 1967 - Philadelphia 76ers - April 1967",
+    "sku": "NF067",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1967 Philadelphia 76ers championship ring introduces a bold new design distinct from the Celtics-era rings. The face features a large square black enamel panel with a central circular clear stone set within an ornate gold diamond-shaped mount. The diamond-shaped setting is finely detailed with textured gold edging, standing out sharply against the black enamel background. Surrounding the centre is a striped black border with gold edges, adding layered depth. The outermost border wraps around the square face and reads “PHILADELPHIA WORLD CHAMPIONS” in raised gold lettering. Both shoulders feature the same white gold base with fine black detailing. One shoulder has “CHAMBERLAIN” (center, key player) written at the top, followed by a large “76” logo for the team, and a basketball with Chamberlain’s jersey number on it (13). The other shoulder reads “WON 68 LOST 13” at the top, followed by the NBA logo, and “1967”. The strong contrast between the black enamel square face and gold diamond-set centre creates a clean, modern look that reflects the shift in late-1960s championship ring styling.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Philadelphia 76ers defeated San Francisco Warriors (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Wilt Chamberlain — Center; key contributors: Hal Greer, Billy Cunningham, Chet Walker</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Philadelphia 76ers captured their first championship under the “76ers” name in 1967, defeating the San Francisco Warriors 4–2 and ending the Boston Celtics’ unprecedented eight-year title streak. Wilt Chamberlain dominated both offensively and defensively, anchoring one of the greatest single-season teams in NBA history. Chamberlain earned the first championship of his career here (later winning again in 1972 with the Los Angeles Lakers), while Hal Greer provided steady scoring and Billy Cunningham contributed key bench production. This victory is widely remembered for finally breaking Boston’s dynasty and for the 76ers’ dominant regular season (68–13). The franchise previously won the 1955 championship as the Syracuse Nationals before relocating to Philadelphia in 1963 and becoming the Philadelphia 76ers, making this their first title under the new identity. </span>",
+    "categories": [
+      "Champions By Year > 1967",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "League > NBA - National Basketball Association > EC Atlantic > Philadelphia 76ers",
+      "Teams > Philadelphia 76ers (NBA)",
+      "Your City > Philadelphia Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7107.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7109.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7108.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "284",
+    "name": "NBA Finals Series Championship Ring 1966 - Boston Celtics - April 1966",
+    "sku": "NF066",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1966 Boston Celtics championship ring maintains the same round design introduced in 1957 but with subtle colour updates. The face is finished in a pale bronze-toned gold, with the central circular panel now entirely black enamel instead of the earlier white enamel. A clear central stone sits within layered circular detailing, surrounded by textured gold borders that retain the target-style layout. The outer ring reads “WORLD CHAMPIONS” in bold gold lettering, with fine vertical line texturing beneath for depth. The shoulders remain consistent with earlier designs, featuring horizontally lined black enamel panels, a large shamrock emblem, and “CELTICS” text, continuing the cohesive visual identity used throughout Boston’s dynasty.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Los Angeles Lakers (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center (player-coach); key contributors: John Havlicek, Sam Jones, Jerry West (opponent standout)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics completed their historic eight consecutive championships in 1966, defeating the Los Angeles Lakers 4–3 in a tightly contested Finals. This victory was especially significant as it marked Bill Russell’s first season as player-coach, making him the first Black head coach in major North American professional sports. Russell anchored Boston defensively while also guiding the team strategically, capturing his ninth championship at that point (and ultimately 11 total: 1957, 1959–1966, 1968–1969). John Havlicek and Sam Jones provided clutch scoring, while the Lakers—led by Jerry West and Elgin Baylor—pushed the series to seven games. Boston’s experience and defensive discipline ultimately prevailed, closing out the most dominant championship streak in NBA history.</span>",
+    "categories": [
+      "Champions By Year > 1966",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8145.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8146.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8147.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "285",
+    "name": "NBA Finals Series Championship Ring 1965 - Boston Celtics - April 1965",
+    "sku": "NF065",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1965 Boston Celtics championship ring maintains the identical design introduced in 1957. The round pale yellow-gold face with black enamel detailing surrounds a central clear stone set in a white enamel circular panel. “WORLD CHAMPIONS” wraps the outer border. Both shoulders are identical, with horizontally lined black enamel panels, “1965” engraved at the top, followed by the shamrock emblem and “CELTICS.”</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Los Angeles Lakers (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: John Havlicek, Sam Jones</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Boston secured its seventh consecutive championship in 1965, defeating the Los Angeles Lakers 4–1. Bill Russell anchored the defense, while John Havlicek’s famous steal in the Eastern Division Finals against Philadelphia propelled Boston to another Finals appearance. Sam Jones added scoring consistency. This victory gave Russell his eighth championship and kept Boston’s historic streak alive.</span>",
+    "categories": [
+      "Champions By Year > 1965",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7745.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7746.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7747.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "294",
+    "name": "2025 Stanley Cup Championship Ring - Florida Panthers - June 2025",
+    "sku": "SC125",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2025",
+      "League > NHL - National Hockey League > EC Atlantic > Florida Panthers",
+      "Teams > Florida Panthers (NHL)",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6392.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6393.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6394.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "295",
+    "name": "2024 Stanley Cup Championship Ring - Florida Panthers - June 2024",
+    "sku": "SC124",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2024",
+      "League > NHL - National Hockey League > EC Atlantic > Florida Panthers",
+      "Teams > Florida Panthers (NHL)",
+      "Your City > Miami Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6385.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6387.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6386.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6388.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "296",
+    "name": "2023 Stanley Cup Championship Ring - Las Vegas Golden Knight - June 2023",
+    "sku": "SC123",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2023",
+      "League > NHL - National Hockey League > WC Pacific > Las Vegas Golden Knights",
+      "Teams > Las Vegas Golden Knights (NHL)",
+      "Your City > Las Vegas Pro Treams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6672.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6673.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6674.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6675.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6676.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "297",
+    "name": "2022 Stanley Cup Championship Ring - Colorado Avalanche - June 2022",
+    "sku": "SC122",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2022",
+      "League > NHL - National Hockey League > WC Central > Colorado Avalanche",
+      "Teams > Colorado Avalanche (NHL)",
+      "Your City > Denver Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6851.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6852.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6853.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "298",
+    "name": "2021 Stanley Cup Championship Ring - Tampa Bay Lightnin - June-July 2021",
+    "sku": "SC121",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2021",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Tampa Bay Lightning",
+      "Teams > Tampa Bay Lightning (NHL)",
+      "Your City > Tampa Bay Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7487.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7488.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7489.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7490.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "300",
+    "name": "2020 Stanley Cup Championship Ring - Tampa Bay Lightning - September 2020",
+    "sku": "SC120",
+    "price": 40,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2020",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Tampa Bay Lightning",
+      "Teams > Tampa Bay Lightning (NHL)",
+      "Your City > Tampa Bay Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7436.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7437.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7438.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "301",
+    "name": "2019 Stanley Cup Championship Ring - St Louis Blues - May-June 2019",
+    "sku": "SC119",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2019",
+      "Teams > Colorado Avalanche (NHL)",
+      "Your City > Denver Pro Teams",
+      "League > NHL - National Hockey League > WC Central > St Louis Blues",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7472.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7473.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7474.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "302",
+    "name": "2018 Stanley Cup Championship Ring - Washington Capitals - May-June 2019",
+    "sku": "SC118",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2018",
+      "All Time Greats > Alexander Ovechkin (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Metropolitan > Washington Capitals",
+      "Teams > Washington Capitals (NHL)",
+      "Your City > Washington Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6549.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6550.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6551.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "303",
+    "name": "2017 Stanley Cup Championship Ring - Pittsburgh Penguins - May-June 2017",
+    "sku": "SC117",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2017",
+      "League > NHL - National Hockey League > EC Metropolitan > Pittsburgh Penguins",
+      "Teams > Pittsburgh Penguins (NHL)",
+      "Your City > Pittsburgh Pro Teams",
+      "All Time Greats > Sidney Crosby (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7445.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7446.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7447.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7448.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "304",
+    "name": "2016 Stanley Cup Championship Ring - Pittsburgh Penguins - May-June 2016",
+    "sku": "SC116",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2016",
+      "League > NHL - National Hockey League > EC Metropolitan > Pittsburgh Penguins",
+      "Teams > Pittsburgh Penguins (NHL)",
+      "Your City > Pittsburgh Pro Teams",
+      "All Time Greats > Sidney Crosby (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7458.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7459.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7460.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "305",
+    "name": "2015 Stanley Cup Championship Ring - Chicago Blackhawks - June 2015",
+    "sku": "SC115",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2015",
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Jonathan Toews (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6552.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6553.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6554.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "306",
+    "name": "2014 Stanley Cup Championship Ring- Los Angeles Kings - June 2014",
+    "sku": "SC114",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2014",
+      "League > NHL - National Hockey League > WC Pacific > Los Angeles Kings",
+      "Teams > Los Angeles Kings (NHL)",
+      "Your City > Los Angeles Pro Teams",
+      "League > NHL - National Hockey League",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7383.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7384.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7385.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "307",
+    "name": "2013 Stanley Cup Championship Ring - Chicago Blackhawks - June 2013",
+    "sku": "SC113",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2013",
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Jonathan Toews (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6436.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6437.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6438.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "308",
+    "name": "2012 Stanley Cup Championship Ring - Los Angeles Kings - May-June 2012",
+    "sku": "SC112",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2012",
+      "League > NHL - National Hockey League > WC Pacific > Los Angeles Kings",
+      "Teams > Los Angeles Kings (NHL)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8184.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8185.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8186.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "309",
+    "name": "2011 Stanley Cup Championship Ring - Boston Bruins - June 2011",
+    "sku": "SC111",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2011",
+      "League > NHL - National Hockey League > EC Atlantic > Boston Bruins",
+      "Teams > Boston Bruins (NHL)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6683.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6684.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6685.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "310",
+    "name": "2010 Stanley Cup Championship Ring - Chicago Blackhawks - May-June 2010",
+    "sku": "SC110",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2010",
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Jonathan Toews (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8181.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8182.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8183.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "311",
+    "name": "2009 Stanley Cup Championship Ring - Pittsburgh Penguins - May-June 2009",
+    "sku": "SC109",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2009",
+      "League > NHL - National Hockey League > EC Metropolitan > Pittsburgh Penguins",
+      "Teams > Pittsburgh Penguins (NHL)",
+      "Your City > Pittsburgh Pro Teams",
+      "All Time Greats > Sidney Crosby (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7417.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7418.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7419.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "312",
+    "name": "2008 Stanley Cup Championship Ring - Detriot Red Wings - May-June 2008",
+    "sku": "SC108",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2008",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6583.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6584.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6585.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "313",
+    "name": "2007 Stanley Cup Championship Ring - Anaheim Ducks - May-June 2007",
+    "sku": "SC107",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2007",
+      "League > NHL - National Hockey League > WC Pacific > Anaheim Ducks",
+      "Teams > Anaheim Mighty Ducks (NHL)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6389.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6391.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6390.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "314",
+    "name": "2006 Stanley Cup Championship Ring - Carolina Hurricanes - June 2006",
+    "sku": "SC106",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2006",
+      "League > NHL - National Hockey League > EC Metropolitan > Carolina Hurricanes",
+      "Teams > Carolina Hurricanes (NHL)",
+      "Your City > Charlotte Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7599.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7600.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7601.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "315",
+    "name": "2004 Stanley Cup Championship Ring - Tampa Bay Lightning - May-June 2004",
+    "sku": "SC104",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2004",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Tampa Bay Lightning",
+      "Teams > Tampa Bay Lightning (NHL)",
+      "Your City > Tampa Bay Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7768.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7769.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7770.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "316",
+    "name": "2003 Stanley Cup Championship Ring - New Jersey Devils - May-June 2003",
+    "sku": "SC103",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2003",
+      "League > NHL - National Hockey League > EC Metropolitan > New Jersey Devils",
+      "Teams > New Jersey Devils (NHL)",
+      "Your City > New Jersey Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8187.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8188.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8189.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "317",
+    "name": "2002 Stanley Cup Championship Ring - Detriot Red Wings - June 2002",
+    "sku": "SC102",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2002",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7442.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7434.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7435.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "319",
+    "name": "2001 Stanley Cup Championship Ring - Colorado Avalanche - May-June 2001",
+    "sku": "SC101",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2001",
+      "League > NHL - National Hockey League > WC Central > Colorado Avalanche",
+      "Teams > Colorado Avalanche (NHL)",
+      "Your City > Denver Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7481.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7482.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7483.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "320",
+    "name": "2000 Stanley Cup Championship Ring - New Jersey Devils - May-June 2000",
+    "sku": "SC100",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2000",
+      "League > NHL - National Hockey League > EC Metropolitan > New Jersey Devils",
+      "Teams > New Jersey Devils (NHL)",
+      "Your City > New Jersey Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7475.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7476.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7477.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "321",
+    "name": "1999 Stanley Cup Championship Ring - Dallas Stars - June 1999",
+    "sku": "SC099",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1999",
+      "Your City > Dallas Pro Teams",
+      "League > NHL - National Hockey League > WC Central > Dallas Stars",
+      "Teams > Dallas Stars (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7452.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7453.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7454.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "322",
+    "name": "1998 Stanley Cup Championship Ring - Detroit Red Wings - June 1998",
+    "sku": "SC098",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1998",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7524.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7525.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7526.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "323",
+    "name": "1997 Stanley Cup Championship Ring - Detroit Red Wings - May-June 1997",
+    "sku": "SC097",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1997",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7433.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7435.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7434.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "324",
+    "name": "1996 Stanley Cup Championship Ring - Colorado Avalanche - June 1996",
+    "sku": "SC096",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1996",
+      "League > NHL - National Hockey League > WC Central > Colorado Avalanche",
+      "Teams > Colorado Avalanche (NHL)",
+      "Your City > Denver Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7386.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7387.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7388.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "325",
+    "name": "1995 Stanley Cup Championship Ring - New Jersey Devils - June 1995",
+    "sku": "SC095",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1995",
+      "League > NHL - National Hockey League > EC Metropolitan > New Jersey Devils",
+      "Teams > New Jersey Devils (NHL)",
+      "Your City > New Jersey Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7392.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7393.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7394.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "326",
+    "name": "1994 Stanley Cup Championship Ring - New York Rangers - May-June 1994",
+    "sku": "SC094",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1994",
+      "All Time Greats > Mark Messier (NHL)",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Rangers",
+      "Teams > New York Rangers (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7478.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7479.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7480.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "327",
+    "name": "1993 Stanley Cup Championship Ring - Montreal Canadiens - June 1993",
+    "sku": "SC093",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1993",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7530.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7531.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7532.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "328",
+    "name": "1992 Stanley Cup Championship Ring - Pittsburgh Penguins - May-June 1992",
+    "sku": "SC092",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1992",
+      "All Time Greats > Mario Lemieux (NHL)",
+      "League > NHL - National Hockey League > EC Metropolitan > Pittsburgh Penguins",
+      "Teams > Pittsburgh Penguins (NHL)",
+      "Your City > Pittsburgh Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7427.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7428.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7429.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "329",
+    "name": "1991 Stanley Cup Championship Ring - Pittsburgh Penguins - May 1991",
+    "sku": "SC091",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1991",
+      "All Time Greats > Mario Lemieux (NHL)",
+      "League > NHL - National Hockey League > EC Metropolitan > Pittsburgh Penguins",
+      "Teams > Pittsburgh Penguins (NHL)",
+      "Your City > Pittsburgh Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6555.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6556.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6557.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "330",
+    "name": "1990 Stanley Cup Championship Ring - Edmonton Oilers - May 1990",
+    "sku": "SC090",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1990",
+      "League > NHL - National Hockey League > WC Pacific > Edmonton Oilers",
+      "All Time Greats > Mark Messier (NHL)",
+      "Your City > New York City Pro Teams",
+      "Teams > New York Rangers (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7414.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7415.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7416.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "332",
+    "name": "1989 Stanley Cup Championship Ring - Calgary Flames - May 1989",
+    "sku": "SC089",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1989",
+      "League > NHL - National Hockey League > WC Pacific > Calgary Flames",
+      "Teams > Calgary Flames (NHL)",
+      "Your City > Calgary Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7466.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7467.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7468.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "333",
+    "name": "1988 Stanley Cup Championship Ring - Edmonton Oilers - May 1988",
+    "sku": "SC088",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1988",
+      "League > NHL - National Hockey League > WC Pacific > Edmonton Oilers",
+      "Teams > Edmonton Oilers (NHL)",
+      "Your City > Edmonton Pro Teams",
+      "All Time Greats > Mark Messier (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "All Time Greats > Wayne Gretzsky (NHL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6561.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6562.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6563.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "334",
+    "name": "1987 Stanley Cup Championship Ring - Edmonton Oilers - May 1987",
+    "sku": "SC087",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1987",
+      "League > NHL - National Hockey League > WC Pacific > Edmonton Oilers",
+      "Teams > Edmonton Oilers (NHL)",
+      "Your City > Edmonton Pro Teams",
+      "All Time Greats > Mark Messier (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "All Time Greats > Wayne Gretzsky (NHL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7853.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7854.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7855.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "335",
+    "name": "1986 Stanley Cup Championship Ring - Montreal Canadiens - May 1986",
+    "sku": "SC086",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1986",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7527.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7528.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7529.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "336",
+    "name": "1985 Stanley Cup Championship Ring - Edmonton Oilers - May 1985",
+    "sku": "SC085",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1985",
+      "League > NHL - National Hockey League > WC Pacific > Edmonton Oilers",
+      "Teams > Edmonton Oilers (NHL)",
+      "Your City > Edmonton Pro Teams",
+      "All Time Greats > Mark Messier (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "All Time Greats > Wayne Gretzsky (NHL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7421.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7422.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7423.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "338",
+    "name": "1984 Stanley Cup Championship Ring - Edmonton Oilers - May 1984",
+    "sku": "SC084",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1984",
+      "League > NHL - National Hockey League > WC Pacific > Edmonton Oilers",
+      "Teams > Edmonton Oilers (NHL)",
+      "Your City > Edmonton Pro Teams",
+      "All Time Greats > Mark Messier (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "All Time Greats > Wayne Gretzsky (NHL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7509.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7510.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7511.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "339",
+    "name": "1983 Stanley Cup Championship Ring - New York Islanders - May 1983",
+    "sku": "SC083",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1983",
+      "All Time Greats > Mike Bossy (NHL)",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Islanders",
+      "Teams > New York Islanders (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7653.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7654.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7655.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "340",
+    "name": "1982 Stanley Cup Championship Ring - New York Islanders - May 1982",
+    "sku": "SC082",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1982",
+      "All Time Greats > Mike Bossy (NHL)",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Islanders",
+      "Teams > New York Islanders (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6580.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6581.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6582.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "341",
+    "name": "1981 Stanley Cup Championship Ring - New York Islanders - May 1981",
+    "sku": "SC081",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1981",
+      "All Time Greats > Mike Bossy (NHL)",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Islanders",
+      "Teams > New York Islanders (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8193-1.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "342",
+    "name": "1980 Stanley Cup Championship Ring - New York Islanders - May 1980",
+    "sku": "SC080",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1980",
+      "All Time Greats > Mike Bossy (NHL)",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Islanders",
+      "Teams > New York Islanders (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6558.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6559.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6560.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "344",
+    "name": "1979 Stanley Cup Championship Ring - Montreal Canadiens - May 1979",
+    "sku": "SC079",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1979",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7439.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7440.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7441.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "346",
+    "name": "1978 Stanley Cup Championship Ring - Montreal Canadiens - May 1978",
+    "sku": "SC078",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1978",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7376.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7377.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7378.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "347",
+    "name": "1977 Stanley Cup Championship Ring - Montreal Canadiens - May 1977",
+    "sku": "SC077",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1977",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7033.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7034.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7035.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "348",
+    "name": "1976 Stanley Cup Championship Ring - Montreal Canadiens - May 1976",
+    "sku": "SC076",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1976",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7500.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7501.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7502.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "351",
+    "name": "Super Bowl 40 (XL) Championship Ring – Pittsburgh Steelers – February 5, 2006",
+    "sku": "SB40",
+    "price": 35,
+    "description": "The ring has a bold yellow-gold build with a deep black enamel background, making the stones and Steelers colours stand out sharply. At the centre sits a circular Steelers logo, set with yellow, red, and blue stones, surrounded by a halo of small clear stones. Above it, six marquise-shaped stones fan outward, representing Pittsburgh’s six Super Bowl titles, while vertical rows of rectangular stones frame each side of the face. The top reads “PITTSBURGH” and the bottom “WORLD CHAMPIONS.” One shoulder engraved HINES WARD #86 includes the NFL shield and textured championship panel, while the opposite side displays “STEELERS 21 SEAHAWKS 10,” “SUPER BOWL XL,” and “2005,” along with Detroit game references. The mix of coloured stones, black enamel contrast, and layered diamond placement gives the ring a dramatic, celebratory look that reflects Pittsburgh’s sixth championship and underdog playoff run.",
+    "shortDescription": "<p data-start=\"5\" data-end=\"206\"><strong>League</strong>: National Football League (AFC North)<br data-start=\"49\" data-end=\"52\" /><strong>Game</strong> <strong>Stadium</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Ford Field</span></span> (Detroit, Michigan)<br data-start=\"123\" data-end=\"126\" /><strong>MVP</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Hines Ward</span></span> #86 — Wide receiver; Super Bowl MVP</p>\r\\n<p data-start=\"208\" data-end=\"887\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Pittsburgh Steelers</span></span> ended a 26-year championship drought in Super Bowl XL (2005–2006 season), defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Seattle Seahawks</span></span> 21–10 on February 5, 2006. After dominating the 1970s with two sets of consecutive titles, Pittsburgh spent decades rebuilding through coaching changes (Chuck Noll to Bill Cowher) and roster turnover before returning with a young core. MVP Hines Ward (#86) recorded 123 receiving yards and a touchdown, while QB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Ben Roethlisberger</span></span> #7 led the playoff run as the first No.6 seed champion, and RB <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Jerome Bettis</span></span> #36 closed his career in his hometown.</p>",
+    "categories": [
+      "Champions By Year > 2006",
+      "All Time Greats > Ben Rothlisberger (NFL)",
+      "Your City > Pittsburgh Pro Teams",
+      "League > NFL - National Football League > AFC North > Pittsburgh Steelers",
+      "Teams > Pittsburgh Steelers (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6883.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6885.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6886.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6884.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "352",
+    "name": "1975 Stanley Cup Championship Ring - Philadelphia Flyers - May 1975",
+    "sku": "SC075",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1975",
+      "League > NHL - National Hockey League > EC Metropolitan > Philadelphia Flyers",
+      "Teams > Philadelphia Flyers (NHL)",
+      "Your City > Philadelphia Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7430.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7431.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7432.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "353",
+    "name": "1974 Stanley Cup Championship Ring  - Philadelphia Flyers - May 1974",
+    "sku": "SC074",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1974",
+      "League > NHL - National Hockey League > EC Metropolitan > Philadelphia Flyers",
+      "Teams > Philadelphia Flyers (NHL)",
+      "Your City > Philadelphia Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7449.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7450.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7451.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "354",
+    "name": "1973 Stanley Cup Championship Ring - Montreal Canadiens - April-May 1973",
+    "sku": "SC073",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1973",
+      "All Time Greats > Henri Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7694.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7697.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7695.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "355",
+    "name": "1972 Stanley Cup Championship Ring - Boston Bruins - April-May 1972",
+    "sku": "SC072",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1972",
+      "All Time Greats > Bobby Orr (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Boston Bruins",
+      "Teams > Boston Bruins (NHL)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7389.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7390.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7390-1.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "356",
+    "name": "1971 Stanley Cup Championship Ring - Montreal Canadiens - May 1971",
+    "sku": "SC071",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1971",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8241.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8242.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8243.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "357",
+    "name": "1970 Stanley Cup Championship Ring - Boston Bruins - May 1970",
+    "sku": "SC070",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1970",
+      "All Time Greats > Bobby Orr (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Boston Bruins",
+      "Teams > Boston Bruins (NHL)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6686.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6687.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6688.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "360",
+    "name": "1967 Stanley Cup Championship Ring - Toronto Maple Leafs - April-May 1967",
+    "sku": "SC067",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1967",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7407.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7408.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7409.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "361",
+    "name": "1966 Stanley Cup Championship Ring - Montreal Canadiens - April-May 1966",
+    "sku": "SC066",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1966",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7578-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7579-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7580-1.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "363",
+    "name": "1965 Stanley Cup Championship Ring - Montreal Canadiens - April-May 1965",
+    "sku": "SC065",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1965",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7581-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7582.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7583.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "408",
+    "name": "1923 World Series Championship Ring - New York Yankees - April-May, 1923 *BABE RUTH RING 4, FIRST AS A YANKEE*",
+    "sku": "WS023",
+    "price": 35,
+    "description": "The ring features an oval gold face with a central raised stone surrounded by a laurel wreath border symbolising victory. “NEW YORK YANKEES WORLD CHAMPIONS” wraps around the top and bottom. The shoulders display intricate baseball imagery with eagle-style wings and “1923” engraved, reflecting the Yankees’ first championship era. The elegant wreath and central stone highlight the beginning of the Yankees dynasty.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated New York Giants (4–2)\r\\n<strong>Series Standout:</strong> Babe Ruth — Outfielder</p>\r\\nThe Yankees finally broke through in 1923, defeating the Giants to win their first-ever World Series, played in the brand-new Yankee Stadium — “The House That Ruth Built.” Babe Ruth hit .368 with three home runs, firmly establishing the Yankees as baseball’s new powerhouse.",
+    "categories": [
+      "Champions By Year > 1923",
+      "All Time Greats > Babe Ruth (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7036.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7037.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7038.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "409",
+    "name": "1927 World Series Championship Ring - New York Yankees - October, 1927 *BABE RUTH RING 5*",
+    "sku": "WS027",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1927 New York Yankees ring maintains a classic 1920s design, with an oval gold face, a large central clear stone framed by sun-ray like spikes that extend to the edges of a central oval-shaped gold face, surrounded by an engraved laurel leaf border, and outermost border that reads “NEW YORK YANKEES WORLD CHAMPIONS”. and “WORLD CHAMPIONS.” Both shoulders are identical, showing a dark recessed panel with dotted gold background, a large eagle with wings spread forming around an American flag body, “NEW YORK” banners above each wing, a baseball at the top, and “1927” at the bottom. The symmetrical shoulders and restrained stone use reflect early Yankees ring styling.</span>",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL East*)\r\\n<strong>Series</strong> <strong>Result</strong>: New York Yankees defeated Pittsburgh Pirates (4–0)\r\\n<strong>Series</strong> <strong>Standout</strong>: Babe Ruth — Outfielder; key contributors: Lou Gehrig, Herb Pennock\r\\n\r\\nIn 1927, the New York Yankees kickstarted their incredibly successful early dynasty years (claiming 20 out of 39 championship titles just within the years of 1923-1962) and marking the first out of two back-to-back wins (1927-1928). Babe Ruth, whose ring this represents, led the legendary “Murderers’ Row” Yankees to a dominant sweep, only 3 years into switching from the Boston Red Sox to the Yankees. Ruth hit two home runs in the series and finished the season with a then-record 60 home runs. This marked Ruth’s fifth championship (with his first 3 titles won with the Boston Red Sox, and fourth with the Yankees in 1923) and one of the most dominant teams in baseball history, finishing 110–44.\r\\n\r\\nRuth had a legendary career, leading any team to incredibly consistent, dominant leads, and as such is considered to have contributed the most significantly to the Yankees unstoppable multi-decade dynasty. He is globally celebrated even over 90 years since he retired as one of the most successful all-time-greats in MLB due to his ability to lead a team to a monopoly of championship titles even if considered underdogs previously, as well as the devastating consequences to a team’s lead in titles upon departures from the team. This is reflected even in the beginning of his career, where he led the Boston Red Sox to back-to-back wins within his first year on the team, guiding them to 3 championship titles within 1915-1918, with the immediate downfall of the Red Sox after he was sold to the New York Yankees in 1920, triggering an 86-year drought attributed to him leaving the team, known as the ‘curse of the bambino’, named after him. To further emphasise his crucial role in securing dynastic eras for whichever team he was on at the time, he made immediate, long-term impacts on the success of the Yankees, assisting them to second place in 1921-1922 within the same season he was signed over to them, and marked the Yankee’s first appearances even as second place in World Series history. Following this, the Yankees achieved their first ever World Series win in 1923, and began their unparalleled dominance over all competition over decades, claiming four wins and two second place outcomes out of 15 titles during his time with the Yankees (1920-1935) before retiring in 1935 from a 22-season career in which he achieved 7 championship titles. Even after retiring, his positive influence over the team’s performance remained, guiding them in their decades-spanning dominance within their most abundant dynasty years (1920s-1960s) that set an (even to this day) record-holding amount of championship titles (27 seasons), with the second-highest record championship titles held only being 11 years (St. Louis Cardinals).",
+    "categories": [
+      "Champions By Year > 1927",
+      "All Time Greats > Babe Ruth (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7133.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7136.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7137.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "410",
+    "name": "1928 World Series Championship Ring - New York Yankees - October, 1928 *BABE RUTH RING 6*",
+    "sku": "WS028",
+    "price": 25,
+    "description": "The 1928 ring uses the exact same design as 1927, with an oval gold face, a large central clear stone framed by sun-ray like spikes that extend to the edges of a central oval-shaped gold face, surrounded by an engraved laurel leaf border, and outermost border that reads “NEW YORK YANKEES WORLD CHAMPIONS”. and “WORLD CHAMPIONS.” Both shoulders are identical, showing a dark recessed panel with dotted gold background, a large eagle with wings spread forming around an American flag body, “NEW YORK” banners above each wing, a baseball at the top, and “1928” at the bottom. The only difference is the engraved year “1928” at the bottom of each shoulder. This repeated design reflects the Yankees’ early tradition of minimal yearly variation.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL East*)\r\\n<strong>Series</strong> <strong>Result</strong>: New York Yankees defeated St. Louis Cardinals (4–0)\r\\n<strong>Series</strong> <strong>Standout</strong>: Lou Gehrig — First Baseman; key contributors: Babe Ruth, Waite Hoyt\r\\n\r\\nThe Yankees repeated as champions in a back-to-back win (1927-1928), giving Babe Ruth his sixth championship and the Yankee’s third-ever win since he was signed over to them in 1920. Lou Gehrig drove in nine runs in the series, while Ruth added three home runs.",
+    "categories": [
+      "Champions By Year > 1928",
+      "All Time Greats > Babe Ruth (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7461.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7464.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7465.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "412",
+    "name": "1932 World Series Championship Ring - New York Yankees - September-October, 1932 *BABE RUTH RING 7*",
+    "sku": "WS032",
+    "price": 35,
+    "description": "Babe Ruth's seventh ring repeats the same classic Yankees World Series ring style, featuring a gold oval face with a central stone framed by laurel leaves and “WORLD CHAMPIONS.” The shoulders display detailed baseball imagery including bats, shield, and eagle motif with “1932.” The bold gold finish and prominent centre stone create a refined championship style fitting the Yankees’ continued dominance.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated Chicago Cubs (4–0)\r\\n<strong>Series Standout:</strong> Babe Ruth — Outfielder (called shot Game 3)</p>\r\\nThe Yankees swept the Cubs in 1932, highlighted by Babe Ruth’s legendary \"Called Shot” home run at Wrigley Field. Lou Gehrig also delivered power hitting, and the Yankees cemented themselves as baseball’s dominant franchise of the era, and Babe Ruth cemented his timeless legacy with his seventh ring.",
+    "categories": [
+      "Champions By Year > 1932",
+      "All Time Greats > Babe Ruth (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7039.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7043.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7044.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "413",
+    "name": "1936 World Series Championship Ring - New York Yankees - September-October, 1936",
+    "sku": "WS036",
+    "price": 35,
+    "description": "Coming back with another win, the Yankees 1936 World Series ring follows the same style again, keeping a consistent theme each winning year, with a gold oval face with central stone and laurel wreath. The shoulders display baseball imagery including shield, bats, and “1936\" engraved. The ornate detailing reflects the Yankees’ renewed dominance.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated New York Giants (4–2)\r\\n<strong>Series Standout:</strong> Lou Gehrig — First Baseman</p>\r\\nThe 1936 Yankees began a new dynasty, with Joe DiMaggio’s rookie season, beginning his illustrious career, and Lou Gehrig’s powerful hitting. The Yankees defeated the Giants to start four consecutive championships, and at this point celebrated their fifth win in the history of the MLB championship.",
+    "categories": [
+      "Champions By Year > 1936",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7069.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7073.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7072.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "414",
+    "name": "1938 World Series Championship Ring - New York Yankees - October, 1938",
+    "sku": "WS038",
+    "price": 35,
+    "description": "The 1938 ring reuses the 1927/1928 Yankees design, with with an oval gold face, a large central clear stone framed by sun-ray like spikes that extend to the edges of a central oval-shaped gold face, surrounded by an engraved laurel leaf border, and outermost border that reads “NEW YORK YANKEES WORLD CHAMPIONS”. and “WORLD CHAMPIONS.” Both shoulders are identical, showing a dark recessed panel with dotted gold background, a large eagle with wings spread forming around an American flag body, “NEW YORK” banners above each wing, a baseball at the top, and “1938” at the bottom. The only difference is “1938” engraved at the bottom of the shoulders.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL East*)\r\\n<strong>Series</strong> <strong>Result</strong>: New York Yankees defeated Chicago Cubs (4–0)\r\\n<strong>Series</strong> <strong>Standout</strong>: Joe DiMaggio — Outfielder; key contributors: Red Ruffing, Bill Dickey\r\\n\r\\nJoe DiMaggio led the Yankees to their third consecutive championship and seventh overall, extending one of the most dominant dynasties in baseball history. DiMaggio hit .368 in the series and drove in crucial runs, while pitcher Red Ruffing threw two complete-game victories, including the clinching Game 4. The Yankees’ sweep over Chicago marked their third straight World Series victory (1936–1938), a rare feat at the time, and reinforced the team’s dominance following earlier Babe Ruth-era championships. This title came during the transition from the Ruth-Gehrig era to the DiMaggio-led dynasty, highlighting the continuity of success within the franchise.",
+    "categories": [
+      "Champions By Year > 1939",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Tampa Bay Rays"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7646.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7648.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "416",
+    "name": "1937 World Series Championship Ring - New York Yankees - October, 1937",
+    "sku": "WS037",
+    "price": 35,
+    "description": "Following the same design again, the ring features a gold signet-style design with central stone and detailed baseball crest set against a large black and gold spotted enamel panel on the shoulders. The crest features a large eagle, with \"NEW YORK\" printed above its wings, a baseball above its head, and “1937” engraved below the decorative championship imagery. The elegant gold finish mirrors the Yankees’ continued success.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated New York Giants (4–1)\r\\n<strong>Series Standout:</strong> Joe DiMaggio — Center Fielder</p>\r\\nWith an incredible back-to-back win, and the second in their four consecutive wins from 1936-1939, the Yankees dominated the World Series in this dynasty, behind Joe DiMaggio’s hitting and strong pitching from Red Ruffing.",
+    "categories": [
+      "Champions By Year > 1937",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7078.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7081.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7082.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "417",
+    "name": "1939 World Series Championship Ring - New York Yankees - October, 1939",
+    "sku": "WS039",
+    "price": 35,
+    "description": "Finally embracing a new, modern design to celebrate their final of four consecutive wins, the 1939 Yankees ring features a square bright gold design with ornate, dark borders, a light yellow central stone set against a dazzling, patterned diamond shape of small gold dots that make up three diamond shapes within each other. Outside the diamond is a laurel wreath that wraps around it in an oval shape, and “NEW YORK YANKEES WORLD CHAMPIONS\" is engraved within a circular border outside this. The shoulders include baseball imagery and decorative filigree, creating a bold and detailed championship piece representing the peak of Yankees dominance.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated Cincinnati Reds (4–0)\r\\n<strong>Series Standout:</strong> Joe DiMaggio — Center Fielder</p>\r\\nThe Yankees completed a four-year championship run in 1939, sweeping the Reds. Joe DiMaggio led the offence, while the pitching staff dominated. This marked one of baseball’s greatest dynasties, and setting an incredibly intimidating performance standard to beat within MLB.",
+    "categories": [
+      "Champions By Year > 1939",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "All Time Greats > Lou Gehrig (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7774.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7775.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7776.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "418",
+    "name": "1941 World Series Championship Ring - New York Yankees - October, 1941",
+    "sku": "WS041",
+    "price": 35,
+    "description": "Continuing the classic early Yankees championship style seen across their 1923, 1927, 1928, 1932, 1936, 1937, and 1938 rings, the 1941 New York Yankees World Series ring uses an updated oval pale-gold face with a slightly wider shape than the earlier versions. At the centre sits a slightly smaller circular clear stone, framed by a thin engraved gold border and the familiar sun-ray-like spikes radiating outward across the oval centre. Around this sits a finer, more intricate laurel wreath border than the earlier Yankees versions, followed by the outermost text border engraved “NEW YORK YANKEES WORLD CHAMPIONS” around the face. Unlike some of the earlier related Yankees rings, this face has no dark backing, giving it a cleaner all-gold appearance. Both shoulders are identical, showing a recessed panel filled with small raised gold dots, a large eagle with wings spread around an upright American flag body, “NEW YORK” banners above the wings, a baseball at the top, and “1941” engraved at the bottom. The repeated shoulder design ties it directly to the Yankees’ earlier dynasty-era rings, with the main differences here being the wider face, more delicate laurel detail, cleaner gold face colouring, and updated year.",
+    "shortDescription": "<p data-start=\"0\" data-end=\"292\"><strong data-start=\"43\" data-end=\"54\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"105\" data-end=\"108\" /><strong data-start=\"108\" data-end=\"126\">Series Result:</strong> New York Yankees defeated Brooklyn Dodgers (4–1)<br data-start=\"175\" data-end=\"178\" /><strong data-start=\"178\" data-end=\"198\">Series Standout:</strong> Joe DiMaggio — Center Fielder; key contributors: Charlie Keller, Red Ruffing, Tommy Henrich</p>\r\\n<p data-start=\"294\" data-end=\"1591\">Claiming their fifth championship in six seasons and their ninth overall, the 1941 New York Yankees World Series title reinforced the franchise’s growing hold over baseball during the late-1930s and early-1940s. The Yankees won the series 4–1, so it was not a sweep, but they still controlled it convincingly after splitting the first two games and then taking the next three, with stronger pitching depth and more timely hitting than Brooklyn. Joe DiMaggio, although not engraved on this ring, is one of the biggest reasons this championship remains such an iconic piece of Yankees memorabilia: already an all-time great by this stage, he batted .364 in the series and had just completed his legendary 56-game hitting streak during the 1941 season, a record that still stands today. Charlie Keller and Tommy Henrich added major offensive support, while Red Ruffing won twice on the mound. This title also came in the middle of the Yankees’ transition from the Babe Ruth–Lou Gehrig era into the Joe DiMaggio-led dynasty, showing how completely the franchise had sustained its dominance. Within official World Series-era franchise history, the club competed as the New York Yankees throughout this period, after previously winning earlier titles under the same New York identity from 1923 onward.</p>",
+    "categories": [
+      "Champions By Year > 1941",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8057.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8058.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8059.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "419",
+    "name": "1943 World Series Championship Ring - New York Yankees - October, 1943",
+    "sku": "WS043",
+    "price": 35,
+    "description": "Returning to the classic early-dynasty appearance used throughout their championship wins from 1923 through 1938 — after the briefly modified 1941 version — the 1943 New York Yankees World Series ring reintroduces the identical oval pale-gold face with a large central circular clear stone framed by sun-ray-like spikes radiating across the oval centre. Surrounding this is the engraved laurel wreath border, followed by the outermost text border reading “NEW YORK YANKEES WORLD CHAMPIONS.” Both shoulders are identical, featuring a recessed panel filled with small raised gold dots, a large eagle with wings spread around an upright American flag body, “NEW YORK” banners above each wing, a baseball at the top, and “1943” engraved at the bottom. This design matches the Yankees’ championship rings from 1923, 1927, 1928, 1932, 1936, 1937, and 1938, with the only difference being the updated year. The return to this repeated style highlights the Yankees’ consistent dynasty-era aesthetic, before later design changes began appearing toward the late 1940s.",
+    "shortDescription": "<p data-start=\"0\" data-end=\"288\"><strong data-start=\"0\" data-end=\"40\">1943 World Series — New York Yankees</strong><br data-start=\"40\" data-end=\"43\" /><strong data-start=\"43\" data-end=\"54\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"105\" data-end=\"108\" /><strong data-start=\"108\" data-end=\"126\">Series Result:</strong> New York Yankees defeated St. Louis Cardinals (4–1)<br data-start=\"178\" data-end=\"181\" /><strong data-start=\"181\" data-end=\"201\">Series Standout:</strong> Spud Chandler — Pitcher; key contributors: Joe DiMaggio, Bill Dickey, Johnny Lindell</p>\r\\n<p data-start=\"290\" data-end=\"1596\">The 1943 New York Yankees captured their tenth World Series championship, defeating the St. Louis Cardinals 4–1 in a controlled series that saw New York take three straight games after splitting the opening two. This victory marked another chapter in the Yankees’ sustained dynasty of the late 1930s and 1940s, occurring just two years after their 1941 title. Spud Chandler dominated on the mound, winning two games and earning series standout honours, while Joe DiMaggio — already firmly established as one of baseball’s all-time greats — provided leadership and timely hitting despite wartime roster disruptions across the league. By this stage, DiMaggio had already won four championships (1936, 1937, 1938, 1939) and this victory became his fifth, before he would later add four more titles (1947, 1949, 1950, 1951), finishing his career with nine total championship rings. The Yankees’ ability to maintain dominance despite many players serving in World War II added to the historical significance of this title, making memorabilia from this era particularly notable among collectors. The franchise competed continuously as the New York Yankees throughout the World Series era, building a dynasty beginning with their first title in 1923 and expanding through multiple consecutive championship runs.</p>",
+    "categories": [
+      "Champions By Year > 1943",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7635.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7636.jpeg",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7638.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "420",
+    "name": "1947 World Series Championship Ring - New York Yankees - September-October, 1947",
+    "sku": "WS047",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1947 New York Yankees World Series ring returns to the exact classic design used throughout the franchise’s early championship era (1923–1947), excluding the very subtle one-year variation seen in 1941. The ring features an oval pale-gold face with a central circular clear stone framed by sun-ray-like engraved spikes that extend across the centre. Surrounding this is an engraved laurel wreath border, followed by an outer text border reading “NEW YORK YANKEES WORLD CHAMPIONS.” Both shoulders are identical, displaying a dark recessed panel with dotted gold background, a large eagle with wings spread forming around an American flag body, “NEW YORK” banners above each wing, a baseball at the top, and “1947” engraved at the bottom. Apart from the updated year, the design is identical to the 1923–1943 Yankees championship rings, reflecting the team’s tradition of maintaining consistent styling during their early dynasty years.</span>",
+    "shortDescription": "<p data-start=\"0\" data-end=\"271\"><strong data-start=\"0\" data-end=\"40\">1947 World Series — New York Yankees</strong><br data-start=\"40\" data-end=\"43\" /><strong data-start=\"43\" data-end=\"54\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"105\" data-end=\"108\" /><strong data-start=\"108\" data-end=\"126\">Series Result:</strong> New York Yankees defeated Brooklyn Dodgers (4–3)<br data-start=\"175\" data-end=\"178\" /><strong data-start=\"178\" data-end=\"198\">Series Standout:</strong> Joe DiMaggio — Center Fielder; key contributors: Yogi Berra, Spec Shea</p>\r\\n<p data-start=\"273\" data-end=\"1796\">The 1947 New York Yankees captured their 11th World Series championship in a tightly contested seven-game series against the Brooklyn Dodgers, marking the first Yankees–Dodgers World Series matchup and the beginning of one of baseball’s most famous rivalries. The Yankees jumped out early before the Dodgers fought back, forcing a decisive Game 7, where New York secured the title behind strong pitching from rookie Spec Shea and timely hitting from veteran leaders. Joe DiMaggio, already established as one of baseball’s all-time greats, played a pivotal role both offensively and defensively; by this point he had won six championships (1936, 1937, 1938, 1939, 1941, 1947) and would finish his career with nine total titles (adding 1949, 1950, and 1951). Rookie catcher Yogi Berra also appeared in his first World Series, beginning a legendary postseason career that would later define the Yankees’ late-1940s and 1950s dynasty. The series is also remembered historically for being the first World Series to feature Jackie Robinson, whose ground-breaking rookie season with Brooklyn added significant cultural importance. The Yankees’ victory marked their return to dominance following World War II interruptions and continued their multi-decade dynasty that spanned from the Babe Ruth era into the DiMaggio-led teams. The franchise has competed as the New York Yankees throughout modern World Series history after adopting the Yankees name in 1913, maintaining continuity as baseball’s most decorated championship club.</p>",
+    "categories": [
+      "Champions By Year > 1947",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7662.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7664.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "421",
+    "name": "1949 World Series Championship Ring - New York Yankees - October, 1949",
+    "sku": "WS049",
+    "price": 35,
+    "description": "The 1949 New York Yankees World Series ring introduces a subtly updated design while still closely resembling the franchise’s long-standing early championship style. The round pale-yellow gold face features a large central circular clear stone set within a gold diamond-shaped mount. Two vertical laurel leaves flank the diamond, enclosed by a circular gold border, followed by an outermost raised text border reading “NEW YORK YANKEES WORLD CHAMPIONS.” The shoulders are identical, each featuring a recessed black background filled with fine gold dot texturing that creates depth behind the raised motifs. At the top of each shoulder, “1949” appears inside a rectangular banner, followed by the classic Yankees baseball logo with “Yankees” script intersected by a bat topped with a crown. Engraved laurel leaves surround the central logo imagery. Although slightly modernised with deeper contrast and refined detailing, the overall composition remains consistent with the Yankees’ traditional early dynasty ring style.",
+    "shortDescription": "<p data-start=\"0\" data-end=\"287\"><strong data-start=\"43\" data-end=\"54\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"105\" data-end=\"108\" /><strong data-start=\"108\" data-end=\"126\">Series Result:</strong> New York Yankees defeated Brooklyn Dodgers (4–1)<br data-start=\"175\" data-end=\"178\" /><strong data-start=\"178\" data-end=\"198\">Series Standout:</strong> Tommy Henrich — Outfielder; key contributors: Joe DiMaggio, Allie Reynolds, Yogi Berra</p>\r\\n<p data-start=\"289\" data-end=\"1314\">The 1949 New York Yankees began another dominant dynasty by defeating the Brooklyn Dodgers 4–1, marking the first of five consecutive World Series championships (1949–1953). After splitting the opening two games, the Yankees won three straight, including a decisive Game 5 at Ebbets Field. Veteran superstar Joe DiMaggio played a crucial leadership role despite battling injuries; by this point he had already won seven championships (1936, 1937, 1938, 1939, 1941, 1947, 1949) and would finish his career with nine total titles (adding 1950 and 1951). Tommy Henrich delivered key hits, including the walk-off home run in Game 1, while pitchers Allie Reynolds and Vic Raschi helped control the series. The victory marked the Yankees’ 12th championship overall and represented the transition from the DiMaggio-led teams into a new era that would later be defined by players like Yogi Berra. The franchise had competed as the New York Yankees since 1913, maintaining continuity as baseball’s most successful championship club.</p>",
+    "categories": [
+      "Champions By Year > 1949",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7650.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7652.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7651.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "422",
+    "name": "1950 World Series Championship Ring - New York Yankees - October, 1950",
+    "sku": "WS050",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1950 New York Yankees World Series ring marks the second ring in the five-year championship streak (1949–1953) and introduces a subtly updated yet highly consistent design building directly on the 1949 style. The round face is crafted in bright yellow-gold with a black enamel background, giving the ring a slightly more Art-Deco appearance. A large circular clear stone sits in the centre, mounted within an ornate gold diamond-shaped setting. Two vertical lines of gold laurel leaves flank the diamond, all positioned against a central oval-shaped black enamel field. The outer border reads “NEW YORK YANKEES WORLD CHAMPIONS” in gold lettering set against black enamel, maintaining the franchise’s traditional circular text layout. Both shoulders are identical and closely mirror the 1949 design, though the background is now solid black enamel rather than a dotted recessed texture. At the top of each shoulder, “1950” is engraved in gold, followed by a circular baseball logo featuring the Yankees script intersected by the iconic bat-and-crown motif. Engraved gold leaf details fill the remaining shoulder panels. While slightly modernised with stronger enamel contrast, the overall structure remains highly consistent with the Yankees’ late-1940s championship ring style.</span>",
+    "shortDescription": "<span style=\"font-weight: 400;\"> </span><b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League — AL East*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> New York Yankees defeated Philadelphia Phillies (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Whitey Ford — Pitcher; key contributors: Joe DiMaggio, Yogi Berra</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1950 New York Yankees secured their second championship in what would become a run of five consecutive titles (1949–1953), sweeping the Philadelphia Phillies 4–0. The clean sweep — known as a “World Series sweep” — reflected the Yankees’ overwhelming pitching dominance, with rookie Whitey Ford winning two games and allowing just one run across his appearances. Veteran superstar Joe DiMaggio, nearing the end of his Hall of Fame career, continued to play a leadership role; by 1950 he had now won eight championships (1936, 1937, 1938, 1939, 1941, 1947, 1949, 1950) and would finish with nine total titles after adding one more in 1951. Yogi Berra’s clutch hitting and the Yankees’ deep pitching rotation contributed heavily to the decisive series result. This victory reinforced the Yankees’ post-war dynasty and demonstrated their sustained dominance transitioning from the DiMaggio era into the Berra-led core that would define the early 1950s. The franchise has competed as the New York Yankees since 1913, maintaining continuity as the most successful championship team in MLB history.</span>",
+    "categories": [
+      "Champions By Year > 1950",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7512.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7513.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7514.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "423",
+    "name": "1951 World Series Championship Ring - New York Yankees - October, 1951",
+    "sku": "WS051",
+    "price": 35,
+    "description": "The 1951 New York Yankees World Series ring returns to the exact design introduced in 1949. The round pale-yellow gold face features a large circular clear stone set within a gold diamond-shaped mount, flanked by two vertical laurel leaf engravings and encircled by a raised border reading “NEW YORK YANKEES WORLD CHAMPIONS.” Both shoulders are identical, with a recessed black enamel background and bright gold detailing. At the top of each shoulder, “1951” is engraved above the Yankees baseball logo — the “Yankees” script intersected by the bat-and-crown motif — surrounded by engraved laurel leaves. Apart from the updated year, the ring is identical to the 1949 design, reflecting continuity across the Yankees’ five-year championship dynasty.",
+    "shortDescription": "<p data-start=\"0\" data-end=\"287\"><strong data-start=\"43\" data-end=\"54\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"105\" data-end=\"108\" /><strong data-start=\"108\" data-end=\"126\">Series Result:</strong> New York Yankees defeated New York Giants (4–2)<br data-start=\"174\" data-end=\"177\" /><strong data-start=\"177\" data-end=\"197\">Series Standout:</strong> Phil Rizzuto — Shortstop; key contributors: Joe DiMaggio, Mickey Mantle, Allie Reynolds</p>\r\\n<p data-start=\"289\" data-end=\"1268\">The 1951 New York Yankees secured their third consecutive championship — the midpoint of their five-title streak (1949–1953) — by defeating the New York Giants 4–2 in the first all–New York World Series since 1937. The Yankees dropped Game 1 before winning four of the next five games, including two dominant pitching performances by Allie Reynolds. Veteran Joe DiMaggio, playing in his final MLB season, provided leadership and key offensive contributions; by this point he had won all nine of his career championships (1936, 1937, 1938, 1939, 1941, 1947, 1949, 1950, 1951), retiring as one of baseball’s most decorated players. Rookie Mickey Mantle also appeared in his first World Series, marking the beginning of a new Yankees dynasty figure. Phil Rizzuto earned MVP honours for his consistent hitting and defensive play. The victory reinforced the Yankees’ post-war dominance and marked the closing chapter of the DiMaggio era while transitioning to the Mantle-Berra core.</p>",
+    "categories": [
+      "Champions By Year > 1951",
+      "All Time Greats > Joe Dimaggio (MLB)",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7665.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7666.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7667.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "424",
+    "name": "1952 World Series Championship Ring - New York Yankees - October, 1952",
+    "sku": "WS052",
+    "price": 35,
+    "description": "The ring carries a classic gold circular face with a bold central diamond-shaped setting, holding a clear stone that immediately draws attention. Around it, raised lettering reads “NEW YORK YANKEES WORLD CHAMPIONS”, framed by subtle laurel accents that give it that timeless championship feel. The shoulders lean heavily into traditional baseball artistry — featuring the interlocking NY logo, bats, and ball imagery, all carved into a textured gold background that gives depth and contrast. It’s clean, confident, and unmistakably Yankees — not overly flashy, but commanding in its simplicity, much like the dynasty it represents.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated Brooklyn Dodgers (4–3)\r\\n<strong>World Series MVP:</strong> No official MVP (Series standout: Johnny Mize — First Baseman; key presence: Mickey Mantle — Outfielder)</p>\r\\nThe Yankees edged out the Brooklyn Dodgers in a tight seven-game series, securing their 5th consecutive World Series title — one of the most dominant stretches in sports history. Mickey Mantle (#7), still early in his career, was beginning to emerge as the next Yankees icon, while veterans like Johnny Mize delivered in clutch moments. This championship further cemented the Yankees as baseball’s gold standard dynasty.",
+    "categories": [
+      "Champions By Year > 1952",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6442.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6443.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6444.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "426",
+    "name": "1953 World Series Championship Ring - New York Yankees - September-October, 1953",
+    "sku": "WS053",
+    "price": 35,
+    "description": "The 1953 New York Yankees World Series ring uses the exact same design first introduced in 1949 and repeated in 1951. The round pale-yellow gold face features a central clear stone set in a diamond-shaped mount with laurel leaves flanking the centre and the outer border engraved “NEW YORK YANKEES WORLD CHAMPIONS.” Both shoulders are identical, featuring a black enamel background with gold engraved details. “1953” appears at the top of each shoulder above the Yankees baseball logo with bat-and-crown motif, surrounded by engraved leaves. Apart from the year change, the ring is identical to the 1949 and 1951 designs, continuing the uniform appearance across the Yankees’ championship streak.",
+    "shortDescription": "<p data-start=\"2028\" data-end=\"2316\"><strong data-start=\"2071\" data-end=\"2082\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"2133\" data-end=\"2136\" /><strong data-start=\"2136\" data-end=\"2154\">Series Result:</strong> New York Yankees defeated Brooklyn Dodgers (4–2)<br data-start=\"2203\" data-end=\"2206\" /><strong data-start=\"2206\" data-end=\"2226\">Series Standout:</strong> Billy Martin — Second Baseman; key contributors: Mickey Mantle, Yogi Berra, Whitey Ford</p>\r\\n<p data-start=\"2318\" data-end=\"3043\">The 1953 New York Yankees captured their fifth consecutive World Series championship — completing the remarkable 1949–1953 dynasty — by defeating the Brooklyn Dodgers 4–2. After splitting the first two games, the Yankees took control with strong pitching and clutch hitting, clinching the series in Game 6. Mickey Mantle emerged as a key offensive force, continuing his rise as the franchise’s next superstar following Joe DiMaggio’s retirement, while Billy Martin’s Game 6 RBI sealed the championship. This victory marked the Yankees’ 16th overall title and completed one of the most dominant stretches in MLB history. The dynasty reinforced New York’s long-term supremacy and transitioned fully into the Mantle-Berra era.</p>",
+    "categories": [
+      "Champions By Year > 1953",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7629-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7628.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7627.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "427",
+    "name": "1956 World Series Championship Ring - New York Yankees - October, 1956",
+    "sku": "WS056",
+    "price": 35,
+    "description": "The 1956 New York Yankees World Series ring again uses the same design established in 1949 and repeated in 1951 and 1953. The round pale-yellow gold face features a central clear stone set within a diamond-shaped mount, surrounded by laurel leaves and an outer text border reading “NEW YORK YANKEES WORLD CHAMPIONS.” Both shoulders are identical, featuring black enamel backgrounds with gold detailing. “1956” is engraved at the top of each shoulder above the Yankees baseball logo and bat-and-crown motif, surrounded by engraved leaves. The only variation from previous versions is the updated year, maintaining consistency with the Yankees’ established mid-century championship ring style.",
+    "shortDescription": "<p data-start=\"3750\" data-end=\"4029\"><strong data-start=\"3793\" data-end=\"3804\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"3855\" data-end=\"3858\" /><strong data-start=\"3858\" data-end=\"3876\">Series Result:</strong> New York Yankees defeated Brooklyn Dodgers (4–3)<br data-start=\"3925\" data-end=\"3928\" /><strong data-start=\"3928\" data-end=\"3948\">Series Standout:</strong> Don Larsen — Pitcher; key contributors: Mickey Mantle, Yogi Berra, Whitey Ford</p>\r\\n<p data-start=\"4031\" data-end=\"4728\">The 1956 New York Yankees captured their 18th championship by defeating the Brooklyn Dodgers 4–3 in a dramatic seven-game series. The series is most famously remembered for Don Larsen’s perfect game in Game 5 — the only perfect game in World Series history — which became one of the most iconic moments in baseball. The Yankees lost Game 1 before trading wins with Brooklyn, eventually securing the title in Game 7. Mickey Mantle provided consistent offensive production, while Yogi Berra’s defensive leadership and catching performance were crucial. This championship marked the Yankees’ return to the top following Brooklyn’s 1955 victory and reinforced their continued dominance in the 1950s.</p>",
+    "categories": [
+      "Champions By Year > 1956",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7629.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7630.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7631.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "428",
+    "name": "1958 World Series Championship Ring - New York Yankees - October, 1958",
+    "sku": "WS058",
+    "price": 35,
+    "description": "The 1958 New York Yankees World Series ring continues the same design established in 1949 and repeated in 1951, 1953, and 1956. The round pale-yellow gold face features a large circular clear stone set within a gold diamond-shaped mount, flanked by vertical laurel leaf engravings and encircled by a raised border reading “NEW YORK YANKEES WORLD CHAMPIONS.” Both shoulders are identical, featuring a recessed black enamel background with bright gold engraved detailing. At the top of each shoulder, “1958” is engraved above the Yankees baseball logo — the “Yankees” script intersected by the bat-and-crown motif — surrounded by engraved laurel leaves. Aside from the updated year, the ring remains identical to the established 1949-style design, maintaining visual continuity across the Yankees’ mid-century championship era.",
+    "shortDescription": "<p data-start=\"0\" data-end=\"279\"><strong data-start=\"43\" data-end=\"54\">League:</strong> Major League Baseball (American League — AL East*)<br data-start=\"105\" data-end=\"108\" /><strong data-start=\"108\" data-end=\"126\">Series Result:</strong> New York Yankees defeated Milwaukee Braves (4–3)<br data-start=\"175\" data-end=\"178\" /><strong data-start=\"178\" data-end=\"198\">Series Standout:</strong> Bob Turley — Pitcher; key contributors: Mickey Mantle, Whitey Ford, Yogi Berra</p>\r\\n<p data-start=\"281\" data-end=\"1348\">The 1958 New York Yankees reclaimed the World Series title by defeating the Milwaukee Braves 4–3 in a dramatic comeback series, avenging their loss to the same opponent in 1957. The Yankees fell behind 3–1, putting them on the brink of elimination, before rallying to win three consecutive games — one of the most notable World Series comebacks of the era. Bob Turley dominated late in the series, earning MVP honours after pitching brilliantly in relief and starting roles. Mickey Mantle continued his role as the franchise’s marquee superstar, already holding championships in 1951, 1952, 1953, 1956, and now 1958, eventually finishing his career with seven total titles (adding 1961 and 1962). Whitey Ford and Yogi Berra also played key roles, helping the Yankees maintain their dominance throughout the 1950s. This victory marked New York’s 19th championship overall and reinforced the Mantle-led dynasty following the DiMaggio era. The franchise has competed as the New York Yankees since 1913, maintaining continuity as MLB’s most decorated championship club.</p>",
+    "categories": [
+      "Champions By Year > 1958",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7656.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7657.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7658.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "429",
+    "name": "1961 World Series Championship Ring- New York Yankees - October, 1961",
+    "sku": "WS061",
+    "price": 35,
+    "description": "The ring presents a classic gold square face with black enamel border, framing a central stone within a geometric diamond setting. “NEW YORK YANKEES WORLD CHAMPIONS” encircles the face, while the shoulders feature interlocking NY logos, baseball stitching, and laurel-style detailing. The textured gold background adds depth, creating a traditional yet commanding championship look fitting the Yankees’ historic season.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated Cincinnati Reds (4–1)\r\\n<strong>Series Standout:</strong> Whitey Ford — Pitcher; key contributors: Mickey Mantle, Roger Maris</p>\r\\nThe 1961 Yankees featured one of baseball’s most famous lineups, highlighted by Roger Maris’ 61 home runs and Mickey Mantle’s MVP-calibre season. The Yankees defeated Cincinnati in five games, securing their 19th World Series title. Whitey Ford dominated on the mound, while the powerful offence overwhelmed the Reds, reinforcing the Yankees’ long-standing dynasty.",
+    "categories": [
+      "Champions By Year > 1961",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7643.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7644.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7645.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "430",
+    "name": "1962 World Series Championship Ring - New York Yankees - October, 1962",
+    "sku": "WS062",
+    "price": 35,
+    "description": "With another back-to-back win, the 1962 New York Yankees ring mirrors the prior year’s elegant style with a gold square face and central stone, surrounded by black enamel reading “NEW YORK YANKEES WORLD CHAMPIONS.” The shoulders display interlocking NY insignia and baseball-themed engravings, set against textured gold panels. The consistent design reinforces the Yankees’ back-to-back championship run.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> New York Yankees defeated San Francisco Giants (4–3)\r\\n<strong>Series Standout:</strong> Ralph Terry — Pitcher; key contributors: Mickey Mantle, Roger Maris</p>\r\\nYet again, the New York Yankees proved their titan-like status within Major League Baseball, with another back-to-back win in 1961-1962, after only a 2-year break from their last World Series win. The Yankees edged the Giants in a dramatic seven-game series, highlighted by Ralph Terry’s complete-game victory in Game 7. Mantle battled injuries but still contributed, while the Yankees captured their 20th World Series title, continuing their dominance into the early 1960s.",
+    "categories": [
+      "Champions By Year > 1962",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7690.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7692.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7691.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "438",
+    "name": "1903 World Series Championship Ring - Boston Americans (Red Sox) - October, 1903",
+    "sku": "WS003",
+    "price": 35,
+    "description": "Unlike modern gemstone-heavy rings, this 1903 championship piece features a classic gold signet-style design with a black enamel face. The centre displays “B A” lettering for Boston Americans, flanked by decorative baseball imagery. “WORLD’S CHAMPIONS” curves around the top border, with “1903” engraved beneath. The shoulders feature vintage-style baseball graphics — including a glove and ball — along with “GROUNDS” references tied to early stadium naming. The simple, bold enamel contrast and traditional gold finish reflect the understated elegance of baseball’s very first championship ring.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (American League)\r\\n<strong>Series Result:</strong> Boston Americans defeated Pittsburgh Pirates (5–3)\r\\n<strong>World Series MVP:</strong> No official MVP (Series standout: Cy Young — Pitcher)</p>\r\\nThe inaugural 1903 World Series marked the first championship between the American League and National League, with the Boston Americans defeating the Pittsburgh Pirates five games to three. Pitcher Cy Young delivered key performances, while Bill Dinneen threw three complete-game victories, helping Boston secure the first-ever title. This early championship laid the foundation for modern baseball dynasties, and player engravings from this era often reflect foundational figures like Young or Dinneen.",
+    "categories": [
+      "Champions By Year > 1903",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6840.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6843.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6844.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "439",
+    "name": "1905 World Series Championship Ring - New York (San Fransisco) Giants - October, 1905",
+    "sku": "WS005",
+    "price": 35,
+    "description": "The ring features a silver-toned signet design with deep blue enamel highlighting “NY GIANTS” across a baseball-style centre. “WORLD SERIES POLO GROUNDS” wraps around the outer border, referencing the Giants’ home stadium. The shoulders include MCGRAW lettering with vintage baseball graphics, while the opposite side displays engraved commemorative text tied to the 1905 championship. The bold blue enamel and classic baseball stitching motif capture the early era simplicity of baseball’s second official World Series.",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> New York Giants defeated Philadelphia Athletics (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Christy Mathewson — Pitcher)</span>\r\\n\r\\nAfter no World Series in 1904, due to the New York Giants refusing to play the American League champion Boston Americans (manager John McGraw believed the AL was inferior), baseball resumed in 1905. The Giants returned and dominated the Philadelphia Athletics, led by Christy Mathewson’s three shutouts. This MCGRAW engraving reflects player-manager John McGraw’s leadership during one of baseball’s earliest dominant pitching performances.",
+    "categories": [
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6473.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6474.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6475.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "440",
+    "name": "1906 World Series Championship Ring - Chicago White Sox - October, 1906",
+    "sku": "WS006",
+    "price": 35,
+    "description": "The ring features a gold signet-style face with a central baseball graphic and a small stone placed in the middle. “CHICAGO CHAMPIONS” curves around the top and bottom in black enamel. The shoulders display 1906 detailing, including vintage baseball imagery and team symbolism. The design uses bold gold and black contrast, giving the ring a classic early-20th-century championship look.",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Chicago White Sox defeated Chicago Cubs (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Ed Walsh — Pitcher)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Known as the “Hitless Wonders,” the Chicago White Sox shocked the heavily favoured Cubs in one of the biggest upsets in baseball history. Pitcher Ed Walsh delivered key performances, while the team relied on speed and defence. This championship cemented the White Sox’s early reputation for gritty play.</span>",
+    "categories": [
+      "Champions By Year > 1906",
+      "Your City > Chicago Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Chicago White Sox",
+      "Teams > Chicago White Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7051.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7052.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7053.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "441",
+    "name": "1907 World Series Championship Ring - Chicago Cubs - October, 1907",
+    "sku": "WS007",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a gold and silver-toned design with a globe motif at centre and small yellow and white stone accents depicted in the mouth of the Cubs mascot seen in the middle of the globe in gold. “WORLD’S CHAMPIONS 1907” frames the face. The shoulder displays a Chicago Cubs emblem in blue enamel, while the opposite panel includes textured detailing referencing the championship season. The simple globe design reflects baseball’s early “world champion” branding.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Chicago Cubs defeated Detroit Tigers (4–0–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Mordecai Brown — Pitcher)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Chicago Cubs began one of baseball’s earliest dynasties, sweeping the Detroit Tigers behind dominant pitching and defence. Mordecai “Three Finger” Brown led the staff, while player-manager Frank Chance anchored the team. This marked the Cubs’ first World Series championship.</span>",
+    "categories": [
+      "Champions By Year > 1907",
+      "League > MLB - Major League Baseball > NL Central Division > Chicago Cubs",
+      "Teams > Chicago Cubs (MLB)",
+      "Your City > Chicago Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6835.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6836.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "442",
+    "name": "1908 World Series Championship Ring - Chicago Cubs - October, 1908 (The Billy Goat Curse)",
+    "sku": "WS008",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a gold signet-style design with a central square-set stone surrounded by black enamel. “WORLD CHAMPIONS 1908” wraps around the circular face, and the centre features a gold diamond shape with a large circular diamond stone in the middle. The shoulders include CUBS lettering and vintage baseball imagery. The clean, bold design reflects the Cubs’ back-to-back championship era.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Chicago Cubs defeated Detroit Tigers (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Orval Overall — Pitcher)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Cubs repeated as champions in 1908, their last World Series victory for over a century — later tied to the famous Billy Goat Curse, which fans believed prevented future championships until 2016. Pitcher Orval Overall dominated the series, helping secure Chicago’s second consecutive title.</span>",
+    "categories": [
+      "Champions By Year > 1908",
+      "League > MLB - Major League Baseball > NL Central Division > Chicago Cubs",
+      "Teams > Chicago Cubs (MLB)",
+      "Your City > Chicago Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6837.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6839.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6838.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "443",
+    "name": "1909 World Series Championship Ring - Pittsburgh Pirates - October, 1909",
+    "sku": "WS009",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a gold signet-style face with blue enamel accents and a central stone set within a diamond-shaped design. “WORLD’S CHAMPIONS 1909” surrounds the face. One shoulder engraved PITTSBURGH PIRATES includes team lettering, while the opposite side displays WAGNER with vintage baseball graphics. The blue-and-gold colour scheme, and repeated design motif of a gold diamond shape with a large sparkling stone centrally placed within it highlights Pittsburgh’s early team identity.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Pittsburgh Pirates defeated Detroit Tigers (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Honus Wagner — Shortstop)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Pittsburgh Pirates captured their first World Series title behind the legendary play of Honus Wagner. Wagner hit .333 in the series and delivered key defensive plays, cementing his status as one of baseball’s greatest players. This WAGNER engraving reflects the Hall of Fame shortstop’s impact.</span>",
+    "categories": [
+      "Champions By Year > 1909",
+      "All Time Greats > Honus Wagner (MLB)",
+      "League > MLB - Major League Baseball > NL Central Division > Pittsburgh Pirates",
+      "Teams > Pittsburgh Pirates (MLB)",
+      "Your City > Pittsburgh Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7060.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7061.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7062.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "444",
+    "name": "1910 World Series Championship Ring - Oakland A's (Philadelphia) - October, 1910",
+    "sku": "WS010",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a gold signet-style design with a blue enamel centre displaying “PA” for Philadelphia Athletics. “PHILADELPHIA ATHLETICS WORLD SERIES 1910” wraps around the border. The shoulders feature engraved commemorative text referencing the championship. The bold blue enamel and traditional gold finish give the ring a classic early baseball championship look. </span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Philadelphia Athletics defeated Chicago Cubs (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Eddie Collins — Second Baseman)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Philadelphia Athletics captured their first championship of the Connie Mack dynasty, defeating the Cubs behind strong pitching and timely hitting. Eddie Collins led the offence, while Chief Bender dominated on the mound. This marked the beginning of one of baseball’s early powerhouse teams.</span>",
+    "categories": [
+      "Champions By Year > 1910",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7207.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7208.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7209.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "445",
+    "name": "1911 World Series Championship Ring - Oakland A's (Philadephia) - October, 1911",
+    "sku": "WS011",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a gold signet-style design with deep blue enamel surrounding a central emblem of a white elephant touching a large baseball, the early Athletics mascot. “WORLD SERIES PHILADELPHIA ATHLETICS 1911” wraps around the border, while the shoulders display engraved commemorative text referencing the championship and game details. The elephant symbol and bold blue enamel give the ring a distinctive early-Athletics identity.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Philadelphia Athletics defeated New York Giants (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Frank “Home Run” Baker — Third Baseman)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Philadelphia Athletics captured their second championship in three years, defeating John McGraw’s New York Giants. Frank Baker delivered clutch home runs, while pitcher Chief Bender controlled the series. Connie Mack’s Athletics were quickly becoming baseball’s first sustained powerhouse.</span>",
+    "categories": [
+      "Champions By Year > 1911",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7678.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7677.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7676.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "446",
+    "name": "1912 World Series Championship Ring - Boston Red Sox  - October, 1912",
+    "sku": "WS012",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a gold signet face with baseball stitching motif, emphasised by a large engraved baseball in the middle with \"1912\" printed on it, and “BOSTON RED SOX WORLD CHAMPIONS” surrounding the centre. The shoulders include an engraving of \"SPEAKER\", celebrating the series standout Tris Speaker, and crossed baseball imagery, along with decorative wreath patterns symbolising victory. The classic gold finish and simple raised lettering reflect the early Fenway championship era.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Red Sox defeated New York Giants (4–3–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Tris Speaker — Center Fielder)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Red Sox won a dramatic eight-game series — the first played at Fenway Park. Tris Speaker (center fielder) delivered strong hitting and defence, while Smoky Joe Wood pitched key games. The SPEAKER engraving reflects one of the Red Sox’s early legends, Tris Speaker, and a cornerstone of their first championship at Fenway.</span>",
+    "categories": [
+      "Champions By Year > 1912",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6827.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6828.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6829.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "447",
+    "name": "1913 World Series Championship Ring - Oakland A's (Philadelphia) - October, 1913",
+    "sku": "WS013",
+    "price": 35,
+    "description": "Featuring one of the earliest championship ring designs, the 1913 ring displays a circular yellow-gold face with a black enamel centre featuring their iconic elephant logo in raised white enamel, outlined in gold with a gold “A” engraved on its body. Within the black enamel backing in the centre of the ring face, gold writing surrounds the elephant logo, including “ATHLETICS” at the top, “WORLD SERIES” on the left and right sides of the bottom, with “1913” in the middle of the bottom. Surrounding the black enamel backing is a detailed gold border, followed by a white enamel border on the outer edges of the ring face. The ring face uses engraved metal and enamel rather than stones, reflecting the era’s simpler construction. One shoulder is engraved “CHIEF BENDER” (starting pitcher, key series contributor) at the top of a dark recessed panel with raised gold dots creating a sense of depth, texture and contrast, with the Athletics and Giants logos in blue enamel side by side, above their series scores (4-1). The opposite shoulder has gold writing set against a black and gold-spotted background within the panel, with the writing that fills up the space mentioning championship details such as the team they beat (New York Giants), their series score, and the year. The minimalistic gold construction and enamel detailing highlight the early World Series championship style.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL East*)\r\\n<strong>Series</strong> <strong>Result</strong>: Philadelphia Athletics defeated New York Giants (4–1)\r\\n<strong>Series</strong> <strong>Standout</strong>: Eddie Collins — Second Baseman; key contributors: Chief Bender, Home Run Baker\r\\n\r\\nComing back with another win in 1913, with their last (back-to-back) wins only a couple years prior (1910-1911), the Philadelphia Athletics (later known as Oakland Athletics) cemented their early 1910’s legacy. Chief Bender, whose name appears on this ring, was one of the dominant pitchers of the 1913 series, helping lead Connie Mack’s Philadelphia Athletics to their third championship in four seasons. Bender, along with fellow ace Eddie Plank, controlled the Giants’ lineup, while Home Run Baker and Eddie Collins provided offensive support. The franchise, originally founded in Philadelphia in 1901, later moved to Kansas City in 1955 and then to Oakland in 1968, making this one of the earliest championships in Athletics history.",
+    "categories": [
+      "Champions By Year > 1913",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7948.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7950.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7951.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7949.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "448",
+    "name": "1914 World Series Championship Ring - Atlanta Braves (Boston) - October, 1914",
+    "sku": "WS014",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1914 Atlanta Braves World Series ring features a yellow-gold diamond-shaped face, with a red enamel diamond-shaped centre with a white enamel and gold detailed baseball with “1914” written in gold-outlined black enamel in the centre. Following this is a diamond-shaped black enamel border that reads “WORLD SERIES” on the top sides of the diamond and “BOSTON BRAVES” on the bottom sides in gold outlined writing, with a gold-outlined in each corner of the black enamel diamond-shaped border. Both shoulders of the ring feature dark recessed panels with yellow-gold dots making a textured background, and raised gold engraved details. One shoulder is engraved “RABBIT MARANVILLE” (shortstop, defensive cornerstone) above a large black enamel “B”, and a large red enamel “A” followed by the season scores (4-0) to emphasise the Boston Braves’ sweep of Philadelphia (now Oakland) Athletics. The opposite shoulder includes a dense text panel recounting the championship season in raised gold lettering. The angular face and bold enamel contrast give the ring a distinctive early-era appearance.</span>",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL East*)\r\\n<strong>Series</strong> <strong>Result</strong>: Boston Braves defeated Philadelphia Athletics (4–0)\r\\n<strong>Series</strong> <strong>Standout</strong>: Johnny Evers — Second Baseman; key contributors: Rabbit Maranville, Dick Rudolph\r\\n\r\\nThe Boston Braves (now known as the Atlanta Braves) made their first victorious win in 1914 before they would endure a 43-year drought (with their next win in 1957 as the ‘Milwaukee Braves’ during a brief relocation). Rabbit Maranville, whose name appears on this ring, was a defensive standout at shortstop during the Braves’ improbable 1914 championship run. Known as the “Miracle Braves,” Boston went from last place in July to sweeping the heavily favoured Athletics in four games. Pitchers Dick Rudolph and Bill James dominated the series, while Johnny Evers earned MVP-style recognition for leadership. The franchise began as the Boston Braves, moved to Milwaukee in 1953, and relocated to Atlanta in 1966.",
+    "categories": [
+      "Champions By Year > 1914",
+      "League > MLB - Major League Baseball > NL East Division > Atlanta Braves",
+      "Teams > Atlanta Braves (MLB)",
+      "Your City > Atlanta Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7939.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7940.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7941.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "449",
+    "name": "1915 World Series Championship Ring - Boston Red Sox - October, 1915 *BABE RUTH RING 1*",
+    "sku": "WS015",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a bold gold face with red enamel reading “BOSTON RED SOX WORLD SERIES 1915,” with crossed bats and a baseball graphic at centre. The shoulders display the beginning of the legendary Babe Ruth's successful career, with \"BABE RUTH\" engraved on one side, with an early Red Sox insignia and textured black enamel background. The red-and-gold colour scheme mirrors Boston’s team colours and highlights Ruth’s first championship season.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Red Sox defeated Philadelphia Phillies (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Babe Ruth — Pitcher)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Red Sox defeated the Philadelphia Phillies behind strong pitching, including a young Babe Ruth, who contributed on the mound early in his career. This marked Ruth’s first championship, before his transition into baseball’s most famous slugger.</span>",
+    "categories": [
+      "Champions By Year > 1915",
+      "All Time Greats > Babe Ruth (MLB)",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6624.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6627.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6628.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "450",
+    "name": "1916 World Series Championship Ring - Boston Red Sox - October, 1916 *BABE RUTH RING 2*",
+    "sku": "WS016",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">Babe Ruth's second ring features a diamond-shaped red and blue enamel face with “BOSTON RED SOX WORLD SERIES” surrounding a repeated motif of a central baseball graphic, with the year printed on it again (1916). The shoulders include a BABE RUTH engraving alongside team insignia and textured detailing. The red enamel and geometric shape create a bold vintage championship look, and emphasise the origins of Ruth's legendary dynasty.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Red Sox defeated Brooklyn Robins (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Babe Ruth — Pitcher)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Red Sox achieved back-to-back wins in 1915-1916, with this being their third win in the World Series so far, becoming the first team to have this many championship wins. Key to their success, Babe Ruth dominated on the mound and set a World Series scoreless innings record. Boston continued its early dynasty run before Ruth’s eventual move to the Yankees.</span>",
+    "categories": [
+      "Champions By Year > 1916",
+      "All Time Greats > Babe Ruth (MLB)",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6621.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6622.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6623.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "451",
+    "name": "1917 World Series Championship Ring - Chicago White Sox - October, 1917",
+    "sku": "WS017",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1917 Chicago White Sox ring has a simpler, elegant design that reflects early championship ring styles, featuring a circular yellow-gold and black enamel face with “WORLD’S CHAMPIONS 1917” engraved in gold within a gold-outlined outer border against the black enamel face, with a square clear stone on either side of the year written at the bottom. Within the circular centre, a large gold diamond is seen, with small gold dots lining the edges of the diamond shape, and a large circular diamond in the centre with 4 small gold dots surrounding it in the corners of a diamond shape. Both shoulders display black enamel panels with simplistic gold engraving and white and red enamel details to stand out against the background. One shoulder is engraved “SHOELESS JOE JACKSON” (outfielder, key offensive contributor) in gold above a stylised “Sox” logo, featuring a white enamel sock outlined in gold, set against a gold and black globe design and bordered by a red enamel and thin gold-outlined circle, followed by a gold graphic of crossing bats at the bottom. The opposite shoulder displays additional White Sox graphics, such as a black enamel and gold-outlined “S” overlaying a white enamel circle in the centre, small gold text written above this encased in a rectangular banner of “WHITE SOX”, “1917” engraved in gold at the top of the black enamel panel, and a gold baseball graphic at the bottom. The combination of enamel and single-stone centrepiece reflects transitional early ring design.</span>",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: Chicago White Sox defeated New York Giants (4–2)\r\\n<strong>Series</strong> <strong>Standout</strong>: Eddie Cicotte — Pitcher; key contributors: Shoeless Joe Jackson, Happy Felsch\r\\n\r\\nComing back from an 11-year drought, the Chicago White Sox defeated the New York Giants 4-0 in the sixth game in 1917. Shoeless Joe Jackson, whose name appears on this ring, delivered one of the most memorable offensive performances of the series, batting .307 and driving in key runs. Eddie Cicotte and Red Faber anchored the pitching staff, helping Chicago capture its second championship. The White Sox dominated with strong pitching and timely hitting.\r\\n\r\\nUnfortunately, 'Shoeless Joe Jackson', Eddie Cicotte and Happy Felsch were later banned from competing in MLB for life due to their involvement in the infamous 1919 'Black Sox scandal' in which they were part of the group of 8 Chicago White Sox players <span style=\"font-weight: 400;\">that permanently tainted the team’s reputation by deliberately losing games for under-the-table gambling deals.</span>",
+    "categories": [
+      "Champions By Year > 1917",
+      "Your City > Chicago Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Chicago White Sox",
+      "Teams > Chicago White Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7204.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7205.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7206.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "452",
+    "name": "1918 World Series Championship Ring - Boston Red Sox - September, 1918 *BABE RUTH RING 3*",
+    "sku": "WS018",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The ring features a gold face with bold red and white enamel reading “WORLD SERIES RED SOX 1918 FENWAY PARK\", with sophisticated engraved details such as a pair of red socks (team emblem) and gold stars. The round ring itself is made to look like a baseball in the delicate gold stitching borders between the red and white enamel background. The shoulders display BABE RUTH engraving with Red Sox insignia and baseball imagery against dotted black and gold panels. The simple red-and-gold styling reflects Boston’s last championship of the pre-Yankees Ruth era.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Red Sox defeated Chicago Cubs (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>World Series MVP:</b><span style=\"font-weight: 400;\"> No official MVP (Series standout: Babe Ruth — Pitcher)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1918 championship became historic as Boston’s final title before the famous “Curse of the Bambino.” Babe Ruth pitched and hit, helping secure his third ring with Boston, and guided the Boston Red Sox to yet again holding the most titles in the series at this point (4) before his departure to the Yankees.</span>",
+    "categories": [
+      "Champions By Year > 1918",
+      "All Time Greats > Babe Ruth (MLB)",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6618.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6619.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6620.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "453",
+    "name": "1919 World Series Championship Ring - Cincinnati Reds - October, 1919",
+    "sku": "WS019",
+    "price": 35,
+    "description": "Debuting with their first win, the 1919 Cincinnati Reds World Series ring features a simple circular gold face with a large circular diamond in the centre set against a gold diamond with four gold dots in each corner of the shape, fit within a textured gold circle, followed by a raised engraved border that reads “WORLD’S CHAMPIONS 1919”, with the outermost border featuring raised gold laurel leaf engraving. The remainder of the band is plain polished gold with no shoulder engraving, reflecting extremely early championship ring styling. The minimal ornamentation emphasizes the central stone and engraved wreath design.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: Cincinnati Reds defeated Chicago White Sox (5–3)\r\\n<strong>Series</strong> <strong>Standout</strong>: Edd Roush — Outfielder; key contributors: Dutch Ruether, Pat Moran\r\\n\r\\nThe Cincinnati Reds captured their first championship in franchise history in 1919 (only going on to win their next title in 1940), defeating Chicago in a series later overshadowed by the ‘Black Sox scandal’, explained in the paragraphs below. Edd Roush led the offense while Dutch Ruether delivered strong pitching. The franchise began in Cincinnati in 1881 and remains one of baseball’s oldest clubs.\r\\n\r\\nForever changing gambling regulations for championship games, the notorious ‘Black Sox scandal’ shocked the world when eight Chicago White Sox players were accused of conspiring with gamblers to throw the 1919 World Series for money in an under-the-table fix. Although the Cincinnati Reds officially won the best-of-nine Series 5–3 on the field and was not awarded the title by default, their achievement was unfairly tainted by the scandal, known as one of the most infamous controversies in MLB history, as the ‘thrown games’ did not come fully into the open during the Series itself; major public exposure came about a year later. Beyond questions of integrity, the scandal led to a grand-jury investigation in 1920, the lifetime ban of eight White Sox players (Eddie Cicotte, Lefty Williams, Chick Gandil, Swede Risberg, Buck Weaver, Shoeless Joe Jackson, Happy Felsch, and Fred McMullin) in 1921 by owner Charles Comiski (yet all players were acquitted in court), and the creation of the powerful commissioner system to restore public trust in baseball. Still finishing second in the 1919 series, there is much debate over which games were deliberately ‘thrown’ by the eight White Sox players, with 1920 grand jury accounts from the gamblers involved claiming Games 1, 2 and 8 were rigged, but it was also noted that the attempts at creating ‘fixed game outcomes’ were partially broken down due to disputes over payment.\r\\n\r\\nComiskey later gave bonus money to the “honest” White Sox players and Gleason after the indictments, reflecting the idea that not everyone on the team was in on it, however, the entire remaining innocent team ultimately suffered for the rest of their careers, with Comiskey releasing them from their contracts. The reputation of the team was permanently damaged, forever being branded as the ‘Black Sox’ even after their next World Series win nearly 90 decades later in 2005. The original team was effectively erased from organized professional baseball for life.",
+    "categories": [
+      "Champions By Year > 1919",
+      "Your City > Cincinnati Pro Teams",
+      "League > MLB - Major League Baseball > NL Central Division > Cincinnati Reds",
+      "Teams > Cincinnati Reds (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8107.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8037.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8038.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "457",
+    "name": "1920 World Series Championship Ring - Cleveland Indians - October, 1920",
+    "sku": "WS020",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1920 Cleveland Indians ring celebrates their first win with a gold circle-shaped design, featuring a black enamel face with a large red enamel-outlined diamond overtaking most of the black enamel face. Within the red diamond, “WORLD SERIES” is seen at the top edges, and “CLEVELAND INDIANS” on the bottom edges engraved in gold, with the centre of the diamond displaying the team logo in red enamel, with “1920” written in gold across the middle of the shape surrounding the centre logo. Both shoulders display raised gold-dotted backgrounds within large panels, with all writing in gold or enamel. One shoulder is engraved “RAY CHAPMAN” (shortstop, honoured teammate) at the top, followed by a white enamel “C” and blue enamel “B” with the series scores in yellow-gold enamel below each logo, emphasising their 5-2 win against the Brooklyn Robins (now known as the Los Angeles Dodgers). </span>",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: Cleveland Indians defeated Brooklyn Robins (5–2)\r\\n<strong>Series</strong> <strong>Standout</strong>: Elmer Smith — Outfielder; key contributors: Ray Chapman, Stan Coveleski.\r\\n\r\\nDebuting their first win, the Cleveland Indians 1920 World Series ring celebrities their breakout series with a black, gold and red eye-catching design that reflects their team colours, and the early MLB ring styles. Ray Chapman, whose name appears on this ring, was honoured posthumously after his tragic death earlier in the 1920 season, becoming the only MLB player killed by a pitched ball. The Indians rallied around his memory, with Stan Coveleski winning three games in the series. Within their MLB franchise history (not including names before the start of the World Series in 1903), the Cleveland Indians were first known as the Cleveland Naps (1903–1914), later becoming the Cleveland Indians from 1915-2021 season, and are currently rebranded as the Cleveland Guardians from 2022 onwards.",
+    "categories": [
+      "Champions By Year > 1920",
+      "League > MLB - Major League Baseball > AL Central Division > Cleveland Guardians",
+      "Teams > Cleveland Indians (MLB)",
+      "Your City > Cleveland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8039.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8040.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8041.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "458",
+    "name": "1921 World Series Championship Ring - New York (San Fransisco) Giants - October, 1921",
+    "sku": "WS021",
+    "price": 35,
+    "description": "The ring features a classic gold signet design with deep blue enamel reading “WORLD SERIES POLO GROUNDS NEW YORK 1921” surrounding a central baseball and crossed bats. The shoulders display CASEY STENGEL with NY monograms and textured stippling, while the opposite side includes engraved commemorative championship text. The blue enamel border and baseball motif give the ring a distinctly early-1920s championship character.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> New York Giants defeated New York Yankees (5–3)\r\\n<strong>Series Standout:</strong> Frankie Frisch — Second Baseman (and key performances by Casey Stengel — Outfielder)</p>\r\\nThe 1921 World Series marked the first Subway Series, with the Giants defeating the upstart Yankees at the Polo Grounds. Casey Stengel delivered clutch hitting, including two home runs in Game 1, while Frankie Frisch led the offence. This championship also represented the Giants holding off Babe Ruth’s emerging Yankees dynasty — a turning point in New York baseball history. This STENGEL engraving reflects his pivotal contributions during the Giants’ final era of dominance over the Yankees.",
+    "categories": [
+      "Champions By Year > 1921",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7075.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7076.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7077.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "460",
+    "name": "1922 World Series Championship Ring - New York (San Fransisco) Giants - October, 1922",
+    "sku": "WS022",
+    "price": 35,
+    "description": "The 1922 New York Giants ring features a rounded-square pale yellow-gold design, with a dark-recessed diamond border with gold lines and four dark diamonds in each corner, with a large clear stone in the centre set against a textured gold dotted background. Surrounding the gold diamond shape that comprises the majority of the ring face, gold detailing of wrapping ivy-like and textured gold engravings surrounds the rest of the face. One shoulder displays “GIANTS WORLDS” text (completed by the opposite shoulder’s engraving in the same place of “CHAMPIONS”) within a raised gold-engraved swirling banner at the top, followed by symbols relevant to the franchise’s brand and a textured, gold-spotted background. While the opposite shoulder displays “CHAMPIONS” in a curving banner at the top, followed by “1922” in large cursive script, set against the same textured background. The intricate gold engraving reflects early ornate ring craftsmanship.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL West*)\r\\n<strong>Series</strong> <strong>Result</strong>: New York Giants defeated New York Yankees (4–0–1)\r\\n<strong>Series</strong> <strong>Standout</strong>: Frankie Frisch — Second Baseman; key contributors: Casey Stengel, Art Nehf\r\\n\r\\nThe Giants repeated as back-to-back champions in 1922, making an incredible comeback since their last win (not including the first in their consecutive wins in 1921) in 1905, defeating the Yankees in a rematch, finishing with a series score of 4-0-1. The 1922 World Series was effectively a rematch of the previous year, with the New York Giants again facing the New York Yankees, and the Series officially recorded as 4-0-1 after Game 2 ended in a tie due to a safety concern of the stadium being too dark to play in, and was replayed, allowing the Giants to sweep the Yankees without a loss. The franchise later moved from New York to San Francisco in 1958-currently, now known as the San Francisco Giants.",
+    "categories": [
+      "Champions By Year > 1922",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8051.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8053.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8052.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "461",
+    "name": "1924 World Series Championship Ring - Washington Nationals (Senators) - October, 1924",
+    "sku": "WS024",
+    "price": 35,
+    "description": "Celebrating their first and only World Series title under this name (currently known as the Washington Nationals) and representing Washington as a winning team for the first time, the 1924 Washington Senators ring proudly displays a patriotic theme with its circular gold face with red, white and blue enamel detailing. In the centre of the ring, a white enamel baseball with stitching and “1924” engraved in gold is surrounded by an almost-completely gold, intricately baseball imagery-detailed face, with “WORLD SERIES” text in gold against a blue enamel rectangular backing at the top, and a red enamel-backed gold engraving of “WASHINGTON” at the bottom. Both shoulders display raised gold-dotted backgrounds within large dark panels with all writing in gold or enamel. One shoulder is engraved “WALTER JOHNSON” (pitcher, Game 7 hero) at the top, followed by a white enamel “W” and red enamel New York Giants logo with the series score (4-3) printed in gold below the logos. The opposite shoulder summarises the championship title against the New York Giants in gold writing.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL East*)\r\\n<strong>Series</strong> <strong>Result</strong>: Washington Senators defeated New York Giants (4–3)\r\\n<strong>Series</strong> <strong>Standout</strong>: Walter Johnson — Pitcher; key contributors: Goose Goslin, Bucky Harris\r\\n\r\\nThe Washington Senators (later known as the Washington Nationals) secured their first World Series title in 1924. Walter Johnson, whose name appears on this ring, delivered one of the greatest pitching performances in World Series history, winning Game 7 in relief after pitching four scoreless innings. This was the Senators only win under that name, and for Washington, until the later-rebranded Washington Nationals (2005-present) claimed their first (and currently only) win in 2019. The franchise went through several name and location changes throughout their history in MLB, with some rebrandings even creating new official teams that still exist and compete today after the original team rebranded/relocated again, all official changes throughout the start-currently of World Series history (listed in chronological order) are as follows: Washington Senators (1903-1959), Minneapolis Twins (1960-currently as they became a permanent expansion team after they relocated the original team), Washington Senators (1961-1968), Montreal Expos (1968-2002), Texas Rangers (1971-currently as they became a permanent expansion team after they relocated the original team), Washington Nationals (2005-currently).",
+    "categories": [
+      "Champions By Year > 1924",
+      "League > MLB - Major League Baseball > NL East Division > Washington Nationals",
+      "Teams > Washington Nationals (MLB)",
+      "Your City > Washington Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8042.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8043.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8044.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "462",
+    "name": "1925 World Series Championship Ring - Pittsburgh Pirates - October, 1925",
+    "sku": "WS025",
+    "price": 35,
+    "description": "Commemorating their dramatic comeback, the 1925 ring features a circular gold face with a patriotic colour palette of red, white and blue enamel detailing. Comprising the majority of the ring face, an engraved gold pirate with a blue enamel tricorn (pirate hat) is set against a white enamel circle backing with gold details for stitches to make the backing look like a baseball, and “1925” gold script on both sides of the pirate logo in the centre of the face. The white baseball centre is framed by a gold circular border that wraps around the edges of the ring face, with “PITTSBURGH PIRATES” set against red enamel at the top, and “WORLD CHAMPIONS” set against blue enamel along the bottom. Both shoulders of the ring feature shiny black enamel panels, with gold and enamel engravings. One shoulder is engraved “PITTSBURGH” in gold at the top, above a red enamel “P” logo, and “BASEBALL CLUB” engraved in smaller gold writing at the bottom. The opposite shoulder displays “MCKECHNIE” (manager, led 3–1 comeback) above a gold and white enamel baseball graphic with “1925” engraved in gold at the bottom. The triangular shoulder panels and bright enamel colours instead of stones, reflect a bold, early decorative championship style.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: Pittsburgh Pirates defeated Washington Senators (4–3)\r\\n<strong>Series</strong> <strong>Standout</strong>: Kiki Cuyler — Outfielder; key contributors: Pie Traynor, Earl McNeely\r\\n\r\\nEnding a 16-year drought (with their last win in 1909), the Pittsburgh Pirates claimed their second championship title in 1925. Bill McKechnie, whose name appears on this ring, managed the Pirates to one of the greatest comebacks in World Series history. Pittsburgh trailed the series 3–1 before rallying to win three straight games, including a rain-soaked Game 7 at Forbes Field. Kiki Cuyler delivered the decisive hit, while Pie Traynor provided consistent offense.",
+    "categories": [
+      "Champions By Year > 1925",
+      "League > MLB - Major League Baseball > NL Central Division > Pittsburgh Pirates",
+      "Teams > Pittsburgh Pirates (MLB)",
+      "Your City > Pittsburgh Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7587.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7588.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7589.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "463",
+    "name": "1926 World Series Championship Ring - St Louis Cardinals - October, 1926",
+    "sku": "WS026",
+    "price": 35,
+    "description": "Marking the franchise’s first championship, the 1926 ring features a similar style commonly seen in the early World Series eras (1910s-1920s) with a round gold face that highlights a large central clear stone with a sun-ray like border around the stone, followed by engraved laurel leaves within a central oval-shaped border, with a final outer border of the ring face filled by gold engravings of “ST LOUIS CARDINALS WORLD CHAMPIONS 1926.” Both shoulders are almost completely identical, with a horizontally-lined background on both panels, each engraved “HORNSBY” (player-manager, franchise cornerstone) at the top, followed by a raised eagle with wings spread, and an American flag motif at the bottom. The only difference between both shoulders is that one displays a baseball above the flag to act as the body of the eagle, and the other side uses an image of a globe in replacement of the baseball icon. The fully gold engraved construction, without enamel, creates a more ornate classical look compared to the 1925 Pirates ring.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: St. Louis Cardinals defeated New York Yankees (4–3)\r\\n<strong>Series</strong> <strong>Standout</strong>: Grover Cleveland Alexander — Pitcher; key contributors: Rogers Hornsby, Bob O’Farrell\r\\n\r\\nRogers Hornsby, whose name appears on this ring, captained the Cardinals to their first championship in franchise history in 1926. Grover Cleveland Alexander delivered one of the most famous relief appearances in World Series history, striking out Tony Lazzeri with the bases loaded in Game 7. Hornsby then recorded the final out, cementing St. Louis’s breakthrough title.",
+    "categories": [
+      "Champions By Year > 1926",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8045.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8046.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8047.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "464",
+    "name": "1929 World Series Championship Ring - Oakland Athletics (Philadelphia) - October, 1929",
+    "sku": "WS029",
+    "price": 35,
+    "description": "The 1929 Philadelphia Athletics ring has a gold, circular face, made up of small clear circular stones, with a navy blue enamel rectangular shield-shaped centre, proudly displaying the team logo of a white enamel elephant with a gold “A” displayed against a blue enamel blanket over the elephant. Written with this blue enamel shield shape, “1929” is scripted against a white enamel banner at the top, followed by “ATHLETICS” in gold and white enamel and “WORLD SERIES” in gold and blue enamel at the bottom of the panel underneath the elephant logo. Both shoulders are backed by a dark, gold-spotted pattern, and mimic the same design previously seen in championship rings during this decade. One shoulder is engraved “LEFTY GROVE” (ace pitcher, series anchor) with team logos set in blue and red (Chicago Cubs) coloured enamel, with the series scores printed below both logos (4-1). The opposite shoulder contains detailed championship text on a dark recessed background. The design introduces more enamel and text-heavy shoulders.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL West*)\r\\n<strong>Series</strong> <strong>Result</strong>: Philadelphia Athletics defeated Chicago Cubs (4–1)\r\\n<strong>Series</strong> <strong>Standout</strong>: Connie Mack’s lineup; key contributors: Lefty Grove, Jimmie Foxx\r\\n\r\\nIn 1929, Philadelphia Athletics (also more commonly known as Oakland Athletics in a later relocation) ended a 16-year drought and marked the first year in their back-to-back wins (1929-1930). Lefty Grove, whose name appears on this ring, anchored the pitching staff during the Athletics’ first championship since 1913. The team staged a dramatic 10-run comeback in Game 4, one of the most famous rallies in World Series history.",
+    "categories": [
+      "Champions By Year > 1929",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7952.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7954.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7953.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7955.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "465",
+    "name": "1930 World Series Championship Ring - Oakland Athletics (Philadelphia) - October, 1930",
+    "sku": "WS030",
+    "price": 35,
+    "description": "The 1930 ring uses nearly the same design as 1929, with a gold body and round face that features a similar navy-blue enamel shield face design, this time in a white enamel flat-topped hexagon that comprises the majority of the round gold face. The elephant logo is modified slightly, depicted in a more three-dimensional pose with its trunk raised, engraved in gold with a blue enamel “B” printed on its body. The elephant is set in the centre of a blue enamel circle within the white enamel hexagon, and reads “WORLD SERIES ATHLETICS” as well as “1930” in gold-outlined white enamel text that wraps around the blue circle. The shoulders again feature dotted textured panels and engraved gold and enamel panel details. One shoulder has “JIMMIE FOXX” (first baseman, slugger) engraved at the top, followed by a blue enamel “A” and red enamel bird (Cardinals) logo, with series scores engraved in gold underneath the team logos. The opposite shoulder highlights updated championship text referencing consecutive titles and their victory over the St. Louis Cardinals. The design demonstrates the Athletics’ consistent motifs during this dynastic era.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL West*)\r\\n<strong>Series</strong> <strong>Result</strong>: Philadelphia Athletics defeated St. Louis Cardinals (4–2)\r\\n<strong>Series</strong> <strong>Standout</strong>: Jimmie Foxx — First Baseman; key contributors: Lefty Grove, Al Simmons\r\\n\r\\nThe Athletics won back-to-back championships, defeating the Cardinals behind strong hitting from Jimmie Foxx, who led the team to victory by hitting 37 home runs, 156 RBI (runs batted in) and a .335 batting average. This marked the franchise’s second consecutive title and an incredible comeback since their last win in 1913 (not including their consecutive 1929 win). The franchise has gone through several recognisable relocations, yet still maintained “Athletics” in their team name since their founding, including: Philadelphia (1901-1954), Kansas City (1955-1967), Oakland Athletics (1968-2024, the location they are most commonly known as), West Sacramento (2025-present, a temporary relocation before expecting to relocate again to Las Vegas in 2028).",
+    "categories": [
+      "Champions By Year > 1930",
+      "League > MLB - Major League Baseball > AL West Division > Oakland A's",
+      "Teams > Oakland Athletics (MLB)",
+      "Your City > Oakland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7962.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7963.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7964.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "466",
+    "name": "1931 World Series Championship Ring - St Louis Cardinals - October, 1931",
+    "sku": "WS031",
+    "price": 35,
+    "description": "The 1931 St. Louis Cardinals ring features a round bright yellow-gold face with an oval red enamel centre set with a large circular clear stone in the middle. Wrapping around the frame of the red enamel centre, gold engraved text against a dark backing that reads “ST. LOUIS CARDINALS WORLD CHAMPIONS 1931”. One shoulder’s background features horizontal engraved gold and black lines, with raised overlapping top-layer details such as “REDS” (team nickname, not player) engraved within a red enamel “C”, followed by imagery of a baseball and crossed bats at the bottom. The opposite shoulder features team logos, such as red enamel cardinal birds perched on a branch, the logo engraved within a gold icon below, and an american flag logo. The heavy gold engraving resembles the 1926 Cardinals design.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: St. Louis Cardinals defeated Philadelphia Athletics (4–3)\r\\n<strong>Series</strong> <strong>Standout</strong>: Pepper Martin — Outfielder; key contributors: Burleigh Grimes\r\\n\r\\nIn 1931, the St. Louis Cardinals captured their second World Series championship, just five years after their first title in 1926, defeating the defending champions Philadelphia Athletics — the same franchise that would later relocate and become the Kansas City and then Oakland Athletics. The Cardinals overcame a powerhouse Athletics team that had won back-to-back championships in 1929 and 1930, making the victory a major upset. Outfielder Pepper Martin emerged as the unexpected hero, delivering a .500 batting average with key hits and aggressive baserunning, while veteran pitcher Burleigh Grimes secured the decisive Game 7 win. The Cardinals’ “Gashouse Gang” style — built on speed, contact hitting, and relentless pressure — contrasted with Philadelphia’s power-heavy lineup led by stars like Jimmie Foxx and Al Simmons, and ultimately proved decisive in the tightly contested seven-game series.",
+    "categories": [
+      "Champions By Year > 1931",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7916.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7921.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7918.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "467",
+    "name": "1933 World Series Championship Ring - New York Giants (San Fransisco) - October, 1933",
+    "sku": "WS033",
+    "price": 35,
+    "description": "With another incredible comeback, breaking a 10-year drought, this New York Giants ring celebrated their achievement in re-establishing their dominance in MLB by creating a unique new design. The ring is a silver-toned design with a central polished light pink, slightly lavender-toned gemstone surrounded by “WORLD’S CHAMPIONS.” The shoulders include ornate engraved baseball scenes and decorative scrollwork. The smooth stone centre and engraved silver give this ring a distinctive Art Deco-era feel.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> New York Giants defeated Washington Senators (4–1)\r\\n<strong>Series Standout:</strong> Carl Hubbell — Pitcher</p>\r\\nCarl Hubbell dominated the series, while Mel Ott contributed offensively, giving the Giants their first championship since 1922. The victory represented a resurgence after the Yankees’ rise.",
+    "categories": [
+      "Champions By Year > 1933",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7092.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7093.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7094.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "469",
+    "name": "1934 World Series Championship Ring - St Louis Cardinals - October, 1934",
+    "sku": "WS034",
+    "price": 35,
+    "description": "The 1934 St. Louis Cardinals ring celebrates their third World Series win with an updated, elegant design, featuring a pale-gold, oval-faced design with a deep crimson red oval centre with a diamond-shaped dark gold border around a large circular central stone. An oval gold-engraved border wraps around this, displaying “WORLD CHAMPIONS ST. LOUIS CARDINALS”. Both shoulders are identical, engraved “D. DEAN” (ace pitcher, series hero) with cardinal bird imagery of two red enamel birds perched on a branch, surrounded by elaborate engraved leaves, with “1934” encased in a gold circle at the bottom. The symmetrical shoulders emphasize Dean’s prominence.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: St. Louis Cardinals defeated Detroit Tigers (4–3)\r\\n<strong>Series</strong> <strong>Standout</strong>: Dizzy Dean — Pitcher; key contributors: Paul Dean, Joe Medwick\r\\n\r\\nBoasting their third ever championship title, only 3 years after their second win (1931), the St. Louis Cardinals 1934 ring is an ornate, eye-catching new design with an Art-Deco feel. Dizzy Dean, whose name appears on this ring, led the hard-playing “Gashouse Gang” Cardinals to their third championship and second in eight seasons, defeating the heavily favoured Detroit Tigers in a dramatic seven-game series. Dean won Games 1 and 7, including a complete-game victory in the decisive finale, while his brother Paul “Daffy” Dean contributed two additional wins, forming one of the most dominant pitching duos in World Series history. Joe Medwick provided key offensive production throughout the series, and the Cardinals’ aggressive baserunning style became a defining feature of their identity. This victory came just three years after their 1931 title, marking a quick return to championship form for the franchise, which had previously relocated from Chicago in 1882 and settled permanently in St. Louis in 1882, establishing themselves as one of baseball’s early powerhouse clubs.",
+    "categories": [
+      "Champions By Year > 1935",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL",
+      "League > MLB - Major League Baseball > NL East Division",
+      "Teams > Tampa Bay Buccaneers (NFL)",
+      "Your City > Tampa Bay Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8048.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8049.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8050.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "470",
+    "name": "1935 World Series Championship Ring - Detroit Tigers - October, 1935",
+    "sku": "WS035",
+    "price": 35,
+    "description": "Commemorating their first World Series win, the 1935 Detroit Tigers ring is an ornate, yet elegant design, featuring a pale-gold circular face, with a large circular white enamel face with gold stitching to resemble a baseball that acts as the background for a large circular central stone set in the middle. Wrapping around the baseball centre, a gold-engraved border on the ring face reads “DETROIT TIGERS WORLD CHAMPIONS 1935.” Both shoulders are identical with tiger imagery and baseball motifs, set against spot-patterned gold engraved backgrounds.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (American League — AL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: Detroit Tigers defeated Chicago Cubs (4–2)\r\\n<strong>Series</strong> <strong>Standout</strong>: Mickey Cochrane — Catcher; key contributors: Hank Greenberg, Schoolboy Rowe\r\\n\r\\nThe Tigers captured their first World Series championship in franchise history in 1935, redeeming their seven-game loss to the Cardinals the previous year. Player-manager Mickey Cochrane guided Detroit with leadership behind the plate, while Hank Greenberg delivered powerful hitting throughout the series and Schoolboy Rowe contributed key pitching performances. Goose Goslin’s walk-off single in Game 6 sealed the championship, sending Detroit to its first title after decades of near misses. The franchise, established in 1901 as one of the American League’s original teams, had previously reached the World Series three times (1907, 1908, and 1934) without winning, making this breakthrough especially significant for the organization and its fanbase.",
+    "categories": [
+      "Champions By Year > 1936",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL",
+      "Teams > Edmonton Oilers (NHL)",
+      "Your City > Edmonton Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Kansas City Royals"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8054.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8055.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8056.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "471",
+    "name": "1940 World Series Championship Ring - Cincinnati Reds - October, 1940",
+    "sku": "WS040",
+    "price": 35,
+    "description": "The 1940 Cincinnati Reds World Series ring celebrates their 21-year comeback with an eye-catching new look that stands out against their first design, featuring a bright yellow-gold and coloured enamel design. In the centre of the face, a large circular clear stone is set against a detailed gold diamond, which is encased by a large bright-red enamel oval, and further framed by a light blue enamel oval border with gold text within it, reading “WORLD CHAMPIONS CINCINNATI REDS”. Both shoulders are identical with raised “REDS” logos set within red enamel “C”s against a horizontally-striped background, with baseball imagery engraved at the bottom. The heavy enamel and central stone reflect late-1930s design evolution.",
+    "shortDescription": "<strong>League</strong>: Major League Baseball (National League — NL Central*)\r\\n<strong>Series</strong> <strong>Result</strong>: Cincinnati Reds defeated Detroit Tigers (4–3)\r\\n<strong>Series</strong> <strong>Standout</strong>: Bucky Walters — Pitcher; key contributors: Paul Derringer, Frank McCormick\r\\n\r\\nThe Reds secured their second World Series championship and first since 1919, completing a dramatic seven-game victory over Detroit. Bucky Walters dominated on the mound, winning two games and earning MVP honours, while Paul Derringer added strong pitching support. Frank McCormick provided consistent offense, and Jimmy Ripple’s key Game 7 home run helped seal the victory. The championship marked Cincinnati’s return to prominence after two decades without a title, following their 1939 pennant loss and reaffirming the strength of their late-1930s roster.",
+    "categories": [
+      "Champions By Year > 1940",
+      "Your City > Cincinnati Pro Teams",
+      "League > MLB - Major League Baseball > NL Central Division > Cincinnati Reds",
+      "Teams > Cincinnati Reds (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7919.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7920.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7921.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "472",
+    "name": "1942 World Series Championship Ring - St Louis Cardinals - September-October, 1942",
+    "sku": "WS042",
+    "price": 35,
+    "description": "The ring features a rich gold signet design with a striking sunburst-style face, radiating outward from a central clear stone like a spotlight on the championship moment. Surrounding it, bold black enamel reads “ST. LOUIS CARDINALS WORLD CHAMPIONS”, giving the face a strong contrast and vintage authority. The shoulders are where it gets more personal and story-driven — one side showcases “SLAUGHTER” alongside crossed bats and “1942 Cardinals”, while the opposite side mirrors that aggressive baseball imagery with detailed tooling and raised lettering. The mix of sharp black enamel, radiant gold rays, and classic baseball iconography gives this ring a powerful, almost trophy-like presence — simple at first glance, but full of character up close.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> St. Louis Cardinals defeated New York Yankees (4–1)\r\\n<strong>World Series MVP:</strong> No official MVP (Series standout: Enos Slaughter — Outfielder)</p>\r\\nThe St. Louis Cardinals took down the powerhouse Yankees in five games, claiming their 4th World Series title and proving their “Gashouse Gang” legacy had evolved into a disciplined, winning machine. Enos Slaughter (#9), whose name appears on this ring, delivered clutch hitting throughout the series, while pitching and defence kept the Yankees’ lineup quiet. This win was significant — beating a dynasty team mid-run always carries weight — and it reinforced St. Louis as one of baseball’s most consistent early contenders.",
+    "categories": [
+      "Champions By Year > 1942",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7095.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7096.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7097.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "473",
+    "name": "1944 World Series Championship Ring - St Louis Cardinals - October, 1944",
+    "sku": "WS044",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1944 St. Louis Cardinals World Series ring features a rounded-square pale-gold face with a circular centre composed of concentric rings: a central round clear stone sits inside a thin dark-gold border, surrounded by a deep burgundy-red enamel ring with thin dark-gold lines intersecting it to represent crossed bats, and an additional gold circular frame. Around the outer edge of the face, engraved gold text reads “WORLD SERIES CHAMPIONS 1944.” Both shoulders are identical, featuring a textured gold background with raised imagery of two cardinal birds perched on a bat, with large leaves surrounding them, accompanied by the large engraved name “COOPER” (Mort Cooper — starting pitcher, ace contributor) along the upper portion of the panel, “Cardinals” script underneath the birds, and a banner at the bottom with “1944” engraved in gold. Additional decorative foliage engravings fill the surrounding shoulder space. The fully engraved pale-gold construction with minimal stone use reflects the elegant, wartime-era championship style while maintaining continuity with other mid-1940s Cardinals ring designs.</span>",
+    "shortDescription": "<p data-start=\"0\" data-end=\"277\"><strong data-start=\"46\" data-end=\"57\">League:</strong> Major League Baseball (National League — NL Central*)<br data-start=\"111\" data-end=\"114\" /><strong data-start=\"114\" data-end=\"132\">Series Result:</strong> St. Louis Cardinals defeated St. Louis Browns (4–2)<br data-start=\"184\" data-end=\"187\" /><strong data-start=\"187\" data-end=\"207\">Series Standout:</strong> Mort Cooper — Pitcher; key contributors: Stan Musial, Walker Cooper</p>\r\\n<p data-start=\"279\" data-end=\"1505\">Winning their fourth championship and second title in three seasons (following their 1942 victory), the 1944 St. Louis Cardinals defeated their cross-town rivals, the St. Louis Browns, in what became known as the “Streetcar Series,” since both teams shared Sportsman’s Park. The Cardinals won the series 4–2, taking control after splitting the opening games and then capitalising on superior pitching depth. Mort Cooper, whose name appears on this ring, was the Cardinals’ ace right-handed pitcher and a crucial contributor throughout the season and postseason, having already established himself as one of the league’s most dominant pitchers by winning the National League MVP in 1942. His brother Walker Cooper provided additional offense behind the plate, while Stan Musial — still early in his legendary career — continued to emerge as a cornerstone of the franchise. This championship occurred during a strong Cardinals era in the 1940s, with the club returning quickly to title contention following their 1942 win. The franchise competed as the St. Louis Cardinals throughout the modern World Series era after settling in St. Louis in 1882, building one of baseball’s most consistently successful long-term identities.</p>",
+    "categories": [
+      "Champions By Year > 1944",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8063.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8064.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8065.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "474",
+    "name": "1945 World Series Championship Ring - Detroit Tigers - October, 1945",
+    "sku": "WS045",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1945 Detroit Tigers World Series ring introduces a bold square-faced bright yellow-gold design distinct from the earlier 1935 Tigers ring. The face features a central circular clear stone set within a small diamond-shaped gold frame with four gold dots in each corner of the diamond, surrounded by a laurel wreath engraved into a copper-toned enamel background. Around the outer square border of the face, raised gold lettering reads “DETROIT TIGERS WORLD CHAMPIONS,” set against a darker recessed background that enhances contrast. The first shoulder features crossed baseball bats and a ball, surrounded by engraved letters between the bats that spell out “ABC” for American Baseball Club. The opposite shoulder displays a stylised raised gold-engraved circular icon of a globe-baseball merged design with a crown on the top to emphasise their world champions title. Both shoulders use engraved gold motifs rather than enamel, fixed within small (when compared to the large panel sizes previously seen in MLB ring history) square panels, and the thicker square profile gives the ring a heavier, post-war design compared to earlier Tigers championship rings.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (American League — AL Central*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Detroit Tigers defeated Chicago Cubs (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Hal Newhouser — Pitcher; key contributors: Hank Greenberg, Virgil Trucks</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1945 Detroit Tigers captured their second World Series championship and first in a decade, defeating the Chicago Cubs 4–3 in a tightly contested seven-game series that went the distance. Detroit dropped Game 1 before responding to take Games 2 and 3, eventually clinching the title in Game 7 behind strong pitching and timely hitting. Hal Newhouser, one of the most dominant pitchers of the wartime era, anchored the Tigers’ staff and helped stabilise the series, while Hank Greenberg returned from military service late in the season and delivered a decisive RBI single in the final game. The championship came during a transitional period in Major League Baseball, as many rosters were affected by World War II service, and Detroit’s ability to maintain depth proved crucial. This title marked Detroit’s second overall championship (following 1935) and reinforced the team’s competitiveness in the mid-1940s. The franchise has competed continuously as the Detroit Tigers since joining the American League in 1901, maintaining one of baseball’s longest uninterrupted identities.</span>",
+    "categories": [
+      "Champions By Year > 1945",
+      "Your City > Detroit Pro Teams",
+      "League > MLB - Major League Baseball > AL Central Division > Detroit Tigers",
+      "Teams > Detroit Tigers (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7922.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7923.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7924.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "475",
+    "name": "1946 World Series Championship Ring - St Louis Cardinals - October, 1946",
+    "sku": "WS046",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1946 St. Louis Cardinals World Series ring features a pale-gold round face with a deep crimson-red enamel oval centre. A large circular clear stone sits in the middle, encased within a diamond-shaped gold setting composed of small raised gold bead details. Around the outer face border, engraved gold text reads “ST. LOUIS CARDINALS WORLD CHAMPIONS.” Both shoulders are identical, engraved “MUSIAL” (Stan Musial — first baseman/outfielder, franchise cornerstone) across the top, with raised imagery of red-enamel cardinal birds perched on bats, and decorative foliage set against textured gold engraving, with “Cardinals” script and a baseball with “1946” engraved over it below the birds. The rich crimson enamel and central stone echo earlier Cardinals designs of the 1930s–1940s while presenting a slightly more refined post-war finish.</span>",
+    "shortDescription": "<p data-start=\"0\" data-end=\"282\"><strong data-start=\"46\" data-end=\"57\">League:</strong> Major League Baseball (National League — NL Central*)<br data-start=\"111\" data-end=\"114\" /><strong data-start=\"114\" data-end=\"132\">Series Result:</strong> St. Louis Cardinals defeated Boston Red Sox (4–3)<br data-start=\"182\" data-end=\"185\" /><strong data-start=\"185\" data-end=\"205\">Series Standout:</strong> Enos Slaughter — Outfielder; key contributors: Stan Musial, Harry Brecheen</p>\r\\n<p data-start=\"284\" data-end=\"1474\">The 1946 St. Louis Cardinals captured their sixth World Series championship in dramatic fashion, defeating the heavily favoured Boston Red Sox in a seven-game classic. The Cardinals lost two of the first three games before rallying to force a decisive Game 7, where Enos Slaughter scored the famous “Mad Dash” from first base on a hit by Harry Walker, sealing the 4–3 series victory. Stan Musial, whose name appears on this ring, played first base and outfield and was already recognised as the franchise cornerstone; by 1946 he had won two championships (1942, 1946) and would go on to win three total titles (adding 1964 later in his career). Musial’s consistent hitting anchored the Cardinals lineup throughout the season, while pitcher Harry Brecheen contributed three wins in the series. The victory marked the Cardinals’ second championship of the 1940s and continued their reputation as one of baseball’s most resilient postseason teams. The franchise has competed as the St. Louis Cardinals throughout modern World Series history, maintaining continuity after establishing its permanent St. Louis identity in the late 19th century and remaining one of MLB’s most successful clubs.</p>",
+    "categories": [
+      "Champions By Year > 1946",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8060.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8061.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8062.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "476",
+    "name": "1948 World Series Championship Ring - Cleveland Indians - October, 1948",
+    "sku": "WS048",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1948 Cleveland Indians World Series ring features a square pale-yellow gold face with a square deep black enamel background that almost entirely fills the ring face, creating strong contrast with the dazzling raised silver-toned decorative elements within the black enamel base. At the top of the black panel, a circular clear stone is set within a silver diamond-shaped frame, with ornate scrollwork composed of clustered small stones cascading beneath the left and right sides of the diamond-shape. Below the central motif, raised silver lettering reads “WORLD CHAMPIONS CLEVELAND INDIANS 1948.” Both shoulders use a textured, gold-dotted background with minimal script and imagery, entirely detailed in pale-yellow gold. One shoulder is engraved “FELLER” (Bob Feller — starting pitcher, franchise ace) across the top, with a baseball graphic in the centre, and Feller’s jersey number (19) at the bottom. The opposite shoulder contains engraved championship text reading “WORLD CHAMPS 1948”. The contrasting black enamel face and silver-toned detailing raised against its gold body gives the ring a distinctive late-1940s appearance, marking a stylistic departure from earlier all-gold championship designs.</span>",
+    "shortDescription": "<p data-start=\"0\" data-end=\"278\"><strong data-start=\"44\" data-end=\"55\">League:</strong> Major League Baseball (American League — AL Central*)<br data-start=\"109\" data-end=\"112\" /><strong data-start=\"112\" data-end=\"130\">Series Result:</strong> Cleveland Indians defeated Boston Braves (4–2)<br data-start=\"177\" data-end=\"180\" /><strong data-start=\"180\" data-end=\"200\">Series Standout:</strong> Bob Lemon — Pitcher; key contributors: Bob Feller, Larry Doby, Lou Boudreau</p>\r\\n<p data-start=\"280\" data-end=\"1446\">The 1948 Cleveland Indians secured their second World Series championship and first since 1920, ending a 28-year drought by defeating the Boston Braves in six games. Cleveland dropped Game 1 before responding with strong pitching and balanced offense to take control of the series, ultimately clinching the title 4–2. Bob Feller, whose name appears on this ring, was the club’s ace right-handed pitcher and one of baseball’s most dominant stars of the era. By 1948, Feller had already established himself as a multiple-time All-Star and would finish his career with one World Series championship (1948) despite numerous dominant regular seasons. Fellow pitchers Bob Lemon and Gene Bearden delivered key wins, while player-manager Lou Boudreau contributed both leadership and offensive production. Larry Doby, one year after becoming the American League’s first Black player, also played a significant role. The championship is often remembered as Cleveland’s golden post-war peak, as the franchise — known as the Cleveland Indians throughout this period — captured its last World Series title for decades, making memorabilia from this season particularly historic.</p>",
+    "categories": [
+      "Champions By Year > 1948",
+      "League > MLB - Major League Baseball > AL Central Division > Cleveland Guardians",
+      "Teams > Cleveland Indians (MLB)",
+      "Your City > Cleveland Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8066.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8067.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8068.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "477",
+    "name": "1954 World Series Championship Ring - New York Giants (San Fransisco - September-October, 1954",
+    "sku": "WS054",
+    "price": 35,
+    "description": "The ring features a bold gold square-style face with a central raised stone, surrounded by black enamel reading “WORLD CHAMPIONS” and “1954.” The shoulders are packed with character — one side features crossed bats and baseball imagery, while the other includes raised detailing tied to the championship year. The contrast between the polished gold and deep black enamel gives it a rugged, old-school feel, while the square layout makes it stand out compared to earlier rounded designs — a ring that feels as solid and decisive as the sweep it represents.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> New York Giants defeated Cleveland Indians (4–0)\r\\n<strong>World Series MVP:</strong> No official MVP (Series standout: Willie Mays — Center Fielder)</p>\r\\nThe Giants swept a heavily favoured Cleveland team in one of the most memorable upsets of the era. Willie Mays delivered “The Catch” — arguably the most famous defensive play in baseball history — while the team dominated across all four games. This was the Giants’ last championship before relocating to San Francisco, making it a historic closing chapter in New York.",
+    "categories": [
+      "Champions By Year > 1954",
+      "League > MLB - Major League Baseball > NL West Division > San Fransisco Giants",
+      "Teams > San Fransisco Giants (MLB)",
+      "Your City > San Fransisco Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7210.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7211.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7212.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "478",
+    "name": "1955 World Series Championship Ring - Los Angeles (Brooklyn) Dodgers -September-October, 1955",
+    "sku": "WS055",
+    "price": 35,
+    "description": "The ring features a gold signet face with a deep blue enamel centre, highlighting a diamond-shaped setting with a central stone. Around it, bold lettering reads “BROOKLYN WORLD CHAMPIONS,” giving it a strong, proud identity. The shoulders bring the story to life — one side showcases a detailed baseball with bat and stitching, while the other includes Dodgers script-style detailing and “1955” engraving, surrounded by leaf-like patterns that add movement and texture. The blue enamel pops against the gold, creating a vibrant, celebratory look — fitting for a long-awaited victory that finally flipped the script against the Yankees.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Brooklyn Dodgers defeated New York Yankees (4–3)\r\\n<strong>World Series MVP:</strong> No official MVP (Series standout: Johnny Podres — Pitcher)</p>\r\\nThe Brooklyn Dodgers finally broke through in 1955, defeating the Yankees in seven games to win their first and only World Series in Brooklyn. Johnny Podres pitched a shutout in Game 7, while stars like Duke Snider and Jackie Robinson contributed throughout the series. After years of falling short, this was the ultimate redemption — one of baseball’s most emotional championship wins.",
+    "categories": [
+      "Champions By Year > 1955",
+      "Your City > Brooklyn Pro Teams",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7083.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7085.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7084.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "479",
+    "name": "1957 World Series Championship Ring - Atlanta (Milwaukee) Braves - October, 1957",
+    "sku": "WS057",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1957 Milwaukee Braves World Series ring features a square deep yellow-gold face with a central circular clear stone set within a layered diamond-shaped gold frame. Four smaller red stones are positioned around the central diamond, forming a cross-like arrangement, with engraved laurel leaves filling the corners of the square face. The outer border of the face includes an engraving of “WORLD CHAMPS” at the top and bottom of the border, set against a recessed background that enhances contrast. One shoulder displays a raised Braves logo, with “1957” engraved prominently below, all set against textured gold engraving. The opposite shoulder is engraved “HANK AARON” (right fielder, franchise cornerstone), with the Braves tomahawk-style script logo beneath and additional decorative banner elements, with his jersey number (44) at the bottom. The fully gold engraved construction with small red accent stones reflects the bold mid-1950s championship styling and distinguishes the design from earlier Braves-era rings</span>",
+    "shortDescription": "<b>1957 World Series — Milwaukee Braves (Atlanta Braves)</b><b>\r\\n</b> <b>League:</b><span style=\"font-weight: 400;\"> Major League Baseball (National League — NL East*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Milwaukee Braves defeated New York Yankees (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Lew Burdette — Pitcher; key contributors: Hank Aaron, Eddie Mathews</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1957 Milwaukee Braves captured their first World Series championship since relocating from Boston and their first overall title since 1914, defeating the heavily favoured New York Yankees in a seven-game series. The Braves jumped ahead early, but the Yankees forced a decisive Game 7 before Milwaukee secured the 4–3 victory. Lew Burdette delivered one of the most dominant pitching performances in World Series history, winning three complete games, including the clinching finale. Hank Aaron, whose name appears on this ring, played right field and was already emerging as one of baseball’s brightest stars; by 1957 he had won his first championship and would finish his Hall of Fame career with one World Series title (1957), while going on to break Babe Ruth’s all-time home run record in 1974. Aaron provided key offensive production throughout the series, supported by slugger Eddie Mathews. This championship marked Milwaukee’s peak during their short but successful era in Wisconsin before relocating again to Atlanta in 1966. The franchise competed as the Boston Braves during earlier World Series appearances (1914), then as the Milwaukee Braves (1953–1965), and later as the Atlanta Braves (1966–present).</span>",
+    "categories": [
+      "Champions By Year > 1957",
+      "League > MLB - Major League Baseball > NL East Division > Atlanta Braves",
+      "Teams > Atlanta Braves (MLB)",
+      "Your City > Atlanta Pro Teams",
+      "All Time Greats > Hank Aaron (MLB)",
+      "Your City > Milwaukee Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7925.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7926.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7927.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "480",
+    "name": "1959 World Series Championship Ring - Los Angeles Dodgers - October, 1959",
+    "sku": "WS059",
+    "price": 35,
+    "description": "The ring features a bold gold circular face with deep black enamel, surrounding a raised diamond-shaped setting holding a clear centre stone. “LOS ANGELES WORLD CHAMPIONS” wraps prominently around the face. One shoulder showcases a crossed-bats baseball design with facsimile signature-style engraving, while the opposite side highlights “1959” above a detailed Los Angeles skyline, symbolising the franchise’s new home. The combination of black enamel contrast, geometric diamond setting, and skyline imagery creates a ring that visually celebrates both the championship and the team’s relocation legacy.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Los Angeles Dodgers defeated Chicago White Sox (4–2)\r\\n<strong>Series Standout:</strong> Larry Sherry — Pitcher (Series hero); key contributors: Duke Snider, Gil Hodges</p>\r\\nFormerly located in Brooklyn, the Los Angeles Dodgers captured their first World Series separate from their former team identity in 1959, defeating the White Sox in six games and announcing the franchise’s successful move west. Pitcher Larry Sherry dominated late in the series, earning two wins and a save, while veteran leaders Duke Snider and Gil Hodges powered the offence. This championship marked the beginning of the Dodgers’ California-era success and cemented their transition from Brooklyn to Los Angeles.",
+    "categories": [
+      "Champions By Year > 1959",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6380.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6381.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6382.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "481",
+    "name": "1960 World Series Championship Ring - New York Yankees - October, 1960",
+    "sku": "WS060",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">In 1960 the New York Yankees came back with an extravagant, never-before-seen design, featuring a round bright yellow-gold face with a multi-coloured gemstone arrangement, of pink, white and blue stone stripes within the hat that sits atop a baseball bat (team logo), and larger stones of each colour (pink, white, blue) surrounding this logo, with “Yankees” cursive script intersecting the bat. Outside this central gold backed oval face, an outermost border is engraved with “AMERICAN LEAGUE CHAMPIONS”. Both shoulders are identical, featuring a raised baseball set against a sunburst-style engraved background, with “1960” engraved at the top of the panels. The ring’s use of coloured stones and celebratory layout marks a departure from the earlier minimalist Yankees championship rings, reflecting evolving early-1960s design trends.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: Major League Baseball (American League — AL East*)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result</b><span style=\"font-weight: 400;\">: Pittsburgh Pirates defeated New York Yankees (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout</b><span style=\"font-weight: 400;\">: Bobby Richardson — Second Baseman; key contributors: Mickey Mantle, Roger Maris, Whitey Ford</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Although the New York Yankees did not win the 1960 World Series, this commemorative ring design reflects their American League championship that season. The Yankees captured the AL pennant behind the powerful lineup of Mickey Mantle and newly acquired slugger Roger Maris, who would soon combine for one of baseball’s most famous home-run races. The World Series itself became one of the most dramatic in history: the Yankees outscored Pittsburgh 55–27 overall, winning three games by large margins, yet lost the series 4–3 after Bill Mazeroski’s walk-off home run in Game 7 — the first Game 7 walk-off homer in World Series history. Bobby Richardson earned World Series MVP honours despite playing for the losing team, while Mantle continued his role as franchise cornerstone, adding to his already impressive championship résumé (1951, 1952, 1953, 1956, 1958) and eventually finishing with seven titles (adding 1961 and 1962). The 1960 season marked a transition point for the Yankees as they moved toward another early-1960s dynasty built around Mantle, Maris, and a deep pitching staff. The franchise has competed as the New York Yankees since 1913, maintaining continuity as MLB’s most decorated championship club.</span>",
+    "categories": [
+      "Champions By Year > 1960",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8069.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8070.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8071.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "482",
+    "name": "1963 World Series Championship Ring - Los Angeles Dodgers - October, 1963",
+    "sku": "WS063",
+    "price": 35,
+    "description": "Back with a completely different look, apart from the same consistent details and team-specific imagery on the sides, the 1963 Los Angeles Dodgers championship ring features a gold face with vivid blue enamel centre, highlighting a polished gemstone. “LOS ANGELES WORLD CHAMPIONS” circles the top. The shoulders display bat-and-ball imagery and detailed baseball engravings, along with championship text and season references. The bright blue enamel gives the ring a vibrant, West Coast identity tied to the Dodgers’ rising dominance.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> Los Angeles Dodgers defeated New York Yankees (4–0)\r\\n<strong>Series Standout:</strong> Sandy Koufax — Pitcher</p>\r\\nComing back with another World Series title, only 3 years after their last win, the Los Angeles Dodgers proved themselves yet again to be a force to be reckoned with against their competitors in MLB. The Dodgers swept the Yankees in 1963 behind the dominant pitching of Sandy Koufax and Don Drysdale. Koufax delivered two wins and 23 strikeouts, while the Dodgers shut down the Yankees’ offence entirely. This victory marked the Dodgers’ second title in Los Angeles and showcased one of baseball’s greatest pitching staffs.",
+    "categories": [
+      "Champions By Year > 1963",
+      "League > MLB - Major League Baseball > NL West Division > Los Angeles Dodgers",
+      "Teams > Los Angeles Dodgers (MLB)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7593.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7594.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7595.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "483",
+    "name": "1964 World Series Championship Ring - St Louis Cardinals - October, 1964",
+    "sku": "WS064",
+    "price": 25,
+    "description": "The ring features a bold gold circular face with red enamel background, surrounding the familiar design style of a diamond-shaped centre setting with a clear stone. “ST. LOUIS CARDINALS WORLD CHAMPIONS” frames the top. One shoulder displays “WHITE” (first baseman), due to his critical role in helping to guide the team towards victory, and his player number at the time (12) with crossed bats and a baseball featured over the number. While the opposite panel features the Cardinals insignia with and the winning year (1964) engraved above it. The red enamel contrasts strongly with the gold, creating a vibrant, team-colour-focused championship design.",
+    "shortDescription": "<p class=\"isSelectedEnd\"><strong>League:</strong> Major League Baseball (National League)\r\\n<strong>Series Result:</strong> St. Louis Cardinals defeated New York Yankees (4–3)\r\\n<strong>Series Standout:</strong> Bob Gibson — Pitcher; key contributor: Bill White — First Baseman</p>\r\\nThe Cardinals defeated the Yankees in a dramatic seven-game series, highlighted by Bob Gibson’s dominant pitching. Bill White (#12 during this time, but wore #26 later for majority of his career), whose name appears on this ring, provided leadership and offensive production as St. Louis captured its 7th World Series title. The victory ended the Yankees’ extended run of championships.",
+    "categories": [
+      "Champions By Year > 1964",
+      "League > MLB - Major League Baseball > NL Central Division > St Louis Cardinals",
+      "Teams > St Louis Cardinals (MLB)",
+      "Your City > St Louis Pro Teams",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6572.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6573.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6574.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "497",
+    "name": "NBA Finals Series Championship Ring 1964 - Boston Celtics - April 1964",
+    "sku": "NF064",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1964 Boston Celtics championship ring continues the same design. The round pale yellow-gold face features black enamel detailing and a central clear stone within a white enamel circular panel. The outer border reads “WORLD CHAMPIONS.” Both shoulders are identical, with horizontally lined black enamel panels, “1964” engraved at the top, followed by the shamrock emblem and “CELTICS.”</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated San Francisco Warriors (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: Sam Jones, John Havlicek</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Celtics captured their sixth consecutive championship in 1964, defeating the San Francisco Warriors 4–1. Bill Russell dominated defensively, while Sam Jones and John Havlicek provided scoring. Wilt Chamberlain led the Warriors but could not overcome Boston’s team-oriented approach. Russell earned his seventh championship, and Boston’s dynasty reached historic levels, tying earlier professional sports dominance records.</span>",
+    "categories": [
+      "Champions By Year > 1964",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7742.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7743.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7744.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "499",
+    "name": "NBA Finals Series Championship Ring 1963 - Boston Celtics - April 1963",
+    "sku": "NF063",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1963 Boston Celtics championship ring remains identical in design to previous years. The round pale yellow-gold face with black enamel detailing surrounds a central clear stone set within a white enamel circular panel. Textured gold-and-black borders create a layered appearance. “WORLD CHAMPIONS” wraps the face, and both shoulders feature identical horizontally lined black enamel panels with “1963” at the top, followed by the shamrock emblem and “CELTICS” text.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Los Angeles Lakers (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: Sam Jones, John Havlicek</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Boston claimed its fifth consecutive championship in 1963, defeating the Los Angeles Lakers 4–2. Bill Russell controlled the paint, while Sam Jones delivered scoring consistency and John Havlicek continued emerging as a key contributor. The Lakers again challenged Boston behind Jerry West and Elgin Baylor, but Boston’s depth and defensive identity remained superior. This victory marked Russell’s sixth championship and further entrenched Boston as the dominant team of the era.</span>",
+    "categories": [
+      "Champions By Year > 1963",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7736.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7737.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7738.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "500",
+    "name": "NBA Finals Series Championship Ring 1962 - Boston Celtics - April 1962",
+    "sku": "NF062",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1962 Boston Celtics championship ring uses the same round-face design established in 1957. The pale yellow-gold ring features black enamel detailing, a central clear stone set within a layered white enamel circular panel, and textured gold-and-black borders. The outer ring reads “WORLD CHAMPIONS.” Both shoulders are identical, with horizontally lined black enamel panels, “1962” engraved at the top, followed by a shamrock emblem and “CELTICS” text.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Los Angeles Lakers (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: Sam Jones, Bob Cousy, Elgin Baylor (opponent standout)</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The 1962 Finals produced one of the most dramatic series of the decade, with Boston defeating the Los Angeles Lakers 4–3 in overtime of Game 7. This marked Boston’s fourth consecutive championship. Bill Russell dominated defensively, while Sam Jones delivered clutch scoring, including key baskets late in the series. The Lakers, led by Elgin Baylor and Jerry West, pushed Boston to the limit, but the Celtics’ composure and experience prevailed. This series further intensified the Celtics–Lakers rivalry that would define the 1960s. Russell earned his fifth championship, and Boston’s dynasty continued to grow.</span>",
+    "categories": [
+      "Champions By Year > 1962",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7733.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7734.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7735.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "501",
+    "name": "NBA Finals Series Championship Ring 1961 - Boston Celtics - April 1961",
+    "sku": "NF061",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1961 Boston Celtics championship ring continues the identical design used from 1957 onward. The round pale yellow-gold face features bold black enamel contrast with a central clear stone set inside a white enamel circular panel with black lining. Textured gold and black borders surround the centre, creating a layered target-style appearance. The outer border reads “WORLD CHAMPIONS.” Both shoulders are identical with horizontally lined black enamel panels, “1961” engraved at the top, followed by a textured shamrock emblem and “CELTICS” text beneath.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated St. Louis Hawks (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: Bob Cousy, Tom Heinsohn, Sam Jones</span>\r\\n\r\\n<span style=\"font-weight: 400;\">Boston captured its third consecutive championship in 1961, defeating the St. Louis Hawks 4–1. Bill Russell’s defensive dominance and rebounding overwhelmed St. Louis, while veteran Bob Cousy orchestrated the offense in one of his final championship seasons. Sam Jones emerged as a rising star, contributing crucial scoring, and Tom Heinsohn added offensive consistency. This victory extended Boston’s growing dynasty and showed their increasing control over the league. Russell now had four titles, and the Celtics’ balanced roster began separating them from challengers.</span>",
+    "categories": [
+      "Champions By Year > 1961",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7730.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7732.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7731.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "502",
+    "name": "NBA Finals Series Championship Ring 1960 - Boston Celtics - March-April 1960",
+    "sku": "NF060",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1960 Boston Celtics championship ring retains the same design introduced in 1957 and repeated in 1959. The round face is crafted in pale yellow-gold with bold black enamel detailing. At the centre sits a circular clear stone enclosed within a layered white enamel circular pane with black lining, surrounded by textured gold and black borders that create a target-like design. The outer ring reads “WORLD CHAMPIONS” in bold gold lettering wrapping around the face, with black vertical lines underneath to create depth. Both shoulders are identical, featuring horizontally lined black enamel panels with gold detailing, “1960” engraved at the top, followed by a large textured shamrock emblem and “CELTICS” text within the panel.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated St. Louis Hawks (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: Bob Cousy, Tom Heinsohn, Bill Sharman</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics secured their third championship in 1960 and second consecutive title of their historic eight-year streak (1959–1966), defeating the St. Louis Hawks 4–3 in a tightly contested rematch of the 1958 and 1957 Finals. Bill Russell dominated defensively and on the boards, capturing the third of his eventual 11 championships. Bob Cousy controlled the offense during his late-prime years, while Tom Heinsohn provided scoring bursts. The Hawks, led by Bob Pettit, pushed Boston to a full seven games, but the Celtics’ depth and defensive identity proved decisive. This win reinforced Boston’s growing dynasty and further cemented the Russell-era foundation.</span>",
+    "categories": [
+      "Champions By Year > 1960",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7739.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7741.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7740.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "503",
+    "name": "NBA Finals Series Championship Ring 1959 - Boston Celtics - April 1959",
+    "sku": "NF059",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1959 Boston Celtics championship ring uses the exact same design introduced in 1957, maintaining consistency during the early stages of the Celtics’ dynasty. The round face is crafted in pale yellow-gold with bold black enamel accents. At the centre sits a circular clear stone enclosed within a layered white enamel circular panel with thin black lining, surrounded by textured gold and black borders that create a target-style appearance. The outer ring reads “WORLD CHAMPIONS” in bold gold lettering, with subtle vertical black line detailing beneath to add depth. Both shoulders are identical, featuring horizontally lined black enamel panels with gold detailing. “1959” appears at the top of each shoulder, followed by a large textured shamrock emblem and “CELTICS” engraved below. The strong contrast between gold and black enamel, combined with the round face and symmetrical shoulders, reinforces the Celtics’ consistent championship identity as their dynasty began to take shape.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated Minneapolis Lakers (4–0)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: Bob Cousy, Bill Sharman, Tom Heinsohn</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics captured their second championship in franchise history in 1959, sweeping the Minneapolis Lakers (now Los Angeles Lakers) 4–0. This dominant performance marked the beginning of Boston’s historic eight consecutive championships (1959–1966), the longest title streak in North American professional sports. Bill Russell anchored the Celtics’ suffocating defense and rebounding, winning the second of his eventual 11 championships (1957, 1959–1966, 1968–1969). Veteran playmaker Bob Cousy controlled the tempo, while Tom Heinsohn and Bill Sharman provided scoring support. The Lakers, led by Elgin Baylor, struggled to overcome Boston’s depth and defensive pressure. This series also renewed one of the NBA’s greatest rivalries, Boston vs. Minneapolis/Los Angeles, which would define the league for decades. The Celtics have competed continuously as Boston since joining the BAA in 1946, and this victory marked the early consolidation of their emerging dynasty. </span>",
+    "categories": [
+      "Champions By Year > 1959",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7727.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7728.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7729.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "504",
+    "name": "NBA Finals Series Championship Ring 1958 - Atlanta Hawks (St Loius) - March-April 1958",
+    "sku": "NF058",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1958 St. Louis Hawks championship ring features a vintage rounded-square face crafted in a mix of bright and darker yellow-gold tones, creating a layered textured appearance. The central panel has a raised circular clear stone set within a textured gold background that resembles basketball hoop netting, with “ST. LOUIS HAWKS” written within a gold banner at the bottom of the centre face panel. On the outer border, set in a darker, vintage gold in contrast to the bright yellow-gold in the face panel, wrapping text reads “CHAMPIONS” at the top, “N.B.A.” at the bottom, and “1957” and “1958” on both sides. The shoulders are highly ornate and asymmetrical, each featuring layered scrollwork and textured backgrounds. One shoulder displays a stylised “P” emblem, while the opposite shoulder shows a “B” emblem, both set within decorative wreath-like borders. The fully engraved gold construction and heavy texturing give the ring a distinctive mid-century aesthetic, contrasting with the simpler Celtics 1957 design and reflecting evolving late-1950s championship ring craftsmanship.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> St. Louis Hawks defeated Boston Celtics (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bob Pettit — Power Forward; key contributors: Cliff Hagan, Slater Martin</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The St. Louis Hawks captured their first and only NBA championship in 1958, defeating the defending champion Boston Celtics 4–2 and preventing the early stages of Boston’s dynasty from continuing uninterrupted. After losing to the Celtics in a dramatic 1957 Finals, the Hawks returned with renewed determination, led by superstar forward Bob Pettit. Pettit delivered one of the greatest Finals performances in NBA history, scoring 50 points in the decisive Game 6 to secure the championship. By winning this title, Pettit earned the only championship of his Hall of Fame career, despite multiple Finals appearances. Cliff Hagan provided consistent scoring support, while veteran guard Slater Martin contributed leadership and defense. The victory marked a rare interruption of Boston’s dominance, as the Celtics would go on to win the next eight championships. The franchise competed as the Tri-Cities Blackhawks (1949–1951), Milwaukee Hawks (1951–1955), St. Louis Hawks (1955–1968), and later relocated to become the Atlanta Hawks (1968–present), making this 1958 title the only championship in franchise history. </span>",
+    "categories": [
+      "Champions By Year > 1958",
+      "League > NBA - National Basketball Association > EC Southeast > Atlanta Hawks",
+      "Teams > Atlanta Hawks (NBA)",
+      "Your City > Atlanta Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8142.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8143.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8144.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "505",
+    "name": "NBA Finals Series Championship Ring 1957 - Boston Celtics - March-April 1957",
+    "sku": "NF057",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1957 Boston Celtics championship ring introduces a completely new design compared to the square, stone-heavy rings of the early 1950s. The round face is crafted in pale yellow-gold with bold black enamel detailing. At the centre sits a circular clear stone enclosed within a layered white enamel circular pane with black lining, surrounded by textured gold and black borders that create a target-like design. The outer ring reads “WORLD CHAMPIONS” in bold gold lettering wrapping around the face, with black vertical lines underneath to create a sense of depth and texture. Both shoulders are identical, featuring detailed, horizontally-lined black enamel panels with gold detailing of “1957” written at the top, followed by a large textured shamrock emblem, and “CELTICS” text within the panel. The combination of round face, heavy black enamel contrast, and intricate shoulder engraving marks a stylistic shift toward more modern championship ring designs that would become common in the late 1950s and beyond.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Boston Celtics defeated St. Louis Hawks (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Bill Russell — Center; key contributors: Bob Cousy, Tom Heinsohn, Bill Sharman</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Boston Celtics captured their first championship in franchise history in 1957, defeating the St. Louis Hawks 4–3 in a dramatic seven-game Finals that included multiple overtime periods in the deciding game. Rookie center Bill Russell, who had joined the team midseason after the Olympics, immediately transformed Boston’s defense and rebounding, helping launch what would become the greatest dynasty in NBA history. Russell secured his first championship here and would go on to win 11 titles (1957, 1959–1966, 1968–1969), the most by any player in NBA history. Tom Heinsohn led all scorers in Game 7, while Bob Cousy orchestrated the offense and Bill Sharman provided perimeter shooting. The victory ended the dominance of earlier champions such as the Minneapolis Lakers and marked the beginning of Boston’s unprecedented run of success. The franchise has competed continuously as the Boston Celtics since joining the BAA in 1946, maintaining one of the NBA’s most iconic identities. </span>",
+    "categories": [
+      "Champions By Year > 1957",
+      "All Time Greats > Bill Russell (NBA)",
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7116.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7117.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7118.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "506",
+    "name": "NBA Finals Series Championship Ring 1956 - Golden State Warriors (Philadelphia) - March-April 1956",
+    "sku": "NF056",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1956",
+      "League > NBA - National Basketball Association > WC Pacific > Golden State Warriors",
+      "Teams > Golden State Warriors (NBA)",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "Your City > San Fransisco Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7119.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7120.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7121.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "507",
+    "name": "NBA Finals Series Championship Ring 1955 - Syracuse Nationals (Philadelphia) - March-April 1955",
+    "sku": "NF055",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1955 Syracuse Nationals championship ring follows the square, stone-heavy design style common across early NBA champions but introduces patriotic colour accents. The square silver-toned face is filled with small gold-toned circular stones surrounding a central panel shaped like the United States map, outlined in blue enamel and reading “Syracuse Nationals”, with red stripes and blue dots framed beneath the map design to represent the US flag. “1955” is engraved in a bright blue enamel, split along both sides of the face, with the other silver border engraved with “WORLD CHAMPIONS” along the top and bottom. Red, white, and blue accent stones line the outer perimeter, set into the silver border, giving the ring a distinctive patriotic appearance. The multi-stone face and consistent square structure mirror the Lakers and Royals rings of the era, while the coloured border stones and map motif provide a unique identity for the Nationals’ lone championship design.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Eastern Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Syracuse Nationals defeated Fort Wayne Pistons (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Dolph Schayes — Forward; key contributors: George King, Paul Seymour</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Syracuse Nationals captured their first and only championship in franchise history in 1955, defeating the Fort Wayne Pistons 4–3 in a dramatic seven-game series. Syracuse surged to an early series lead before the Pistons forced a decisive Game 7, where the Nationals secured a narrow victory. Dolph Schayes, the team’s star forward and franchise cornerstone, led Syracuse with scoring, rebounding, and leadership; he would remain the defining figure of the franchise throughout its Syracuse era. This victory came immediately after the Minneapolis Lakers’ three-peat (1952–1954), ending their dominance and marking a shift in competitive balance. The Nationals’ title remains historically significant as the only championship won by the franchise prior to relocation. The team competed as the Syracuse Nationals (1949–1963) before relocating to become the Philadelphia 76ers (1963–present), maintaining continuity into one of the NBA’s long-standing franchises. </span>",
+    "categories": [
+      "Champions By Year > 1955",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7194.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "508",
+    "name": "NBA Finals Series Championship Ring 1954 - Los Angeles Lakers (Minneapolis) - March-April 1954",
+    "sku": "NF054",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1954 Minneapolis Lakers championship ring uses the exact same square, stone-heavy design introduced for their 1950 title and repeated in 1952 and 1953. The silver-toned square face is filled with small clear stones surrounding a lime-green and silver basketball centre featuring “Minneapolis Lakers” script. “MPLS” appears at the top in lime-green, with “1954” in silver split along both sides, and “WORLD CHAMPIONS” engraved in silver along the outer border. Aqua and yellow accent stones line the perimeter, maintaining the same colour palette as earlier versions. One shoulder reads “1954 NBA CHAMPIONS” above a basketball icon against a textured dark background, while the opposite shoulder displays “MINNEAPOLIS LAKERS” with a league logo panel. Aside from the updated year, the ring is identical to the 1950, 1952, and 1953 designs, completing the visual continuity of the Lakers’ early-1950s three-peat.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Minneapolis Lakers defeated Syracuse Nationals (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> George Mikan — Center; key contributors: Jim Pollard, Vern Mikkelsen, Slater Martin</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Minneapolis Lakers completed their historic three-peat (1952–1954) by defeating the Syracuse Nationals 4–3 in a tightly contested seven-game Finals. The series swung back and forth before Minneapolis secured the decisive Game 7, relying once again on the dominant inside presence of George Mikan. With this victory, Mikan captured his fifth and final championship (1949, 1950, 1952, 1953, 1954), cementing his legacy as basketball’s first true superstar and anchoring the NBA’s first dynasty. Jim Pollard and Vern Mikkelsen continued their strong frontcourt support, while guard Slater Martin provided key perimeter play. The Lakers’ three-peat established a benchmark for sustained success in professional basketball and reinforced their dominance following earlier championships by the Philadelphia Warriors (1947) and Rochester Royals (1951). The franchise competed as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles in 1960, maintaining one of the NBA’s most decorated championship histories. </span>",
+    "categories": [
+      "Champions By Year > 1954",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7188.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7191.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7192.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "509",
+    "name": "NBA Finals Series Championship Ring 1953 - Los Angeles Lakers (Minneapolis) - April 1953",
+    "sku": "NF053",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1953 Minneapolis Lakers championship ring uses the exact same square, stone-filled design seen in their 1950 and 1952 titles, continuing the consistent styling of this early dynasty. The silver-toned square face is covered with small clear stones surrounding a lime-green and silver-detailed basketball centre featuring “Minneapolis Lakers” script. “MPLS” appears at the top in lime-green, with “1953” in silver split along both sides, and “WORLD CHAMPIONS” engraved along the outer border. Aqua and yellow accent stones line the perimeter, matching the earlier versions. One shoulder reads “1953 NBA CHAMPIONS” above a basketball icon against a textured dark background, while the opposite shoulder displays “MINNEAPOLIS LAKERS” with a league logo panel at the bottom. Apart from the updated year, the ring is identical to the 1950 and 1952 designs, reflecting the continuity of the Lakers’ early-1950s championship run.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Minneapolis Lakers defeated New York Knicks (4–1)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> George Mikan — Center; key contributors: Jim Pollard, Vern Mikkelsen, Slater Martin</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Minneapolis Lakers captured their fourth championship in five seasons and the second consecutive title in what became a three-peat (1952–1954), defeating the New York Knicks 4–1. After a competitive opening game, Minneapolis controlled the remainder of the series with dominant inside play from George Mikan and balanced scoring across the lineup. Mikan secured his fourth championship at this point (1949, 1950, 1952, 1953) and would complete his career with five titles by winning again in 1954, cementing the Lakers as the NBA’s first dynasty. Jim Pollard and Vern Mikkelsen continued to form a powerful frontcourt alongside Mikan, while Slater Martin added stability in the backcourt. The victory further separated Minneapolis from earlier champions such as the Philadelphia Warriors (1947) and Rochester Royals (1951), reinforcing their dominance of early professional basketball. The franchise competed as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles (1960–present), maintaining one of the NBA’s most decorated championship histories. </span>",
+    "categories": [
+      "Champions By Year > 1953",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7182.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7184.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7186.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "510",
+    "name": "NBA Finals Series Championship Ring 1952 - Los Angeles Lakers (Minneapolis) - April 1952",
+    "sku": "NF052",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1952 Minneapolis Lakers championship ring uses the exact same square, stone-heavy design introduced for their 1950 title, with only the year updated. The silver-toned square face is filled with small clear stones surrounding a lime-green and silver basketball centre featuring “Minneapolis Lakers” script. “MPLS” appears at the top, with a silver engraving of “1952” split along both sides, and “WORLD CHAMPIONS” engraved along the top and bottom of the outer border. Aqua and yellow accent stones line the perimeter of the ring, maintaining the same colour palette as the 1950 version. One shoulder reads “1952 NBA CHAMPIONS” over a textured dark background with a basketball icon, while the opposite shoulder displays “MINNEAPOLIS LAKERS” with a league logo panel. Aside from the updated year, the design is identical to the 1950 Lakers ring, continuing the consistent early-1950s championship styling.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Minneapolis Lakers defeated New York Knicks (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> George Mikan — Center; key contributors: Jim Pollard, Vern Mikkelsen, Slater Martin</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Minneapolis Lakers secured their third championship in four seasons — and their second NBA-era title — by defeating the New York Knicks 4–3 in another tightly contested Finals. Much like the previous year’s Royals–Knicks series, the matchup extended to a decisive Game 7, where Minneapolis relied on dominant interior play from George Mikan to seal the victory. Mikan, already the league’s defining superstar, captured his third championship here (1949, 1950, 1952) and would go on to win five total titles (adding 1953 and 1954), solidifying the Lakers as the NBA’s first dynasty. Jim Pollard and Vern Mikkelsen continued to provide consistent scoring and rebounding support, while guard Slater Martin contributed crucial perimeter play. The championship reaffirmed Minneapolis’ dominance following Rochester’s 1951 interruption and re-established the Lakers at the top of professional basketball. The franchise competed as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles in 1960, where they continued one of the most successful championship traditions in NBA history. </span>",
+    "categories": [
+      "Champions By Year > 1952",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7173.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7176.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7177.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "511",
+    "name": "NBA Finals Series Championship Ring 1951 - Sacramento Kings (Rochester Royals) -April 1951",
+    "sku": "NF051",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1951 Rochester Royals championship ring follows the same square, stone-heavy design style seen in other early-era NBA championship rings, reflecting league-wide consistency during this period. The silver-toned square face is filled with small clear stones surrounding a deep royal-blue shield-shaped centre that reads “ROCHESTER ROYALS,” with a crowned basketball emblem. “WORLD CHAMPIONS” appears along the top and bottom edges of the outer border, with blue and clear accent stones set along the ring’s perimeter on the left and right sides. One shoulder reads “1951 NBA CHAMPIONS” above a basketball icon against a textured dark background, while the opposite shoulder displays “ROCHESTER ROYALS” with a league logo panel beneath. The consistent square profile, stone-filled face, and contrasting enamel colours closely mirror the Lakers’ 1949–1950 designs, highlighting the uniform championship ring styling common across early NBA winners.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result:</b><span style=\"font-weight: 400;\"> Rochester Royals defeated New York Knicks (4–3)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout:</b><span style=\"font-weight: 400;\"> Arnie Risen — Center; key contributors: Bob Davies, Bobby Wanzer</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Rochester Royals captured their first and only NBA championship in 1951, defeating the New York Knicks 4–3 in a tightly contested seven-game series. Rochester jumped out to a commanding 3–0 series lead before the Knicks mounted a dramatic comeback to force Game 7 — one of the earliest near-reverse sweeps in NBA Finals history. The Royals ultimately held on in the deciding game behind strong interior play from center Arnie Risen and balanced scoring from Bob Davies and Bobby Wanzer. This championship followed the early Minneapolis Lakers back-to-back titles (1949–1950), making Rochester the third franchise to win in the newly formed NBA era. The Royals’ victory remains historically significant, as it is still the only championship in the franchise’s history. The team later relocated and evolved through multiple identities: Rochester Royals (1945–1957), Cincinnati Royals (1957–1972), Kansas City-Omaha Kings (1972–1975), Kansas City Kings (1975–1985), and Sacramento Kings (1985–present). </span>",
+    "categories": [
+      "Champions By Year > 1951",
+      "Championships/Finals > NBA Finals Championship Rings",
+      "League > NBA - National Basketball Association > WC Pacific > Sacramento Kings",
+      "Teams > Sacramento Kings (NBA)",
+      "Your City > Sacramento Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7159.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7160.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7161.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "512",
+    "name": "NBA Finals Series Championship Ring 1950 - Los Angeles Lakers (Minneapolis) - March-April 1950",
+    "sku": "NF050",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1950 Minneapolis Lakers championship ring closely follows the square, stone-heavy design introduced for the 1949 title, but with updated colours and detailing. The square silver-toned face is filled with small clear stones surrounding a lime-green basketball centre featuring detailing and “Minneapolis Lakers” script in silver. “MPLS” appears at the top in lime green, with “1950” split along both sides in silver writing, and “WORLD CHAMPIONS” engraved along the top and bottom of the outer border in bright silver, without a dark backing this time. Bright aqua and yellow accent stones line the perimeter of the ring, giving the design a brighter, more colourful appearance than the 1949 version. One shoulder reads “1950 NBA CHAMPIONS” over a textured dark background with a basketball icon, while the opposite shoulder displays “MINNEAPOLIS LAKERS” with a league logo panel. The overall structure mirrors the 1949 ring, but the updated colour palette and NBA branding distinguish it as the second piece in the Lakers’ first championship dynasty.</span>",
+    "shortDescription": "<b>League</b><span style=\"font-weight: 400;\">: National Basketball Association (NBA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Result</b><span style=\"font-weight: 400;\">: Minneapolis Lakers defeated Syracuse Nationals (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span> <b>Series Standout</b><span style=\"font-weight: 400;\">: George Mikan — Center; key contributors: Jim Pollard, Vern Mikkelsen</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Minneapolis Lakers captured their second consecutive championship in 1950, completing the franchise’s first back-to-back titles (1949–1950) and firmly establishing basketball’s first dynasty. After winning their inaugural title in 1949, Minneapolis again relied on the dominant interior presence of George Mikan to defeat the Syracuse Nationals 4–2. Mikan, already the league’s most influential player, secured his second championship here and would go on to win five total titles (1949, 1950, 1952, 1953, 1954), cementing his legacy as the sport’s first superstar center. The series remained competitive early before Minneapolis pulled away with superior rebounding and defense, with Jim Pollard and Vern Mikkelsen providing key scoring support. This victory came shortly after the merger of the BAA and NBL into the NBA, making the Lakers the first repeat champions of the newly formed league. Prior champions before the Lakers dynasty included the Philadelphia Warriors (1946–47) and Baltimore Bullets (1947–48). The franchise competed as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles in 1960, where they continued one of the most successful championship traditions in basketball history. </span>",
+    "categories": [
+      "Champions By Year > 1950",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7162.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7163.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7164.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "513",
+    "name": "NBA Finals Series Championship Ring 1949 - Los Angeles Lakers (Minneapolis) - April 1949",
+    "sku": "NF049",
+    "price": 35,
+    "description": "<span style=\"font-weight: 400;\">The 1949 Minneapolis Lakers championship ring features a large square silver-toned face heavily set with small clear stones, reflecting a modern commemorative interpretation of the early championship. At the centre, a gold basketball logo with “Minneapolis Lakers” script is surrounded by clustered stones, with “MPLS” in gold lettering above and “1949” silver lettering split across both sides. The silver outer border reads “WORLD CHAMPIONS” on the top and bottom sides set against dark panels. Blue and yellow accent stones line the outer left and right edges of the ring. One shoulder displays “1949 BAA CHAMPIONS” engraved over a textured dark background with a basketball icon beneath, while the opposite shoulder reads “MINNEAPOLIS LAKERS” with a silhouette of a player making a shot surrounded by small silver text that says “BASKETBALL ASSOCIATION OF AMERICA” and textured backing. The contrasting silver body, coloured stones, and bold square profile distinguish this design from the simpler early-era gold rings, while still commemorating the franchise’s first championship.</span>",
+    "shortDescription": "<b>League:</b><span style=\"font-weight: 400;\"> Basketball Association of America (BAA — Western Division*)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Result:</b><span style=\"font-weight: 400;\"> Minneapolis Lakers defeated Washington Capitols (4–2)</span><span style=\"font-weight: 400;\">\r\\n</span><b>Series Standout:</b><span style=\"font-weight: 400;\"> George Mikan — Center; key contributors: Jim Pollard, Vern Mikkelsen</span>\r\\n\r\\n<span style=\"font-weight: 400;\">The Minneapolis Lakers secured their first championship in 1949, defeating the Washington Capitols 4–2 and beginning what would become the first back-to-back title run in franchise history (1949–1950). After splitting early games, Minneapolis leaned on dominant inside scoring and defense to control the series, with George Mikan emerging as the defining star. Mikan, the era’s most dominant center, captured his first championship in 1949 and would go on to win five titles (1949, 1950, 1952, 1953, 1954), establishing himself as professional basketball’s first true superstar. Teammates Jim Pollard and Vern Mikkelsen provided key scoring and rebounding support, forming the foundation of the early Lakers dynasty. Prior to this victory, the league’s first champions were the Philadelphia Warriors (1946–47) and the Baltimore Bullets (1947–48), making Minneapolis the third champion in professional basketball history and the first to begin a sustained dynasty. The franchise competed as the Minneapolis Lakers (1947–1960) before relocating to Los Angeles (1960–present), maintaining one of basketball’s most decorated championship legacies.</span>",
+    "categories": [
+      "Champions By Year > 1949",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7156.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7157.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7158.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "518",
+    "name": "Super Bowl 38 (XXXVIII) Championship Ring - New England Patriots - February 1, 2004 *TOM BRADY RING 2*",
+    "sku": "SB38",
+    "price": 35,
+    "description": "The ring features a bright white-gold finish with a wide, layered face built around the Patriots logo, highlighted in blue and red enamel at the centre. Above the logo sit two large marquise-shaped stones, representing the franchise’s championships at that point, with rows of rectangular and round stones cascading outward in structured bands that give the face a stepped, architectural look. “WORLD” runs along the left border and “CHAMPIONS” along the right, framing the design. The shoulder engraved BRADY #12 includes “2003” and “Super Bowl XXXVIII” details in a textured panel, while the opposite side shows the Patriots script logo with “2ND OF 4” and championship references, tying the ring to the early stages of the dynasty. The combination of clean silver tones, bold marquise stones, and layered stone rows gives this ring a sharp, modern feel with strong visual depth.",
+    "shortDescription": "<p data-start=\"1581\" data-end=\"1738\"><strong data-start=\"1581\" data-end=\"1592\">League:</strong> National Football League (AFC East)<br data-start=\"1628\" data-end=\"1631\" /><strong data-start=\"1631\" data-end=\"1648\">Game Stadium:</strong> Reliant Stadium (Houston, Texas)<br data-start=\"1681\" data-end=\"1684\" /><strong data-start=\"1684\" data-end=\"1692\">MVP:</strong> Tom Brady #12 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"1740\" data-end=\"2240\">The New England Patriots edged the Carolina Panthers 32–29 in a thrilling Super Bowl XXXVIII, capturing their second title in three seasons. The 2003 season cemented Tom Brady (#12) as an elite quarterback, leading a late-game drive before Adam Vinatieri’s game-winning field goal. Wide receiver Deion Branch (#83) and defensive leaders like Rodney Harrison (#37) were key contributors, but this ring, engraved BRADY #12, captures the calm leadership that defined the Patriots’ growing dynasty.</p>",
+    "categories": [
+      "Champions By Year > 2004",
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Championships/Finals > Super Bowl Championship Rings",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7837.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7838.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7839.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "633",
+    "name": "1964 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1964",
+    "sku": "SC064",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1964",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7404.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7405.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7406.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "634",
+    "name": "1963 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1963",
+    "sku": "SC063",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1963",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7401.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7402.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7403.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "635",
+    "name": "1962 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1962",
+    "sku": "SC062",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1962",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7398.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7399.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7400.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "636",
+    "name": "1961 Stanley Cup Championship Ring - Chicago Blackhawks - April 1961",
+    "sku": "SC061",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1961",
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7518.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7519.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7520.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "637",
+    "name": "1960 Stanley Cup Championship Ring - Montreal Canadiens - April 1960",
+    "sku": "SC060",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1960",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7584.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7585.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7586.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "638",
+    "name": "1959 Stanley Cup Championship Ring - Montreal Canadiens - April 1959",
+    "sku": "SC059",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1959",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7455.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7456.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7457.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "639",
+    "name": "1958 Stanley Cup Championship Ring - Montreal Canadiens - April 1958",
+    "sku": "SC058",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1958",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7503.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7504.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7505.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "640",
+    "name": "1957 Stanley Cup Championship Ring - Montreal Canadiens - April 1957",
+    "sku": "SC057",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1957",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7497.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7498.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7499.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "642",
+    "name": "1956 Stanley Cup Championship Ring - Montreal Canadiens - March-April 1956",
+    "sku": "SC056",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1956",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7632.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7633.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7634.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "649",
+    "name": "1951 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1951",
+    "sku": "SC051",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1951",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8266.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8268.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8269.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8267.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "653",
+    "name": "1949 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1949",
+    "sku": "SC049",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1949",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7650-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7651-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7652-1.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "654",
+    "name": "1948 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1948",
+    "sku": "SC048",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1948",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8293.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8294.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8295.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "655",
+    "name": "1947 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1947",
+    "sku": "SC047",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1947",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8286.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8287.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8288.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "656",
+    "name": "1946 Stanley Cup Championship Ring - Montreal Canadiens - March-April 1946",
+    "sku": "SC046",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1946",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7687.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7688.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7689.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "657",
+    "name": "1945 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1945",
+    "sku": "SC045",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1945",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8276.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8277.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8278.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "659",
+    "name": "1943 Stanley Cup Championship Ring - Detroit Red Wings - April 1943",
+    "sku": "SC043",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1943",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8254.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8253.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8252.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "660",
+    "name": "1942 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1942",
+    "sku": "SC042",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1942",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8214.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8215.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8216.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "662",
+    "name": "1940 Stanley Cup Championship Ring - New York Rangers - April 1940",
+    "sku": "SC040",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1940",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Rangers",
+      "Teams > New York Rangers (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7533.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7534.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7535.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "664",
+    "name": "1938 Stanley Cup Championship Ring - Chicago Blackhawks - April 1938",
+    "sku": "SC038",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1938",
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7469.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7470.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7471.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "665",
+    "name": "1937 Stanley Cup Championship Ring - Detroit Red Wings - April 1937",
+    "sku": "SC037",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1937",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8301.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8302.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8303.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "667",
+    "name": "1936 Stanley Cup Championship Ring - Detroit Red Wings - April 1936",
+    "sku": "SC036",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1936",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8260.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8259.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8258.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "668",
+    "name": "1935 Stanley Cup Championship Ring - Montreal Canadiens - April 1935",
+    "sku": "SC035",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1935",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7560.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7561.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7562.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "669",
+    "name": "1934 Stanley Cup Championship Ring - Chicago Blackhawks - April 1934",
+    "sku": "SC034",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1934",
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7563.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7564.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7565.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "670",
+    "name": "1933 Stanley Cup Championship Ring - New York Rangers - April 1933",
+    "sku": "SC033",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1933",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Rangers",
+      "Teams > New York Rangers (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8255.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8256.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8257.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "671",
+    "name": "1932 Stanley Cup Championship Ring - Toronto Maple Leaf - April 1932",
+    "sku": "SC032",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1932",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8211.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8212.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8213.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "673",
+    "name": "1930 Stanley Cup Championship Ring - Montreal Canadiens - April 1930",
+    "sku": "SC030",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1930",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8224.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8225.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8226.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "674",
+    "name": "1929 Stanley Cup Championship Ring - Boston Bruins - March 1929",
+    "sku": "SC029",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1929",
+      "League > NHL - National Hockey League > EC Atlantic > Boston Bruins",
+      "Teams > Boston Bruins (NHL)",
+      "Your City > Boston Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8203.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8200.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8199.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8201.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "675",
+    "name": "1928 Stanley Cup Championship Ring - New York Rangers - April 1928",
+    "sku": "SC028",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1928",
+      "Your City > New York City Pro Teams",
+      "League > NHL - National Hockey League > EC Metropolitan > New York Rangers",
+      "Teams > New York Rangers (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7569.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7570.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7571.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "676",
+    "name": "1927 Stanley Cup Championship Ring - Ottawa Senators - April 1927",
+    "sku": "SC027",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1927",
+      "Your City > Ottawa Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Ottawa Senators",
+      "Teams > Ottawa Senators (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7566.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7567.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7568.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "879",
+    "name": "Super Bowl 04 (IV) Championship Ring - Kansas City Chiefs- January 11, 1970",
+    "sku": "SB04",
+    "price": 35,
+    "description": "<p data-start=\"5191\" data-end=\"5610\">This replica ring follows the original yellow gold construction with a red stone face, centered by a single diamond. The top reads “WORLD CHAMPIONS”, with Chiefs branding surrounding the face. The shoulders include 23–7 score details and AFL–NFL references, with a player name panel that varies across versions. The red stone and simple diamond layout reflect early-era championship styling.</p>\r\\n<p data-start=\"5612\" data-end=\"5759\">Most popular and commonly sold replica versions of this Super Bowl ring feature the MVP’s name (Dawson), though other player editions are sometimes produced.</p>",
+    "shortDescription": "<p data-start=\"4507\" data-end=\"4714\"><strong>League</strong>: National Football League (AFC West)<br data-start=\"4550\" data-end=\"4553\" /><strong>Game</strong> <strong>Stadium</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Tulane Stadium</span></span> (New Orleans, Louisiana)<br data-start=\"4631\" data-end=\"4634\" /><strong>MVP</strong>: <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Len Dawson</span></span> #16 — Quarterback; Super Bowl MVP</p>\r\\n<p data-start=\"4716\" data-end=\"5189\">The <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Kansas City Chiefs</span></span> won Super Bowl IV, defeating the <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Minnesota Vikings</span></span> 23–7 on January 11, 1970, marking the final AFL–NFL Championship before the merger. The ring reflects the 1969 season, with Len Dawson (#16) earning MVP through efficient play. The Chiefs’ defense dominated, proving AFL teams could consistently compete. Players like <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\"><span class=\"whitespace-normal\">Otis Taylor</span></span> (#89) are also commonly featured.</p>\r\\n<p data-start=\"766\" data-end=\"1201\"></p>",
+    "categories": [
+      "Champions By Year > 1970",
+      "League > NFL - National Football League > AFC West > Kansas City Chiefs",
+      "Teams > Kansas City Chiefs (NFL)",
+      "Your City > Kansas City Pro Teams",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6629.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6630.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6631.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2221",
+    "name": "2016 Kobe Bryant - Los Angeles Lakers Retirement/Tribute Ring - RIP Black Mamba",
+    "sku": "SR01",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2016",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6528.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6529.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6530.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2379",
+    "name": "Kobe Bryant Tribute Ring - Jersey Number 8 Los Angeles Lakers (1996-2006) RIP",
+    "sku": "SR02",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2016",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7027.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7028.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7029.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2380",
+    "name": "Kobe Bryant Tribute Ring - Jersey Number 24 Los Angeles Lakers (1996-2006) RIP",
+    "sku": "SR03",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2016",
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7965.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7966.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7967.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2381",
+    "name": "David Ortiz Tribute Ring - Boston Red Sox 3 x World Series Championship MVP (2004, 2007, 2013)",
+    "sku": "SR04",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2004",
+      "Champions By Year > 2007",
+      "Champions By Year > 2013",
+      "Your City > Boston Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > Boston Red Sox",
+      "Teams > Boston Red Sox (MLB)",
+      "All Time Greats > David Ortiz (MLB)",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6454.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6455.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_6456.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2382",
+    "name": "Mickey Mantle Tribute Ring - New York Yankees 7 Championships (1951-1968)",
+    "sku": "SR05",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1968",
+      "All Time Greats > Mickey Mantle (MLB)",
+      "Your City > New York City Pro Teams",
+      "League > MLB - Major League Baseball > AL East Division > New York Yankees",
+      "Teams > New York Yankees (MLB)",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7968.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7969.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7970.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2405",
+    "name": "NBA Finals Series Championship Ring 2026 – June 2026 - What team wins?? Express interest & be notified on release",
+    "sku": "",
+    "price": 0,
+    "description": "Who is headed towards a 2026 NBA Finals Series championship win? Who is set to earn the ultimate prize; A NBA Finals Series Championship Ring.\r\\n\r\\nAfter the dominant Oklahoma City Thunder tore up the competition with total domination are the set to run it back win in 2026? Or is another team destined to make history.\r\\n\r\\nRegister to express your interest in this ring and you'll be notified when released.\r\\n\r\\nMore importantly, YouBeTheChamp is offering 1 lucky person who registers for this ring will get theirs on us!! Don't wait or miss out.",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2026",
+      "Championships/Finals > NBA Finals Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8311.jpeg"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2457",
+    "name": "Super Bowl 61 (LXI) Championship Ring –  February 14, 2027 - What team wins?? Express interest & be notified on release",
+    "sku": "SB61",
+    "price": 0,
+    "description": "Who is headed towards a 2027 Super Bowl Championship win? Who is set to earn the ultimate prize; A Super Bowl Championship Ring.\r\\n\r\\nAfter the dominant Seattle Seahawks cruised through the season and dominanted to win in 2026, can they come back for a back to back Championshipt? Or is another team destined to make history.\r\\n\r\\nRegister to express your interest in this ring and you'll be notified when released.\r\\n\r\\nMore importantly, YouBeTheChamp is offering 1 lucky person who registers for this ring will get theirs on us!! Don't wait or miss out.",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2027",
+      "Championships/Finals > Super Bowl Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8310.jpeg"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2556",
+    "name": "2026 Stanley Cup Championship Ring – June 2026 - What team wins?? Express interest & be notified on release",
+    "sku": "SC126",
+    "price": 0,
+    "description": "Who is headed towards a 2026 Stanley Cup championship win? Who is set to earn the ultimate prize; A Stanley Cup Championship Ring.\r\\n\r\\nAfter the dominant Florida Panthers wrapped up a back to back win in 2025, Are they set to go to a 3peat? Or is another team destined to make history.\r\\n\r\\nRegister to express your interest in this ring and you'll be notified when released.\r\\n\r\\nMore importantly, YouBeTheChamp is offering 1 lucky person who registers for this ring will get theirs on us!! Don't wait or miss out.",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2026",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8312.jpeg"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2558",
+    "name": "2026 World Series Championship Ring – October, 2026 - What team wins?? Express interest & be notified on release",
+    "sku": "WS126",
+    "price": 0,
+    "description": "Who is headed towards a 2026 World Series win? Who is set to earn the ultimate prize; A World Series Championship Ring.\r\\n\r\\nAfter the dominant LA Dodgers wrapped up a back to back win in 2025, Are they set to go to a 3peat? Or is another team destined to make history.\r\\n\r\\nRegister to express your interest in this ring and you'll be notified when released.\r\\n\r\\nMore importantly, YouBeTheChamp is offering 1 lucky person who registers for this ring will get theirs on us!! Don't wait or miss out.",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2026",
+      "Championships/Finals > World Series Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8321.jpeg"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2660",
+    "name": "Michael Jordan Hall of Fame Induction Ring – Special Release 2009",
+    "sku": "HF01",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 2009",
+      "League > NBA - National Basketball Association > EC Central > Chicago Bulls",
+      "Teams > Chicago Bulls (NBA)",
+      "Your City > Chicago Pro Teams",
+      "All Time Greats > Michael Jordan (NBA)",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8436.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8438.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8437.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2669",
+    "name": "Tom Brady Set - 7 Superbowl Championship Rings - New England Patriots SB36, SB38, SB39, SB49, SB51 & SB53 Tampa Bay Buccaneers SB55",
+    "sku": "PS12",
+    "price": 210,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Boston Pro Teams",
+      "League > NFL - National Football League > AFC East > New England Patriots",
+      "Teams > New England Patriots (NFL)",
+      "Complete Team Sets - All Teams - NFL\\",
+      "NBA\\",
+      "MLB\\",
+      "NHL > NFL - Superbowl Championship Rings Complete Team Sets",
+      "League > NFL - National Football League > NFC South > Tampa Bay Buccaneers",
+      "Teams > Tampa Bay Buccaneers (NFL)",
+      "Your City > Tampa Bay Pro Teams",
+      "All Time Greats > Tom Brady (NFL)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8571.jpeg"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2691",
+    "name": "Kobe Bryant Hall of Fame Induction Ring – Special Release 2020",
+    "sku": "HF02",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "All Time Greats > Kobe Bryant (NBA)",
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8440.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8442.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8441.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2694",
+    "name": "Kevin Garnett Hall of Fame Induction Ring – Special Release 2021",
+    "sku": "HF07",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > EC Atlantic > Boston Celtics",
+      "Teams > Boston Celtics (NBA)",
+      "Your City > Boston Pro Teams",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8443.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8444.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8445.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2695",
+    "name": "Tim Duncan Hall of Fame Induction Ring – Special Release 2021",
+    "sku": "HF03",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > San Antonio Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > San Antonio Spurs",
+      "Teams > San Antonio Spurs (NBA)",
+      "Special Release Champion Players Rings",
+      "All Time Greats > Tim Duncan (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8446.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8447.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8448.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2701",
+    "name": "Allen Iverson NBA Hall of Fame Induction Ring – Special Release 2016",
+    "sku": "HF04",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > EC Atlantic > Philadelphia 76ers",
+      "Teams > Philadelphia 76ers (NBA)",
+      "Your City > Philadelphia Pro Teams",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8455.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8456.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8457.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2702",
+    "name": "Tracy McGrady NBA Hall of Fame Induction Ring – Special Release 2016",
+    "sku": "HF05",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Houston Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > Houston Rockets",
+      "Teams > Houston Rockets (NBA)",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8449.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8450.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8451.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2703",
+    "name": "Shaq O'Neil NBA Hall of Fame Induction Ring – Special Release 2016",
+    "sku": "HF06",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "League > NBA - National Basketball Association > WC Pacific > Los Angeles Lakers",
+      "Teams > Los Angeles Lakers (NBA)",
+      "Your City > Los Angeles Pro Teams",
+      "All Time Greats > Shaq O'Neal (NBA)"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8458.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8459.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8504.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2704",
+    "name": "Yao Ming NBA Hall of Fame Induction Ring – Special Release 2016",
+    "sku": "HF08",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Your City > Houston Pro Teams",
+      "League > NBA - National Basketball Association > WC Southwest > Houston Rockets",
+      "Teams > Houston Rockets (NBA)",
+      "Special Release Champion Players Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8452.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8453.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8454.png"
+    ],
+    "isFeatured": false
+  }
+];
