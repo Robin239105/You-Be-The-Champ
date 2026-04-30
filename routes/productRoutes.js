@@ -5,6 +5,8 @@ const {
   createProduct, 
   updateProduct, 
   deleteProduct, 
+  bulkDeleteProducts,
+  bulkUpdateStatus,
   getCategories,
   exportProducts,
   importProducts
@@ -21,6 +23,8 @@ router.get('/:slug', getProductBySlug);
 // Admin only routes
 router.post('/', protect, admin, createProduct);
 router.post('/import', protect, admin, importProducts);
+router.post('/bulk-delete', protect, admin, bulkDeleteProducts);
+router.post('/bulk-status', protect, admin, bulkUpdateStatus);
 router.put('/:id', protect, admin, updateProduct);
 router.delete('/:id', protect, admin, deleteProduct);
 

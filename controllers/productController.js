@@ -325,12 +325,40 @@ const importProducts = async (req, res) => {
 };
 
 
+const bulkDeleteProducts = async (req, res) => {
+  const { ids } = req.body;
+  if (!Array.isArray(ids) || ids.length === 0) {
+    return res.status(400).json({ success: false, message: 'ids array required' });
+  }
+  try {
+    const result = await prisma.product.deleteMany({ where: { id: { in: ids } } });
+    res.json({ success: true, message: `${result.count} products deleted` });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const bulkUpdateStatus = async (req, res) => {
+  const { ids, isActive } = req.body;
+  if (!Array.isArray(ids) || ids.length === 0 || isActive === undefined) {
+    return res.status(400).json({ success: false, message: 'ids array and isActive required' });
+  }
+  try {
+    const result = await prisma.product.updateMany({ where: { id: { in: ids } }, data: { isActive } });
+    res.json({ success: true, message: `${result.count} products updated` });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
 module.exports = { 
   getProducts, 
   getProductBySlug, 
   createProduct, 
   updateProduct, 
   deleteProduct, 
+  bulkDeleteProducts,
+  bulkUpdateStatus,
   getCategories,
   exportProducts,
   importProducts

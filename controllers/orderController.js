@@ -77,12 +77,30 @@ const getAllOrders = async (req, res) => {
 };
 
 const updateOrderStatus = async (req, res) => {
-  const { status } = req.body;
+  const { status, trackingNumber, notes } = req.body;
 
+  try {
+    const data = { status };
+    if (trackingNumber !== undefined) data.trackingNumber = trackingNumber;
+    if (notes !== undefined) data.notes = notes;
+
+    const order = await prisma.order.update({
+      where: { id: req.params.id },
+      data,
+      include: { orderItems: { include: { product: true } }, user: true }
+    });
+    res.json({ success: true, data: order });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const updateOrderTracking = async (req, res) => {
+  const { trackingNumber, notes } = req.body;
   try {
     const order = await prisma.order.update({
       where: { id: req.params.id },
-      data: { status }
+      data: { trackingNumber, notes }
     });
     res.json({ success: true, data: order });
   } catch (error) {
@@ -135,4 +153,4 @@ const getDashboardStats = async (req, res) => {
   }
 };
 
-module.exports = { createOrder, getMyOrders, getOrderById, getAllOrders, updateOrderStatus, getDashboardStats };
+module.exports = { createOrder, getMyOrders, getOrderById, getAllOrders, updateOrderStatus, updateOrderTracking, getDashboardStats };

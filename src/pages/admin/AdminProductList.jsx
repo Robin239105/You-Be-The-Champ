@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../utils/api';
-import { Loader2, Plus, Search, Edit, Trash2, Download, Upload } from 'lucide-react';
+import { Loader2, Plus, Search, Edit, Trash2, Download, Upload, CheckSquare, Square, EyeOff, Eye } from 'lucide-react';
 
 const AdminProductList = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isImporting, setIsImporting] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedIds, setSelectedIds] = useState([]);
+  const [bulkLoading, setBulkLoading] = useState(false);
 
   const fetchProducts = async () => {
     setIsLoading(true);
@@ -120,6 +122,34 @@ const AdminProductList = () => {
     }
   };
 
+  const toggleSelect = (id) => setSelectedIds(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+  const toggleSelectAll = () => setSelectedIds(selectedIds.length === filteredProducts.length ? [] : filteredProducts.map(p => p.id));
+
+  const handleBulkDelete = async () => {
+    if (!window.confirm(`Delete ${selectedIds.length} products? This cannot be undone.`)) return;
+    setBulkLoading(true);
+    try {
+      const res = await api.post('/products/bulk-delete', { ids: selectedIds });
+      if (res.data.success) {
+        setProducts(prev => prev.filter(p => !selectedIds.includes(p.id)));
+        setSelectedIds([]);
+      }
+    } catch { alert('Bulk delete failed'); }
+    finally { setBulkLoading(false); }
+  };
+
+  const handleBulkStatus = async (isActive) => {
+    setBulkLoading(true);
+    try {
+      const res = await api.post('/products/bulk-status', { ids: selectedIds, isActive });
+      if (res.data.success) {
+        setProducts(prev => prev.map(p => selectedIds.includes(p.id) ? { ...p, isActive } : p));
+        setSelectedIds([]);
+      }
+    } catch { alert('Bulk status update failed'); }
+    finally { setBulkLoading(false); }
+  };
+
   const filteredProducts = products.filter(p => 
     p.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
     p.sku?.toLowerCase().includes(searchTerm.toLowerCase())
@@ -170,6 +200,27 @@ const AdminProductList = () => {
         </div>
       </div>
 
+      {/* Bulk Actions Bar */}
+      {selectedIds.length > 0 && (
+        <div className="flex items-center gap-4 bg-gold/10 border border-gold/20 rounded-xl px-6 py-3">
+          <span className="font-cinzel text-xs text-gold uppercase tracking-widest">{selectedIds.length} selected</span>
+          <div className="flex gap-2 ml-auto">
+            <button onClick={() => handleBulkStatus(true)} disabled={bulkLoading}
+              className="flex items-center gap-1.5 px-4 py-2 bg-green-500/10 text-green-500 border border-green-500/20 rounded-lg font-cinzel text-[10px] uppercase tracking-widest hover:bg-green-500/20 transition-all disabled:opacity-50">
+              {bulkLoading ? <Loader2 size={12} className="animate-spin" /> : <Eye size={12} />} Activate
+            </button>
+            <button onClick={() => handleBulkStatus(false)} disabled={bulkLoading}
+              className="flex items-center gap-1.5 px-4 py-2 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-lg font-cinzel text-[10px] uppercase tracking-widest hover:bg-amber-500/20 transition-all disabled:opacity-50">
+              {bulkLoading ? <Loader2 size={12} className="animate-spin" /> : <EyeOff size={12} />} Deactivate
+            </button>
+            <button onClick={handleBulkDelete} disabled={bulkLoading}
+              className="flex items-center gap-1.5 px-4 py-2 bg-crimson/10 text-crimson border border-crimson/20 rounded-lg font-cinzel text-[10px] uppercase tracking-widest hover:bg-crimson/20 transition-all disabled:opacity-50">
+              {bulkLoading ? <Loader2 size={12} className="animate-spin" /> : <Trash2 size={12} />} Delete
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Table */}
       <div className="bg-surface border border-gold/10 rounded-xl overflow-hidden min-h-[400px]">
         {isLoading ? (
@@ -182,6 +233,11 @@ const AdminProductList = () => {
             <table className="w-full text-left">
               <thead>
                 <tr className="bg-white/5 text-[10px] uppercase tracking-widest text-ivory/40">
+                  <th className="px-4 py-4 w-10">
+                    <button onClick={toggleSelectAll} className="text-ivory/40 hover:text-gold transition-colors">
+                      {selectedIds.length === filteredProducts.length && filteredProducts.length > 0 ? <CheckSquare size={16} /> : <Square size={16} />}
+                    </button>
+                  </th>
                   <th className="px-6 py-4">Product</th>
                   <th className="px-6 py-4">SKU</th>
                   <th className="px-6 py-4">Price</th>
@@ -192,7 +248,12 @@ const AdminProductList = () => {
               </thead>
               <tbody className="text-sm">
                 {filteredProducts.map((product) => (
-                  <tr key={product.id} className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                  <tr key={product.id} className={`border-b border-white/5 hover:bg-white/5 transition-colors ${selectedIds.includes(product.id) ? 'bg-gold/5' : ''}`}>
+                    <td className="px-4 py-4 w-10">
+                      <button onClick={() => toggleSelect(product.id)} className="text-ivory/40 hover:text-gold transition-colors">
+                        {selectedIds.includes(product.id) ? <CheckSquare size={16} className="text-gold" /> : <Square size={16} />}
+                      </button>
+                    </td>
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-4">
                         <div className="w-10 h-10 bg-black rounded border border-gold/10 overflow-hidden flex-shrink-0">
@@ -235,7 +296,7 @@ const AdminProductList = () => {
                 ))}
                 {filteredProducts.length === 0 && (
                   <tr>
-                    <td colSpan="6" className="py-20 text-center font-cinzel text-xs text-ivory/20 uppercase tracking-widest">
+                    <td colSpan="7" className="py-20 text-center font-cinzel text-xs text-ivory/20 uppercase tracking-widest">
                       No products found
                     </td>
                   </tr>

@@ -38,4 +38,24 @@ const getPaymentSettings = async (req, res) => {
   }
 };
 
-module.exports = { getSettings, updateSetting, getPaymentSettings };
+const bulkUpdateSettings = async (req, res) => {
+  const { settings } = req.body;
+  if (!settings || typeof settings !== 'object') {
+    return res.status(400).json({ success: false, message: 'Settings object required' });
+  }
+  try {
+    const updates = Object.entries(settings).map(([key, value]) =>
+      prisma.setting.upsert({
+        where: { key },
+        update: { value: String(value) },
+        create: { key, value: String(value) }
+      })
+    );
+    await Promise.all(updates);
+    res.json({ success: true, message: 'Settings saved' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+module.exports = { getSettings, updateSetting, bulkUpdateSettings, getPaymentSettings };

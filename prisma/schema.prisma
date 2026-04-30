@@ -41,6 +41,7 @@ model User {
   firstName     String?
   lastName      String?
   role          Role      @default(CUSTOMER)
+  isBanned      Boolean   @default(false)
   refreshToken  String?   
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
@@ -131,7 +132,9 @@ model Order {
   paymentStatus   String      @default("PENDING")
   shippingAddress Json
   couponCode      String?
-  discountAmount  Decimal?    
+  discountAmount  Decimal?
+  trackingNumber  String?
+  notes           String?
   createdAt       DateTime    @default(now())
   updatedAt       DateTime    @updatedAt
   orderItems      OrderItem[]

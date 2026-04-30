@@ -64,6 +64,41 @@ const createCoupon = async (req, res) => {
   }
 };
 
+const updateCoupon = async (req, res) => {
+  const { code, type, value, minOrderAmount, maxUses, expiryDate, isActive } = req.body;
+  try {
+    const coupon = await prisma.coupon.update({
+      where: { id: req.params.id },
+      data: {
+        code: code?.toUpperCase(),
+        type,
+        value: value !== undefined ? parseFloat(value) : undefined,
+        minOrderAmount: minOrderAmount !== undefined ? (minOrderAmount ? parseFloat(minOrderAmount) : null) : undefined,
+        maxUses: maxUses !== undefined ? (maxUses ? parseInt(maxUses) : null) : undefined,
+        expiryDate: expiryDate !== undefined ? (expiryDate ? new Date(expiryDate) : null) : undefined,
+        isActive: isActive !== undefined ? isActive : undefined
+      }
+    });
+    res.json({ success: true, data: coupon });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const toggleCoupon = async (req, res) => {
+  try {
+    const coupon = await prisma.coupon.findUnique({ where: { id: req.params.id } });
+    if (!coupon) return res.status(404).json({ success: false, message: 'Coupon not found' });
+    const updated = await prisma.coupon.update({
+      where: { id: req.params.id },
+      data: { isActive: !coupon.isActive }
+    });
+    res.json({ success: true, data: updated });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
 const deleteCoupon = async (req, res) => {
   try {
     await prisma.coupon.delete({ where: { id: req.params.id } });
@@ -73,4 +108,4 @@ const deleteCoupon = async (req, res) => {
   }
 };
 
-module.exports = { validateCoupon, getCoupons, createCoupon, deleteCoupon };
+module.exports = { validateCoupon, getCoupons, createCoupon, updateCoupon, toggleCoupon, deleteCoupon };

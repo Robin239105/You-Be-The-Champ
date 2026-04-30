@@ -126,16 +126,24 @@ const refresh = async (req, res) => {
 };
 
 const getAllUsers = async (req, res) => {
+  const { search, role } = req.query;
+  const where = {};
+  if (role && role !== 'ALL') where.role = role;
+  if (search) {
+    where.OR = [
+      { email: { contains: search, mode: 'insensitive' } },
+      { firstName: { contains: search, mode: 'insensitive' } },
+      { lastName: { contains: search, mode: 'insensitive' } }
+    ];
+  }
   try {
     const users = await prisma.user.findMany({
+      where,
       orderBy: { createdAt: 'desc' },
       select: {
-        id: true,
-        email: true,
-        firstName: true,
-        lastName: true,
-        role: true,
-        createdAt: true
+        id: true, email: true, firstName: true, lastName: true,
+        role: true, isBanned: true, createdAt: true,
+        _count: { select: { orders: true } }
       }
     });
     res.json({ success: true, data: users });
@@ -144,4 +152,75 @@ const getAllUsers = async (req, res) => {
   }
 };
 
-module.exports = { register, login, refresh, getAllUsers };
+const getUserById = async (req, res) => {
+  try {
+    const user = await prisma.user.findUnique({
+      where: { id: req.params.id },
+      select: {
+        id: true, email: true, firstName: true, lastName: true,
+        role: true, isBanned: true, createdAt: true,
+        orders: {
+          orderBy: { createdAt: 'desc' },
+          include: { orderItems: { include: { product: { select: { name: true } } } } }
+        },
+        addresses: true
+      }
+    });
+    if (!user) return res.status(404).json({ success: false, message: 'User not found' });
+    res.json({ success: true, data: user });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const updateUserRole = async (req, res) => {
+  const { role } = req.body;
+  if (!['ADMIN', 'CUSTOMER'].includes(role)) {
+    return res.status(400).json({ success: false, message: 'Invalid role' });
+  }
+  if (req.params.id === req.user.id) {
+    return res.status(400).json({ success: false, message: 'Cannot change your own role' });
+  }
+  try {
+    const user = await prisma.user.update({
+      where: { id: req.params.id },
+      data: { role },
+      select: { id: true, email: true, role: true }
+    });
+    res.json({ success: true, data: user });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const toggleBanUser = async (req, res) => {
+  if (req.params.id === req.user.id) {
+    return res.status(400).json({ success: false, message: 'Cannot ban yourself' });
+  }
+  try {
+    const user = await prisma.user.findUnique({ where: { id: req.params.id } });
+    if (!user) return res.status(404).json({ success: false, message: 'User not found' });
+    const updated = await prisma.user.update({
+      where: { id: req.params.id },
+      data: { isBanned: !user.isBanned },
+      select: { id: true, email: true, isBanned: true }
+    });
+    res.json({ success: true, data: updated, message: updated.isBanned ? 'User banned' : 'User unbanned' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const deleteUser = async (req, res) => {
+  if (req.params.id === req.user.id) {
+    return res.status(400).json({ success: false, message: 'Cannot delete yourself' });
+  }
+  try {
+    await prisma.user.delete({ where: { id: req.params.id } });
+    res.json({ success: true, message: 'User deleted' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+module.exports = { register, login, refresh, getAllUsers, getUserById, updateUserRole, toggleBanUser, deleteUser };
