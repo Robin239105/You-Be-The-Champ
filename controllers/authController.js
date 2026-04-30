@@ -135,8 +135,7 @@ const getAllUsers = async (req, res) => {
         firstName: true,
         lastName: true,
         role: true,
-        createdAt: true,
-        affiliateId: true
+        createdAt: true
       }
     });
     res.json({ success: true, data: users });

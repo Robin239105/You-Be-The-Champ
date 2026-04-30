@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, User, Mail, Calendar, Loader2, Award } from 'lucide-react';
+import { Search, User, Mail, Calendar, Loader2 } from 'lucide-react';
 import api from '../../utils/api';
 
 const AdminUserList = () => {
@@ -8,22 +8,24 @@ const AdminUserList = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetchUsers();
-  }, []);
-
-  const fetchUsers = async () => {
-    setIsLoading(true);
-    try {
-      const response = await api.get('/auth/users');
-      if (response.data.success) {
-        setUsers(response.data.data);
+    let mounted = true;
+    const loadUsers = async () => {
+      try {
+        const response = await api.get('/auth/users');
+        if (mounted && response.data.success) {
+          setUsers(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch users:', err);
+      } finally {
+        if (mounted) {
+          setIsLoading(false);
+        }
       }
-    } catch (error) {
-      console.error('Failed to fetch users:', error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    };
+    loadUsers();
+    return () => { mounted = false; };
+  }, []);
 
   const filteredUsers = users.filter(u => 
     u.firstName?.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -64,7 +66,6 @@ const AdminUserList = () => {
                   <th className="px-6 py-4">Email</th>
                   <th className="px-6 py-4">Role</th>
                   <th className="px-6 py-4">Joined</th>
-                  <th className="px-6 py-4">Affiliate ID</th>
                 </tr>
               </thead>
               <tbody className="text-sm">
@@ -96,21 +97,11 @@ const AdminUserList = () => {
                       <Calendar size={14} />
                       {new Date(user.createdAt).toLocaleDateString()}
                     </td>
-                    <td className="px-6 py-4">
-                      {user.affiliateId ? (
-                        <div className="flex items-center gap-2 text-gold">
-                          <Award size={14} />
-                          <span className="font-mono text-xs">{user.affiliateId}</span>
-                        </div>
-                      ) : (
-                        <span className="text-ivory/20">—</span>
-                      )}
-                    </td>
                   </tr>
                 ))}
                 {filteredUsers.length === 0 && (
                   <tr>
-                    <td colSpan="5" className="py-20 text-center font-cinzel text-xs text-ivory/20 uppercase tracking-widest">
+                    <td colSpan="4" className="py-20 text-center font-cinzel text-xs text-ivory/20 uppercase tracking-widest">
                       No customers found
                     </td>
                   </tr>
