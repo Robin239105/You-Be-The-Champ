@@ -39,6 +39,30 @@ app.use((err, req, res, next) => {
   });
 });
 
+// Health Check & Diagnostic Tool
+app.get('/api/health', async (req, res) => {
+  try {
+    await prisma.$queryRaw`SELECT 1`;
+    res.json({ 
+      success: true, 
+      status: 'Ready',
+      database: 'Connected',
+      env: {
+        node: process.env.NODE_ENV,
+        has_db: !!process.env.POSTGRES_PRISMA_URL,
+        has_jwt: !!process.env.JWT_SECRET
+      }
+    });
+  } catch (err) {
+    res.status(500).json({ 
+      success: false, 
+      status: 'Error',
+      error: err.message,
+      hint: "Check if POSTGRES_PRISMA_URL is set in Vercel"
+    });
+  }
+});
+
 // Root route
 app.get('/', (req, res) => res.send('API is Live'));
 
