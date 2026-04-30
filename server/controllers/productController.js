@@ -4,12 +4,13 @@ const slugify = require('slugify');
 const prisma = new PrismaClient();
 
 const getProducts = async (req, res) => {
-  const { category, status, search, limit = 20, page = 1 } = req.query;
+  const { category, status = 'PUBLISHED', search, limit = 20, page = 1 } = req.query;
   const skip = (page - 1) * limit;
 
   const where = {};
-  if (category) where.categories = { some: { slug: category } };
-  if (status) where.status = status;
+  if (category) where.categories = { some: { slug: category.toLowerCase() } };
+  if (status && status !== 'ALL') where.status = status;
+
   if (search) {
     where.OR = [
       { name: { contains: search } },
