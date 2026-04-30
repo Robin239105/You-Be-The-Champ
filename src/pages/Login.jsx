@@ -1,27 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { useAuthStore } from '../store/useAuthStore';
+import { Loader2, AlertCircle } from 'lucide-react';
 
 const Login = () => {
-  const login = useAuthStore(state => state.login);
-  const isAuthenticated = useAuthStore(state => state.isAuthenticated);
+  const { login, isAuthenticated, user, isLoading, error, clearError } = useAuthStore();
   const navigate = useNavigate();
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
 
   useEffect(() => {
-    if (isAuthenticated) {
-      navigate('/account');
+    if (isAuthenticated && user) {
+      if (user.role === 'ADMIN') {
+        navigate('/admin');
+      } else {
+        navigate('/account');
+      }
     }
-  }, [isAuthenticated, navigate]);
+    return () => clearError();
+  }, [isAuthenticated, user, navigate, clearError]);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Demo login logic
-    login({ name: 'Champion Fan', email: 'fan@example.com' }, 'mock-jwt-token');
-    navigate('/account');
+    const result = await login(email, password);
+    // Redirection is handled by the useEffect above
   };
 
   return (
@@ -46,12 +52,20 @@ const Login = () => {
           </div>
 
           <form className="space-y-6" onSubmit={handleLogin}>
+            {error && (
+              <div className="bg-crimson/10 border border-crimson/20 p-4 flex items-center gap-3 text-crimson text-xs uppercase tracking-widest animate-shake">
+                <AlertCircle size={14} />
+                <span>{error}</span>
+              </div>
+            )}
             <div>
               <label className="block text-[10px] font-cinzel font-bold text-ivory/40 uppercase tracking-widest mb-2">Email Address</label>
               <input 
                 type="email" 
                 placeholder="EMAIL@EXAMPLE.COM" 
                 className="w-full bg-surface border border-gold/20 px-4 py-3 font-raleway text-sm text-ivory outline-none focus:border-gold transition-colors"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -64,11 +78,15 @@ const Login = () => {
                 type="password" 
                 placeholder="••••••••" 
                 className="w-full bg-surface border border-gold/20 px-4 py-3 font-raleway text-sm text-ivory outline-none focus:border-gold transition-colors"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </div>
 
-            <Button type="submit" className="w-full py-4 mt-4">Enter The Vault</Button>
+            <Button type="submit" className="w-full py-4 mt-4 flex items-center justify-center gap-2" disabled={isLoading}>
+              {isLoading ? <Loader2 size={16} className="animate-spin" /> : 'Enter The Vault'}
+            </Button>
           </form>
 
           <div className="mt-8 pt-8 border-t border-gold/10 text-center">

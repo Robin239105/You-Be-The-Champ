@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, Truck, CreditCard, CheckCircle2, ChevronRight, Lock } from 'lucide-react';
+import { ShieldCheck, Truck, CreditCard, CheckCircle2, ChevronRight, Lock, Loader2 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { useCartStore } from '../store/useCartStore';
-import { useOrderStore } from '../store/useOrderStore';
 import { useAuthStore } from '../store/useAuthStore';
+import api from '../utils/api';
 
 const Checkout = () => {
   const navigate = useNavigate();
   const isAuthenticated = useAuthStore(state => state.isAuthenticated);
   const [step, setStep] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
   const [shippingMethod, setShippingMethod] = useState('standard');
   const [formData, setFormData] = useState({
     firstName: '', lastName: '', email: '', address: '', city: '', state: '', zip: '', phone: ''
@@ -211,35 +212,61 @@ const Checkout = () => {
                   <div className="flex gap-6">
                     <button onClick={() => setStep(2)} className="text-ivory/40 hover:text-gold font-cinzel text-xs tracking-widest uppercase">← Back</button>
                     {!isAuthenticated ? (
-                      <div className="flex-1 space-y-4">
-                        <p className="text-[10px] text-crimson font-bold uppercase tracking-widest text-center bg-crimson/5 p-4 border border-crimson/20">Authentication Required to Complete Purchase</p>
-                        <div className="flex gap-4">
-                           <Link to="/account/login" className="flex-1">
-                             <Button variant="outline" className="w-full text-[10px]">Login</Button>
-                           </Link>
-                           <Link to="/account/register" className="flex-1">
-                             <Button className="w-full text-[10px]">Register</Button>
-                           </Link>
+                      <div className="flex-1 space-y-6">
+                        <div className="text-center p-8 bg-gold/5 border border-gold/10 relative overflow-hidden">
+                          <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+                            <Lock size={80} className="text-gold" />
+                          </div>
+                          <p className="text-[10px] text-gold font-black font-cinzel uppercase tracking-[3px] mb-4">Champions Identity Required</p>
+                          <p className="text-ivory/40 text-[10px] uppercase tracking-widest leading-relaxed mb-8">
+                            To secure your championship ring and access the archive, you must be a registered member.
+                          </p>
+                          <div className="flex flex-col sm:flex-row gap-4 relative z-10">
+                            <Link to="/account/login" className="flex-1">
+                               <Button variant="outline" className="w-full py-4 text-[10px] uppercase tracking-widest font-bold">Sign In</Button>
+                            </Link>
+                            <Link to="/account/register" className="flex-1">
+                               <Button className="w-full py-4 text-[10px] uppercase tracking-widest font-bold">Join The Club</Button>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     ) : (
-                      <button 
-                        onClick={() => {
-                          const orderId = handlePlaceOrder();
-                          navigate('/order-confirmation', { 
-                            state: { 
-                              formData, 
-                              items, 
-                              shippingMethod, 
-                              finalTotal, 
-                              orderId 
-                            } 
-                          });
+                      <Button 
+                        disabled={isLoading}
+                        onClick={async () => {
+                          setIsLoading(true);
+                          try {
+                            const response = await api.post('/orders', {
+                              cartItems: items.map(i => ({ id: i.id, quantity: i.quantity, price: i.price })),
+                              totalAmount: finalTotal,
+                              shippingAddress: `${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}`,
+                              paymentMethod: 'Credit Card (Mock)'
+                            });
+                            
+                            if (response.data.success) {
+                              clearCart();
+                              navigate('/order-confirmation', { 
+                                state: { 
+                                  formData, 
+                                  items, 
+                                  shippingMethod, 
+                                  finalTotal, 
+                                  orderId: response.data.data.id 
+                                } 
+                              });
+                            }
+                          } catch (error) {
+                            setError(error.response?.data?.message || 'Failed to place order');
+                          } finally {
+                            setIsLoading(false);
+                          }
                         }}
-                        className="flex-1 bg-gold text-black font-cinzel font-bold py-4 uppercase tracking-[2px] hover:bg-gold-light transition-all flex items-center justify-center gap-3"
+                        className="flex-1 py-6 uppercase tracking-[3px] text-xs font-bold"
                       >
-                        <Lock size={16} /> Place Order - ${finalTotal.toFixed(2)} AUD
-                      </button>
+                        {isLoading ? <Loader2 size={18} className="animate-spin mr-2" /> : <Lock size={16} className="mr-2" />}
+                        {isLoading ? 'Securing Transaction...' : `Complete Purchase — $${finalTotal.toFixed(2)} AUD`}
+                      </Button>
                     )}
                   </div>
                 </motion.div>

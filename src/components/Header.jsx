@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Heart, User, ShoppingBag, Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
+import { Search, Heart, User, ShoppingBag, Menu, X, ChevronDown, ChevronRight, SlidersHorizontal } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
 import { navigationData } from '../data/navigationData';
 import MegaMenu from './MegaMenu';
+
+import { useAuthStore } from '../store/useAuthStore';
 
 // Recursive Mobile Node Component (Moved outside to stabilize references)
 const MobileNavItem = ({ node, depth = 0, mobileExpanded, onToggle, onClose }) => {
@@ -68,6 +70,7 @@ const MobileNavItem = ({ node, depth = 0, mobileExpanded, onToggle, onClose }) =
 };
 
 const Header = () => {
+  const { user, isAuthenticated } = useAuthStore();
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -145,16 +148,26 @@ const Header = () => {
           {navigationData.map((nav) => (
             <div 
               key={nav.label}
-              onMouseEnter={() => handleMouseEnter(nav.label)}
+              onMouseEnter={() => nav.children ? handleMouseEnter(nav.label) : null}
               onMouseLeave={handleMouseLeave}
               className="relative py-2 px-1"
             >
-              <span className="font-cinzel text-xs tracking-[2px] text-ivory/80 hover:text-gold transition-colors uppercase cursor-default flex items-center gap-2 group">
-                {nav.label}
-                <ChevronDown size={12} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/30'}`} />
-              </span>
+              {nav.path ? (
+                <Link 
+                  to={nav.path} 
+                  className="font-cinzel text-xs tracking-[2px] text-ivory/80 hover:text-gold transition-colors uppercase cursor-pointer"
+                >
+                  {nav.label}
+                </Link>
+              ) : (
+                <span className="font-cinzel text-xs tracking-[2px] text-ivory/80 hover:text-gold transition-colors uppercase cursor-default flex items-center gap-2 group">
+                  {nav.label}
+                  {nav.children && <ChevronDown size={12} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/30'}`} />}
+                </span>
+              )}
             </div>
           ))}
+
         </div>
 
         {/* Mega Menu Container (Outside Loop for proper centering) */}
@@ -176,6 +189,7 @@ const Header = () => {
         {/* Icons */}
         <div className="flex items-center gap-4 sm:gap-6 text-gold">
           <Link to="/search" className="hover:scale-110 transition-transform hidden sm:block"><Search size={20} /></Link>
+
           <Link to="/account" className="hover:scale-110 transition-transform"><User size={20} /></Link>
           <Link to="/wishlist" className="relative hover:scale-110 transition-transform">
             <Heart size={20} />
@@ -247,7 +261,8 @@ const Header = () => {
 
               <div className="p-8 border-t border-gold/10 bg-surface/50">
                 <div className="grid grid-cols-2 gap-4">
-                  <Link to="/account" className="flex items-center gap-3 text-ivory/60 hover:text-gold transition-colors font-cinzel text-xs tracking-widest uppercase">
+
+                  <Link to="/account" className="flex items-center gap-3 text-ivory/60 hover:text-gold transition-colors font-cinzel text-xs tracking-widest uppercase" onClick={() => setIsMobileMenuOpen(false)}>
                     <User size={18} /> My Account
                   </Link>
                   <Link to="/contact" className="flex items-center gap-3 text-ivory/60 hover:text-gold transition-colors font-cinzel text-xs tracking-widest uppercase">

@@ -7,34 +7,6 @@ const MegaMenu = ({ data, layout, onMouseEnter, onMouseLeave }) => {
 
   const renderLayout = () => {
     switch (layout) {
-      case 'decade':
-        return (
-          <div className="grid grid-cols-5 gap-8">
-            {data.children.map((decade) => (
-              <div key={decade.label}>
-                <h3 className="text-gold text-[10px] font-cinzel font-bold tracking-[3px] mb-4 border-b border-gold/10 pb-2 uppercase italic">
-                  {decade.label}
-                </h3>
-                <ul className="flex flex-col gap-2">
-                  {decade.children.slice(0, 10).map((year) => (
-                    <li key={year.path}>
-                      <Link 
-                        to={`/category/${encodeURIComponent(year.path)}`}
-                        className="text-ivory/60 hover:text-gold text-[11px] font-raleway transition-colors uppercase tracking-widest"
-                      >
-                        {year.label}
-                      </Link>
-                    </li>
-                  ))}
-                  {decade.children.length > 10 && (
-                    <Link to="/shop" className="text-gold/40 text-[9px] font-cinzel uppercase mt-1">View More...</Link>
-                  )}
-                </ul>
-              </div>
-            ))}
-          </div>
-        );
-
       case 'columnar':
         return (
           <div className="grid grid-cols-4 gap-10">
@@ -46,20 +18,32 @@ const MegaMenu = ({ data, layout, onMouseEnter, onMouseLeave }) => {
                 <div className="space-y-6">
                   {conf.children && conf.children.map((div) => (
                     <div key={div.label}>
-                      <p className="text-ivory font-cinzel text-[9px] tracking-[2px] mb-3 uppercase opacity-50">{div.label}</p>
-                      <ul className="flex flex-col gap-2">
-                        {div.children && div.children.map((team) => (
-                          <li key={team.path}>
-                            <Link 
-                              to={`/category/${encodeURIComponent(team.path)}`}
-                              className="text-ivory/70 hover:text-gold text-xs font-raleway transition-colors uppercase group flex items-center gap-2"
-                            >
-                              <span className="w-1 h-1 bg-gold/30 rounded-full group-hover:bg-gold transition-colors" />
-                              {team.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                      {div.path ? (
+                        <Link 
+                          to={`/category/${encodeURIComponent(div.path)}`}
+                          className="text-ivory font-cinzel text-[9px] tracking-[2px] mb-3 uppercase opacity-50 hover:opacity-100 hover:text-gold transition-all block"
+                        >
+                          {div.label}
+                        </Link>
+                      ) : (
+                        <p className="text-ivory font-cinzel text-[9px] tracking-[2px] mb-3 uppercase opacity-50">{div.label}</p>
+                      )}
+                      
+                      {div.children && (
+                        <ul className="flex flex-col gap-2">
+                          {div.children.map((team) => (
+                            <li key={team.path}>
+                              <Link 
+                                to={`/category/${encodeURIComponent(team.path)}`}
+                                className="text-ivory/70 hover:text-gold text-xs font-raleway transition-colors uppercase group flex items-center gap-2"
+                              >
+                                <span className="w-1 h-1 bg-gold/30 rounded-full group-hover:bg-gold transition-colors" />
+                                {team.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -67,6 +51,7 @@ const MegaMenu = ({ data, layout, onMouseEnter, onMouseLeave }) => {
             ))}
           </div>
         );
+
 
       case 'grid':
         return (

@@ -2,11 +2,13 @@ import React, { useState, useMemo, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
-import { productsData } from '../data/productsData';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Filter, X, ChevronDown, SlidersHorizontal, Search, RotateCcw } from 'lucide-react';
+import { Filter, X, ChevronDown, SlidersHorizontal, Search, RotateCcw, Loader2 } from 'lucide-react';
+import api from '../utils/api';
 
 const Shop = () => {
+  const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [selectedSports, setSelectedSports] = useState([]);
   const [selectedEras, setSelectedEras] = useState([]);
   const [sortBy, setSortBy] = useState('Featured');
@@ -15,6 +17,27 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showOnlySale, setShowOnlySale] = useState(false);
   const ITEMS_PER_PAGE = 20;
+
+  useEffect(() => {
+    fetchProducts();
+  }, [selectedSports, selectedEras, sortBy, searchQuery, showOnlySale, currentPage]);
+
+  const fetchProducts = async () => {
+    setIsLoading(true);
+    try {
+      // For now, let's just fetch all and filter locally to maintain existing logic
+      // But ultimately we should do server-side filtering
+      // Fetch a large limit to support local filtering logic for now
+      const response = await api.get('/products?limit=1000');
+      if (response.data.success) {
+        setProducts(response.data.data);
+      }
+    } catch (error) {
+      console.error('Failed to fetch products:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const sports = ['NFL', 'NBA', 'NHL', 'MLB', 'Special Edition'];
   const eras = [
@@ -37,7 +60,7 @@ const Shop = () => {
   }, [isMobileFilterOpen]);
 
   const filteredProducts = useMemo(() => {
-    let result = [...productsData];
+    let result = [...products];
 
     // Search query filter
     if (searchQuery) {
@@ -45,7 +68,7 @@ const Shop = () => {
       result = result.filter(p => 
         p.name.toLowerCase().includes(query) || 
         p.sku?.toLowerCase().includes(query) ||
-        p.categories?.some(cat => cat.toLowerCase().includes(query))
+        p.categories?.some(cat => cat.name.toLowerCase().includes(query))
       );
     }
 
@@ -56,7 +79,7 @@ const Shop = () => {
     if (selectedSports.length > 0) {
       result = result.filter(p => {
         return p.categories?.some(cat => {
-          const lowerCat = cat.toLowerCase();
+          const lowerCat = cat.name.toLowerCase();
           return selectedSports.some(sport => lowerCat.includes(sport.toLowerCase()));
         });
       });
@@ -64,9 +87,9 @@ const Shop = () => {
 
     if (selectedEras.length > 0) {
       result = result.filter(p => {
-        const yearCat = p.categories?.find(cat => cat.startsWith('Champions By Year >'));
+        const yearCat = p.categories?.find(cat => cat.name.startsWith('Champions By Year >'));
         if (!yearCat) return false;
-        const yearMatch = yearCat.match(/\d{4}/);
+        const yearMatch = yearCat.name.match(/\d{4}/);
         const year = yearMatch ? parseInt(yearMatch[0]) : null;
         if (!year) return false;
         return selectedEras.some(eraLabel => {
@@ -85,17 +108,17 @@ const Shop = () => {
     }
 
     return result;
-  }, [selectedSports, selectedEras, sortBy, searchQuery, showOnlySale]);
+  }, [products, selectedSports, selectedEras, sortBy, searchQuery, showOnlySale]);
 
   const getCountForSport = (sport) => {
-    return productsData.filter(p => p.categories?.some(cat => cat.toLowerCase().includes(sport.toLowerCase()))).length;
+    return products.filter(p => p.categories?.some(cat => cat.name.toLowerCase().includes(sport.toLowerCase()))).length;
   };
 
   const getCountForEra = (eraRange) => {
-    return productsData.filter(p => {
-      const yearCat = p.categories?.find(cat => cat.startsWith('Champions By Year >'));
+    return products.filter(p => {
+      const yearCat = p.categories?.find(cat => cat.name.startsWith('Champions By Year >'));
       if (!yearCat) return false;
-      const yearMatch = yearCat.match(/\d{4}/);
+      const yearMatch = yearCat.name.match(/\d{4}/);
       const year = yearMatch ? parseInt(yearMatch[0]) : null;
       return year && year >= eraRange[0] && year <= eraRange[1];
     }).length;
@@ -315,21 +338,28 @@ const Shop = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 min-h-[600px]">
-            <AnimatePresence mode="popLayout">
-              {paginatedProducts.map(product => (
-                <motion.div
-                  layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
-                  key={product.id}
-                >
-                  <ProductCard product={product} />
-                </motion.div>
-              ))}
-            </AnimatePresence>
-            {filteredProducts.length === 0 && (
+            {isLoading ? (
+              <div className="col-span-full flex flex-col items-center justify-center py-20 gap-4">
+                <Loader2 size={40} className="text-gold animate-spin" />
+                <p className="font-cinzel text-[10px] text-gold tracking-widest uppercase">Fetching the archive...</p>
+              </div>
+            ) : (
+              <AnimatePresence mode="popLayout">
+                {paginatedProducts.map(product => (
+                  <motion.div
+                    layout
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.3 }}
+                    key={product.id}
+                  >
+                    <ProductCard product={product} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            )}
+            {!isLoading && filteredProducts.length === 0 && (
               <div className="col-span-full py-20 text-center">
                 <p className="font-cinzel text-ivory/40 uppercase tracking-[4px]">No rings found matching these filters</p>
                 <button onClick={clearFilters} className="mt-6 text-gold underline text-xs font-cinzel tracking-widest uppercase">Reset All Filters</button>

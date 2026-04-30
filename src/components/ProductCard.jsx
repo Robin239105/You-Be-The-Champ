@@ -17,9 +17,20 @@ const ProductCard = ({ product }) => {
   // Defaults for production data
   const rating = product.rating || 4.5 + (Math.random() * 0.5);
   const reviews = product.reviews || Math.floor(20 + Math.random() * 150);
-  const year = product.year || product.sku?.slice(-2) || '24';
-  const displayImage = product.images?.[0] || product.image;
-  const sport = product.sport || (product.categories?.[0]?.split(' > ')[0]) || 'Leagues';
+  const year = String(product.year || String(product.sku || '').slice(-2) || '24');
+  
+  // Robust Number conversion for prices (Prisma Decimals often come as strings)
+  const price = Number(product.price || 0);
+  const salePrice = Number(product.salePrice || 0);
+  const onSale = product.onSale && salePrice > 0;
+  
+  // Handle both flat string images and array of objects from Prisma
+  const displayImage = product.images?.[0]?.url || product.images?.[0] || product.image;
+  
+  // Handle categories safely
+  const firstCategory = product.categories?.[0];
+  const categoryName = typeof firstCategory === 'object' ? String(firstCategory.name || '') : String(firstCategory || '');
+  const sport = product.sport || (categoryName ? categoryName.split(' > ')[0] : 'Leagues');
 
   return (
     <Link to={`/product/${product.id}`} className="block h-full">
@@ -95,25 +106,25 @@ const ProductCard = ({ product }) => {
         {/* Pricing */}
         <div className="mt-auto pt-4 flex items-end justify-between">
           <div className="flex flex-col">
-            {product.price === 0 ? (
+            {price === 0 ? (
               <span className="text-sm font-cinzel font-bold text-gold tracking-widest uppercase">
                 Coming Soon
               </span>
             ) : (
               <>
-                {product.onSale && (
+                {onSale && (
                   <span className="text-[10px] text-ivory/30 line-through font-mono">
-                    ${product.price.toFixed(2)} AUD
+                    ${price.toFixed(2)} AUD
                   </span>
                 )}
                 <span className="text-lg font-mono font-bold text-gold">
-                  ${(product.onSale ? product.salePrice : product.price).toFixed(2)} AUD
+                  ${(onSale ? salePrice : price).toFixed(2)} AUD
                 </span>
               </>
             )}
           </div>
           
-          {product.price > 0 && (
+          {price > 0 && (
             <button 
               onClick={(e) => {
                 e.preventDefault();

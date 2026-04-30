@@ -1,21 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { useAuthStore } from '../store/useAuthStore';
+import { Loader2, AlertCircle } from 'lucide-react';
 
 const Register = () => {
-  const login = useAuthStore(state => state.login);
-  const isAuthenticated = useAuthStore(state => state.isAuthenticated);
+  const { register, isAuthenticated, isLoading, error, clearError } = useAuthStore();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (isAuthenticated) {
-      navigate('/account');
-    }
-  }, [isAuthenticated, navigate]);
   const [formData, setFormData] = React.useState({
     firstName: '',
     lastName: '',
@@ -23,17 +17,23 @@ const Register = () => {
     password: ''
   });
 
-  const handleRegister = (e) => {
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/account');
+    }
+    return () => clearError();
+  }, [isAuthenticated, navigate, clearError]);
+
+  const handleRegister = async (e) => {
     e.preventDefault();
-    // Demo registration logic
-    login({ 
-      name: `${formData.firstName} ${formData.lastName}`, 
+    const result = await register({
+      name: `${formData.firstName} ${formData.lastName}`,
       email: formData.email,
-      initials: formData.firstName[0] + formData.lastName[0],
-      memberSince: new Date().getFullYear(),
-      affiliateId: `CHAMP-${Math.random().toString(36).substring(2, 7).toUpperCase()}`
-    }, 'mock-jwt-token');
-    navigate('/account');
+      password: formData.password
+    });
+    if (result.success) {
+      navigate('/account');
+    }
   };
 
   return (
@@ -55,6 +55,12 @@ const Register = () => {
           </div>
 
           <form className="space-y-6" onSubmit={handleRegister}>
+            {error && (
+              <div className="bg-crimson/10 border border-crimson/20 p-4 flex items-center gap-3 text-crimson text-xs uppercase tracking-widest animate-shake">
+                <AlertCircle size={14} />
+                <span>{error}</span>
+              </div>
+            )}
             <div className="grid grid-cols-2 gap-4">
                <div>
                   <label className="block text-[10px] font-cinzel font-bold text-ivory/40 uppercase tracking-widest mb-2">First Name</label>
@@ -62,6 +68,7 @@ const Register = () => {
                     type="text" 
                     className="w-full bg-surface border border-gold/20 px-4 py-3 text-sm text-ivory font-raleway outline-none focus:border-gold transition-colors" 
                     required 
+                    value={formData.firstName}
                     onChange={(e) => setFormData({...formData, firstName: e.target.value})}
                   />
                </div>
@@ -71,6 +78,7 @@ const Register = () => {
                     type="text" 
                     className="w-full bg-surface border border-gold/20 px-4 py-3 text-sm text-ivory font-raleway outline-none focus:border-gold transition-colors" 
                     required 
+                    value={formData.lastName}
                     onChange={(e) => setFormData({...formData, lastName: e.target.value})}
                   />
                </div>
@@ -82,6 +90,7 @@ const Register = () => {
                 placeholder="EMAIL@EXAMPLE.COM" 
                 className="w-full bg-surface border border-gold/20 px-4 py-3 text-sm text-ivory font-raleway outline-none focus:border-gold transition-colors" 
                 required 
+                value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
               />
             </div>
@@ -92,6 +101,7 @@ const Register = () => {
                 placeholder="••••••••" 
                 className="w-full bg-surface border border-gold/20 px-4 py-3 text-sm text-ivory font-raleway outline-none focus:border-gold transition-colors" 
                 required 
+                value={formData.password}
                 onChange={(e) => setFormData({...formData, password: e.target.value})}
               />
             </div>
@@ -100,7 +110,9 @@ const Register = () => {
                By clicking "Create Account", you agree to join the Champions Club newsletter for exclusive ring drops.
             </div>
 
-            <Button type="submit" className="w-full py-4 mt-4">Create Account</Button>
+            <Button type="submit" className="w-full py-4 mt-4 flex items-center justify-center gap-2" disabled={isLoading}>
+              {isLoading ? <Loader2 size={16} className="animate-spin" /> : 'Create Account'}
+            </Button>
           </form>
 
           <div className="mt-8 pt-8 border-t border-gold/10 text-center">

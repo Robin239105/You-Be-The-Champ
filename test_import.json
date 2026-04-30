@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "Super Bowl 03 (III) Championship Ring - New York Jets - January 12, 1969",
+      "sku": "SB03",
+      "price": 35,
+      "description": "<p>Test Description</p>",
+      "shortDescription": "<p>Short Description</p>",
+      "categories": ["Champions By Year > 1969", "Teams > New York Jets (NFL)"],
+      "images": ["https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6899.png"],
+      "isFeatured": false
+    },
+    {
+      "name": "Super Bowl 05 (V) Championship Ring - Baltimore Colts - January 17, 1971",
+      "sku": "SB05",
+      "price": 35,
+      "description": "<p>Test Description 2</p>",
+      "shortDescription": "<p>Short Description 2</p>",
+      "categories": ["Champions By Year > 1971"],
+      "images": ["https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6638.png"],
+      "isFeatured": false
+    }
+  ]
+}

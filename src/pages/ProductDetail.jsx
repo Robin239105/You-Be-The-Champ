@@ -1,8 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShoppingBag, Heart, Share2, Star, ShieldCheck, Truck, RotateCcw, Minus, Plus, ChevronRight } from 'lucide-react';
-import { productsData } from '../data/productsData';
+import { ShoppingBag, Heart, Share2, Star, ShieldCheck, Truck, RotateCcw, Minus, Plus, ChevronRight, Loader2 } from 'lucide-react';
 import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
 import Header from '../components/Header';
@@ -10,6 +9,7 @@ import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import Button from '../components/Button';
 import Badge from '../components/Badge';
+import api from '../utils/api';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -17,13 +17,42 @@ const ProductDetail = () => {
   const addItem = useCartStore(state => state.addItem);
   const { toggleWishlist, isWishlisted } = useWishlistStore();
   
+  const [product, setProduct] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('description');
   const [selectedImage, setSelectedImage] = useState(0);
 
-  const product = useMemo(() => {
-    return productsData.find(p => p.id === id);
+  useEffect(() => {
+    fetchProduct();
   }, [id]);
+
+  const fetchProduct = async () => {
+    setIsLoading(true);
+    try {
+      const response = await api.get(`/products/${id}`);
+      if (response.data.success) {
+        setProduct(response.data.data);
+      }
+    } catch (error) {
+      console.error('Failed to fetch product:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  if (isLoading) {
+    return (
+      <div className="bg-black min-h-screen text-ivory flex flex-col">
+        <Header />
+        <div className="flex-1 flex flex-col items-center justify-center">
+           <Loader2 size={48} className="text-gold animate-spin mb-4" />
+           <p className="font-cinzel text-xs tracking-widest text-gold uppercase">Opening the vault...</p>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 
   if (!product) {
     return (
@@ -50,9 +79,12 @@ const ProductDetail = () => {
     navigate('/checkout');
   };
 
+  const price = Number(product.price || 0);
+  const salePrice = Number(product.salePrice || 0);
+  const onSale = product.onSale && salePrice > 0;
   const rating = product.rating || 4.8;
   const reviewsCount = product.reviews || 124;
-  const images = product.images?.length > 0 ? product.images : [product.image];
+  const images = product.images?.length > 0 ? product.images.map(img => img.url) : [product.image];
 
   return (
     <div className="bg-black min-h-screen text-ivory">
@@ -103,35 +135,35 @@ const ProductDetail = () => {
           {/* Right: Info */}
           <div className="flex flex-col">
             <div className="border-b border-gold/10 pb-8 mb-8">
-              <div className="flex items-center gap-4 mb-4">
-                 <span className="text-gold font-cinzel text-[10px] tracking-[3px] uppercase">
-                    {product.categories?.[0]?.split(' > ')[0] || 'Official Collection'}
-                 </span>
-                 <div className="flex items-center gap-1">
-                   {[...Array(5)].map((_, i) => (
-                     <Star key={i} size={12} className={i < Math.floor(rating) ? 'fill-gold text-gold' : 'text-gold/20'} />
-                   ))}
-                   <span className="text-[10px] text-ivory/40 ml-2 font-mono">({reviewsCount} Reviews)</span>
-                 </div>
-              </div>
+               <div className="flex items-center gap-4 mb-4">
+                  <span className="text-gold font-cinzel text-[10px] tracking-[3px] uppercase">
+                     {product.categories?.[0]?.name || 'Official Collection'}
+                  </span>
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={12} className={i < Math.floor(rating) ? 'fill-gold text-gold' : 'text-gold/20'} />
+                    ))}
+                    <span className="text-[10px] text-ivory/40 ml-2 font-mono">({reviewsCount} Reviews)</span>
+                  </div>
+               </div>
 
-              <h1 className="text-3xl md:text-4xl font-black font-cinzel text-white tracking-tight uppercase mb-6 leading-tight">
-                {product.name}
-              </h1>
+               <h1 className="text-3xl md:text-4xl font-black font-cinzel text-white tracking-tight uppercase mb-6 leading-tight">
+                 {product.name}
+               </h1>
 
-              <div className="flex items-center gap-6">
-                {product.price === 0 ? (
-                  <span className="text-3xl font-cinzel font-bold text-gold tracking-widest uppercase">Coming Soon</span>
-                ) : (
-                  <>
-                    <span className="text-4xl font-mono font-bold text-gold">${product.price.toFixed(2)} AUD</span>
-                    {product.onSale && (
-                      <span className="text-xl text-ivory/30 line-through font-mono">${product.salePrice.toFixed(2)} AUD</span>
-                    )}
-                  </>
-                )}
-                <Badge variant="sport">{product.price === 0 ? 'Pre-Release' : 'In Stock'}</Badge>
-              </div>
+               <div className="flex items-center gap-6">
+                 {price === 0 ? (
+                   <span className="text-3xl font-cinzel font-bold text-gold tracking-widest uppercase">Coming Soon</span>
+                 ) : (
+                   <>
+                     <span className="text-4xl font-mono font-bold text-gold">${price.toFixed(2)} AUD</span>
+                     {onSale && (
+                       <span className="text-xl text-ivory/30 line-through font-mono">${salePrice.toFixed(2)} AUD</span>
+                     )}
+                   </>
+                 )}
+                 <Badge variant="sport">{price === 0 ? 'Pre-Release' : 'In Stock'}</Badge>
+               </div>
             </div>
 
             <div className="space-y-10">

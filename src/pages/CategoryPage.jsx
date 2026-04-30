@@ -1,28 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 import Breadcrumb from '../components/Breadcrumb';
-import { productsData } from '../data/productsData';
 import { motion } from 'framer-motion';
+import api from '../utils/api';
+import { Loader2 } from 'lucide-react';
 
 const CategoryPage = () => {
   const { '*': categoryPath } = useParams();
+  const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  
   const decodedPath = decodeURIComponent(categoryPath || '');
   const pathParts = decodedPath.split(' > ');
   const categoryTitle = pathParts[pathParts.length - 1];
 
-  // Filtering logic: Check if product belongs to this category or any of its children
-  const filteredProducts = productsData.filter(p => {
-    if (!p.categories || p.categories.length === 0) return false;
-    // Check if any category string in the array matches the current path or contains the title
-    return p.categories.some(cat => 
-      cat === decodedPath || 
-      cat.includes(decodedPath) || 
-      cat.split(' > ').includes(categoryTitle)
-    );
-  });
+  useEffect(() => {
+    const fetchProducts = async () => {
+      setIsLoading(true);
+      try {
+        // Fetch all products to filter locally (matching the decoded path structure)
+        const response = await api.get('/products?limit=1000');
+        if (response.data.success) {
+          setProducts(response.data.data);
+        }
+      } catch (error) {
+        console.error('Failed to fetch category products:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchProducts();
+  }, [decodedPath]);
+
+  // Filtering logic: Check if product belongs to this category path
+  const filteredProducts = useMemo(() => {
+    return products.filter(p => {
+      if (!p.categories || p.categories.length === 0) return false;
+      return p.categories.some(cat => {
+        const catName = typeof cat === 'object' ? cat.name : cat;
+        const lowerCatName = catName.toLowerCase();
+        const lowerPath = decodedPath.toLowerCase();
+        const lowerTitle = categoryTitle.toLowerCase();
+
+        return (
+          lowerCatName === lowerPath || 
+          lowerCatName.includes(lowerPath) || 
+          lowerCatName.includes(`(${lowerTitle})`) ||
+          lowerCatName.split(' > ').some(part => part.toLowerCase().includes(lowerTitle))
+        );
+      });
+    });
+  }, [products, decodedPath, categoryTitle]);
 
   const getBreadcrumbs = () => {
     return pathParts.map((part, index) => {
@@ -61,7 +92,12 @@ const CategoryPage = () => {
           </motion.div>
         </div>
 
-        {filteredProducts.length > 0 ? (
+        {isLoading ? (
+          <div className="col-span-full flex flex-col items-center justify-center py-32 gap-4 text-center">
+            <Loader2 size={40} className="text-gold animate-spin" />
+            <p className="font-cinzel text-[10px] text-gold tracking-widest uppercase">Consulting the archive...</p>
+          </div>
+        ) : filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {filteredProducts.map(product => (
               <ProductCard key={product.id} product={product} />

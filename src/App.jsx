@@ -28,6 +28,18 @@ import SizeGuide from './pages/SizeGuide';
 import LegalPage from './pages/LegalPage';
 import NotFound from './pages/NotFound';
 
+// Admin Pages
+import AdminLayout from './pages/admin/AdminLayout';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import AdminProductList from './pages/admin/AdminProductList';
+import AdminProductForm from './pages/admin/AdminProductForm';
+import AdminOrderList from './pages/admin/AdminOrderList';
+import AdminSettings from './pages/admin/AdminSettings';
+import AdminLogin from './pages/admin/AdminLogin';
+import AdminUserList from './pages/admin/AdminUserList';
+import AdminCouponList from './pages/admin/AdminCouponList';
+import AdminCategoryList from './pages/admin/AdminCategoryList';
+
 function App() {
   const location = useLocation();
 
@@ -36,6 +48,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
         
         <Route path="/category/*" element={<CategoryPage />} />
         
@@ -60,6 +73,19 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/size-guide" element={<SizeGuide />} />
+        
+        {/* Admin Routes */}
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="products" element={<AdminProductList />} />
+          <Route path="products/new" element={<AdminProductForm />} />
+          <Route path="products/edit/:id" element={<AdminProductForm isEdit />} />
+          <Route path="categories" element={<AdminCategoryList />} />
+          <Route path="orders" element={<AdminOrderList />} />
+          <Route path="users" element={<AdminUserList />} />
+          <Route path="coupons" element={<AdminCouponList />} />
+          <Route path="settings" element={<AdminSettings />} />
+        </Route>
         
         {/* Legal Pages */}
         <Route path="/shipping-policy" element={<LegalPage title="Shipping Policy" />} />
