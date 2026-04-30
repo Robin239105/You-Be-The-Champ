@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "postinstall": "prisma generate && prisma db push --accept-data-loss"
+    "postinstall": "prisma generate && prisma db push --accept-data-loss && node scripts/seed-admin.js"
   },
   "keywords": [],
   "author": "",
