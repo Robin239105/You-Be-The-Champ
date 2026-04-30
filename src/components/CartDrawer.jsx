@@ -87,7 +87,7 @@ const CartDrawer = ({ isOpen, onClose }) => {
                             className="p-1 hover:text-gold transition-colors"
                           ><Plus size={12} /></button>
                         </div>
-                        <span className="text-gold font-mono text-xs font-bold">${(item.price * item.quantity).toFixed(2)}</span>
+                        <span className="text-gold font-mono text-xs font-bold">${(Number(item.price) * item.quantity).toFixed(2)}</span>
                       </div>
                     </div>
                     <button 

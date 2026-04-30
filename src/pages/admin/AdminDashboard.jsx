@@ -60,7 +60,7 @@ const AdminDashboard = () => {
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <StatCard label="Total Revenue" value={`$${stats?.totalRevenue?.toFixed(2) || '0.00'}`} icon={DollarSign} />
+        <StatCard label="Total Revenue" value={`$${Number(stats?.totalRevenue || 0).toFixed(2)}`} icon={DollarSign} />
         <StatCard label="Total Orders" value={stats?.totalOrders || '0'} icon={ShoppingBag} />
         <StatCard label="Total Customers" value={stats?.totalCustomers || '0'} icon={Users} />
         <StatCard label="Total Inventory" value={stats?.totalProducts || '0'} icon={TrendingUp} />
@@ -84,7 +84,7 @@ const AdminDashboard = () => {
                   <tr key={order.id} className="border-b border-white/5 hover:bg-white/5 transition-colors">
                     <td className="py-4 font-mono text-xs text-gold truncate max-w-[100px]">{order.id}</td>
                     <td className="py-4">{order.user?.firstName} {order.user?.lastName}</td>
-                    <td className="py-4 font-bold text-gold">${order.totalAmount?.toFixed(2)}</td>
+                    <td className="py-4 font-bold text-gold">${Number(order.totalAmount || 0).toFixed(2)}</td>
                     <td className="py-4">
                       <span className="px-2 py-1 rounded-full text-[10px] font-bold bg-gold/10 text-gold uppercase">{order.status}</span>
                     </td>

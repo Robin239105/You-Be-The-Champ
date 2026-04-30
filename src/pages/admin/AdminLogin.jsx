@@ -23,8 +23,8 @@ const AdminLogin = () => {
     setError('');
     
     try {
-      const success = await login(email, password);
-      if (success) {
+      const result = await login(email, password);
+      if (result?.success) {
         // Double check role after login
         const currentUser = useAuthStore.getState().user;
         if (currentUser?.role === 'ADMIN') {
@@ -33,7 +33,7 @@ const AdminLogin = () => {
           setError('Access Denied: Administrative privileges required.');
         }
       } else {
-        setError('Invalid administrative credentials.');
+        setError(result?.message || 'Invalid administrative credentials.');
       }
     } catch (err) {
       setError('An error occurred during authentication.');

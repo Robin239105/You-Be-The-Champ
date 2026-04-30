@@ -86,8 +86,8 @@ export const downloadInvoice = (orderData) => {
             <tr>
               <td>${item.name}</td>
               <td>${item.quantity}</td>
-              <td>$${item.price.toFixed(2)} AUD</td>
-              <td>$${(item.price * item.quantity).toFixed(2)} AUD</td>
+              <td>$${Number(item.price).toFixed(2)} AUD</td>
+              <td>$${(Number(item.price) * item.quantity).toFixed(2)} AUD</td>
             </tr>
           `).join('')}
         </tbody>

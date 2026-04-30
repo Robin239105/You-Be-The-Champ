@@ -63,7 +63,7 @@ const Cart = () => {
                           className="px-3 py-2 hover:text-gold transition-colors"
                         ><Plus size={14}/></button>
                       </div>
-                      <span className="text-xl font-mono font-bold text-gold">${(item.price * item.quantity).toFixed(2)} AUD</span>
+                      <span className="text-xl font-mono font-bold text-gold">${(Number(item.price) * item.quantity).toFixed(2)} AUD</span>
                     </div>
                   </div>
                 </div>

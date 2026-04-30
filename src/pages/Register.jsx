@@ -27,7 +27,8 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     const result = await register({
-      name: `${formData.firstName} ${formData.lastName}`,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
       email: formData.email,
       password: formData.password
     });

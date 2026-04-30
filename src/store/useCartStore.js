@@ -9,6 +9,12 @@ export const useCartStore = create(
         const currentItems = get().items;
         const existingItem = currentItems.find(item => item.id === product.id);
         const qtyToAdd = product.quantity || 1;
+        // Normalize price/salePrice to Number (Prisma Decimal arrives as string)
+        const normalized = {
+          ...product,
+          price: Number(product.price || 0),
+          salePrice: product.salePrice ? Number(product.salePrice) : null,
+        };
         
         if (existingItem) {
           set({
@@ -17,7 +23,7 @@ export const useCartStore = create(
             )
           });
         } else {
-          set({ items: [...currentItems, { ...product, quantity: qtyToAdd }] });
+          set({ items: [...currentItems, { ...normalized, quantity: qtyToAdd }] });
         }
       },
       removeItem: (productId) => set({
@@ -29,7 +35,7 @@ export const useCartStore = create(
         )
       }),
       clearCart: () => set({ items: [] }),
-      getTotal: () => get().items.reduce((total, item) => total + (item.price * item.quantity), 0),
+      getTotal: () => get().items.reduce((total, item) => total + (Number(item.price) * item.quantity), 0),
       getItemCount: () => get().items.reduce((count, item) => count + item.quantity, 0),
     }),
     {

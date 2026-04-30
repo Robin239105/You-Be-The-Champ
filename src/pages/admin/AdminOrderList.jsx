@@ -106,7 +106,7 @@ const AdminOrderList = () => {
                   <tr key={order.id} className="border-b border-white/5 hover:bg-white/5 transition-colors">
                     <td className="px-6 py-4 font-mono text-gold text-xs truncate max-w-[120px]">{order.id}</td>
                     <td className="px-6 py-4 text-white font-bold">{order.user?.firstName} {order.user?.lastName}</td>
-                    <td className="px-6 py-4 font-bold">${order.totalAmount?.toFixed(2)}</td>
+                    <td className="px-6 py-4 font-bold">${Number(order.totalAmount || 0).toFixed(2)}</td>
                     <td className="px-6 py-4">
                       <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase ${getStatusColor(order.status)}`}>
                         {order.status}

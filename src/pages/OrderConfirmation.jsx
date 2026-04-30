@@ -100,7 +100,7 @@ const OrderConfirmation = () => {
                       <p className="text-[11px] text-ivory font-bold uppercase">{item.name}</p>
                       <p className="text-[9px] text-ivory/40 uppercase">QTY: {item.quantity}</p>
                    </div>
-                   <span className="text-xs font-mono text-gold">${(item.price * item.quantity).toFixed(2)}</span>
+                   <span className="text-xs font-mono text-gold">${(Number(item.price) * item.quantity).toFixed(2)}</span>
                  </div>
                ))}
             </div>

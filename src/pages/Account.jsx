@@ -135,7 +135,7 @@ const Account = () => {
                              </div>
                           </div>
                           <div className="flex items-center gap-4">
-                             <span className="text-sm font-mono text-gold mr-4">${order.totalAmount?.toFixed(2)}</span>
+                             <span className="text-sm font-mono text-gold mr-4">${Number(order.totalAmount || 0).toFixed(2)}</span>
                              <button 
                                onClick={() => downloadInvoice(order)}
                                className="flex items-center gap-2 py-2 px-6 border border-gold/20 text-gold text-[10px] font-cinzel uppercase hover:bg-gold/10 transition-all"

@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, Truck, CreditCard, CheckCircle2, ChevronRight, Lock, Loader2 } from 'lucide-react';
+import { ShieldCheck, Truck, CreditCard, ChevronRight, Lock, Loader2 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { useCartStore } from '../store/useCartStore';
 import { useAuthStore } from '../store/useAuthStore';
-import { useOrderStore } from '../store/useOrderStore';
 import api from '../utils/api';
 
 const Checkout = () => {
@@ -22,7 +21,12 @@ const Checkout = () => {
   const [error, setError] = useState('');
 
   const { items, getTotal, clearCart } = useCartStore();
-  const addOrder = useOrderStore(state => state.addOrder);
+
+  useEffect(() => {
+    if (items.length === 0) {
+      navigate('/cart');
+    }
+  }, [items.length, navigate]);
 
   const shippingCost = shippingMethod === 'express' ? 25 : 0;
   const finalTotal = getTotal() + shippingCost;
@@ -42,18 +46,6 @@ const Checkout = () => {
   const handleNextStep = () => {
     if (step === 1 && !validateStep1()) return;
     setStep(step + 1);
-  };
-
-  const handlePlaceOrder = () => {
-    const orderId = `YBTC-${Math.floor(Math.random() * 1000000)}`;
-    addOrder({
-      orderId,
-      formData,
-      items,
-      shippingMethod,
-      finalTotal
-    });
-    return orderId;
   };
 
   const steps = [
@@ -239,7 +231,7 @@ const Checkout = () => {
                           setIsLoading(true);
                           try {
                             const response = await api.post('/orders', {
-                              cartItems: items.map(i => ({ id: i.id, quantity: i.quantity, price: i.price })),
+                              cartItems: items.map(i => ({ id: i.id, quantity: i.quantity, price: Number(i.price) })),
                               totalAmount: finalTotal,
                               shippingAddress: `${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}`,
                               paymentMethod: 'Credit Card (Mock)'
@@ -291,7 +283,7 @@ const Checkout = () => {
                         </div>
                         <div className="flex-1">
                            <p className="font-cinzel text-[10px] font-bold text-ivory uppercase leading-tight">{item.name}</p>
-                           <p className="text-[9px] text-ivory/40 font-raleway uppercase mt-1">QTY: {item.quantity} • ${item.price.toFixed(2)} AUD</p>
+                           <p className="text-[9px] text-ivory/40 font-raleway uppercase mt-1">QTY: {item.quantity} • ${Number(item.price).toFixed(2)} AUD</p>
                         </div>
                      </div>
                    ))}
