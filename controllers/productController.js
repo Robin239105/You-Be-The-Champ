@@ -282,15 +282,20 @@ const importProducts = async (req, res) => {
           salePrice: salePrice ? parseFloat(salePrice) : null,
           stockQuantity: parseInt(stockQuantity) || 0,
           status: status || 'PUBLISHED',
-          isFeatured: isFeatured === true || isFeatured === 'true',
-          categories: { set: categoryIds.map(id => ({ id })) }
+          isFeatured: isFeatured === true || isFeatured === 'true'
         };
 
         // 3. Upsert Product
         const product = await prisma.product.upsert({
           where: { sku },
-          update: productData,
-          create: productData
+          update: {
+            ...productData,
+            categories: { set: categoryIds.map(id => ({ id })) }
+          },
+          create: {
+            ...productData,
+            categories: { connect: categoryIds.map(id => ({ id })) }
+          }
         });
 
         results.created++; // Increment total processed
