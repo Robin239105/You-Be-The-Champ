@@ -9,12 +9,17 @@
     {
       "src": "server/server.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["server/prisma/**"] }
+      "config": { "includeFiles": ["prisma/**"] }
     }
   ],
-
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "server/server.js" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "server/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
