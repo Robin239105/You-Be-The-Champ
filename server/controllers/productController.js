@@ -226,21 +226,22 @@ const exportProducts = async (req, res) => {
 };
 
 const importProducts = async (req, res) => {
-  const { products } = req.body; // Expecting array of objects
+  const { products } = req.body;
 
   if (!Array.isArray(products)) {
     return res.status(400).json({ success: false, message: 'Invalid product data format. Expected an array.' });
   }
 
-  const results = {
-    created: 0,
-    updated: 0,
-    errors: []
-  };
-
-  const categoryCache = {}; // Cache persists across all products in this request
+  const results = { created: 0, updated: 0, errors: [] };
+  const categoryCache = {};
 
   try {
+    // 1. Pre-populate Category Cache to avoid thousands of DB calls
+    const allCategories = await prisma.category.findMany();
+    allCategories.forEach(cat => {
+      categoryCache[cat.slug] = cat.id;
+    });
+
     for (const item of products) {
       try {
         const {
@@ -254,11 +255,9 @@ const importProducts = async (req, res) => {
         }
 
         const slug = slugify(name, { lower: true, strict: true }) + '-' + sku.toLowerCase();
-
-        // 1. Handle Categories (Create if not exist) with Cache
         const categoryIds = [];
 
-
+        // 2. Handle Categories with Pre-populated Cache
         if (categories) {
           const categoryNames = typeof categories === 'string' ? categories.split(',').map(c => c.trim()) : categories;
           for (const catName of categoryNames) {
@@ -266,64 +265,44 @@ const importProducts = async (req, res) => {
             
             if (categoryCache[catSlug]) {
               categoryIds.push(categoryCache[catSlug]);
-              continue;
-            }
-
-            let category = await prisma.category.findUnique({ where: { slug: catSlug } });
-            if (!category) {
-              category = await prisma.category.create({
+            } else {
+              // Only create if truly missing
+              const newCat = await prisma.category.create({
                 data: { name: catName, slug: catSlug }
               });
+              categoryCache[catSlug] = newCat.id;
+              categoryIds.push(newCat.id);
             }
-            
-            categoryCache[catSlug] = category.id;
-            categoryIds.push(category.id);
           }
         }
 
-
-        // 2. Create or Update Product
         const productData = {
-          name,
-          slug,
-          sku,
-          description,
-          shortDescription,
+          name, slug, sku,
+          description: description || '',
+          shortDescription: shortDescription || '',
           price: parseFloat(price),
           salePrice: salePrice ? parseFloat(salePrice) : null,
           stockQuantity: parseInt(stockQuantity) || 0,
           status: status || 'PUBLISHED',
           isFeatured: isFeatured === true || isFeatured === 'true',
-          categories: {
-            set: categoryIds.map(id => ({ id }))
-          }
+          categories: { set: categoryIds.map(id => ({ id })) }
         };
 
-        let product;
-        const existingProduct = await prisma.product.findUnique({ where: { sku } });
+        // 3. Upsert Product
+        const product = await prisma.product.upsert({
+          where: { sku },
+          update: productData,
+          create: productData
+        });
 
-        if (existingProduct) {
-          product = await prisma.product.update({
-            where: { sku },
-            data: productData
-          });
-          results.updated++;
-        } else {
-          product = await prisma.product.create({
-            data: productData
-          });
-          results.created++;
+        if (product) {
+          existingProduct ? results.updated++ : results.created++; // Simplified tracking
         }
 
-        // 3. Handle Images (Update or Create)
+        // 4. Handle Images
         if (images) {
           const imageUrls = typeof images === 'string' ? images.split(',').map(i => i.trim()) : images;
-          
-          // For existing products, clear old images and add new ones (simple replacement strategy)
-          if (existingProduct) {
-            await prisma.productImage.deleteMany({ where: { productId: product.id } });
-          }
-
+          await prisma.productImage.deleteMany({ where: { productId: product.id } });
           await prisma.productImage.createMany({
             data: imageUrls.map((url, idx) => ({
               url,
@@ -332,21 +311,17 @@ const importProducts = async (req, res) => {
             }))
           });
         }
-
       } catch (err) {
         results.errors.push(`Error with product ${item.sku}: ${err.message}`);
       }
     }
 
-    res.json({
-      success: true,
-      message: 'Import process completed',
-      summary: results
-    });
+    res.json({ success: true, message: 'Import completed', summary: results });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
 
 module.exports = { 
   getProducts, 
