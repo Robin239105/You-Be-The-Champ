@@ -1,23 +1,19 @@
 {
   "name": "you-be-the-champ",
   "private": true,
-  "name": "you-be-the-champ",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "prisma generate --schema=api/prisma/schema.prisma && vite build",
-    "postinstall": "prisma generate --schema=api/prisma/schema.prisma",
+    "build": "prisma generate && vite build",
+    "postinstall": "prisma generate",
     "lint": "eslint .",
-
     "preview": "vite preview"
   },
-
   "dependencies": {
     "@prisma/client": "^6.2.1",
     "bcryptjs": "^3.0.3",
     "axios": "^1.15.0",
-    "bcryptjs": "^3.0.3",
     "jsonwebtoken": "^9.0.3",
     "express": "^5.2.1",
     "cors": "^2.8.6",
@@ -34,22 +30,20 @@
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.14.1",
     "zustand": "^5.0.12"
-
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
-    "@tailwindcss/vite": "^4.2.2",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "autoprefixer": "^10.5.0",
-    "eslint": "^9.39.4",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
-    "postcss": "^8.5.10",
-    "tailwindcss": "^4.2.2",
+    "@eslint/js": "^9.18.0",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.0",
     "prisma": "^6.2.1",
-    "vite": "^8.0.4"
+    "vite": "^6.0.7"
   }
 }
