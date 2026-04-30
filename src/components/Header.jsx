@@ -120,55 +120,97 @@ const Header = () => {
       </div>
 
       {/* Main Nav */}
-      <nav className={`w-full px-4 sm:px-8 py-4 flex items-center justify-between transition-colors duration-300 ${isScrolled ? 'bg-black/95 border-b border-gold/20' : 'bg-transparent'}`}>
+      <nav className={`w-full px-6 sm:px-12 py-3 flex items-center justify-between transition-all duration-500 ${isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-gold/20 shadow-2xl' : 'bg-transparent'}`}>
         {/* Mobile Menu Toggle */}
-        <button 
-          className="lg:hidden text-gold hover:scale-110 transition-transform"
-          onClick={() => setIsMobileMenuOpen(true)}
-        >
-          <Menu size={24} />
-        </button>
+        <div className="flex-1 lg:hidden">
+          <button 
+            className="text-gold hover:scale-110 transition-transform p-2"
+            onClick={() => setIsMobileMenuOpen(true)}
+          >
+            <Menu size={24} />
+          </button>
+        </div>
 
-        {/* Logo */}
-        <Link to="/" className="flex items-center group">
-          <div className="relative w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-gold/40 shadow-[0_0_20px_rgba(201,168,76,0.2)] group-hover:border-gold group-hover:scale-105 transition-all duration-500">
-            <img 
-              src="/logo.jpg" 
-              alt="You Be The Champ Logo" 
-              className="w-full h-full object-cover"
-            />
-            {/* Subtle Inner Glow */}
-            <div className="absolute inset-0 ring-1 ring-inset ring-gold/20 rounded-full" />
-          </div>
-        </Link>
+        {/* Logo - Left Aligned on Desktop */}
+        <div className="flex-shrink-0 lg:mr-8">
+          <Link to="/" className="flex items-center group">
+            <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border border-gold/30 shadow-[0_0_15px_rgba(201,168,76,0.15)] group-hover:border-gold transition-all duration-500">
+              <img 
+                src="/logo.jpg" 
+                alt="You Be The Champ Logo" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-gold/10 to-transparent pointer-events-none" />
+            </div>
+          </Link>
+        </div>
 
-        {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
-          <Link to="/shop" className="font-cinzel text-xs tracking-[2px] text-ivory/80 hover:text-gold transition-colors uppercase">Shop All</Link>
+        {/* Desktop Nav - Centered with balanced spacing */}
+        <div className="hidden lg:flex flex-1 items-center justify-center gap-x-5 xl:gap-x-7">
+          <Link to="/shop" className="font-cinzel text-[10px] tracking-[2px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap">Shop All</Link>
           {navigationData.map((nav) => (
             <div 
               key={nav.label}
               onMouseEnter={() => nav.children ? handleMouseEnter(nav.label) : null}
               onMouseLeave={handleMouseLeave}
-              className="relative py-2 px-1"
+              className="relative py-4"
             >
               {nav.path ? (
                 <Link 
                   to={nav.path} 
-                  className="font-cinzel text-xs tracking-[2px] text-ivory/80 hover:text-gold transition-colors uppercase cursor-pointer"
+                  className="font-cinzel text-[10px] tracking-[2px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap"
                 >
                   {nav.label}
                 </Link>
               ) : (
-                <span className="font-cinzel text-xs tracking-[2px] text-ivory/80 hover:text-gold transition-colors uppercase cursor-default flex items-center gap-2 group">
-                  {nav.label}
-                  {nav.children && <ChevronDown size={12} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/30'}`} />}
-                </span>
+                <div className="flex items-center gap-1 cursor-default group">
+                  <span className="font-cinzel text-[10px] tracking-[2px] text-ivory/60 group-hover:text-gold transition-all uppercase font-bold whitespace-nowrap">
+                    {nav.label}
+                  </span>
+                  {nav.children && (
+                    <ChevronDown size={10} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/40'}`} />
+                  )}
+                </div>
               )}
+              
+              {/* Animated Underline */}
+              <AnimatePresence>
+                {activeMenu === nav.label && (
+                  <motion.div 
+                    layoutId="nav-underline"
+                    className="absolute bottom-3 left-0 right-0 h-[1px] bg-gold"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  />
+                )}
+              </AnimatePresence>
             </div>
           ))}
-
         </div>
+
+        {/* Icons - Right Aligned */}
+        <div className="flex-1 flex items-center justify-end gap-3 sm:gap-5 text-gold/80">
+          <Link to="/search" className="hover:text-gold hover:scale-110 transition-all hidden sm:block p-1"><Search size={18} /></Link>
+          <Link to="/account" className="hover:text-gold hover:scale-110 transition-all p-1"><User size={18} /></Link>
+          <Link to="/wishlist" className="relative hover:text-gold hover:scale-110 transition-all p-1">
+            <Heart size={18} />
+            {wishlistCount > 0 && (
+              <span className="absolute top-0 right-0 bg-crimson text-white text-[8px] w-3.5 h-3.5 flex items-center justify-center rounded-full font-bold">
+                {wishlistCount}
+              </span>
+            )}
+          </Link>
+          <Link to="/cart" className="relative hover:text-gold hover:scale-110 transition-all p-1">
+            <ShoppingBag size={18} />
+            {itemCount > 0 && (
+              <span className="absolute top-0 right-0 bg-gold text-black text-[8px] font-black w-3.5 h-3.5 flex items-center justify-center rounded-full">
+                {itemCount}
+              </span>
+            )}
+          </Link>
+        </div>
+      </nav>
 
         {/* Mega Menu Container (Outside Loop for proper centering) */}
         <AnimatePresence>
@@ -185,30 +227,6 @@ const Header = () => {
             </div>
           )}
         </AnimatePresence>
-
-        {/* Icons */}
-        <div className="flex items-center gap-4 sm:gap-6 text-gold">
-          <Link to="/search" className="hover:scale-110 transition-transform hidden sm:block"><Search size={20} /></Link>
-
-          <Link to="/account" className="hover:scale-110 transition-transform"><User size={20} /></Link>
-          <Link to="/wishlist" className="relative hover:scale-110 transition-transform">
-            <Heart size={20} />
-            {wishlistCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-crimson text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full leading-none">
-                {wishlistCount}
-              </span>
-            )}
-          </Link>
-          <Link to="/cart" className="relative hover:scale-110 transition-transform group">
-            <ShoppingBag size={20} />
-            {itemCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-gold text-black text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full leading-none group-hover:scale-110 transition-transform">
-                {itemCount}
-              </span>
-            )}
-          </Link>
-        </div>
-      </nav>
 
       {/* Mobile Menu Drawer */}
       <AnimatePresence>
