@@ -6,9 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "prisma generate && vite build",
-    "postinstall": "prisma generate",
+    "build": "prisma generate --schema=api/prisma/schema.prisma && vite build",
+    "postinstall": "prisma generate --schema=api/prisma/schema.prisma",
     "lint": "eslint .",
+
     "preview": "vite preview"
   },
 
