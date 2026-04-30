@@ -8,15 +8,16 @@ export const useCartStore = create(
       addItem: (product) => {
         const currentItems = get().items;
         const existingItem = currentItems.find(item => item.id === product.id);
+        const qtyToAdd = product.quantity || 1;
         
         if (existingItem) {
           set({
             items: currentItems.map(item =>
-              item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+              item.id === product.id ? { ...item, quantity: item.quantity + qtyToAdd } : item
             )
           });
         } else {
-          set({ items: [...currentItems, { ...product, quantity: 1 }] });
+          set({ items: [...currentItems, { ...product, quantity: qtyToAdd }] });
         }
       },
       removeItem: (productId) => set({

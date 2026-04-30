@@ -69,13 +69,11 @@ const ProductDetail = () => {
   }
 
   const handleAddToCart = () => {
-    for (let i = 0; i < quantity; i++) {
-      addItem(product);
-    }
+    addItem({ ...product, quantity });
   };
 
   const handleBuyNow = () => {
-    handleAddToCart();
+    addItem({ ...product, quantity });
     navigate('/checkout');
   };
 

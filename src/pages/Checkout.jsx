@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { useCartStore } from '../store/useCartStore';
 import { useAuthStore } from '../store/useAuthStore';
+import { useOrderStore } from '../store/useOrderStore';
 import api from '../utils/api';
 
 const Checkout = () => {
@@ -283,7 +284,7 @@ const Checkout = () => {
                      <div key={item.id} className="flex gap-4">
                         <div className="w-16 h-16 bg-black border border-gold/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
                            <img 
-                             src={item.images?.[0]} 
+                             src={item.images?.[0]?.url || item.images?.[0] || item.image} 
                              alt={item.name} 
                              className="w-full h-full object-cover"
                            />

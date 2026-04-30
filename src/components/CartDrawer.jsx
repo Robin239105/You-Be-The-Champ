@@ -58,11 +58,18 @@ const CartDrawer = ({ isOpen, onClose }) => {
               ) : (
                 items.map((item) => (
                   <div key={item.id} className="flex gap-4 p-4 bg-card border border-gold/10 hover:border-gold/30 transition-colors">
-                    <div className="w-20 h-20 bg-black border border-gold/10 flex items-center justify-center flex-shrink-0">
-                      {/* Placeholder Image */}
-                      <svg className="w-8 h-8 text-gold/30" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l2.4 7.4h7.6l-6.1 4.5 2.3 7.1-6.2-4.4-6.2 4.4 2.3-7.1-6.1-4.5h7.6z" />
-                      </svg>
+                    <div className="w-20 h-20 bg-black border border-gold/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                      {item.images?.[0]?.url || item.images?.[0] || item.image ? (
+                        <img 
+                          src={item.images?.[0]?.url || item.images?.[0] || item.image} 
+                          alt={item.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <svg className="w-8 h-8 text-gold/30" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l2.4 7.4h7.6l-6.1 4.5 2.3 7.1-6.2-4.4-6.2 4.4 2.3-7.1-6.1-4.5h7.6z" />
+                        </svg>
+                      )}
                     </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="font-cinzel text-xs font-bold text-ivory truncate mb-1">{item.name}</h4>

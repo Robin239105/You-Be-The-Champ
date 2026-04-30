@@ -32,7 +32,7 @@ const Cart = () => {
                 <div key={item.id} className="bg-card border border-gold/10 p-6 flex flex-col sm:flex-row gap-6 hover:border-gold/30 transition-colors">
                   <div className="w-32 h-32 bg-black border border-gold/10 flex items-center justify-center flex-shrink-0 overflow-hidden">
                     <img 
-                      src={item.images?.[0]} 
+                      src={item.images?.[0]?.url || item.images?.[0] || item.image} 
                       alt={item.name} 
                       className="w-full h-full object-cover"
                     />
