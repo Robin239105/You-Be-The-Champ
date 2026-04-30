@@ -1,9 +1,9 @@
 {
   "name": "you-be-the-champ",
   "private": true,
-  "version": "2.1.0",
-  "type": "module",
+  "version": "2.2.0",
   "scripts": {
+
     "dev": "vite",
     "build": "vite build",
     "postinstall": "prisma generate",

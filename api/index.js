@@ -13,13 +13,13 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // 3. Routes
-const authRoutes = require('../routes/authRoutes.cjs');
-const productRoutes = require('../routes/productRoutes.cjs');
-const categoryRoutes = require('../routes/categoryRoutes.cjs');
-const orderRoutes = require('../routes/orderRoutes.cjs');
-const couponRoutes = require('../routes/couponRoutes.cjs');
-const settingRoutes = require('../routes/settingRoutes.cjs');
-const paymentRoutes = require('../routes/paymentRoutes.cjs');
+const authRoutes = require('../routes/authRoutes.js');
+const productRoutes = require('../routes/productRoutes.js');
+const categoryRoutes = require('../routes/categoryRoutes.js');
+const orderRoutes = require('../routes/orderRoutes.js');
+const couponRoutes = require('../routes/couponRoutes.js');
+const settingRoutes = require('../routes/settingRoutes.js');
+const paymentRoutes = require('../routes/paymentRoutes.js');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
