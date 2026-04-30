@@ -32,14 +32,16 @@ const Footer = () => {
         <div>
           <h4 className="font-cinzel text-gold text-sm font-bold uppercase tracking-widest mb-8">Navigation</h4>
           <ul className="space-y-4 font-raleway text-xs uppercase tracking-widest text-ivory/60">
+            <li><Link to="/shop" className="hover:text-gold transition-colors text-white font-bold">Shop All</Link></li>
             <li><Link to="/shop" className="hover:text-gold transition-colors">All Collections</Link></li>
+            <li><Link to="/blog" className="hover:text-gold transition-colors text-white font-bold">Latest News</Link></li>
             <li><Link to="/player-editions" className="hover:text-gold transition-colors">Player Editions</Link></li>
             <li><Link to="/vintage-90s" className="hover:text-gold transition-colors">Vintage 90s</Link></li>
-            <li><Link to="/affiliate" className="hover:text-gold transition-colors">Curator Program</Link></li>
             <li><Link to="/blog" className="hover:text-gold transition-colors">The Locker Room</Link></li>
             <li><Link to="/about" className="hover:text-gold transition-colors">Our Legacy</Link></li>
             <li><Link to="/contact" className="hover:text-gold transition-colors">Contact</Link></li>
           </ul>
+
         </div>
 
         {/* Support */}

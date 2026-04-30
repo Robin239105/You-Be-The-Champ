@@ -147,8 +147,9 @@ const Header = () => {
 
         {/* Desktop Nav - Centered with balanced spacing */}
         <div className="hidden lg:flex flex-1 items-center justify-center gap-x-5 xl:gap-x-7">
-          <Link to="/shop" className="font-cinzel text-[10px] tracking-[2px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap">Shop All</Link>
-          {navigationData.map((nav) => (
+          {navigationData
+            .filter(nav => !['Latest News', 'Get In Touch'].includes(nav.label))
+            .map((nav) => (
             <div 
               key={nav.label}
               onMouseEnter={() => nav.children ? handleMouseEnter(nav.label) : null}
@@ -190,26 +191,30 @@ const Header = () => {
         </div>
 
         {/* Icons - Right Aligned */}
-        <div className="flex-1 flex items-center justify-end gap-3 sm:gap-5 text-gold/80">
-          <Link to="/search" className="hover:text-gold hover:scale-110 transition-all hidden sm:block p-1"><Search size={18} /></Link>
-          <Link to="/account" className="hover:text-gold hover:scale-110 transition-all p-1"><User size={18} /></Link>
-          <Link to="/wishlist" className="relative hover:text-gold hover:scale-110 transition-all p-1">
-            <Heart size={18} />
+        <div className="flex-1 flex items-center justify-end gap-4 sm:gap-6 text-gold">
+          <Link to="/search" className="hover:scale-110 transition-transform hidden sm:block p-1"><Search size={20} /></Link>
+          <Link to="/account" className="hover:scale-110 transition-transform p-1"><User size={20} /></Link>
+          <Link to="/wishlist" className="relative hover:scale-110 transition-transform p-1">
+            <Heart size={20} />
             {wishlistCount > 0 && (
-              <span className="absolute top-0 right-0 bg-crimson text-white text-[8px] w-3.5 h-3.5 flex items-center justify-center rounded-full font-bold">
+              <span className="absolute -top-1 -right-1 bg-crimson text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full font-bold">
                 {wishlistCount}
               </span>
             )}
           </Link>
-          <Link to="/cart" className="relative hover:text-gold hover:scale-110 transition-all p-1">
-            <ShoppingBag size={18} />
+          <button 
+            onClick={() => setIsCartOpen(true)}
+            className="relative hover:scale-110 transition-transform p-1"
+          >
+            <ShoppingBag size={20} />
             {itemCount > 0 && (
-              <span className="absolute top-0 right-0 bg-gold text-black text-[8px] font-black w-3.5 h-3.5 flex items-center justify-center rounded-full">
+              <span className="absolute -top-1 -right-1 bg-gold text-black text-[9px] font-black w-4 h-4 flex items-center justify-center rounded-full">
                 {itemCount}
               </span>
             )}
-          </Link>
+          </button>
         </div>
+
       </nav>
 
         {/* Mega Menu Container (Outside Loop for proper centering) */}
