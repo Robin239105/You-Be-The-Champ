@@ -8,9 +8,11 @@
     },
     {
       "src": "server/server.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["server/prisma/**"] }
     }
   ],
+
   "rewrites": [
     { "source": "/api/(.*)", "destination": "server/server.js" },
     { "source": "/(.*)", "destination": "/index.html" }
