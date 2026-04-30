@@ -4,11 +4,8 @@ const bcrypt = require('bcryptjs');
 
 const app = express();
 
-// 1. Prisma Singleton — prevents "too many connections" in serverless
-const { PrismaClient } = require('@prisma/client');
-const globalForPrisma = global;
-const prisma = globalForPrisma.prisma ?? new PrismaClient();
-if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
+const prisma = require('./utils/prisma');
+
 
 // 2. Middleware
 app.use(cors());

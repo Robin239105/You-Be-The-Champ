@@ -1,7 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
+const prisma = require('../utils/prisma');
 const slugify = require('slugify');
-
-const prisma = new PrismaClient();
 
 const getProducts = async (req, res) => {
   const { category, status = 'PUBLISHED', search, limit = 20, page = 1 } = req.query;
