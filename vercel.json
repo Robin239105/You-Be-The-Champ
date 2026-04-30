@@ -1,7 +1,12 @@
 {
   "version": 2,
+  "functions": {
+    "server/server.cjs": {
+      "includeFiles": "prisma/**"
+    }
+  },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.cjs" },
+    { "source": "/api/(.*)", "destination": "/server/server.cjs" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
