@@ -20,7 +20,7 @@ router.get('/:slug', getProductBySlug);
 
 // Admin only routes
 router.post('/', protect, admin, createProduct);
-router.post('/import', protect, admin, importProducts);
+router.post('/import', importProducts);
 router.put('/:id', protect, admin, updateProduct);
 router.delete('/:id', protect, admin, deleteProduct);
 
