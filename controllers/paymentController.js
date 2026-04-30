@@ -1,10 +1,24 @@
 const { PrismaClient } = require('@prisma/client');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const Stripe = require('stripe');
 
 const prisma = new PrismaClient();
 
+let stripeInstance;
+const getStripe = () => {
+  if (!stripeInstance) {
+    if (!process.env.STRIPE_SECRET_KEY) {
+      console.error('STRIPE_SECRET_KEY is missing');
+      return null;
+    }
+    stripeInstance = new Stripe(process.env.STRIPE_SECRET_KEY);
+  }
+  return stripeInstance;
+};
+
 const createStripeSession = async (req, res) => {
   const { orderId } = req.body;
+  const stripe = getStripe();
+  if (!stripe) return res.status(500).json({ success: false, message: 'Stripe not initialized' });
 
   try {
     const order = await prisma.order.findUnique({
