@@ -5,6 +5,11 @@ const jwt = require('jsonwebtoken');
 const prisma = new PrismaClient();
 
 const generateTokens = (user) => {
+  if (!process.env.JWT_SECRET || !process.env.JWT_REFRESH_SECRET) {
+    console.error('❌ CRITICAL: JWT Secrets are missing in environment variables!');
+    throw new Error('Authentication configuration error. Please check your Vercel environment variables.');
+  }
+
   const accessToken = jwt.sign(
     { id: user.id, email: user.email, role: user.role },
     process.env.JWT_SECRET,
@@ -19,6 +24,7 @@ const generateTokens = (user) => {
 
   return { accessToken, refreshToken };
 };
+
 
 const register = async (req, res) => {
   const { email, password, firstName, lastName } = req.body;
