@@ -8,10 +8,6 @@ const AdminOrderList = () => {
   const [error, setError] = useState(null);
   const [statusFilter, setStatusFilter] = useState('ALL');
 
-  useEffect(() => {
-    fetchOrders();
-  }, [statusFilter]);
-
   const fetchOrders = async () => {
     setIsLoading(true);
     setError(null);
@@ -28,6 +24,10 @@ const AdminOrderList = () => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchOrders();
+  }, [statusFilter]);
 
   const handleUpdateStatus = async (orderId, newStatus) => {
     try {

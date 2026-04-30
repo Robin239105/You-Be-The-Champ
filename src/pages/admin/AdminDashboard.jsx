@@ -25,22 +25,23 @@ const AdminDashboard = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetchStats();
-  }, []);
-
-  const fetchStats = async () => {
-    setIsLoading(true);
-    try {
-      const response = await api.get('/orders/stats/summary');
-      if (response.data.success) {
-        setStats(response.data.data);
+    let mounted = true;
+    const fetchStats = async () => {
+      setIsLoading(true);
+      try {
+        const response = await api.get('/orders/stats/summary');
+        if (mounted && response.data.success) {
+          setStats(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch stats:', err);
+      } finally {
+        if (mounted) setIsLoading(false);
       }
-    } catch (error) {
-      console.error('Failed to fetch stats:', error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    };
+    fetchStats();
+    return () => { mounted = false; };
+  }, []);
 
   if (isLoading) {
     return (

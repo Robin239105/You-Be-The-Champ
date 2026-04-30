@@ -1,7 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
+const prisma = require('../utils/prisma');
 const slugify = require('slugify');
-
-const prisma = new PrismaClient();
 
 const getCategories = async (req, res) => {
   try {

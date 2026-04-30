@@ -1,6 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
-
-const prisma = new PrismaClient();
+const prisma = require('../utils/prisma');
 
 const validateCoupon = async (req, res) => {
   const { code, cartTotal } = req.body;

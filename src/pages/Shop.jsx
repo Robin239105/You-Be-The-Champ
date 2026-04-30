@@ -19,25 +19,23 @@ const Shop = () => {
   const ITEMS_PER_PAGE = 20;
 
   useEffect(() => {
-    fetchProducts();
-  }, [selectedSports, selectedEras, sortBy, searchQuery, showOnlySale, currentPage]);
-
-  const fetchProducts = async () => {
-    setIsLoading(true);
-    try {
-      // For now, let's just fetch all and filter locally to maintain existing logic
-      // But ultimately we should do server-side filtering
-      // Fetch a large limit to support local filtering logic for now
-      const response = await api.get('/products?limit=1000');
-      if (response.data.success) {
-        setProducts(response.data.data);
+    let mounted = true;
+    const fetchProducts = async () => {
+      setIsLoading(true);
+      try {
+        const response = await api.get('/products?limit=1000');
+        if (mounted && response.data.success) {
+          setProducts(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch products:', err);
+      } finally {
+        if (mounted) setIsLoading(false);
       }
-    } catch (error) {
-      console.error('Failed to fetch products:', error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    };
+    fetchProducts();
+    return () => { mounted = false; };
+  }, [selectedSports, selectedEras, sortBy, searchQuery, showOnlySale, currentPage]);
 
   const sports = ['NFL', 'NBA', 'NHL', 'MLB', 'Special Edition'];
   const eras = [

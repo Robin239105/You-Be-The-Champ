@@ -1,7 +1,5 @@
-const { PrismaClient } = require('@prisma/client');
+const prisma = require('../utils/prisma');
 const Stripe = require('stripe');
-
-const prisma = new PrismaClient();
 
 let stripeInstance;
 const getStripe = () => {
@@ -57,6 +55,8 @@ const createStripeSession = async (req, res) => {
 
 const handleStripeWebhook = async (req, res) => {
   const sig = req.headers['stripe-signature'];
+  const stripe = getStripe();
+  if (!stripe) return res.status(500).json({ success: false, message: 'Stripe not initialized' });
   let event;
 
   try {

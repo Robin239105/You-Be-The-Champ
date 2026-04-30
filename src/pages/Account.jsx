@@ -20,28 +20,29 @@ const Account = () => {
   useEffect(() => {
     if (!isAuthenticated) {
       navigate('/account/login');
-    } else {
-      fetchOrders();
+      return;
     }
+    let mounted = true;
+    const fetchOrders = async () => {
+      setIsLoading(true);
+      try {
+        const response = await api.get('/orders/my');
+        if (mounted && response.data.success) {
+          setOrders(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch orders:', err);
+      } finally {
+        if (mounted) setIsLoading(false);
+      }
+    };
+    fetchOrders();
+    return () => { mounted = false; };
   }, [isAuthenticated, navigate]);
 
   const handleLogout = () => {
     logout();
     navigate('/');
-  };
-
-  const fetchOrders = async () => {
-    setIsLoading(true);
-    try {
-      const response = await api.get('/orders/me');
-      if (response.data.success) {
-        setOrders(response.data.data);
-      }
-    } catch (error) {
-      console.error('Failed to fetch orders:', error);
-    } finally {
-      setIsLoading(false);
-    }
   };
 
   const affiliateLink = `https://youbethechamp.com/?ref=${user?.affiliateId || 'CHAMP10'}`;

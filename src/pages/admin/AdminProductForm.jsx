@@ -28,13 +28,6 @@ const AdminProductForm = ({ isEdit = false }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  useEffect(() => {
-    fetchCategories();
-    if (isEdit && id) {
-      fetchProduct();
-    }
-  }, [id, isEdit]);
-
   const fetchCategories = async () => {
     try {
       const response = await api.get('/products/categories');
@@ -75,6 +68,13 @@ const AdminProductForm = ({ isEdit = false }) => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchCategories();
+    if (isEdit && id) {
+      fetchProduct();
+    }
+  }, [id, isEdit]);
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;

@@ -6,10 +6,6 @@ const AdminCouponList = () => {
   const [coupons, setCoupons] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    fetchCoupons();
-  }, []);
-
   const fetchCoupons = async () => {
     setIsLoading(true);
     try {
@@ -23,6 +19,10 @@ const AdminCouponList = () => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchCoupons();
+  }, []);
 
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this coupon?')) {

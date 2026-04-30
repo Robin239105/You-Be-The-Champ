@@ -9,10 +9,6 @@ const AdminProductList = () => {
   const [isImporting, setIsImporting] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
 
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
   const fetchProducts = async () => {
     setIsLoading(true);
     try {
@@ -26,6 +22,10 @@ const AdminProductList = () => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   const handleExport = async () => {
     try {

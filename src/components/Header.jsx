@@ -6,6 +6,7 @@ import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
 import { navigationData } from '../data/navigationData';
 import MegaMenu from './MegaMenu';
+import CartDrawer from './CartDrawer';
 
 import { useAuthStore } from '../store/useAuthStore';
 
@@ -76,6 +77,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState({});
   const [hoverTimeout, setHoverTimeout] = useState(null);
+  const [isCartOpen, setIsCartOpen] = useState(false);
   
   const itemCount = useCartStore(state => state.getItemCount() || 0);
   const wishlistCount = useWishlistStore(state => (state.items && state.items.length) || 0);
@@ -233,7 +235,10 @@ const Header = () => {
           )}
         </AnimatePresence>
 
-      {/* Mobile Menu Drawer */}
+        {/* Cart Drawer */}
+      <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+
+        {/* Mobile Menu Drawer */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>

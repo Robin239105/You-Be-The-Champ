@@ -12,10 +12,6 @@ const AdminCategoryList = () => {
   const [editingCategory, setEditingCategory] = useState(null);
   const [categoryName, setCategoryName] = useState('');
 
-  useEffect(() => {
-    fetchCategories();
-  }, []);
-
   const fetchCategories = async () => {
     setIsLoading(true);
     try {
@@ -29,6 +25,10 @@ const AdminCategoryList = () => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
 
   const handleOpenModal = (category = null) => {
     setEditingCategory(category);

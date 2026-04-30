@@ -24,22 +24,23 @@ const ProductDetail = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
   useEffect(() => {
-    fetchProduct();
-  }, [id]);
-
-  const fetchProduct = async () => {
-    setIsLoading(true);
-    try {
-      const response = await api.get(`/products/${id}`);
-      if (response.data.success) {
-        setProduct(response.data.data);
+    let mounted = true;
+    const fetchProduct = async () => {
+      setIsLoading(true);
+      try {
+        const response = await api.get(`/products/${id}`);
+        if (mounted && response.data.success) {
+          setProduct(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch product:', err);
+      } finally {
+        if (mounted) setIsLoading(false);
       }
-    } catch (error) {
-      console.error('Failed to fetch product:', error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    };
+    fetchProduct();
+    return () => { mounted = false; };
+  }, [id]);
 
   if (isLoading) {
     return (
