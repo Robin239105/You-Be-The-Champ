@@ -1,8 +1,36 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
+const { PrismaClient } = require('@prisma/client');
+const bcrypt = require('bcryptjs');
+const prisma = new PrismaClient();
+
+// Self-healing Admin Account
+const ensureAdmin = async () => {
+  try {
+    const email = 'admin@youbethechamp.com';
+    const password = 'AdminPassword123!';
+    const hashedPassword = await bcrypt.hash(password, 10);
+    
+    await prisma.user.upsert({
+      where: { email },
+      update: { role: 'ADMIN' },
+      create: {
+        email,
+        password: hashedPassword,
+        role: 'ADMIN',
+        firstName: 'Admin',
+        lastName: 'User'
+      }
+    });
+    console.log('✅ Cloud Admin Verified');
+  } catch (err) {
+    console.error('❌ Admin Setup Error:', err.message);
+  }
+};
+ensureAdmin();
 
 const authRoutes = require('./routes/authRoutes');
+
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const couponRoutes = require('./routes/couponRoutes');
