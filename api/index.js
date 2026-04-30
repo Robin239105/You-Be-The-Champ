@@ -71,6 +71,9 @@ module.exports = app;
 
 // Local development only
 if (process.env.NODE_ENV !== 'production') {
+  if (!process.env.JWT_SECRET || !process.env.JWT_REFRESH_SECRET) {
+    console.warn('⚠️ WARNING: JWT Secrets are missing! Authentication will not work until they are added to environment variables.');
+  }
   const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => console.log(`Server on ${PORT}`));
 }
