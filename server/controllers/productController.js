@@ -295,9 +295,8 @@ const importProducts = async (req, res) => {
           create: productData
         });
 
-        if (product) {
-          existingProduct ? results.updated++ : results.created++; // Simplified tracking
-        }
+        results.created++; // Increment total processed
+
 
         // 4. Handle Images
         if (images) {
