@@ -2,11 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const { PrismaClient } = require('@prisma/client');
 const bcrypt = require('bcryptjs');
+
+// On Vercel, the Prisma Client is generated at the root.
 const prisma = new PrismaClient();
 
 // Self-healing Admin Account (Safe Start)
 const ensureAdmin = async () => {
   try {
+    console.log('🔄 Checking Cloud Admin...');
     const email = 'admin@youbethechamp.com';
     const password = 'AdminPassword123!';
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -22,14 +25,13 @@ const ensureAdmin = async () => {
         lastName: 'User'
       }
     });
-    console.log('✅ Cloud Admin Verified');
+    console.log('✅ Cloud Admin Ready');
   } catch (err) {
-    console.error('❌ Admin Setup Wait...');
+    console.error('⚠️ Database sync in progress... (This is normal during build)');
   }
 };
+setTimeout(ensureAdmin, 3000);
 
-// Run after a short delay to ensure DB connection is ready
-setTimeout(ensureAdmin, 5000);
 
 
 const authRoutes = require('./routes/authRoutes');

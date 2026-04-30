@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "prisma generate && vite build",
+    "postinstall": "prisma generate",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "postinstall": "cd server && npm install && npx prisma generate && npx prisma db push --accept-data-loss && node scripts/seed-admin.js"
+    "preview": "vite preview"
   },
 
   "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "bcryptjs": "^3.0.3",
     "axios": "^1.15.0",
     "csv-parse": "^6.2.1",
     "framer-motion": "^12.38.0",
@@ -34,6 +36,7 @@
     "globals": "^17.4.0",
     "postcss": "^8.5.10",
     "tailwindcss": "^4.2.2",
+    "prisma": "^6.2.1",
     "vite": "^8.0.4"
   }
 }
