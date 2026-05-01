@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import { motion } from 'framer-motion';
-import { getCategoryThumbnail } from '../data/categoryThumbnails';
 
 const START_YEAR = 1903;
 const END_YEAR = 2025;
@@ -37,21 +36,15 @@ const ChampionsByYear = () => {
             <div key={decade} className="mb-12">
               <h2 className="font-cinzel text-gold text-lg tracking-widest uppercase border-b border-gold/20 pb-3 mb-6">{decade}s</h2>
               <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3">
-                {decadeYears.map(year => {
-                  const thumb = getCategoryThumbnail(`Champions By Year > ${year}`);
-                  return (
-                    <Link
-                      key={year}
-                      to={`/category/${encodeURIComponent(`Champions By Year > ${year}`)}`}
-                      className="group relative flex items-center justify-center py-3 border border-gold/10 hover:border-gold/50 bg-white/[0.02] hover:bg-gold/10 transition-all overflow-hidden"
-                    >
-                      {thumb && (
-                        <img src={thumb} alt={String(year)} className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                      )}
-                      <span className="relative z-10 font-cinzel text-xs text-ivory/60 group-hover:text-gold transition-colors font-bold">{year}</span>
-                    </Link>
-                  );
-                })}
+                {decadeYears.map(year => (
+                  <Link
+                    key={year}
+                    to={`/category/${encodeURIComponent(`Champions By Year > ${year}`)}`}
+                    className="group flex items-center justify-center py-3 border border-gold/10 hover:border-gold/50 bg-white/[0.02] hover:bg-gold/10 transition-all"
+                  >
+                    <span className="font-cinzel text-xs text-ivory/60 group-hover:text-gold transition-colors font-bold">{year}</span>
+                  </Link>
+                ))}
               </div>
             </div>
           );

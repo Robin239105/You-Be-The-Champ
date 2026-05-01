@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import { motion } from 'framer-motion';
-import { getCategoryThumbnail } from '../data/categoryThumbnails';
 
 const CITIES = [
   { name: "New York City", path: "Your City > New York City Pro Teams", teams: "Yankees · Giants · Knicks · Rangers" },
@@ -45,18 +44,10 @@ const CitiesPage = () => (
         {CITIES.map((city, i) => (
           <motion.div key={city.path} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
             <Link to={`/category/${encodeURIComponent(city.path)}`}
-              className="group relative flex flex-col justify-end border border-gold/10 hover:border-gold/40 overflow-hidden transition-all h-full min-h-[160px]">
-              {getCategoryThumbnail(city.path) && (
-                <>
-                  <img src={getCategoryThumbnail(city.path)} alt={city.name} className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-                </>
-              )}
-              <div className="relative z-10 p-5">
-                <p className="font-cinzel text-white font-black text-lg uppercase tracking-wider group-hover:text-gold transition-colors mb-1">{city.name}</p>
-                <p className="text-ivory/40 font-raleway text-[11px] leading-relaxed">{city.teams}</p>
-                <div className="w-0 group-hover:w-8 h-[1px] bg-gold mt-3 transition-all duration-300" />
-              </div>
+              className="group flex flex-col justify-between p-6 border border-gold/10 hover:border-gold/40 bg-white/[0.02] hover:bg-gold/5 transition-all h-full min-h-[120px]">
+              <p className="font-cinzel text-white font-black text-lg uppercase tracking-wider group-hover:text-gold transition-colors mb-3">{city.name}</p>
+              <p className="text-ivory/30 font-raleway text-xs leading-relaxed">{city.teams}</p>
+              <div className="w-0 group-hover:w-8 h-[1px] bg-gold mt-4 transition-all duration-300" />
             </Link>
           </motion.div>
         ))}

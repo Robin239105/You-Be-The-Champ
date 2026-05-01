@@ -1,5 +1,4 @@
 import React from 'react';
-import { getCategoryThumbnail } from '../data/categoryThumbnails';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
@@ -279,24 +278,17 @@ const LeagueStandingsPage = () => {
 
                   {/* Teams */}
                   <div className="divide-y divide-white/[0.04]">
-                    {div.teams.map((team) => {
-                      const teamThumb = getCategoryThumbnail(`Teams > ${team} (${data.name})`);
-                      return (
-                        <Link
-                          key={team}
-                          to={catLink(`Teams > ${team} (${data.name})`)}
-                          className="group flex items-center gap-3 px-4 py-2 hover:bg-gold/5 transition-colors"
-                        >
-                          {teamThumb ? (
-                            <img src={teamThumb} alt={team} className="w-7 h-7 object-cover rounded-sm opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                          ) : (
-                            <span className="w-1.5 h-1.5 rounded-full bg-gold/20 group-hover:bg-gold flex-shrink-0 transition-colors" />
-                          )}
-                          <span className="font-raleway text-white/70 group-hover:text-gold text-xs transition-colors">{team}</span>
-                          <span className="ml-auto text-[9px] font-cinzel text-gold/0 group-hover:text-gold/50 uppercase tracking-widest transition-colors">Shop</span>
-                        </Link>
-                      );
-                    })}
+                    {div.teams.map((team) => (
+                      <Link
+                        key={team}
+                        to={catLink(`Teams > ${team} (${data.name})`)}
+                        className="group flex items-center gap-3 px-4 py-2.5 hover:bg-gold/5 transition-colors"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold/20 group-hover:bg-gold flex-shrink-0 transition-colors" />
+                        <span className="font-raleway text-white/70 group-hover:text-gold text-xs transition-colors">{team}</span>
+                        <span className="ml-auto text-[9px] font-cinzel text-gold/0 group-hover:text-gold/50 uppercase tracking-widest transition-colors">Shop</span>
+                      </Link>
+                    ))}
                   </div>
                 </motion.div>
               ))}

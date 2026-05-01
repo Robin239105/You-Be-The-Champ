@@ -6,26 +6,72 @@ import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 
 const PLAYERS = [
-  { name: "Tom Brady", sport: "NFL", color: "#013369", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/c/cb/Tom_Brady_2021.png&w=400&h=400&fit=cover&a=top" },
-  { name: "Michael Jordan", sport: "NBA", color: "#C9002B", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/a/ae/Michael_Jordan_in_2014.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Kobe Bryant", sport: "NBA", color: "#C9002B", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/2/22/KBryant8.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "LeBron James", sport: "NBA", color: "#C9002B", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Babe Ruth", sport: "MLB", color: "#002D72", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/d/d7/Babe_Ruth%2C_1933.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Wayne Gretzky", sport: "NHL", color: "#888", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/4/41/Wgretz_%28cropped3%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Joe Montana", sport: "NFL", color: "#013369", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/8/8c/Joe_Montana_ESPN_cropped2.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Magic Johnson", sport: "NBA", color: "#C9002B", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/2/29/Magic_Johnson_at_SXSW_2022_%2851958828669%29_%28cropped%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Derek Jeter", sport: "MLB", color: "#002D72", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/a/a2/Derek_Jeter_during_MLB_on_Fox_pre-game_show%2C_October_16%2C_2024_-_001_%28cropped%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Sidney Crosby", sport: "NHL", color: "#888", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/a/ae/Sidney_Crosby_2019-01-06_1.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Jerry Rice", sport: "NFL", color: "#013369", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/0/01/Super_Bowl_44_Miami_Florida_NFL_Network_South_Beach_Set_Deon_Sanders_interviews_Jerry_Rice_%284331549867%29_%28cropped%29_-_Jerry_Rice.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Larry Bird", sport: "NBA", color: "#C9002B", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/b/bb/Larrybird.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Mickey Mantle", sport: "MLB", color: "#002D72", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/b/bd/1954_Bowman_Mickey_Mantle.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Mario Lemieux", sport: "NHL", color: "#888", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/6/6a/Mario_Lemieux_2001.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Peyton Manning", sport: "NFL", color: "#013369", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/2/2e/Peyton_Manning_%2851665689271%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Steph Curry", sport: "NBA", color: "#C9002B", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/7/7f/Stephen_Curry_Shooting_%28cropped%29_%28cropped%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Hank Aaron", sport: "MLB", color: "#002D72", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/4/40/Hank_Aaron_1974.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Gordie Howe", sport: "NHL", color: "#888", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/6/6c/Gordie_Howe_%28cropped%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Patrick Mahomes", sport: "NFL", color: "#013369", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/6/62/Patrick_Mahomes_in_the_Oval_Office_of_the_White_House_on_June_5%2C_2023_-_P20230605AS-0902_%28cropped%29.jpg&w=400&h=400&fit=cover&a=top" },
-  { name: "Kareem Abdul-Jabbar", sport: "NBA", color: "#C9002B", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/a/a0/Kareem_Abdul-Jabbar_May_2014.jpg&w=400&h=400&fit=cover&a=top" },
+  { name: "Aaron Rodgers", catName: "Aaron Rodgers (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8506.jpeg" },
+  { name: "Alexander Ovechkin", catName: "Alexander Ovechkin (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8507.jpeg" },
+  { name: "Babe Ruth", catName: "Babe Ruth (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8508.jpeg" },
+  { name: "Bart Starr", catName: "Bart Starr (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8509.jpeg" },
+  { name: "Ben Rothlisberger", catName: "Ben Rothlisberger (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8510.jpeg" },
+  { name: "Bill Russell", catName: "Bill Russell (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8511.jpeg" },
+  { name: "Bobby Orr", catName: "Bobby Orr (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8512.jpeg" },
+  { name: "Brett Favre", catName: "Brett Favre (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8513.jpeg" },
+  { name: "Cy Young", catName: "Cy Young (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8514.jpeg" },
+  { name: "David Ortiz", catName: "David Ortiz (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8516.jpeg" },
+  { name: "David Robinson", catName: "David Robinson (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8517.jpeg" },
+  { name: "Derek Jeter", catName: "Derek Jeter (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8518.jpeg" },
+  { name: "Dirk Nowitzki", catName: "Dirk Nowitzski (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8519.jpeg" },
+  { name: "Drew Brees", catName: "Drew Brees (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8520.jpeg" },
+  { name: "Dwayne Wade", catName: "Dwayne Wade (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8521.jpeg" },
+  { name: "Garry Maddox", catName: "Garry Maddox (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8522.jpeg" },
+  { name: "Gordie Howe", catName: "Gordie Howe (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8523.jpeg" },
+  { name: "Hakeem Olajuwon", catName: "Hakeem Olajuwan (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8524.jpeg" },
+  { name: "Hank Aaron", catName: "Hank Aaron (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8525.jpeg" },
+  { name: "Henri Richard", catName: "Henri Richard (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8526.jpeg" },
+  { name: "Honus Wagner", catName: "Honus Wagner (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8527.jpeg" },
+  { name: "Isiah Thomas", catName: "Isiah Thomas (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8528.jpeg" },
+  { name: "Jean Beliveau", catName: "Jean Beliveau (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8530.jpeg" },
+  { name: "Jerry Rice", catName: "Jerry Rice (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8531.jpeg" },
+  { name: "Joe DiMaggio", catName: "Joe Dimaggio (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8532.jpeg" },
+  { name: "Joe Montana", catName: "Joe Montana (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8533.jpeg" },
+  { name: "Joe Namath", catName: "Joe Namath (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8534.jpeg" },
+  { name: "John Elway", catName: "John Elway (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8535.jpeg" },
+  { name: "Johnny Unitas", catName: "Johnny Unitas (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8536.jpeg" },
+  { name: "Jonathan Toews", catName: "Jonathan Toews (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8537.jpeg" },
+  { name: "Kareem Abdul-Jabbar", catName: "Kareem Abdul-Jabbar (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8538.jpeg" },
+  { name: "Kevin Durant", catName: "Kevin Durant (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8539.jpeg" },
+  { name: "Kevin Garnett", catName: "Kevin Garnett (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8541.jpeg" },
+  { name: "Kobe Bryant", catName: "Kobe Bryant (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8542.jpeg" },
+  { name: "Kurt Warner", catName: "Kurt Warner (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8543.jpeg" },
+  { name: "Larry Bird", catName: "Larry Bird (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8544.jpeg" },
+  { name: "LeBron James", catName: "Lebron James (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8545.jpeg" },
+  { name: "Lou Gehrig", catName: "Lou Gehrig (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8546.jpeg" },
+  { name: "Magic Johnson", catName: "Magic Johnson (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8547.jpeg" },
+  { name: "Mario Lemieux", catName: "Mario Lemieux (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8548.jpeg" },
+  { name: "Mark Messier", catName: "Mark Messier (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8549.jpeg" },
+  { name: "Maurice Richard", catName: "Maurice 'The Rocket\" Richard (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8550.jpeg" },
+  { name: "Michael Jordan", catName: "Michael Jordan (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8551.jpeg" },
+  { name: "Mickey Mantle", catName: "Mickey Mantle (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8552.jpeg" },
+  { name: "Mike Bossy", catName: "Mike Bossy (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8553.jpeg" },
+  { name: "Mike Schmidt", catName: "Mike Schmidt (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8554.jpeg" },
+  { name: "Patrick Mahomes", catName: "Patrick Mahomes (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8555.jpeg" },
+  { name: "Pedro Martinez", catName: "Pedro Martinez (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8556.jpeg" },
+  { name: "Peyton Manning", catName: "Peyton Manning (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8557.jpeg" },
+  { name: "Randy Johnson", catName: "Randy Johnson (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8556.jpeg" },
+  { name: "Rickey Henderson", catName: "Rickey Henderson (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8559.jpeg" },
+  { name: "Roger Clemens", catName: "Roger Clemens (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8560.jpeg" },
+  { name: "Roger Staubach", catName: "Roger Staubach (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8561.jpeg" },
+  { name: "Scottie Pippen", catName: "Scottie Pippen (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8562.jpeg" },
+  { name: "Shaquille O'Neal", catName: "Shaq O'Neal (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8563.jpeg" },
+  { name: "Sidney Crosby", catName: "Sidney Crosby (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8564.jpeg" },
+  { name: "Steph Curry", catName: "Steph Curry (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8565.jpeg" },
+  { name: "Steve Bartman", catName: "Steve Bartman (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8566.jpeg" },
+  { name: "Steve Young", catName: "Steve Young (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8567.jpeg" },
+  { name: "Terry Bradshaw", catName: "Terry Bradshaw (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8568.jpeg" },
+  { name: "Tim Duncan", catName: "Tim Duncan (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8569.jpeg" },
+  { name: "Tom Brady", catName: "Tom Brady (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8570.jpeg" },
+  { name: "Troy Aikman", catName: "Troy Aikman (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8572.jpeg" },
+  { name: "Wayne Gretzky", catName: "Wayne Gretzsky (NHL)", sport: "NHL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8505.jpeg" },
+  { name: "Willie Mays", catName: "Willie Mays (MLB)", sport: "MLB", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8573.jpeg" },
+  { name: "Wilt Chamberlain", catName: "Wilt Chamberlain (NBA)", sport: "NBA", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8574.jpeg" },
 ];
 
 const SPORT_BADGE = {
@@ -86,7 +132,7 @@ const AllTimeGreatsPage = () => {
               transition={{ delay: i * 0.04 }}
             >
               <Link
-                to={`/category/${encodeURIComponent(`All Time Greats > ${player.name} (${player.sport})`)}`}
+                to={`/category/${encodeURIComponent(`All Time Greats > ${player.catName}`)}`}
                 className="group flex flex-col border border-gold/10 hover:border-gold/50 overflow-hidden transition-all duration-300 hover:shadow-[0_0_24px_rgba(201,168,76,0.2)] bg-white/[0.02]"
               >
                 {/* Photo */}
@@ -99,7 +145,7 @@ const AllTimeGreatsPage = () => {
                       onError={() => setImgErrors(e => ({ ...e, [player.name]: true }))}
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center" style={{ background: `radial-gradient(circle at center, ${player.color}33, #000)` }}>
+                    <div className="w-full h-full flex items-center justify-center bg-black">
                       <span className="font-cinzel font-black text-gold text-6xl">{player.name.charAt(0)}</span>
                     </div>
                   )}

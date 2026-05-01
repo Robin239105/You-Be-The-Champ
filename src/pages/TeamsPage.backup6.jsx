@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
-import { getCategoryThumbnail } from '../data/categoryThumbnails';
 
 const ALL_TEAMS = [
   { name: "Arizona Cardinals", sport: "NFL", path: "Teams > Arizona Cardinals (NFL)" },
@@ -142,19 +141,13 @@ const TeamsPage = () => {
             <div key={letter} id={`letter-${letter}`}>
               <h2 className="font-cinzel text-gold text-2xl font-black border-b border-gold/20 pb-3 mb-5">{letter}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                {teams.map(team => {
-                  const thumb = getCategoryThumbnail(team.path);
-                  return (
-                    <Link key={team.path} to={`/category/${encodeURIComponent(team.path)}`}
-                      className="group flex items-center justify-between px-4 py-3 border border-gold/10 hover:border-gold/40 bg-white/[0.02] hover:bg-gold/5 transition-all gap-3">
-                      {thumb && (
-                        <img src={thumb} alt={team.name} className="w-9 h-9 object-cover rounded-sm opacity-70 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                      )}
-                      <span className="font-raleway text-sm text-ivory/70 group-hover:text-white transition-colors flex-1">{team.name}</span>
-                      <span className={`font-cinzel text-[9px] font-bold flex-shrink-0 ${sportColors[team.sport]}`}>{team.sport}</span>
-                    </Link>
-                  );
-                })}
+                {teams.map(team => (
+                  <Link key={team.path} to={`/category/${encodeURIComponent(team.path)}`}
+                    className="group flex items-center justify-between px-4 py-3 border border-gold/10 hover:border-gold/40 bg-white/[0.02] hover:bg-gold/5 transition-all">
+                    <span className="font-raleway text-sm text-ivory/70 group-hover:text-white transition-colors">{team.name}</span>
+                    <span className={`font-cinzel text-[9px] font-bold ${sportColors[team.sport]}`}>{team.sport}</span>
+                  </Link>
+                ))}
               </div>
             </div>
           ))}
