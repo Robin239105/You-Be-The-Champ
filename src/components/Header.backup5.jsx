@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Heart, User, ShoppingBag, Menu, X, ChevronRight } from 'lucide-react';
+import { Search, Heart, User, ShoppingBag, Menu, X, ChevronDown, ChevronRight, SlidersHorizontal } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
 import { navigationData } from '../data/navigationData';
+import MegaMenu from './MegaMenu';
 import CartDrawer from './CartDrawer';
 
 import { useAuthStore } from '../store/useAuthStore';
@@ -83,26 +84,56 @@ const MobileNavItem = ({ node, depth = 0, mobileExpanded, onToggle, onClose }) =
 const Header = () => {
   const { user, isAuthenticated } = useAuthStore();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState({});
+  const [hoverTimeout, setHoverTimeout] = useState(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
   
   const itemCount = useCartStore(state => state.getItemCount() || 0);
   const wishlistCount = useWishlistStore(state => (state.items && state.items.length) || 0);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 50;
+      setIsScrolled(scrolled);
+    };
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (hoverTimeout) clearTimeout(hoverTimeout);
+    };
+  }, [hoverTimeout]);
 
   const toggleMobileExpanded = (path) => {
     if (!path) return;
-    setMobileExpanded(prev => ({ ...prev, [path]: !prev[path] }));
+    setMobileExpanded(prev => ({
+      ...prev,
+      [path]: !prev[path]
+    }));
+  };
+
+  const handleMouseEnter = (label) => {
+    if (hoverTimeout) clearTimeout(hoverTimeout);
+    setActiveMenu(label);
+  };
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setActiveMenu(null);
+    }, 300);
+    setHoverTimeout(timeout);
+  };
+
+  const handleHeaderMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setActiveMenu(null);
+    }, 150);
+    setHoverTimeout(timeout);
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300" onMouseLeave={handleHeaderMouseLeave}>
       {/* Top Banner */}
       <div className="bg-gold text-black text-[10px] sm:text-xs font-cinzel font-bold py-1 px-4 text-center tracking-[2px]">
         FREE SHIPPING ON ORDERS $150+
@@ -137,16 +168,44 @@ const Header = () => {
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center justify-center gap-x-6 xl:gap-x-8">
           {navigationData.map((nav) => {
-            const to = nav.path || (nav.slug ? `/${nav.slug}` : '#');
+            const hasMega = nav.layout && nav.layout !== 'direct';
+            const isDirect = nav.layout === 'direct' || !nav.layout;
             return (
-              <Link
+              <div
                 key={nav.label}
-                to={to}
-                className="relative py-4 font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 hover:text-gold transition-all uppercase font-black whitespace-nowrap group"
+                onMouseEnter={() => hasMega ? handleMouseEnter(nav.label) : setActiveMenu(null)}
+                className="relative py-4"
               >
-                {nav.label}
-                <span className="absolute bottom-3 left-0 right-0 h-[1px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              </Link>
+                {isDirect ? (
+                  <Link
+                    to={nav.path}
+                    className="font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 hover:text-gold transition-all uppercase font-black whitespace-nowrap"
+                  >
+                    {nav.label}
+                  </Link>
+                ) : (
+                  <div className="flex items-center gap-1 group">
+                    <Link
+                      to={nav.path || (nav.slug ? `/${nav.slug}` : '#')}
+                      className="font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 group-hover:text-gold transition-all uppercase font-black whitespace-nowrap"
+                    >
+                      {nav.label}
+                    </Link>
+                    <ChevronDown size={9} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/40'}`} />
+                  </div>
+                )}
+                <AnimatePresence>
+                  {activeMenu === nav.label && (
+                    <motion.div
+                      layoutId="nav-underline"
+                      className="absolute bottom-3 left-0 right-0 h-[1px] bg-gold"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                    />
+                  )}
+                </AnimatePresence>
+              </div>
             );
           })}
         </div>
@@ -175,6 +234,21 @@ const Header = () => {
             )}
           </button>
         </div>
+
+        {/* Mega Menu — inside nav so it's part of same hover zone */}
+        <AnimatePresence>
+          {activeMenu && (
+            <div className="absolute top-full left-0 w-full pointer-events-none z-50">
+              <div className="pointer-events-auto">
+                <MegaMenu
+                  data={navigationData.find(n => n.label === activeMenu)}
+                  onMouseEnter={() => { if (hoverTimeout) clearTimeout(hoverTimeout); }}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </div>
+            </div>
+          )}
+        </AnimatePresence>
 
       </nav>
 
