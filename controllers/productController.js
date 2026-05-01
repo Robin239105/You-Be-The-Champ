@@ -2,17 +2,21 @@ const prisma = require('../utils/prisma');
 const slugify = require('slugify');
 
 const getProducts = async (req, res) => {
-  const { category, status = 'PUBLISHED', search, limit = 20, page = 1 } = req.query;
+  const { category, status, isActive, search, limit = 20, page = 1 } = req.query;
   const skip = (page - 1) * limit;
 
   const where = {};
   if (category) where.categories = { some: { slug: category.toLowerCase() } };
-  if (status && status !== 'ALL') where.status = status;
+
+  // Support both ?status=PUBLISHED and ?isActive=true
+  const resolvedStatus = status || (isActive === 'true' ? 'PUBLISHED' : null);
+  if (resolvedStatus && resolvedStatus !== 'ALL') where.status = resolvedStatus;
 
   if (search) {
     where.OR = [
-      { name: { contains: search } },
-      { sku: { contains: search } }
+      { name: { contains: search, mode: 'insensitive' } },
+      { sku: { contains: search, mode: 'insensitive' } },
+      { description: { contains: search, mode: 'insensitive' } }
     ];
   }
 
