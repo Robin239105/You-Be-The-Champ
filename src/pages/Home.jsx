@@ -17,26 +17,16 @@ import heroRing from '../assets/hero-ring.png';
 const Home = () => {
   const [featuredRings, setFeaturedRings] = useState([]);
   const [newArrivals, setNewArrivals] = useState([]);
-  const [loadingProducts, setLoadingProducts] = useState(true);
   const scrollRef = useRef(null);
-  const autoScrollRef = useRef(null);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await api.get('/products?limit=20&isActive=true');
-        if (res.data.success) {
-          const all = res.data.data;
-          setFeaturedRings(all.slice(0, 10));
-          setNewArrivals(all.slice(0, 4));
-        }
-      } catch (err) {
-        console.error('Failed to fetch products:', err);
-      } finally {
-        setLoadingProducts(false);
+    api.get('/products?limit=20&isActive=true').then(res => {
+      if (res.data.success) {
+        const all = res.data.data;
+        setFeaturedRings(all.slice(0, 10));
+        setNewArrivals(all.slice(0, 4));
       }
-    };
-    fetchProducts();
+    }).catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -47,23 +37,20 @@ const Home = () => {
     const resume = () => { paused = false; };
     el.addEventListener('mouseenter', pause);
     el.addEventListener('mouseleave', resume);
-    el.addEventListener('touchstart', pause);
-    el.addEventListener('touchend', resume);
-    autoScrollRef.current = setInterval(() => {
+    const timer = setInterval(() => {
       if (paused || !el) return;
-      const cardWidth = el.querySelector('div')?.offsetWidth + 32 || 382;
+      const card = el.querySelector('div');
+      const step = (card ? card.offsetWidth : 300) + 32;
       if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 10) {
         el.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
-        el.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        el.scrollBy({ left: step, behavior: 'smooth' });
       }
     }, 3000);
     return () => {
-      clearInterval(autoScrollRef.current);
+      clearInterval(timer);
       el.removeEventListener('mouseenter', pause);
       el.removeEventListener('mouseleave', resume);
-      el.removeEventListener('touchstart', pause);
-      el.removeEventListener('touchend', resume);
     };
   }, [featuredRings]);
 
@@ -221,21 +208,13 @@ const Home = () => {
           </Link>
         </div>
 
-        {loadingProducts ? (
-          <div className="flex justify-center items-center py-20 w-full">
-            <div className="w-8 h-8 border-2 border-gold border-t-transparent rounded-full animate-spin" />
-          </div>
-        ) : featuredRings.length === 0 ? (
-          <p className="text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 w-full text-center">No products available</p>
-        ) : (
-          <div ref={scrollRef} className="flex gap-8 overflow-x-auto pb-16 scrollbar-none snap-x px-4 -mx-4 scroll-smooth">
-            {featuredRings.map((product) => (
-              <div key={product.id} className="min-w-[300px] md:min-w-[350px] snap-center shrink-0">
-                <ProductCard product={product} />
-              </div>
-            ))}
-          </div>
-        )}
+        <div ref={scrollRef} className="flex gap-8 overflow-x-auto pb-16 scrollbar-none snap-x px-4 -mx-4 scroll-smooth">
+          {featuredRings.map((product) => (
+            <div key={product.id} className="min-w-[300px] md:min-w-[350px] snap-center shrink-0">
+              <ProductCard product={product} />
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* SECTION 5: TRUST BADGES */}
@@ -251,19 +230,11 @@ const Home = () => {
           <h2 className="text-4xl font-black font-cinzel tracking-widest text-white uppercase">New Arrivals</h2>
           <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
-        {loadingProducts ? (
-          <div className="flex justify-center items-center py-20 col-span-4">
-            <div className="w-8 h-8 border-2 border-gold border-t-transparent rounded-full animate-spin" />
-          </div>
-        ) : newArrivals.length === 0 ? (
-          <p className="col-span-4 text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 text-center">No products available</p>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            {newArrivals.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {newArrivals.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
         <div className="mt-20 text-center">
           <Link to="/shop"><Button variant="outline" className="px-16">Browse Catalog</Button></Link>
         </div>
