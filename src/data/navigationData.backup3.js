@@ -6,26 +6,26 @@ export const navigationData = [
     slug: "all-time-greats",
     layout: "players",
     players: [
-      { name: "Tom Brady", sport: "NFL", path: "All Time Greats > Tom Brady (NFL)", photo: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Tom_Brady_2021.jpg" },
-      { name: "Michael Jordan", sport: "NBA", path: "All Time Greats > Michael Jordan (NBA)", photo: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Michael_Jordan_in_2014.jpg" },
-      { name: "Kobe Bryant", sport: "NBA", path: "All Time Greats > Kobe Bryant (NBA)", photo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Kobe_Bryant_2014.jpg" },
-      { name: "LeBron James", sport: "NBA", path: "All Time Greats > Lebron James (NBA)", photo: "https://upload.wikimedia.org/wikipedia/commons/2/25/LeBron_James_Lakers.jpg" },
-      { name: "Babe Ruth", sport: "MLB", path: "All Time Greats > Babe Ruth (MLB)", photo: "https://upload.wikimedia.org/wikipedia/commons/1/13/Babe_Ruth2.jpg" },
-      { name: "Wayne Gretzky", sport: "NHL", path: "All Time Greats > Wayne Gretzsky (NHL)", photo: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Wayne_Gretzky_1997.jpg" },
-      { name: "Joe Montana", sport: "NFL", path: "All Time Greats > Joe Montana (NFL)", photo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Joe_Montana_1994.jpg" },
-      { name: "Magic Johnson", sport: "NBA", path: "All Time Greats > Magic Johnson (NBA)", photo: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Magic_Johnson_2014.jpg" },
-      { name: "Derek Jeter", sport: "MLB", path: "All Time Greats > Derek Jeter (MLB)", photo: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Derek_Jeter_2011.jpg" },
-      { name: "Sidney Crosby", sport: "NHL", path: "All Time Greats > Sidney Crosby (NHL)", photo: "https://upload.wikimedia.org/wikipedia/commons/0/02/Sidney_Crosby_2019.jpg" },
-      { name: "Jerry Rice", sport: "NFL", path: "All Time Greats > Jerry Rice (NFL)", photo: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jerry_Rice_2009.jpg" },
-      { name: "Larry Bird", sport: "NBA", path: "All Time Greats > Larry Bird (NBA)", photo: "https://upload.wikimedia.org/wikipedia/commons/5/56/Larry_Bird_2004.jpg" },
-      { name: "Mickey Mantle", sport: "MLB", path: "All Time Greats > Mickey Mantle (MLB)", photo: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mickey_Mantle_1957.jpg" },
-      { name: "Mario Lemieux", sport: "NHL", path: "All Time Greats > Mario Lemieux (NHL)", photo: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mario_Lemieux_2006.jpg" },
-      { name: "Peyton Manning", sport: "NFL", path: "All Time Greats > Peyton Manning (NFL)", photo: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Peyton_Manning_2015.jpg" },
-      { name: "Steph Curry", sport: "NBA", path: "All Time Greats > Steph Curry (NBA)", photo: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Stephen_Curry_2016.jpg" },
-      { name: "Hank Aaron", sport: "MLB", path: "All Time Greats > Hank Aaron (MLB)", photo: "https://upload.wikimedia.org/wikipedia/commons/3/37/Hank_Aaron_1960.jpg" },
-      { name: "Gordie Howe", sport: "NHL", path: "All Time Greats > Gordie Howe (NHL)", photo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gordie_Howe_1966.jpg" },
-      { name: "Patrick Mahomes", sport: "NFL", path: "All Time Greats > Patrick Mahomes (NFL)", photo: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Patrick_Mahomes_2021.jpg" },
-      { name: "Kareem Abdul-Jabbar", sport: "NBA", path: "All Time Greats > Kareem Abdul-Jabbar (NBA)", photo: "https://upload.wikimedia.org/wikipedia/commons/8/82/Kareem_Abdul-Jabbar_2014.jpg" },
+      { name: "Tom Brady", sport: "NFL", path: "All Time Greats > Tom Brady (NFL)" },
+      { name: "Michael Jordan", sport: "NBA", path: "All Time Greats > Michael Jordan (NBA)" },
+      { name: "Kobe Bryant", sport: "NBA", path: "All Time Greats > Kobe Bryant (NBA)" },
+      { name: "LeBron James", sport: "NBA", path: "All Time Greats > Lebron James (NBA)" },
+      { name: "Babe Ruth", sport: "MLB", path: "All Time Greats > Babe Ruth (MLB)" },
+      { name: "Wayne Gretzky", sport: "NHL", path: "All Time Greats > Wayne Gretzsky (NHL)" },
+      { name: "Joe Montana", sport: "NFL", path: "All Time Greats > Joe Montana (NFL)" },
+      { name: "Magic Johnson", sport: "NBA", path: "All Time Greats > Magic Johnson (NBA)" },
+      { name: "Derek Jeter", sport: "MLB", path: "All Time Greats > Derek Jeter (MLB)" },
+      { name: "Sidney Crosby", sport: "NHL", path: "All Time Greats > Sidney Crosby (NHL)" },
+      { name: "Jerry Rice", sport: "NFL", path: "All Time Greats > Jerry Rice (NFL)" },
+      { name: "Larry Bird", sport: "NBA", path: "All Time Greats > Larry Bird (NBA)" },
+      { name: "Mickey Mantle", sport: "MLB", path: "All Time Greats > Mickey Mantle (MLB)" },
+      { name: "Mario Lemieux", sport: "NHL", path: "All Time Greats > Mario Lemieux (NHL)" },
+      { name: "Peyton Manning", sport: "NFL", path: "All Time Greats > Peyton Manning (NFL)" },
+      { name: "Steph Curry", sport: "NBA", path: "All Time Greats > Steph Curry (NBA)" },
+      { name: "Hank Aaron", sport: "MLB", path: "All Time Greats > Hank Aaron (MLB)" },
+      { name: "Gordie Howe", sport: "NHL", path: "All Time Greats > Gordie Howe (NHL)" },
+      { name: "Patrick Mahomes", sport: "NFL", path: "All Time Greats > Patrick Mahomes (NFL)" },
+      { name: "Kareem Abdul-Jabbar", sport: "NBA", path: "All Time Greats > Kareem Abdul-Jabbar (NBA)" },
     ]
   },
 
@@ -61,7 +61,6 @@ export const navigationData = [
       {
         label: "NFL",
         icon: "🏈",
-        shopAllPath: "League > NFL - National Football League",
         divisions: [
           { label: "AFC East", path: "League > NFL - National Football League > AFC East" },
           { label: "AFC North", path: "League > NFL - National Football League > AFC North" },
@@ -76,7 +75,6 @@ export const navigationData = [
       {
         label: "NBA",
         icon: "🏀",
-        shopAllPath: "League > NBA - National Basketball Association",
         divisions: [
           { label: "Atlantic", path: "League > NBA - National Basketball Association > EC Atlantic" },
           { label: "Central", path: "League > NBA - National Basketball Association > EC Central" },
@@ -89,7 +87,6 @@ export const navigationData = [
       {
         label: "MLB",
         icon: "⚾",
-        shopAllPath: "League > MLB - Major League Baseball",
         divisions: [
           { label: "AL East", path: "League > MLB - Major League Baseball > AL East" },
           { label: "AL Central", path: "League > MLB - Major League Baseball > AL Central" },
@@ -102,7 +99,6 @@ export const navigationData = [
       {
         label: "NHL",
         icon: "🏒",
-        shopAllPath: "League > NHL - National Hockey League",
         divisions: [
           { label: "Atlantic", path: "League > NHL - National Hockey League > EC Atlantic" },
           { label: "Metropolitan", path: "League > NHL - National Hockey League > EC Metropolitan" },
