@@ -29,10 +29,10 @@ export const navigationData = [
     ]
   },
 
-  // 2. CHAMPIONS — Groups: Champions by Year + Championship Series
+  // 2. CHAMPIONSHIP / FINALS — 4 league finals boxes
   {
-    label: "Champions",
-    slug: "champions-by-year",
+    label: "Championship / Finals",
+    slug: "championship-finals",
     layout: "two-panel",
     leftPanel: {
       title: "Champions by Year",
@@ -182,57 +182,51 @@ export const navigationData = [
     }
   },
 
-  // 5. BROWSE — Groups: Teams + Cities + Your Year Gift
+  // 5. TEAMS — direct link to A-Z teams page
   {
-    label: "Browse",
+    label: "Teams",
     slug: "teams",
-    layout: "browse-tiles",
-    tiles: [
-      { icon: "🏟️", label: "Teams A–Z", description: "Find rings for every franchise, alphabetically", link: "/teams" },
-      { icon: "🏙️", label: "Cities", description: "Shop all championship rings by city", link: "/cities" },
-      { icon: "🎁", label: "Your Year Gift", description: "Find the perfect ring from your special year", link: "/your-year-gift" }
-    ]
+    path: "/teams",
+    layout: "direct",
   },
 
-  // 6. SPECIAL RELEASE — Vertical Icon List
+  // 6. CITY — direct link to cities page
   {
-    label: "Special Release",
+    label: "City",
+    slug: "cities",
+    path: "/cities",
+    layout: "direct",
+  },
+
+  // 7. YOUR YEAR GIFT BOX — direct link
+  {
+    label: "Your Year Gift Box",
+    slug: "your-year-gift",
+    path: "/your-year-gift",
+    layout: "direct",
+  },
+
+  // 8. SPECIAL RELEASE — direct to shop with special release category
+  {
+    label: "Special",
     slug: "special-release",
     path: "/category/Special%20Release%20Champion%20Players%20Rings",
-    layout: "vertical-list",
-    items: [
-      { icon: "⭐", label: "Champion Player Rings", description: "Exclusive rings from champion players", path: "Special Release Champion Players Rings" },
-      { icon: "🏈", label: "Super Bowl Limited", description: "Limited edition Super Bowl rings", path: "Championships/Finals > Super Bowl Championship Rings" },
-      { icon: "🏀", label: "NBA Finals Limited", description: "Limited edition NBA Finals rings", path: "Championships/Finals > NBA Finals Championship Rings" },
-      { icon: "⚾", label: "World Series Limited", description: "Limited edition World Series rings", path: "Championships/Finals > World Series Championship Rings" },
-      { icon: "🏒", label: "Stanley Cup Limited", description: "Limited edition Stanley Cup rings", path: "Championships/Finals > Stanley Cup Championship Rings" },
-      { icon: "🎁", label: "Your Year Gift Box", description: "Championship year gift sets", link: "/your-year-gift" }
-    ]
+    layout: "direct",
   },
 
-  // 7. NEWS — Vertical Icon List
+  // 9. NEWS & BLOG — direct link
   {
-    label: "News",
+    label: "News & Blog",
     slug: "blog",
-    layout: "vertical-list",
-    items: [
-      { icon: "📰", label: "Latest Articles", description: "News from the world of champions", link: "/blog" },
-      { icon: "🏆", label: "Championship Updates", description: "Newest championship rings added", link: "/blog" },
-      { icon: "⭐", label: "Player Spotlights", description: "Featured athlete collections", link: "/blog" }
-    ]
+    path: "/blog",
+    layout: "direct",
   },
 
-  // 8. CONTACT — Vertical Icon List
+  // 10. CONTACT — direct link
   {
     label: "Contact",
     slug: "contact",
     path: "/contact",
-    layout: "vertical-list",
-    items: [
-      { icon: "✉️", label: "Get In Touch", description: "Send us a message", link: "/contact" },
-      { icon: "❓", label: "FAQs", description: "Find answers to common questions", link: "/faq" },
-      { icon: "📦", label: "Shipping & Returns", description: "Policies and info", link: "/shipping-policy" },
-      { icon: "📏", label: "Size Guide", description: "Find your perfect ring size", link: "/size-guide" }
-    ]
+    layout: "direct",
   }
 ];

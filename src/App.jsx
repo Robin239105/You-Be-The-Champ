@@ -16,6 +16,7 @@ import CollectionsPage from './pages/CollectionsPage';
 import AllTimeGreatsPage from './pages/AllTimeGreatsPage';
 import LeaguePage from './pages/LeaguePage';
 import LeagueStandingsPage from './pages/LeagueStandingsPage';
+import ChampionshipFinalsPage from './pages/ChampionshipFinalsPage';
 import Vintage90s from './pages/Vintage90s';
 import Affiliate from './pages/Affiliate';
 
@@ -64,6 +65,7 @@ function App() {
         
         <Route path="/player-editions" element={<PlayerEditions />} />
         <Route path="/champions-by-year" element={<ChampionsByYear />} />
+        <Route path="/championship-finals" element={<ChampionshipFinalsPage />} />
         <Route path="/teams" element={<TeamsPage />} />
         <Route path="/cities" element={<CitiesPage />} />
         <Route path="/your-year-gift" element={<YourYearGift />} />
