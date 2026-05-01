@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
@@ -11,12 +11,61 @@ import SportCategoryGrid from '../components/SportCategoryGrid';
 import StatsBanner from '../components/StatsBanner';
 import NewsletterSection from '../components/NewsletterSection';
 import SectionDivider from '../components/SectionDivider';
-import { productsData } from '../data/productsData';
+import api from '../utils/api';
 import heroRing from '../assets/hero-ring.png';
 
 const Home = () => {
-  const featuredRings = productsData.slice(0, 8);
-  const newArrivals = productsData.slice(8, 12);
+  const [featuredRings, setFeaturedRings] = useState([]);
+  const [newArrivals, setNewArrivals] = useState([]);
+  const [loadingProducts, setLoadingProducts] = useState(true);
+  const scrollRef = useRef(null);
+  const autoScrollRef = useRef(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const res = await api.get('/products?limit=20&isActive=true');
+        if (res.data.success) {
+          const all = res.data.data;
+          setFeaturedRings(all.slice(0, 10));
+          setNewArrivals(all.slice(0, 4));
+        }
+      } catch (err) {
+        console.error('Failed to fetch products:', err);
+      } finally {
+        setLoadingProducts(false);
+      }
+    };
+    fetchProducts();
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el || featuredRings.length === 0) return;
+    let paused = false;
+    const pause = () => { paused = true; };
+    const resume = () => { paused = false; };
+    el.addEventListener('mouseenter', pause);
+    el.addEventListener('mouseleave', resume);
+    el.addEventListener('touchstart', pause);
+    el.addEventListener('touchend', resume);
+    autoScrollRef.current = setInterval(() => {
+      if (paused || !el) return;
+      const cardWidth = el.querySelector('div')?.offsetWidth + 32 || 382;
+      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 10) {
+        el.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        el.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      }
+    }, 3000);
+    return () => {
+      clearInterval(autoScrollRef.current);
+      el.removeEventListener('mouseenter', pause);
+      el.removeEventListener('mouseleave', resume);
+      el.removeEventListener('touchstart', pause);
+      el.removeEventListener('touchend', resume);
+    };
+  }, [featuredRings]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -172,12 +221,20 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="flex gap-8 overflow-x-auto pb-16 scrollbar-none snap-x px-4 -mx-4">
-          {featuredRings.map((product) => (
-            <div key={product.id} className="min-w-[300px] md:min-w-[350px] snap-center">
-              <ProductCard product={product} />
-            </div>
-          ))}
+        <div ref={scrollRef} className="flex gap-8 overflow-x-auto pb-16 scrollbar-none snap-x px-4 -mx-4 scroll-smooth">
+          {loadingProducts ? (
+            Array.from({ length: 5 }).map((_, i) => (
+              <div key={i} className="min-w-[300px] md:min-w-[350px] snap-center shrink-0 bg-surface border border-gold/10 rounded-xl aspect-[3/4] animate-pulse" />
+            ))
+          ) : featuredRings.length === 0 ? (
+            <p className="text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 w-full text-center">No products available</p>
+          ) : (
+            featuredRings.map((product) => (
+              <div key={product.id} className="min-w-[300px] md:min-w-[350px] snap-center shrink-0">
+                <ProductCard product={product} />
+              </div>
+            ))
+          )}
         </div>
       </section>
 
@@ -195,9 +252,17 @@ const Home = () => {
           <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {newArrivals.map(product => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          {loadingProducts ? (
+            Array.from({ length: 4 }).map((_, i) => (
+              <div key={i} className="bg-surface border border-gold/10 rounded-xl aspect-[3/4] animate-pulse" />
+            ))
+          ) : newArrivals.length === 0 ? (
+            <p className="col-span-4 text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 text-center">No products available</p>
+          ) : (
+            newArrivals.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))
+          )}
         </div>
         <div className="mt-20 text-center">
           <Link to="/shop"><Button variant="outline" className="px-16">Browse Catalog</Button></Link>

@@ -14,9 +14,8 @@ const ProductCard = ({ product }) => {
   
   const wishlisted = isWishlisted(product.id);
 
-  // Defaults for production data
-  const rating = product.rating || 4.5 + (Math.random() * 0.5);
-  const reviews = product.reviews || Math.floor(20 + Math.random() * 150);
+  const rating = product.rating || null;
+  const reviews = product.reviews || null;
   const year = String(product.year || String(product.sku || '').slice(-2) || '24');
   
   // Robust Number conversion for prices (Prisma Decimals often come as strings)
@@ -86,12 +85,14 @@ const ProductCard = ({ product }) => {
 
       {/* Content */}
       <div className="p-6 flex-1 flex flex-col">
-        <div className="flex items-center gap-1 mb-2">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <Star key={i} size={10} className={i < Math.floor(rating) ? 'fill-gold text-gold' : 'text-ivory/20'} />
-          ))}
-          <span className="text-[10px] text-ivory/40 ml-1">({reviews})</span>
-        </div>
+        {rating && (
+          <div className="flex items-center gap-1 mb-2">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} size={10} className={i < Math.floor(rating) ? 'fill-gold text-gold' : 'text-ivory/20'} />
+            ))}
+            {reviews && <span className="text-[10px] text-ivory/40 ml-1">({reviews})</span>}
+          </div>
+        )}
 
         <h3 className="font-cinzel text-sm font-bold text-ivory group-hover:text-gold transition-colors mb-2 line-clamp-2 leading-snug">
           {product.name}
