@@ -39,6 +39,7 @@ import AdminLogin from './pages/admin/AdminLogin';
 import AdminUserList from './pages/admin/AdminUserList';
 import AdminCouponList from './pages/admin/AdminCouponList';
 import AdminCategoryList from './pages/admin/AdminCategoryList';
+import AdminBlogList from './pages/admin/AdminBlogList';
 
 function App() {
   const location = useLocation();
@@ -85,6 +86,7 @@ function App() {
           <Route path="users" element={<AdminUserList />} />
           <Route path="coupons" element={<AdminCouponList />} />
           <Route path="settings" element={<AdminSettings />} />
+          <Route path="blog" element={<AdminBlogList />} />
         </Route>
         
         {/* Legal Pages */}

@@ -21,6 +21,7 @@ const couponRoutes = require('../routes/couponRoutes.js');
 const settingRoutes = require('../routes/settingRoutes.js');
 const paymentRoutes = require('../routes/paymentRoutes.js');
 const analyticsRoutes = require('../routes/analyticsRoutes.js');
+const blogRoutes = require('../routes/blogRoutes.js');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
@@ -30,6 +31,7 @@ app.use('/api/coupons', couponRoutes);
 app.use('/api/settings', settingRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/blog', blogRoutes);
 
 // 4. Error Handler
 app.use((err, req, res, next) => {

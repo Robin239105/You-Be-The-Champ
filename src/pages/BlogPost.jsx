@@ -1,73 +1,93 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
-import { placeholderPosts } from '../data/placeholderPosts';
-import { useLocation } from 'react-router-dom';
+import { Loader2 } from 'lucide-react';
+import api from '../utils/api';
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const post = placeholderPosts.find(p => p.slug === slug) || placeholderPosts[0];
+  const [post, setPost] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setNotFound(false);
+    api.get(`/blog/${slug}`)
+      .then(res => { if (res.data.success) setPost(res.data.data); else setNotFound(true); })
+      .catch(() => setNotFound(true))
+      .finally(() => setIsLoading(false));
+  }, [slug]);
 
   return (
     <div className="bg-black min-h-screen">
       <Header />
-      
+
       <main className="max-w-4xl mx-auto px-8 pt-40 pb-24">
-        <Breadcrumb items={[{ name: 'The Locker Room', path: '/blog' }, { name: 'Post', path: `/blog/${post.slug}` }]} />
-        
-        <header className="mb-16">
-           <div className="flex items-center gap-4 mb-6">
-              <span className="text-gold font-cinzel text-xs font-bold tracking-widest uppercase border border-gold/30 px-3 py-1">{post.category}</span>
-              <span className="text-ivory/40 font-mono text-[10px] uppercase">{post.date}</span>
-           </div>
-           <h1 className="text-4xl md:text-6xl font-black font-cinzel text-white tracking-widest uppercase leading-tight mb-8 drop-shadow-[0_0_15px_rgba(201,168,76,0.2)]">
-              {post.title}
-           </h1>
-           <div className="flex items-center gap-4 py-8 border-y border-gold/10">
-              <div className="w-10 h-10 bg-gold/10 border border-gold/30 rounded-full flex items-center justify-center font-cinzel text-gold text-sm">{post.author.charAt(0)}</div>
-              <div>
-                 <p className="text-[10px] text-ivory/40 uppercase tracking-widest">Authored by</p>
-                 <p className="text-xs text-ivory font-bold uppercase">{post.author} • Head Historian</p>
+        {isLoading ? (
+          <div className="flex items-center justify-center py-40">
+            <Loader2 size={40} className="text-gold animate-spin" />
+          </div>
+        ) : notFound || !post ? (
+          <div className="text-center py-40">
+            <p className="font-cinzel text-2xl text-ivory/20 uppercase tracking-widest mb-8">Article not found.</p>
+            <Link to="/blog" className="text-gold font-cinzel text-xs uppercase tracking-widest border-b border-gold pb-1">← Back to Blog</Link>
+          </div>
+        ) : (
+          <>
+            <Breadcrumb items={[{ name: 'The Locker Room', path: '/blog' }, { name: post.title, path: `/blog/${post.slug}` }]} />
+
+            <header className="mb-16">
+              <div className="flex items-center gap-4 mb-6">
+                {post.category && <span className="text-gold font-cinzel text-xs font-bold tracking-widest uppercase border border-gold/30 px-3 py-1">{post.category}</span>}
+                <span className="text-ivory/40 font-mono text-[10px] uppercase">{new Date(post.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
               </div>
-           </div>
-        </header>
-
-        <div className="aspect-[21/9] bg-surface border border-gold/10 flex items-center justify-center mb-16 relative overflow-hidden group">
-           <div className="absolute inset-0 gold-glow opacity-30" />
-           <p className="text-gold/20 font-black font-cinzel text-9xl transform -rotate-6 select-none group-hover:scale-110 transition-transform duration-700">LEGACY</p>
-        </div>
-
-        <article className="prose prose-invert max-w-none text-ivory/70 font-raleway leading-loose text-lg uppercase tracking-wide space-y-8">
-           <p className="first-letter:text-7xl first-letter:font-cinzel first-letter:text-gold first-letter:float-left first-letter:mr-4 first-letter:mt-1">
-              Every championship ring tells a story that transcends the regular season and the grueling playoffs. It is the physical manifestation of blood, sweat, and absolute dedication to the sport. 
-           </p>
-           
-           <h2 className="text-2xl font-black font-cinzel text-gold uppercase tracking-widest pt-8 border-b border-gold/10 pb-4">The Craftsmanship Gap</h2>
-           <p>
-              Many fans ask what makes a "Player Edition" ring special compared to standard souvenir shop versions. The answer lies in the weight. A true championship ring replica should feel substantial on the finger, weighing between 60 and 80 grams of solid alloy and triple-plated precious metals.
-           </p>
-           
-           <blockquote className="border-l-4 border-gold p-8 bg-card italic text-white text-2xl font-cinzel">
-              "When you put it on, it feels like history. That is the feeling we aim to preserve at You Be The Champ."
-           </blockquote>
-
-           <p>
-              Our historians collaborate with master jewelers to verify every facet, engraving, and stone placement against the original trophy pieces. It's a meticulous process that ensures your collection is a worthy tribute to the legends who earned the gold.
-           </p>
-        </article>
-
-        <section className="mt-24 pt-16 border-t border-gold/10 flex justify-between items-center">
-           <Link to="/blog" className="text-gold font-cinzel text-xs font-bold uppercase tracking-widest hover:translate-x-[-4px] transition-transform">← Archive</Link>
-           <div className="flex gap-4">
-              <span className="text-[10px] text-ivory/40 uppercase tracking-widest self-center">Share This Legacy</span>
-              <div className="flex gap-2">
-                 <div className="w-8 h-8 rounded-full border border-gold/20 hover:bg-gold hover:text-black transition-all flex items-center justify-center cursor-pointer">f</div>
-                 <div className="w-8 h-8 rounded-full border border-gold/20 hover:bg-gold hover:text-black transition-all flex items-center justify-center cursor-pointer">t</div>
+              <h1 className="text-4xl md:text-6xl font-black font-cinzel text-white tracking-widest uppercase leading-tight mb-8 drop-shadow-[0_0_15px_rgba(201,168,76,0.2)]">
+                {post.title}
+              </h1>
+              {post.excerpt && <p className="text-ivory/50 font-raleway text-lg leading-relaxed mb-8">{post.excerpt}</p>}
+              <div className="flex items-center gap-4 py-8 border-y border-gold/10">
+                <div className="w-10 h-10 bg-gold/10 border border-gold/30 rounded-full flex items-center justify-center font-cinzel text-gold text-sm">
+                  {post.author?.charAt(0) || 'A'}
+                </div>
+                <div>
+                  <p className="text-[10px] text-ivory/40 uppercase tracking-widest">Authored by</p>
+                  <p className="text-xs text-ivory font-bold uppercase">{post.author}</p>
+                </div>
               </div>
-           </div>
-        </section>
+            </header>
+
+            {post.coverImage && (
+              <div className="mb-16 border border-gold/10 overflow-hidden">
+                <img src={post.coverImage} alt={post.title} className="w-full object-cover max-h-[500px]" />
+              </div>
+            )}
+
+            <article
+              className="prose prose-invert max-w-none font-raleway leading-loose
+                [&_h1]:font-cinzel [&_h1]:text-gold [&_h1]:text-4xl [&_h1]:uppercase [&_h1]:tracking-widest [&_h1]:mb-6 [&_h1]:mt-10
+                [&_h2]:font-cinzel [&_h2]:text-gold [&_h2]:text-2xl [&_h2]:uppercase [&_h2]:tracking-widest [&_h2]:mb-4 [&_h2]:mt-8 [&_h2]:pb-3 [&_h2]:border-b [&_h2]:border-gold/10
+                [&_h3]:font-cinzel [&_h3]:text-gold/80 [&_h3]:text-xl [&_h3]:uppercase [&_h3]:tracking-wider [&_h3]:mb-3 [&_h3]:mt-6
+                [&_p]:text-ivory/70 [&_p]:mb-5 [&_p]:text-lg
+                [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-5 [&_ul]:text-ivory/70
+                [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-5 [&_ol]:text-ivory/70
+                [&_li]:mb-2
+                [&_blockquote]:border-l-4 [&_blockquote]:border-gold [&_blockquote]:pl-8 [&_blockquote]:py-4 [&_blockquote]:bg-card [&_blockquote]:italic [&_blockquote]:text-white [&_blockquote]:text-2xl [&_blockquote]:font-cinzel [&_blockquote]:my-8
+                [&_a]:text-gold [&_a]:underline [&_a]:underline-offset-2
+                [&_strong]:text-white [&_strong]:font-bold
+                [&_code]:bg-white/10 [&_code]:px-2 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-gold [&_code]:text-sm
+                [&_hr]:border-gold/20 [&_hr]:my-10
+                [&_img]:rounded [&_img]:max-w-full [&_img]:my-6 [&_img]:border [&_img]:border-gold/10"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
+
+            <section className="mt-24 pt-16 border-t border-gold/10 flex justify-between items-center">
+              <Link to="/blog" className="text-gold font-cinzel text-xs font-bold uppercase tracking-widest hover:translate-x-[-4px] transition-transform">← Archive</Link>
+            </section>
+          </>
+        )}
       </main>
 
       <Footer />
