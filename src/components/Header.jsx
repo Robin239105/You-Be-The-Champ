@@ -48,7 +48,11 @@ const Header = () => {
       </div>
 
       {/* Main Nav */}
-      <nav className={`relative w-full px-6 sm:px-12 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-gold/20 shadow-2xl' : 'bg-transparent'}`}>
+      <nav className={`relative w-full px-6 sm:px-12 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${
+        isScrolled
+          ? 'bg-black/98 backdrop-blur-xl border-b border-gold/30 shadow-[0_4px_40px_rgba(0,0,0,0.8)]'
+          : 'bg-black/70 backdrop-blur-md border-b border-gold/15'
+      }`}>
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden">
           <button 

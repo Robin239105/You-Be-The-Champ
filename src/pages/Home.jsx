@@ -203,6 +203,10 @@ const Home = () => {
         {/* Left edge accent */}
         <div className="absolute left-0 top-0 bottom-0 w-[3px] pointer-events-none" style={{ background: `linear-gradient(to bottom, transparent, ${slide.accentColor}, transparent)` }} />
 
+        {/* Top separator — creates clear break from header */}
+        <div className="absolute top-0 inset-x-0 h-[1px] bg-gold/20 pointer-events-none z-10" />
+        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-10" />
+
         {/* Bottom fade to black */}
         <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
 
@@ -221,7 +225,7 @@ const Home = () => {
             <div className="h-full grid grid-cols-1 lg:grid-cols-[1fr_1fr] max-w-[1400px] mx-auto px-8 lg:px-20 gap-0">
 
               {/* LEFT — text */}
-              <div className="flex flex-col justify-center pt-28 pb-24 pr-0 lg:pr-16">
+              <div className="flex flex-col justify-center pt-36 pb-24 pr-0 lg:pr-16">
 
                 {/* Sport badge + tag */}
                 <motion.div
