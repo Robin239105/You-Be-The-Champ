@@ -90,21 +90,24 @@ const AdminProductList = () => {
             });
           }
 
-    // Batch import: send 50 at a time
+    // Batch import: send only the current slice (not full array) to avoid body size limits
           const BATCH_SIZE = 50;
           const totalBatches = Math.ceil(productsToImport.length / BATCH_SIZE);
           let totalCreated = 0, allErrors = [];
 
           for (let i = 0; i < totalBatches; i++) {
             setImportProgress({ current: i + 1, total: totalBatches });
+            const batch = productsToImport.slice(i * BATCH_SIZE, (i + 1) * BATCH_SIZE);
             const res = await api.post('/products/import', {
-              products: productsToImport,
-              batchIndex: i,
+              products: batch,
+              batchIndex: 0,
               batchSize: BATCH_SIZE
             });
             if (res.data.success) {
               totalCreated += res.data.summary.created;
-              allErrors = [...allErrors, ...res.data.summary.errors];
+              allErrors = [...allErrors, ...(res.data.summary.errors || [])];
+            } else {
+              allErrors.push(`Batch ${i + 1} failed: ${res.data.message || 'Unknown error'}`);
             }
           }
           setImportProgress(null);
