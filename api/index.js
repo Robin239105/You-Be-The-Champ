@@ -65,6 +65,34 @@ app.get('/api/health', async (req, res) => {
   }
 });
 
+// One-time admin setup endpoint
+app.post('/api/setup-admin', async (req, res) => {
+  const { secret } = req.body;
+  if (secret !== process.env.JWT_SECRET) {
+    return res.status(403).json({ success: false, message: 'Forbidden' });
+  }
+  try {
+    const bcrypt = require('bcryptjs');
+    const email = 'admin@youbethechamp.com';
+    const password = 'Admin@1234';
+    const hashed = await bcrypt.hash(password, 10);
+    const existing = await prisma.user.findUnique({ where: { email } });
+    if (existing) {
+      await prisma.user.update({
+        where: { email },
+        data: { role: 'ADMIN', password: hashed, isBanned: false }
+      });
+      return res.json({ success: true, message: 'Admin updated (role + password reset)' });
+    }
+    await prisma.user.create({
+      data: { email, password: hashed, firstName: 'Admin', lastName: 'User', role: 'ADMIN', isBanned: false }
+    });
+    res.json({ success: true, message: 'Admin created' });
+  } catch (err) {
+    res.status(500).json({ success: false, message: err.message });
+  }
+});
+
 // Root route
 app.get('/', (req, res) => res.send('API is Live'));
 

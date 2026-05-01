@@ -7,24 +7,26 @@ async function main() {
   const email = 'admin@youbethechamp.com';
   const password = 'Admin@1234';
 
+  const hashed = await bcrypt.hash(password, 10);
   const existing = await prisma.user.findUnique({ where: { email } });
+
   if (existing) {
     await prisma.user.update({
       where: { email },
-      data: { role: 'ADMIN' }
+      data: { role: 'ADMIN', password: hashed, isBanned: false }
     });
-    console.log('✅ Admin role updated for:', email);
+    console.log('✅ Admin updated (role + password reset):', email);
     return;
   }
 
-  const hashed = await bcrypt.hash(password, 10);
   await prisma.user.create({
     data: {
       email,
       password: hashed,
       firstName: 'Admin',
       lastName: 'User',
-      role: 'ADMIN'
+      role: 'ADMIN',
+      isBanned: false
     }
   });
   console.log('✅ Admin created:', email);
