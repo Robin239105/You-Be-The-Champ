@@ -108,21 +108,12 @@ const Home = () => {
       <Header />
 
       {/* ── SECTION 1: HERO SLIDER ── */}
-      <section className="relative w-full overflow-hidden bg-[#0a0a0a]" style={{ height: '100svh', minHeight: 640 }}>
+      <section className="relative w-full bg-black overflow-hidden" style={{ height: '100vh', minHeight: 600 }}>
 
-        {/* ── Static gold background grid lines (luxury texture) ── */}
-        <div className="absolute inset-0 pointer-events-none"
-          style={{
-            backgroundImage: 'linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px)',
-            backgroundSize: '80px 80px'
-          }} />
-
-        {/* ── Gold radial glow center-right ── */}
-        <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse 60% 80% at 72% 50%, rgba(201,168,76,0.12) 0%, transparent 70%)' }} />
-
-        {/* ── Bottom fade into next section ── */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
+        {/* Subtle warm glow behind ring area */}
+        <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 55% 70% at 75% 50%, rgba(201,168,76,0.10) 0%, transparent 70%)' }} />
+        {/* Bottom fade */}
+        <div className="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
 
         {/* ── Slide content ── */}
         <AnimatePresence mode="wait">
@@ -131,164 +122,111 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="absolute inset-0 flex items-center"
+            transition={{ duration: 0.45 }}
+            className="absolute inset-0"
           >
-            <div className="relative z-10 w-full h-full flex items-center">
-              <div className="w-full max-w-7xl mx-auto px-8 xl:px-16 flex flex-col lg:flex-row items-center gap-0 lg:gap-16 h-full pt-24">
+            {/* Two-column grid */}
+            <div className="h-full grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto px-6 lg:px-12">
 
-                {/* ── LEFT: Text ── */}
-                <motion.div
-                  initial={{ opacity: 0, y: 32 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-                  className="flex-1 flex flex-col justify-center z-10 py-16"
-                >
-                  {/* Tag */}
-                  <div className="flex items-center gap-3 mb-7">
-                    <span className="block w-8 h-px bg-gold" />
-                    <span className="font-cinzel text-gold text-[10px] uppercase tracking-[5px]">{slide.tag}</span>
-                    <span className="font-cinzel text-white/20 text-[9px] uppercase tracking-[3px] border border-white/10 px-2 py-0.5">{slide.sport}</span>
-                  </div>
-
-                  {/* Headline */}
-                  <h1 className="font-cinzel font-black uppercase leading-[0.85] mb-5 tracking-tight">
-                    <span className="block text-white" style={{ fontSize: 'clamp(3.5rem, 9vw, 8rem)' }}>
-                      {slide.headline}
-                    </span>
-                    <span className="block gold-gradient-text" style={{ fontSize: 'clamp(2rem, 5.5vw, 5rem)' }}>
-                      {slide.sub}
-                    </span>
-                  </h1>
-
-                  {/* Divider */}
-                  <div className="w-16 h-px bg-gold/40 mb-6" />
-
-                  {/* Description */}
-                  <p className="text-white/50 font-raleway text-base leading-relaxed mb-10 max-w-sm">
-                    {slide.description}
-                  </p>
-
-                  {/* CTAs */}
-                  <div className="flex flex-wrap gap-4 mb-14">
-                    <Link to={slide.ctaLink}>
-                      <motion.span
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="flex items-center gap-2 bg-gold text-black font-cinzel text-xs font-black uppercase tracking-[3px] px-9 py-4 cursor-pointer"
-                      >
-                        {slide.cta}
-                        <ChevronRight size={14} />
-                      </motion.span>
-                    </Link>
-                    <Link to="/shop">
-                      <motion.span
-                        whileHover={{ scale: 1.02, color: '#C9A84C' }}
-                        whileTap={{ scale: 0.98 }}
-                        className="flex items-center gap-2 border border-white/20 hover:border-gold/60 text-white/60 hover:text-gold font-cinzel text-xs uppercase tracking-[3px] px-9 py-4 cursor-pointer transition-all duration-300"
-                      >
-                        Browse All
-                      </motion.span>
-                    </Link>
-                  </div>
-
-                  {/* Stats strip */}
-                  <div className="flex gap-10">
-                    {[['50K+', 'Rings Delivered'], ['4', 'Major Leagues'], ['120+', 'Years of History']].map(([n, l]) => (
-                      <div key={l} className="flex flex-col">
-                        <span className="font-cinzel text-gold font-black text-2xl leading-none">{n}</span>
-                        <span className="font-raleway text-[9px] text-white/35 uppercase tracking-[2px] mt-1">{l}</span>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-
-                {/* ── RIGHT: Ring ── */}
-                <div className="flex-1 hidden lg:flex items-center justify-center relative h-full">
-                  {/* Outer glow */}
-                  <div className="absolute w-[560px] h-[560px] rounded-full pointer-events-none"
-                    style={{ background: 'radial-gradient(circle, rgba(201,168,76,0.18) 0%, transparent 65%)' }} />
-                  {/* Concentric circles */}
-                  <div className="absolute w-[420px] h-[420px] rounded-full border border-gold/8 pointer-events-none" />
-                  <div className="absolute w-[320px] h-[320px] rounded-full border border-gold/12 pointer-events-none" />
-
-                  <motion.img
-                    key={`ring-${slide.id}`}
-                    src={heroRing}
-                    alt="Championship Ring"
-                    initial={{ opacity: 0, scale: 0.88, y: 20 }}
-                    animate={{ opacity: 1, scale: 1, y: [0, -16, 0] }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{
-                      opacity: { duration: 0.6 },
-                      scale: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-                      y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }
-                    }}
-                    className="relative z-10 w-[400px] xl:w-[500px] 2xl:w-[560px] select-none object-contain"
-                    style={{ filter: 'drop-shadow(0 24px 80px rgba(201,168,76,0.5)) drop-shadow(0 4px 20px rgba(0,0,0,0.9))' }}
-                  />
+              {/* LEFT — text */}
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                className="flex flex-col justify-center pt-28 pb-20 pr-0 lg:pr-12"
+              >
+                {/* Tag line */}
+                <div className="flex items-center gap-3 mb-8">
+                  <span className="w-8 h-px bg-gold flex-shrink-0" />
+                  <span className="font-cinzel text-gold text-[10px] uppercase tracking-[5px] leading-none">{slide.tag}</span>
+                  <span className="font-cinzel text-white/30 text-[9px] uppercase tracking-[2px] border border-white/10 px-2 py-0.5 leading-none">{slide.sport}</span>
                 </div>
+
+                {/* Headline */}
+                <h1 className="font-cinzel font-black uppercase leading-none tracking-tight mb-4">
+                  <span className="block text-white" style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', lineHeight: 0.9 }}>
+                    {slide.headline}
+                  </span>
+                  <span className="block gold-gradient-text mt-2" style={{ fontSize: 'clamp(1.8rem, 4.5vw, 4.5rem)', lineHeight: 0.95 }}>
+                    {slide.sub}
+                  </span>
+                </h1>
+
+                <div className="w-14 h-px bg-gold/30 my-6" />
+
+                <p className="text-white/50 font-raleway text-[15px] leading-relaxed mb-8 max-w-[340px]">
+                  {slide.description}
+                </p>
+
+                {/* Buttons */}
+                <div className="flex flex-wrap gap-3 mb-12">
+                  <Link to={slide.ctaLink}>
+                    <span className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-black font-cinzel text-[11px] font-black uppercase tracking-[3px] px-8 py-3.5 transition-colors cursor-pointer">
+                      {slide.cta} <ChevronRight size={13} />
+                    </span>
+                  </Link>
+                  <Link to="/shop">
+                    <span className="inline-flex items-center gap-2 border border-white/20 hover:border-gold text-white/60 hover:text-gold font-cinzel text-[11px] uppercase tracking-[3px] px-8 py-3.5 transition-all cursor-pointer">
+                      Browse All
+                    </span>
+                  </Link>
+                </div>
+
+                {/* Stats */}
+                <div className="flex gap-8 border-t border-white/[0.06] pt-8">
+                  {[['50K+', 'Rings Delivered'], ['4', 'Major Leagues'], ['120+', 'Years of History']].map(([n, l]) => (
+                    <div key={l}>
+                      <p className="font-cinzel text-gold font-black text-xl leading-none">{n}</p>
+                      <p className="font-raleway text-[9px] text-white/30 uppercase tracking-[2px] mt-1.5">{l}</p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+
+              {/* RIGHT — ring */}
+              <div className="hidden lg:flex items-center justify-center relative">
+                <div className="absolute w-[480px] h-[480px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 65%)' }} />
+                <div className="absolute w-[360px] h-[360px] rounded-full border border-gold/10 pointer-events-none" />
+                <div className="absolute w-[260px] h-[260px] rounded-full border border-gold/15 pointer-events-none" />
+                <motion.img
+                  src={heroRing}
+                  alt="Championship Ring"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1, y: [0, -14, 0] }}
+                  transition={{
+                    opacity: { duration: 0.5 },
+                    scale: { duration: 0.5 },
+                    y: { duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }
+                  }}
+                  className="relative z-10 w-[380px] xl:w-[460px] select-none"
+                  style={{ filter: 'drop-shadow(0 20px 70px rgba(201,168,76,0.45)) drop-shadow(0 4px 16px rgba(0,0,0,1))' }}
+                />
               </div>
             </div>
           </motion.div>
         </AnimatePresence>
 
-        {/* ── Slide navigation — vertical right strip ── */}
-        <div className="absolute right-8 xl:right-12 top-1/2 -translate-y-1/2 z-20 hidden lg:flex flex-col gap-3">
-          {SLIDES.map((s, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrentSlide(i)}
-              className="group flex items-center gap-3 justify-end"
-            >
-              <span className={`font-cinzel text-[9px] uppercase tracking-[2px] transition-all duration-300 ${i === currentSlide ? 'text-gold' : 'text-white/20 group-hover:text-white/50'}`}>
-                {s.headline}
-              </span>
-              <div className={`transition-all duration-300 rounded-full flex-shrink-0 ${i === currentSlide ? 'w-2 h-6 bg-gold' : 'w-1.5 h-1.5 bg-white/20 group-hover:bg-white/50'}`} />
-            </button>
-          ))}
-        </div>
-
-        {/* ── Bottom controls ── */}
-        <div className="absolute bottom-10 left-8 xl:left-16 z-20 flex items-center gap-4">
-          <button
-            onClick={prevSlide}
-            className="w-11 h-11 border border-white/15 hover:border-gold/60 flex items-center justify-center text-white/40 hover:text-gold transition-all duration-300"
-          >
-            <ChevronLeft size={18} />
+        {/* ── Bottom: prev/dots/next ── */}
+        <div className="absolute bottom-8 left-6 lg:left-12 z-20 flex items-center gap-3">
+          <button onClick={prevSlide} className="w-10 h-10 border border-white/15 hover:border-gold flex items-center justify-center text-white/40 hover:text-gold transition-all">
+            <ChevronLeft size={16} />
           </button>
-
-          {/* Progress dots */}
           <div className="flex items-center gap-2">
             {SLIDES.map((_, i) => (
-              <button key={i} onClick={() => setCurrentSlide(i)} className="relative flex items-center justify-center w-6 h-6">
-                <span className={`block rounded-full transition-all duration-300 ${i === currentSlide ? 'w-5 h-1.5 bg-gold' : 'w-1.5 h-1.5 bg-white/25 hover:bg-white/50'}`} />
+              <button key={i} onClick={() => setCurrentSlide(i)}>
+                <span className={`block rounded-full transition-all duration-300 ${i === currentSlide ? 'w-6 h-[5px] bg-gold' : 'w-[5px] h-[5px] bg-white/20 hover:bg-white/50'}`} />
               </button>
             ))}
           </div>
-
-          <button
-            onClick={nextSlide}
-            className="w-11 h-11 border border-white/15 hover:border-gold/60 flex items-center justify-center text-white/40 hover:text-gold transition-all duration-300"
-          >
-            <ChevronRight size={18} />
+          <button onClick={nextSlide} className="w-10 h-10 border border-white/15 hover:border-gold flex items-center justify-center text-white/40 hover:text-gold transition-all">
+            <ChevronRight size={16} />
           </button>
-
-          {/* Slide counter */}
-          <span className="font-cinzel text-white/25 text-[10px] tracking-[3px] ml-2">
-            0{currentSlide + 1} <span className="text-white/10">/ 0{SLIDES.length}</span>
-          </span>
+          <span className="font-cinzel text-[10px] text-white/20 tracking-[2px] ml-1">0{currentSlide + 1} / 0{SLIDES.length}</span>
         </div>
 
-        {/* Auto-play progress bar */}
-        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/5 z-20">
-          <motion.div
-            key={currentSlide}
-            className="h-full bg-gold/60"
-            initial={{ width: '0%' }}
-            animate={{ width: '100%' }}
-            transition={{ duration: 5, ease: 'linear' }}
-          />
+        {/* ── Progress bar ── */}
+        <div className="absolute bottom-0 inset-x-0 h-[2px] bg-white/5 z-20">
+          <motion.div key={currentSlide} className="h-full bg-gold" initial={{ width: '0%' }} animate={{ width: '100%' }} transition={{ duration: 5, ease: 'linear' }} />
         </div>
       </section>
 
