@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
@@ -17,42 +17,16 @@ import heroRing from '../assets/hero-ring.png';
 const Home = () => {
   const [featuredRings, setFeaturedRings] = useState([]);
   const [newArrivals, setNewArrivals] = useState([]);
-  const scrollRef = useRef(null);
 
   useEffect(() => {
     api.get('/products?limit=20&isActive=true').then(res => {
       if (res.data.success) {
         const all = res.data.data;
-        setFeaturedRings(all.slice(0, 10));
+        setFeaturedRings(all.slice(0, 6));
         setNewArrivals(all.slice(0, 4));
       }
     }).catch(() => {});
   }, []);
-
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el || featuredRings.length === 0) return;
-    let paused = false;
-    const pause = () => { paused = true; };
-    const resume = () => { paused = false; };
-    el.addEventListener('mouseenter', pause);
-    el.addEventListener('mouseleave', resume);
-    const timer = setInterval(() => {
-      if (paused || !el) return;
-      const card = el.querySelector('div');
-      const step = (card ? card.offsetWidth : 300) + 32;
-      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 10) {
-        el.scrollTo({ left: 0, behavior: 'smooth' });
-      } else {
-        el.scrollBy({ left: step, behavior: 'smooth' });
-      }
-    }, 3000);
-    return () => {
-      clearInterval(timer);
-      el.removeEventListener('mouseenter', pause);
-      el.removeEventListener('mouseleave', resume);
-    };
-  }, [featuredRings]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -208,11 +182,9 @@ const Home = () => {
           </Link>
         </div>
 
-        <div ref={scrollRef} className="flex gap-8 overflow-x-auto pb-16 scrollbar-none snap-x px-4 -mx-4 scroll-smooth">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredRings.map((product) => (
-            <div key={product.id} className="min-w-[300px] md:min-w-[350px] snap-center shrink-0">
-              <ProductCard product={product} />
-            </div>
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       </section>
