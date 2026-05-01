@@ -48,10 +48,10 @@ const Header = () => {
       </div>
 
       {/* Main Nav */}
-      <nav className={`relative w-full px-6 sm:px-12 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${
+      <nav className={`relative w-full px-6 sm:px-12 py-4 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${
         isScrolled
-          ? 'bg-black/98 backdrop-blur-xl border-b border-gold/30 shadow-[0_4px_40px_rgba(0,0,0,0.8)]'
-          : 'bg-black/70 backdrop-blur-md border-b border-gold/15'
+          ? 'bg-black/98 backdrop-blur-xl border-b border-gold/35 shadow-[0_4px_40px_rgba(0,0,0,0.9)]'
+          : 'bg-black/80 backdrop-blur-lg border-b border-gold/20'
       }`}>
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden">
@@ -64,13 +64,13 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-        <div className="flex-shrink-0 lg:mr-0">
+        <div className="flex-shrink-0 lg:mr-4">
           <Link to="/" className="flex items-center group">
-            <div className="relative w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-gold/30 shadow-[0_0_20px_rgba(201,168,76,0.2)] group-hover:border-gold transition-all duration-500">
+            <div className="relative w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full overflow-hidden border-2 border-gold/30 shadow-[0_0_24px_rgba(201,168,76,0.25)] group-hover:border-gold group-hover:shadow-[0_0_32px_rgba(201,168,76,0.4)] transition-all duration-500">
               <img 
                 src="/logo.jpg" 
                 alt="You Be The Champ Logo" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-gold/10 to-transparent pointer-events-none" />
             </div>

@@ -225,18 +225,18 @@ const Home = () => {
             <div className="h-full grid grid-cols-1 lg:grid-cols-[1fr_1fr] max-w-[1400px] mx-auto px-8 lg:px-20 gap-0">
 
               {/* LEFT — text */}
-              <div className="flex flex-col justify-center pt-36 pb-24 pr-0 lg:pr-16">
+              <div className="flex flex-col justify-center pt-40 pb-20 pr-0 lg:pr-16">
 
                 {/* Sport badge + tag */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.05 }}
-                  className="flex items-center gap-3 mb-7"
+                  className="flex items-center gap-3 mb-8"
                 >
-                  <span className="font-cinzel text-[9px] font-black uppercase tracking-[4px] px-3 py-1 border" style={{ borderColor: slide.accentColor, color: slide.accentColor }}>{slide.sport}</span>
-                  <span className="w-6 h-px bg-gold/40" />
-                  <span className="font-cinzel text-gold/70 text-[9px] uppercase tracking-[4px]">{slide.tag}</span>
+                  <span className="font-cinzel text-[9px] font-black uppercase tracking-[4px] px-3 py-[5px] border border-gold text-gold">{slide.sport}</span>
+                  <span className="w-8 h-px bg-gold/50" />
+                  <span className="font-cinzel text-gold/60 text-[9px] uppercase tracking-[4px]">{slide.tag}</span>
                 </motion.div>
 
                 {/* Headline */}
@@ -245,33 +245,33 @@ const Home = () => {
                     initial={{ y: 80, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                    className="font-cinzel font-black uppercase text-white leading-[0.88] tracking-tight"
-                    style={{ fontSize: 'clamp(3.5rem, 8vw, 8.5rem)' }}
+                    className="font-cinzel font-black uppercase text-white tracking-tight"
+                    style={{ fontSize: 'clamp(3rem, 6.5vw, 7rem)', lineHeight: 1 }}
                   >
                     {slide.headline}
                   </motion.h1>
                 </div>
-                <div className="overflow-hidden mb-5">
+                <div className="overflow-hidden mb-6">
                   <motion.div
                     initial={{ y: 80, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.55, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-                    className="font-cinzel font-black uppercase leading-[0.88] tracking-tight gold-gradient-text"
-                    style={{ fontSize: 'clamp(2.2rem, 5vw, 5.5rem)' }}
+                    className="font-cinzel font-black uppercase tracking-tight gold-gradient-text"
+                    style={{ fontSize: 'clamp(2rem, 4.5vw, 5rem)', lineHeight: 1 }}
                   >
                     {slide.sub}
                   </motion.div>
                 </div>
 
-                {/* Ring label pill */}
+                {/* Ring label */}
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.28 }}
-                  className="flex items-center gap-3 mb-7"
+                  className="flex items-center gap-3 mb-6"
                 >
-                  <div className="h-px flex-1 max-w-[48px]" style={{ background: slide.accentColor }} />
-                  <span className="font-cinzel text-white/50 text-[10px] uppercase tracking-[3px]">{slide.label}</span>
+                  <div className="h-px w-10 bg-gold/60" />
+                  <span className="font-cinzel text-white/60 text-[10px] uppercase tracking-[3px]">{slide.label}</span>
                 </motion.div>
 
                 {/* Description */}
@@ -279,7 +279,7 @@ const Home = () => {
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.32 }}
-                  className="text-white/45 font-raleway text-[15px] leading-relaxed mb-10 max-w-[380px]"
+                  className="text-white/55 font-raleway text-[15px] leading-[1.75] mb-10 max-w-[400px]"
                 >
                   {slide.description}
                 </motion.p>
@@ -289,16 +289,16 @@ const Home = () => {
                   initial={{ opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.38 }}
-                  className="flex flex-wrap gap-4 mb-14"
+                  className="flex flex-wrap gap-4"
                 >
                   <Link to={slide.ctaLink}>
-                    <span className="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-black font-cinzel text-[11px] font-black uppercase tracking-[3px] px-9 py-4 transition-all group cursor-pointer">
+                    <span className="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-black font-cinzel text-[11px] font-black uppercase tracking-[3px] px-9 py-[14px] transition-all group cursor-pointer">
                       {slide.cta}
                       <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                     </span>
                   </Link>
                   <Link to="/shop">
-                    <span className="inline-flex items-center gap-2 border border-white/15 hover:border-gold/60 text-white/50 hover:text-gold font-cinzel text-[11px] uppercase tracking-[3px] px-9 py-4 transition-all cursor-pointer">
+                    <span className="inline-flex items-center gap-2 border border-white/20 hover:border-gold/70 text-white/55 hover:text-gold font-cinzel text-[11px] uppercase tracking-[3px] px-9 py-[14px] transition-all cursor-pointer">
                       Browse All
                     </span>
                   </Link>
@@ -309,12 +309,12 @@ const Home = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.48 }}
-                  className="flex gap-10 border-t border-white/[0.06] pt-8"
+                  className="flex gap-10 border-t border-gold/10 pt-8 mt-10"
                 >
                   {[['523', 'Rings Available'], ['4', 'Major Leagues'], ['120+', 'Years of History']].map(([n, l]) => (
                     <div key={l}>
-                      <p className="font-cinzel font-black leading-none text-gold" style={{ fontSize: '1.5rem' }}>{n}</p>
-                      <p className="font-raleway text-[9px] text-white/25 uppercase tracking-[2px] mt-1.5">{l}</p>
+                      <p className="font-cinzel font-black leading-none text-gold" style={{ fontSize: '1.6rem' }}>{n}</p>
+                      <p className="font-raleway text-[9px] text-white/40 uppercase tracking-[2px] mt-2">{l}</p>
                     </div>
                   ))}
                 </motion.div>
