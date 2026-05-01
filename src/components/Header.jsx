@@ -166,7 +166,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center justify-center gap-x-3 xl:gap-x-4">
+        <div className="hidden lg:flex items-center justify-center gap-x-6 xl:gap-x-8">
           {navigationData.map((nav) => {
             const hasMega = nav.layout && nav.layout !== 'direct';
             const isDirect = nav.layout === 'direct' || !nav.layout;
@@ -179,13 +179,13 @@ const Header = () => {
                 {isDirect ? (
                   <Link
                     to={nav.path}
-                    className="font-cinzel text-[9px] xl:text-[10px] tracking-[1.5px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap"
+                    className="font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 hover:text-gold transition-all uppercase font-black whitespace-nowrap"
                   >
                     {nav.label}
                   </Link>
                 ) : (
                   <div className="flex items-center gap-1 cursor-default group">
-                    <span className="font-cinzel text-[9px] xl:text-[10px] tracking-[1.5px] text-ivory/60 group-hover:text-gold transition-all uppercase font-bold whitespace-nowrap">
+                    <span className="font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 group-hover:text-gold transition-all uppercase font-black whitespace-nowrap">
                       {nav.label}
                     </span>
                     <ChevronDown size={9} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/40'}`} />
