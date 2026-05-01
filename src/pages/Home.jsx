@@ -221,21 +221,21 @@ const Home = () => {
           </Link>
         </div>
 
-        <div ref={scrollRef} className="flex gap-8 overflow-x-auto pb-16 scrollbar-none snap-x px-4 -mx-4 scroll-smooth">
-          {loadingProducts ? (
-            Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="min-w-[300px] md:min-w-[350px] snap-center shrink-0 bg-surface border border-gold/10 rounded-xl aspect-[3/4] animate-pulse" />
-            ))
-          ) : featuredRings.length === 0 ? (
-            <p className="text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 w-full text-center">No products available</p>
-          ) : (
-            featuredRings.map((product) => (
+        {loadingProducts ? (
+          <div className="flex justify-center items-center py-20 w-full">
+            <div className="w-8 h-8 border-2 border-gold border-t-transparent rounded-full animate-spin" />
+          </div>
+        ) : featuredRings.length === 0 ? (
+          <p className="text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 w-full text-center">No products available</p>
+        ) : (
+          <div ref={scrollRef} className="flex gap-8 overflow-x-auto pb-16 scrollbar-none snap-x px-4 -mx-4 scroll-smooth">
+            {featuredRings.map((product) => (
               <div key={product.id} className="min-w-[300px] md:min-w-[350px] snap-center shrink-0">
                 <ProductCard product={product} />
               </div>
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* SECTION 5: TRUST BADGES */}
@@ -251,19 +251,19 @@ const Home = () => {
           <h2 className="text-4xl font-black font-cinzel tracking-widest text-white uppercase">New Arrivals</h2>
           <div className="w-24 h-1 bg-gold mx-auto mt-6" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {loadingProducts ? (
-            Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="bg-surface border border-gold/10 rounded-xl aspect-[3/4] animate-pulse" />
-            ))
-          ) : newArrivals.length === 0 ? (
-            <p className="col-span-4 text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 text-center">No products available</p>
-          ) : (
-            newArrivals.map(product => (
+        {loadingProducts ? (
+          <div className="flex justify-center items-center py-20 col-span-4">
+            <div className="w-8 h-8 border-2 border-gold border-t-transparent rounded-full animate-spin" />
+          </div>
+        ) : newArrivals.length === 0 ? (
+          <p className="col-span-4 text-ivory/40 font-cinzel text-xs uppercase tracking-widest py-20 text-center">No products available</p>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            {newArrivals.map(product => (
               <ProductCard key={product.id} product={product} />
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )}
         <div className="mt-20 text-center">
           <Link to="/shop"><Button variant="outline" className="px-16">Browse Catalog</Button></Link>
         </div>
