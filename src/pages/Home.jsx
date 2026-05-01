@@ -174,14 +174,14 @@ const Home = () => {
 
                 {/* Badge */}
                 <div className="inline-flex items-center gap-3 mb-6 self-start">
-                  <div className="w-6 h-[2px]" style={{ background: slide.accent }} />
-                  <span className="font-cinzel text-[10px] tracking-[4px] uppercase" style={{ color: slide.accent === '#C9A84C' ? '#C9A84C' : 'rgba(255,255,255,0.7)' }}>{slide.label}</span>
+                  <div className="w-6 h-[2px] bg-gold" />
+                  <span className="font-cinzel text-[10px] tracking-[4px] uppercase text-gold/80">{slide.label}</span>
                 </div>
 
                 {/* Headline */}
                 <h1 className="font-cinzel font-black uppercase leading-[0.88] mb-6">
                   <span className="block text-5xl sm:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] text-white tracking-tight">{slide.headline}</span>
-                  <span className="block text-3xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-tight mt-1" style={{ WebkitTextStroke: `1px ${slide.accent}`, color: 'transparent' }}>
+                  <span className="block text-3xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-tight mt-1 gold-gradient-text">
                     {slide.subheadline}
                   </span>
                 </h1>
