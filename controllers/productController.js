@@ -248,8 +248,8 @@ const importProducts = async (req, res) => {
       try {
         const { name, sku, price, salePrice, stockQuantity, description, shortDescription, status, isFeatured, categories, images } = item;
 
-        if (!name || !sku || !price) {
-          results.errors.push(`Skipped: Missing required fields for product ${sku || 'unknown'}`);
+        if (!name || !sku || price === undefined || price === null || price === '') {
+          results.errors.push(`Skipped: Missing required fields (name/sku/price) for product ${sku || 'unknown'}`);
           continue;
         }
 
