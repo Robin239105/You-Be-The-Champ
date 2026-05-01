@@ -10,20 +10,16 @@ import TrustBadges from '../components/TrustBadges';
 import SportCategoryGrid from '../components/SportCategoryGrid';
 import StatsBanner from '../components/StatsBanner';
 import NewsletterSection from '../components/NewsletterSection';
-import SectionDivider from '../components/SectionDivider';
 import api from '../utils/api';
 import heroRing from '../assets/hero-ring.png';
 
 const Home = () => {
-  const [featuredRings, setFeaturedRings] = useState([]);
   const [newArrivals, setNewArrivals] = useState([]);
 
   useEffect(() => {
     api.get('/products?limit=20&isActive=true').then(res => {
       if (res.data.success) {
-        const all = res.data.data;
-        setFeaturedRings(all.slice(0, 6));
-        setNewArrivals(all.slice(0, 4));
+        setNewArrivals(res.data.data.slice(0, 4));
       }
     }).catch(() => {});
   }, []);
@@ -168,28 +164,7 @@ const Home = () => {
       {/* SECTION 3: SPORT CATEGORY GRID */}
       <SportCategoryGrid />
 
-      <SectionDivider />
-
-      {/* SECTION 4: FEATURED COLLECTION */}
-      <section className="py-32 px-8 overflow-hidden">
-        <div className="max-w-7xl mx-auto mb-20 flex items-end justify-between border-b border-gold/10 pb-8">
-          <div>
-            <span className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-4">Curated Selection</span>
-            <h2 className="text-3xl md:text-4xl font-bold font-cinzel text-white tracking-widest uppercase">The Vault Essentials</h2>
-          </div>
-          <Link to="/shop" className="text-gold text-xs font-cinzel tracking-widest hover:translate-x-2 transition-transform uppercase group">
-            Explore All <span className="inline-block group-hover:translate-x-1 transition-transform ml-2">→</span>
-          </Link>
-        </div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuredRings.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      </section>
-
-      {/* SECTION 5: TRUST BADGES */}
+      {/* SECTION 4: TRUST BADGES */}
       <TrustBadges />
 
       {/* SECTION 6: STATS BANNER */}
