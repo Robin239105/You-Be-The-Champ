@@ -15,38 +15,39 @@ const MegaMenu = ({ data, onMouseEnter, onMouseLeave }) => {
 
   const catLink = (path) => `/category/${encodeURIComponent(path)}`;
 
-  // TYPE C — Player Photo Grid (All Time Greats)
+  // TYPE C — Player Circular Photo Grid (All Time Greats)
   const renderPlayers = () => (
     <div>
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid grid-cols-10 gap-x-3 gap-y-4">
         {data.players.map((p) => (
           <Link
             key={p.path}
             to={catLink(p.path)}
-            className="group flex flex-col items-center gap-0 border border-gold/10 hover:border-gold/50 overflow-hidden transition-all duration-300 hover:shadow-[0_0_18px_rgba(201,168,76,0.25)]"
+            className="group flex flex-col items-center gap-1.5 text-center"
           >
-            <div className="w-full aspect-[3/4] overflow-hidden bg-black relative">
+            <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-gold/20 group-hover:border-gold/70 transition-all duration-300 group-hover:shadow-[0_0_12px_rgba(201,168,76,0.4)] flex-shrink-0 bg-black">
               {p.photo ? (
                 <img
                   src={p.photo}
                   alt={p.name}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  onError={e => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }}
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                  onError={e => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.classList.add('fallback-initial');
+                  }}
                 />
-              ) : null}
-              <div className={`${p.photo ? 'hidden' : 'flex'} absolute inset-0 items-center justify-center bg-gradient-to-br from-gold/20 to-black`}>
-                <span className="font-cinzel font-black text-gold text-3xl">{p.name.charAt(0)}</span>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black to-transparent" />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gold/20 to-black">
+                  <span className="font-cinzel font-black text-gold text-xl">{p.name.charAt(0)}</span>
+                </div>
+              )}
             </div>
-            <div className="w-full bg-black px-2 py-2 text-center">
-              <p className="font-cinzel text-white text-[9px] uppercase tracking-[1px] font-black group-hover:text-gold transition-colors leading-tight">{p.name}</p>
-              <span className={`text-[7px] px-1 py-0.5 border font-cinzel uppercase tracking-widest mt-1 inline-block ${sportBadgeColors[p.sport] || 'bg-white/10 text-white/50 border-white/20'}`}>{p.sport}</span>
-            </div>
+            <p className="font-cinzel text-white text-[8px] uppercase tracking-[0.5px] font-black group-hover:text-gold transition-colors leading-tight w-full">{p.name}</p>
+            <span className={`text-[7px] px-1 py-0.5 border font-cinzel uppercase tracking-widest ${sportBadgeColors[p.sport] || 'bg-white/10 text-white/50 border-white/20'}`}>{p.sport}</span>
           </Link>
         ))}
       </div>
-      <div className="mt-6 pt-4 border-t border-gold/10 text-center">
+      <div className="mt-5 pt-4 border-t border-gold/10 text-center">
         <Link to="/category/All%20Time%20Greats" className="font-cinzel text-[10px] text-gold uppercase tracking-widest hover:text-white transition-colors">View All Legends →</Link>
       </div>
     </div>
