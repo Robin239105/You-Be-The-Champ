@@ -1,15 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../utils/api';
-import { Loader2, Plus, Search, Edit, Trash2, Download, Upload, CheckSquare, Square, EyeOff, Eye } from 'lucide-react';
+import { Loader2, Plus, Search, Edit, Trash2, Download, Upload, CheckSquare, Square, EyeOff, Eye, Package } from 'lucide-react';
 
 const AdminProductList = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isImporting, setIsImporting] = useState(false);
+  const [importProgress, setImportProgress] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedIds, setSelectedIds] = useState([]);
   const [bulkLoading, setBulkLoading] = useState(false);
+  const [editingStock, setEditingStock] = useState(null);
+  const [stockValue, setStockValue] = useState('');
+  const stockInputRef = useRef(null);
 
   const fetchProducts = async () => {
     setIsLoading(true);
@@ -86,11 +90,26 @@ const AdminProductList = () => {
             });
           }
 
-          const response = await api.post('/products/import', { products: productsToImport });
-          if (response.data.success) {
-            alert(`Import Successful!\nCreated: ${response.data.summary.created}\nUpdated: ${response.data.summary.updated}\nErrors: ${response.data.summary.errors.length}`);
-            fetchProducts();
+    // Batch import: send 50 at a time
+          const BATCH_SIZE = 50;
+          const totalBatches = Math.ceil(productsToImport.length / BATCH_SIZE);
+          let totalCreated = 0, allErrors = [];
+
+          for (let i = 0; i < totalBatches; i++) {
+            setImportProgress({ current: i + 1, total: totalBatches });
+            const res = await api.post('/products/import', {
+              products: productsToImport,
+              batchIndex: i,
+              batchSize: BATCH_SIZE
+            });
+            if (res.data.success) {
+              totalCreated += res.data.summary.created;
+              allErrors = [...allErrors, ...res.data.summary.errors];
+            }
           }
+          setImportProgress(null);
+          alert(`Import Complete!\nProcessed: ${totalCreated}/${productsToImport.length}\nErrors: ${allErrors.length}${allErrors.length ? '\n' + allErrors.slice(0, 3).join('\n') : ''}`);
+          fetchProducts();
         } catch (err) {
           const errorMsg = err.response?.data?.message || err.message;
           alert('Failed to import products: ' + errorMsg);
@@ -107,6 +126,20 @@ const AdminProductList = () => {
       }
     };
     fileInput.click();
+  };
+
+  const startEditStock = (product) => {
+    setEditingStock(product.id);
+    setStockValue(String(product.stockQuantity ?? 0));
+    setTimeout(() => stockInputRef.current?.focus(), 50);
+  };
+
+  const saveStock = async (id) => {
+    try {
+      await api.put(`/products/stock/${id}`, { stockQuantity: parseInt(stockValue) });
+      setProducts(prev => prev.map(p => p.id === id ? { ...p, stockQuantity: parseInt(stockValue) } : p));
+    } catch { alert('Failed to update stock'); }
+    setEditingStock(null);
   };
 
   const handleDelete = async (id) => {
@@ -174,8 +207,11 @@ const AdminProductList = () => {
             disabled={isImporting}
             className="flex items-center gap-2 bg-white/5 text-gold border border-gold/20 px-4 py-3 rounded-lg font-cinzel text-[10px] tracking-widest uppercase font-bold hover:bg-gold/10 transition-all disabled:opacity-50"
           >
-            {isImporting ? <Loader2 size={14} className="animate-spin" /> : <Upload size={14} />} 
-            Import
+            {isImporting ? (
+            <><Loader2 size={14} className="animate-spin" /> 
+              {importProgress ? `Batch ${importProgress.current}/${importProgress.total}` : 'Importing...'}
+            </>
+          ) : <><Upload size={14} /> Import</>}
           </button>
           <Link 
             to="/admin/products/new"
@@ -270,7 +306,30 @@ const AdminProductList = () => {
                     <td className="px-6 py-4 font-mono text-ivory/60 text-xs">{product.sku || 'N/A'}</td>
                     <td className="px-6 py-4 text-gold font-bold">${Number(product.price).toFixed(2)}</td>
                     <td className="px-6 py-4">
-                      <span className={product.stockQuantity < 10 ? 'text-crimson' : 'text-ivory/80'}>{product.stockQuantity} in stock</span>
+                      {editingStock === product.id ? (
+                        <div className="flex items-center gap-2">
+                          <input
+                            ref={stockInputRef}
+                            type="number"
+                            min="0"
+                            value={stockValue}
+                            onChange={e => setStockValue(e.target.value)}
+                            onBlur={() => saveStock(product.id)}
+                            onKeyDown={e => { if (e.key === 'Enter') saveStock(product.id); if (e.key === 'Escape') setEditingStock(null); }}
+                            className="w-20 bg-black border border-gold/40 text-white text-xs px-2 py-1 rounded outline-none focus:border-gold"
+                          />
+                        </div>
+                      ) : (
+                        <button onClick={() => startEditStock(product)} className="flex items-center gap-1.5 hover:text-gold transition-colors group">
+                          <span className={`text-sm font-mono ${
+                            product.stockQuantity === 0 ? 'text-crimson font-bold' :
+                            product.stockQuantity <= 10 ? 'text-amber-400' : 'text-ivory/80'
+                          }`}>
+                            {product.stockQuantity === 0 ? 'OUT OF STOCK' : `${product.stockQuantity}`}
+                          </span>
+                          <Edit size={10} className="opacity-0 group-hover:opacity-60 text-gold" />
+                        </button>
+                      )}
                     </td>
                     <td className="px-6 py-4">
                       <span className={`px-2 py-1 rounded-full text-[10px] font-bold uppercase ${

@@ -224,28 +224,25 @@ const exportProducts = async (req, res) => {
 };
 
 const importProducts = async (req, res) => {
-  const { products } = req.body;
+  const { products, batchIndex = 0, batchSize = 50 } = req.body;
 
   if (!Array.isArray(products)) {
     return res.status(400).json({ success: false, message: 'Invalid product data format. Expected an array.' });
   }
 
-  const results = { created: 0, updated: 0, errors: [] };
-  const categoryCache = {};
+  // Process one batch at a time to avoid Vercel 10s timeout
+  const batch = products.slice(batchIndex * batchSize, (batchIndex + 1) * batchSize);
+  const totalBatches = Math.ceil(products.length / batchSize);
+  const results = { created: 0, updated: 0, errors: [], totalBatches, currentBatch: batchIndex + 1 };
 
   try {
-    // 1. Pre-populate Category Cache to avoid thousands of DB calls
     const allCategories = await prisma.category.findMany();
-    allCategories.forEach(cat => {
-      categoryCache[cat.slug] = cat.id;
-    });
+    const categoryCache = {};
+    allCategories.forEach(cat => { categoryCache[cat.slug] = cat.id; });
 
-    for (const item of products) {
+    for (const item of batch) {
       try {
-        const {
-          name, sku, price, salePrice, stockQuantity, description, 
-          shortDescription, status, isFeatured, categories, images
-        } = item;
+        const { name, sku, price, salePrice, stockQuantity, description, shortDescription, status, isFeatured, categories, images } = item;
 
         if (!name || !sku || !price) {
           results.errors.push(`Skipped: Missing required fields for product ${sku || 'unknown'}`);
@@ -255,19 +252,15 @@ const importProducts = async (req, res) => {
         const slug = slugify(name, { lower: true, strict: true }) + '-' + sku.toLowerCase();
         const categoryIds = [];
 
-        // 2. Handle Categories with Pre-populated Cache
         if (categories) {
           const categoryNames = typeof categories === 'string' ? categories.split(',').map(c => c.trim()) : categories;
           for (const catName of categoryNames) {
+            if (!catName) continue;
             const catSlug = slugify(catName, { lower: true, strict: true });
-            
             if (categoryCache[catSlug]) {
               categoryIds.push(categoryCache[catSlug]);
             } else {
-              // Only create if truly missing
-              const newCat = await prisma.category.create({
-                data: { name: catName, slug: catSlug }
-              });
+              const newCat = await prisma.category.create({ data: { name: catName, slug: catSlug } });
               categoryCache[catSlug] = newCat.id;
               categoryIds.push(newCat.id);
             }
@@ -280,45 +273,56 @@ const importProducts = async (req, res) => {
           shortDescription: shortDescription || '',
           price: parseFloat(price),
           salePrice: salePrice ? parseFloat(salePrice) : null,
-          stockQuantity: parseInt(stockQuantity) || 0,
+          stockQuantity: parseInt(stockQuantity) || 999,
           status: status || 'PUBLISHED',
           isFeatured: isFeatured === true || isFeatured === 'true'
         };
 
-        // 3. Upsert Product
         const product = await prisma.product.upsert({
           where: { sku },
-          update: {
-            ...productData,
-            categories: { set: categoryIds.map(id => ({ id })) }
-          },
-          create: {
-            ...productData,
-            categories: { connect: categoryIds.map(id => ({ id })) }
-          }
+          update: { ...productData, categories: { set: categoryIds.map(id => ({ id })) } },
+          create: { ...productData, categories: { connect: categoryIds.map(id => ({ id })) } }
         });
 
-        results.created++; // Increment total processed
-
-
-        // 4. Handle Images
         if (images) {
-          const imageUrls = typeof images === 'string' ? images.split(',').map(i => i.trim()) : images;
-          await prisma.productImage.deleteMany({ where: { productId: product.id } });
-          await prisma.productImage.createMany({
-            data: imageUrls.map((url, idx) => ({
-              url,
-              productId: product.id,
-              isPrimary: idx === 0
-            }))
-          });
+          const imageUrls = typeof images === 'string' ? images.split(',').map(i => i.trim()).filter(Boolean) : images;
+          if (imageUrls.length > 0) {
+            await prisma.productImage.deleteMany({ where: { productId: product.id } });
+            await prisma.productImage.createMany({
+              data: imageUrls.map((url, idx) => ({ url, productId: product.id, isPrimary: idx === 0 }))
+            });
+          }
         }
+
+        results.created++;
       } catch (err) {
         results.errors.push(`Error with product ${item.sku}: ${err.message}`);
       }
     }
 
-    res.json({ success: true, message: 'Import completed', summary: results });
+    res.json({
+      success: true,
+      message: `Batch ${batchIndex + 1}/${totalBatches} completed`,
+      summary: results,
+      hasMore: batchIndex + 1 < totalBatches
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const updateStock = async (req, res) => {
+  const { id } = req.params;
+  const { stockQuantity } = req.body;
+  if (stockQuantity === undefined || isNaN(parseInt(stockQuantity))) {
+    return res.status(400).json({ success: false, message: 'stockQuantity is required' });
+  }
+  try {
+    const product = await prisma.product.update({
+      where: { id },
+      data: { stockQuantity: parseInt(stockQuantity) }
+    });
+    res.json({ success: true, data: product });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
@@ -355,7 +359,8 @@ module.exports = {
   getProducts, 
   getProductBySlug, 
   createProduct, 
-  updateProduct, 
+  updateProduct,
+  updateStock,
   deleteProduct, 
   bulkDeleteProducts,
   bulkUpdateStatus,

@@ -69,11 +69,17 @@ const ProductDetail = () => {
     );
   }
 
+  const stock = product.stockQuantity ?? 999;
+  const isOutOfStock = stock === 0;
+  const isLowStock = stock > 0 && stock <= 10;
+
   const handleAddToCart = () => {
+    if (isOutOfStock) return;
     addItem({ ...product, quantity });
   };
 
   const handleBuyNow = () => {
+    if (isOutOfStock) return;
     addItem({ ...product, quantity });
     navigate('/checkout');
   };
@@ -81,8 +87,7 @@ const ProductDetail = () => {
   const price = Number(product.price || 0);
   const salePrice = Number(product.salePrice || 0);
   const onSale = product.onSale && salePrice > 0;
-  const rating = product.rating || 4.8;
-  const reviewsCount = product.reviews || 124;
+  const rating = product.rating || null;
   const images = product.images?.length > 0 ? product.images.map(img => img.url) : [product.image];
 
   return (
@@ -138,12 +143,14 @@ const ProductDetail = () => {
                   <span className="text-gold font-cinzel text-[10px] tracking-[3px] uppercase">
                      {product.categories?.[0]?.name || 'Official Collection'}
                   </span>
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={12} className={i < Math.floor(rating) ? 'fill-gold text-gold' : 'text-gold/20'} />
-                    ))}
-                    <span className="text-[10px] text-ivory/40 ml-2 font-mono">({reviewsCount} Reviews)</span>
-                  </div>
+                  {rating && (
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} size={12} className={i < Math.floor(rating) ? 'fill-gold text-gold' : 'text-gold/20'} />
+                      ))}
+                      {product.reviews && <span className="text-[10px] text-ivory/40 ml-2 font-mono">({product.reviews} Reviews)</span>}
+                    </div>
+                  )}
                </div>
 
                <h1 className="text-3xl md:text-4xl font-black font-cinzel text-white tracking-tight uppercase mb-6 leading-tight">
@@ -161,31 +168,47 @@ const ProductDetail = () => {
                      )}
                    </>
                  )}
-                 <Badge variant="sport">{price === 0 ? 'Pre-Release' : 'In Stock'}</Badge>
+                 {price > 0 && (
+                   <Badge variant={isOutOfStock ? 'crimson' : isLowStock ? 'gold' : 'sport'}>
+                     {isOutOfStock ? 'Out of Stock' : isLowStock ? `Only ${stock} left` : 'In Stock'}
+                   </Badge>
+                 )}
                </div>
             </div>
 
             <div className="space-y-10">
+              {/* Low/Out of Stock Warning */}
+              {isOutOfStock && (
+                <div className="bg-crimson/10 border border-crimson/40 px-4 py-3 text-crimson font-cinzel text-xs uppercase tracking-widest">
+                  ⚠ This product is currently out of stock.
+                </div>
+              )}
+              {isLowStock && (
+                <div className="bg-amber-500/10 border border-amber-500/40 px-4 py-3 text-amber-400 font-cinzel text-xs uppercase tracking-widest">
+                  ⚡ Low stock — only {stock} remaining. Order soon!
+                </div>
+              )}
+
               {/* Short Description */}
               <p className="text-ivory/60 font-raleway leading-relaxed text-lg">
-                The ultimate symbol of team dominance. This high-grade replica features {product.material || 'premium zinc alloy'} construction with {product.plating || '18K gold'} plating and precision-set AAA+ crystals.
+                {product.shortDescription || product.description || 'Official-grade championship replica ring.'}
               </p>
 
                <div className="space-y-6">
                 <div className="flex items-center gap-8">
                    <div className="flex items-center border border-gold/20 bg-card">
                       <button 
-                        disabled={product.price === 0}
+                        disabled={price === 0 || isOutOfStock}
                         onClick={() => setQuantity(q => Math.max(1, q - 1))}
-                        className={`p-4 transition-colors ${product.price === 0 ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
+                        className={`p-4 transition-colors ${price === 0 || isOutOfStock ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
                       >
                         <Minus size={16} />
                       </button>
-                      <span className={`w-12 text-center font-mono font-bold ${product.price === 0 ? 'opacity-20' : ''}`}>{quantity}</span>
+                      <span className={`w-12 text-center font-mono font-bold ${price === 0 || isOutOfStock ? 'opacity-20' : ''}`}>{quantity}</span>
                       <button 
-                        disabled={product.price === 0}
-                        onClick={() => setQuantity(q => q + 1)}
-                        className={`p-4 transition-colors ${product.price === 0 ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
+                        disabled={price === 0 || isOutOfStock || quantity >= stock}
+                        onClick={() => setQuantity(q => Math.min(stock, q + 1))}
+                        className={`p-4 transition-colors ${price === 0 || isOutOfStock ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
                       >
                         <Plus size={16} />
                       </button>
@@ -200,12 +223,13 @@ const ProductDetail = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {product.price === 0 ? (
-                    <Button 
-                      variant="primary" 
-                      className="col-span-2 py-6 uppercase tracking-[3px] text-xs font-bold"
-                    >
+                  {price === 0 ? (
+                    <Button variant="primary" className="col-span-2 py-6 uppercase tracking-[3px] text-xs font-bold">
                       Notify Me On Release
+                    </Button>
+                  ) : isOutOfStock ? (
+                    <Button variant="secondary" className="col-span-2 py-6 uppercase tracking-[3px] text-xs font-bold opacity-50 cursor-not-allowed border-crimson/30" disabled>
+                      Out of Stock
                     </Button>
                   ) : (
                     <>
