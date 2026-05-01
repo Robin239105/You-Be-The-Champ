@@ -4,6 +4,7 @@ export const navigationData = [
   {
     label: "All Time Greats",
     slug: "all-time-greats",
+    path: "/category/All%20Time%20Greats",
     layout: "players",
     players: [
       { name: "Tom Brady", sport: "NFL", path: "All Time Greats > Tom Brady (NFL)", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/c/cb/Tom_Brady_2021.png&w=200&h=200&fit=cover&a=top" },
@@ -32,7 +33,7 @@ export const navigationData = [
   // 2. CHAMPIONS — Groups: Champions by Year + Championship Series
   {
     label: "Champions",
-    slug: "champions",
+    slug: "champions-by-year",
     layout: "two-panel",
     leftPanel: {
       title: "Champions by Year",
@@ -56,6 +57,7 @@ export const navigationData = [
   {
     label: "League",
     slug: "league",
+    path: "/category/League",
     layout: "league-grid",
     leagues: [
       {
@@ -117,6 +119,7 @@ export const navigationData = [
   {
     label: "Collections",
     slug: "collections",
+    path: "/collections",
     layout: "collections-panel",
     teamSets: {
       title: "Complete Team Sets",
@@ -184,7 +187,7 @@ export const navigationData = [
   // 5. BROWSE — Groups: Teams + Cities + Your Year Gift
   {
     label: "Browse",
-    slug: "browse",
+    slug: "teams",
     layout: "browse-tiles",
     tiles: [
       { icon: "🏟️", label: "Teams A–Z", description: "Find rings for every franchise, alphabetically", link: "/teams" },
@@ -197,6 +200,7 @@ export const navigationData = [
   {
     label: "Special Release",
     slug: "special-release",
+    path: "/category/Special%20Release%20Champion%20Players%20Rings",
     layout: "vertical-list",
     items: [
       { icon: "⭐", label: "Champion Player Rings", description: "Exclusive rings from champion players", path: "Special Release Champion Players Rings" },
@@ -211,7 +215,7 @@ export const navigationData = [
   // 7. NEWS — Vertical Icon List
   {
     label: "News",
-    slug: "news",
+    slug: "blog",
     layout: "vertical-list",
     items: [
       { icon: "📰", label: "Latest Articles", description: "News from the world of champions", link: "/blog" },
@@ -224,6 +228,7 @@ export const navigationData = [
   {
     label: "Contact",
     slug: "contact",
+    path: "/contact",
     layout: "vertical-list",
     items: [
       { icon: "✉️", label: "Get In Touch", description: "Send us a message", link: "/contact" },

@@ -12,6 +12,7 @@ import TeamsPage from './pages/TeamsPage';
 import CitiesPage from './pages/CitiesPage';
 import YourYearGift from './pages/YourYearGift';
 import IWantThemAll from './pages/IWantThemAll';
+import CollectionsPage from './pages/CollectionsPage';
 import Vintage90s from './pages/Vintage90s';
 import Affiliate from './pages/Affiliate';
 
@@ -64,6 +65,7 @@ function App() {
         <Route path="/cities" element={<CitiesPage />} />
         <Route path="/your-year-gift" element={<YourYearGift />} />
         <Route path="/i-want-them-all" element={<IWantThemAll />} />
+        <Route path="/collections" element={<CollectionsPage />} />
         <Route path="/vintage-90s" element={<Vintage90s />} />
         <Route path="/affiliate" element={<Affiliate />} />
         <Route path="/product/:id" element={<ProductDetail />} />

@@ -184,13 +184,10 @@ const Header = () => {
                     {nav.label}
                   </Link>
                 ) : (
-                  <div className="flex items-center gap-1 group">
-                    <Link
-                      to={nav.path || (nav.slug ? `/${nav.slug}` : '#')}
-                      className="font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 group-hover:text-gold transition-all uppercase font-black whitespace-nowrap"
-                    >
+                  <div className="flex items-center gap-1 cursor-default group">
+                    <span className="font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 group-hover:text-gold transition-all uppercase font-black whitespace-nowrap">
                       {nav.label}
-                    </Link>
+                    </span>
                     <ChevronDown size={9} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/40'}`} />
                   </div>
                 )}
