@@ -135,14 +135,14 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center justify-center gap-x-6 xl:gap-x-8">
+        <div className="hidden lg:flex items-center justify-center gap-x-3 xl:gap-x-5">
           {navigationData.map((nav) => {
             const to = nav.path || (nav.slug ? `/${nav.slug}` : '#');
             return (
               <Link
                 key={nav.label}
                 to={to}
-                className="relative py-4 font-cinzel text-[11px] xl:text-xs tracking-[2px] text-ivory/70 hover:text-gold transition-all uppercase font-black whitespace-nowrap group"
+                className="relative py-4 font-cinzel text-[9px] xl:text-[10px] tracking-[1.5px] text-ivory/70 hover:text-gold transition-all uppercase font-black whitespace-nowrap group"
               >
                 {nav.label}
                 <span className="absolute bottom-3 left-0 right-0 h-[1px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
