@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Heart, User, ShoppingBag, Menu, X, ChevronRight } from 'lucide-react';
+import { Search, Heart, User, ShoppingBag, Menu, X, ChevronRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
@@ -9,74 +9,19 @@ import CartDrawer from './CartDrawer';
 
 import { useAuthStore } from '../store/useAuthStore';
 
-const MobileNavItem = ({ node, depth = 0, mobileExpanded, onToggle, onClose }) => {
-  if (!node || depth > 5) return null;
-  const nodeKey = node.slug || node.label || `node-${depth}`;
-  const isExpanded = !!mobileExpanded[nodeKey];
-
-  // Gather sub-items for expandable layouts
-  const subItems = (() => {
-    if (node.children) return node.children;
-    if (node.players) return node.players.map(p => ({ label: p.name, path: p.path }));
-    if (node.cards) return node.cards.map(c => ({ label: c.label, path: c.path }));
-    if (node.leagues) return node.leagues.map(l => ({ label: l.label, children: l.divisions }));
-    if (node.items) return node.items.map(i => ({ label: i.label, path: i.path, link: i.link }));
-    if (node.tiles) return node.tiles.map(t => ({ label: t.label, link: t.link }));
-    if (node.layout === 'two-panel') return [
-      { label: 'Champions by Year', link: node.leftPanel?.link },
-      ...(node.rightPanel?.cards || []).map(c => ({ label: c.label, path: c.path }))
-    ];
-    if (node.layout === 'collections-panel') return [
-      ...(node.teamSets?.groups || []).flatMap(g => g.items.map(i => ({ label: i.label, path: i.path }))),
-      ...(node.bulkCollections?.items || []).map(i => ({ label: i.label, path: i.path }))
-    ];
-    return null;
-  })();
-
-  const hasChildren = subItems && subItems.length > 0;
-  const isDirect = node.layout === 'direct' || (!node.layout && node.path);
-
-  const getLink = () => {
-    if (isDirect) return node.path;
-    return null;
-  };
-
+const MobileNavItem = ({ node, onClose }) => {
+  if (!node) return null;
+  const to = node.path || (node.slug ? `/${node.slug}` : null);
+  if (!to) return null;
   return (
-    <div className="w-full">
-      <div className={`flex items-center justify-between py-3 border-b border-gold/5 ${depth > 0 ? 'pl-4' : ''}`}>
-        {isDirect ? (
-          <Link to={node.path} className={`font-cinzel text-sm tracking-widest uppercase transition-colors ${depth === 0 ? 'text-gold' : 'text-ivory/80 hover:text-gold'}`} onClick={onClose}>
-            {node.label}
-          </Link>
-        ) : node.path && !hasChildren ? (
-          <Link to={`/category/${encodeURIComponent(node.path)}`} className="font-cinzel text-sm tracking-widest uppercase text-ivory/80 hover:text-gold transition-colors" onClick={onClose}>
-            {node.label}
-          </Link>
-        ) : node.link && !hasChildren ? (
-          <Link to={node.link} className="font-cinzel text-sm tracking-widest uppercase text-ivory/80 hover:text-gold transition-colors" onClick={onClose}>
-            {node.label}
-          </Link>
-        ) : (
-          <button onClick={() => onToggle(nodeKey)} className={`font-cinzel text-sm tracking-widest uppercase text-left flex-1 ${depth === 0 ? 'text-gold' : 'text-ivory/80'}`}>
-            {node.label}
-          </button>
-        )}
-        {hasChildren && (
-          <button onClick={() => onToggle(nodeKey)} className="p-2 text-gold/60 hover:text-gold">
-            {isExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
-          </button>
-        )}
-      </div>
-      <AnimatePresence>
-        {isExpanded && hasChildren && (
-          <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden bg-white/5">
-            {subItems.map((child, i) => (
-              <MobileNavItem key={child.path || child.label || i} node={child} depth={depth + 1} mobileExpanded={mobileExpanded} onToggle={onToggle} onClose={onClose} />
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+    <Link
+      to={to}
+      onClick={onClose}
+      className="flex items-center justify-between py-4 border-b border-gold/8 font-cinzel text-[13px] tracking-[2px] uppercase text-ivory/70 hover:text-gold transition-colors group"
+    >
+      {node.label}
+      <ChevronRight size={14} className="text-gold/30 group-hover:text-gold transition-colors" />
+    </Link>
   );
 };
 
@@ -84,7 +29,6 @@ const Header = () => {
   const { user, isAuthenticated } = useAuthStore();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [mobileExpanded, setMobileExpanded] = useState({});
   const [isCartOpen, setIsCartOpen] = useState(false);
   
   const itemCount = useCartStore(state => state.getItemCount() || 0);
@@ -95,11 +39,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const toggleMobileExpanded = (path) => {
-    if (!path) return;
-    setMobileExpanded(prev => ({ ...prev, [path]: !prev[path] }));
-  };
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
@@ -222,8 +161,6 @@ const Header = () => {
                     <MobileNavItem 
                       key={node.label} 
                       node={node} 
-                      mobileExpanded={mobileExpanded}
-                      onToggle={toggleMobileExpanded}
                       onClose={() => setIsMobileMenuOpen(false)}
                     />
                   ))}
