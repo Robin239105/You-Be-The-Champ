@@ -11,6 +11,9 @@ import StatsBanner from '../components/StatsBanner';
 import NewsletterSection from '../components/NewsletterSection';
 import api from '../utils/api';
 
+const GOLD = '#C9A84C';
+const GOLD_GLOW = 'rgba(201,168,76,0.22)';
+
 const SLIDES = [
   {
     id: 1,
@@ -22,9 +25,9 @@ const SLIDES = [
     cta: "Shop Dodgers Rings",
     ctaLink: "/category/Teams%20%3E%20Los%20Angeles%20Dodgers%20(MLB)",
     sport: "MLB",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/01/IMG_7998.jpeg",
-    accentColor: "#003DA5",
-    glowColor: "rgba(0,61,165,0.25)",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6752.png",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
   },
   {
     id: 2,
@@ -36,9 +39,9 @@ const SLIDES = [
     cta: "Shop OKC Rings",
     ctaLink: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
     sport: "NBA",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/01/IMG_8039.jpeg",
-    accentColor: "#007AC1",
-    glowColor: "rgba(0,122,193,0.25)",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6593.png",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
   },
   {
     id: 3,
@@ -50,9 +53,9 @@ const SLIDES = [
     cta: "Shop MJ Rings",
     ctaLink: "/category/All%20Time%20Greats%20%3E%20Michael%20Jordan%20(NBA)",
     sport: "NBA",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8542.jpeg",
-    accentColor: "#CE1141",
-    glowColor: "rgba(206,17,65,0.22)",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6404.png",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
   },
   {
     id: 4,
@@ -64,9 +67,9 @@ const SLIDES = [
     cta: "Shop Patriots Rings",
     ctaLink: "/category/Teams%20%3E%20New%20England%20Patriots%20(NFL)",
     sport: "NFL",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/01/IMG_8013.jpeg",
-    accentColor: "#002244",
-    glowColor: "rgba(0,34,68,0.3)",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7834.png",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
   },
   {
     id: 5,
@@ -78,9 +81,9 @@ const SLIDES = [
     cta: "Shop All Rings",
     ctaLink: "/shop",
     sport: "ALL",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/01/IMG_8059.jpeg",
-    accentColor: "#C9A84C",
-    glowColor: "rgba(201,168,76,0.2)",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7840.png",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
   },
 ];
 
@@ -306,7 +309,7 @@ const Home = () => {
                 >
                   {[['523', 'Rings Available'], ['4', 'Major Leagues'], ['120+', 'Years of History']].map(([n, l]) => (
                     <div key={l}>
-                      <p className="font-cinzel font-black leading-none" style={{ fontSize: '1.5rem', color: slide.accentColor === '#C9A84C' ? '#C9A84C' : '#C9A84C' }}>{n}</p>
+                      <p className="font-cinzel font-black leading-none text-gold" style={{ fontSize: '1.5rem' }}>{n}</p>
                       <p className="font-raleway text-[9px] text-white/25 uppercase tracking-[2px] mt-1.5">{l}</p>
                     </div>
                   ))}
@@ -435,7 +438,7 @@ const Home = () => {
           <motion.div
             key={`${currentSlide}-${isPaused}`}
             className="h-full"
-            style={{ background: slide.accentColor === '#C9A84C' ? '#C9A84C' : '#C9A84C' }}
+            style={{ background: GOLD }}
             initial={{ width: '0%' }}
             animate={{ width: isPaused ? undefined : '100%' }}
             transition={{ duration: 6, ease: 'linear' }}
