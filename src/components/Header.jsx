@@ -122,9 +122,9 @@ const Header = () => {
       </div>
 
       {/* Main Nav */}
-      <nav className={`w-full px-6 sm:px-12 py-3 flex items-center justify-between transition-all duration-500 ${isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-gold/20 shadow-2xl' : 'bg-transparent'}`}>
+      <nav className={`w-full px-6 sm:px-12 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-gold/20 shadow-2xl' : 'bg-transparent'}`}>
         {/* Mobile Menu Toggle */}
-        <div className="flex-1 lg:hidden">
+        <div className="lg:hidden">
           <button 
             className="text-gold hover:scale-110 transition-transform p-2"
             onClick={() => setIsMobileMenuOpen(true)}
@@ -134,7 +134,7 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-        <div className="flex-shrink-0 lg:mr-8">
+        <div className="flex-shrink-0 lg:mr-0">
           <Link to="/" className="flex items-center group">
             <div className="relative w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-gold/30 shadow-[0_0_20px_rgba(201,168,76,0.2)] group-hover:border-gold transition-all duration-500">
               <img 
@@ -147,11 +147,9 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop Nav - Centered between logo and icons */}
-        <div className="hidden lg:flex flex-1 items-center justify-center gap-x-4 xl:gap-x-6">
-          {navigationData
-            .filter(nav => !['Get In Touch'].includes(nav.label))
-            .map((nav) => (
+        {/* Desktop Nav - True center of header */}
+        <div className="hidden lg:flex items-center justify-center gap-x-4 xl:gap-x-5">
+          {navigationData.map((nav) => (
             <div 
               key={nav.label}
               onMouseEnter={() => nav.children ? handleMouseEnter(nav.label) : null}
@@ -192,9 +190,8 @@ const Header = () => {
           ))}
         </div>
 
-        {/* Icons - Right Aligned */}
-        <div className="flex-1 flex items-center justify-end gap-4 sm:gap-6 text-gold">
-          <Link to="/contact" className="hidden xl:block font-cinzel text-[10px] tracking-[2px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap">Contact</Link>
+        {/* Icons - Right */}
+        <div className="flex items-center justify-end gap-4 sm:gap-6 text-gold">
           <Link to="/search" className="hover:scale-110 transition-transform hidden sm:block p-1"><Search size={20} /></Link>
           <Link to="/account" className="hover:scale-110 transition-transform p-1"><User size={20} /></Link>
           <Link to="/wishlist" className="relative hover:scale-110 transition-transform p-1">
