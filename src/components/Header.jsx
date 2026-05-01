@@ -133,10 +133,10 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Logo - Left Aligned on Desktop */}
+        {/* Logo */}
         <div className="flex-shrink-0 lg:mr-8">
           <Link to="/" className="flex items-center group">
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden border border-gold/30 shadow-[0_0_15px_rgba(201,168,76,0.15)] group-hover:border-gold transition-all duration-500">
+            <div className="relative w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-gold/30 shadow-[0_0_20px_rgba(201,168,76,0.2)] group-hover:border-gold transition-all duration-500">
               <img 
                 src="/logo.jpg" 
                 alt="You Be The Champ Logo" 
@@ -147,10 +147,10 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop Nav - Centered with balanced spacing */}
-        <div className="hidden lg:flex flex-1 items-center justify-center gap-x-5 xl:gap-x-7">
+        {/* Desktop Nav - Centered between logo and icons */}
+        <div className="hidden lg:flex flex-1 items-center justify-center gap-x-4 xl:gap-x-6">
           {navigationData
-            .filter(nav => !['Latest News', 'Get In Touch'].includes(nav.label))
+            .filter(nav => !['Get In Touch'].includes(nav.label))
             .map((nav) => (
             <div 
               key={nav.label}
@@ -194,6 +194,7 @@ const Header = () => {
 
         {/* Icons - Right Aligned */}
         <div className="flex-1 flex items-center justify-end gap-4 sm:gap-6 text-gold">
+          <Link to="/contact" className="hidden xl:block font-cinzel text-[10px] tracking-[2px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap">Contact</Link>
           <Link to="/search" className="hover:scale-110 transition-transform hidden sm:block p-1"><Search size={20} /></Link>
           <Link to="/account" className="hover:scale-110 transition-transform p-1"><User size={20} /></Link>
           <Link to="/wishlist" className="relative hover:scale-110 transition-transform p-1">
