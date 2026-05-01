@@ -27,12 +27,14 @@ api.interceptors.response.use(
   (response) => response,
   async (error) => {
     const originalRequest = error.config;
-    if (error.response.status === 401 && !originalRequest._retry) {
+    if (error.response?.status === 401 && !originalRequest._retry) {
       originalRequest._retry = true;
-      // Here you could implement refresh token logic
-      // For now, just logout if unauthorized
-      useAuthStore.getState().logout();
-      window.location.href = '/account/login';
+      const isAdminLogin = window.location.pathname === '/admin/login';
+      const isAuthEndpoint = originalRequest.url?.includes('/auth/login') || originalRequest.url?.includes('/auth/register');
+      if (!isAdminLogin && !isAuthEndpoint) {
+        useAuthStore.getState().logout();
+        window.location.href = '/account/login';
+      }
     }
     return Promise.reject(error);
   }

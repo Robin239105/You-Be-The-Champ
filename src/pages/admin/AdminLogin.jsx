@@ -25,11 +25,11 @@ const AdminLogin = () => {
     try {
       const result = await login(email, password);
       if (result?.success) {
-        // Double check role after login
-        const currentUser = useAuthStore.getState().user;
-        if (currentUser?.role === 'ADMIN') {
+        const loggedInUser = result.user || useAuthStore.getState().user;
+        if (loggedInUser?.role === 'ADMIN') {
           navigate('/admin');
         } else {
+          useAuthStore.getState().logout();
           setError('Access Denied: Administrative privileges required.');
         }
       } else {

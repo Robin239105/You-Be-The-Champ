@@ -16,17 +16,19 @@ export const useAuthStore = create(
         try {
           const response = await api.post('/auth/login', { email, password });
           if (response.data.success) {
-            const { accessToken, ...userData } = response.data.data;
+            const { accessToken, refreshToken, ...userData } = response.data.data;
             set({ 
               user: userData, 
               token: accessToken, 
               isAuthenticated: true,
               isLoading: false 
             });
-            return { success: true };
+            return { success: true, user: userData };
           }
+          set({ isLoading: false });
+          return { success: false, message: response.data.message || 'Login failed' };
         } catch (error) {
-          const message = error.response?.data?.message || 'Login failed';
+          const message = error.response?.data?.message || 'Invalid email or password';
           set({ error: message, isLoading: false });
           return { success: false, message };
         }
