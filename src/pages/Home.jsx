@@ -15,58 +15,53 @@ import heroRing from '../assets/hero-ring.png';
 const SLIDES = [
   {
     id: 1,
-    label: "New Arrival",
+    tag: "New Arrival",
     headline: "Dodgers",
-    subheadline: "World Series Ring",
+    sub: "World Series Ring",
     description: "The LA Dodgers championship ring — crafted for true collectors.",
     cta: "Shop Dodgers",
     ctaLink: "/category/Teams%20%3E%20Los%20Angeles%20Dodgers%20(MLB)",
-    accent: "#005A9C",
-    icon: "⚾",
+    sport: "MLB",
   },
   {
     id: 2,
-    label: "Just Dropped",
+    tag: "Just Dropped",
     headline: "OKC Thunder",
-    subheadline: "Championship Ring",
+    sub: "Championship Ring",
     description: "Oklahoma City's finest — own the moment with the OKC ring.",
     cta: "Shop OKC",
     ctaLink: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
-    accent: "#007AC1",
-    icon: "🏀",
+    sport: "NBA",
   },
   {
     id: 3,
-    label: "Iconic Moment",
+    tag: "Iconic Moment",
     headline: "Seattle",
-    subheadline: "Super Bowl Ring",
-    description: "Relive Seattle's greatest victory. The Seahawks championship replica.",
+    sub: "Super Bowl Ring",
+    description: "Relive Seattle's greatest Super Bowl victory. The Seahawks championship replica.",
     cta: "Shop Seahawks",
     ctaLink: "/category/Teams%20%3E%20Seattle%20Seahawks%20(NFL)",
-    accent: "#002244",
-    icon: "🏈",
+    sport: "NFL",
   },
   {
     id: 4,
-    label: "Dynasty",
+    tag: "Dynasty",
     headline: "Panthers",
-    subheadline: "Back to Back",
+    sub: "Back to Back",
     description: "Two rings. One dynasty. Carolina Panthers back-to-back champions.",
     cta: "Shop Panthers",
     ctaLink: "/category/Teams%20%3E%20Carolina%20Panthers%20(NFL)",
-    accent: "#0085CA",
-    icon: "🏆",
+    sport: "NFL",
   },
   {
     id: 5,
-    label: "Brand",
+    tag: "Own Every Ring",
     headline: "Own The",
-    subheadline: "Moment",
+    sub: "Moment",
     description: "Every ring. Every legend. Every championship — in your collection.",
     cta: "Shop All",
     ctaLink: "/shop",
-    accent: "#C9A84C",
-    icon: "💍",
+    sport: "ALL",
   },
 ];
 
@@ -113,170 +108,187 @@ const Home = () => {
       <Header />
 
       {/* ── SECTION 1: HERO SLIDER ── */}
-      <section className="relative h-screen min-h-[700px] overflow-hidden bg-black">
+      <section className="relative w-full overflow-hidden bg-[#0a0a0a]" style={{ height: '100svh', minHeight: 640 }}>
 
-        {/* Full-bleed animated background layer */}
+        {/* ── Static gold background grid lines (luxury texture) ── */}
+        <div className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px)',
+            backgroundSize: '80px 80px'
+          }} />
+
+        {/* ── Gold radial glow center-right ── */}
+        <div className="absolute inset-0 pointer-events-none"
+          style={{ background: 'radial-gradient(ellipse 60% 80% at 72% 50%, rgba(201,168,76,0.12) 0%, transparent 70%)' }} />
+
+        {/* ── Bottom fade into next section ── */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
+
+        {/* ── Slide content ── */}
         <AnimatePresence mode="wait">
           <motion.div
-            key={`bg-${slide.id}`}
+            key={slide.id}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute inset-0"
+            transition={{ duration: 0.5 }}
+            className="absolute inset-0 flex items-center"
           >
-            {/* Deep sport-color atmosphere */}
-            <div className="absolute inset-0" style={{ background: `radial-gradient(ellipse at 70% 40%, ${slide.accent}55 0%, ${slide.accent}11 40%, transparent 70%)` }} />
-            {/* Dark left vignette for text legibility */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/20" />
-            {/* Bottom fade */}
-            <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent" />
-            {/* Subtle noise/texture overlay */}
-            <div className="absolute inset-0 opacity-[0.04]"
-              style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
-            {/* Large faded sport icon watermark */}
-            <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
-              <span className="text-[40vw] font-black leading-none opacity-[0.03]">{slide.icon}</span>
+            <div className="relative z-10 w-full h-full flex items-center">
+              <div className="w-full max-w-7xl mx-auto px-8 xl:px-16 flex flex-col lg:flex-row items-center gap-0 lg:gap-16 h-full pt-24">
+
+                {/* ── LEFT: Text ── */}
+                <motion.div
+                  initial={{ opacity: 0, y: 32 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+                  className="flex-1 flex flex-col justify-center z-10 py-16"
+                >
+                  {/* Tag */}
+                  <div className="flex items-center gap-3 mb-7">
+                    <span className="block w-8 h-px bg-gold" />
+                    <span className="font-cinzel text-gold text-[10px] uppercase tracking-[5px]">{slide.tag}</span>
+                    <span className="font-cinzel text-white/20 text-[9px] uppercase tracking-[3px] border border-white/10 px-2 py-0.5">{slide.sport}</span>
+                  </div>
+
+                  {/* Headline */}
+                  <h1 className="font-cinzel font-black uppercase leading-[0.85] mb-5 tracking-tight">
+                    <span className="block text-white" style={{ fontSize: 'clamp(3.5rem, 9vw, 8rem)' }}>
+                      {slide.headline}
+                    </span>
+                    <span className="block gold-gradient-text" style={{ fontSize: 'clamp(2rem, 5.5vw, 5rem)' }}>
+                      {slide.sub}
+                    </span>
+                  </h1>
+
+                  {/* Divider */}
+                  <div className="w-16 h-px bg-gold/40 mb-6" />
+
+                  {/* Description */}
+                  <p className="text-white/50 font-raleway text-base leading-relaxed mb-10 max-w-sm">
+                    {slide.description}
+                  </p>
+
+                  {/* CTAs */}
+                  <div className="flex flex-wrap gap-4 mb-14">
+                    <Link to={slide.ctaLink}>
+                      <motion.span
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="flex items-center gap-2 bg-gold text-black font-cinzel text-xs font-black uppercase tracking-[3px] px-9 py-4 cursor-pointer"
+                      >
+                        {slide.cta}
+                        <ChevronRight size={14} />
+                      </motion.span>
+                    </Link>
+                    <Link to="/shop">
+                      <motion.span
+                        whileHover={{ scale: 1.02, color: '#C9A84C' }}
+                        whileTap={{ scale: 0.98 }}
+                        className="flex items-center gap-2 border border-white/20 hover:border-gold/60 text-white/60 hover:text-gold font-cinzel text-xs uppercase tracking-[3px] px-9 py-4 cursor-pointer transition-all duration-300"
+                      >
+                        Browse All
+                      </motion.span>
+                    </Link>
+                  </div>
+
+                  {/* Stats strip */}
+                  <div className="flex gap-10">
+                    {[['50K+', 'Rings Delivered'], ['4', 'Major Leagues'], ['120+', 'Years of History']].map(([n, l]) => (
+                      <div key={l} className="flex flex-col">
+                        <span className="font-cinzel text-gold font-black text-2xl leading-none">{n}</span>
+                        <span className="font-raleway text-[9px] text-white/35 uppercase tracking-[2px] mt-1">{l}</span>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* ── RIGHT: Ring ── */}
+                <div className="flex-1 hidden lg:flex items-center justify-center relative h-full">
+                  {/* Outer glow */}
+                  <div className="absolute w-[560px] h-[560px] rounded-full pointer-events-none"
+                    style={{ background: 'radial-gradient(circle, rgba(201,168,76,0.18) 0%, transparent 65%)' }} />
+                  {/* Concentric circles */}
+                  <div className="absolute w-[420px] h-[420px] rounded-full border border-gold/8 pointer-events-none" />
+                  <div className="absolute w-[320px] h-[320px] rounded-full border border-gold/12 pointer-events-none" />
+
+                  <motion.img
+                    key={`ring-${slide.id}`}
+                    src={heroRing}
+                    alt="Championship Ring"
+                    initial={{ opacity: 0, scale: 0.88, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: [0, -16, 0] }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{
+                      opacity: { duration: 0.6 },
+                      scale: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+                      y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }
+                    }}
+                    className="relative z-10 w-[400px] xl:w-[500px] 2xl:w-[560px] select-none object-contain"
+                    style={{ filter: 'drop-shadow(0 24px 80px rgba(201,168,76,0.5)) drop-shadow(0 4px 20px rgba(0,0,0,0.9))' }}
+                  />
+                </div>
+              </div>
             </div>
-            {/* Accent color left bar */}
-            <div className="absolute left-0 top-0 bottom-0 w-1" style={{ background: slide.accent }} />
           </motion.div>
         </AnimatePresence>
 
-        {/* Content */}
-        <div className="relative z-10 h-full flex items-center">
-          <div className="w-full max-w-7xl mx-auto px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-
-            {/* LEFT — Text */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`text-${slide.id}`}
-                initial={{ opacity: 0, x: -40 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="flex flex-col"
-              >
-                {/* Slide counter */}
-                <div className="flex items-center gap-4 mb-8">
-                  <span className="font-cinzel text-gold font-black text-lg leading-none">0{currentSlide + 1}</span>
-                  <div className="flex-1 max-w-[80px] h-[1px] bg-gold/20 relative">
-                    <motion.div
-                      key={currentSlide}
-                      className="absolute inset-y-0 left-0 bg-gold"
-                      initial={{ width: 0 }}
-                      animate={{ width: '100%' }}
-                      transition={{ duration: 5, ease: "linear" }}
-                    />
-                  </div>
-                  <span className="font-cinzel text-white/30 text-sm">0{SLIDES.length}</span>
-                </div>
-
-                {/* Badge */}
-                <div className="inline-flex items-center gap-3 mb-6 self-start">
-                  <div className="w-6 h-[2px] bg-gold" />
-                  <span className="font-cinzel text-[10px] tracking-[4px] uppercase text-gold/80">{slide.label}</span>
-                </div>
-
-                {/* Headline */}
-                <h1 className="font-cinzel font-black uppercase leading-[0.88] mb-6">
-                  <span className="block text-5xl sm:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] text-white tracking-tight">{slide.headline}</span>
-                  <span className="block text-3xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-tight mt-1 gold-gradient-text">
-                    {slide.subheadline}
-                  </span>
-                </h1>
-
-                {/* Description */}
-                <p className="text-white/55 font-raleway text-base lg:text-lg mb-10 leading-relaxed max-w-md">
-                  {slide.description}
-                </p>
-
-                {/* CTAs */}
-                <div className="flex flex-wrap gap-4">
-                  <Link to={slide.ctaLink}>
-                    <motion.button
-                      whileHover={{ scale: 1.03 }}
-                      whileTap={{ scale: 0.97 }}
-                      className="px-10 py-4 font-cinzel text-sm font-black uppercase tracking-[3px] text-black transition-all duration-300"
-                      style={{ background: slide.accent === '#C9A84C' ? '#C9A84C' : 'linear-gradient(135deg, #C9A84C, #a8843e)' }}
-                    >
-                      {slide.cta}
-                    </motion.button>
-                  </Link>
-                  <Link to="/shop">
-                    <motion.button
-                      whileHover={{ scale: 1.03, borderColor: '#C9A84C', color: '#C9A84C' }}
-                      whileTap={{ scale: 0.97 }}
-                      className="px-10 py-4 font-cinzel text-sm font-black uppercase tracking-[3px] text-white/60 border border-white/20 transition-all duration-300"
-                    >
-                      Browse All
-                    </motion.button>
-                  </Link>
-                </div>
-
-                {/* Mini stats row */}
-                <div className="flex gap-8 mt-12 pt-8 border-t border-white/[0.07]">
-                  {[['50K+', 'Rings Delivered'], ['4', 'Major Leagues'], ['1903', 'Season Coverage']].map(([val, label]) => (
-                    <div key={label}>
-                      <p className="font-cinzel text-gold font-black text-xl leading-none mb-1">{val}</p>
-                      <p className="font-raleway text-[9px] text-white/40 uppercase tracking-[2px]">{label}</p>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            </AnimatePresence>
-
-            {/* RIGHT — Ring Image */}
-            <div className="hidden lg:flex items-center justify-center relative">
-              {/* Glow rings */}
-              <div className="absolute w-[500px] h-[500px] rounded-full border border-gold/5" />
-              <div className="absolute w-[400px] h-[400px] rounded-full border border-gold/8" />
-              <div className="absolute w-[600px] h-[600px] rounded-full"
-                style={{ background: `radial-gradient(circle at center, ${slide.accent}22 0%, transparent 65%)` }} />
-
-              <AnimatePresence mode="wait">
-                <motion.img
-                  key={`ring-${slide.id}`}
-                  src={heroRing}
-                  alt="Championship Ring"
-                  initial={{ opacity: 0, scale: 0.85, rotate: 8 }}
-                  animate={{ opacity: 1, scale: 1, rotate: 0, y: [0, -18, 0] }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.7, y: { duration: 4.5, repeat: Infinity, ease: "easeInOut" } }}
-                  className="relative z-10 w-[380px] xl:w-[480px] drop-shadow-[0_30px_100px_rgba(201,168,76,0.55)] select-none"
-                />
-              </AnimatePresence>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom — slide nav dots */}
-        <div className="absolute bottom-8 left-8 lg:left-16 z-20 flex items-center gap-5">
-          <button onClick={prevSlide} className="w-10 h-10 border border-white/20 hover:border-gold flex items-center justify-center text-white/40 hover:text-gold transition-all">
-            <ChevronLeft size={18} />
-          </button>
-          <div className="flex gap-2">
-            {SLIDES.map((s, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentSlide(i)}
-                className={`transition-all duration-400 rounded-full ${i === currentSlide ? 'w-6 h-2 bg-gold' : 'w-2 h-2 bg-white/25 hover:bg-white/50'}`}
-              />
-            ))}
-          </div>
-          <button onClick={nextSlide} className="w-10 h-10 border border-white/20 hover:border-gold flex items-center justify-center text-white/40 hover:text-gold transition-all">
-            <ChevronRight size={18} />
-          </button>
-        </div>
-
-        {/* Slide titles - right bottom */}
-        <div className="absolute bottom-8 right-8 lg:right-16 z-20 hidden md:flex flex-col items-end gap-1.5">
+        {/* ── Slide navigation — vertical right strip ── */}
+        <div className="absolute right-8 xl:right-12 top-1/2 -translate-y-1/2 z-20 hidden lg:flex flex-col gap-3">
           {SLIDES.map((s, i) => (
-            <button key={i} onClick={() => setCurrentSlide(i)}
-              className={`font-cinzel text-[9px] uppercase tracking-[2px] transition-all duration-300 ${i === currentSlide ? 'text-gold' : 'text-white/20 hover:text-white/50'}`}>
-              {s.headline}
+            <button
+              key={i}
+              onClick={() => setCurrentSlide(i)}
+              className="group flex items-center gap-3 justify-end"
+            >
+              <span className={`font-cinzel text-[9px] uppercase tracking-[2px] transition-all duration-300 ${i === currentSlide ? 'text-gold' : 'text-white/20 group-hover:text-white/50'}`}>
+                {s.headline}
+              </span>
+              <div className={`transition-all duration-300 rounded-full flex-shrink-0 ${i === currentSlide ? 'w-2 h-6 bg-gold' : 'w-1.5 h-1.5 bg-white/20 group-hover:bg-white/50'}`} />
             </button>
           ))}
+        </div>
+
+        {/* ── Bottom controls ── */}
+        <div className="absolute bottom-10 left-8 xl:left-16 z-20 flex items-center gap-4">
+          <button
+            onClick={prevSlide}
+            className="w-11 h-11 border border-white/15 hover:border-gold/60 flex items-center justify-center text-white/40 hover:text-gold transition-all duration-300"
+          >
+            <ChevronLeft size={18} />
+          </button>
+
+          {/* Progress dots */}
+          <div className="flex items-center gap-2">
+            {SLIDES.map((_, i) => (
+              <button key={i} onClick={() => setCurrentSlide(i)} className="relative flex items-center justify-center w-6 h-6">
+                <span className={`block rounded-full transition-all duration-300 ${i === currentSlide ? 'w-5 h-1.5 bg-gold' : 'w-1.5 h-1.5 bg-white/25 hover:bg-white/50'}`} />
+              </button>
+            ))}
+          </div>
+
+          <button
+            onClick={nextSlide}
+            className="w-11 h-11 border border-white/15 hover:border-gold/60 flex items-center justify-center text-white/40 hover:text-gold transition-all duration-300"
+          >
+            <ChevronRight size={18} />
+          </button>
+
+          {/* Slide counter */}
+          <span className="font-cinzel text-white/25 text-[10px] tracking-[3px] ml-2">
+            0{currentSlide + 1} <span className="text-white/10">/ 0{SLIDES.length}</span>
+          </span>
+        </div>
+
+        {/* Auto-play progress bar */}
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/5 z-20">
+          <motion.div
+            key={currentSlide}
+            className="h-full bg-gold/60"
+            initial={{ width: '0%' }}
+            animate={{ width: '100%' }}
+            transition={{ duration: 5, ease: 'linear' }}
+          />
         </div>
       </section>
 
