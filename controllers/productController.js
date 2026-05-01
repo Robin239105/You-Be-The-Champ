@@ -271,13 +271,14 @@ const importProducts = async (req, res) => {
           }
         }
 
+        const parsedPrice = parseFloat(price);
         const productData = {
           name, slug, sku,
           description: description || '',
           shortDescription: shortDescription || '',
-          price: parseFloat(price),
+          price: parsedPrice,
           salePrice: salePrice ? parseFloat(salePrice) : null,
-          stockQuantity: parseInt(stockQuantity) || 999,
+          stockQuantity: parsedPrice === 0 ? 0 : (parseInt(stockQuantity) || 999),
           status: status || 'PUBLISHED',
           isFeatured: isFeatured === true || isFeatured === 'true'
         };

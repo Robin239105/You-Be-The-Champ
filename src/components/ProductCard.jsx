@@ -22,6 +22,8 @@ const ProductCard = ({ product }) => {
   const price = Number(product.price || 0);
   const salePrice = Number(product.salePrice || 0);
   const onSale = product.onSale && salePrice > 0;
+  const stock = product.stockQuantity ?? 999;
+  const isUnavailable = price === 0 || stock === 0;
   
   // Handle both flat string images and array of objects from Prisma
   const displayImage = product.images?.[0]?.url || product.images?.[0] || product.image;
@@ -53,6 +55,12 @@ const ProductCard = ({ product }) => {
       >
         <Heart size={18} fill={wishlisted ? 'currentColor' : 'none'} />
       </button>
+      {/* Unavailable ribbon */}
+      {isUnavailable && (
+        <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 bg-black/70 border border-gold/20 px-3 py-0.5">
+          <span className="font-cinzel text-[8px] uppercase tracking-[2px] text-gold/60">{price === 0 ? 'Coming Soon' : 'Out of Stock'}</span>
+        </div>
+      )}
 
       {/* Image Area */}
       <div className="relative aspect-square bg-black overflow-hidden flex items-center justify-center p-8">
@@ -111,6 +119,13 @@ const ProductCard = ({ product }) => {
               <span className="text-sm font-cinzel font-bold text-gold tracking-widest uppercase">
                 Coming Soon
               </span>
+            ) : stock === 0 ? (
+              <>
+                <span className="text-lg font-mono font-bold text-gold">
+                  ${price.toFixed(2)} AUD
+                </span>
+                <span className="text-[10px] font-cinzel text-crimson/80 uppercase tracking-widest mt-0.5">Out of Stock</span>
+              </>
             ) : (
               <>
                 {onSale && (
@@ -125,7 +140,7 @@ const ProductCard = ({ product }) => {
             )}
           </div>
           
-          {price > 0 && (
+          {!isUnavailable && (
             <button 
               onClick={(e) => {
                 e.preventDefault();

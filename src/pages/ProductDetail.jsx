@@ -69,7 +69,13 @@ const ProductDetail = () => {
     );
   }
 
-  const stock = product.stockQuantity ?? 999;
+  const price = Number(product.price || 0);
+  const salePrice = Number(product.salePrice || 0);
+  const onSale = product.onSale && salePrice > 0;
+  const rating = product.rating || null;
+
+  const rawStock = product.stockQuantity ?? 999;
+  const stock = price === 0 ? 0 : rawStock;
   const isOutOfStock = stock === 0;
   const isLowStock = stock > 0 && stock <= 10;
 
@@ -83,11 +89,6 @@ const ProductDetail = () => {
     addItem({ ...product, quantity });
     navigate('/checkout');
   };
-
-  const price = Number(product.price || 0);
-  const salePrice = Number(product.salePrice || 0);
-  const onSale = product.onSale && salePrice > 0;
-  const rating = product.rating || null;
   const images = product.images?.length > 0 ? product.images.map(img => img.url) : [product.image];
 
   return (
@@ -198,20 +199,21 @@ const ProductDetail = () => {
               )}
 
                <div className="space-y-6">
-                <div className="flex items-center gap-8">
+                {/* Quantity + wishlist row — hidden when price is 0 */}
+                {price > 0 && !isOutOfStock && (
+                  <div className="flex items-center gap-8">
                    <div className="flex items-center border border-gold/20 bg-card">
                       <button 
-                        disabled={price === 0 || isOutOfStock}
                         onClick={() => setQuantity(q => Math.max(1, q - 1))}
-                        className={`p-4 transition-colors ${price === 0 || isOutOfStock ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
+                        className="p-4 transition-colors hover:text-gold"
                       >
                         <Minus size={16} />
                       </button>
-                      <span className={`w-12 text-center font-mono font-bold ${price === 0 || isOutOfStock ? 'opacity-20' : ''}`}>{quantity}</span>
+                      <span className="w-12 text-center font-mono font-bold">{quantity}</span>
                       <button 
-                        disabled={price === 0 || isOutOfStock || quantity >= stock}
+                        disabled={quantity >= stock}
                         onClick={() => setQuantity(q => Math.min(stock, q + 1))}
-                        className={`p-4 transition-colors ${price === 0 || isOutOfStock ? 'opacity-20 cursor-not-allowed' : 'hover:text-gold'}`}
+                        className="p-4 transition-colors hover:text-gold disabled:opacity-20 disabled:cursor-not-allowed"
                       >
                         <Plus size={16} />
                       </button>
@@ -223,17 +225,41 @@ const ProductDetail = () => {
                       <Heart size={18} fill={isWishlisted(product.id) ? 'currentColor' : 'none'} /> 
                       {isWishlisted(product.id) ? 'In Wishlist' : 'Add to Wishlist'}
                    </button>
-                </div>
+                  </div>
+                )}
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {price === 0 ? (
-                    <Button variant="primary" className="col-span-2 py-6 uppercase tracking-[3px] text-xs font-bold">
-                      Notify Me On Release
-                    </Button>
+                    <>
+                      <button
+                        onClick={() => toggleWishlist(product)}
+                        className={`col-span-2 py-5 flex items-center justify-center gap-3 border font-cinzel text-xs uppercase tracking-[3px] font-bold transition-all ${
+                          isWishlisted(product.id)
+                            ? 'border-gold bg-gold/10 text-gold'
+                            : 'border-gold/30 text-ivory/60 hover:border-gold hover:text-gold'
+                        }`}
+                      >
+                        <Heart size={18} fill={isWishlisted(product.id) ? 'currentColor' : 'none'} />
+                        {isWishlisted(product.id) ? 'In Wishlist' : 'Add to Wishlist'}
+                      </button>
+                    </>
                   ) : isOutOfStock ? (
-                    <Button variant="secondary" className="col-span-2 py-6 uppercase tracking-[3px] text-xs font-bold opacity-50 cursor-not-allowed border-crimson/30" disabled>
-                      Out of Stock
-                    </Button>
+                    <>
+                      <Button variant="secondary" className="col-span-2 py-6 uppercase tracking-[3px] text-xs font-bold opacity-50 cursor-not-allowed border-crimson/30" disabled>
+                        Out of Stock
+                      </Button>
+                      <button
+                        onClick={() => toggleWishlist(product)}
+                        className={`col-span-2 py-4 flex items-center justify-center gap-3 border font-cinzel text-xs uppercase tracking-[3px] font-bold transition-all ${
+                          isWishlisted(product.id)
+                            ? 'border-gold bg-gold/10 text-gold'
+                            : 'border-gold/30 text-ivory/60 hover:border-gold hover:text-gold'
+                        }`}
+                      >
+                        <Heart size={18} fill={isWishlisted(product.id) ? 'currentColor' : 'none'} />
+                        {isWishlisted(product.id) ? 'In Wishlist' : 'Add to Wishlist'}
+                      </button>
+                    </>
                   ) : (
                     <>
                       <Button 
