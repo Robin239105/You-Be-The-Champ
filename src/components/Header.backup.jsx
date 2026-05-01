@@ -10,60 +10,58 @@ import CartDrawer from './CartDrawer';
 
 import { useAuthStore } from '../store/useAuthStore';
 
+// Recursive Mobile Node Component (Moved outside to stabilize references)
 const MobileNavItem = ({ node, depth = 0, mobileExpanded, onToggle, onClose }) => {
   if (!node || depth > 5) return null;
-  const nodeKey = node.slug || node.label || `node-${depth}`;
+  
+  const nodeKey = node.path || node.label || `node-${depth}`;
   const isExpanded = !!mobileExpanded[nodeKey];
-
-  // Gather sub-items for expandable layouts
-  const subItems = (() => {
-    if (node.children) return node.children;
-    if (node.players) return node.players.map(p => ({ label: p.name, path: p.path }));
-    if (node.cards) return node.cards.map(c => ({ label: c.label, path: c.path }));
-    if (node.leagues) return node.leagues.map(l => ({ label: l.label, children: l.divisions }));
-    if (node.items) return node.items.map(i => ({ label: i.label, path: i.path, link: i.link }));
-    return null;
-  })();
-
-  const hasChildren = subItems && subItems.length > 0;
-  const isDirect = node.layout === 'direct' || (!node.layout && node.path);
-
-  const getLink = () => {
-    if (isDirect) return node.path;
-    return null;
-  };
+  const hasChildren = node.children && Array.isArray(node.children) && node.children.length > 0;
 
   return (
     <div className="w-full">
       <div className={`flex items-center justify-between py-3 border-b border-gold/5 ${depth > 0 ? 'pl-4' : ''}`}>
-        {isDirect ? (
-          <Link to={node.path} className={`font-cinzel text-sm tracking-widest uppercase transition-colors ${depth === 0 ? 'text-gold' : 'text-ivory/80 hover:text-gold'}`} onClick={onClose}>
-            {node.label}
-          </Link>
-        ) : node.path && !hasChildren ? (
-          <Link to={`/category/${encodeURIComponent(node.path)}`} className="font-cinzel text-sm tracking-widest uppercase text-ivory/80 hover:text-gold transition-colors" onClick={onClose}>
-            {node.label}
-          </Link>
-        ) : node.link && !hasChildren ? (
-          <Link to={node.link} className="font-cinzel text-sm tracking-widest uppercase text-ivory/80 hover:text-gold transition-colors" onClick={onClose}>
+        {node.path ? (
+          <Link 
+            to={`/category/${encodeURIComponent(node.path)}`}
+            className={`font-cinzel text-sm tracking-widest uppercase transition-colors ${depth === 0 ? 'text-gold' : 'text-ivory/80 hover:text-gold'}`}
+            onClick={onClose}
+          >
             {node.label}
           </Link>
         ) : (
-          <button onClick={() => onToggle(nodeKey)} className={`font-cinzel text-sm tracking-widest uppercase text-left flex-1 ${depth === 0 ? 'text-gold' : 'text-ivory/80'}`}>
+          <span className={`font-cinzel text-sm tracking-widest uppercase ${depth === 0 ? 'text-gold' : 'text-ivory/80'}`}>
             {node.label}
-          </button>
+          </span>
         )}
+        
         {hasChildren && (
-          <button onClick={() => onToggle(nodeKey)} className="p-2 text-gold/60 hover:text-gold">
+          <button 
+            onClick={() => onToggle(nodeKey)}
+            className="p-2 text-gold/60 hover:text-gold"
+          >
             {isExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </button>
         )}
       </div>
+
       <AnimatePresence>
         {isExpanded && hasChildren && (
-          <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden bg-white/5">
-            {subItems.map((child, i) => (
-              <MobileNavItem key={child.path || child.label || i} node={child} depth={depth + 1} mobileExpanded={mobileExpanded} onToggle={onToggle} onClose={onClose} />
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden bg-white/5"
+          >
+            {node.children.map(child => (
+              <MobileNavItem 
+                key={child.path || child.label} 
+                node={child} 
+                depth={depth + 1} 
+                mobileExpanded={mobileExpanded}
+                onToggle={onToggle}
+                onClose={onClose}
+              />
             ))}
           </motion.div>
         )}
@@ -149,47 +147,47 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center justify-center gap-x-3 xl:gap-x-4">
-          {navigationData.map((nav) => {
-            const hasMega = nav.layout && nav.layout !== 'direct';
-            const isDirect = nav.layout === 'direct' || !nav.layout;
-            return (
-              <div
-                key={nav.label}
-                onMouseEnter={() => hasMega ? handleMouseEnter(nav.label) : null}
-                onMouseLeave={hasMega ? handleMouseLeave : undefined}
-                className="relative py-4"
-              >
-                {isDirect ? (
-                  <Link
-                    to={nav.path}
-                    className="font-cinzel text-[9px] xl:text-[10px] tracking-[1.5px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap"
-                  >
+        {/* Desktop Nav - True center of header */}
+        <div className="hidden lg:flex items-center justify-center gap-x-4 xl:gap-x-5">
+          {navigationData.map((nav) => (
+            <div 
+              key={nav.label}
+              onMouseEnter={() => nav.children ? handleMouseEnter(nav.label) : null}
+              onMouseLeave={handleMouseLeave}
+              className="relative py-4"
+            >
+              {nav.path ? (
+                <Link 
+                  to={nav.path} 
+                  className="font-cinzel text-[10px] tracking-[2px] text-ivory/60 hover:text-gold transition-all uppercase font-bold whitespace-nowrap"
+                >
+                  {nav.label}
+                </Link>
+              ) : (
+                <div className="flex items-center gap-1 cursor-default group">
+                  <span className="font-cinzel text-[10px] tracking-[2px] text-ivory/60 group-hover:text-gold transition-all uppercase font-bold whitespace-nowrap">
                     {nav.label}
-                  </Link>
-                ) : (
-                  <div className="flex items-center gap-1 cursor-default group">
-                    <span className="font-cinzel text-[9px] xl:text-[10px] tracking-[1.5px] text-ivory/60 group-hover:text-gold transition-all uppercase font-bold whitespace-nowrap">
-                      {nav.label}
-                    </span>
-                    <ChevronDown size={9} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/40'}`} />
-                  </div>
-                )}
-                <AnimatePresence>
-                  {activeMenu === nav.label && (
-                    <motion.div
-                      layoutId="nav-underline"
-                      className="absolute bottom-3 left-0 right-0 h-[1px] bg-gold"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                    />
+                  </span>
+                  {nav.children && (
+                    <ChevronDown size={10} className={`transition-transform duration-300 ${activeMenu === nav.label ? 'rotate-180 text-gold' : 'text-gold/40'}`} />
                   )}
-                </AnimatePresence>
-              </div>
-            );
-          })}
+                </div>
+              )}
+              
+              {/* Animated Underline */}
+              <AnimatePresence>
+                {activeMenu === nav.label && (
+                  <motion.div 
+                    layoutId="nav-underline"
+                    className="absolute bottom-3 left-0 right-0 h-[1px] bg-gold"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  />
+                )}
+              </AnimatePresence>
+            </div>
+          ))}
         </div>
 
         {/* Icons - Right */}
@@ -224,8 +222,9 @@ const Header = () => {
           {activeMenu && (
             <div className="absolute top-full left-0 w-full pointer-events-none">
               <div className="relative max-w-[1440px] mx-auto pointer-events-auto">
-                <MegaMenu
-                  data={navigationData.find(n => n.label === activeMenu)}
+                <MegaMenu 
+                  data={navigationData.find(n => n.label === activeMenu)} 
+                  layout={navigationData.find(n => n.label === activeMenu)?.layout} 
                   onMouseEnter={() => handleMouseEnter(activeMenu)}
                   onMouseLeave={handleMouseLeave}
                 />

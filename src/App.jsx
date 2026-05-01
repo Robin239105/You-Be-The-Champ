@@ -7,6 +7,11 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import CategoryPage from './pages/CategoryPage';
 import PlayerEditions from './pages/PlayerEditions';
+import ChampionsByYear from './pages/ChampionsByYear';
+import TeamsPage from './pages/TeamsPage';
+import CitiesPage from './pages/CitiesPage';
+import YourYearGift from './pages/YourYearGift';
+import IWantThemAll from './pages/IWantThemAll';
 import Vintage90s from './pages/Vintage90s';
 import Affiliate from './pages/Affiliate';
 
@@ -54,6 +59,11 @@ function App() {
         <Route path="/category/*" element={<CategoryPage />} />
         
         <Route path="/player-editions" element={<PlayerEditions />} />
+        <Route path="/champions-by-year" element={<ChampionsByYear />} />
+        <Route path="/teams" element={<TeamsPage />} />
+        <Route path="/cities" element={<CitiesPage />} />
+        <Route path="/your-year-gift" element={<YourYearGift />} />
+        <Route path="/i-want-them-all" element={<IWantThemAll />} />
         <Route path="/vintage-90s" element={<Vintage90s />} />
         <Route path="/affiliate" element={<Affiliate />} />
         <Route path="/product/:id" element={<ProductDetail />} />
