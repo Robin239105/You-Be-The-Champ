@@ -21,8 +21,7 @@ const CategoryPage = () => {
     const fetchProducts = async () => {
       setIsLoading(true);
       try {
-        // Fetch all products to filter locally (matching the decoded path structure)
-        const response = await api.get('/products?limit=1000');
+        const response = await api.get('/products?limit=1000&status=PUBLISHED');
         if (response.data.success) {
           setProducts(response.data.data);
         }
@@ -35,25 +34,25 @@ const CategoryPage = () => {
     fetchProducts();
   }, [decodedPath]);
 
-  // Filtering logic: Check if product belongs to this category path
+  // Filtering: match product categories against the decoded path
+  // A product matches if any of its category names:
+  // 1. Exactly equals the path, OR
+  // 2. Starts with the path (child of this category), OR
+  // 3. The path starts with the category name (this category is a parent)
   const filteredProducts = useMemo(() => {
+    const lowerPath = decodedPath.toLowerCase().trim();
     return products.filter(p => {
       if (!p.categories || p.categories.length === 0) return false;
       return p.categories.some(cat => {
-        const catName = typeof cat === 'object' ? cat.name : cat;
-        const lowerCatName = catName.toLowerCase();
-        const lowerPath = decodedPath.toLowerCase();
-        const lowerTitle = categoryTitle.toLowerCase();
-
+        const catName = (typeof cat === 'object' ? cat.name : cat || '').toLowerCase().trim();
         return (
-          lowerCatName === lowerPath || 
-          lowerCatName.includes(lowerPath) || 
-          lowerCatName.includes(`(${lowerTitle})`) ||
-          lowerCatName.split(' > ').some(part => part.toLowerCase().includes(lowerTitle))
+          catName === lowerPath ||
+          catName.startsWith(lowerPath) ||
+          lowerPath.startsWith(catName)
         );
       });
     });
-  }, [products, decodedPath, categoryTitle]);
+  }, [products, decodedPath]);
 
   const getBreadcrumbs = () => {
     return pathParts.map((part, index) => {
