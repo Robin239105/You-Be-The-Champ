@@ -1,0 +1,865 @@
+[
+  {
+    "id": "566",
+    "name": "2007 - Your Year Gift Box - Indianapolis Colts, San Antonio Spurs, Boston Red Sox, Anaheim Ducks",
+    "sku": "YY107",
+    "price": 120,
+    "description": "The year that was 2007.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Indianapolis Colts PEYTON MANNING Ring 1\r\\n\r\\nNBA - San Antonio Spur\r\\n\r\\nMLB -Boston Red Sox\r\\n\r\\nNHL - Anaheim Ducks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "567",
+    "name": "2008 - Your Year Gift Box - New York Giants, Boston Celtics, Philadelphia Phillies, Detroit Red Wings",
+    "sku": "YY108",
+    "price": 120,
+    "description": "The year that was 2008.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -New York Giants\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB -Philadelphia Phillies\r\\n\r\\nNHL - Detroit Red Wings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "568",
+    "name": "2009 - Your Year Gift Box - Pittsburgh Steelers, Los Angeles Lakers, New York Yankees, Pittsburgh Penguins",
+    "sku": "YY109",
+    "price": 120,
+    "description": "The year that was 2009.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Pittsburgh Steelers\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB -New York Yankees\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "569",
+    "name": "2010 - Your Year Gift Box - New Orleans Saints, Los Angeles Lakers, San Fransisco Giants, Chicago Blackhawks",
+    "sku": "YY110",
+    "price": 120,
+    "description": "The year that was 2010.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -New Orleans Saints\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB -San Fransisco Giants\r\\n\r\\nNHL - Chicago Blackhawks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "570",
+    "name": "2011 - Your Year Gift Box - Green Bay Packers, Dallas Mavericks, St Louis Cardinals, Boston Bruins",
+    "sku": "YY111",
+    "price": 120,
+    "description": "The year that was 2011.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Green Bay Packers\r\\n\r\\nNBA - Dallas Mavericks\r\\n\r\\nMLB - St Louis Cardinals\r\\n\r\\nNHL - Boston Bruins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "572",
+    "name": "2012 - Your Year Gift Box - New York Giants, Miami Heat, San Fransisco Giants, Los Angeles Kings",
+    "sku": "YY112",
+    "price": 120,
+    "description": "The year that was 2012.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -New York Giants\r\\n\r\\nNBA - Miami Heat\r\\n\r\\nMLB - San Fransisco Giants\r\\n\r\\nNHL - Los Angeles Kings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "573",
+    "name": "2013 - Your Year Gift Box - Baltimore Ravens, Miami Heat, Boston Red Sox, Chicago Blackhawks",
+    "sku": "YY113",
+    "price": 120,
+    "description": "The year that was 2013.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Baltimore Ravens\r\\n\r\\nNBA - Miami Heat\r\\n\r\\nMLB - Boston Red Sox\r\\n\r\\nNHL - Chicago Blackhawks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "574",
+    "name": "2014 - Your Year Gift Box - Seattle Seahawks, San Antonio Spurs, San Fransisco Giant, Los Angeles Kings",
+    "sku": "YY114",
+    "price": 120,
+    "description": "The year that was 2014.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL -Seattle Seahawks\r\\n\r\\nNBA - San Antonio Spurs\r\\n\r\\nMLB - San Fransisco Giants\r\\n\r\\nNHL - Los Angeles Kings\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "575",
+    "name": "2015 - Your Year Gift Box - New England Patriots, Golden State Warriors, Kansas City Royals, Chicago Blackhawks",
+    "sku": "YY115",
+    "price": 120,
+    "description": "The year that was 2015.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 4\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Kansas City Royals\r\\n\r\\nNHL - Chicago Blackhawks\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "576",
+    "name": "2016 - Your Year Gift Box -Denver Broncos, Cleveland Cavaliers, Chicago Cubs, Pittsburgh Penguins",
+    "sku": "YY116",
+    "price": 120,
+    "description": "The year that was 2016.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Denver Broncos PEYTON MANNING Ring 2\r\\n\r\\nNBA - Cleveland Cavaliers\r\\n\r\\nMLB - Chicago Cubs\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "578",
+    "name": "2017 - Your Year Gift Box -New England Patriots, Golden State Warriors, Houston Astros, Pittsburgh Penguins",
+    "sku": "YY117",
+    "price": 130,
+    "description": "The year that was 2017.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 5\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Houston Astros\r\\n\r\\nNHL - Pittsburgh Penguins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "579",
+    "name": "2018 - Your Year Gift Box - Philadelphia Eagles, Golden State Warriors, Boston Red Sox, Washington Capitals",
+    "sku": "YY118",
+    "price": 130,
+    "description": "The year that was 2018.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Philadelphia Eagles\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Boston Red Sox\r\\n\r\\nNHL - Washington Capitals\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "580",
+    "name": "2019 - Your Year Gift Box - New England Patriots, Toronto Raptors, Washington Nationals, St Louis Blues",
+    "sku": "YY119",
+    "price": 130,
+    "description": "The year that was 2019.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New England Patriots TOM BRADY Ring 6\r\\n\r\\nNBA - Toronto Raptors\r\\n\r\\nMLB - Washington Nationals\r\\n\r\\nNHL - St Louis Blues\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "581",
+    "name": "2020 - Your Year Gift Box - Kansas City Chiefs, Los Angeles Lakers, Los Angeles Dodgers, Tampa Bay Lightning",
+    "sku": "YY120",
+    "price": 140,
+    "description": "The year that was 2020.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs PATRICK MAHOMES Ring 1\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - Tampa Bay Lightning\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "582",
+    "name": "2021 - Your Year Gift Box - Tampa Bay Buccaneers, Milwaukee Bucks, Atlanta Braves, Tampa Bay Lightning",
+    "sku": "YY121",
+    "price": 140,
+    "description": "The year that was 2021.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Tampa Bay Buccaneers TOM BRADY Ring 7\r\\n\r\\nNBA - Milwaukee Bucks\r\\n\r\\nMLB - Atlanta Braves\r\\n\r\\nNHL - Tampa Bay Lightning\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "583",
+    "name": "2022 - Your Year Gift Box - Los Angeles Rams, Golden State Warriors, Houston Astros, Colorado Avalanche",
+    "sku": "YY122",
+    "price": 140,
+    "description": "The year that was 2022.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Los Angeles Rams\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Houston Astros\r\\n\r\\nNHL - Colorado Avalanche\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "584",
+    "name": "2023 - Your Year Gift Box - Kansas City Chiefs, Denver Nuggets, Texas Rangers, Las Vegas Golden Knights",
+    "sku": "YY123",
+    "price": 160,
+    "description": "The year that was 2023.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs PATRICK MAHOMES Ring 2\r\\n\r\\nNBA - Denver Nuggets\r\\n\r\\nMLB - Texas Rangers\r\\n\r\\nNHL - Las Vegas Golden Knights\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "585",
+    "name": "2024 - Your Year Gift Box - Kansas City Chiefs, Boston Celtics, Los Angeles Dodgers, Florida Panthers",
+    "sku": "YY124",
+    "price": 150,
+    "description": "The year that was 2024.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs PATRICK MAHOMES Ring 3\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - Florida Panthers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "586",
+    "name": "2025 - Your Year Gift Box - Philadelphia Eagles, Oklahoma City Thunder, Los Angeles Dodgers, Florida Panthers",
+    "sku": "YY125",
+    "price": 150,
+    "description": "The year that was 2025.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Philadelphia Eagles\r\\n\r\\nNBA - Oklahoma City Thunder\r\\n\r\\nMLB - Los Angeles Dodgers\r\\n\r\\nNHL - Florida Panthers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "587",
+    "name": "2026 - Your Year Gift Box - Seattle Seahawks, TBA, TBA, TBA",
+    "sku": "YY126",
+    "price": 0,
+    "description": "The year that was 2026.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Seattle Seahawks\r\\n\r\\nNBA - TBA\r\\n\r\\nMLB - TBA\r\\n\r\\nNHL - TBA\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "591",
+    "name": "1979 - Your Year Gift Box - Pittsburgh Steelers, Seattle Supersonics, Pittsburgh Pirates, Montreal Canadiens",
+    "sku": "YY079",
+    "price": 120,
+    "description": "The year that was 1979.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA - Seattle Supersonics\r\\n\r\\nMLB - Pittsburgh Pirates\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "613",
+    "name": "1978 - Your Year Gift Box - Dallas Cowboys, Washington Bullets, New York Yankees, Montreal Canadiens",
+    "sku": "YY078",
+    "price": 120,
+    "description": "The year that was 1978.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Dallas Cowboys\r\\n\r\\nNBA - Washington Bullets\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "614",
+    "name": "1977 - Your Year Gift Box - Oakland Raiders, Portland Trail Blazers, New York Yankees, Montreal Canadiens",
+    "sku": "YY077",
+    "price": 120,
+    "description": "The year that was 1977.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Oakland Raiders\r\\n\r\\nNBA - Portland Trail Blazers\r\\n\r\\nMLB - New York Yankees\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "615",
+    "name": "1976 - Your Year Gift Box - Pittsburgh Steelers, Boston Celtics, Cincinnati Reds, Montreal Canadiens",
+    "sku": "YY076",
+    "price": 0,
+    "description": "The year that was 1976.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Cincinnati Reds\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "616",
+    "name": "1975 - Your Year Gift Box - Pittsburgh Steelers, Golden State Warriors, Cincinnati Reds, Philadelphia Flyers",
+    "sku": "YY075",
+    "price": 120,
+    "description": "The year that was 1975.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Pittsburgh Steelers\r\\n\r\\nNBA - Golden State Warriors\r\\n\r\\nMLB - Cincinnati Reds\r\\n\r\\nNHL - Philadelphia Flyers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "617",
+    "name": "1974 - Your Year Gift Box - Miami Dolphins, Boston Celtics, Oakland A's, Philadelphia Flyers",
+    "sku": "YY074",
+    "price": 120,
+    "description": "The year that was 1974.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Miami Dolphins\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Oakland A's\r\\n\r\\nNHL - Philadelphia Flyers\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "618",
+    "name": "1973 - Your Year Gift Box - Miami Dolphins, New York Knicks, Oakland A's, Montreal Canadiens",
+    "sku": "YY073",
+    "price": 120,
+    "description": "The year that was 1973.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Miami Dolphins\r\\n\r\\nNBA - New York Knicks\r\\n\r\\nMLB - Oakland A's\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "619",
+    "name": "1972 - Your Year Gift Box - Dallas Cowboys, Los Angeles Lakers, Oakland A's, Boston Bruins",
+    "sku": "YY072",
+    "price": 120,
+    "description": "The year that was 1972.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Dallas Cowboys\r\\n\r\\nNBA - Los Angeles Lakers\r\\n\r\\nMLB - Oakland A's\r\\n\r\\nNHL - Boston Bruins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "621",
+    "name": "1971 - Your Year Gift Box - Baltimore Colts, Milwaukee Bucks, Pittsburgh Pirates, Montreal Canadiens",
+    "sku": "YY071",
+    "price": 120,
+    "description": "The year that was 1971.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Baltimore Colts\r\\n\r\\nNBA - Milwaukee Bucks\r\\n\r\\nMLB - Pittsburgh Pirates\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "623",
+    "name": "1970 - Your Year Gift Box - Kansas City Chiefs, New York Knicks, Baltimore Orioles, Boston Bruins",
+    "sku": "YY070",
+    "price": 120,
+    "description": "The year that was 1970.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Kansas City Chiefs\r\\n\r\\nNBA - New York Knicks\r\\n\r\\nMLB - Baltimore Orioles\r\\n\r\\nNHL - Boston Bruins\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "624",
+    "name": "1969 - Your Year Gift Box - New York Jets, Boston Celtics, New York Mets, Montreal Canadiens",
+    "sku": "YY069",
+    "price": 120,
+    "description": "The year that was 1969.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - New York Jets\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - New York Mets\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "626",
+    "name": "1968 - Your Year Gift Box - Green Bay Packers, Boston Celtics, Detroit Tigers, Montreal Canadiens",
+    "sku": "YY068",
+    "price": 120,
+    "description": "The year that was 1968.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Green Bay Packers\r\\n\r\\nNBA - Boston Celtics\r\\n\r\\nMLB - Detriot Tigers\r\\n\r\\nNHL - Montreal Canadiens\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "627",
+    "name": "1967 - Your Year Gift Box - Green Bay Packers, Philadelphia 76ers, St Louis Cardinals, Toronto Maple Leafs12",
+    "sku": "YY067",
+    "price": 120,
+    "description": "The year that was 1967.\r\\n\r\\nThe 4 Champions\r\\n\r\\nNFL - Green Bay Packers\r\\n\r\\nNBA - Philadelphia 76ers\r\\n\r\\nMLB - St Louis Cardinals\r\\n\r\\nNHL - Toronto Maple Leafs\r\\n\r\\n&nbsp;",
+    "shortDescription": "",
+    "categories": [
+      "Your Year Gift Box"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "633",
+    "name": "1964 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1964",
+    "sku": "SC064",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1964",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7404.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7405.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7406.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "634",
+    "name": "1963 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1963",
+    "sku": "SC063",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1963",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7401.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7402.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7403.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "635",
+    "name": "1962 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1962",
+    "sku": "SC062",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1962",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7398.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7399.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7400.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "636",
+    "name": "1961 Stanley Cup Championship Ring - Chicago Blackhawks - April 1961",
+    "sku": "SC061",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1961",
+      "League > NHL - National Hockey League > WC Central > Chicago Blackhawks",
+      "Teams > Chicago Blackhawks (NHL)",
+      "Your City > Chicago Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7518.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7519.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7520.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "637",
+    "name": "1960 Stanley Cup Championship Ring - Montreal Canadiens - April 1960",
+    "sku": "SC060",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1960",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7584.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7585.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7586.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "638",
+    "name": "1959 Stanley Cup Championship Ring - Montreal Canadiens - April 1959",
+    "sku": "SC059",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1959",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7455.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7456.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7457.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "639",
+    "name": "1958 Stanley Cup Championship Ring - Montreal Canadiens - April 1958",
+    "sku": "SC058",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1958",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7503.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7504.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7505.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "640",
+    "name": "1957 Stanley Cup Championship Ring - Montreal Canadiens - April 1957",
+    "sku": "SC057",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1957",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7497.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7498.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7499.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "642",
+    "name": "1956 Stanley Cup Championship Ring - Montreal Canadiens - March-April 1956",
+    "sku": "SC056",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1956",
+      "All Time Greats > Henri Richard (NHL)",
+      "All Time Greats > Jean Beliveau (NHL)",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7632.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7633.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7634.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "643",
+    "name": "1955 Stanley Cup Championship Ring - Detroit Red Wings - April 1955",
+    "sku": "SC055",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1955",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "644",
+    "name": "1954 Stanley Cup Championship Ring - Detroit Red Wings - April 1954",
+    "sku": "SC054",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1954",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "646",
+    "name": "1953 Stanley Cup Championship Ring - Montreal Canadiens - April 1953",
+    "sku": "SC053",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1953",
+      "All Time Greats > Maurice 'The Rocket\" Richard (NHL)",
+      "League > NHL - National Hockey League > EC Atlantic > Montreal Canadiens",
+      "Teams > Montreal Canadiens (NHL)",
+      "Your City > Montreal Pro Teams",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "647",
+    "name": "1952 Stanley Cup Championship Ring - Detroit Red Wings - April 1952",
+    "sku": "SC052",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1952",
+      "Your City > Detroit Pro Teams",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "649",
+    "name": "1951 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1951",
+    "sku": "SC051",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1951",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8266.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8268.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8269.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8267.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "652",
+    "name": "1950 Stanley Cup Championship Ring - Detroit Red Wings - April 1950",
+    "sku": "SC050",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1950",
+      "Your City > Detroit Pro Teams",
+      "League > NHL - National Hockey League > EC Atlantic > Detroit Red Wings",
+      "Teams > Detroit Red Wings (NHL)",
+      "All Time Greats > Gordie Howe (NHL)",
+      "Championships/Finals > Stanley Cup Championship Rings"
+    ],
+    "images": [
+      "https://placehold.co/600x600/1a1a1a/gold?text=Image+Coming+Soon"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "653",
+    "name": "1949 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1949",
+    "sku": "SC049",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1949",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7650-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7651-1.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_7652-1.png"
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "654",
+    "name": "1948 Stanley Cup Championship Ring - Toronto Maple Leafs - April 1948",
+    "sku": "SC048",
+    "price": 35,
+    "description": "",
+    "shortDescription": "",
+    "categories": [
+      "Champions By Year > 1948",
+      "Championships/Finals > Stanley Cup Championship Rings",
+      "League > NHL - National Hockey League > EC Atlantic > Toronto Maple Leafs",
+      "Teams > Toronto Maple Leafs (NHL)",
+      "Your City > Toronto Pro Teams"
+    ],
+    "images": [
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8293.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8294.png",
+      "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8295.png"
+    ],
+    "isFeatured": false
+  }
+]

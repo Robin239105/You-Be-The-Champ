@@ -190,9 +190,12 @@ const ProductDetail = () => {
               )}
 
               {/* Short Description */}
-              <p className="text-ivory/60 font-raleway leading-relaxed text-lg">
-                {product.shortDescription || product.description || 'Official-grade championship replica ring.'}
-              </p>
+              {(product.shortDescription || product.description) && (
+                <div
+                  className="text-ivory/60 font-raleway leading-relaxed text-base [&_p]:mb-3 [&_strong]:text-gold [&_br]:block"
+                  dangerouslySetInnerHTML={{ __html: product.shortDescription || product.description }}
+                />
+              )}
 
                <div className="space-y-6">
                 <div className="flex items-center gap-8">
@@ -274,7 +277,7 @@ const ProductDetail = () => {
         {/* Tabs Section */}
         <div className="mt-32">
            <div className="flex border-b border-gold/10 gap-12 mb-12">
-              {['description', 'specifications', 'reviews'].map(tab => (
+              {['description', 'specifications'].map(tab => (
                 <button 
                   key={tab}
                   onClick={() => setActiveTab(tab)}
@@ -289,92 +292,41 @@ const ProductDetail = () => {
            <div className="max-w-4xl min-h-[300px]">
               {activeTab === 'description' && (
                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="prose prose-invert max-w-none">
-                  <p className="text-ivory/70 leading-loose text-lg font-raleway">
-                    {product.description || `Celebrate the legacy of champions with this masterfully crafted replica ring. Every detail, from the engraved team mottos to the strategic placement of high-brilliance stones, has been executed with the same passion as the athletes on the field. This isn't just a piece of jewelry; it's a piece of history that commands attention in any display or on any finger.`}
-                  </p>
-                  <ul className="mt-8 space-y-4 text-ivory/60">
-                    <li className="flex items-center gap-3"><ChevronRight className="text-gold" size={16}/> Hand-polished finish with extreme detail</li>
-                    <li className="flex items-center gap-3"><ChevronRight className="text-gold" size={16}/> Heavyweight solid construction (approx. 60g-80g)</li>
-                    <li className="flex items-center gap-3"><ChevronRight className="text-gold" size={16}/> High-grade AAA+ Cubic Zirconia stones</li>
-                  </ul>
+                  {product.description ? (
+                    <div
+                      className="text-ivory/70 leading-loose font-raleway text-base [&_p]:mb-4 [&_strong]:text-gold [&_br]:block"
+                      dangerouslySetInnerHTML={{ __html: product.description }}
+                    />
+                  ) : (
+                    <p className="text-ivory/40 font-cinzel text-xs uppercase tracking-widest">No description available.</p>
+                  )}
                 </motion.div>
               )}
 
               {activeTab === 'specifications' && (
                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {[
-                    { label: 'Material', value: product.material || 'Zinc Alloy' },
-                    { label: 'Plating', value: product.plating || '18K Gold / Silver' },
-                    { label: 'Stone Grade', value: 'AAA+ Cubic Zirconia' },
-                    { label: 'Weight', value: '65g - 75g Average' },
-                    { label: 'Packaging', value: 'Luxury Gift Bag Included' },
-                    { label: 'SKU', value: product.sku || `YTBC-${product.id}` },
-                  ].map(spec => (
+                    product.sku && { label: 'SKU', value: product.sku },
+                    product.categories?.[0] && { label: 'Category', value: product.categories[0].name || product.categories[0] },
+                    product.stockQuantity !== undefined && { label: 'Stock', value: product.stockQuantity === 0 ? 'Out of Stock' : `${product.stockQuantity} units` },
+                    product.status && { label: 'Status', value: product.status },
+                  ].filter(Boolean).map(spec => (
                     <div key={spec.label} className="flex justify-between items-center py-4 border-b border-gold/5">
                       <span className="text-[10px] font-cinzel text-ivory/40 uppercase tracking-widest">{spec.label}</span>
                       <span className="text-sm font-raleway text-white">{spec.value}</span>
                     </div>
                   ))}
+                  {product.shortDescription && (
+                    <div className="col-span-2 pt-4">
+                      <div
+                        className="text-ivory/60 font-raleway text-sm leading-relaxed [&_p]:mb-3 [&_strong]:text-gold"
+                        dangerouslySetInnerHTML={{ __html: product.shortDescription }}
+                      />
+                    </div>
+                  )}
                 </motion.div>
               )}
 
-              {activeTab === 'reviews' && (
-                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-16">
-                   {/* Review Submission Form */}
-                   <div className="bg-surface p-10 border border-gold/20 relative overflow-hidden">
-                      <div className="absolute top-0 right-0 p-6 opacity-5 pointer-events-none">
-                         <Star size={100} className="text-gold" />
-                      </div>
-                      <h4 className="font-cinzel text-lg font-bold text-gold uppercase tracking-widest mb-8">Write a Review</h4>
-                      <form className="space-y-6 relative z-10">
-                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                               <label className="block text-[10px] text-gold font-cinzel tracking-widest uppercase mb-2">Display Name</label>
-                               <input type="text" className="w-full bg-black border border-gold/10 p-4 text-white focus:border-gold outline-none transition-all" placeholder="e.g. John D." />
-                            </div>
-                            <div>
-                               <label className="block text-[10px] text-gold font-cinzel tracking-widest uppercase mb-2">Rating</label>
-                               <div className="flex gap-2 p-4 bg-black border border-gold/10">
-                                  {[1, 2, 3, 4, 5].map((star) => (
-                                    <Star 
-                                      key={star} 
-                                      size={16} 
-                                      className="cursor-pointer text-gold/20 hover:text-gold transition-colors" 
-                                    />
-                                  ))}
-                                  <span className="text-[10px] text-ivory/40 ml-2 uppercase font-cinzel">Select Stars</span>
-                               </div>
-                            </div>
-                         </div>
-                         <div>
-                            <label className="block text-[10px] text-gold font-cinzel tracking-widest uppercase mb-2">Your Championship Experience</label>
-                            <textarea rows="4" className="w-full bg-black border border-gold/10 p-4 text-white focus:border-gold outline-none transition-all resize-none" placeholder="Tell us about the quality, weight, and detail..."></textarea>
-                         </div>
-                         <Button variant="primary" className="w-full md:w-auto px-12 py-4 uppercase tracking-[3px] text-[10px]">Submit Review To Vault</Button>
-                      </form>
-                   </div>
-
-                   {/* Existing Reviews */}
-                   <div className="space-y-8">
-                      <h4 className="font-cinzel text-sm font-bold text-ivory/40 uppercase tracking-[4px] mb-8">Recent Testimonials</h4>
-                      {[
-                        { user: 'J. Maverick', rating: 5, date: '2 days ago', text: 'The weight of this ring is incredible. Feels like the real deal.' },
-                        { user: 'S. Thompson', rating: 5, date: '1 week ago', text: 'Perfect gift for any true fan. The stones really sparkle under light.' },
-                      ].map((review, i) => (
-                        <div key={i} className="bg-surface/50 p-8 border border-gold/5 hover:border-gold/20 transition-all">
-                           <div className="flex justify-between mb-4">
-                              <span className="font-cinzel text-sm text-white">{review.user}</span>
-                              <span className="text-[10px] text-ivory/30 uppercase tracking-widest">{review.date}</span>
-                           </div>
-                           <div className="flex gap-1 mb-4">
-                              {[...Array(review.rating)].map((_, j) => <Star key={j} size={10} className="fill-gold text-gold" />)}
-                           </div>
-                           <p className="text-ivory/60 font-raleway text-sm italic">"{review.text}"</p>
-                        </div>
-                      ))}
-                   </div>
-                </motion.div>
-              )}
            </div>
         </div>
       </main>
