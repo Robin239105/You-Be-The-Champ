@@ -112,19 +112,26 @@ const Header = () => {
   const handleMouseLeave = () => {
     const timeout = setTimeout(() => {
       setActiveMenu(null);
-    }, 200); // 200ms delay to prevent flickering
+    }, 300);
+    setHoverTimeout(timeout);
+  };
+
+  const handleHeaderMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setActiveMenu(null);
+    }, 150);
     setHoverTimeout(timeout);
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300" onMouseLeave={handleHeaderMouseLeave}>
       {/* Top Banner */}
       <div className="bg-gold text-black text-[10px] sm:text-xs font-cinzel font-bold py-1 px-4 text-center tracking-[2px]">
         FREE SHIPPING ON ORDERS $150+
       </div>
 
       {/* Main Nav */}
-      <nav className={`w-full px-6 sm:px-12 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-gold/20 shadow-2xl' : 'bg-transparent'}`}>
+      <nav className={`relative w-full px-6 sm:px-12 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-gold/20 shadow-2xl' : 'bg-transparent'}`}>
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden">
           <button 
@@ -157,8 +164,7 @@ const Header = () => {
             return (
               <div
                 key={nav.label}
-                onMouseEnter={() => hasMega ? handleMouseEnter(nav.label) : null}
-                onMouseLeave={hasMega ? handleMouseLeave : undefined}
+                onMouseEnter={() => hasMega ? handleMouseEnter(nav.label) : setActiveMenu(null)}
                 className="relative py-4"
               >
                 {isDirect ? (
@@ -217,22 +223,22 @@ const Header = () => {
           </button>
         </div>
 
-      </nav>
-
-        {/* Mega Menu Container (Outside Loop for proper centering) */}
+        {/* Mega Menu — inside nav so it's part of same hover zone */}
         <AnimatePresence>
           {activeMenu && (
-            <div className="absolute top-full left-0 w-full pointer-events-none">
-              <div className="relative max-w-[1440px] mx-auto pointer-events-auto">
+            <div className="absolute top-full left-0 w-full pointer-events-none z-50">
+              <div className="pointer-events-auto">
                 <MegaMenu
                   data={navigationData.find(n => n.label === activeMenu)}
-                  onMouseEnter={() => handleMouseEnter(activeMenu)}
+                  onMouseEnter={() => { if (hoverTimeout) clearTimeout(hoverTimeout); }}
                   onMouseLeave={handleMouseLeave}
                 />
               </div>
             </div>
           )}
         </AnimatePresence>
+
+      </nav>
 
         {/* Cart Drawer */}
       <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />

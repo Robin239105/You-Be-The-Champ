@@ -153,10 +153,10 @@ const MegaMenu = ({ data, onMouseEnter, onMouseLeave }) => {
       transition={{ duration: 0.18 }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      className="absolute top-0 left-1/2 -translate-x-1/2 w-[96vw] max-w-7xl bg-black/97 backdrop-blur-2xl border-x border-b border-gold/20 shadow-[0_40px_100px_rgba(0,0,0,0.95)] z-50 pointer-events-auto overflow-hidden"
+      className="w-full bg-black/97 backdrop-blur-2xl border-b border-gold/20 shadow-[0_40px_100px_rgba(0,0,0,0.95)] pointer-events-auto overflow-hidden"
     >
       <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-gold to-transparent" />
-      <div className="p-10 overflow-y-auto max-h-[80vh] scrollbar-thin scrollbar-thumb-gold/20">
+      <div className="max-w-7xl mx-auto px-8 py-10 overflow-y-auto max-h-[80vh] scrollbar-thin scrollbar-thumb-gold/20">
         <div className="flex items-center justify-between mb-8 pb-5 border-b border-gold/10">
           <div>
             <h2 className="text-xl font-black font-cinzel text-white tracking-[5px] uppercase">{data.label}</h2>
