@@ -1,6 +1,5 @@
 export const navigationData = [
-
-  // 1. ALL TIME GREATS — Player Grid
+  // 1. ALL TIME GREATS — Type C: Player Grid
   {
     label: "All Time Greats",
     slug: "all-time-greats",
@@ -29,30 +28,82 @@ export const navigationData = [
     ]
   },
 
-  // 2. CHAMPIONS — Groups: Champions by Year + Championship Series
+  // 2. CHAMPIONS BY YEAR — direct page link
   {
-    label: "Champions",
-    slug: "champions",
-    layout: "two-panel",
-    leftPanel: {
-      title: "Champions by Year",
-      description: "Browse every championship year",
-      link: "/champions-by-year",
-      recentYears: [2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2014]
-    },
-    rightPanel: {
-      title: "Championship Series",
-      description: "Shop by championship event",
-      cards: [
-        { label: "Super Bowl", sport: "NFL", icon: "🏈", path: "Championships/Finals > Super Bowl Championship Rings", description: "NFL Championship Rings" },
-        { label: "NBA Finals", sport: "NBA", icon: "🏀", path: "Championships/Finals > NBA Finals Championship Rings", description: "NBA Championship Rings" },
-        { label: "World Series", sport: "MLB", icon: "⚾", path: "Championships/Finals > World Series Championship Rings", description: "MLB Championship Rings" },
-        { label: "Stanley Cup", sport: "NHL", icon: "🏒", path: "Championships/Finals > Stanley Cup Championship Rings", description: "NHL Championship Rings" }
-      ]
-    }
+    label: "Champions by Year",
+    slug: "champions-by-year",
+    layout: "direct",
+    path: "/champions-by-year"
   },
 
-  // 3. LEAGUE — Icon Grid with 4 leagues + divisions
+  // 3. CHAMPIONSHIP SERIES — Type A: 4 large clickable cards
+  {
+    label: "Championship Series",
+    slug: "championship-series",
+    layout: "championship-cards",
+    cards: [
+      { label: "Super Bowl", sport: "NFL", icon: "🏈", path: "Championships/Finals > Super Bowl Championship Rings", description: "NFL Championship Rings" },
+      { label: "NBA Finals", sport: "NBA", icon: "🏀", path: "Championships/Finals > NBA Finals Championship Rings", description: "NBA Championship Rings" },
+      { label: "World Series", sport: "MLB", icon: "⚾", path: "Championships/Finals > World Series Championship Rings", description: "MLB Championship Rings" },
+      { label: "Stanley Cup", sport: "NHL", icon: "🏒", path: "Championships/Finals > Stanley Cup Championship Rings", description: "NHL Championship Rings" }
+    ]
+  },
+
+  // 4. COMPLETE TEAM SETS — columnar
+  {
+    label: "Complete Team Sets",
+    slug: "complete-team-sets",
+    layout: "columnar",
+    children: [
+      {
+        label: "By City",
+        children: [
+          { label: "New York Teams", path: "Your City > New York City Pro Teams" },
+          { label: "Los Angeles Teams", path: "Your City > Los Angeles Pro Teams" },
+          { label: "Chicago Teams", path: "Your City > Chicago Pro Teams" },
+          { label: "Boston Teams", path: "Your City > Boston Pro Teams" },
+          { label: "Dallas Teams", path: "Your City > Dallas Pro Teams" },
+          { label: "Toronto Teams", path: "Your City > Toronto Pro Teams" },
+          { label: "Pittsburgh Teams", path: "Your City > Pittsburgh Pro Teams" },
+          { label: "Miami Teams", path: "Your City > Miami Pro Teams" }
+        ]
+      },
+      {
+        label: "NFL Team Sets",
+        children: [
+          { label: "Green Bay Packers", path: "Teams > Green Bay Packers (NFL)" },
+          { label: "New England Patriots", path: "Teams > New England Patriots (NFL)" },
+          { label: "Dallas Cowboys", path: "Teams > Dallas Cowboys (NFL)" },
+          { label: "Kansas City Chiefs", path: "Teams > Kansas City Chiefs (NFL)" },
+          { label: "Pittsburgh Steelers", path: "Teams > Pittsburgh Steelers (NFL)" },
+          { label: "San Francisco 49ers", path: "Teams > San Francisco 49ers (NFL)" }
+        ]
+      },
+      {
+        label: "NBA Team Sets",
+        children: [
+          { label: "Chicago Bulls", path: "Teams > Chicago Bulls (NBA)" },
+          { label: "LA Lakers", path: "Teams > Los Angeles Lakers (NBA)" },
+          { label: "Boston Celtics", path: "Teams > Boston Celtics (NBA)" },
+          { label: "Golden State Warriors", path: "Teams > Golden State Warriors (NBA)" },
+          { label: "San Antonio Spurs", path: "Teams > San Antonio Spurs (NBA)" }
+        ]
+      },
+      {
+        label: "MLB & NHL Sets",
+        children: [
+          { label: "New York Yankees", path: "Teams > New York Yankees (MLB)" },
+          { label: "Chicago Cubs", path: "Teams > Chicago Cubs (MLB)" },
+          { label: "LA Dodgers", path: "Teams > Los Angeles Dodgers (MLB)" },
+          { label: "Montreal Canadiens", path: "Teams > Montreal Canadiens (NHL)" },
+          { label: "Pittsburgh Penguins", path: "Teams > Pittsburgh Penguins (NHL)" },
+          { label: "Chicago Blackhawks", path: "Teams > Chicago Blackhawks (NHL)" }
+        ]
+      }
+    ]
+  },
+
+  // 5. LEAGUE — Type A: Icon Grid with 4 leagues + divisions
   {
     label: "League",
     slug: "league",
@@ -109,87 +160,15 @@ export const navigationData = [
     ]
   },
 
-  // 4. COLLECTIONS — Groups: Complete Team Sets + I Want Them All
+  // 6. I WANT THEM ALL — direct page
   {
-    label: "Collections",
-    slug: "collections",
-    layout: "collections-panel",
-    teamSets: {
-      title: "Complete Team Sets",
-      groups: [
-        {
-          label: "By City",
-          items: [
-            { label: "New York Teams", path: "Your City > New York City Pro Teams" },
-            { label: "Los Angeles Teams", path: "Your City > Los Angeles Pro Teams" },
-            { label: "Chicago Teams", path: "Your City > Chicago Pro Teams" },
-            { label: "Boston Teams", path: "Your City > Boston Pro Teams" },
-            { label: "Dallas Teams", path: "Your City > Dallas Pro Teams" },
-            { label: "Pittsburgh Teams", path: "Your City > Pittsburgh Pro Teams" },
-            { label: "Miami Teams", path: "Your City > Miami Pro Teams" },
-            { label: "Toronto Teams", path: "Your City > Toronto Pro Teams" }
-          ]
-        },
-        {
-          label: "NFL Teams",
-          items: [
-            { label: "Green Bay Packers", path: "Teams > Green Bay Packers (NFL)" },
-            { label: "New England Patriots", path: "Teams > New England Patriots (NFL)" },
-            { label: "Dallas Cowboys", path: "Teams > Dallas Cowboys (NFL)" },
-            { label: "Kansas City Chiefs", path: "Teams > Kansas City Chiefs (NFL)" },
-            { label: "Pittsburgh Steelers", path: "Teams > Pittsburgh Steelers (NFL)" },
-            { label: "San Francisco 49ers", path: "Teams > San Francisco 49ers (NFL)" }
-          ]
-        },
-        {
-          label: "NBA Teams",
-          items: [
-            { label: "Chicago Bulls", path: "Teams > Chicago Bulls (NBA)" },
-            { label: "LA Lakers", path: "Teams > Los Angeles Lakers (NBA)" },
-            { label: "Boston Celtics", path: "Teams > Boston Celtics (NBA)" },
-            { label: "Golden State Warriors", path: "Teams > Golden State Warriors (NBA)" },
-            { label: "San Antonio Spurs", path: "Teams > San Antonio Spurs (NBA)" }
-          ]
-        },
-        {
-          label: "MLB & NHL",
-          items: [
-            { label: "New York Yankees", path: "Teams > New York Yankees (MLB)" },
-            { label: "Chicago Cubs", path: "Teams > Chicago Cubs (MLB)" },
-            { label: "LA Dodgers", path: "Teams > Los Angeles Dodgers (MLB)" },
-            { label: "Montreal Canadiens", path: "Teams > Montreal Canadiens (NHL)" },
-            { label: "Pittsburgh Penguins", path: "Teams > Pittsburgh Penguins (NHL)" },
-            { label: "Chicago Blackhawks", path: "Teams > Chicago Blackhawks (NHL)" }
-          ]
-        }
-      ]
-    },
-    bulkCollections: {
-      title: "I Want Them All",
-      link: "/i-want-them-all",
-      items: [
-        { label: "All NFL Rings", icon: "🏈", path: "Championships/Finals > Super Bowl Championship Rings" },
-        { label: "All NBA Rings", icon: "🏀", path: "Championships/Finals > NBA Finals Championship Rings" },
-        { label: "All MLB Rings", icon: "⚾", path: "Championships/Finals > World Series Championship Rings" },
-        { label: "All NHL Rings", icon: "🏒", path: "Championships/Finals > Stanley Cup Championship Rings" },
-        { label: "Special Players", icon: "⭐", path: "Special Release Champion Players Rings" }
-      ]
-    }
+    label: "I Want Them All",
+    slug: "i-want-them-all",
+    layout: "direct",
+    path: "/i-want-them-all"
   },
 
-  // 5. BROWSE — Groups: Teams + Cities + Your Year Gift
-  {
-    label: "Browse",
-    slug: "browse",
-    layout: "browse-tiles",
-    tiles: [
-      { icon: "🏟️", label: "Teams A–Z", description: "Find rings for every franchise, alphabetically", link: "/teams" },
-      { icon: "🏙️", label: "Cities", description: "Shop all championship rings by city", link: "/cities" },
-      { icon: "🎁", label: "Your Year Gift", description: "Find the perfect ring from your special year", link: "/your-year-gift" }
-    ]
-  },
-
-  // 6. SPECIAL RELEASE — Vertical Icon List
+  // 7. SPECIAL RELEASE — Type B: Vertical Icon List
   {
     label: "Special Release",
     slug: "special-release",
@@ -204,7 +183,31 @@ export const navigationData = [
     ]
   },
 
-  // 7. NEWS — Vertical Icon List
+  // 8. TEAMS — direct page
+  {
+    label: "Teams",
+    slug: "teams",
+    layout: "direct",
+    path: "/teams"
+  },
+
+  // 9. CITIES — direct page
+  {
+    label: "Cities",
+    slug: "cities",
+    layout: "direct",
+    path: "/cities"
+  },
+
+  // 10. YOUR YEAR GIFT — direct page
+  {
+    label: "Your Year Gift",
+    slug: "your-year-gift",
+    layout: "direct",
+    path: "/your-year-gift"
+  },
+
+  // 11. NEWS — Type B: Vertical Icon List
   {
     label: "News",
     slug: "news",
@@ -216,7 +219,7 @@ export const navigationData = [
     ]
   },
 
-  // 8. CONTACT — Vertical Icon List
+  // 12. CONTACT — Type B: Vertical Icon List
   {
     label: "Contact",
     slug: "contact",

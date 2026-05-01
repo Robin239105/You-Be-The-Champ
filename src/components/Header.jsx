@@ -22,6 +22,15 @@ const MobileNavItem = ({ node, depth = 0, mobileExpanded, onToggle, onClose }) =
     if (node.cards) return node.cards.map(c => ({ label: c.label, path: c.path }));
     if (node.leagues) return node.leagues.map(l => ({ label: l.label, children: l.divisions }));
     if (node.items) return node.items.map(i => ({ label: i.label, path: i.path, link: i.link }));
+    if (node.tiles) return node.tiles.map(t => ({ label: t.label, link: t.link }));
+    if (node.layout === 'two-panel') return [
+      { label: 'Champions by Year', link: node.leftPanel?.link },
+      ...(node.rightPanel?.cards || []).map(c => ({ label: c.label, path: c.path }))
+    ];
+    if (node.layout === 'collections-panel') return [
+      ...(node.teamSets?.groups || []).flatMap(g => g.items.map(i => ({ label: i.label, path: i.path }))),
+      ...(node.bulkCollections?.items || []).map(i => ({ label: i.label, path: i.path }))
+    ];
     return null;
   })();
 
