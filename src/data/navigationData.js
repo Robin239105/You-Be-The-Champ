@@ -4,7 +4,6 @@ export const navigationData = [
   {
     label: "All Time Greats",
     slug: "all-time-greats",
-    path: "/category/All%20Time%20Greats",
     layout: "players",
     players: [
       { name: "Tom Brady", sport: "NFL", path: "All Time Greats > Tom Brady (NFL)", photo: "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/c/cb/Tom_Brady_2021.png&w=200&h=200&fit=cover&a=top" },
@@ -57,7 +56,6 @@ export const navigationData = [
   {
     label: "League",
     slug: "league",
-    path: "/category/League",
     layout: "league-grid",
     leagues: [
       {
