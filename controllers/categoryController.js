@@ -2,6 +2,7 @@ const prisma = require('../utils/prisma');
 const slugify = require('slugify');
 const fs = require('fs');
 const path = require('path');
+const csvParser = require('csv-parser');
 
 function htmlDecode(str) {
   if (!str) return '';
@@ -36,52 +37,45 @@ const importDescriptions = async (req, res) => {
       return res.status(404).json({ success: false, message: 'categories.csv not found on server' });
     }
 
-    const content = fs.readFileSync(csvPath, 'utf-8');
-    const lines = content.split('\n');
-    const headers = lines[0].split(',').map(h => h.replace(/"/g, '').trim());
-    const nameIdx = headers.indexOf('Name');
-    const descIdx = headers.indexOf('Description');
-    if (nameIdx === -1 || descIdx === -1) {
-      return res.status(400).json({ success: false, message: 'CSV missing Name or Description column' });
-    }
+    // Parse CSV using csv-parser (handles quoted multi-line fields correctly)
+    const rows = await new Promise((resolve, reject) => {
+      const results = [];
+      fs.createReadStream(csvPath)
+        .pipe(csvParser())
+        .on('data', (row) => results.push(row))
+        .on('end', () => resolve(results))
+        .on('error', reject);
+    });
 
-    const rows = [];
-    let inQuote = false;
-    let currentRow = [];
-    let currentField = '';
-
-    for (let lineNum = 1; lineNum < lines.length; lineNum++) {
-      const line = lines[lineNum];
-      for (let i = 0; i < line.length; i++) {
-        const ch = line[i];
-        if (ch === '"') { inQuote = !inQuote; }
-        else if (ch === ',' && !inQuote) { currentRow.push(currentField); currentField = ''; }
-        else { currentField += ch; }
-      }
-      if (!inQuote) {
-        currentRow.push(currentField);
-        currentField = '';
-        if (currentRow.length > Math.max(nameIdx, descIdx)) rows.push(currentRow);
-        currentRow = [];
-      } else {
-        currentField += '\n';
-      }
-    }
-
-    let updated = 0, skipped = 0;
+    let updated = 0, skipped = 0, notFound = 0;
     for (const row of rows) {
-      const name = (row[nameIdx] || '').replace(/^"|"$/g, '').trim();
-      const desc = htmlDecode((row[descIdx] || '').replace(/^"|"$/g, '').trim());
+      const name = (row['Name'] || '').trim();
+      const desc = htmlDecode((row['Description'] || '').trim());
       if (!name || !desc) { skipped++; continue; }
       const slug = slugify(name, { lower: true, strict: true });
+
+      // Case-insensitive name match OR slug match
       const result = await prisma.category.updateMany({
-        where: { OR: [{ name }, { slug }] },
+        where: {
+          OR: [
+            { name: { equals: name, mode: 'insensitive' } },
+            { slug },
+          ],
+        },
         data: { description: desc },
       });
-      updated += result.count;
+
+      if (result.count > 0) {
+        updated += result.count;
+      } else {
+        notFound++;
+      }
     }
 
-    res.json({ success: true, message: `Updated ${updated} categories, skipped ${skipped}` });
+    res.json({
+      success: true,
+      message: `Updated ${updated} categories (${skipped} skipped — no description, ${notFound} not found in DB)`,
+    });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }

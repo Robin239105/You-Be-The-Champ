@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
+import api from '../utils/api';
 
 const PLAYERS = [
   { name: "Aaron Rodgers", catName: "Aaron Rodgers (NFL)", sport: "NFL", photo: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8506.jpeg" },
@@ -75,10 +76,10 @@ const PLAYERS = [
 ];
 
 const SPORT_BADGE = {
-  NFL: "bg-blue-900/40 text-blue-200 border-blue-700/40",
-  NBA: "bg-red-900/40 text-red-200 border-red-700/40",
-  MLB: "bg-blue-800/40 text-blue-100 border-blue-600/40",
-  NHL: "bg-white/10 text-white/70 border-white/20",
+  NFL: "bg-gold/10 text-gold border-gold/30",
+  NBA: "bg-gold/10 text-gold border-gold/30",
+  MLB: "bg-gold/10 text-gold border-gold/30",
+  NHL: "bg-gold/10 text-gold border-gold/30",
 };
 
 const SPORTS = ["All", "NFL", "NBA", "MLB", "NHL"];
@@ -86,6 +87,25 @@ const SPORTS = ["All", "NFL", "NBA", "MLB", "NHL"];
 const AllTimeGreatsPage = () => {
   const [filter, setFilter] = useState("All");
   const [imgErrors, setImgErrors] = useState({});
+  const [descriptions, setDescriptions] = useState({});
+
+  useEffect(() => {
+    const fetchDescriptions = async () => {
+      try {
+        const res = await api.get('/categories');
+        if (res.data.success) {
+          const map = {};
+          res.data.data.forEach(cat => {
+            if (cat.description) map[cat.name.toLowerCase()] = cat.description;
+          });
+          setDescriptions(map);
+        }
+      } catch (err) {
+        console.error('Failed to fetch category descriptions', err);
+      }
+    };
+    fetchDescriptions();
+  }, []);
 
   const filtered = filter === "All" ? PLAYERS : PLAYERS.filter(p => p.sport === filter);
 
@@ -162,6 +182,11 @@ const AllTimeGreatsPage = () => {
                 <div className="p-3 bg-black">
                   <p className="font-cinzel text-white font-black text-xs uppercase tracking-[1px] group-hover:text-gold transition-colors mb-1.5 leading-tight">{player.name}</p>
                   <span className={`text-[8px] px-1.5 py-0.5 border font-cinzel uppercase tracking-widest ${SPORT_BADGE[player.sport]}`}>{player.sport}</span>
+                  {descriptions[player.catName.toLowerCase()] && (
+                    <p className="text-white/40 font-raleway text-[10px] leading-snug mt-2 line-clamp-2">
+                      {descriptions[player.catName.toLowerCase()]}
+                    </p>
+                  )}
                 </div>
               </Link>
             </motion.div>
