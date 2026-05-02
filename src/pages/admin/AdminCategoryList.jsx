@@ -11,6 +11,9 @@ const AdminCategoryList = () => {
   const [showModal, setShowModal] = useState(false);
   const [editingCategory, setEditingCategory] = useState(null);
   const [categoryName, setCategoryName] = useState('');
+  const [categoryDescription, setCategoryDescription] = useState('');
+  const [isImporting, setIsImporting] = useState(false);
+  const [importResult, setImportResult] = useState('');
 
   const fetchCategories = async () => {
     setIsLoading(true);
@@ -33,7 +36,27 @@ const AdminCategoryList = () => {
   const handleOpenModal = (category = null) => {
     setEditingCategory(category);
     setCategoryName(category ? category.name : '');
+    setCategoryDescription(category ? (category.description || '') : '');
     setShowModal(true);
+  };
+
+  const handleImportDescriptions = async () => {
+    if (!window.confirm('This will update all category descriptions from categories.csv on the server. Continue?')) return;
+    setIsImporting(true);
+    setImportResult('');
+    try {
+      const res = await api.post('/categories/import-descriptions');
+      if (res.data.success) {
+        setImportResult(res.data.message);
+        fetchCategories();
+      } else {
+        setImportResult('Failed: ' + res.data.message);
+      }
+    } catch (err) {
+      setImportResult('Error: ' + (err.response?.data?.message || err.message));
+    } finally {
+      setIsImporting(false);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -43,9 +66,9 @@ const AdminCategoryList = () => {
     setIsSubmitting(true);
     try {
       if (editingCategory) {
-        await api.put(`/categories/${editingCategory.id}`, { name: categoryName });
+        await api.put(`/categories/${editingCategory.id}`, { name: categoryName, description: categoryDescription });
       } else {
-        await api.post('/categories', { name: categoryName });
+        await api.post('/categories', { name: categoryName, description: categoryDescription });
       }
       fetchCategories();
       setShowModal(false);
@@ -77,12 +100,24 @@ const AdminCategoryList = () => {
           <h1 className="font-cinzel text-3xl text-white uppercase tracking-[4px]">Categories</h1>
           <p className="text-gold/60 text-xs mt-2 uppercase tracking-widest">Manage store collections & taxonomy</p>
         </div>
-        <button 
-          onClick={() => handleOpenModal()}
-          className="bg-gold text-black px-6 py-3 font-cinzel font-bold text-xs uppercase tracking-widest hover:bg-white transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(201,168,76,0.2)]"
-        >
-          <Plus size={16} /> Add Category
-        </button>
+        <div className="flex gap-3 flex-wrap">
+          <button
+            onClick={handleImportDescriptions}
+            disabled={isImporting}
+            className="border border-gold/30 text-gold px-5 py-3 font-cinzel font-bold text-xs uppercase tracking-widest hover:bg-gold/10 transition-all flex items-center gap-2 disabled:opacity-50"
+          >
+            {isImporting ? 'Importing...' : 'Import Descriptions from CSV'}
+          </button>
+          <button 
+            onClick={() => handleOpenModal()}
+            className="bg-gold text-black px-6 py-3 font-cinzel font-bold text-xs uppercase tracking-widest hover:bg-white transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(201,168,76,0.2)]"
+          >
+            <Plus size={16} /> Add Category
+          </button>
+        </div>
+        {importResult && (
+          <p className="text-[10px] font-raleway mt-2 text-gold/70">{importResult}</p>
+        )}
       </div>
 
       <div className="bg-surface border border-gold/10 rounded-xl overflow-hidden backdrop-blur-sm">
@@ -198,6 +233,16 @@ const AdminCategoryList = () => {
                     required
                     className="w-full bg-black/40 border border-gold/10 py-4 px-4 text-white focus:border-gold outline-none transition-all font-raleway text-sm"
                     placeholder="e.g. World Series Rings"
+                  />
+                </div>
+                <div>
+                  <label className="block text-[10px] uppercase tracking-[2px] text-gold mb-2 font-cinzel">Description</label>
+                  <textarea
+                    value={categoryDescription}
+                    onChange={(e) => setCategoryDescription(e.target.value)}
+                    rows={3}
+                    className="w-full bg-black/40 border border-gold/10 py-3 px-4 text-white focus:border-gold outline-none transition-all font-raleway text-sm resize-none"
+                    placeholder="Short description shown on the category page"
                   />
                 </div>
                 <div className="flex gap-4 pt-4">

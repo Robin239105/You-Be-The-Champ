@@ -13,6 +13,7 @@ const CategoryPage = () => {
   const { '*': categoryPath } = useParams();
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [categoryDescription, setCategoryDescription] = useState('');
   
   const decodedPath = decodeURIComponent(categoryPath || '');
   const thumbnail = getCategoryThumbnail(decodedPath);
@@ -20,21 +21,28 @@ const CategoryPage = () => {
   const categoryTitle = pathParts[pathParts.length - 1];
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchData = async () => {
       setIsLoading(true);
+      setCategoryDescription('');
       try {
-        const response = await api.get('/products?limit=1000&status=PUBLISHED');
-        if (response.data.success) {
-          setProducts(response.data.data);
+        const [productsRes, catRes] = await Promise.allSettled([
+          api.get('/products?limit=1000&status=PUBLISHED'),
+          api.get(`/categories/by-name/${encodeURIComponent(categoryTitle)}`),
+        ]);
+        if (productsRes.status === 'fulfilled' && productsRes.value.data.success) {
+          setProducts(productsRes.value.data.data);
+        }
+        if (catRes.status === 'fulfilled' && catRes.value.data.success && catRes.value.data.data?.description) {
+          setCategoryDescription(catRes.value.data.data.description);
         }
       } catch (error) {
-        console.error('Failed to fetch category products:', error);
+        console.error('Failed to fetch category data:', error);
       } finally {
         setIsLoading(false);
       }
     };
-    fetchProducts();
-  }, [decodedPath]);
+    fetchData();
+  }, [decodedPath, categoryTitle]);
 
   // Filtering: match product categories against the decoded path
   // A product matches if any of its category names:
@@ -86,16 +94,21 @@ const CategoryPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="relative z-10 text-center py-16 px-4"
           >
-            <h1 className="text-3xl md:text-5xl font-black font-cinzel text-gold tracking-widest uppercase mb-4 leading-tight">
-              {categoryTitle}
-            </h1>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-center gap-4 mb-4">
               <div className="h-[1px] w-8 bg-gold/30" />
               <p className="text-ivory/60 font-raleway tracking-[3px] uppercase text-[10px]">
                 {pathParts[0]} Collection
               </p>
               <div className="h-[1px] w-8 bg-gold/30" />
             </div>
+            <h1 className="text-3xl md:text-5xl font-black font-cinzel text-gold tracking-widest uppercase mb-4 leading-tight">
+              {categoryTitle}
+            </h1>
+            {categoryDescription && (
+              <p className="text-ivory/60 font-raleway text-sm leading-relaxed max-w-xl mx-auto mt-4">
+                {categoryDescription}
+              </p>
+            )}
           </motion.div>
         </div>
 
