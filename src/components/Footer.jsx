@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="space-y-8">
           <Link to="/" className="flex items-center group">
             <div className="relative w-24 h-24 rounded-full overflow-hidden border border-gold/30 shadow-[0_0_20px_rgba(201,168,76,0.2)] group-hover:border-gold transition-all duration-500">
-              <img src="/logo.jpg" alt="You Be The Champ Logo" className="w-full h-full object-cover" />
+              <img src="/logo.png" alt="You Be The Champ Logo" className="w-full h-full object-cover" />
             </div>
           </Link>
           <p className="text-ivory/40 font-raleway text-sm leading-relaxed uppercase tracking-wider">

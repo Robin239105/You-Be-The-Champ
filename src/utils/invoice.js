@@ -50,7 +50,7 @@ export const downloadInvoice = (orderData) => {
     <body>
       <div class="header">
         <div class="logo-container">
-          <img src="${window.location.origin}/logo.jpg" class="logo-img" alt="Logo" />
+          <img src="${window.location.origin}/logo.png" class="logo-img" alt="Logo" />
           <div>
             <div class="logo-text">You Be The Champ</div>
             <p style="margin:0; font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 1px;">Premium Championship Replicas</p>

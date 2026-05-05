@@ -68,7 +68,7 @@ const Header = () => {
           <Link to="/" className="flex items-center group">
             <div className="relative w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full overflow-hidden border-2 border-gold/30 shadow-[0_0_24px_rgba(201,168,76,0.25)] group-hover:border-gold group-hover:shadow-[0_0_32px_rgba(201,168,76,0.4)] transition-all duration-500">
               <img 
-                src="/logo.jpg" 
+                src="/logo.png" 
                 alt="You Be The Champ Logo" 
                 className="w-full h-full object-cover scale-105"
               />
