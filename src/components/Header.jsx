@@ -50,8 +50,8 @@ const Header = () => {
       {/* Main Nav */}
       <nav className={`relative w-full px-6 sm:px-12 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${
         isScrolled
-          ? 'bg-black/95 backdrop-blur-xl border-b border-gold/35 shadow-[0_4px_40px_rgba(0,0,0,0.9)] py-0.5'
-          : 'bg-black/80 backdrop-blur-lg border-b border-gold/20 py-8'
+          ? 'bg-black/95 backdrop-blur-xl border-b border-gold/35 shadow-[0_4px_40px_rgba(0,0,0,0.9)] py-1'
+          : 'bg-black/80 backdrop-blur-lg border-b border-gold/20 py-2'
       }`}>
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden">
@@ -67,7 +67,7 @@ const Header = () => {
         <div className="flex-shrink-0 lg:mr-4">
           <Link to="/" className="flex items-center group">
             <div className={`relative transition-all duration-500 group-hover:scale-110 ${
-              isScrolled ? 'w-24 h-24 sm:w-28 sm:h-28' : 'w-32 h-32 sm:w-40 sm:h-40'
+              isScrolled ? 'w-16 h-16 sm:w-20 sm:h-20' : 'w-20 h-20 sm:w-24 sm:h-24'
             }`}>
               <img 
                 src="/logo.png" 
