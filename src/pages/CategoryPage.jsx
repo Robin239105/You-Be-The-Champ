@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import api from '../utils/api';
 import { Loader2 } from 'lucide-react';
 import { getCategoryThumbnail } from '../data/categoryThumbnails';
+import { optimizeImage } from '../utils/imageOptimizer';
 
 const CategoryPage = () => {
   const { '*': categoryPath } = useParams();
@@ -84,7 +85,13 @@ const CategoryPage = () => {
         <div className="mb-12 relative overflow-hidden mt-8 border border-gold/10" style={{ minHeight: 200 }}>
           {thumbnail && (
             <div className="absolute inset-0">
-              <img src={thumbnail} alt={categoryTitle} className="w-full h-full object-cover object-center opacity-25" />
+              <img 
+                src={optimizeImage(thumbnail, { w: 1920, h: 400 })} 
+                alt={categoryTitle} 
+                className="w-full h-full object-cover object-center opacity-25" 
+                fetchpriority="high"
+                decoding="async"
+              />
               <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60" />
             </div>
           )}

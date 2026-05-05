@@ -7,6 +7,7 @@ import Badge from './Badge';
 import Button from './Button';
 
 import { Link } from 'react-router-dom';
+import { optimizeImage } from '../utils/imageOptimizer';
 
 const ProductCard = ({ product }) => {
   const addItem = useCartStore(state => state.addItem);
@@ -70,7 +71,13 @@ const ProductCard = ({ product }) => {
           className="w-full h-full flex items-center justify-center"
         >
           {displayImage ? (
-            <img src={displayImage} alt={product.name} className="w-full h-full object-contain" />
+            <img 
+              src={optimizeImage(displayImage, { w: 400, h: 400, fit: 'contain' })} 
+              alt={product.name} 
+              className="w-full h-full object-contain"
+              loading="lazy"
+              decoding="async"
+            />
           ) : (
             <div className="flex flex-col items-center">
               <svg className="w-24 h-24 text-gold/20" fill="currentColor" viewBox="0 0 24 24">

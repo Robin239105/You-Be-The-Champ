@@ -10,6 +10,7 @@ import Breadcrumb from '../components/Breadcrumb';
 import Button from '../components/Button';
 import Badge from '../components/Badge';
 import api from '../utils/api';
+import { optimizeImage } from '../utils/imageOptimizer';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -112,9 +113,11 @@ const ProductDetail = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  src={images[selectedImage]} 
+                  src={optimizeImage(images[selectedImage], { w: 800, h: 800, fit: 'contain' })} 
                   alt={product.name} 
                   className="w-full h-full object-contain p-12"
+                  fetchpriority="high"
+                  decoding="sync"
                 />
               </AnimatePresence>
               <div className="absolute top-6 left-6">
@@ -130,7 +133,12 @@ const ProductDetail = () => {
                     onClick={() => setSelectedImage(i)}
                     className={`aspect-square border transition-all ${selectedImage === i ? 'border-gold p-1' : 'border-gold/10 hover:border-gold/30'}`}
                   >
-                    <img src={img} alt={`${product.name} ${i}`} className="w-full h-full object-cover" />
+                    <img 
+                      src={optimizeImage(img, { w: 150, h: 150, fit: 'contain' })} 
+                      alt={`${product.name} ${i}`} 
+                      className="w-full h-full object-cover" 
+                      loading="lazy"
+                    />
                   </button>
                 ))}
               </div>

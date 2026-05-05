@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingBag, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { optimizeImage } from '../utils/imageOptimizer';
 
 const CITIES = [
   'Chicago, IL', 'New York, NY', 'Dallas, TX', 'Los Angeles, CA', 
@@ -71,7 +72,7 @@ const SalesPopup = ({ products = [] }) => {
             {/* Product Image */}
             <div className="relative w-16 h-16 flex-shrink-0 bg-surface rounded-lg overflow-hidden border border-gold/10">
               <img 
-                src={currentProduct.images?.[0]?.url || currentProduct.images?.[0] || 'https://placehold.co/100'} 
+                src={optimizeImage(currentProduct.images?.[0]?.url || currentProduct.images?.[0] || currentProduct.image, { w: 120, h: 120 })} 
                 alt={currentProduct.name}
                 className="w-full h-full object-cover"
               />

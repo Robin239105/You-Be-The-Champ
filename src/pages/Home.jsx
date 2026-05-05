@@ -10,6 +10,7 @@ import Marquee from '../components/Marquee';
 import StatsBanner from '../components/StatsBanner';
 import NewsletterSection from '../components/NewsletterSection';
 import api from '../utils/api';
+import { optimizeImage } from '../utils/imageOptimizer';
 
 const GOLD = '#C9A84C';
 const GOLD_GLOW = 'rgba(201,168,76,0.22)';
@@ -130,6 +131,13 @@ const Home = () => {
     return () => clearInterval(timer);
   }, [nextSlide, isPaused]);
 
+  // Pre-load next slide's image
+  useEffect(() => {
+    const nextIdx = (currentSlide + 1) % SLIDES.length;
+    const img = new Image();
+    img.src = optimizeImage(SLIDES[nextIdx].ringImage, { w: 1200, q: 85, fit: 'contain' });
+  }, [currentSlide]);
+
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'ArrowRight') nextSlide();
@@ -189,7 +197,7 @@ const Home = () => {
               className="absolute right-0 top-0 bottom-0 w-[52%] flex items-center justify-center"
             >
               <motion.img
-                src={slide.ringImage}
+                src={optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' })}
                 alt={`${slide.headline} ${slide.sub} Championship Ring`}
                 animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
@@ -198,6 +206,9 @@ const Home = () => {
                   maxHeight: '80vh',
                   filter: `drop-shadow(0 40px 100px ${slide.glowColor}) drop-shadow(0 0 60px rgba(201,168,76,0.35)) drop-shadow(0 8px 30px rgba(0,0,0,1))`,
                 }}
+                fetchpriority={currentSlide === 0 ? "high" : "auto"}
+                loading={currentSlide === 0 ? "eager" : "lazy"}
+                decoding="async"
               />
             </motion.div>
             {/* Gradient mask — left edge of ring area fades to black so text panel is clean */}
@@ -438,7 +449,12 @@ const Home = () => {
                 className="group flex flex-col border border-gold/10 hover:border-gold/40 bg-white/[0.02] hover:bg-gold/5 transition-all duration-300 overflow-hidden">
                 {post.featuredImage ? (
                   <div className="aspect-video overflow-hidden">
-                    <img src={post.featuredImage} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img 
+                      src={optimizeImage(post.featuredImage, { w: 600, h: 340 })} 
+                      alt={post.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
                   </div>
                 ) : (
                   <div className="aspect-video bg-gradient-to-br from-gold/10 to-black flex items-center justify-center">

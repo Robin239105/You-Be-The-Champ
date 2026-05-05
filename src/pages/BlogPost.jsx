@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import { Loader2 } from 'lucide-react';
 import api from '../utils/api';
+import { optimizeImage } from '../utils/imageOptimizer';
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -61,7 +62,12 @@ const BlogPost = () => {
 
             {post.coverImage && (
               <div className="mb-16 border border-gold/10 overflow-hidden">
-                <img src={post.coverImage} alt={post.title} className="w-full object-cover max-h-[500px]" />
+                <img 
+                  src={optimizeImage(post.coverImage, { w: 1200 })} 
+                  alt={post.title} 
+                  className="w-full object-cover max-h-[500px]" 
+                  fetchpriority="high"
+                />
               </div>
             )}
 
