@@ -29,7 +29,7 @@ const SLIDES = [
     cta2: "Browse All Dodgers Rings",
     cta2Link: "/category/Teams%20%3E%20Los%20Angeles%20Dodgers%20(MLB)",
     sport: "MLB",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8099.png",
+    ringImage: "/Slider 1.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -45,7 +45,7 @@ const SLIDES = [
     cta2: "Browse All Seahawks Rings",
     cta2Link: "/category/Teams%20%3E%20Seattle%20Seahawks%20(NFL)",
     sport: "NFL",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6942.png",
+    ringImage: "/Slider 2.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -61,7 +61,7 @@ const SLIDES = [
     cta2: "Browse All Thunder Rings",
     cta2Link: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
     sport: "NBA",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6593.png",
+    ringImage: "/Slider 3.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -77,7 +77,7 @@ const SLIDES = [
     cta2: "Browse All Panthers Rings",
     cta2Link: "/category/Teams%20%3E%20Florida%20Panthers%20(NHL)",
     sport: "NHL",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6392.png",
+    ringImage: "/Slider 4.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -93,7 +93,7 @@ const SLIDES = [
     cta2: "Browse All MJ Rings",
     cta2Link: "/category/All%20Time%20Greats%20%3E%20Michael%20Jordan%20(NBA)",
     sport: "NBA",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6404.png",
+    ringImage: "/Slider 5.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -109,7 +109,7 @@ const SLIDES = [
     cta2: "Collector Sets",
     cta2Link: "/category/Complete%20Team%20Sets%20-%20All%20Teams%20-%20NFL",
     sport: "ALL",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7840.png",
+    ringImage: "/Slider 6.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -162,7 +162,8 @@ const Home = () => {
   useEffect(() => {
     const nextIdx = (currentSlide + 1) % SLIDES.length;
     const img = new Image();
-    img.src = optimizeImage(SLIDES[nextIdx].ringImage, { w: 1200, q: 85, fit: 'contain' });
+    const nextImage = SLIDES[nextIdx].ringImage;
+    img.src = nextImage.startsWith('http') ? optimizeImage(nextImage, { w: 1200, q: 85, fit: 'contain' }) : nextImage;
   }, [currentSlide]);
 
   useEffect(() => {
@@ -228,13 +229,13 @@ const Home = () => {
               className="absolute right-0 top-0 bottom-0 w-[52%] flex items-center justify-center"
             >
               <motion.img
-                src={optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' })}
+                src={slide.ringImage.startsWith('http') ? optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' }) : slide.ringImage}
                 alt={`${slide.headline} ${slide.sub} Championship Ring`}
                 animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-                className="w-full object-contain"
+                className="w-full h-full object-contain"
                 style={{
-                  maxHeight: '65vh',
+                  maxHeight: '70vh',
                   filter: `drop-shadow(0 40px 100px ${slide.glowColor}) drop-shadow(0 0 60px rgba(201,168,76,0.35)) drop-shadow(0 8px 30px rgba(0,0,0,1))`,
                 }}
                 fetchpriority={currentSlide === 0 ? "high" : "auto"}
