@@ -4,6 +4,7 @@ const path = require('path');
 const bcrypt = require('bcryptjs');
 
 const app = express();
+app.set('trust proxy', 1);
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 

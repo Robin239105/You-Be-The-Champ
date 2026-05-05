@@ -3,6 +3,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 
 const app = express();
+app.set('trust proxy', 1);
 
 const prisma = require('../utils/prisma');
 
