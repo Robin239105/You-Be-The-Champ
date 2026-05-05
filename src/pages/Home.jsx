@@ -222,29 +222,29 @@ const Home = () => {
             transition={{ duration: 0.7 }}
           >
             {/* Gold radial glow behind ring */}
-            <div className="absolute right-0 top-0 bottom-0 w-[55%]"
-              style={{ background: `radial-gradient(ellipse 70% 70% at 65% 50%, ${slide.glowColor} 0%, transparent 70%)` }} />
-            {/* Ring image — pinned right, fills half viewport */}
+            <div className="absolute right-0 top-24 bottom-0 w-[55%]"
+              style={{ background: `radial-gradient(ellipse 80% 80% at 70% 55%, ${slide.glowColor} 0%, transparent 75%)` }} />
+            {/* Ring image — centered right, with top padding for header */}
             <motion.div
-              className="absolute right-0 top-0 bottom-0 w-[52%] flex items-center justify-center"
+              className="absolute right-[2%] top-20 bottom-0 w-[50%] flex items-center justify-center py-8"
             >
               <motion.img
                 src={slide.ringImage.startsWith('http') ? optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' }) : slide.ringImage}
                 alt={`${slide.headline} ${slide.sub} Championship Ring`}
-                animate={{ y: [0, -20, 0] }}
+                animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-                className="w-full h-full object-contain"
+                className="w-full h-auto object-contain max-w-full"
                 style={{
-                  maxHeight: '70vh',
-                  filter: `drop-shadow(0 40px 100px ${slide.glowColor}) drop-shadow(0 0 60px rgba(201,168,76,0.35)) drop-shadow(0 8px 30px rgba(0,0,0,1))`,
+                  maxHeight: 'calc(100vh - 160px)',
+                  filter: `drop-shadow(0 30px 80px ${slide.glowColor}) drop-shadow(0 0 50px rgba(201,168,76,0.3)) drop-shadow(0 6px 25px rgba(0,0,0,0.8))`,
                 }}
                 fetchpriority={currentSlide === 0 ? "high" : "auto"}
                 loading={currentSlide === 0 ? "eager" : "lazy"}
                 decoding="async"
               />
             </motion.div>
-            {/* Gradient mask — left edge of ring area fades to black so text panel is clean */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, black 38%, rgba(0,0,0,0.7) 52%, transparent 70%)' }} />
+            {/* Gradient mask — smoother blend from black to image area */}
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, black 35%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.4) 55%, transparent 65%)' }} />
           </motion.div>
         </AnimatePresence>
 
