@@ -11,6 +11,7 @@ import StatsBanner from '../components/StatsBanner';
 import NewsletterSection from '../components/NewsletterSection';
 import api from '../utils/api';
 import { optimizeImage } from '../utils/imageOptimizer';
+import { productsData } from '../data/productsData';
 
 const GOLD = '#C9A84C';
 const GOLD_GLOW = 'rgba(201,168,76,0.22)';
@@ -150,9 +151,13 @@ const Home = () => {
 
 
   useEffect(() => {
-    api.get('/products?limit=9&isActive=true').then(res => {
-      if (res.data.success) setProducts(res.data.data.slice(0, 9));
-    }).catch(() => {});
+    // Randomize 6 items from the 523 products on every page load
+    if (productsData && productsData.length > 0) {
+      const shuffled = [...productsData].sort(() => 0.5 - Math.random());
+      setProducts(shuffled.slice(0, 6));
+    }
+
+    // Fetch blog posts separately
     api.get('/blog?published=true&limit=3').then(res => {
       if (res.data.success) setBlogPosts(res.data.data);
     }).catch(() => {});
@@ -439,7 +444,7 @@ const Home = () => {
       <section className="py-24 px-8 max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <span className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-3">Latest Updates</span>
-          <h2 className="text-4xl font-black font-cinzel tracking-widest text-white uppercase">News & Blog</h2>
+          <h2 className="text-4xl font-black font-cinzel tracking-widest text-white uppercase">Locker Room Latest</h2>
           <div className="w-20 h-[2px] bg-gold mx-auto mt-5" />
         </div>
         {blogPosts.length > 0 ? (

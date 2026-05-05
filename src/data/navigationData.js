@@ -115,7 +115,7 @@ export const navigationData = [
 
   // 4. COLLECTIONS — Groups: Complete Team Sets + I Want Them All
   {
-    label: "Collections",
+    label: "Complete Sets",
     slug: "collections",
     path: "/collections",
     layout: "collections-panel",
@@ -216,7 +216,7 @@ export const navigationData = [
 
   // 9. NEWS & BLOG — direct link
   {
-    label: "News & Blog",
+    label: "Locker Room",
     slug: "blog",
     path: "/blog",
     layout: "direct",

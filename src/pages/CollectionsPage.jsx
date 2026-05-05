@@ -54,7 +54,7 @@ const CollectionsPage = () => (
     <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
       <div className="mb-14">
         <span className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-3">Browse</span>
-        <h1 className="text-5xl font-black font-cinzel text-white uppercase tracking-widest mb-2">Collections</h1>
+        <h1 className="text-5xl font-black font-cinzel text-white uppercase tracking-widest mb-2">Full collection of championship rings</h1>
         <div className="w-20 h-[2px] bg-gold mt-5" />
       </div>
 

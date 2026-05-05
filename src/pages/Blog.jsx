@@ -26,10 +26,10 @@ const Blog = () => {
       <Header />
       
       <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
-        <Breadcrumb items={[{ name: 'The Locker Room', path: '/blog' }]} />
+        <Breadcrumb items={[{ name: 'Locker Room', path: '/blog' }]} />
         
         <div className="mb-20">
-          <h1 className="text-4xl md:text-6xl font-black font-cinzel text-gold tracking-widest uppercase mb-4">The Locker Room</h1>
+          <h1 className="text-4xl md:text-6xl font-black font-cinzel text-gold tracking-widest uppercase mb-4">Locker Room</h1>
           <p className="text-ivory/40 font-raleway uppercase tracking-[2px] text-xs">Stories, History & News from the World of Champions</p>
         </div>
 

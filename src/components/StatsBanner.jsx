@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const StatsBanner = () => {
   const stats = [
-    { value: '50,000+', label: 'Happy Customers' },
-    { value: '200+', label: 'Ring Styles' },
-    { value: '6', label: 'Major Sports' },
-    { value: '30+', label: 'Years Covered' },
+    { value: '1,200+', label: 'Happy Customers' },
+    { value: '500+', label: 'Championship Rings' },
+    { value: '4', label: 'Pro sports leagues' },
+    { value: '120+', label: 'Years of sporting history' },
   ];
 
   return (

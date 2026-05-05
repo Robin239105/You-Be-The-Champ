@@ -41,17 +41,17 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'translate-y-[-40px]' : 'translate-y-0'}`}>
       {/* Top Banner */}
-      <div className="bg-gold text-black text-[10px] sm:text-xs font-cinzel font-bold py-1 px-4 text-center tracking-[2px]">
-        FREE SHIPPING ON ORDERS $150+
+      <div className="bg-gold text-black text-[10px] sm:text-[11px] font-cinzel font-bold py-3 px-4 text-center tracking-[2px] uppercase shadow-[0_2px_10px_rgba(201,168,76,0.2)]">
+        Limited time only; free shipping on every order
       </div>
 
       {/* Main Nav */}
-      <nav className={`relative w-full px-6 sm:px-12 py-4 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${
+      <nav className={`relative w-full px-6 sm:px-12 grid grid-cols-[auto_1fr_auto] items-center gap-4 transition-all duration-500 ${
         isScrolled
-          ? 'bg-black/98 backdrop-blur-xl border-b border-gold/35 shadow-[0_4px_40px_rgba(0,0,0,0.9)]'
-          : 'bg-black/80 backdrop-blur-lg border-b border-gold/20'
+          ? 'bg-black/95 backdrop-blur-xl border-b border-gold/35 shadow-[0_4px_40px_rgba(0,0,0,0.9)] py-2'
+          : 'bg-black/80 backdrop-blur-lg border-b border-gold/20 py-6'
       }`}>
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden">
