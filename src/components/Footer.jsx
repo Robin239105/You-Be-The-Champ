@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Globe, Share2, Video, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Send, Video } from 'lucide-react';
 
 const SocialIcon = ({ Icon }) => (
   <a href="#" className="w-10 h-10 border border-gold/20 flex items-center justify-center text-gold/50 hover:text-gold hover:border-gold transition-all">
@@ -35,24 +35,10 @@ const Footer = () => {
             Handcrafting the largest collection of championship replica rings in the world. Wear the glory of your favorite legends.
           </p>
           <div className="flex gap-3">
-            <SocialIcon Icon={Globe} />
-            <SocialIcon Icon={Share2} />
+            <SocialIcon Icon={Facebook} />
+            <SocialIcon Icon={Instagram} />
+            <SocialIcon Icon={Send} />
             <SocialIcon Icon={Video} />
-            <SocialIcon Icon={MessageCircle} />
-          </div>
-          <div className="space-y-3 text-xs font-raleway uppercase tracking-wider">
-            <div className="flex items-center gap-3 text-ivory/50">
-              <Mail size={13} className="text-gold flex-shrink-0" />
-              <span>support@youbethechamp.com</span>
-            </div>
-            <div className="flex items-center gap-3 text-ivory/50">
-              <Phone size={13} className="text-gold flex-shrink-0" />
-              <span>+1 (555) CHAMP-01</span>
-            </div>
-            <div className="flex items-center gap-3 text-ivory/50">
-              <MapPin size={13} className="text-gold flex-shrink-0" />
-              <span>Los Angeles, CA</span>
-            </div>
           </div>
         </div>
 
