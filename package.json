@@ -5,7 +5,7 @@
   "scripts": {
 
     "dev": "vite",
-    "build": "prisma generate && vite build",
+    "build": "echo 'Generating Prisma Client...' && prisma generate && echo 'Starting Vite Build...' && vite build",
     "postinstall": "prisma generate",
 
     "lint": "eslint .",
