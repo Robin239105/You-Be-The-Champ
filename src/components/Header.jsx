@@ -72,7 +72,6 @@ const Header = () => {
                 alt="You Be The Champ Logo" 
                 className="w-full h-full object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-gold/10 to-transparent pointer-events-none" />
             </div>
           </Link>
         </div>
