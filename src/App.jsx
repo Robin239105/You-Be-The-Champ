@@ -62,7 +62,6 @@ function App() {
     <>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          {/* ... existing routes ... */}
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/admin/login" element={<AdminLogin />} />
