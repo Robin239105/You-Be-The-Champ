@@ -126,7 +126,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
-      <SalesPopup products={productsData} />
+      {!location.pathname.startsWith('/admin') && <SalesPopup products={productsData} />}
     </>
   );
 }
