@@ -107,10 +107,6 @@ const Home = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [products, setProducts] = useState([]);
   const [blogPosts, setBlogPosts] = useState([]);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const ringX = useTransform(mouseX, [0, window.innerWidth], [-18, 18]);
-  const ringY = useTransform(mouseY, [0, window.innerHeight], [-12, 12]);
   const heroRef = useRef(null);
 
   const goTo = useCallback((idx) => {
@@ -143,10 +139,7 @@ const Home = () => {
     return () => window.removeEventListener('keydown', onKey);
   }, [nextSlide, prevSlide]);
 
-  const handleMouseMove = useCallback((e) => {
-    mouseX.set(e.clientX);
-    mouseY.set(e.clientY);
-  }, [mouseX, mouseY]);
+
 
   useEffect(() => {
     api.get('/products?limit=9&isActive=true').then(res => {
@@ -165,11 +158,6 @@ const Home = () => {
     exit: (dir) => ({ opacity: 0, x: dir > 0 ? -60 : 60 }),
   };
 
-  const ringVariants = {
-    enter: (dir) => ({ opacity: 0, scale: 0.82, rotate: dir > 0 ? 12 : -12, y: 30 }),
-    center: { opacity: 1, scale: 1, rotate: 0, y: 0 },
-    exit: (dir) => ({ opacity: 0, scale: 0.88, rotate: dir > 0 ? -8 : 8, y: -20 }),
-  };
 
   return (
     <div className="bg-black min-h-screen text-ivory selection:bg-gold selection:text-black">
@@ -178,7 +166,6 @@ const Home = () => {
       {/* ── SECTION 1: HERO SLIDER ── */}
       <section
         ref={heroRef}
-        onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         className="relative w-full bg-black overflow-hidden select-none"
@@ -199,7 +186,6 @@ const Home = () => {
               style={{ background: `radial-gradient(ellipse 70% 70% at 65% 50%, ${slide.glowColor} 0%, transparent 70%)` }} />
             {/* Ring image — pinned right, fills half viewport */}
             <motion.div
-              style={{ x: ringX, y: ringY }}
               className="absolute right-0 top-0 bottom-0 w-[52%] flex items-center justify-center"
             >
               <motion.img
@@ -494,17 +480,20 @@ const Home = () => {
       {/* ── PRE-FOOTER: VALUE PROPS ── */}
       <section className="border-t border-gold/10 bg-white/[0.015]">
         <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {VALUE_PROPS.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="flex flex-col items-center text-center gap-5">
-              <div className="w-16 h-16 border border-gold/20 flex items-center justify-center group hover:border-gold transition-all hover:shadow-[0_0_16px_rgba(201,168,76,0.2)]">
-                <Icon size={26} className="text-gold" />
+          {VALUE_PROPS.map(({ icon, title, desc }) => {
+            const IconComponent = icon;
+            return (
+              <div key={title} className="flex flex-col items-center text-center gap-5">
+                <div className="w-16 h-16 border border-gold/20 flex items-center justify-center group hover:border-gold transition-all hover:shadow-[0_0_16px_rgba(201,168,76,0.2)]">
+                  <IconComponent size={26} className="text-gold" />
+                </div>
+                <div>
+                  <h4 className="font-cinzel text-white font-black text-sm uppercase tracking-[2px] mb-2">{title}</h4>
+                  <p className="text-white/50 font-raleway text-xs leading-relaxed">{desc}</p>
+                </div>
               </div>
-              <div>
-                <h4 className="font-cinzel text-white font-black text-sm uppercase tracking-[2px] mb-2">{title}</h4>
-                <p className="text-white/50 font-raleway text-xs leading-relaxed">{desc}</p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 

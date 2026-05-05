@@ -34,19 +34,29 @@ enum CouponType {
   FLAT
 }
 
+enum CommissionStatus {
+  PENDING
+  APPROVED
+  PAID
+}
+
 model User {
-  id            String    @id @default(uuid())
-  email         String    @unique
-  password      String
-  firstName     String?
-  lastName      String?
-  role          Role      @default(CUSTOMER)
-  isBanned      Boolean   @default(false)
-  refreshToken  String?   
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-  orders        Order[]
-  addresses     Address[]
+  id              String    @id @default(uuid())
+  email           String    @unique
+  password        String
+  firstName       String?
+  lastName        String?
+  role            Role      @default(CUSTOMER)
+  isBanned        Boolean   @default(false)
+  refreshToken    String?
+  affiliateCode   String?   @unique
+  affiliateClicks Int       @default(0)
+  referredBy      String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  orders          Order[]
+  addresses       Address[]
+  commissions     AffiliateCommission[] @relation("AffiliateUser")
 }
 
 model Address {
@@ -91,6 +101,7 @@ model Category {
   name        String
   slug        String    @unique
   description String?   @default("")
+  image       String?
   products    Product[] @relation("ProductCategories")
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
@@ -136,9 +147,11 @@ model Order {
   discountAmount  Decimal?
   trackingNumber  String?
   notes           String?
+  affiliateCode   String?
   createdAt       DateTime    @default(now())
   updatedAt       DateTime    @updatedAt
   orderItems      OrderItem[]
+  commission      AffiliateCommission?
 }
 
 model OrderItem {
@@ -169,6 +182,19 @@ model Setting {
   id    String @id @default(uuid())
   key   String @unique
   value Json
+}
+
+model AffiliateCommission {
+  id           String           @id @default(uuid())
+  affiliate    User             @relation("AffiliateUser", fields: [affiliateId], references: [id])
+  affiliateId  String
+  order        Order            @relation(fields: [orderId], references: [id])
+  orderId      String           @unique
+  orderAmount  Decimal
+  commission   Decimal
+  status       CommissionStatus @default(PENDING)
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
 }
 
 model BlogPost {

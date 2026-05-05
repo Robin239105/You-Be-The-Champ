@@ -98,13 +98,13 @@ const getCategories = async (req, res) => {
 };
 
 const createCategory = async (req, res) => {
-  const { name, description } = req.body;
+  const { name, description, image } = req.body;
   const slug = slugify(name, { lower: true, strict: true });
 
   try {
-    const category = await prisma.category.create({
-      data: { name, slug, description: description || '' }
-    });
+    const data = { name, slug, description: description || '' };
+    if (image !== undefined) data.image = image || null;
+    const category = await prisma.category.create({ data });
     res.status(201).json({ success: true, data: category });
   } catch (error) {
     if (error.code === 'P2002') {
@@ -115,12 +115,13 @@ const createCategory = async (req, res) => {
 };
 
 const updateCategory = async (req, res) => {
-  const { name, description } = req.body;
+  const { name, description, image } = req.body;
   const slug = slugify(name, { lower: true, strict: true });
 
   try {
     const updateData = { name, slug };
     if (description !== undefined) updateData.description = description;
+    if (image !== undefined) updateData.image = image || null;
     const category = await prisma.category.update({
       where: { id: req.params.id },
       data: updateData

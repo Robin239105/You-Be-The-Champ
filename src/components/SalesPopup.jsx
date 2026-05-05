@@ -25,11 +25,11 @@ const SalesPopup = ({ products = [] }) => {
     // Initial delay before first popup
     const initialDelay = setTimeout(() => {
       showRandomPopup();
-    }, 10000); // 10 seconds after load
+    }, 5000); // 5 seconds after load
 
     const interval = setInterval(() => {
       showRandomPopup();
-    }, 35000); // Every 35 seconds (30s gap + 5s display)
+    }, 30000); // Every 30 seconds (including 6s display time)
 
     return () => {
       clearTimeout(initialDelay);

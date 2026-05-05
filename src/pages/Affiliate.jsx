@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { useAuthStore } from '../store/useAuthStore';
+import api from '../utils/api';
 import { Share2, DollarSign, Users, Award, ExternalLink, Copy, Check } from 'lucide-react';
 
 const Affiliate = () => {
   const { user, isAuthenticated } = useAuthStore();
   const [copied, setCopied] = React.useState(false);
+  const location = useLocation();
 
-  const affiliateLink = user ? `https://youbethechamp.com/?ref=${user.affiliateId || 'CHAMP10'}` : 'https://youbethechamp.com/?ref=CHAMP10';
+  const affiliateLink = user?.affiliateCode
+    ? `https://youbethechamp.com/?ref=${user.affiliateCode}`
+    : isAuthenticated ? 'Loading...' : 'https://youbethechamp.com/?ref=CHAMP10';
+
+  // Track incoming referral click and store code
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const ref = params.get('ref');
+    if (ref) {
+      localStorage.setItem('affiliateRef', ref);
+      api.post('/affiliate/click', { code: ref }).catch(() => {});
+    }
+  }, [location.search]);
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(affiliateLink);

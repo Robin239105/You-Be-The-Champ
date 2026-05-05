@@ -1,6 +1,13 @@
 const prisma = require('../utils/prisma');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
+
+function generateAffiliateCode(firstName) {
+  const prefix = (firstName || 'USER').substring(0, 4).toUpperCase().replace(/[^A-Z]/g, 'X').padEnd(4, 'X');
+  const suffix = crypto.randomBytes(2).toString('hex').toUpperCase();
+  return `${prefix}-${suffix}`;
+}
 
 const generateTokens = (user) => {
   if (!process.env.JWT_SECRET || !process.env.JWT_REFRESH_SECRET) {
@@ -34,12 +41,20 @@ const register = async (req, res) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
+    let affiliateCode = generateAffiliateCode(firstName);
+    // Ensure uniqueness
+    let existing = await prisma.user.findUnique({ where: { affiliateCode } });
+    while (existing) {
+      affiliateCode = generateAffiliateCode(firstName);
+      existing = await prisma.user.findUnique({ where: { affiliateCode } });
+    }
     const user = await prisma.user.create({
       data: {
         email,
         password: hashedPassword,
         firstName,
         lastName,
+        affiliateCode,
       },
     });
 
@@ -57,6 +72,10 @@ const register = async (req, res) => {
         id: user.id,
         email: user.email,
         role: user.role,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        affiliateCode: user.affiliateCode,
+        affiliateClicks: user.affiliateClicks,
         accessToken,
         refreshToken
       },
@@ -85,6 +104,10 @@ const login = async (req, res) => {
           id: user.id,
           email: user.email,
           role: user.role,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          affiliateCode: user.affiliateCode,
+          affiliateClicks: user.affiliateClicks,
           accessToken,
           refreshToken
         },

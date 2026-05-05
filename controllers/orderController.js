@@ -1,7 +1,9 @@
 const prisma = require('../utils/prisma');
 
+const COMMISSION_RATE = 0.15;
+
 const createOrder = async (req, res) => {
-  const { cartItems, totalAmount, shippingAddress, paymentMethod, couponCode } = req.body;
+  const { cartItems, totalAmount, shippingAddress, paymentMethod, couponCode, affiliateCode } = req.body;
 
   try {
     const order = await prisma.order.create({
@@ -11,6 +13,7 @@ const createOrder = async (req, res) => {
         shippingAddress,
         paymentMethod,
         couponCode,
+        affiliateCode: affiliateCode || null,
         orderItems: {
           create: cartItems.map(item => ({
             productId: item.id,
@@ -27,6 +30,28 @@ const createOrder = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+async function maybeCreateCommission(order) {
+  try {
+    if (!order.affiliateCode) return;
+    const existing = await prisma.affiliateCommission.findUnique({ where: { orderId: order.id } });
+    if (existing) return;
+    const affiliate = await prisma.user.findUnique({ where: { affiliateCode: order.affiliateCode } });
+    if (!affiliate || affiliate.id === order.userId) return;
+    const commission = parseFloat(order.totalAmount) * COMMISSION_RATE;
+    await prisma.affiliateCommission.create({
+      data: {
+        affiliateId: affiliate.id,
+        orderId: order.id,
+        orderAmount: parseFloat(order.totalAmount),
+        commission,
+        status: 'PENDING',
+      },
+    });
+  } catch (err) {
+    console.error('Commission creation error:', err.message);
+  }
+}
 
 const getMyOrders = async (req, res) => {
   try {
@@ -89,6 +114,12 @@ const updateOrderStatus = async (req, res) => {
       data,
       include: { orderItems: { include: { product: true } }, user: true }
     });
+
+    // Create commission when order is confirmed/paid
+    if (['CONFIRMED', 'PROCESSING', 'SHIPPED', 'DELIVERED'].includes(status)) {
+      await maybeCreateCommission(order);
+    }
+
     res.json({ success: true, data: order });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });

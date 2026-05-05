@@ -230,15 +230,18 @@ const Checkout = () => {
                         onClick={async () => {
                           setIsLoading(true);
                           try {
+                            const storedRef = localStorage.getItem('affiliateRef');
                             const response = await api.post('/orders', {
                               cartItems: items.map(i => ({ id: i.id, quantity: i.quantity, price: Number(i.price) })),
                               totalAmount: finalTotal,
                               shippingAddress: `${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}`,
-                              paymentMethod: 'Credit Card (Mock)'
+                              paymentMethod: 'Credit Card (Mock)',
+                              affiliateCode: storedRef || null,
                             });
                             
                             if (response.data.success) {
                               clearCart();
+                              localStorage.removeItem('affiliateRef');
                               navigate('/order-confirmation', { 
                                 state: { 
                                   formData, 

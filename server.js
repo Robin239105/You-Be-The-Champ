@@ -1,8 +1,11 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const bcrypt = require('bcryptjs');
 
 const app = express();
+
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const prisma = require('./utils/prisma');
 
@@ -21,6 +24,8 @@ const couponRoutes = require('./routes/couponRoutes');
 const settingRoutes = require('./routes/settingRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
+const affiliateRoutes = require('./routes/affiliateRoutes');
+const uploadRoutes = require('./routes/uploadRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
@@ -30,6 +35,8 @@ app.use('/api/coupons', couponRoutes);
 app.use('/api/settings', settingRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/affiliate', affiliateRoutes);
+app.use('/api/upload', uploadRoutes);
 
 // 4. Error Handler
 app.use((err, req, res, next) => {

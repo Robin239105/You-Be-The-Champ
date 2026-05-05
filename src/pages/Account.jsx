@@ -16,6 +16,7 @@ const Account = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('orders');
   const [copied, setCopied] = useState(false);
+  const [affiliateStats, setAffiliateStats] = useState(null);
 
   useEffect(() => {
     if (!isAuthenticated) {
@@ -37,6 +38,17 @@ const Account = () => {
       }
     };
     fetchOrders();
+
+    const fetchAffiliateStats = async () => {
+      try {
+        const res = await api.get('/affiliate/me');
+        if (mounted && res.data.success) setAffiliateStats(res.data.data);
+      } catch (err) {
+        console.error('Affiliate stats error:', err);
+      }
+    };
+    fetchAffiliateStats();
+
     return () => { mounted = false; };
   }, [isAuthenticated, navigate]);
 
@@ -45,7 +57,11 @@ const Account = () => {
     navigate('/');
   };
 
-  const affiliateLink = `https://youbethechamp.com/?ref=${user?.affiliateId || 'CHAMP10'}`;
+  const affiliateLink = affiliateStats?.affiliateCode
+    ? `https://youbethechamp.com/?ref=${affiliateStats.affiliateCode}`
+    : user?.affiliateCode
+      ? `https://youbethechamp.com/?ref=${user.affiliateCode}`
+      : 'Loading...';
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(affiliateLink);
@@ -152,10 +168,11 @@ const Account = () => {
 
                {activeTab === 'affiliate' && (
                  <div className="space-y-10">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                       <StatCard icon={DollarSign} label="Total Earned" value="$0.00" />
-                       <StatCard icon={Users} label="Referrals" value="0" />
-                       <StatCard icon={MousePointer2} label="Total Clicks" value="0" />
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                       <StatCard icon={DollarSign} label="Total Earned" value={`$${affiliateStats?.totalEarned || '0.00'}`} />
+                       <StatCard icon={DollarSign} label="Pending" value={`$${affiliateStats?.pendingAmount || '0.00'}`} />
+                       <StatCard icon={Users} label="Referrals" value={affiliateStats?.referralCount ?? 0} />
+                       <StatCard icon={MousePointer2} label="Total Clicks" value={affiliateStats?.affiliateClicks ?? 0} />
                     </div>
 
                     <div className="bg-surface border border-gold/20 p-8">
@@ -173,6 +190,44 @@ const Account = () => {
                           </button>
                        </div>
                     </div>
+
+                    {affiliateStats?.commissions?.length > 0 && (
+                      <div className="bg-surface border border-gold/10 overflow-hidden">
+                        <div className="px-8 py-5 border-b border-gold/10">
+                          <h4 className="font-cinzel text-xs font-bold text-gold uppercase tracking-widest">Commission History</h4>
+                        </div>
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-left">
+                            <thead>
+                              <tr className="bg-black/40 border-b border-gold/10">
+                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-gold font-cinzel">Date</th>
+                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-gold font-cinzel">Order</th>
+                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-gold font-cinzel">Sale</th>
+                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-gold font-cinzel">Commission</th>
+                                <th className="px-6 py-4 text-[10px] uppercase tracking-widest text-gold font-cinzel">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gold/5">
+                              {affiliateStats.commissions.map(c => (
+                                <tr key={c.id} className="hover:bg-gold/[0.02]">
+                                  <td className="px-6 py-4 text-[10px] text-ivory/60 font-raleway">{new Date(c.createdAt).toLocaleDateString()}</td>
+                                  <td className="px-6 py-4"><code className="text-[10px] text-gold/60">{c.orderId.slice(0,8)}...</code></td>
+                                  <td className="px-6 py-4 text-[10px] text-ivory font-mono">${c.orderAmount}</td>
+                                  <td className="px-6 py-4 text-[10px] text-gold font-mono font-bold">${c.commission}</td>
+                                  <td className="px-6 py-4">
+                                    <span className={`text-[9px] px-2 py-1 font-cinzel uppercase tracking-widest border ${
+                                      c.status === 'PAID' ? 'border-emerald-500/40 text-emerald-400 bg-emerald-900/20' :
+                                      c.status === 'APPROVED' ? 'border-gold/40 text-gold bg-gold/10' :
+                                      'border-ivory/20 text-ivory/50 bg-white/[0.03]'
+                                    }`}>{c.status}</span>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    )}
                  </div>
                )}
 
