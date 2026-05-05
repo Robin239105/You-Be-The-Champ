@@ -53,6 +53,7 @@ import AdminBlogList from './pages/admin/AdminBlogList';
 import AdminAffiliateList from './pages/admin/AdminAffiliateList';
 
 import SalesPopup from './components/SalesPopup';
+import ScrollToTop from './components/ScrollToTop';
 import { productsData } from './data/productsData';
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
