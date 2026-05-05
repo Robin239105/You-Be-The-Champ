@@ -50,76 +50,85 @@ import AdminUserList from './pages/admin/AdminUserList';
 import AdminCouponList from './pages/admin/AdminCouponList';
 import AdminCategoryList from './pages/admin/AdminCategoryList';
 import AdminBlogList from './pages/admin/AdminBlogList';
+import AdminAffiliateList from './pages/admin/AdminAffiliateList';
+
+import SalesPopup from './components/SalesPopup';
+import { productsData } from './data/productsData';
 
 function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/admin/login" element={<AdminLogin />} />
-        
-        <Route path="/category/*" element={<CategoryPage />} />
-        
-        <Route path="/player-editions" element={<PlayerEditions />} />
-        <Route path="/champions-by-year" element={<ChampionsByYear />} />
-        <Route path="/championship-finals" element={<ChampionshipFinalsPage />} />
-        <Route path="/teams" element={<TeamsPage />} />
-        <Route path="/cities" element={<CitiesPage />} />
-        <Route path="/your-year-gift" element={<YourYearGift />} />
-        <Route path="/i-want-them-all" element={<IWantThemAll />} />
-        <Route path="/collections" element={<CollectionsPage />} />
-        <Route path="/all-time-greats" element={<AllTimeGreatsPage />} />
-        <Route path="/league" element={<LeaguePage />} />
-        <Route path="/league/:league" element={<LeagueStandingsPage />} />
-        <Route path="/vintage-90s" element={<Vintage90s />} />
-        <Route path="/affiliate" element={<Affiliate />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/order-confirmation" element={<OrderConfirmation />} />
-        
-        <Route path="/account/login" element={<Login />} />
-        <Route path="/account/register" element={<Register />} />
-        <Route path="/account" element={<Account />} />
-        
-        <Route path="/search" element={<Search />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/size-guide" element={<SizeGuide />} />
-        
-        {/* Admin Routes */}
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route index element={<AdminDashboard />} />
-          <Route path="products" element={<AdminProductList />} />
-          <Route path="products/new" element={<AdminProductForm />} />
-          <Route path="products/edit/:id" element={<AdminProductForm isEdit />} />
-          <Route path="categories" element={<AdminCategoryList />} />
-          <Route path="orders" element={<AdminOrderList />} />
-          <Route path="users" element={<AdminUserList />} />
-          <Route path="coupons" element={<AdminCouponList />} />
-          <Route path="settings" element={<AdminSettings />} />
-          <Route path="blog" element={<AdminBlogList />} />
-        </Route>
-        
-        {/* Legal Pages */}
-        <Route path="/shipping-policy" element={<LegalPage title="Shipping Policy" />} />
-        <Route path="/return-policy" element={<LegalPage title="Return Policy" />} />
-        <Route path="/privacy-policy" element={<LegalPage title="Privacy Policy" />} />
-        <Route path="/terms-of-service" element={<LegalPage title="Terms of Service" />} />
-        <Route path="/affiliate-program" element={<LegalPage title="Affiliate Program" />} />
-        <Route path="/authenticity" element={<LegalPage title="Authenticity & Quality" />} />
-        
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </AnimatePresence>
+    <>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          {/* ... existing routes ... */}
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          
+          <Route path="/category/*" element={<CategoryPage />} />
+          
+          <Route path="/player-editions" element={<PlayerEditions />} />
+          <Route path="/champions-by-year" element={<ChampionsByYear />} />
+          <Route path="/championship-finals" element={<ChampionshipFinalsPage />} />
+          <Route path="/teams" element={<TeamsPage />} />
+          <Route path="/cities" element={<CitiesPage />} />
+          <Route path="/your-year-gift" element={<YourYearGift />} />
+          <Route path="/i-want-them-all" element={<IWantThemAll />} />
+          <Route path="/collections" element={<CollectionsPage />} />
+          <Route path="/all-time-greats" element={<AllTimeGreatsPage />} />
+          <Route path="/league" element={<LeaguePage />} />
+          <Route path="/league/:league" element={<LeagueStandingsPage />} />
+          <Route path="/vintage-90s" element={<Vintage90s />} />
+          <Route path="/affiliate" element={<Affiliate />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/order-confirmation" element={<OrderConfirmation />} />
+          
+          <Route path="/account/login" element={<Login />} />
+          <Route path="/account/register" element={<Register />} />
+          <Route path="/account" element={<Account />} />
+          
+          <Route path="/search" element={<Search />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/size-guide" element={<SizeGuide />} />
+          
+          {/* Admin Routes */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<AdminDashboard />} />
+            <Route path="products" element={<AdminProductList />} />
+            <Route path="products/new" element={<AdminProductForm />} />
+            <Route path="products/edit/:id" element={<AdminProductForm isEdit />} />
+            <Route path="categories" element={<AdminCategoryList />} />
+            <Route path="orders" element={<AdminOrderList />} />
+            <Route path="users" element={<AdminUserList />} />
+            <Route path="coupons" element={<AdminCouponList />} />
+            <Route path="settings" element={<AdminSettings />} />
+            <Route path="blog" element={<AdminBlogList />} />
+            <Route path="affiliates" element={<AdminAffiliateList />} />
+          </Route>
+          
+          {/* Legal Pages */}
+          <Route path="/shipping-policy" element={<LegalPage title="Shipping Policy" />} />
+          <Route path="/return-policy" element={<LegalPage title="Return Policy" />} />
+          <Route path="/privacy-policy" element={<LegalPage title="Privacy Policy" />} />
+          <Route path="/terms-of-service" element={<LegalPage title="Terms of Service" />} />
+          <Route path="/affiliate-program" element={<LegalPage title="Affiliate Program" />} />
+          <Route path="/authenticity" element={<LegalPage title="Authenticity & Quality" />} />
+          
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AnimatePresence>
+      <SalesPopup products={productsData} />
+    </>
   );
 }
 
