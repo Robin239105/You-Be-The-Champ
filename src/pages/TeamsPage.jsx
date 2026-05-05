@@ -104,7 +104,7 @@ const TeamsPage = () => {
   return (
     <div className="bg-black min-h-screen">
       <Header />
-      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-32 pb-24">
+      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-40 pb-24">
         <Breadcrumb items={[{ name: 'Teams', path: '/teams' }]} />
 
         <div className="mb-12 text-center py-14 bg-surface border border-gold/10 relative overflow-hidden">
