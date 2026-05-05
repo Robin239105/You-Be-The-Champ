@@ -7,43 +7,21 @@ import { motion } from 'framer-motion';
 
 const GOLD = '#C9A84C';
 
-// Official League Logos (SVG)
+// Official League Logos (PNG Images)
 const NFLLogo = () => (
-  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 8h40l4 24-24 24-24-24 4-24z" fill="#013369" stroke={GOLD} strokeWidth="1.5"/>
-    <ellipse cx="32" cy="30" rx="14" ry="10" fill="none" stroke="white" strokeWidth="1.5"/>
-    <path d="M26 30h12M32 24v12" stroke="white" strokeWidth="1"/>
-    <circle cx="20" cy="20" r="2" fill={GOLD}/>
-    <circle cx="44" cy="20" r="2" fill={GOLD}/>
-    <circle cx="32" cy="48" r="2" fill={GOLD}/>
-  </svg>
+  <img src="/NFL Logo.png" alt="NFL" className="w-14 h-14 object-contain" />
 );
 
 const NBALogo = () => (
-  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="8" y="6" width="48" height="52" rx="4" fill="#C9002B" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M20 20c0 0 8-8 16 0s8 20 0 28-16 0-16-8 0-20 0-20z" fill="white" opacity="0.9"/>
-    <text x="32" y="48" textAnchor="middle" fill="white" fontSize="10" fontFamily="Arial" fontWeight="bold">NBA</text>
-    <path d="M8 30h48" stroke={GOLD} strokeWidth="0.5" opacity="0.5"/>
-  </svg>
+  <img src="/NBA Logo.png" alt="NBA" className="w-14 h-14 object-contain" />
 );
 
 const MLBLogo = () => (
-  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32 4l28 28-28 28-28-28z" fill="#002D72" stroke={GOLD} strokeWidth="1.5"/>
-    <circle cx="32" cy="22" r="6" fill="white"/>
-    <path d="M26 28l-4 20M38 28l4 20" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M32 28v12" stroke="white" strokeWidth="2"/>
-  </svg>
+  <img src="/MLB Logo.png" alt="MLB" className="w-14 h-14 object-contain" />
 );
 
 const NHLLogo = () => (
-  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 6h40l4 26-24 26-24-26 4-26z" fill="#111111" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M16 10l32 44M48 10L16 54" stroke={GOLD} strokeWidth="0.8" opacity="0.3"/>
-    <path d="M32 14v36M18 32h28" stroke={GOLD} strokeWidth="1"/>
-    <text x="32" y="30" textAnchor="middle" fill="white" fontSize="8" fontFamily="Arial" fontWeight="bold">NHL</text>
-  </svg>
+  <img src="/NHL Logo.png" alt="NHL" className="w-14 h-14 object-contain" />
 );
 
 const StarIcon = () => (

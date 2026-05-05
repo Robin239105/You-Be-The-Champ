@@ -4,40 +4,21 @@ import { Link } from 'react-router-dom';
 
 const GOLD = '#C9A84C';
 
-// Official League Logos (SVG)
+// Official League Logos (PNG Images)
 const NFLLogo = () => (
-  <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 10h36l4 22-22 22-22-22 4-22z" fill="#013369" stroke={GOLD} strokeWidth="1.5"/>
-    <ellipse cx="32" cy="28" rx="12" ry="9" fill="none" stroke="white" strokeWidth="1.5"/>
-    <path d="M26 28h12M32 22v12" stroke="white" strokeWidth="1"/>
-    <circle cx="22" cy="18" r="1.5" fill={GOLD}/>
-    <circle cx="42" cy="18" r="1.5" fill={GOLD}/>
-  </svg>
+  <img src="/NFL Logo.png" alt="NFL" className="w-12 h-12 object-contain" />
 );
 
 const NBALogo = () => (
-  <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="10" y="8" width="44" height="48" rx="3" fill="#C9002B" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M20 18c0 0 8-6 16 0s8 16 0 24-16 0-16-6 0-18 0-18z" fill="white" opacity="0.9"/>
-    <text x="32" y="46" textAnchor="middle" fill="white" fontSize="9" fontFamily="Arial" fontWeight="bold">NBA</text>
-  </svg>
+  <img src="/NBA Logo.png" alt="NBA" className="w-12 h-12 object-contain" />
 );
 
 const MLBLogo = () => (
-  <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32 6l24 24-24 24-24-24z" fill="#002D72" stroke={GOLD} strokeWidth="1.5"/>
-    <circle cx="32" cy="20" r="5" fill="white"/>
-    <path d="M26 26l-3 16M38 26l3 16" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
-  </svg>
+  <img src="/MLB Logo.png" alt="MLB" className="w-12 h-12 object-contain" />
 );
 
 const NHLLogo = () => (
-  <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 8h36l4 22-22 22-22-22 4-22z" fill="#111111" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M18 12l28 40M46 12L18 52" stroke={GOLD} strokeWidth="0.8" opacity="0.3"/>
-    <path d="M32 16v32M18 32h28" stroke={GOLD} strokeWidth="1"/>
-    <text x="32" y="30" textAnchor="middle" fill="white" fontSize="7" fontFamily="Arial" fontWeight="bold">NHL</text>
-  </svg>
+  <img src="/NHL Logo.png" alt="NHL" className="w-12 h-12 object-contain" />
 );
 
 const StarIcon = () => (
