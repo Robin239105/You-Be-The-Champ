@@ -333,17 +333,8 @@ const Home = () => {
         >
           <div className="h-full flex items-center px-10 lg:px-16 xl:px-20 gap-0">
 
-            {/* Stats */}
+            {/* Stats removed as requested */}
             <div className="flex items-center gap-8 mr-auto">
-              {[['523', 'Rings'], ['4', 'Leagues'], ['120+', 'Years']].map(([n, l], idx) => (
-                <React.Fragment key={l}>
-                  {idx > 0 && <div className="w-px h-6 bg-gold/15" />}
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-cinzel font-black text-gold text-xl leading-none">{n}</span>
-                    <span className="font-raleway text-[9px] text-white/35 uppercase tracking-[2px]">{l}</span>
-                  </div>
-                </React.Fragment>
-              ))}
             </div>
 
             {/* Slide controls */}
