@@ -19,69 +19,95 @@ const GOLD_GLOW = 'rgba(201,168,76,0.22)';
 const SLIDES = [
   {
     id: 1,
-    tag: "New Arrival · 2024",
-    headline: "Los Angeles",
-    sub: "Dodgers",
+    tag: "MLB · New Arrival 2026",
+    headline: "LOS ANGELES",
+    sub: "DODGERS",
     label: "World Series Ring",
-    description: "The 2024 World Series. LA's finest — a precision-crafted replica for true collectors.",
-    cta: "Shop Dodgers Rings",
-    ctaLink: "/category/Teams%20%3E%20Los%20Angeles%20Dodgers%20(MLB)",
+    description: "A true precision crafted masterpiece. Introducing the brand new 2025 LA Dodgers World Series Championship Ring",
+    cta: "Secure Yours",
+    ctaLink: "/product/187",
+    cta2: "Browse All Dodgers Rings",
+    cta2Link: "/category/Teams%20%3E%20Los%20Angeles%20Dodgers%20(MLB)",
     sport: "MLB",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6752.png",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_8099.png",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
   {
     id: 2,
-    tag: "Just Dropped · 2025",
+    tag: "NFL · Hail the New Champions",
+    headline: "SEATTLE",
+    sub: "SEAHAWKS",
+    label: "Superbowl Champions",
+    description: "From domination to Champions - Seattle Seahawks are Superbowl Champions Again..",
+    cta: "Pre Release Purchase",
+    ctaLink: "/product/150",
+    cta2: "Buy Concept Ring",
+    cta2Link: "/product/150",
+    sport: "NFL",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6942.png",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
+  },
+  {
+    id: 3,
+    tag: "NBA · Just Dropped 2026",
     headline: "OKC",
-    sub: "Thunder",
-    label: "Championship Ring",
-    description: "Oklahoma City's finest hour. Own the ring that crowned a new NBA dynasty.",
-    cta: "Shop OKC Rings",
-    ctaLink: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
+    sub: "THUNDER",
+    label: "NBA Finals Champions",
+    description: "Bring it home to Oklahoma City Shai Gilgeous-Alexander: The NBA 2025 reigning MVP, Finals MVP, and CHAMPION.!",
+    cta: "Grab Yours",
+    ctaLink: "/product/223",
+    cta2: "Browse All NBA Rings",
+    cta2Link: "/category/Championships%2FFinals%20%3E%20NBA%20Finals%20Championship%20Rings",
     sport: "NBA",
     ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6593.png",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
   {
-    id: 3,
-    tag: "Icon Collection",
-    headline: "Michael",
-    sub: "Jordan",
-    label: "6× NBA Champion",
-    description: "Six rings. One legend. The greatest player ever — now immortalised in gold.",
-    cta: "Shop MJ Rings",
-    ctaLink: "/category/All%20Time%20Greats%20%3E%20Michael%20Jordan%20(NBA)",
+    id: 4,
+    tag: "NHL · Back 2 Back",
+    headline: "FLORIDA",
+    sub: "PANTHERS",
+    label: "Stanley Cup Triumph",
+    description: "On the Ice back to back champions in the Florida Heat; the start of a dynasty.",
+    cta: "Secure Both Rings",
+    ctaLink: "/category/Teams%20%3E%20Florida%20Panthers%20(NHL)",
+    cta2: "Stanley Cup Rings",
+    cta2Link: "/category/Championships%2FFinals%20%3E%20NHL%20-%20Stanley%20Cup%20Championship%20Rings",
+    sport: "NHL",
+    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6392.png",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
+  },
+  {
+    id: 5,
+    tag: "NBA · Icon Collection",
+    headline: "MICHAEL",
+    sub: "JORDAN",
+    label: "6 Time NBA Finals Champion",
+    description: "The Undisputed GOAT; Two 3peats, 6 time NBA Finals champ, 6 NBA Finals MVP's, 5 NBA MVP's. Own the Icon collection.",
+    cta: "Grab Yours",
+    ctaLink: "/product/257",
+    cta2: "Browse All MJ Rings",
+    cta2Link: "/category/All%20Time%20Greats%20%3E%20Michael%20Jordan%20(NBA)",
     sport: "NBA",
     ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/03/IMG_6404.png",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
   {
-    id: 4,
-    tag: "Dynasty Series",
-    headline: "New England",
-    sub: "Patriots",
-    label: "6× Super Bowl Champions",
-    description: "The greatest dynasty in NFL history. Six Lombardi Trophies. One legendary ring set.",
-    cta: "Shop Patriots Rings",
-    ctaLink: "/category/Teams%20%3E%20New%20England%20Patriots%20(NFL)",
-    sport: "NFL",
-    ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7834.png",
-    accentColor: GOLD,
-    glowColor: GOLD_GLOW,
-  },
-  {
-    id: 5,
-    tag: "The Vault",
-    headline: "523",
-    sub: "Championships",
+    id: 6,
+    tag: "Shop All · Global Collection",
+    headline: "YOU BE",
+    sub: "THE CHAMP",
     label: "One Collection",
     description: "Every ring. Every legend. Every sport. The world's largest championship ring catalog.",
     cta: "Shop All Rings",
     ctaLink: "/shop",
+    cta2: "Collector Sets",
+    cta2Link: "/category/Complete%20Team%20Sets%20-%20All%20Teams%20-%20NFL%5C",
     sport: "ALL",
     ringImage: "https://youbethechamp.com.au/wp-content/uploads/2026/02/IMG_7840.png",
     accentColor: GOLD,
@@ -208,7 +234,7 @@ const Home = () => {
                 transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
                 className="w-full object-contain"
                 style={{
-                  maxHeight: '80vh',
+                  maxHeight: '65vh',
                   filter: `drop-shadow(0 40px 100px ${slide.glowColor}) drop-shadow(0 0 60px rgba(201,168,76,0.35)) drop-shadow(0 8px 30px rgba(0,0,0,1))`,
                 }}
                 fetchpriority={currentSlide === 0 ? "high" : "auto"}
@@ -313,16 +339,18 @@ const Home = () => {
               className="flex flex-wrap gap-4"
             >
               <Link to={slide.ctaLink}>
-                <span className="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-black font-cinzel text-[11px] font-black uppercase tracking-[3px] px-10 py-4 transition-all group cursor-pointer shadow-[0_0_30px_rgba(201,168,76,0.3)]">
+                <span className="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-black font-cinzel text-[11px] font-black uppercase tracking-[3px] px-8 py-4 transition-all group cursor-pointer shadow-[0_0_30px_rgba(201,168,76,0.3)]">
                   {slide.cta}
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
-              <Link to="/shop">
-                <span className="inline-flex items-center gap-2 border border-white/25 hover:border-gold text-white/50 hover:text-gold font-cinzel text-[11px] uppercase tracking-[3px] px-10 py-4 transition-all cursor-pointer">
-                  Browse All
-                </span>
-              </Link>
+              {slide.cta2 && (
+                <Link to={slide.cta2Link}>
+                  <span className="inline-flex items-center gap-2 border border-white/25 hover:border-gold text-white/50 hover:text-gold font-cinzel text-[11px] uppercase tracking-[3px] px-8 py-4 transition-all cursor-pointer">
+                    {slide.cta2}
+                  </span>
+                </Link>
+              )}
             </motion.div>
           </motion.div>
         </AnimatePresence>
