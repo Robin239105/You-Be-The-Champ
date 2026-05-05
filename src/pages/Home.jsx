@@ -499,27 +499,24 @@ const Home = () => {
       </section>
 
       {/* ── PRE-FOOTER: VALUE PROPS ── */}
-      <section className="border-t border-gold/10 bg-white/[0.015]">
-        <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <section className="border-t border-white/5 bg-[#1a1a1a]">
+        <div className="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {VALUE_PROPS.map(({ icon, title, desc }) => {
             const IconComponent = icon;
             return (
-              <div key={title} className="flex flex-col items-center text-center gap-5">
-                <div className="w-16 h-16 border border-gold/20 flex items-center justify-center group hover:border-gold transition-all hover:shadow-[0_0_16px_rgba(201,168,76,0.2)]">
+              <div key={title} className="flex flex-col items-center text-center gap-6 group">
+                <div className="w-16 h-16 border border-gold/30 flex items-center justify-center bg-black/40 group-hover:border-gold group-hover:bg-black/60 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
                   <IconComponent size={26} className="text-gold" />
                 </div>
-                <div>
-                  <h4 className="font-cinzel text-white font-black text-sm uppercase tracking-[2px] mb-2">{title}</h4>
-                  <p className="text-white/50 font-raleway text-xs leading-relaxed">{desc}</p>
+                <div className="max-w-[240px]">
+                  <h4 className="font-cinzel text-white font-black text-sm uppercase tracking-[3px] mb-3 group-hover:text-gold transition-colors">{title}</h4>
+                  <p className="text-ivory/70 font-raleway text-[13px] leading-relaxed font-medium">{desc}</p>
                 </div>
               </div>
             );
           })}
         </div>
       </section>
-
-      {/* ── NEWSLETTER ── */}
-      <NewsletterSection />
 
       <Footer />
     </div>
