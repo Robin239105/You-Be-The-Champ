@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import { optimizeImage } from '../utils/imageOptimizer';
 
 const CITIES = [
-  'Chicago, IL', 'New York, NY', 'Dallas, TX', 'Los Angeles, CA', 
-  'Miami, FL', 'Boston, MA', 'Philadelphia, PA', 'Phoenix, AZ',
-  'San Francisco, CA', 'Seattle, WA', 'Denver, CO', 'Atlanta, GA',
-  'Toronto, ON', 'Vancouver, BC', 'London, UK', 'Sydney, AU'
+  'Sydney, NSW', 'Melbourne, VIC', 'Brisbane, QLD', 'Perth, WA', 
+  'Adelaide, SA', 'Gold Coast, QLD', 'Canberra, ACT', 'Newcastle, NSW',
+  'Wollongong, NSW', 'Geelong, VIC', 'Hobart, TAS', 'Townsville, QLD',
+  'Cairns, QLD', 'Darwin, NT', 'Toowoomba, QLD', 'Ballarat, VIC'
 ];
 
 const TIMES = [
-  '2 minutes ago', '5 minutes ago', '12 minutes ago', '24 minutes ago', 
+  'Just now', '2 minutes ago', '5 minutes ago', '12 minutes ago', '24 minutes ago', 
   '45 minutes ago', 'an hour ago', '3 hours ago'
 ];
 
@@ -26,11 +26,11 @@ const SalesPopup = ({ products = [] }) => {
     // Initial delay before first popup
     const initialDelay = setTimeout(() => {
       showRandomPopup();
-    }, 5000); // 5 seconds after load
+    }, 8000); 
 
     const interval = setInterval(() => {
       showRandomPopup();
-    }, 30000); // Every 30 seconds (including 6s display time)
+    }, 35000); 
 
     return () => {
       clearTimeout(initialDelay);
@@ -50,10 +50,10 @@ const SalesPopup = ({ products = [] }) => {
     setCurrentTime(randomTime);
     setIsVisible(true);
 
-    // Auto-hide after 6 seconds
+    // Auto-hide after 7 seconds
     setTimeout(() => {
       setIsVisible(false);
-    }, 6000);
+    }, 7000);
   };
 
   if (!currentProduct) return null;
@@ -66,47 +66,54 @@ const SalesPopup = ({ products = [] }) => {
           animate={{ x: 0, opacity: 1, scale: 1 }}
           exit={{ x: -100, opacity: 0, scale: 0.8 }}
           transition={{ type: 'spring', damping: 20, stiffness: 100 }}
-          className="fixed bottom-6 left-6 z-[100] w-full max-w-[320px] bg-black/90 backdrop-blur-xl border border-gold/30 rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_20px_rgba(201,168,76,0.1)] p-3"
+          className="fixed bottom-6 left-6 z-[100] w-full max-w-[340px] bg-black/95 backdrop-blur-2xl border border-gold/40 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.8),0_0_30px_rgba(201,168,76,0.15)] p-4 flex items-center gap-4"
         >
-          <div className="flex items-center gap-4">
-            {/* Product Image */}
-            <div className="relative w-16 h-16 flex-shrink-0 bg-surface rounded-lg overflow-hidden border border-gold/10">
-              <img 
-                src={optimizeImage(currentProduct.images?.[0]?.url || currentProduct.images?.[0] || currentProduct.image, { w: 120, h: 120 })} 
-                alt={currentProduct.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
+          {/* Product Image */}
+          <div className="relative w-20 h-20 flex-shrink-0 bg-surface rounded-xl overflow-hidden border border-gold/20 shadow-inner group">
+            <img 
+              src={optimizeImage(currentProduct.images?.[0]?.url || currentProduct.images?.[0] || currentProduct.image, { w: 160, h: 160 })} 
+              alt={currentProduct.name}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+          </div>
 
-            {/* Content */}
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center justify-between mb-1">
-                <span className="flex items-center gap-1.5 text-[9px] font-cinzel text-gold uppercase tracking-widest font-bold">
-                  <ShoppingBag size={10} /> Verified Purchase
-                </span>
-                <button 
-                  onClick={() => setIsVisible(false)}
-                  className="text-ivory/40 hover:text-white transition-colors"
-                >
-                  <X size={12} />
-                </button>
-              </div>
-              
-              <p className="text-[11px] text-ivory/80 leading-snug mb-1">
-                Someone in <span className="text-white font-bold">{currentCity}</span> just bought
-              </p>
-              
-              <Link 
-                to={`/product/${currentProduct.slug}`}
-                className="block text-[12px] text-gold font-bold truncate hover:underline underline-offset-2 mb-1"
+          {/* Content */}
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center justify-between mb-1.5">
+              <span className="flex items-center gap-1.5 text-[10px] font-cinzel text-gold uppercase tracking-[2px] font-black">
+                <ShoppingBag size={11} className="animate-pulse" /> Verified Sale
+              </span>
+              <button 
                 onClick={() => setIsVisible(false)}
+                className="text-ivory/30 hover:text-white transition-colors p-1"
               >
-                {currentProduct.name}
-              </Link>
-              
-              <span className="text-[9px] text-ivory/40 italic">
+                <X size={14} />
+              </button>
+            </div>
+            
+            <p className="text-[12px] text-ivory/90 leading-snug mb-1">
+              Someone in <span className="text-white font-bold inline-flex items-center gap-1">
+                {currentCity} <img src="https://flagcdn.com/w20/au.png" alt="AU Flag" className="w-3 h-2.5 rounded-[1px]" />
+              </span> just purchased
+            </p>
+            
+            <Link 
+              to={`/product/${currentProduct.slug}`}
+              className="block text-[13px] text-gold font-black truncate hover:text-white transition-colors mb-1"
+              onClick={() => setIsVisible(false)}
+            >
+              {currentProduct.name}
+            </Link>
+            
+            <div className="flex items-center justify-between mt-1.5">
+              <span className="text-[10px] text-ivory/40 font-medium">
                 {currentTime}
               </span>
+              <div className="flex items-center gap-1">
+                <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
+                <span className="text-[9px] text-green-500/80 font-bold uppercase tracking-wider">Live</span>
+              </div>
             </div>
           </div>
 
@@ -114,8 +121,8 @@ const SalesPopup = ({ products = [] }) => {
           <motion.div 
             initial={{ scaleX: 1 }}
             animate={{ scaleX: 0 }}
-            transition={{ duration: 6, ease: "linear" }}
-            className="absolute bottom-0 left-0 right-0 h-[2px] bg-gold origin-left"
+            transition={{ duration: 7, ease: "linear" }}
+            className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/20 via-gold to-gold/20 origin-left shadow-[0_-2px_10px_rgba(201,168,76,0.3)]"
           />
         </motion.div>
       )}
