@@ -4,61 +4,65 @@ import { Link } from 'react-router-dom';
 
 const GOLD = '#C9A84C';
 
-// Premium Sport Icons (SVG)
-const FootballIcon = () => (
+// Official League Logos (SVG)
+const NFLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="26" ry="18" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M14 32h36M22 22l20 20M42 22L22 42" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
-    <ellipse cx="32" cy="32" rx="7" ry="4" stroke={GOLD} strokeWidth="1" fill="none" opacity="0.4"/>
+    <path d="M14 10h36l4 22-22 22-22-22 4-22z" fill="#013369" stroke={GOLD} strokeWidth="1.5"/>
+    <ellipse cx="32" cy="28" rx="12" ry="9" fill="none" stroke="white" strokeWidth="1.5"/>
+    <path d="M26 28h12M32 22v12" stroke="white" strokeWidth="1"/>
+    <circle cx="22" cy="18" r="1.5" fill={GOLD}/>
+    <circle cx="42" cy="18" r="1.5" fill={GOLD}/>
   </svg>
 );
 
-const BasketballIcon = () => (
+const NBALogo = () => (
   <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="26" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M32 6v52M6 32h52" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
-    <path d="M12 16c10 6 10 18 0 24M52 16c-10 6-10 18 0 24" stroke={GOLD} strokeWidth="1" opacity="0.4"/>
+    <rect x="10" y="8" width="44" height="48" rx="3" fill="#C9002B" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M20 18c0 0 8-6 16 0s8 16 0 24-16 0-16-6 0-18 0-18z" fill="white" opacity="0.9"/>
+    <text x="32" y="46" textAnchor="middle" fill="white" fontSize="9" fontFamily="Arial" fontWeight="bold">NBA</text>
   </svg>
 );
 
-const BaseballIcon = () => (
+const MLBLogo = () => (
   <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="26" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M16 14c7 18 7 30 0 42M48 14c-7 18-7 30 0 42" stroke={GOLD} strokeWidth="1.5" strokeDasharray="3 2" opacity="0.7"/>
+    <path d="M32 6l24 24-24 24-24-24z" fill="#002D72" stroke={GOLD} strokeWidth="1.5"/>
+    <circle cx="32" cy="20" r="5" fill="white"/>
+    <path d="M26 26l-3 16M38 26l3 16" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
   </svg>
 );
 
-const HockeyIcon = () => (
+const NHLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="26" ry="18" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M18 32h28M26 26l12 12M38 26L26 38" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
-    <circle cx="32" cy="32" r="3" stroke={GOLD} strokeWidth="1" fill="none"/>
+    <path d="M14 8h36l4 22-22 22-22-22 4-22z" fill="#111111" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M18 12l28 40M46 12L18 52" stroke={GOLD} strokeWidth="0.8" opacity="0.3"/>
+    <path d="M32 16v32M18 32h28" stroke={GOLD} strokeWidth="1"/>
+    <text x="32" y="30" textAnchor="middle" fill="white" fontSize="7" fontFamily="Arial" fontWeight="bold">NHL</text>
   </svg>
 );
 
 const StarIcon = () => (
   <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32 4l8 20h20l-16 12 6 20-18-12-18 12 6-20-16-12h20l8-20z" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <circle cx="32" cy="32" r="10" stroke={GOLD} strokeWidth="1" fill="none" opacity="0.3"/>
+    <path d="M32 6l8 18h18l-14 10 5 18-17-11-17 11 5-18-14-10h18l8-18z" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
+    <circle cx="32" cy="32" r="8" stroke={GOLD} strokeWidth="1" fill="none" opacity="0.3"/>
   </svg>
 );
 
 const VintageIcon = () => (
   <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="8" y="16" width="48" height="32" rx="4" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <circle cx="32" cy="32" r="8" stroke={GOLD} strokeWidth="1" fill="none"/>
-    <path d="M20 24h24M20 40h24" stroke={GOLD} strokeWidth="1" opacity="0.4"/>
-    <circle cx="20" cy="32" r="2" fill={GOLD} opacity="0.5"/>
-    <circle cx="44" cy="32" r="2" fill={GOLD} opacity="0.5"/>
+    <rect x="10" y="18" width="44" height="28" rx="3" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
+    <circle cx="32" cy="32" r="7" stroke={GOLD} strokeWidth="1" fill="none"/>
+    <path d="M20 26h24M20 38h24" stroke={GOLD} strokeWidth="1" opacity="0.4"/>
+    <circle cx="20" cy="32" r="1.5" fill={GOLD} opacity="0.5"/>
+    <circle cx="44" cy="32" r="1.5" fill={GOLD} opacity="0.5"/>
   </svg>
 );
 
 const SportCategoryGrid = () => {
   const sports = [
-    { name: 'NFL', path: 'League > NFL - National Football League', icon: FootballIcon },
-    { name: 'NBA', path: 'League > NBA - National Basketball Association', icon: BasketballIcon },
-    { name: 'NHL', path: 'League > NHL - National Hockey League', icon: HockeyIcon },
-    { name: 'MLB', path: 'League > MLB - Major League Baseball', icon: BaseballIcon },
+    { name: 'NFL', path: 'League > NFL - National Football League', icon: NFLLogo },
+    { name: 'NBA', path: 'League > NBA - National Basketball Association', icon: NBALogo },
+    { name: 'NHL', path: 'League > NHL - National Hockey League', icon: NHLLogo },
+    { name: 'MLB', path: 'League > MLB - Major League Baseball', icon: MLBLogo },
     { name: 'Player Editions', slug: 'player-editions', icon: StarIcon },
     { name: 'Vintage 90s', slug: 'vintage-90s', icon: VintageIcon },
   ];

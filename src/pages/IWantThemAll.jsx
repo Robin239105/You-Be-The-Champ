@@ -7,35 +7,42 @@ import { motion } from 'framer-motion';
 
 const GOLD = '#C9A84C';
 
-// Premium Collection Icons (SVG)
-const FootballIcon = () => (
+// Official League Logos (SVG)
+const NFLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="28" ry="20" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M12 32h40M20 20l24 24M44 20L20 44" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
-    <ellipse cx="32" cy="32" rx="8" ry="5" stroke={GOLD} strokeWidth="1" fill="none" opacity="0.4"/>
+    <path d="M12 8h40l4 24-24 24-24-24 4-24z" fill="#013369" stroke={GOLD} strokeWidth="1.5"/>
+    <ellipse cx="32" cy="30" rx="14" ry="10" fill="none" stroke="white" strokeWidth="1.5"/>
+    <path d="M26 30h12M32 24v12" stroke="white" strokeWidth="1"/>
+    <circle cx="20" cy="20" r="2" fill={GOLD}/>
+    <circle cx="44" cy="20" r="2" fill={GOLD}/>
+    <circle cx="32" cy="48" r="2" fill={GOLD}/>
   </svg>
 );
 
-const BasketballIcon = () => (
+const NBALogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="28" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M32 4v56M4 32h56" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
-    <path d="M10 18c12 8 12 20 0 28M54 18c-12 8-12 20 0 28" stroke={GOLD} strokeWidth="1" opacity="0.4"/>
+    <rect x="8" y="6" width="48" height="52" rx="4" fill="#C9002B" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M20 20c0 0 8-8 16 0s8 20 0 28-16 0-16-8 0-20 0-20z" fill="white" opacity="0.9"/>
+    <text x="32" y="48" textAnchor="middle" fill="white" fontSize="10" fontFamily="Arial" fontWeight="bold">NBA</text>
+    <path d="M8 30h48" stroke={GOLD} strokeWidth="0.5" opacity="0.5"/>
   </svg>
 );
 
-const BaseballIcon = () => (
+const MLBLogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="28" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M18 12c8 20 8 32 0 48M46 12c-8 20-8 32 0 48" stroke={GOLD} strokeWidth="1.5" strokeDasharray="4 3" opacity="0.7"/>
+    <path d="M32 4l28 28-28 28-28-28z" fill="#002D72" stroke={GOLD} strokeWidth="1.5"/>
+    <circle cx="32" cy="22" r="6" fill="white"/>
+    <path d="M26 28l-4 20M38 28l4 20" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+    <path d="M32 28v12" stroke="white" strokeWidth="2"/>
   </svg>
 );
 
-const HockeyIcon = () => (
+const NHLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="28" ry="20" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M20 32h24M28 24l8 16M36 24l-8 16" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
-    <circle cx="32" cy="32" r="4" stroke={GOLD} strokeWidth="1" fill="none"/>
+    <path d="M12 6h40l4 26-24 26-24-26 4-26z" fill="#111111" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M16 10l32 44M48 10L16 54" stroke={GOLD} strokeWidth="0.8" opacity="0.3"/>
+    <path d="M32 14v36M18 32h28" stroke={GOLD} strokeWidth="1"/>
+    <text x="32" y="30" textAnchor="middle" fill="white" fontSize="8" fontFamily="Arial" fontWeight="bold">NHL</text>
   </svg>
 );
 
@@ -47,10 +54,10 @@ const StarIcon = () => (
 );
 
 const COLLECTIONS = [
-  { label: "All NFL Rings", icon: FootballIcon, description: "Every Super Bowl championship ring ever made", path: "Championships/Finals > Super Bowl Championship Rings", color: "#013369" },
-  { label: "All NBA Rings", icon: BasketballIcon, description: "Every NBA Finals championship ring collection", path: "Championships/Finals > NBA Finals Championship Rings", color: "#C9002B" },
-  { label: "All MLB Rings", icon: BaseballIcon, description: "Every World Series championship ring ever awarded", path: "Championships/Finals > World Series Championship Rings", color: "#002D72" },
-  { label: "All NHL Rings", icon: HockeyIcon, description: "Every Stanley Cup championship ring collection", path: "Championships/Finals > Stanley Cup Championship Rings", color: "#1a1a1a" },
+  { label: "All NFL Rings", icon: NFLLogo, description: "Every Super Bowl championship ring ever made", path: "Championships/Finals > Super Bowl Championship Rings", color: "#013369" },
+  { label: "All NBA Rings", icon: NBALogo, description: "Every NBA Finals championship ring collection", path: "Championships/Finals > NBA Finals Championship Rings", color: "#C9002B" },
+  { label: "All MLB Rings", icon: MLBLogo, description: "Every World Series championship ring ever awarded", path: "Championships/Finals > World Series Championship Rings", color: "#002D72" },
+  { label: "All NHL Rings", icon: NHLLogo, description: "Every Stanley Cup championship ring collection", path: "Championships/Finals > Stanley Cup Championship Rings", color: "#1a1a1a" },
   { label: "Special Players", icon: StarIcon, description: "Exclusive champion player edition rings", path: "Special Release Champion Players Rings", color: "#C9A84C" },
 ];
 

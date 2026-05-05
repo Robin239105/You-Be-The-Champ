@@ -16,62 +16,52 @@ import { productsData } from '../data/productsData';
 const GOLD = '#C9A84C';
 const GOLD_GLOW = 'rgba(201,168,76,0.22)';
 
-// Premium League Icons (SVG)
-const FootballIcon = () => (
+// Official League Logos (SVG)
+const NFLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="28" ry="20" fill="url(#footballGrad)" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M12 32h40M20 20l24 24M44 20L20 44" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
-    <ellipse cx="32" cy="32" rx="8" ry="5" stroke={GOLD} strokeWidth="1" fill="none" opacity="0.4"/>
-    <defs>
-      <linearGradient id="footballGrad" x1="32" y1="12" x2="32" y2="52" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#1a1a1a"/>
-        <stop offset="1" stopColor="#0a0a0a"/>
-      </linearGradient>
-    </defs>
+    {/* NFL Shield Shape */}
+    <path d="M12 8h40l4 24-24 24-24-24 4-24z" fill="#013369" stroke={GOLD} strokeWidth="1.5"/>
+    {/* Football shape inside */}
+    <ellipse cx="32" cy="30" rx="14" ry="10" fill="none" stroke="white" strokeWidth="1.5"/>
+    <path d="M26 30h12M32 24v12" stroke="white" strokeWidth="1"/>
+    {/* Stars */}
+    <circle cx="20" cy="20" r="2" fill={GOLD}/>
+    <circle cx="44" cy="20" r="2" fill={GOLD}/>
+    <circle cx="32" cy="48" r="2" fill={GOLD}/>
   </svg>
 );
 
-const BasketballIcon = () => (
+const NBALogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="28" fill="url(#basketballGrad)" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M32 4v56M4 32h56" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
-    <path d="M10 18c12 8 12 20 0 28M54 18c-12 8-12 20 0 28" stroke={GOLD} strokeWidth="1" opacity="0.4"/>
-    <defs>
-      <radialGradient id="basketballGrad" cx="32" cy="32" r="28" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#1a1a1a"/>
-        <stop offset="1" stopColor="#0a0a0a"/>
-      </radialGradient>
-    </defs>
+    {/* NBA styled silhouette - simplified */}
+    <rect x="8" y="6" width="48" height="52" rx="4" fill="#C9002B" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M20 20c0 0 8-8 16 0s8 20 0 28-16 0-16-8 0-20 0-20z" fill="white" opacity="0.9"/>
+    <text x="32" y="48" textAnchor="middle" fill="white" fontSize="10" fontFamily="Arial" fontWeight="bold">NBA</text>
+    {/* Blue/Red split line */}
+    <path d="M8 30h48" stroke={GOLD} strokeWidth="0.5" opacity="0.5"/>
   </svg>
 );
 
-const BaseballIcon = () => (
+const MLBLogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="28" fill="url(#baseballGrad)" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M18 12c8 20 8 32 0 48M46 12c-8 20-8 32 0 48" stroke={GOLD} strokeWidth="1.5" strokeDasharray="4 3" opacity="0.7"/>
-    <circle cx="22" cy="24" r="1.5" fill={GOLD} opacity="0.5"/>
-    <circle cx="26" cy="28" r="1.5" fill={GOLD} opacity="0.5"/>
-    <circle cx="20" cy="30" r="1.5" fill={GOLD} opacity="0.5"/>
-    <defs>
-      <radialGradient id="baseballGrad" cx="32" cy="32" r="28" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#1a1a1a"/>
-        <stop offset="1" stopColor="#0a0a0a"/>
-      </radialGradient>
-    </defs>
+    {/* Diamond shape background */}
+    <path d="M32 4l28 28-28 28-28-28z" fill="#002D72" stroke={GOLD} strokeWidth="1.5"/>
+    {/* Stylized batter silhouette */}
+    <circle cx="32" cy="22" r="6" fill="white"/>
+    <path d="M26 28l-4 20M38 28l4 20" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+    <path d="M32 28v12" stroke="white" strokeWidth="2"/>
   </svg>
 );
 
-const HockeyIcon = () => (
+const NHLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="28" ry="20" fill="url(#hockeyGrad)" stroke={GOLD} strokeWidth="1.5"/>
-    <path d="M20 32h24M28 24l8 16M36 24l-8 16" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
-    <circle cx="32" cy="32" r="4" stroke={GOLD} strokeWidth="1" fill="none"/>
-    <defs>
-      <linearGradient id="hockeyGrad" x1="32" y1="12" x2="32" y2="52" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#1a1a1a"/>
-        <stop offset="1" stopColor="#0a0a0a"/>
-      </linearGradient>
-    </defs>
+    {/* NHL Shield */}
+    <path d="M12 6h40l4 26-24 26-24-26 4-26z" fill="#111111" stroke={GOLD} strokeWidth="1.5"/>
+    {/* Diagonal stripes */}
+    <path d="M16 10l32 44M48 10L16 54" stroke={GOLD} strokeWidth="0.8" opacity="0.3"/>
+    {/* Center lines */}
+    <path d="M32 14v36M18 32h28" stroke={GOLD} strokeWidth="1"/>
+    <text x="32" y="30" textAnchor="middle" fill="white" fontSize="8" fontFamily="Arial" fontWeight="bold">NHL</text>
   </svg>
 );
 
@@ -175,10 +165,10 @@ const SLIDES = [
 ];
 
 const LEAGUES = [
-  { name: "NFL", icon: FootballIcon, label: "National Football League", path: "League > NFL - National Football League", color: "#013369" },
-  { name: "NBA", icon: BasketballIcon, label: "National Basketball Association", path: "League > NBA - National Basketball Association", color: "#C9002B" },
-  { name: "MLB", icon: BaseballIcon, label: "Major League Baseball", path: "League > MLB - Major League Baseball", color: "#002D72" },
-  { name: "NHL", icon: HockeyIcon, label: "National Hockey League", path: "League > NHL - National Hockey League", color: "#111111" },
+  { name: "NFL", icon: NFLLogo, label: "National Football League", path: "League > NFL - National Football League", color: "#013369" },
+  { name: "NBA", icon: NBALogo, label: "National Basketball Association", path: "League > NBA - National Basketball Association", color: "#C9002B" },
+  { name: "MLB", icon: MLBLogo, label: "Major League Baseball", path: "League > MLB - Major League Baseball", color: "#002D72" },
+  { name: "NHL", icon: NHLLogo, label: "National Hockey League", path: "League > NHL - National Hockey League", color: "#111111" },
 ];
 
 const VALUE_PROPS = [

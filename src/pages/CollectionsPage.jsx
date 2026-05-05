@@ -6,38 +6,45 @@ import Footer from '../components/Footer';
 
 const GOLD = '#C9A84C';
 
-// Premium Collection Icons (SVG)
-const FootballIcon = () => (
+// Official League Logos (SVG)
+const NFLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="26" ry="18" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
-    <path d="M14 32h36M22 22l20 20M42 22L22 42" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+    <path d="M16 12h32l3 18-19 19-19-19 3-18z" fill="#013369" stroke={GOLD} strokeWidth="1.5"/>
+    <ellipse cx="32" cy="26" rx="10" ry="7" fill="none" stroke="white" strokeWidth="1"/>
+    <path d="M26 26h12M32 20v12" stroke="white" strokeWidth="0.8"/>
+    <circle cx="22" cy="18" r="1.5" fill={GOLD}/>
+    <circle cx="42" cy="18" r="1.5" fill={GOLD}/>
   </svg>
 );
 
-const BasketballIcon = () => (
+const NBALogo = () => (
   <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="26" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
-    <path d="M32 6v52M6 32h52" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+    <rect x="12" y="10" width="40" height="44" rx="3" fill="#C9002B" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M20 18c0 0 6-5 12 0s6 14 0 20-12 0-12-5 0-15 0-15z" fill="white" opacity="0.9"/>
+    <text x="32" y="44" textAnchor="middle" fill="white" fontSize="8" fontFamily="Arial" fontWeight="bold">NBA</text>
   </svg>
 );
 
-const BaseballIcon = () => (
+const MLBLogo = () => (
   <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="26" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
-    <path d="M16 14c7 18 7 30 0 42M48 14c-7 18-7 30 0 42" stroke={GOLD} strokeWidth="1.5" strokeDasharray="3 2" opacity="0.7"/>
+    <path d="M32 8l22 22-22 22-22-22z" fill="#002D72" stroke={GOLD} strokeWidth="1.5"/>
+    <circle cx="32" cy="18" r="4" fill="white"/>
+    <path d="M28 24l-2 12M36 24l2 12" stroke="white" strokeWidth="2" strokeLinecap="round"/>
   </svg>
 );
 
-const HockeyIcon = () => (
+const NHLLogo = () => (
   <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="32" cy="32" rx="26" ry="18" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
-    <path d="M18 32h28M26 26l12 12M38 26L26 38" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+    <path d="M16 10h32l3 20-19 19-19-19 3-20z" fill="#111111" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M20 14l24 36M44 14L20 50" stroke={GOLD} strokeWidth="0.6" opacity="0.3"/>
+    <path d="M32 18v28M20 32h24" stroke={GOLD} strokeWidth="0.8"/>
+    <text x="32" y="28" textAnchor="middle" fill="white" fontSize="6" fontFamily="Arial" fontWeight="bold">NHL</text>
   </svg>
 );
 
 const StarIcon = () => (
   <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32 8l8 20h20l-16 12 6 20-18-12-18 12 6-20-16-12h20l8-20z" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
+    <path d="M32 10l6 14h14l-11 8 4 14-13-8-13 8 4-14-11-8h14l6-14z" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
   </svg>
 );
 
@@ -76,10 +83,10 @@ const TEAM_SETS = [
 ];
 
 const BULK = [
-  { icon: FootballIcon, label: "All NFL Rings", path: "Championships/Finals > Super Bowl Championship Rings" },
-  { icon: BasketballIcon, label: "All NBA Rings", path: "Championships/Finals > NBA Finals Championship Rings" },
-  { icon: BaseballIcon, label: "All MLB Rings", path: "Championships/Finals > World Series Championship Rings" },
-  { icon: HockeyIcon, label: "All NHL Rings", path: "Championships/Finals > Stanley Cup Championship Rings" },
+  { icon: NFLLogo, label: "All NFL Rings", path: "Championships/Finals > Super Bowl Championship Rings" },
+  { icon: NBALogo, label: "All NBA Rings", path: "Championships/Finals > NBA Finals Championship Rings" },
+  { icon: MLBLogo, label: "All MLB Rings", path: "Championships/Finals > World Series Championship Rings" },
+  { icon: NHLLogo, label: "All NHL Rings", path: "Championships/Finals > Stanley Cup Championship Rings" },
   { icon: StarIcon, label: "Special Players", path: "Special Release Champion Players Rings" },
 ];
 
