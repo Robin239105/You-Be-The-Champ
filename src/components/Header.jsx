@@ -66,11 +66,11 @@ const Header = () => {
         {/* Logo */}
         <div className="flex-shrink-0 lg:mr-4">
           <Link to="/" className="flex items-center group">
-            <div className="relative w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full overflow-hidden border-2 border-gold/30 shadow-[0_0_24px_rgba(201,168,76,0.25)] group-hover:border-gold group-hover:shadow-[0_0_32px_rgba(201,168,76,0.4)] transition-all duration-500">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 transition-all duration-500 group-hover:scale-110">
               <img 
                 src="/logo.png" 
                 alt="You Be The Champ Logo" 
-                className="w-full h-full object-cover scale-105"
+                className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-gold/10 to-transparent pointer-events-none" />
             </div>
