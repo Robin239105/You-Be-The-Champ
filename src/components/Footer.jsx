@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Send, Video } from 'lucide-react';
+import { Globe, Share2, MessageCircle, Video } from 'lucide-react';
 
 const SocialIcon = ({ Icon }) => (
   <a href="#" className="w-10 h-10 border border-gold/20 flex items-center justify-center text-gold/50 hover:text-gold hover:border-gold transition-all">
@@ -35,9 +35,9 @@ const Footer = () => {
             Handcrafting the largest collection of championship replica rings in the world. Wear the glory of your favorite legends.
           </p>
           <div className="flex gap-3">
-            <SocialIcon Icon={Facebook} />
-            <SocialIcon Icon={Instagram} />
-            <SocialIcon Icon={Send} />
+            <SocialIcon Icon={Globe} />
+            <SocialIcon Icon={Share2} />
+            <SocialIcon Icon={MessageCircle} />
             <SocialIcon Icon={Video} />
           </div>
         </div>

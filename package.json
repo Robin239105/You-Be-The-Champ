@@ -3,37 +3,36 @@
   "private": true,
   "version": "2.2.0",
   "scripts": {
-
     "dev": "vite",
     "build": "echo 'Generating Prisma Client...' && prisma generate && echo 'Starting Vite Build...' && vite build",
     "postinstall": "prisma generate",
-
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
-    "bcryptjs": "^3.0.3",
     "axios": "^1.7.9",
-    "jsonwebtoken": "^9.0.3",
-    "express": "^5.2.1",
-    "cors": "^2.8.6",
+    "bcryptjs": "^3.0.3",
     "cloudinary": "^2.9.0",
+    "cors": "^2.8.6",
     "csv-parser": "^3.2.0",
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "express-rate-limit": "^7.5.0",
-    "slugify": "^1.6.9",
-    "multer": "^1.4.5-lts.1",
-    "stripe": "^17.0.0",
     "framer-motion": "^12.38.0",
-    "lucide-react": "^1.8.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.14.0",
+    "multer": "^1.4.5-lts.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.14.1",
+    "slugify": "^1.6.9",
+    "stripe": "^17.0.0",
     "zustand": "^5.0.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
+    "@tailwindcss/vite": "^4.0.0",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
@@ -43,10 +42,8 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
     "postcss": "^8.5.1",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/vite": "^4.0.0",
     "prisma": "^6.2.1",
-
+    "tailwindcss": "^4.0.0",
     "vite": "^6.0.7"
   }
 }
