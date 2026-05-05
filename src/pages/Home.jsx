@@ -16,6 +16,65 @@ import { productsData } from '../data/productsData';
 const GOLD = '#C9A84C';
 const GOLD_GLOW = 'rgba(201,168,76,0.22)';
 
+// Premium League Icons (SVG)
+const FootballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="32" cy="32" rx="28" ry="20" fill="url(#footballGrad)" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M12 32h40M20 20l24 24M44 20L20 44" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
+    <ellipse cx="32" cy="32" rx="8" ry="5" stroke={GOLD} strokeWidth="1" fill="none" opacity="0.4"/>
+    <defs>
+      <linearGradient id="footballGrad" x1="32" y1="12" x2="32" y2="52" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#1a1a1a"/>
+        <stop offset="1" stopColor="#0a0a0a"/>
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+const BasketballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="28" fill="url(#basketballGrad)" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M32 4v56M4 32h56" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
+    <path d="M10 18c12 8 12 20 0 28M54 18c-12 8-12 20 0 28" stroke={GOLD} strokeWidth="1" opacity="0.4"/>
+    <defs>
+      <radialGradient id="basketballGrad" cx="32" cy="32" r="28" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#1a1a1a"/>
+        <stop offset="1" stopColor="#0a0a0a"/>
+      </radialGradient>
+    </defs>
+  </svg>
+);
+
+const BaseballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="28" fill="url(#baseballGrad)" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M18 12c8 20 8 32 0 48M46 12c-8 20-8 32 0 48" stroke={GOLD} strokeWidth="1.5" strokeDasharray="4 3" opacity="0.7"/>
+    <circle cx="22" cy="24" r="1.5" fill={GOLD} opacity="0.5"/>
+    <circle cx="26" cy="28" r="1.5" fill={GOLD} opacity="0.5"/>
+    <circle cx="20" cy="30" r="1.5" fill={GOLD} opacity="0.5"/>
+    <defs>
+      <radialGradient id="baseballGrad" cx="32" cy="32" r="28" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#1a1a1a"/>
+        <stop offset="1" stopColor="#0a0a0a"/>
+      </radialGradient>
+    </defs>
+  </svg>
+);
+
+const HockeyIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="32" cy="32" rx="28" ry="20" fill="url(#hockeyGrad)" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M20 32h24M28 24l8 16M36 24l-8 16" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+    <circle cx="32" cy="32" r="4" stroke={GOLD} strokeWidth="1" fill="none"/>
+    <defs>
+      <linearGradient id="hockeyGrad" x1="32" y1="12" x2="32" y2="52" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#1a1a1a"/>
+        <stop offset="1" stopColor="#0a0a0a"/>
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
 const SLIDES = [
   {
     id: 1,
@@ -116,10 +175,10 @@ const SLIDES = [
 ];
 
 const LEAGUES = [
-  { name: "NFL", icon: "🏈", label: "National Football League", path: "League > NFL - National Football League", color: "#013369" },
-  { name: "NBA", icon: "🏀", label: "National Basketball Association", path: "League > NBA - National Basketball Association", color: "#C9002B" },
-  { name: "MLB", icon: "⚾", label: "Major League Baseball", path: "League > MLB - Major League Baseball", color: "#002D72" },
-  { name: "NHL", icon: "🏒", label: "National Hockey League", path: "League > NHL - National Hockey League", color: "#111111" },
+  { name: "NFL", icon: FootballIcon, label: "National Football League", path: "League > NFL - National Football League", color: "#013369" },
+  { name: "NBA", icon: BasketballIcon, label: "National Basketball Association", path: "League > NBA - National Basketball Association", color: "#C9002B" },
+  { name: "MLB", icon: BaseballIcon, label: "Major League Baseball", path: "League > MLB - Major League Baseball", color: "#002D72" },
+  { name: "NHL", icon: HockeyIcon, label: "National Hockey League", path: "League > NHL - National Hockey League", color: "#111111" },
 ];
 
 const VALUE_PROPS = [
@@ -419,7 +478,7 @@ const Home = () => {
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ background: `radial-gradient(circle at center, ${league.color}22 0%, transparent 70%)` }} />
-              <span className="text-5xl transition-transform duration-300 group-hover:scale-110 relative z-10">{league.icon}</span>
+              <div className="transition-transform duration-300 group-hover:scale-110 relative z-10">{React.createElement(league.icon)}</div>
               <div className="relative z-10">
                 <p className="font-cinzel text-white font-black text-2xl uppercase tracking-[3px] group-hover:text-gold transition-colors">{league.name}</p>
                 <p className="text-white/40 font-raleway text-[10px] uppercase tracking-widest mt-1">{league.label}</p>

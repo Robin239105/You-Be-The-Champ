@@ -5,11 +5,45 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 
+const GOLD = '#C9A84C';
+
+// Premium Finals Icons (SVG)
+const FootballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="32" cy="32" rx="28" ry="20" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M12 32h40M20 20l24 24M44 20L20 44" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
+    <ellipse cx="32" cy="32" rx="8" ry="5" stroke={GOLD} strokeWidth="1" fill="none" opacity="0.4"/>
+  </svg>
+);
+
+const BasketballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="28" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M32 4v56M4 32h56" stroke={GOLD} strokeWidth="1" opacity="0.6"/>
+    <path d="M10 18c12 8 12 20 0 28M54 18c-12 8-12 20 0 28" stroke={GOLD} strokeWidth="1" opacity="0.4"/>
+  </svg>
+);
+
+const BaseballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="28" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M18 12c8 20 8 32 0 48M46 12c-8 20-8 32 0 48" stroke={GOLD} strokeWidth="1.5" strokeDasharray="4 3" opacity="0.7"/>
+  </svg>
+);
+
+const HockeyIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-14 h-14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="32" cy="32" rx="28" ry="20" fill="#0a0a0a" stroke={GOLD} strokeWidth="1.5"/>
+    <path d="M20 32h24M28 24l8 16M36 24l-8 16" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+    <circle cx="32" cy="32" r="4" stroke={GOLD} strokeWidth="1" fill="none"/>
+  </svg>
+);
+
 const FINALS = [
   {
     name: "Super Bowl",
     league: "NFL",
-    icon: "🏈",
+    icon: FootballIcon,
     color: "#013369",
     description: "Every Super Bowl championship ring from 1967 to present",
     path: "Championships/Finals > Super Bowl Championship Rings",
@@ -17,7 +51,7 @@ const FINALS = [
   {
     name: "NBA Finals",
     league: "NBA",
-    icon: "🏀",
+    icon: BasketballIcon,
     color: "#C9002B",
     description: "Every NBA Finals championship ring from 1947 to present",
     path: "Championships/Finals > NBA Finals Championship Rings",
@@ -25,7 +59,7 @@ const FINALS = [
   {
     name: "World Series",
     league: "MLB",
-    icon: "⚾",
+    icon: BaseballIcon,
     color: "#002D72",
     description: "Every World Series championship ring from 1903 to present",
     path: "Championships/Finals > World Series Championship Rings",
@@ -33,8 +67,8 @@ const FINALS = [
   {
     name: "Stanley Cup",
     league: "NHL",
-    icon: "🏒",
-    color: "#2d2d2d",
+    icon: HockeyIcon,
+    color: "#111111",
     description: "Every Stanley Cup championship ring from 1893 to present",
     path: "Championships/Finals > Stanley Cup Championship Rings",
   },
@@ -75,7 +109,7 @@ const ChampionshipFinalsPage = () => (
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ background: `radial-gradient(circle at center, ${f.color}22 0%, transparent 70%)` }} />
-              <span className="text-6xl group-hover:scale-110 transition-transform duration-300 relative z-10">{f.icon}</span>
+              <div className="group-hover:scale-110 transition-transform duration-300 relative z-10">{React.createElement(f.icon)}</div>
               <div className="relative z-10">
                 <p className="font-cinzel text-gold font-black text-xs uppercase tracking-[3px] mb-1">{f.league}</p>
                 <p className="font-cinzel text-white font-black text-2xl uppercase tracking-tight group-hover:text-gold transition-colors">{f.name}</p>

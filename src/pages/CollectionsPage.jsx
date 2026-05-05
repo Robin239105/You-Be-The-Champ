@@ -4,6 +4,43 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+const GOLD = '#C9A84C';
+
+// Premium Collection Icons (SVG)
+const FootballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="32" cy="32" rx="26" ry="18" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
+    <path d="M14 32h36M22 22l20 20M42 22L22 42" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+  </svg>
+);
+
+const BasketballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="26" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
+    <path d="M32 6v52M6 32h52" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+  </svg>
+);
+
+const BaseballIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="26" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
+    <path d="M16 14c7 18 7 30 0 42M48 14c-7 18-7 30 0 42" stroke={GOLD} strokeWidth="1.5" strokeDasharray="3 2" opacity="0.7"/>
+  </svg>
+);
+
+const HockeyIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="32" cy="32" rx="26" ry="18" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
+    <path d="M18 32h28M26 26l12 12M38 26L26 38" stroke={GOLD} strokeWidth="1.5" opacity="0.6"/>
+  </svg>
+);
+
+const StarIcon = () => (
+  <svg viewBox="0 0 64 64" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M32 8l8 20h20l-16 12 6 20-18-12-18 12 6-20-16-12h20l8-20z" fill="#0a0a0a" stroke={GOLD} strokeWidth="2"/>
+  </svg>
+);
+
 const TEAM_SETS = [
   { label: "By City", items: [
     { label: "New York Teams", path: "Your City > New York City Pro Teams" },
@@ -39,11 +76,11 @@ const TEAM_SETS = [
 ];
 
 const BULK = [
-  { icon: "🏈", label: "All NFL Rings", path: "Championships/Finals > Super Bowl Championship Rings" },
-  { icon: "🏀", label: "All NBA Rings", path: "Championships/Finals > NBA Finals Championship Rings" },
-  { icon: "⚾", label: "All MLB Rings", path: "Championships/Finals > World Series Championship Rings" },
-  { icon: "🏒", label: "All NHL Rings", path: "Championships/Finals > Stanley Cup Championship Rings" },
-  { icon: "⭐", label: "Special Players", path: "Special Release Champion Players Rings" },
+  { icon: FootballIcon, label: "All NFL Rings", path: "Championships/Finals > Super Bowl Championship Rings" },
+  { icon: BasketballIcon, label: "All NBA Rings", path: "Championships/Finals > NBA Finals Championship Rings" },
+  { icon: BaseballIcon, label: "All MLB Rings", path: "Championships/Finals > World Series Championship Rings" },
+  { icon: HockeyIcon, label: "All NHL Rings", path: "Championships/Finals > Stanley Cup Championship Rings" },
+  { icon: StarIcon, label: "Special Players", path: "Special Release Champion Players Rings" },
 ];
 
 const catLink = (path) => `/category/${encodeURIComponent(path)}`;
@@ -92,7 +129,7 @@ const CollectionsPage = () => (
             {BULK.map((item) => (
               <Link key={item.path} to={catLink(item.path)}
                 className="group flex items-center gap-4 p-4 border border-gold/10 hover:border-gold/40 hover:bg-gold/5 transition-all duration-300">
-                <span className="text-2xl flex-shrink-0">{item.icon}</span>
+                <span className="flex-shrink-0">{React.createElement(item.icon)}</span>
                 <span className="font-cinzel text-white group-hover:text-gold text-sm uppercase tracking-wider transition-colors font-bold">{item.label}</span>
                 <span className="ml-auto text-gold/0 group-hover:text-gold/60 transition-colors">→</span>
               </Link>
