@@ -9,97 +9,19 @@ import CartDrawer from './CartDrawer';
 
 import { useAuthStore } from '../store/useAuthStore';
 
-// Collect sub-items from any of the rich navigation layouts
-const getSubItems = (node) => {
-  const items = [];
-  if (node.players) {
-    node.players.forEach(p => items.push({ label: `${p.name} (${p.sport})`, path: `/category/${encodeURIComponent(p.path)}` }));
-  }
-  if (node.leagues) {
-    node.leagues.forEach(l => {
-      items.push({ label: `${l.label} - Shop All`, path: `/category/${encodeURIComponent(l.shopAllPath)}` });
-      if (l.divisions) l.divisions.forEach(d => items.push({ label: `${l.label} · ${d.label}`, path: `/category/${encodeURIComponent(d.path)}` }));
-    });
-  }
-  if (node.rightPanel?.cards) {
-    node.rightPanel.cards.forEach(c => items.push({ label: c.label, path: `/category/${encodeURIComponent(c.path)}` }));
-  }
-  if (node.leftPanel) {
-    items.push({ label: node.leftPanel.title, path: node.leftPanel.link });
-  }
-  if (node.cities) {
-    node.cities.forEach(c => items.push({ label: c.name, path: `/category/${encodeURIComponent(c.path)}` }));
-  }
-  if (node.categories) {
-    node.categories.forEach(c => items.push({ label: c.label, path: `/category/${encodeURIComponent(c.path)}` }));
-  }
-  return items;
-};
-
 const MobileNavItem = ({ node, onClose }) => {
-  const [isOpen, setIsOpen] = useState(false);
   if (!node) return null;
-  const subItems = getSubItems(node);
-  const hasChildren = subItems.length > 0;
   const to = node.path || (node.slug ? `/${node.slug}` : null);
-
-  if (!hasChildren) {
-    if (!to) return null;
-    return (
-      <Link
-        to={to}
-        onClick={onClose}
-        className="flex items-center justify-between py-4 border-b border-gold/8 font-cinzel text-[13px] tracking-[2px] uppercase text-ivory/70 hover:text-gold transition-colors group"
-      >
-        {node.label}
-        <ChevronRight size={14} className="text-gold/30 group-hover:text-gold transition-colors" />
-      </Link>
-    );
-  }
-
+  if (!to) return null;
   return (
-    <div className="border-b border-gold/8">
-      <button
-        onClick={() => setIsOpen(o => !o)}
-        className="w-full flex items-center justify-between py-4 font-cinzel text-[13px] tracking-[2px] uppercase text-ivory/70 hover:text-gold transition-colors"
-      >
-        {node.label}
-        <ChevronDown size={14} className={`text-gold/40 transition-transform duration-300 ${isOpen ? 'rotate-180 text-gold' : ''}`} />
-      </button>
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden"
-          >
-            <div className="pb-3 pl-2">
-              {to && (
-                <Link
-                  to={to}
-                  onClick={onClose}
-                  className="block py-2.5 text-gold/80 hover:text-gold font-cinzel text-[11px] tracking-[2px] uppercase font-bold"
-                >
-                  → All {node.label}
-                </Link>
-              )}
-              {subItems.map((item, idx) => (
-                <Link
-                  key={idx}
-                  to={item.path}
-                  onClick={onClose}
-                  className="block py-2 text-ivory/55 hover:text-gold font-raleway text-[12px] capitalize"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+    <Link
+      to={to}
+      onClick={onClose}
+      className="flex items-center justify-between py-4 border-b border-gold/8 font-cinzel text-[13px] tracking-[2px] uppercase text-ivory/70 hover:text-gold transition-colors group"
+    >
+      {node.label}
+      <ChevronRight size={14} className="text-gold/30 group-hover:text-gold transition-colors" />
+    </Link>
   );
 };
 
