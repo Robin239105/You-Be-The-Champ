@@ -34,7 +34,7 @@ const FooterLink = ({ to, children, bold }) => (
   <li>
     <Link
       to={to}
-      className={`hover:text-white transition-colors font-raleway text-xs uppercase tracking-widest ${bold ? 'text-white font-bold' : 'text-gray-400'}`}
+      className={`hover:text-white transition-colors font-raleway text-[10px] md:text-xs uppercase tracking-widest ${bold ? 'text-white font-bold' : 'text-gray-400'}`}
     >
       {children}
     </Link>
@@ -43,20 +43,20 @@ const FooterLink = ({ to, children, bold }) => (
 
 const Footer = () => {
   return (
-    <footer className="bg-[#222222] border-t border-gray-700 pt-24 pb-12 px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+    <footer className="bg-[#222222] border-t border-gray-700 pt-12 md:pt-24 pb-8 md:pb-12 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16 mb-12 md:mb-20">
 
         {/* Col 1 — Brand */}
-        <div className="space-y-8">
+        <div className="space-y-4 md:space-y-8">
           <Link to="/" className="flex items-center group">
-            <div className="relative w-32 h-32 transition-all duration-500 group-hover:scale-105">
+            <div className="relative w-20 h-20 md:w-32 md:h-32 transition-all duration-500 group-hover:scale-105">
               <img src="/logo.png" alt="You Be The Champ Logo" className="w-full h-full object-contain" />
             </div>
           </Link>
-          <p className="text-gray-400 font-raleway text-sm leading-relaxed uppercase tracking-wider">
+          <p className="text-gray-400 font-raleway text-xs md:text-sm leading-relaxed uppercase tracking-wider">
             Handcrafting the largest collection of championship replica rings in the world. Wear the glory of your favorite legends.
           </p>
-          <div className="flex gap-3">
+          <div className="flex gap-2 md:gap-3">
             <SocialIcon href="https://facebook.com/youbethechamp">
               <FacebookIcon />
             </SocialIcon>
@@ -71,8 +71,8 @@ const Footer = () => {
 
         {/* Col 2 — Shop */}
         <div>
-          <h4 className="font-cinzel text-gray-200 text-sm font-bold uppercase tracking-widest mb-8">Shop</h4>
-          <ul className="space-y-4">
+          <h4 className="font-cinzel text-gray-200 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-8">Shop</h4>
+          <ul className="space-y-2 md:space-y-4">
             <FooterLink to="/category/All%20Time%20Greats" bold>All Time Greats</FooterLink>
             <FooterLink to="/category/League%20%3E%20NFL%20-%20National%20Football%20League">NFL</FooterLink>
             <FooterLink to="/category/League%20%3E%20NBA%20-%20National%20Basketball%20Association">NBA</FooterLink>
@@ -84,8 +84,8 @@ const Footer = () => {
 
         {/* Col 3 — Support */}
         <div>
-          <h4 className="font-cinzel text-gray-200 text-sm font-bold uppercase tracking-widest mb-8">Support</h4>
-          <ul className="space-y-4">
+          <h4 className="font-cinzel text-gray-200 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-8">Support</h4>
+          <ul className="space-y-2 md:space-y-4">
             <FooterLink to="/contact">Contact Us</FooterLink>
             <FooterLink to="/faq">FAQs</FooterLink>
             <FooterLink to="/size-guide">Sizing Guide</FooterLink>
@@ -96,8 +96,8 @@ const Footer = () => {
 
         {/* Col 4 — Corporate */}
         <div>
-          <h4 className="font-cinzel text-gray-200 text-sm font-bold uppercase tracking-widest mb-8">Corporate</h4>
-          <ul className="space-y-4">
+          <h4 className="font-cinzel text-gray-200 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-8">Corporate</h4>
+          <ul className="space-y-2 md:space-y-4">
             <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
             <FooterLink to="/about">About Us</FooterLink>
             <FooterLink to="/faq">FAQs</FooterLink>
@@ -108,11 +108,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-12 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-8">
-        <p className="text-[10px] text-gray-500 uppercase tracking-[2px]">
+      <div className="max-w-7xl mx-auto pt-8 md:pt-12 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
+        <p className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] text-center md:text-left">
           © {new Date().getFullYear()} YOU BE THE CHAMP. NON-OFFICIALLY LICENSED FAN ART REPLICAS.
         </p>
-        <div className="flex gap-8 text-[10px] text-gray-500 uppercase tracking-[2px]">
+        <div className="flex gap-3 md:gap-8 text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] flex-wrap justify-center md:justify-end">
           <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
           <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
           <Link to="/authenticity" className="hover:text-white transition-colors">Authenticity</Link>
