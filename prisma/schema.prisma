@@ -102,9 +102,6 @@ model Category {
   slug        String    @unique
   description String?   @default("")
   image       String?
-  parentId    String?
-  parent      Category? @relation("CategoryToCategory", fields: [parentId], references: [id])
-  children    Category[] @relation("CategoryToCategory")
   products    Product[] @relation("ProductCategories")
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
