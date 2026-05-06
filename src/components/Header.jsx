@@ -145,8 +145,7 @@ const Header = () => {
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
               className="fixed top-0 left-0 bottom-0 w-full max-w-md bg-black border-r border-gold/20 z-[70] flex flex-col"
             >
-              <div className="flex items-center justify-between p-6 border-b border-gold/20">
-                <span className="font-cinzel text-xl font-black text-gold tracking-widest uppercase">Navigation</span>
+              <div className="flex items-center justify-end p-6 border-b border-gold/20">
                 <button 
                   className="p-2 text-gold hover:rotate-90 transition-transform"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -156,13 +155,6 @@ const Header = () => {
               </div>
               
               <div className="flex-1 overflow-y-auto px-6 py-8 scrollbar-hide">
-                <Link 
-                  to="/shop" 
-                  className="block font-cinzel text-lg text-white tracking-widest uppercase mb-6 border-b border-gold/20 pb-4"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Shop All Products
-                </Link>
                 <div className="flex flex-col">
                   {navigationData.map(node => (
                     <MobileNavItem 
