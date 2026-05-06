@@ -97,13 +97,24 @@ const getCategories = async (req, res) => {
   }
 };
 
-// Build tree structure from flat categories (simulated for now)
+// Build tree structure from flat categories
 const buildCategoryTree = (categories, parentId = null) => {
-  // For now, return flat structure since parentId isn't in DB yet
-  return categories.map(cat => ({
-    ...cat,
-    children: []
-  }));
+  return categories
+    .filter(cat => (cat.parentId || null) === parentId)
+    .map(cat => ({
+      ...cat,
+      children: buildCategoryTree(categories, cat.id)
+    }));
+};
+
+// Auto-detect parent from name "Parent > Child > Grandchild"
+const inferParentFromName = (name, allCategories) => {
+  if (!name.includes('>')) return null;
+  const parts = name.split('>').map(p => p.trim());
+  if (parts.length < 2) return null;
+  const parentName = parts.slice(0, -1).join(' > ');
+  const parent = allCategories.find(c => c.name === parentName);
+  return parent?.id || null;
 };
 
 const getCategoryTree = async (req, res) => {
@@ -117,15 +128,39 @@ const getCategoryTree = async (req, res) => {
       orderBy: { name: 'asc' }
     });
     
-    // Return flat list for now - hierarchy will work after migration
-    res.json({ success: true, data: categories.map(c => ({ ...c, children: [] })) });
+    // Auto-infer parent relationships from name structure if not set
+    const enriched = categories.map(c => ({
+      ...c,
+      parentId: c.parentId || inferParentFromName(c.name, categories)
+    }));
+    
+    const tree = buildCategoryTree(enriched);
+    res.json({ success: true, data: tree });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+// Delete categories whose names look like URLs
+const cleanupBadCategories = async (req, res) => {
+  try {
+    const result = await prisma.category.deleteMany({
+      where: {
+        OR: [
+          { name: { startsWith: 'http://' } },
+          { name: { startsWith: 'https://' } },
+          { name: { contains: 'youbethechamp.com' } }
+        ]
+      }
+    });
+    res.json({ success: true, message: `Deleted ${result.count} bad categories`, count: result.count });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
 };
 
 const createCategory = async (req, res) => {
-  const { name, description, image } = req.body;
+  const { name, description, image, parentId } = req.body;
   const slug = slugify(name, { lower: true, strict: true });
 
   try {
@@ -133,8 +168,8 @@ const createCategory = async (req, res) => {
       name, 
       slug, 
       description: description || '',
-      image: image || null
-      // parentId will be added after migration is applied
+      image: image || null,
+      parentId: parentId || null
     };
     const category = await prisma.category.create({ data });
     res.status(201).json({ success: true, data: category });
@@ -147,14 +182,18 @@ const createCategory = async (req, res) => {
 };
 
 const updateCategory = async (req, res) => {
-  const { name, description, image } = req.body;
+  const { name, description, image, parentId } = req.body;
   const slug = slugify(name, { lower: true, strict: true });
 
   try {
     const updateData = { name, slug };
     if (description !== undefined) updateData.description = description;
     if (image !== undefined) updateData.image = image || null;
-    // parentId will be added after migration
+    if (parentId !== undefined) updateData.parentId = parentId || null;
+    
+    if (parentId === req.params.id) {
+      return res.status(400).json({ success: false, message: 'Category cannot be its own parent' });
+    }
     
     const category = await prisma.category.update({
       where: { id: req.params.id },
@@ -184,5 +223,6 @@ module.exports = {
   importDescriptions,
   createCategory,
   updateCategory,
-  deleteCategory
+  deleteCategory,
+  cleanupBadCategories
 };

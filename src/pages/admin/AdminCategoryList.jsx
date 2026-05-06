@@ -140,6 +140,19 @@ const AdminCategoryList = () => {
     setShowModal(true);
   };
 
+  const handleCleanupBad = async () => {
+    if (!window.confirm('This will delete categories whose names are URLs (bad data). Continue?')) return;
+    try {
+      const res = await api.post('/categories/cleanup-bad');
+      if (res.data.success) {
+        alert(res.data.message);
+        fetchCategories();
+      }
+    } catch (err) {
+      alert(err.response?.data?.message || 'Cleanup failed');
+    }
+  };
+
   const handleImportDescriptions = async () => {
     if (!window.confirm('This will update all category descriptions from categories.csv on the server. Continue?')) return;
     setIsImporting(true);
@@ -165,7 +178,7 @@ const AdminCategoryList = () => {
 
     setIsSubmitting(true);
     try {
-      const payload = { name: categoryName, description: categoryDescription, image: categoryImage || null };
+      const payload = { name: categoryName, description: categoryDescription, image: categoryImage || null, parentId: parentId || null };
       if (editingCategory) {
         await api.put(`/categories/${editingCategory.id}`, payload);
       } else {
@@ -222,6 +235,13 @@ const AdminCategoryList = () => {
           <p className="text-gold/60 text-xs mt-2 uppercase tracking-widest">Manage store collections & taxonomy</p>
         </div>
         <div className="flex gap-3 flex-wrap">
+          <button
+            onClick={handleCleanupBad}
+            className="border border-crimson/40 text-crimson px-5 py-3 font-cinzel font-bold text-xs uppercase tracking-widest hover:bg-crimson/10 transition-all flex items-center gap-2"
+          >
+            <Trash2 size={14} />
+            Cleanup URL Categories
+          </button>
           <button
             onClick={handleImportDescriptions}
             disabled={isImporting}
@@ -312,7 +332,6 @@ const AdminCategoryList = () => {
                 {editingCategory ? 'Edit Category' : 'Add New Category'}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Parent selector hidden until DB migration is applied
                 <div>
                   <label className="block text-[10px] uppercase tracking-[2px] text-gold mb-2 font-cinzel">Parent Category (Optional)</label>
                   <select
@@ -325,12 +344,14 @@ const AdminCategoryList = () => {
                       .filter(c => c.id !== editingCategory?.id)
                       .map(cat => (
                         <option key={cat.id} value={cat.id}>
-                          {getCategoryPath(cat.id) || cat.name}
+                          {cat.name}
                         </option>
                       ))}
                   </select>
+                  <p className="text-[10px] text-gold/40 mt-1 font-raleway">
+                    Select a parent for hierarchy
+                  </p>
                 </div>
-                */}
 
                 <div>
                   <label className="block text-[10px] uppercase tracking-[2px] text-gold mb-2 font-cinzel">Category Name</label>
