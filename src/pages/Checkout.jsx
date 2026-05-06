@@ -261,7 +261,7 @@ const Checkout = () => {
                         className="flex-1 py-6 uppercase tracking-[3px] text-xs font-bold"
                       >
                         {isLoading ? <Loader2 size={18} className="animate-spin mr-2" /> : <Lock size={16} className="mr-2" />}
-                        {isLoading ? 'Securing Transaction...' : `Complete Purchase — $${finalTotal.toFixed(2)} AUD`}
+                        {isLoading ? 'Securing Transaction...' : `Complete Purchase — $${Number(finalTotal || 0).toFixed(2)} AUD`}
                       </Button>
                     )}
                   </div>
@@ -286,7 +286,7 @@ const Checkout = () => {
                         </div>
                         <div className="flex-1">
                            <p className="font-cinzel text-[10px] font-bold text-ivory uppercase leading-tight">{item.name}</p>
-                           <p className="text-[9px] text-ivory/40 font-raleway uppercase mt-1">QTY: {item.quantity} • ${Number(item.price).toFixed(2)} AUD</p>
+                           <p className="text-[9px] text-ivory/40 font-raleway uppercase mt-1">QTY: {item.quantity} • ${parseFloat(item.price || 0).toFixed(2)} AUD</p>
                         </div>
                      </div>
                    ))}
@@ -295,15 +295,15 @@ const Checkout = () => {
                 <div className="pt-6 border-t border-gold/10 space-y-3">
                   <div className="flex justify-between text-xs text-ivory/60 uppercase tracking-widest">
                     <span>Subtotal</span>
-                    <span className="font-mono text-ivory">${getTotal().toFixed(2)} AUD</span>
+                    <span className="font-mono text-ivory">${Number(getTotal() || 0).toFixed(2)} AUD</span>
                   </div>
                   <div className="flex justify-between text-[10px] text-ivory/40 uppercase tracking-widest">
                     <span>Shipping</span>
-                    <span className="text-gold">{shippingMethod === 'express' ? '$25.00 AUD' : 'Free'}</span>
+                    <span className="text-gold">{shippingMethod === 'express' ? '$25.00' : 'Free'}</span>
                   </div>
                     <div className="flex justify-between text-sm font-bold text-gold font-cinzel uppercase tracking-widest pt-4 border-t border-gold/10">
                        <span>Total (AUD)</span>
-                       <span className="font-mono">${finalTotal.toFixed(2)} AUD</span>
+                       <span className="font-mono">${Number(finalTotal || 0).toFixed(2)} AUD</span>
                     </div>
                 </div>
              </div>

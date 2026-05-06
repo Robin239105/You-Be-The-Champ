@@ -171,37 +171,41 @@ const Account = () => {
                               <p className="text-xs sm:text-sm text-ivory font-bold uppercase">{order.status}</p>
                             </div>
                             <div className="flex items-center gap-2 sm:gap-4">
-                              <span className="text-sm font-mono text-gold">${Number(order.totalAmount || 0).toFixed(2)}</span>
+                              <span className="text-sm font-mono text-gold">${parseFloat(order.totalAmount || 0).toFixed(2)}</span>
                               <span className="text-[9px] text-gold/60 uppercase">{new Date(order.createdAt).toLocaleDateString()}</span>
                             </div>
                           </div>
                           
                           {/* Order Items with Images */}
                           <div className="space-y-3 mb-4">
-                            {order.orderItems?.map((item) => (
-                              <Link 
-                                key={item.id} 
-                                to={`/product/${item.product?.slug || item.productId}`}
-                                className="flex items-center gap-3 sm:gap-4 p-2 hover:bg-gold/5 transition-colors rounded"
-                              >
-                                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black border border-gold/10 flex-shrink-0 overflow-hidden">
-                                  {item.product?.images?.[0] ? (
-                                    <img 
-                                      src={typeof item.product.images[0] === 'string' ? item.product.images[0] : item.product.images[0]?.url} 
-                                      alt={item.product?.name}
-                                      className="w-full h-full object-cover"
-                                    />
-                                  ) : (
-                                    <Package size={20} className="text-gold/40 m-auto" />
-                                  )}
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                  <p className="text-[11px] sm:text-xs text-ivory font-bold uppercase truncate">{item.product?.name || 'Championship Ring'}</p>
-                                  <p className="text-[9px] sm:text-[10px] text-ivory/40 uppercase">Qty: {item.quantity} × ${Number(item.price).toFixed(2)}</p>
-                                </div>
-                                <span className="text-xs sm:text-sm font-mono text-gold">${(Number(item.price) * item.quantity).toFixed(2)}</span>
-                              </Link>
-                            ))}
+                            {order.orderItems?.map((item) => {
+                              const itemPrice = parseFloat(item.price || 0);
+                              const itemTotal = itemPrice * (item.quantity || 1);
+                              return (
+                                <Link 
+                                  key={item.id} 
+                                  to={`/product/${item.product?.slug || item.productId}`}
+                                  className="flex items-center gap-3 sm:gap-4 p-2 hover:bg-gold/5 transition-colors rounded"
+                                >
+                                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black border border-gold/10 flex-shrink-0 overflow-hidden">
+                                    {item.product?.images?.[0] ? (
+                                      <img 
+                                        src={typeof item.product.images[0] === 'string' ? item.product.images[0] : item.product.images[0]?.url} 
+                                        alt={item.product?.name}
+                                        className="w-full h-full object-cover"
+                                      />
+                                    ) : (
+                                      <Package size={20} className="text-gold/40 m-auto" />
+                                    )}
+                                  </div>
+                                  <div className="flex-1 min-w-0">
+                                    <p className="text-[11px] sm:text-xs text-ivory font-bold uppercase truncate">{item.product?.name || 'Championship Ring'}</p>
+                                    <p className="text-[9px] sm:text-[10px] text-ivory/40 uppercase">Qty: {item.quantity} × ${itemPrice.toFixed(2)}</p>
+                                  </div>
+                                  <span className="text-xs sm:text-sm font-mono text-gold">${itemTotal.toFixed(2)}</span>
+                                </Link>
+                              );
+                            })}
                           </div>
                           
                           {/* Action Buttons */}

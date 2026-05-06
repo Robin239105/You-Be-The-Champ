@@ -111,7 +111,7 @@ const OrderConfirmation = () => {
                         <p className="text-[9px] text-ivory/40 uppercase">QTY: {item.quantity}</p>
                       </div>
                    </div>
-                   <span className="text-xs font-mono text-gold flex-shrink-0">${(Number(item.price) * item.quantity).toFixed(2)}</span>
+                   <span className="text-xs font-mono text-gold flex-shrink-0">${(Number(item.price || 0) * (item.quantity || 1)).toFixed(2)}</span>
                  </div>
                ))}
             </div>
@@ -122,7 +122,7 @@ const OrderConfirmation = () => {
                </div>
                <div className="flex justify-between text-sm font-bold text-gold font-cinzel uppercase tracking-widest pt-2">
                   <span>Total Paid</span>
-                  <span>${finalTotal.toFixed(2)} AUD</span>
+                  <span>${Number(finalTotal || 0).toFixed(2)} AUD</span>
                </div>
             </div>
           </motion.div>
