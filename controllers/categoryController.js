@@ -141,19 +141,25 @@ const getCategoryTree = async (req, res) => {
   }
 };
 
-// Delete categories whose names look like URLs
+// Delete categories AND tags whose names look like URLs
 const cleanupBadCategories = async (req, res) => {
   try {
-    const result = await prisma.category.deleteMany({
-      where: {
-        OR: [
-          { name: { startsWith: 'http://' } },
-          { name: { startsWith: 'https://' } },
-          { name: { contains: 'youbethechamp.com' } }
-        ]
-      }
+    const urlFilter = {
+      OR: [
+        { name: { startsWith: 'http://' } },
+        { name: { startsWith: 'https://' } },
+        { name: { contains: 'youbethechamp.com' } },
+        { name: { contains: 'wp-content' } }
+      ]
+    };
+    const catResult = await prisma.category.deleteMany({ where: urlFilter });
+    const tagResult = await prisma.tag.deleteMany({ where: urlFilter });
+    res.json({ 
+      success: true, 
+      message: `Deleted ${catResult.count} bad categories and ${tagResult.count} bad tags`, 
+      categories: catResult.count,
+      tags: tagResult.count
     });
-    res.json({ success: true, message: `Deleted ${result.count} bad categories`, count: result.count });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }

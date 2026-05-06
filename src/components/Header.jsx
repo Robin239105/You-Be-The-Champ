@@ -119,9 +119,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'translate-y-[-40px]' : 'translate-y-0'}`}>
-      {/* Top Banner */}
-      <div className="bg-gold text-black text-[10px] sm:text-[11px] font-cinzel font-bold py-3 px-4 text-center tracking-[2px] uppercase shadow-[0_2px_10px_rgba(201,168,76,0.2)]">
+    <header className="fixed top-0 left-0 w-full z-50">
+      {/* Top Banner - collapses on scroll */}
+      <div className={`bg-gold text-black text-[10px] sm:text-[11px] font-cinzel font-bold text-center tracking-[2px] uppercase shadow-[0_2px_10px_rgba(201,168,76,0.2)] overflow-hidden transition-all duration-500 ${
+        isScrolled ? 'max-h-0 py-0' : 'max-h-12 py-3 px-4'
+      }`}>
         Limited time only; free shipping on every order
       </div>
 
