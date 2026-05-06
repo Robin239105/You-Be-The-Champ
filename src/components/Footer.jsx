@@ -49,7 +49,7 @@ const Footer = () => {
         {/* Mobile Brand Section - Centered */}
         <div className="md:hidden mb-12 text-center">
           <Link to="/" className="flex items-center justify-center group mb-6">
-            <div className="relative w-24 h-24 transition-all duration-500 group-hover:scale-105">
+            <div className="relative w-28 h-28 transition-all duration-500 group-hover:scale-105">
               <img src="/logo.png" alt="You Be The Champ Logo" className="w-full h-full object-contain" />
             </div>
           </Link>
@@ -146,7 +146,7 @@ const Footer = () => {
         </div>
 
         {/* Mobile Additional Links - 2 Columns */}
-        <div className="md:hidden grid grid-cols-2 gap-6 mb-12 pb-8 border-b border-gray-700">
+        <div className="md:hidden grid grid-cols-2 gap-6 mb-12">
           <div>
             <h4 className="font-cinzel text-gray-200 text-xs font-bold uppercase tracking-widest mb-4">More</h4>
             <ul className="space-y-3">
