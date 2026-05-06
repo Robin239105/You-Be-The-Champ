@@ -27,6 +27,13 @@ async function generateOrderNumber() {
 const createOrder = async (req, res) => {
   const { cartItems, totalAmount, shippingAddress, paymentMethod, couponCode, affiliateCode } = req.body;
 
+  console.log('📦 Create Order Request:', {
+    userId: req.user.id,
+    cartItems: cartItems.length,
+    totalAmount,
+    affiliateCode
+  });
+
   try {
     const orderNumber = await generateOrderNumber();
     
@@ -35,7 +42,7 @@ const createOrder = async (req, res) => {
         orderNumber,
         userId: req.user.id,
         totalAmount: parseFloat(totalAmount),
-        shippingAddress,
+        shippingAddress: typeof shippingAddress === 'string' ? JSON.parse(shippingAddress) : shippingAddress,
         paymentMethod,
         couponCode,
         affiliateCode: affiliateCode || null,
@@ -50,8 +57,10 @@ const createOrder = async (req, res) => {
       include: { orderItems: { include: { product: { select: { name: true, images: true } } } } }
     });
 
+    console.log('✅ Order Created Successfully:', order.orderNumber);
     res.status(201).json({ success: true, data: order });
   } catch (error) {
+    console.error('❌ Order Creation Failed:', error.message);
     res.status(500).json({ success: false, message: error.message });
   }
 };

@@ -145,12 +145,12 @@ const Checkout = () => {
                         <div className="h-8 w-12 bg-ivory/20 rounded-md" />
                         <div className="h-8 w-12 bg-ivory/20 rounded-md" />
                       </div>
-                      <Input label="Card Number" placeholder="0000 0000 0000 0000" full />
+                      <Input label="Card Number" placeholder="0000 0000 0000 0000" full value="4242 4242 4242 4242" readOnly />
                       <div className="grid grid-cols-2 gap-6">
-                         <Input label="Expiry Date" placeholder="MM/YY" />
-                         <Input label="CVV" placeholder="123" />
+                         <Input label="Expiry Date" placeholder="MM/YY" value="12/28" readOnly />
+                         <Input label="CVV" placeholder="123" value="123" readOnly />
                       </div>
-                      <Input label="Name on Card" placeholder="JOHN DOE" full />
+                      <Input label="Name on Card" placeholder="JOHN DOE" full value={`${formData.firstName} ${formData.lastName}`.toUpperCase()} readOnly />
                     </div>
                   </section>
                   
@@ -231,13 +231,26 @@ const Checkout = () => {
                           setIsLoading(true);
                           try {
                             const storedRef = localStorage.getItem('affiliateRef');
+                            console.log('🚀 Initiating order placement...', {
+                              cartItemsCount: items.length,
+                              total: finalTotal
+                            });
                             const response = await api.post('/orders', {
                               cartItems: items.map(i => ({ id: i.id, quantity: i.quantity, price: Number(i.price) })),
                               totalAmount: finalTotal,
-                              shippingAddress: `${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}`,
+                              shippingAddress: JSON.stringify({
+                                street: formData.address,
+                                city: formData.city,
+                                state: formData.state,
+                                zip: formData.zip,
+                                country: 'Australia', // Defaulting to Australia as per currency
+                                name: `${formData.firstName} ${formData.lastName}`
+                              }),
                               paymentMethod: 'Credit Card (Mock)',
                               affiliateCode: storedRef || null,
                             });
+                            
+                            console.log('✅ API Response:', response.data);
                             
                             if (response.data.success) {
                               clearCart();
@@ -253,6 +266,7 @@ const Checkout = () => {
                               });
                             }
                           } catch (error) {
+                            console.error('❌ Order submission error:', error);
                             setError(error.response?.data?.message || 'Failed to place order');
                           } finally {
                             setIsLoading(false);
@@ -316,7 +330,7 @@ const Checkout = () => {
   );
 };
 
-const Input = ({ label, placeholder, full = false, value = '', onChange = () => {} }) => (
+const Input = ({ label, placeholder, full = false, value = '', onChange = () => {}, readOnly = false }) => (
   <div className={full ? 'col-span-2' : ''}>
     <label className="block text-[10px] font-cinzel font-bold text-ivory/40 uppercase tracking-widest mb-2">{label}</label>
     <input 
@@ -324,7 +338,8 @@ const Input = ({ label, placeholder, full = false, value = '', onChange = () => 
       placeholder={placeholder}
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="w-full bg-surface border border-gold/20 px-4 py-3 font-raleway text-sm text-ivory outline-none focus:border-gold transition-colors placeholder:text-ivory/10"
+      readOnly={readOnly}
+      className={`w-full bg-surface border border-gold/20 px-4 py-3 font-raleway text-sm text-ivory outline-none focus:border-gold transition-colors placeholder:text-ivory/10 ${readOnly ? 'opacity-60 cursor-not-allowed' : ''}`}
     />
   </div>
 );
