@@ -9,7 +9,7 @@ import Breadcrumb from '../components/Breadcrumb';
 const LEAGUE_DATA = {
   nfl: {
     name: "NFL",
-    icon: "🏈",
+    icon: "/NFL Logo.png",
     label: "National Football League",
     color: "#013369",
     categoryBase: "League > NFL - National Football League",
@@ -69,7 +69,7 @@ const LEAGUE_DATA = {
 
   nba: {
     name: "NBA",
-    icon: "🏀",
+    icon: "/NBA Logo.png",
     label: "National Basketball Association",
     color: "#C9002B",
     categoryBase: "League > NBA - National Basketball Association",
@@ -119,7 +119,7 @@ const LEAGUE_DATA = {
 
   mlb: {
     name: "MLB",
-    icon: "⚾",
+    icon: "/MLB Logo.png",
     label: "Major League Baseball",
     color: "#002D72",
     categoryBase: "League > MLB - Major League Baseball",
@@ -169,9 +169,9 @@ const LEAGUE_DATA = {
 
   nhl: {
     name: "NHL",
-    icon: "🏒",
+    icon: "/NHL Logo.png",
     label: "National Hockey League",
-    color: "#333",
+    color: "#111111",
     categoryBase: "League > NHL - National Hockey League",
     conferences: [
       {
@@ -230,7 +230,7 @@ const LeagueStandingsPage = () => {
           <div className="absolute inset-0 opacity-100 transition-opacity"
             style={{ background: `radial-gradient(circle at center, ${data.color}22 0%, transparent 65%)` }} />
           <div className="relative z-10">
-            <span className="text-5xl block mb-4">{data.icon}</span>
+            <img src={data.icon} alt={data.name} className="w-20 h-20 object-contain mx-auto mb-4" />
             <h1 className="text-5xl md:text-7xl font-black font-cinzel text-white uppercase tracking-widest mb-2">{data.name}</h1>
             <p className="text-white/40 font-raleway text-sm uppercase tracking-[3px]">{data.label}</p>
           </div>
