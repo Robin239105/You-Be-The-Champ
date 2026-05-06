@@ -121,15 +121,6 @@ const ChampionshipFinalsPage = () => (
         </Link>
       </div>
 
-      {/* Champions by Year link */}
-      <div className="mt-6 text-center">
-        <Link to="/champions-by-year"
-          className="inline-flex items-center gap-3 text-gold/60 hover:text-gold font-cinzel text-[10px] uppercase tracking-[3px] transition-colors">
-          <span className="w-6 h-px bg-gold/30" />
-          Browse by Year Instead
-          <span className="w-6 h-px bg-gold/30" />
-        </Link>
-      </div>
     </main>
     <Footer />
   </div>
