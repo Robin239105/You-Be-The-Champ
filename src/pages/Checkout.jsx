@@ -449,54 +449,53 @@ const Checkout = () => {
                          </div>
                        </div>
 
-                       {/* Coupon Section */}
-                       <div className="bg-gold/5 border border-gold/20 p-4 rounded-lg space-y-3">
-                         {appliedCoupon ? (
-                           <div className="flex items-center justify-between">
-                             <div className="flex items-center gap-2">
-                               <Check size={14} className="text-emerald-400" />
-                               <span className="text-xs font-cinzel font-bold text-gold uppercase">Coupon Applied</span>
-                             </div>
-                             <div className="flex items-center gap-3">
-                               <p className="text-sm font-mono font-bold text-ivory">{appliedCoupon}</p>
-                               <button
-                                 onClick={handleRemoveCoupon}
-                                 className="text-[10px] text-ivory/50 hover:text-crimson transition-colors underline uppercase font-cinzel"
-                               >
-                                 Remove
-                               </button>
-                             </div>
-                           </div>
-                         ) : (
-                           <div className="space-y-2">
-                             <label className="text-[10px] font-cinzel text-gold/80 uppercase tracking-widest block">🎟️ Have a Coupon?</label>
-                             <div className="flex gap-2">
-                               <input
-                                 type="text"
-                                 value={couponCode}
-                                 onChange={(e) => {
-                                   setCouponCode(e.target.value);
-                                   setCouponError('');
-                                 }}
-                                 placeholder="Enter code"
-                                 className="flex-1 bg-black border border-gold/20 px-3 py-2 text-[10px] text-ivory font-mono uppercase placeholder:text-ivory/20 focus:border-gold outline-none transition-colors"
-                                 onKeyPress={(e) => e.key === 'Enter' && handleApplyCoupon()}
-                               />
-                               <button
-                                 onClick={handleApplyCoupon}
-                                 disabled={couponLoading}
-                                 className="px-4 py-2 bg-gold/20 hover:bg-gold/30 border border-gold/40 text-gold text-[10px] font-cinzel uppercase font-bold transition-all disabled:opacity-50 flex items-center gap-1"
-                               >
-                                 {couponLoading ? <Loader2 size={12} className="animate-spin" /> : <Ticket size={12} />}
-                                 Apply
-                               </button>
-                             </div>
-                             {couponError && (
-                               <p className="text-[10px] text-crimson uppercase font-cinzel">{couponError}</p>
-                             )}
-                           </div>
-                         )}
-                       </div>
+                        {/* Coupon Section */}
+                        <div className="bg-gold/5 border border-gold/20 p-4 rounded-lg space-y-3">
+                          {appliedCoupon && (
+                            <div className="flex items-center justify-between pb-3 border-b border-gold/20">
+                              <div className="flex items-center gap-2">
+                                <Check size={14} className="text-emerald-400" />
+                                <div>
+                                  <span className="text-xs font-cinzel font-bold text-gold uppercase block">Coupon Applied</span>
+                                  <p className="text-sm font-mono font-bold text-ivory">{appliedCoupon}</p>
+                                </div>
+                              </div>
+                              <button
+                                onClick={handleRemoveCoupon}
+                                className="text-[10px] text-ivory/50 hover:text-crimson transition-colors underline uppercase font-cinzel"
+                              >
+                                Remove
+                              </button>
+                            </div>
+                          )}
+                          <div className="space-y-2">
+                            <label className="text-[10px] font-cinzel text-gold/80 uppercase tracking-widest block">🎟️ {appliedCoupon ? 'Apply Another Coupon' : 'Have a Coupon?'}</label>
+                            <div className="flex gap-2">
+                              <input
+                                type="text"
+                                value={couponCode}
+                                onChange={(e) => {
+                                  setCouponCode(e.target.value);
+                                  setCouponError('');
+                                }}
+                                placeholder="Enter code"
+                                className="flex-1 bg-black border border-gold/20 px-3 py-2 text-[10px] text-ivory font-mono uppercase placeholder:text-ivory/20 focus:border-gold outline-none transition-colors"
+                                onKeyPress={(e) => e.key === 'Enter' && handleApplyCoupon()}
+                              />
+                              <button
+                                onClick={handleApplyCoupon}
+                                disabled={couponLoading}
+                                className="px-4 py-2 bg-gold/20 hover:bg-gold/30 border border-gold/40 text-gold text-[10px] font-cinzel uppercase font-bold transition-all disabled:opacity-50 flex items-center gap-1"
+                              >
+                                {couponLoading ? <Loader2 size={12} className="animate-spin" /> : <Ticket size={12} />}
+                                Apply
+                              </button>
+                            </div>
+                            {couponError && (
+                              <p className="text-[10px] text-crimson uppercase font-cinzel">{couponError}</p>
+                            )}
+                          </div>
+                        </div>
 
                        {/* Terms */}
                        <div className="bg-gold/5 border border-gold/20 p-4 rounded-lg">

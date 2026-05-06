@@ -6,7 +6,10 @@ import { Link } from 'react-router-dom';
 import Button from './Button';
 
 const CartDrawer = ({ isOpen, onClose }) => {
-  const { items, removeItem, updateQty, getTotal } = useCartStore();
+  const { items, removeItem, updateQty, getTotal, appliedCoupon, discountAmount } = useCartStore();
+  
+  const subtotal = getTotal();
+  const finalTotal = subtotal - discountAmount;
 
   return (
     <AnimatePresence>
@@ -102,9 +105,21 @@ const CartDrawer = ({ isOpen, onClose }) => {
             {/* Footer */}
             {items.length > 0 && (
               <div className="p-6 bg-card-alt border-t border-gold/20 space-y-4">
-                <div className="flex justify-between items-center px-2">
-                  <span className="font-cinzel text-sm text-ivory/60 uppercase tracking-widest">Subtotal</span>
-                  <span className="font-mono text-xl text-gold font-bold">${getTotal().toFixed(2)}</span>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center px-2">
+                    <span className="font-cinzel text-sm text-ivory/60 uppercase tracking-widest">Subtotal</span>
+                    <span className="font-mono text-ivory">${subtotal.toFixed(2)}</span>
+                  </div>
+                  {discountAmount > 0 && (
+                    <div className="flex justify-between items-center px-2 text-emerald-400">
+                      <span className="font-cinzel text-sm uppercase tracking-widest">Discount</span>
+                      <span className="font-mono font-bold">-${discountAmount.toFixed(2)}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between items-center px-2 pt-2 border-t border-gold/10">
+                    <span className="font-cinzel text-lg font-bold text-gold uppercase tracking-widest">Total</span>
+                    <span className="font-mono text-xl text-gold font-bold">${finalTotal.toFixed(2)}</span>
+                  </div>
                 </div>
                 <Link to="/cart" onClick={onClose} className="block w-full">
                   <Button variant="outline" className="w-full text-[10px]">View Cart & Apply Coupon</Button>
