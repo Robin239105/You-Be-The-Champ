@@ -10,10 +10,15 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// Ensure uploads directory exists
+// Ensure uploads directory exists (skip on read-only filesystems like Vercel)
 const uploadsDir = path.join(__dirname, '..', 'uploads');
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+try {
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  }
+} catch (err) {
+  // Silent fail - read-only filesystem (Vercel serverless)
+  console.warn('Cannot create uploads directory:', err.message);
 }
 
 // Configure multer for local disk storage
