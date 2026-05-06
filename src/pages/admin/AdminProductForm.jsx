@@ -27,12 +27,24 @@ const AdminProductForm = ({ isEdit = false }) => {
   const [availableCategories, setAvailableCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
 
   const fetchCategories = async () => {
     try {
-      const response = await api.get('/products/categories');
+      const response = await api.get('/categories/tree');
       if (response.data.success) {
-        setAvailableCategories(response.data.data);
+        // Flatten tree for checkbox display
+        const flattenTree = (nodes, level = 0) => {
+          let result = [];
+          nodes.forEach(node => {
+            result.push({ ...node, level });
+            if (node.children && node.children.length > 0) {
+              result = result.concat(flattenTree(node.children, level + 1));
+            }
+          });
+          return result;
+        };
+        setAvailableCategories(flattenTree(response.data.data));
       }
     } catch (error) {
       console.error('Failed to fetch categories:', error);
@@ -86,8 +98,31 @@ const AdminProductForm = ({ isEdit = false }) => {
 
   const handleAddImage = () => {
     if (newImageUrl) {
-      setImages(prev => [...prev, newImageUrl]);
+      setImages(prev => [...prev, { url: newImageUrl, isPrimary: prev.length === 0 }]);
       setNewImageUrl('');
+    }
+  };
+
+  const handleFileUpload = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsUploading(true);
+    const formData = new FormData();
+    formData.append('image', file);
+
+    try {
+      const response = await api.post('/upload/local', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
+      if (response.data.success) {
+        setImages(prev => [...prev, { url: response.data.url, isPrimary: prev.length === 0 }]);
+      }
+    } catch (error) {
+      console.error('Upload failed:', error);
+      alert('Failed to upload image');
+    } finally {
+      setIsUploading(false);
     }
   };
 
@@ -357,6 +392,30 @@ const AdminProductForm = ({ isEdit = false }) => {
                 <Plus size={16} />
               </button>
             </div>
+            
+            {/* File Upload */}
+            <div className="mt-4">
+              <label className="flex items-center justify-center gap-2 w-full border border-dashed border-white/20 py-4 cursor-pointer hover:border-gold hover:bg-gold/5 transition-all rounded">
+                <input
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={handleFileUpload}
+                  disabled={isUploading}
+                />
+                {isUploading ? (
+                  <>
+                    <Loader2 size={16} className="animate-spin text-gold" />
+                    <span className="text-[10px] text-gold font-cinzel uppercase tracking-widest">Uploading...</span>
+                  </>
+                ) : (
+                  <>
+                    <Upload size={16} className="text-white/40" />
+                    <span className="text-[10px] text-white/40 font-cinzel uppercase tracking-widest">Click to upload image</span>
+                  </>
+                )}
+              </label>
+            </div>
           </section>
 
           {/* Taxonomy */}
@@ -365,7 +424,7 @@ const AdminProductForm = ({ isEdit = false }) => {
                <label className="block text-[10px] uppercase tracking-widest text-ivory/40 mb-2">Categories</label>
                <div className="space-y-2 max-h-60 overflow-y-auto pr-2 custom-scrollbar bg-black/20 p-4 border border-white/5 rounded-lg">
                   {availableCategories.map(cat => (
-                    <div key={cat.id} className="flex items-center gap-3">
+                    <div key={cat.id} className="flex items-center gap-3" style={{ paddingLeft: `${(cat.level || 0) * 16}px` }}>
                       <input 
                         type="checkbox" 
                         id={`cat-${cat.id}`} 
@@ -379,7 +438,11 @@ const AdminProductForm = ({ isEdit = false }) => {
                           }
                         }}
                       />
-                      <label htmlFor={`cat-${cat.id}`} className="text-xs text-ivory/60 hover:text-gold cursor-pointer transition-colors">{cat.name}</label>
+                      <label htmlFor={`cat-${cat.id}`} className="text-xs text-ivory/60 hover:text-gold cursor-pointer transition-colors flex items-center gap-2">
+                        {cat.image && <img src={cat.image} alt="" className="w-5 h-5 rounded object-cover" />}
+                        <span>{cat.name}</span>
+                        {cat.level > 0 && <span className="text-[9px] text-gold/30">({cat.children?.length || 0} children)</span>}
+                      </label>
                     </div>
                   ))}
                </div>

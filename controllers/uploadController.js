@@ -1,5 +1,7 @@
 const cloudinary = require('cloudinary').v2;
 const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
 
 // Configure Cloudinary from env
 cloudinary.config({
@@ -8,8 +10,28 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
+// Ensure uploads directory exists
+const uploadsDir = path.join(__dirname, '..', 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir, { recursive: true });
+}
 
+// Configure multer for local disk storage
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, uploadsDir);
+  },
+  filename: (req, file, cb) => {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    const ext = path.extname(file.originalname);
+    cb(null, file.fieldname + '-' + uniqueSuffix + ext);
+  }
+});
+
+const upload = multer({ storage, limits: { fileSize: 5 * 1024 * 1024 } });
+const uploadMemory = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
+
+// Upload to Cloudinary (for categories)
 const uploadImage = async (req, res) => {
   try {
     if (!req.file) {
@@ -36,4 +58,18 @@ const uploadImage = async (req, res) => {
   }
 };
 
-module.exports = { uploadImage, upload };
+// Upload to local disk (for products)
+const uploadLocalImage = async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ success: false, message: 'No image file provided' });
+    }
+
+    const relativePath = '/uploads/' + req.file.filename;
+    res.json({ success: true, url: relativePath, filename: req.file.filename });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+module.exports = { uploadImage, uploadLocalImage, upload, uploadMemory };

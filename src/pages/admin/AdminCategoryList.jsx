@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Edit2, Trash2, Search, Loader2, Tag, Upload, ImagePlus, X } from 'lucide-react';
+import { Plus, Edit2, Trash2, Search, Loader2, Tag, Upload, ImagePlus, X, ChevronRight, ChevronDown, Folder, FolderOpen } from 'lucide-react';
 import api from '../../utils/api';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const AdminCategoryList = () => {
   const [categories, setCategories] = useState([]);
+  const [categoryTree, setCategoryTree] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,22 +14,117 @@ const AdminCategoryList = () => {
   const [categoryName, setCategoryName] = useState('');
   const [categoryDescription, setCategoryDescription] = useState('');
   const [categoryImage, setCategoryImage] = useState('');
+  const [parentId, setParentId] = useState('');
   const [isImporting, setIsImporting] = useState(false);
   const [importResult, setImportResult] = useState('');
   const [isUploadingImage, setIsUploadingImage] = useState(false);
+  const [expandedNodes, setExpandedNodes] = useState(new Set());
 
   const fetchCategories = async () => {
     setIsLoading(true);
     try {
-      const response = await api.get('/categories');
-      if (response.data.success) {
-        setCategories(response.data.data);
+      const [flatRes, treeRes] = await Promise.all([
+        api.get('/categories'),
+        api.get('/categories/tree')
+      ]);
+      if (flatRes.data.success) {
+        setCategories(flatRes.data.data);
+      }
+      if (treeRes.data.success) {
+        setCategoryTree(treeRes.data.data);
       }
     } catch (err) {
       console.error('Failed to fetch categories:', err);
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const toggleExpand = (id) => {
+    setExpandedNodes(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(id)) {
+        newSet.delete(id);
+      } else {
+        newSet.add(id);
+      }
+      return newSet;
+    });
+  };
+
+  const getCategoryPath = (categoryId) => {
+    const path = [];
+    let current = categories.find(c => c.id === categoryId);
+    while (current) {
+      path.unshift(current.name);
+      current = categories.find(c => c.id === current.parentId);
+    }
+    return path.join(' > ');
+  };
+
+  const renderCategoryTree = (nodes, level = 0) => {
+    return nodes.map(cat => {
+      const hasChildren = cat.children && cat.children.length > 0;
+      const isExpanded = expandedNodes.has(cat.id);
+      const isEditing = editingCategory?.id === cat.id;
+      
+      return (
+        <React.Fragment key={cat.id}>
+          <tr className={`hover:bg-gold/[0.02] transition-colors group ${isEditing ? 'bg-gold/10' : ''}`}>
+            <td className="px-8 py-4">
+              <div className="flex items-center gap-3" style={{ paddingLeft: `${level * 24}px` }}>
+                {hasChildren ? (
+                  <button 
+                    onClick={() => toggleExpand(cat.id)}
+                    className="p-1 hover:bg-gold/10 rounded text-gold/60 hover:text-gold"
+                  >
+                    {isExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                  </button>
+                ) : (
+                  <span className="w-6" />
+                )}
+                {cat.image ? (
+                  <img src={cat.image} alt={cat.name} className="w-10 h-10 rounded object-cover border border-gold/10" />
+                ) : (
+                  <div className="w-10 h-10 rounded bg-gold/5 border border-gold/10 flex items-center justify-center text-gold/40">
+                    {hasChildren ? (isExpanded ? <FolderOpen size={16} /> : <Folder size={16} />) : <Tag size={14} />}
+                  </div>
+                )}
+                <div>
+                  <span className="text-white font-cinzel tracking-wider text-sm">{cat.name}</span>
+                  {level > 0 && (
+                    <p className="text-[10px] text-gold/40 font-raleway">{getCategoryPath(cat.parentId)}</p>
+                  )}
+                </div>
+              </div>
+            </td>
+            <td className="px-8 py-4">
+              <code className="text-[10px] bg-black/40 text-gold/60 px-2 py-1 rounded border border-gold/5 uppercase tracking-widest">{cat.slug}</code>
+            </td>
+            <td className="px-8 py-4 text-center">
+              <span className="text-ivory font-raleway text-sm">{cat._count?.products || 0}</span>
+            </td>
+            <td className="px-8 py-4 text-right">
+              <div className="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                <button 
+                  onClick={() => handleOpenModal(cat)}
+                  className="p-2 text-gold/60 hover:text-gold hover:bg-gold/10 rounded transition-all"
+                >
+                  <Edit2 size={16} />
+                </button>
+                <button 
+                  onClick={() => handleDelete(cat.id)}
+                  className="p-2 text-crimson/60 hover:text-crimson hover:bg-crimson/10 rounded transition-all"
+                >
+                  <Trash2 size={16} />
+                </button>
+              </div>
+            </td>
+          </tr>
+          {hasChildren && isExpanded && renderCategoryTree(cat.children, level + 1)}
+        </React.Fragment>
+      );
+    });
   };
 
   useEffect(() => {
@@ -40,6 +136,7 @@ const AdminCategoryList = () => {
     setCategoryName(category ? category.name : '');
     setCategoryDescription(category ? (category.description || '') : '');
     setCategoryImage(category ? (category.image || '') : '');
+    setParentId(category ? (category.parentId || '') : '');
     setShowModal(true);
   };
 
@@ -68,7 +165,7 @@ const AdminCategoryList = () => {
 
     setIsSubmitting(true);
     try {
-      const payload = { name: categoryName, description: categoryDescription, image: categoryImage || null };
+      const payload = { name: categoryName, description: categoryDescription, image: categoryImage || null, parentId: parentId || null };
       if (editingCategory) {
         await api.put(`/categories/${editingCategory.id}`, payload);
       } else {
@@ -175,56 +272,19 @@ const AdminCategoryList = () => {
             <tbody className="divide-y divide-gold/5">
               {isLoading ? (
                 <tr>
-                  <td colSpan="5" className="px-8 py-20 text-center">
+                  <td colSpan="4" className="px-8 py-20 text-center">
                     <Loader2 className="animate-spin text-gold mx-auto mb-4" size={32} />
                     <p className="text-gold/40 text-[10px] uppercase tracking-widest">Retrieving collections...</p>
                   </td>
                 </tr>
-              ) : filteredCategories.length === 0 ? (
+              ) : categoryTree.length === 0 ? (
                 <tr>
-                  <td colSpan="5" className="px-8 py-20 text-center">
+                  <td colSpan="4" className="px-8 py-20 text-center">
                     <p className="text-gold/40 text-[10px] uppercase tracking-widest">No categories found</p>
                   </td>
                 </tr>
               ) : (
-                filteredCategories.map((cat) => (
-                  <tr key={cat.id} className="hover:bg-gold/[0.02] transition-colors group">
-                    <td className="px-8 py-6">
-                      {cat.image ? (
-                        <img src={cat.image} alt={cat.name} className="w-12 h-12 rounded-lg object-cover border border-gold/10" />
-                      ) : (
-                        <div className="w-12 h-12 rounded-lg bg-gold/5 border border-gold/10 flex items-center justify-center text-gold/40">
-                          <Tag size={18} />
-                        </div>
-                      )}
-                    </td>
-                    <td className="px-8 py-6">
-                      <span className="text-white font-cinzel tracking-wider">{cat.name}</span>
-                    </td>
-                    <td className="px-8 py-6">
-                      <code className="text-[10px] bg-black/40 text-gold/60 px-2 py-1 rounded border border-gold/5 uppercase tracking-widest">{cat.slug}</code>
-                    </td>
-                    <td className="px-8 py-6 text-center">
-                      <span className="text-ivory font-raleway font-bold">{cat._count?.products || 0}</span>
-                    </td>
-                    <td className="px-8 py-6 text-right">
-                      <div className="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <button 
-                          onClick={() => handleOpenModal(cat)}
-                          className="p-2 text-gold/60 hover:text-gold hover:bg-gold/10 rounded transition-all"
-                        >
-                          <Edit2 size={16} />
-                        </button>
-                        <button 
-                          onClick={() => handleDelete(cat.id)}
-                          className="p-2 text-crimson/60 hover:text-crimson hover:bg-crimson/10 rounded transition-all"
-                        >
-                          <Trash2 size={16} />
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))
+                renderCategoryTree(categoryTree)
               )}
             </tbody>
           </table>
@@ -252,6 +312,27 @@ const AdminCategoryList = () => {
                 {editingCategory ? 'Edit Category' : 'Add New Category'}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label className="block text-[10px] uppercase tracking-[2px] text-gold mb-2 font-cinzel">Parent Category (Optional)</label>
+                  <select
+                    value={parentId}
+                    onChange={(e) => setParentId(e.target.value)}
+                    className="w-full bg-black/40 border border-gold/10 py-4 px-4 text-white focus:border-gold outline-none transition-all font-raleway text-sm"
+                  >
+                    <option value="">-- No Parent (Top Level) --</option>
+                    {categories
+                      .filter(c => c.id !== editingCategory?.id) // Can't be own parent
+                      .map(cat => (
+                        <option key={cat.id} value={cat.id}>
+                          {getCategoryPath(cat.id) || cat.name}
+                        </option>
+                      ))}
+                  </select>
+                  <p className="text-[10px] text-gold/40 mt-1 font-raleway">
+                    Select a parent to create hierarchy (e.g., League {'>'} NFL {'>'} AFC East)
+                  </p>
+                </div>
+
                 <div>
                   <label className="block text-[10px] uppercase tracking-[2px] text-gold mb-2 font-cinzel">Category Name</label>
                   <input 

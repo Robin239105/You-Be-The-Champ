@@ -1,10 +1,11 @@
 const express = require('express');
-const { getCategories, getCategoryByName, importDescriptions, createCategory, updateCategory, deleteCategory } = require('../controllers/categoryController');
+const { getCategories, getCategoryTree, getCategoryByName, importDescriptions, createCategory, updateCategory, deleteCategory } = require('../controllers/categoryController');
 const { protect, admin } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
 router.get('/', getCategories);
+router.get('/tree', getCategoryTree);
 router.get('/by-name/:name', getCategoryByName);
 
 // Admin only routes
