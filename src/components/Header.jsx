@@ -145,7 +145,10 @@ const Header = () => {
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
               className="fixed top-0 left-0 bottom-0 w-full max-w-md bg-black border-r border-gold/20 z-[70] flex flex-col"
             >
-              <div className="flex items-center justify-end p-6 border-b border-gold/20">
+              <div className="flex items-center justify-between p-4 border-b border-gold/20">
+                <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center">
+                  <img src="/logo.png" alt="You Be The Champ" className="w-14 h-14 object-contain" />
+                </Link>
                 <button 
                   className="p-2 text-gold hover:rotate-90 transition-transform"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -166,14 +169,22 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className="p-8 border-t border-gold/10 bg-surface/50">
-                <div className="grid grid-cols-2 gap-4">
-
-                  <Link to="/account" className="flex items-center gap-3 text-ivory/60 hover:text-gold transition-colors font-cinzel text-xs tracking-widest uppercase" onClick={() => setIsMobileMenuOpen(false)}>
-                    <User size={18} /> My Account
-                  </Link>
-                  <Link to="/contact" className="flex items-center gap-3 text-ivory/60 hover:text-gold transition-colors font-cinzel text-xs tracking-widest uppercase">
-                    <ShoppingBag size={18} /> Support
+              <div className="p-6 border-t border-gold/10 bg-surface/50">
+                <div className="grid grid-cols-2 gap-3">
+                  {isAuthenticated ? (
+                    <Link to="/account" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
+                      <User size={16} className="flex-shrink-0" />
+                      <span className="truncate">My Account</span>
+                    </Link>
+                  ) : (
+                    <Link to="/login" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
+                      <User size={16} className="flex-shrink-0" />
+                      <span className="truncate">Login / Register</span>
+                    </Link>
+                  )}
+                  <Link to="/contact" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
+                    <ShoppingBag size={16} className="flex-shrink-0" />
+                    <span className="truncate">Support</span>
                   </Link>
                 </div>
               </div>
