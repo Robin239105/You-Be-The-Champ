@@ -1,5 +1,5 @@
 const express = require('express');
-const { register, login, refresh, getAllUsers, getUserById, updateUserRole, toggleBanUser, deleteUser } = require('../controllers/authController.js');
+const { register, login, refresh, getAllUsers, getUserById, updateUserRole, toggleBanUser, deleteUser, updateProfile, addAddress, deleteAddress } = require('../controllers/authController.js');
 const { protect, admin } = require('../middleware/authMiddleware.js');
 const rateLimit = require('express-rate-limit');
 
@@ -14,6 +14,11 @@ const authLimiter = rateLimit({
 router.post('/register', authLimiter, register);
 router.post('/login', authLimiter, login);
 router.post('/refresh', refresh);
+
+// Protected routes
+router.put('/me', protect, updateProfile);
+router.post('/addresses', protect, addAddress);
+router.delete('/addresses/:id', protect, deleteAddress);
 
 // Admin only
 router.get('/users', protect, admin, getAllUsers);

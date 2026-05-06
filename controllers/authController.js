@@ -246,4 +246,60 @@ const deleteUser = async (req, res) => {
   }
 };
 
-module.exports = { register, login, refresh, getAllUsers, getUserById, updateUserRole, toggleBanUser, deleteUser };
+const updateProfile = async (req, res) => {
+  const { firstName, lastName } = req.body;
+  try {
+    const updated = await prisma.user.update({
+      where: { id: req.user.id },
+      data: {
+        ...(firstName && { firstName }),
+        ...(lastName && { lastName })
+      },
+      select: { id: true, email: true, firstName: true, lastName: true, affiliateCode: true, affiliateClicks: true, role: true }
+    });
+    res.json({ success: true, data: updated });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const addAddress = async (req, res) => {
+  const { street, city, state, zip, country, isDefault } = req.body;
+  try {
+    // If this is default, unset other defaults
+    if (isDefault) {
+      await prisma.address.updateMany({
+        where: { userId: req.user.id },
+        data: { isDefault: false }
+      });
+    }
+    
+    const address = await prisma.address.create({
+      data: {
+        userId: req.user.id,
+        street,
+        city,
+        state,
+        zip,
+        country,
+        isDefault
+      }
+    });
+    res.status(201).json({ success: true, data: address });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const deleteAddress = async (req, res) => {
+  try {
+    await prisma.address.delete({
+      where: { id: req.params.id }
+    });
+    res.json({ success: true, message: 'Address deleted' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+module.exports = { register, login, refresh, getAllUsers, getUserById, updateUserRole, toggleBanUser, deleteUser, updateProfile, addAddress, deleteAddress };
