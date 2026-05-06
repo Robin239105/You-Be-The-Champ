@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
@@ -10,6 +10,7 @@ import { Loader2, AlertCircle } from 'lucide-react';
 const Register = () => {
   const { register, isAuthenticated, isLoading, error, clearError } = useAuthStore();
   const navigate = useNavigate();
+  const location = useLocation();
   const [formData, setFormData] = React.useState({
     firstName: '',
     lastName: '',
@@ -19,10 +20,13 @@ const Register = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/account');
+      // Redirect to the intended location (e.g., checkout) or default to account
+      const redirectTo = location.state?.from?.pathname || '/account';
+      console.log('🔄 Redirecting to:', redirectTo);
+      navigate(redirectTo, { replace: true });
     }
     return () => clearError();
-  }, [isAuthenticated, navigate, clearError]);
+  }, [isAuthenticated, navigate, clearError, location.state?.from]);
 
   const handleRegister = async (e) => {
     e.preventDefault();

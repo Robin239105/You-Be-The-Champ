@@ -16,7 +16,10 @@ const OrderConfirmation = () => {
   const downloadTriggered = useRef(false);
 
   useEffect(() => {
+    console.log('📄 OrderConfirmation mounted, location.state:', location.state);
+    
     if (!location.state) {
+      console.warn('❌ No location.state found, redirecting to shop');
       navigate('/shop');
       return;
     }
@@ -34,6 +37,7 @@ const OrderConfirmation = () => {
         shippingMethod,
         finalTotal
       };
+      console.log('📥 Downloading invoice:', order);
       downloadInvoice(order);
       downloadTriggered.current = true;
     }

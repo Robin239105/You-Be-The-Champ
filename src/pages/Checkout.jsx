@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, Truck, CreditCard, ChevronRight, Lock, Loader2 } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
@@ -11,6 +11,7 @@ import api from '../utils/api';
 
 const Checkout = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const isAuthenticated = useAuthStore(state => state.isAuthenticated);
   const [step, setStep] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
@@ -21,6 +22,23 @@ const Checkout = () => {
   const [error, setError] = useState('');
 
   const { items, getTotal, clearCart } = useCartStore();
+
+  // Load checkout state from localStorage (after returning from login)
+  useEffect(() => {
+    const savedCheckoutState = localStorage.getItem('checkoutState');
+    if (savedCheckoutState) {
+      try {
+        const { step: savedStep, formData: savedFormData, shippingMethod: savedShippingMethod } = JSON.parse(savedCheckoutState);
+        setStep(savedStep || 1);
+        setFormData(savedFormData || formData);
+        setShippingMethod(savedShippingMethod || 'standard');
+        localStorage.removeItem('checkoutState');
+        console.log('✅ Restored checkout state');
+      } catch (e) {
+        console.error('Error restoring checkout state:', e);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     if (items.length === 0) {
@@ -46,6 +64,20 @@ const Checkout = () => {
   const handleNextStep = () => {
     if (step === 1 && !validateStep1()) return;
     setStep(step + 1);
+  };
+
+  const handleSaveAndRedirectToAuth = (isRegister = false) => {
+    const stateToSave = {
+      step,
+      formData,
+      shippingMethod
+    };
+    localStorage.setItem('checkoutState', JSON.stringify(stateToSave));
+    if (isRegister) {
+      navigate('/account/register', { state: { from: location } });
+    } else {
+      navigate('/account/login', { state: { from: location } });
+    }
   };
 
   const steps = [
@@ -215,22 +247,22 @@ const Checkout = () => {
                             To secure your championship ring and access the archive, you must be a registered member.
                           </p>
                           <div className="flex flex-col sm:flex-row gap-4 relative z-10">
-                            <Link to="/account/login" className="flex-1">
+                            <button onClick={() => handleSaveAndRedirectToAuth(false)} className="flex-1">
                                <Button variant="outline" className="w-full py-4 text-[10px] uppercase tracking-widest font-bold">Sign In</Button>
-                            </Link>
-                            <Link to="/account/register" className="flex-1">
+                            </button>
+                            <button onClick={() => handleSaveAndRedirectToAuth(true)} className="flex-1">
                                <Button className="w-full py-4 text-[10px] uppercase tracking-widest font-bold">Join The Club</Button>
-                            </Link>
+                            </button>
                           </div>
                         </div>
                       </div>
                     ) : (
-                      <Button 
+                       <Button 
                         disabled={isLoading}
                         onClick={async () => {
-                          setIsLoading(true);
-                          try {
-                            const storedRef = localStorage.getItem('affiliateRef');
+                           setIsLoading(true);
+                           try {
+                             const storedRef = localStorage.getItem('affiliateRef');
                             console.log('🚀 Initiating order placement...', {
                               cartItemsCount: items.length,
                               total: finalTotal
@@ -255,6 +287,7 @@ const Checkout = () => {
                             if (response.data.success) {
                               clearCart();
                               localStorage.removeItem('affiliateRef');
+                              clearCart();
                               navigate('/order-confirmation', { 
                                 state: { 
                                   formData, 
@@ -262,21 +295,22 @@ const Checkout = () => {
                                   shippingMethod, 
                                   finalTotal, 
                                   orderId: response.data.data.orderNumber || response.data.data.id 
-                                } 
+                                },
+                                replace: true
                               });
                             }
-                          } catch (error) {
+                           } catch (error) {
                             console.error('❌ Order submission error:', error);
                             setError(error.response?.data?.message || 'Failed to place order');
-                          } finally {
+                           } finally {
                             setIsLoading(false);
-                          }
+                           }
                         }}
                         className="flex-1 py-6 uppercase tracking-[3px] text-xs font-bold"
-                      >
+                       >
                         {isLoading ? <Loader2 size={18} className="animate-spin mr-2" /> : <Lock size={16} className="mr-2" />}
                         {isLoading ? 'Securing Transaction...' : `Complete Purchase — $${Number(finalTotal || 0).toFixed(2)} AUD`}
-                      </Button>
+                       </Button>
                     )}
                   </div>
                 </motion.div>

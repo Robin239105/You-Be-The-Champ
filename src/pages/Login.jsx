@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
@@ -10,6 +10,7 @@ import { Loader2, AlertCircle } from 'lucide-react';
 const Login = () => {
   const { login, isAuthenticated, user, isLoading, error, clearError } = useAuthStore();
   const navigate = useNavigate();
+  const location = useLocation();
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
@@ -18,11 +19,14 @@ const Login = () => {
       if (user.role === 'ADMIN') {
         navigate('/admin');
       } else {
-        navigate('/account');
+        // Redirect to the intended location (e.g., checkout) or default to account
+        const redirectTo = location.state?.from?.pathname || '/account';
+        console.log('🔄 Redirecting to:', redirectTo);
+        navigate(redirectTo, { replace: true });
       }
     }
     return () => clearError();
-  }, [isAuthenticated, user, navigate, clearError]);
+  }, [isAuthenticated, user, navigate, clearError, location.state?.from]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
