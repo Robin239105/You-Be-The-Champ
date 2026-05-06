@@ -106,6 +106,9 @@ const CartDrawer = ({ isOpen, onClose }) => {
                   <span className="font-cinzel text-sm text-ivory/60 uppercase tracking-widest">Subtotal</span>
                   <span className="font-mono text-xl text-gold font-bold">${getTotal().toFixed(2)}</span>
                 </div>
+                <Link to="/cart" onClick={onClose} className="block w-full">
+                  <Button variant="outline" className="w-full text-[10px]">View Cart & Apply Coupon</Button>
+                </Link>
                 <Link to="/checkout" className="block w-full">
                   <Button className="w-full">Secure Checkout</Button>
                 </Link>
