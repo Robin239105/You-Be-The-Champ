@@ -42,11 +42,12 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      {/* Top Banner - collapses on scroll */}
-      <div className={`bg-gold text-black text-[10px] sm:text-[11px] font-cinzel font-bold text-center tracking-[2px] uppercase shadow-[0_2px_10px_rgba(201,168,76,0.2)] overflow-hidden transition-all duration-500 ${
-        isScrolled ? 'max-h-0 py-0' : 'max-h-12 py-3 px-4'
+      {/* Top Banner - subtle on mobile, prominent on desktop */}
+      <div className={`bg-gold/95 text-black font-cinzel font-bold text-center tracking-[2px] uppercase shadow-[0_2px_10px_rgba(201,168,76,0.2)] overflow-hidden transition-all duration-500 ${
+        isScrolled ? 'max-h-0 py-0' : 'max-h-12 py-1.5 sm:py-3 px-4 text-[9px] sm:text-[11px]'
       }`}>
-        Limited time only; free shipping on every order
+        <span className="sm:hidden">Free shipping on every order</span>
+        <span className="hidden sm:inline">Limited time only; free shipping on every order</span>
       </div>
 
       {/* Main Nav */}
@@ -169,7 +170,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className="p-6 border-t border-gold/10 bg-surface/50">
+              <div className="p-6 border-t border-gold/10 bg-surface/50" style={{ paddingBottom: 'calc(1.5rem + env(safe-area-inset-bottom))' }}>
                 <div className="grid grid-cols-2 gap-3">
                   {isAuthenticated ? (
                     <Link to="/account" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
