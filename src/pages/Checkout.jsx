@@ -58,9 +58,9 @@ const Checkout = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+      <main className="max-w-7xl mx-auto px-5 sm:px-8 pt-32 sm:pt-40 pb-16 sm:pb-24">
         {/* Stepper */}
-        <div className="max-w-3xl mx-auto mb-20 flex items-center justify-between relative">
+        <div className="max-w-3xl mx-auto mb-12 sm:mb-20 flex items-center justify-between relative">
           <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gold/10 -translate-y-1/2 z-0" />
           {steps.map((s, i) => (
             <div key={s.id} className="relative z-10 flex flex-col items-center gap-4">
