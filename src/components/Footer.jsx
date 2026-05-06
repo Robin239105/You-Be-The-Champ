@@ -43,7 +43,7 @@ const FooterLink = ({ to, children, bold }) => (
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a1a1a] border-t border-gray-700 pt-24 pb-12 px-8">
+    <footer className="bg-[#222222] border-t border-gray-700 pt-24 pb-12 px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
 
         {/* Col 1 — Brand */}
