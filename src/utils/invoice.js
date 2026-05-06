@@ -69,7 +69,6 @@ export const downloadInvoice = (orderData) => {
         <p>${formData.address}</p>
         <p>${formData.city}, ${formData.state} ${formData.zip}</p>
         <p>Email: ${formData.email}</p>
-        <p>Phone: ${formData.phone}</p>
       </div>
 
       <table>
