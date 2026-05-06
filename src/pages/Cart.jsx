@@ -8,10 +8,8 @@ import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft, Ticket, Check, AlertCircle
 import api from '../utils/api';
 
 const Cart = () => {
-  const { items, removeItem, updateQty, getTotal } = useCartStore();
+  const { items, removeItem, updateQty, getTotal, appliedCoupon, discountAmount, setAppliedCoupon, removeCoupon } = useCartStore();
   const [couponCode, setCouponCode] = useState('');
-  const [appliedCoupon, setAppliedCoupon] = useState(null);
-  const [discountAmount, setDiscountAmount] = useState(0);
   const [couponError, setCouponError] = useState('');
   const [couponLoading, setCouponLoading] = useState(false);
   const [couponSuccess, setCouponSuccess] = useState('');
@@ -39,8 +37,7 @@ const Cart = () => {
       });
 
       if (response.data.success) {
-        setAppliedCoupon(response.data.data.code);
-        setDiscountAmount(response.data.data.discountAmount);
+        setAppliedCoupon(response.data.data.code, response.data.data.discountAmount);
         setCouponSuccess(`Coupon applied! You saved $${response.data.data.discountAmount.toFixed(2)}`);
         setCouponCode('');
       } else {
@@ -54,8 +51,7 @@ const Cart = () => {
   };
 
   const handleRemoveCoupon = () => {
-    setAppliedCoupon(null);
-    setDiscountAmount(0);
+    removeCoupon();
     setCouponCode('');
     setCouponError('');
     setCouponSuccess('');

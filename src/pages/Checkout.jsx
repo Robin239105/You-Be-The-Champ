@@ -27,12 +27,10 @@ const Checkout = () => {
   const [successMessage, setSuccessMessage] = useState('');
   // Coupon states
   const [couponCode, setCouponCode] = useState('');
-  const [appliedCoupon, setAppliedCoupon] = useState(null);
-  const [discountAmount, setDiscountAmount] = useState(0);
   const [couponError, setCouponError] = useState('');
   const [couponLoading, setCouponLoading] = useState(false);
 
-  const { items, getTotal, clearCart } = useCartStore();
+  const { items, getTotal, clearCart, appliedCoupon, discountAmount, setAppliedCoupon, removeCoupon } = useCartStore();
 
   // Version check
   console.log('💳 Checkout page loaded - Coupon System v1.0 ACTIVE');
@@ -160,8 +158,7 @@ const Checkout = () => {
       });
 
       if (response.data.success) {
-        setAppliedCoupon(response.data.data.code);
-        setDiscountAmount(response.data.data.discountAmount);
+        setAppliedCoupon(response.data.data.code, response.data.data.discountAmount);
         setCouponCode('');
       } else {
         setCouponError(response.data.message || 'Invalid coupon');
@@ -174,8 +171,7 @@ const Checkout = () => {
   };
 
   const handleRemoveCoupon = () => {
-    setAppliedCoupon(null);
-    setDiscountAmount(0);
+    removeCoupon();
     setCouponCode('');
     setCouponError('');
   };

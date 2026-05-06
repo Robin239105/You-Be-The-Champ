@@ -5,6 +5,9 @@ export const useCartStore = create(
   persist(
     (set, get) => ({
       items: [],
+      appliedCoupon: null,
+      discountAmount: 0,
+      
       addItem: (product) => {
         const currentItems = get().items;
         const existingItem = currentItems.find(item => item.id === product.id);
@@ -34,9 +37,13 @@ export const useCartStore = create(
           item.id === productId ? { ...item, quantity: Math.max(1, quantity) } : item
         )
       }),
-      clearCart: () => set({ items: [] }),
+      clearCart: () => set({ items: [], appliedCoupon: null, discountAmount: 0 }),
       getTotal: () => get().items.reduce((total, item) => total + (Number(item.price) * item.quantity), 0),
       getItemCount: () => get().items.reduce((count, item) => count + item.quantity, 0),
+      
+      // Coupon methods
+      setAppliedCoupon: (coupon, discount) => set({ appliedCoupon: coupon, discountAmount: discount }),
+      removeCoupon: () => set({ appliedCoupon: null, discountAmount: 0 }),
     }),
     {
       name: 'ybtc-cart-storage',
