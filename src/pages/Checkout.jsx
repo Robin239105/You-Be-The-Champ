@@ -248,7 +248,7 @@ const Checkout = () => {
                                   items, 
                                   shippingMethod, 
                                   finalTotal, 
-                                  orderId: response.data.data.id 
+                                  orderId: response.data.data.orderNumber || response.data.data.id 
                                 } 
                               });
                             }

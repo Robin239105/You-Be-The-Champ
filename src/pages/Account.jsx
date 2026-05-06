@@ -17,6 +17,14 @@ const Account = () => {
   const [activeTab, setActiveTab] = useState('orders');
   const [copied, setCopied] = useState(false);
   const [affiliateStats, setAffiliateStats] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     if (!isAuthenticated) {
@@ -58,9 +66,9 @@ const Account = () => {
   };
 
   const affiliateLink = affiliateStats?.affiliateCode
-    ? `https://youbethechamp.com/?ref=${affiliateStats.affiliateCode}`
+    ? `https://youbethechamp.com.au/?ref=${affiliateStats.affiliateCode}`
     : user?.affiliateCode
-      ? `https://youbethechamp.com/?ref=${user.affiliateCode}`
+      ? `https://youbethechamp.com.au/?ref=${user.affiliateCode}`
       : 'Loading...';
 
   const copyToClipboard = () => {
@@ -82,27 +90,43 @@ const Account = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
-        <div className="flex flex-col lg:flex-row gap-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-40 pb-16 sm:pb-20 lg:pb-24">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12">
           {/* Sidebar */}
           <aside className="w-full lg:w-72 space-y-2">
-            <div className="p-8 bg-card border border-gold/20 mb-8 text-center">
-               <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-gold/30">
-                  <span className="text-2xl font-black font-cinzel text-gold">{user?.name?.charAt(0) || 'C'}</span>
+            <div className="p-4 sm:p-6 lg:p-8 bg-card border border-gold/20 mb-4 lg:mb-8 text-center">
+               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4 border border-gold/30">
+                  <span className="text-xl sm:text-2xl font-black font-cinzel text-gold">{user?.firstName?.charAt(0) || user?.email?.charAt(0) || 'C'}</span>
                </div>
-               <h2 className="font-cinzel text-sm font-bold text-white uppercase">{user?.name || 'Champion Fan'}</h2>
+               <h2 className="font-cinzel text-sm font-bold text-white uppercase">{user?.firstName && user?.lastName ? `${user.firstName} ${user.lastName}` : user?.firstName || user?.email || 'Champion Fan'}</h2>
                <p className="text-[10px] text-gold/60 uppercase tracking-widest mt-1">Hall of Fame Member</p>
             </div>
 
-            {menuItems.map((item) => (
+            {/* Mobile Tab Selector */}
+            {isMobile && (
+              <div className="mb-4">
+                <select 
+                  value={activeTab}
+                  onChange={(e) => setActiveTab(e.target.value)}
+                  className="w-full bg-card border border-gold/20 p-3 font-cinzel text-xs text-ivory uppercase tracking-widest"
+                >
+                  {menuItems.map((item) => (
+                    <option key={item.id} value={item.id}>{item.name}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+            
+            {/* Desktop Sidebar Menu */}
+            {!isMobile && menuItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`w-full flex items-center justify-between p-4 font-cinzel text-xs tracking-widest uppercase transition-all ${activeTab === item.id ? 'bg-gold text-black' : 'text-ivory/60 hover:bg-gold/5'}`}
+                className={`w-full flex items-center justify-between p-3 sm:p-4 font-cinzel text-xs tracking-widest uppercase transition-all ${activeTab === item.id ? 'bg-gold text-black' : 'text-ivory/60 hover:bg-gold/5'}`}
               >
                 <div className="flex items-center gap-3">
                    <item.icon size={16} />
-                   <span>{item.name}</span>
+                   <span className="truncate">{item.name}</span>
                 </div>
                 <ChevronRight size={14} className={activeTab === item.id ? 'text-black' : 'text-gold/30'} />
               </button>
@@ -118,14 +142,14 @@ const Account = () => {
           </aside>
 
           {/* Content Area */}
-          <div className="flex-1 bg-card border border-gold/10 p-8 sm:p-12 min-h-[600px] relative overflow-hidden">
+          <div className="flex-1 bg-card border border-gold/10 p-4 sm:p-6 lg:p-8 xl:p-12 min-h-[400px] lg:min-h-[600px] relative overflow-hidden">
              <div className="relative z-10">
                <h3 className="text-2xl font-black font-cinzel text-gold tracking-widest uppercase mb-12 border-b border-gold/10 pb-6">
                   {menuItems.find(m => m.id === activeTab).name}
                </h3>
 
                {activeTab === 'orders' && (
-                 <div className="space-y-6">
+                 <div className="space-y-4 lg:space-y-6">
                    {isLoading ? (
                       <div className="py-20 flex flex-col items-center justify-center gap-4">
                         <Loader2 size={40} className="text-gold animate-spin" />
@@ -139,26 +163,56 @@ const Account = () => {
                       </div>
                     ) : (
                       orders.map((order) => (
-                        <div key={order.id} className="p-6 bg-surface border border-gold/10 flex flex-col md:flex-row justify-between items-center gap-6">
-                          <div className="flex items-center gap-6">
-                             <div className="w-16 h-16 bg-black border border-gold/10 flex items-center justify-center">
-                                <Package size={24} className="text-gold/40" />
-                             </div>
-                             <div>
-                                <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">Order #{order.id}</p>
-                                <p className="text-sm text-ivory font-bold uppercase">{order.status}</p>
-                                <p className="text-[9px] text-gold/60 uppercase mt-1">Placed on {new Date(order.createdAt).toLocaleDateString()}</p>
-                             </div>
+                        <div key={order.id} className="p-4 sm:p-6 bg-surface border border-gold/10">
+                          {/* Order Header */}
+                          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-4 mb-4 pb-4 border-b border-gold/10">
+                            <div>
+                              <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">Order #{order.orderNumber || order.id.slice(0,8)}</p>
+                              <p className="text-xs sm:text-sm text-ivory font-bold uppercase">{order.status}</p>
+                            </div>
+                            <div className="flex items-center gap-2 sm:gap-4">
+                              <span className="text-sm font-mono text-gold">${Number(order.totalAmount || 0).toFixed(2)}</span>
+                              <span className="text-[9px] text-gold/60 uppercase">{new Date(order.createdAt).toLocaleDateString()}</span>
+                            </div>
                           </div>
-                          <div className="flex items-center gap-4">
-                             <span className="text-sm font-mono text-gold mr-4">${Number(order.totalAmount || 0).toFixed(2)}</span>
-                             <button 
-                               onClick={() => downloadInvoice(order)}
-                               className="flex items-center gap-2 py-2 px-6 border border-gold/20 text-gold text-[10px] font-cinzel uppercase hover:bg-gold/10 transition-all"
-                             >
-                               <Download size={14} /> Invoice
-                             </button>
-                             <Button variant="outline" className="py-2 px-6 text-[10px]">Track</Button>
+                          
+                          {/* Order Items with Images */}
+                          <div className="space-y-3 mb-4">
+                            {order.orderItems?.map((item) => (
+                              <Link 
+                                key={item.id} 
+                                to={`/product/${item.product?.slug || item.productId}`}
+                                className="flex items-center gap-3 sm:gap-4 p-2 hover:bg-gold/5 transition-colors rounded"
+                              >
+                                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black border border-gold/10 flex-shrink-0 overflow-hidden">
+                                  {item.product?.images?.[0] ? (
+                                    <img 
+                                      src={typeof item.product.images[0] === 'string' ? item.product.images[0] : item.product.images[0]?.url} 
+                                      alt={item.product?.name}
+                                      className="w-full h-full object-cover"
+                                    />
+                                  ) : (
+                                    <Package size={20} className="text-gold/40 m-auto" />
+                                  )}
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <p className="text-[11px] sm:text-xs text-ivory font-bold uppercase truncate">{item.product?.name || 'Championship Ring'}</p>
+                                  <p className="text-[9px] sm:text-[10px] text-ivory/40 uppercase">Qty: {item.quantity} × ${Number(item.price).toFixed(2)}</p>
+                                </div>
+                                <span className="text-xs sm:text-sm font-mono text-gold">${(Number(item.price) * item.quantity).toFixed(2)}</span>
+                              </Link>
+                            ))}
+                          </div>
+                          
+                          {/* Action Buttons */}
+                          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4 pt-4 border-t border-gold/10">
+                            <button 
+                              onClick={() => downloadInvoice(order)}
+                              className="flex items-center justify-center gap-2 py-2 px-4 sm:px-6 border border-gold/20 text-gold text-[10px] font-cinzel uppercase hover:bg-gold/10 transition-all"
+                            >
+                              <Download size={14} /> Invoice
+                            </button>
+                            <Button variant="outline" className="py-2 px-4 sm:px-6 text-[10px]">Track Order</Button>
                           </div>
                         </div>
                       ))
@@ -232,11 +286,11 @@ const Account = () => {
                )}
 
                {activeTab === 'profile' && (
-                 <form className="max-w-xl space-y-8" onSubmit={(e) => e.preventDefault()}>
-                    <div className="grid grid-cols-2 gap-6">
-                       <Input label="First Name" value={user?.name?.split(' ')[0] || 'Champion'} />
-                       <Input label="Last Name" value={user?.name?.split(' ')[1] || 'Fan'} />
-                       <Input label="Email Address" value={user?.email || 'fan@example.com'} full />
+                 <form className="max-w-xl space-y-6 sm:space-y-8" onSubmit={(e) => e.preventDefault()}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                       <Input label="First Name" value={user?.firstName || ''} />
+                       <Input label="Last Name" value={user?.lastName || ''} />
+                       <Input label="Email Address" value={user?.email || ''} full />
                     </div>
                     <Button className="w-full sm:w-auto">Update Profile</Button>
                  </form>

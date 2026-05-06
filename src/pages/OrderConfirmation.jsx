@@ -58,7 +58,7 @@ const OrderConfirmation = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24 flex flex-col items-center justify-center text-center">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-40 pb-16 sm:pb-20 lg:pb-24 flex flex-col items-center justify-center text-center">
         <motion.div
            initial={{ opacity: 0, scale: 0.5 }}
            animate={{ opacity: 1, scale: 1 }}
@@ -71,7 +71,7 @@ const OrderConfirmation = () => {
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-black font-cinzel text-gold tracking-widest uppercase mb-4"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black font-cinzel text-gold tracking-widest uppercase mb-4"
         >
           You're A Champion!
         </motion.h1>
@@ -80,27 +80,38 @@ const OrderConfirmation = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-ivory/60 font-raleway uppercase tracking-widest mb-12 max-w-lg"
+          className="text-ivory/60 font-raleway uppercase tracking-widest mb-8 sm:mb-12 max-w-lg px-4"
         >
           Your order <span className="text-gold font-bold">#{orderId}</span> has been confirmed. We've initiated an automatic download of your invoice.
         </motion.p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 max-w-4xl w-full px-4 sm:px-0">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-card border border-gold/20 p-8 text-left space-y-6"
+            className="bg-card border border-gold/20 p-4 sm:p-6 lg:p-8 text-left space-y-4 sm:space-y-6"
           >
             <h3 className="font-cinzel text-xs font-bold text-gold uppercase tracking-[2px] border-b border-gold/10 pb-4">Order Summary</h3>
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
                {items.map(item => (
-                 <div key={item.id} className="flex justify-between items-center gap-4">
-                   <div className="flex-1">
-                      <p className="text-[11px] text-ivory font-bold uppercase">{item.name}</p>
-                      <p className="text-[9px] text-ivory/40 uppercase">QTY: {item.quantity}</p>
+                 <div key={item.id} className="flex justify-between items-center gap-3 sm:gap-4">
+                   <div className="flex items-center gap-3">
+                      {item.images?.[0] && (
+                        <div className="w-12 h-12 bg-black border border-gold/10 flex-shrink-0 overflow-hidden">
+                          <img 
+                            src={typeof item.images[0] === 'string' ? item.images[0] : item.images[0]?.url || item.image} 
+                            alt={item.name}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <p className="text-[11px] text-ivory font-bold uppercase truncate">{item.name}</p>
+                        <p className="text-[9px] text-ivory/40 uppercase">QTY: {item.quantity}</p>
+                      </div>
                    </div>
-                   <span className="text-xs font-mono text-gold">${(Number(item.price) * item.quantity).toFixed(2)}</span>
+                   <span className="text-xs font-mono text-gold flex-shrink-0">${(Number(item.price) * item.quantity).toFixed(2)}</span>
                  </div>
                ))}
             </div>
@@ -120,7 +131,7 @@ const OrderConfirmation = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-card border border-gold/20 p-8 text-left space-y-6 flex flex-col"
+            className="bg-card border border-gold/20 p-4 sm:p-6 lg:p-8 text-left space-y-4 sm:space-y-6 flex flex-col"
           >
             <h3 className="font-cinzel text-xs font-bold text-gold uppercase tracking-[2px] border-b border-gold/10 pb-4">Delivery Details</h3>
             <div className="space-y-4 flex-1">
@@ -153,10 +164,10 @@ const OrderConfirmation = () => {
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ delay: 0.4 }}
-           className="mt-16 flex flex-col sm:flex-row gap-6"
+           className="mt-8 sm:mt-12 lg:mt-16 flex flex-col sm:flex-row gap-4 sm:gap-6 px-4 sm:px-0 w-full sm:w-auto"
         >
-           <Link to="/shop"><Button variant="outline" className="flex items-center gap-3">Return to Shop <ShoppingBag size={16}/></Button></Link>
-           <Link to="/contact"><Button variant="primary" className="flex items-center gap-3">Contact Support <FileText size={16}/></Button></Link>
+           <Link to="/shop" className="w-full sm:w-auto"><Button variant="outline" className="w-full sm:w-auto flex items-center justify-center gap-3">Return to Shop <ShoppingBag size={16}/></Button></Link>
+           <Link to="/contact" className="w-full sm:w-auto"><Button variant="primary" className="w-full sm:w-auto flex items-center justify-center gap-3">Contact Support <FileText size={16}/></Button></Link>
         </motion.div>
       </main>
 

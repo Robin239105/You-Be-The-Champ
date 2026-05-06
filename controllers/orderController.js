@@ -2,12 +2,37 @@ const prisma = require('../utils/prisma');
 
 const COMMISSION_RATE = 0.15;
 
+// Generate unique order number: YBTC-YYYYMMDD-XXXX
+async function generateOrderNumber() {
+  const date = new Date();
+  const dateStr = date.toISOString().slice(0, 10).replace(/-/g, '');
+  const prefix = `YBTC-${dateStr}`;
+  
+  // Find the highest order number for today
+  const todayOrders = await prisma.order.findMany({
+    where: { orderNumber: { startsWith: prefix } },
+    orderBy: { orderNumber: 'desc' },
+    take: 1
+  });
+  
+  let sequence = 1;
+  if (todayOrders.length > 0) {
+    const lastNum = todayOrders[0].orderNumber.split('-')[2];
+    sequence = parseInt(lastNum) + 1;
+  }
+  
+  return `${prefix}-${String(sequence).padStart(4, '0')}`;
+}
+
 const createOrder = async (req, res) => {
   const { cartItems, totalAmount, shippingAddress, paymentMethod, couponCode, affiliateCode } = req.body;
 
   try {
+    const orderNumber = await generateOrderNumber();
+    
     const order = await prisma.order.create({
       data: {
+        orderNumber,
         userId: req.user.id,
         totalAmount: parseFloat(totalAmount),
         shippingAddress,
@@ -22,7 +47,7 @@ const createOrder = async (req, res) => {
           }))
         }
       },
-      include: { orderItems: true }
+      include: { orderItems: { include: { product: { select: { name: true, images: true } } } } }
     });
 
     res.status(201).json({ success: true, data: order });
@@ -58,7 +83,20 @@ const getMyOrders = async (req, res) => {
     const orders = await prisma.order.findMany({
       where: { userId: req.user.id },
       orderBy: { createdAt: 'desc' },
-      include: { orderItems: { include: { product: true } } }
+      include: { 
+        orderItems: { 
+          include: { 
+            product: { 
+              select: { 
+                id: true,
+                name: true, 
+                images: true,
+                slug: true
+              } 
+            } 
+          } 
+        } 
+      }
     });
     res.json({ success: true, data: orders });
   } catch (error) {
