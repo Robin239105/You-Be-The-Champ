@@ -34,7 +34,7 @@ const FooterLink = ({ to, children, bold }) => (
   <li>
     <Link
       to={to}
-      className={`hover:text-white transition-colors font-raleway text-[10px] md:text-xs uppercase tracking-widest ${bold ? 'text-white font-bold' : 'text-gray-400'}`}
+      className={`hover:text-white transition-colors font-raleway text-[11px] md:text-xs uppercase tracking-widest leading-relaxed ${bold ? 'text-white font-bold' : 'text-gray-400'}`}
     >
       {children}
     </Link>
@@ -44,19 +44,19 @@ const FooterLink = ({ to, children, bold }) => (
 const Footer = () => {
   return (
     <footer className="bg-[#222222] border-t border-gray-700 pt-12 md:pt-24 pb-8 md:pb-12 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16 mb-12 md:mb-20">
-
-        {/* Col 1 — Brand */}
-        <div className="space-y-4 md:space-y-8">
-          <Link to="/" className="flex items-center group">
-            <div className="relative w-20 h-20 md:w-32 md:h-32 transition-all duration-500 group-hover:scale-105">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Mobile Brand Section - Centered */}
+        <div className="md:hidden mb-12 text-center">
+          <Link to="/" className="flex items-center justify-center group mb-6">
+            <div className="relative w-24 h-24 transition-all duration-500 group-hover:scale-105">
               <img src="/logo.png" alt="You Be The Champ Logo" className="w-full h-full object-contain" />
             </div>
           </Link>
-          <p className="text-gray-400 font-raleway text-xs md:text-sm leading-relaxed uppercase tracking-wider">
-            Handcrafting the largest collection of championship replica rings in the world. Wear the glory of your favorite legends.
+          <p className="text-gray-400 font-raleway text-xs leading-relaxed uppercase tracking-wider mb-6 px-2">
+            Handcrafting the largest collection of championship replica rings in the world.
           </p>
-          <div className="flex gap-2 md:gap-3">
+          <div className="flex gap-3 justify-center">
             <SocialIcon href="https://facebook.com/youbethechamp">
               <FacebookIcon />
             </SocialIcon>
@@ -69,53 +69,113 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Col 2 — Shop */}
-        <div>
-          <h4 className="font-cinzel text-gray-200 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-8">Shop</h4>
-          <ul className="space-y-2 md:space-y-4">
-            <FooterLink to="/category/All%20Time%20Greats" bold>All Time Greats</FooterLink>
-            <FooterLink to="/category/League%20%3E%20NFL%20-%20National%20Football%20League">NFL</FooterLink>
-            <FooterLink to="/category/League%20%3E%20NBA%20-%20National%20Basketball%20Association">NBA</FooterLink>
-            <FooterLink to="/category/League%20%3E%20MLB%20-%20Major%20League%20Baseball">MLB</FooterLink>
-            <FooterLink to="/category/League%20%3E%20NHL%20-%20National%20Hockey%20League">NHL</FooterLink>
-            <FooterLink to="/shop">Shop All</FooterLink>
-          </ul>
+        {/* Main Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 lg:gap-16 mb-12 md:mb-20">
+
+          {/* Desktop Brand Section - Left */}
+          <div className="hidden md:block md:col-span-1 space-y-6">
+            <Link to="/" className="flex items-center group">
+              <div className="relative w-28 h-28 transition-all duration-500 group-hover:scale-105">
+                <img src="/logo.png" alt="You Be The Champ Logo" className="w-full h-full object-contain" />
+              </div>
+            </Link>
+            <p className="text-gray-400 font-raleway text-xs leading-relaxed uppercase tracking-wider">
+              Handcrafting the largest collection of championship replica rings in the world. Wear the glory of your favorite legends.
+            </p>
+            <div className="flex gap-3">
+              <SocialIcon href="https://facebook.com/youbethechamp">
+                <FacebookIcon />
+              </SocialIcon>
+              <SocialIcon href="https://instagram.com/youbethechamp">
+                <InstagramIcon />
+              </SocialIcon>
+              <SocialIcon href="https://t.me/youbethechamp">
+                <TelegramIcon />
+              </SocialIcon>
+            </div>
+          </div>
+
+          {/* Col 1 — Shop */}
+          <div>
+            <h4 className="font-cinzel text-gray-200 text-sm md:text-base font-bold uppercase tracking-widest mb-6 md:mb-8">Shop</h4>
+            <ul className="space-y-3 md:space-y-4">
+              <FooterLink to="/category/All%20Time%20Greats" bold>All Time Greats</FooterLink>
+              <FooterLink to="/category/League%20%3E%20NFL%20-%20National%20Football%20League">NFL</FooterLink>
+              <FooterLink to="/category/League%20%3E%20NBA%20-%20National%20Basketball%20Association">NBA</FooterLink>
+              <FooterLink to="/category/League%20%3E%20MLB%20-%20Major%20League%20Baseball">MLB</FooterLink>
+              <FooterLink to="/category/League%20%3E%20NHL%20-%20National%20Hockey%20League">NHL</FooterLink>
+              <FooterLink to="/shop">Shop All</FooterLink>
+            </ul>
+          </div>
+
+          {/* Col 2 — Support */}
+          <div>
+            <h4 className="font-cinzel text-gray-200 text-sm md:text-base font-bold uppercase tracking-widest mb-6 md:mb-8">Support</h4>
+            <ul className="space-y-3 md:space-y-4">
+              <FooterLink to="/contact">Contact Us</FooterLink>
+              <FooterLink to="/faq">FAQs</FooterLink>
+              <FooterLink to="/size-guide">Sizing Guide</FooterLink>
+              <FooterLink to="/shipping-policy">Shipping Policy</FooterLink>
+              <FooterLink to="/return-policy">Returns & Refunds</FooterLink>
+            </ul>
+          </div>
+
+          {/* Col 3 — Corporate (Hidden on mobile, shown on lg) */}
+          <div className="hidden lg:block">
+            <h4 className="font-cinzel text-gray-200 text-base font-bold uppercase tracking-widest mb-8">Corporate</h4>
+            <ul className="space-y-4">
+              <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
+              <FooterLink to="/about">About Us</FooterLink>
+              <FooterLink to="/faq">FAQs</FooterLink>
+              <FooterLink to="/blog">News & Blog</FooterLink>
+              <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
+              <FooterLink to="/terms-of-service">Terms of Service</FooterLink>
+            </ul>
+          </div>
+
+          {/* Col 4 — Additional (Hidden on mobile, shown on lg) */}
+          <div className="hidden lg:block">
+            <h4 className="font-cinzel text-gray-200 text-base font-bold uppercase tracking-widest mb-8">More</h4>
+            <ul className="space-y-4">
+              <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
+              <FooterLink to="/about">About Us</FooterLink>
+              <FooterLink to="/blog">News & Blog</FooterLink>
+              <FooterLink to="/authenticity">Authenticity</FooterLink>
+            </ul>
+          </div>
         </div>
 
-        {/* Col 3 — Support */}
-        <div>
-          <h4 className="font-cinzel text-gray-200 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-8">Support</h4>
-          <ul className="space-y-2 md:space-y-4">
-            <FooterLink to="/contact">Contact Us</FooterLink>
-            <FooterLink to="/faq">FAQs</FooterLink>
-            <FooterLink to="/size-guide">Sizing Guide</FooterLink>
-            <FooterLink to="/shipping-policy">Shipping Policy</FooterLink>
-            <FooterLink to="/return-policy">Returns & Refunds</FooterLink>
-          </ul>
+        {/* Mobile Additional Links - 2 Columns */}
+        <div className="md:hidden grid grid-cols-2 gap-6 mb-12 pb-8 border-b border-gray-700">
+          <div>
+            <h4 className="font-cinzel text-gray-200 text-xs font-bold uppercase tracking-widest mb-4">More</h4>
+            <ul className="space-y-3">
+              <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
+              <FooterLink to="/about">About Us</FooterLink>
+              <FooterLink to="/blog">News & Blog</FooterLink>
+              <FooterLink to="/authenticity">Authenticity</FooterLink>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-cinzel text-gray-200 text-xs font-bold uppercase tracking-widest mb-4">Legal</h4>
+            <ul className="space-y-3">
+              <FooterLink to="/privacy-policy">Privacy</FooterLink>
+              <FooterLink to="/terms-of-service">Terms</FooterLink>
+              <FooterLink to="/return-policy">Returns</FooterLink>
+            </ul>
+          </div>
         </div>
 
-        {/* Col 4 — Corporate */}
-        <div>
-          <h4 className="font-cinzel text-gray-200 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-8">Corporate</h4>
-          <ul className="space-y-2 md:space-y-4">
-            <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
-            <FooterLink to="/about">About Us</FooterLink>
-            <FooterLink to="/faq">FAQs</FooterLink>
-            <FooterLink to="/blog">News & Blog</FooterLink>
-            <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
-            <FooterLink to="/terms-of-service">Terms of Service</FooterLink>
-          </ul>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto pt-8 md:pt-12 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
-        <p className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] text-center md:text-left">
-          © {new Date().getFullYear()} YOU BE THE CHAMP. NON-OFFICIALLY LICENSED FAN ART REPLICAS.
-        </p>
-        <div className="flex gap-3 md:gap-8 text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] flex-wrap justify-center md:justify-end">
-          <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
-          <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
-          <Link to="/authenticity" className="hover:text-white transition-colors">Authenticity</Link>
+        {/* Bottom Footer */}
+        <div className="max-w-7xl mx-auto pt-6 md:pt-12 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
+          <p className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] text-center md:text-left leading-relaxed">
+            © {new Date().getFullYear()} YOU BE THE CHAMP<br className="md:hidden" /> NON-OFFICIALLY LICENSED
+          </p>
+          <div className="flex gap-4 md:gap-8 text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] flex-wrap justify-center md:justify-end">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
+            <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
+            <Link to="/authenticity" className="hover:text-white transition-colors">Authenticity</Link>
+          </div>
         </div>
       </div>
     </footer>
