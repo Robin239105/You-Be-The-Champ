@@ -225,8 +225,7 @@ const Home = () => {
         ref={heroRef}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
-        className="relative w-full bg-black overflow-hidden select-none"
-        style={{ height: '100vh', minHeight: 720 }}
+        className="relative w-full bg-black overflow-hidden select-none min-h-[600px] sm:min-h-[700px] lg:min-h-[720px] h-[90vh] lg:h-screen"
       >
         {/* ── Full-bleed ring background (right half) ── */}
         <AnimatePresence mode="wait" custom={direction}>
@@ -239,11 +238,11 @@ const Home = () => {
             transition={{ duration: 0.7 }}
           >
             {/* Gold radial glow behind ring */}
-            <div className="absolute right-0 top-24 bottom-0 w-[55%]"
+            <div className="absolute right-0 top-24 bottom-0 w-full lg:w-[55%] opacity-40 lg:opacity-100"
               style={{ background: `radial-gradient(ellipse 80% 80% at 70% 55%, ${slide.glowColor} 0%, transparent 75%)` }} />
-            {/* Ring image — centered right, with top padding for header */}
+            {/* Ring image — centered right on desktop; background-style on mobile */}
             <motion.div
-              className="absolute right-[2%] top-20 bottom-0 w-[50%] flex items-center justify-center py-8"
+              className="absolute right-0 lg:right-[2%] top-20 bottom-0 w-full lg:w-[50%] flex items-center justify-center py-8 opacity-25 lg:opacity-100"
             >
               <motion.img
                 src={slide.ringImage.startsWith('http') ? optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' }) : slide.ringImage}
@@ -261,7 +260,8 @@ const Home = () => {
               />
             </motion.div>
             {/* Gradient mask — smoother blend from black to image area */}
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, black 35%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.4) 55%, transparent 65%)' }} />
+            <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, black 35%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.4) 55%, transparent 65%)' }} />
+            <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.95) 100%)' }} />
           </motion.div>
         </AnimatePresence>
 
@@ -282,7 +282,7 @@ const Home = () => {
             animate="center"
             exit="exit"
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute left-0 top-0 bottom-[72px] w-full lg:w-[50%] flex flex-col justify-center px-10 lg:px-16 xl:px-20"
+            className="absolute left-0 top-0 bottom-[72px] w-full lg:w-[50%] flex flex-col justify-center px-5 sm:px-8 lg:px-16 xl:px-20"
             style={{ paddingTop: '120px' }}
           >
             {/* Tag row */}
@@ -309,7 +309,7 @@ const Home = () => {
                   animate={{ y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                   className="font-cinzel font-black uppercase text-white"
-                  style={{ fontSize: 'clamp(2.8rem, 5.5vw, 6.5rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}
+                  style={{ fontSize: 'clamp(2.2rem, 5.5vw, 6.5rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}
                 >
                   {slide.headline}
                 </motion.h1>
@@ -320,7 +320,7 @@ const Home = () => {
                   animate={{ y: 0 }}
                   transition={{ duration: 0.5, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
                   className="font-cinzel font-black uppercase gold-gradient-text"
-                  style={{ fontSize: 'clamp(2.8rem, 5.5vw, 6.5rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}
+                  style={{ fontSize: 'clamp(2.2rem, 5.5vw, 6.5rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}
                 >
                   {slide.sub}
                 </motion.div>
@@ -344,7 +344,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.32 }}
-              className="text-white/60 font-raleway text-base leading-[1.8] mb-10 max-w-[420px]"
+              className="text-white/60 font-raleway text-sm sm:text-base leading-[1.7] sm:leading-[1.8] mb-8 sm:mb-10 max-w-[420px]"
             >
               {slide.description}
             </motion.p>
@@ -354,17 +354,17 @@ const Home = () => {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.38 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-3 sm:gap-4"
             >
               <Link to={slide.ctaLink}>
-                <span className="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-black font-cinzel text-[11px] font-black uppercase tracking-[3px] px-8 py-4 transition-all group cursor-pointer shadow-[0_0_30px_rgba(201,168,76,0.3)]">
+                <span className="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-black font-cinzel text-[10px] sm:text-[11px] font-black uppercase tracking-[2px] sm:tracking-[3px] px-5 sm:px-8 py-3 sm:py-4 transition-all group cursor-pointer shadow-[0_0_30px_rgba(201,168,76,0.3)]">
                   {slide.cta}
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
               {slide.cta2 && (
                 <Link to={slide.cta2Link}>
-                  <span className="inline-flex items-center gap-2 border border-white/25 hover:border-gold text-white/50 hover:text-gold font-cinzel text-[11px] uppercase tracking-[3px] px-8 py-4 transition-all cursor-pointer">
+                  <span className="inline-flex items-center gap-2 border border-white/25 hover:border-gold text-white/50 hover:text-gold font-cinzel text-[10px] sm:text-[11px] uppercase tracking-[2px] sm:tracking-[3px] px-5 sm:px-8 py-3 sm:py-4 transition-all cursor-pointer">
                     {slide.cta2}
                   </span>
                 </Link>
@@ -377,7 +377,7 @@ const Home = () => {
         <div className="absolute bottom-0 inset-x-0 h-[72px] z-20 border-t border-gold/15"
           style={{ background: 'linear-gradient(to right, rgba(0,0,0,0.96) 50%, rgba(0,0,0,0.5) 100%)' }}
         >
-          <div className="h-full flex items-center px-10 lg:px-16 xl:px-20 gap-0">
+          <div className="h-full flex items-center px-5 sm:px-8 lg:px-16 xl:px-20 gap-0">
 
             {/* Stats removed as requested */}
             <div className="flex items-center gap-8 mr-auto">
@@ -421,10 +421,10 @@ const Home = () => {
       <Marquee />
 
       {/* ── SECTION 2: SHOP BY LEAGUE ── */}
-      <section className="py-24 px-8 max-w-7xl mx-auto">
+      <section className="py-16 sm:py-24 px-5 sm:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <span className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-3">Browse by Sport</span>
-          <h2 className="text-4xl font-black font-cinzel tracking-widest text-white uppercase">Shop by League</h2>
+          <h2 className="text-2xl sm:text-4xl font-black font-cinzel tracking-widest text-white uppercase">Shop by League</h2>
           <div className="w-20 h-[2px] bg-gold mx-auto mt-5" />
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -448,11 +448,11 @@ const Home = () => {
       </section>
 
       {/* ── SECTION 3: CHAMPIONSHIP COLLECTION ── */}
-      <section className="py-24 px-8 bg-white/[0.01] border-y border-gold/10">
+      <section className="py-16 sm:py-24 px-5 sm:px-8 bg-white/[0.01] border-y border-gold/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <span className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-3">Most Popular</span>
-            <h2 className="text-4xl font-black font-cinzel tracking-widest text-white uppercase">Championship Collection</h2>
+            <h2 className="text-2xl sm:text-4xl font-black font-cinzel tracking-widest text-white uppercase">Championship Collection</h2>
             <div className="w-20 h-[2px] bg-gold mx-auto mt-5" />
           </div>
           {products.length > 0 ? (
@@ -478,10 +478,10 @@ const Home = () => {
       <StatsBanner />
 
       {/* ── SECTION 4: BLOG / NEWS FEED ── */}
-      <section className="py-24 px-8 max-w-7xl mx-auto">
+      <section className="py-16 sm:py-24 px-5 sm:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <span className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-3">Latest Updates</span>
-          <h2 className="text-4xl font-black font-cinzel tracking-widest text-white uppercase">Locker Room Latest</h2>
+          <h2 className="text-2xl sm:text-4xl font-black font-cinzel tracking-widest text-white uppercase">Locker Room Latest</h2>
           <div className="w-20 h-[2px] bg-gold mx-auto mt-5" />
         </div>
         {blogPosts.length > 0 ? (
@@ -537,7 +537,7 @@ const Home = () => {
 
       {/* ── PRE-FOOTER: VALUE PROPS ── */}
       <section className="border-t border-white/5 bg-[#1a1a1a]">
-        <div className="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
           {VALUE_PROPS.map(({ icon, title, desc }) => {
             const IconComponent = icon;
             return (
