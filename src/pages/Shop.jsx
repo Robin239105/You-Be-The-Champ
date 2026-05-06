@@ -279,7 +279,7 @@ const Shop = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl md:text-5xl font-black font-cinzel text-gold tracking-widest uppercase relative z-10"
         >
-          The Archive
+          All Collections
         </motion.h1>
       </div>
 
