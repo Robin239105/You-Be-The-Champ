@@ -87,9 +87,7 @@ const getCategories = async (req, res) => {
       include: {
         _count: {
           select: { products: true }
-        },
-        parent: true,
-        children: true
+        }
       },
       orderBy: { name: 'asc' }
     });
@@ -99,14 +97,13 @@ const getCategories = async (req, res) => {
   }
 };
 
-// Build tree structure from flat categories
+// Build tree structure from flat categories (simulated for now)
 const buildCategoryTree = (categories, parentId = null) => {
-  return categories
-    .filter(cat => cat.parentId === parentId)
-    .map(cat => ({
-      ...cat,
-      children: buildCategoryTree(categories, cat.id)
-    }));
+  // For now, return flat structure since parentId isn't in DB yet
+  return categories.map(cat => ({
+    ...cat,
+    children: []
+  }));
 };
 
 const getCategoryTree = async (req, res) => {
@@ -120,15 +117,15 @@ const getCategoryTree = async (req, res) => {
       orderBy: { name: 'asc' }
     });
     
-    const tree = buildCategoryTree(categories);
-    res.json({ success: true, data: tree });
+    // Return flat list for now - hierarchy will work after migration
+    res.json({ success: true, data: categories.map(c => ({ ...c, children: [] })) });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
 };
 
 const createCategory = async (req, res) => {
-  const { name, description, image, parentId } = req.body;
+  const { name, description, image } = req.body;
   const slug = slugify(name, { lower: true, strict: true });
 
   try {
@@ -136,8 +133,8 @@ const createCategory = async (req, res) => {
       name, 
       slug, 
       description: description || '',
-      image: image || null,
-      parentId: parentId || null
+      image: image || null
+      // parentId will be added after migration is applied
     };
     const category = await prisma.category.create({ data });
     res.status(201).json({ success: true, data: category });
@@ -150,19 +147,14 @@ const createCategory = async (req, res) => {
 };
 
 const updateCategory = async (req, res) => {
-  const { name, description, image, parentId } = req.body;
+  const { name, description, image } = req.body;
   const slug = slugify(name, { lower: true, strict: true });
 
   try {
     const updateData = { name, slug };
     if (description !== undefined) updateData.description = description;
     if (image !== undefined) updateData.image = image || null;
-    if (parentId !== undefined) updateData.parentId = parentId || null;
-    
-    // Prevent setting self as parent
-    if (parentId === req.params.id) {
-      return res.status(400).json({ success: false, message: 'Category cannot be its own parent' });
-    }
+    // parentId will be added after migration
     
     const category = await prisma.category.update({
       where: { id: req.params.id },

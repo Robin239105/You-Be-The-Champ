@@ -165,7 +165,7 @@ const AdminCategoryList = () => {
 
     setIsSubmitting(true);
     try {
-      const payload = { name: categoryName, description: categoryDescription, image: categoryImage || null, parentId: parentId || null };
+      const payload = { name: categoryName, description: categoryDescription, image: categoryImage || null };
       if (editingCategory) {
         await api.put(`/categories/${editingCategory.id}`, payload);
       } else {
@@ -312,6 +312,7 @@ const AdminCategoryList = () => {
                 {editingCategory ? 'Edit Category' : 'Add New Category'}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Parent selector hidden until DB migration is applied
                 <div>
                   <label className="block text-[10px] uppercase tracking-[2px] text-gold mb-2 font-cinzel">Parent Category (Optional)</label>
                   <select
@@ -321,17 +322,15 @@ const AdminCategoryList = () => {
                   >
                     <option value="">-- No Parent (Top Level) --</option>
                     {categories
-                      .filter(c => c.id !== editingCategory?.id) // Can't be own parent
+                      .filter(c => c.id !== editingCategory?.id)
                       .map(cat => (
                         <option key={cat.id} value={cat.id}>
                           {getCategoryPath(cat.id) || cat.name}
                         </option>
                       ))}
                   </select>
-                  <p className="text-[10px] text-gold/40 mt-1 font-raleway">
-                    Select a parent to create hierarchy (e.g., League {'>'} NFL {'>'} AFC East)
-                  </p>
                 </div>
+                */}
 
                 <div>
                   <label className="block text-[10px] uppercase tracking-[2px] text-gold mb-2 font-cinzel">Category Name</label>
