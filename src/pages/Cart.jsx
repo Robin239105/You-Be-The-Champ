@@ -16,6 +16,9 @@ const Cart = () => {
   const [couponLoading, setCouponLoading] = useState(false);
   const [couponSuccess, setCouponSuccess] = useState('');
 
+  // Version check
+  console.log('🛒 Cart page loaded - Coupon System v1.0 ACTIVE');
+
   const subtotal = getTotal();
   const total = subtotal - discountAmount;
 

@@ -34,6 +34,9 @@ const Checkout = () => {
 
   const { items, getTotal, clearCart } = useCartStore();
 
+  // Version check
+  console.log('💳 Checkout page loaded - Coupon System v1.0 ACTIVE');
+
   // Check if cart is empty on mount only
   useEffect(() => {
     if (items.length === 0) {
