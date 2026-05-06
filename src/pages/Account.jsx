@@ -275,15 +275,14 @@ const Account = () => {
                              })}
                            </div>
                            
-                           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4 pt-4 border-t border-gold/10">
-                             <button 
-                               onClick={() => downloadInvoice(order)}
-                               className="flex items-center justify-center gap-2 py-2 px-4 sm:px-6 border border-gold/20 text-gold text-[10px] font-cinzel uppercase hover:bg-gold/10 transition-all"
-                             >
-                               <Download size={14} /> Invoice
-                             </button>
-                             <Button variant="outline" className="py-2 px-4 sm:px-6 text-[10px]">Track Order</Button>
-                           </div>
+                            <div className="pt-4 border-t border-gold/10">
+                              <button 
+                                onClick={() => downloadInvoice(order)}
+                                className="w-full flex items-center justify-center gap-2 py-3 sm:py-4 bg-gold hover:bg-gold/90 text-black text-xs sm:text-sm font-cinzel uppercase font-bold transition-all rounded"
+                              >
+                                <Download size={16} /> Download Invoice
+                              </button>
+                            </div>
                          </div>
                        ))
                      )}
