@@ -178,7 +178,7 @@ const Header = () => {
                       <span className="truncate">My Account</span>
                     </Link>
                   ) : (
-                    <Link to="/login" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link to="/account/login" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
                       <User size={16} className="flex-shrink-0" />
                       <span className="truncate">Login / Register</span>
                     </Link>
