@@ -8,7 +8,15 @@ import { useWishlistStore } from '../store/useWishlistStore';
 import { downloadInvoice } from '../utils/invoice';
 import { motion, AnimatePresence } from 'framer-motion';
 import api from '../utils/api';
-import { Package, Heart, Settings, MapPin, Bell, LogOut, ChevronRight, Award, Copy, Check, DollarSign, Users, MousePointer2, Download, Loader2, AlertCircle, Trash2, Plus } from 'lucide-react';
+import { Package, Heart, Settings, MapPin, Bell, LogOut, ChevronRight, Award, Copy, Check, DollarSign, Users, MousePointer2, Download, Loader2, AlertCircle, Trash2, Plus, Truck, Clock, CheckCircle, XCircle, Package2, Eye, Ticket } from 'lucide-react';
+
+const STATUS_CONFIG = {
+  PENDING: { color: 'bg-amber-500/10 text-amber-400 border-amber-500/20', icon: Clock, label: 'Pending' },
+  PROCESSING: { color: 'bg-blue-400/10 text-blue-400 border-blue-400/20', icon: Package2, label: 'Processing' },
+  SHIPPED: { color: 'bg-purple-500/10 text-purple-400 border-purple-500/20', icon: Truck, label: 'Shipped' },
+  DELIVERED: { color: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20', icon: CheckCircle, label: 'Delivered' },
+  CANCELLED: { color: 'bg-crimson/10 text-crimson border-crimson/20', icon: XCircle, label: 'Cancelled' },
+};
 
 const Account = () => {
   const { user, logout, isAuthenticated, updateUser } = useAuthStore();
@@ -54,8 +62,9 @@ const Account = () => {
       return;
     }
     let mounted = true;
+    let refreshInterval;
+    
     const fetchOrders = async () => {
-      setIsLoading(true);
       try {
         const response = await api.get('/orders/my');
         if (mounted && response.data.success) {
@@ -67,20 +76,30 @@ const Account = () => {
         if (mounted) setIsLoading(false);
       }
     };
+    
     fetchOrders();
-
-    const fetchAffiliateStats = async () => {
-      try {
-        const res = await api.get('/affiliate/me');
-        if (mounted && res.data.success) setAffiliateStats(res.data.data);
-      } catch (err) {
-        console.error('Affiliate stats error:', err);
-      }
+    
+    refreshInterval = setInterval(fetchOrders, 30000);
+    
+    return () => { 
+      mounted = false; 
+      clearInterval(refreshInterval);
     };
-    fetchAffiliateStats();
-
-    return () => { mounted = false; };
   }, [isAuthenticated, navigate]);
+
+  useEffect(() => {
+    if (activeTab === 'affiliate') {
+      const fetchAffiliateStats = async () => {
+        try {
+          const res = await api.get('/affiliate/me');
+          if (res.data.success) setAffiliateStats(res.data.data);
+        } catch (err) {
+          console.error('Affiliate stats error:', err);
+        }
+      };
+      fetchAffiliateStats();
+    }
+  }, [activeTab]);
 
   const handleLogout = () => {
     logout();
@@ -133,6 +152,22 @@ const Account = () => {
     }
   };
 
+  useEffect(() => {
+    if (activeTab === 'address') {
+      const fetchAddresses = async () => {
+        try {
+          const response = await api.get('/auth/addresses');
+          if (response.data.success) {
+            setAddresses(response.data.data || []);
+          }
+        } catch (error) {
+          console.error('Failed to fetch addresses:', error);
+        }
+      };
+      fetchAddresses();
+    }
+  }, [activeTab]);
+
   const affiliateLink = affiliateStats?.affiliateCode
     ? `https://youbethechamp.com.au/?ref=${affiliateStats.affiliateCode}`
     : user?.affiliateCode
@@ -158,7 +193,7 @@ const Account = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-40 pb-16 sm:pb-20 lg:pb-24">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-52 pb-16 sm:pb-20 lg:pb-24">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12">
           {/* Sidebar */}
           <aside className="w-full lg:w-72 space-y-2">
@@ -216,76 +251,163 @@ const Account = () => {
                    {menuItems.find(m => m.id === activeTab)?.name || 'My Orders'}
                 </h3>
 
-                {/* ORDERS TAB */}
+{/* ORDERS TAB */}
                 {activeTab === 'orders' && (
-                  <div className="space-y-4 lg:space-y-6">
+                  <div className="space-y-6">
                     {isLoading ? (
                        <div className="py-20 flex flex-col items-center justify-center gap-4">
                          <Loader2 size={40} className="text-gold animate-spin" />
                          <p className="font-cinzel text-[10px] text-gold tracking-widest uppercase">Fetching your history...</p>
                        </div>
-                     ) : orders.length === 0 ? (
+                    ) : orders.length === 0 ? (
                        <div className="py-20 text-center border border-dashed border-gold/20">
                          <Package size={40} className="text-gold/20 mx-auto mb-4" />
                          <p className="font-cinzel text-xs text-ivory/40 uppercase tracking-widest">No orders found yet.</p>
                          <Link to="/shop" className="mt-4 inline-block text-gold text-[10px] font-cinzel uppercase underline">Start Shopping</Link>
                        </div>
-                     ) : (
-                       orders.map((order) => (
-                         <div key={order.id} className="p-4 sm:p-6 bg-surface border border-gold/10">
-                           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-4 mb-4 pb-4 border-b border-gold/10">
-                             <div>
-                               <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">Order #{order.orderNumber || order.id.slice(0,8)}</p>
-                               <p className="text-xs sm:text-sm text-ivory font-bold uppercase">{order.status}</p>
-                             </div>
-                             <div className="flex items-center gap-2 sm:gap-4">
-                               <span className="text-sm font-mono text-gold">${parseFloat(order.totalAmount || 0).toFixed(2)}</span>
-                               <span className="text-[9px] text-gold/60 uppercase">{new Date(order.createdAt).toLocaleDateString()}</span>
-                             </div>
-                           </div>
-                           
-                           <div className="space-y-3 mb-4">
-                             {order.orderItems?.map((item) => {
-                               const itemPrice = parseFloat(item.price || 0);
-                               const itemTotal = itemPrice * (item.quantity || 1);
-                               return (
-                                 <Link 
-                                   key={item.id} 
-                                   to={`/product/${item.product?.slug || item.productId}`}
-                                   className="flex items-center gap-3 sm:gap-4 p-2 hover:bg-gold/5 transition-colors rounded"
-                                 >
-                                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black border border-gold/10 flex-shrink-0 overflow-hidden">
-                                     {item.product?.images?.[0] ? (
-                                       <img 
-                                         src={typeof item.product.images[0] === 'string' ? item.product.images[0] : item.product.images[0]?.url} 
-                                         alt={item.product?.name}
-                                         className="w-full h-full object-cover"
-                                       />
-                                     ) : (
-                                       <Package size={20} className="text-gold/40 m-auto" />
-                                     )}
-                                   </div>
-                                   <div className="flex-1 min-w-0">
-                                     <p className="text-[11px] sm:text-xs text-ivory font-bold uppercase truncate">{item.product?.name || 'Championship Ring'}</p>
-                                     <p className="text-[9px] sm:text-[10px] text-ivory/40 uppercase">Qty: {item.quantity} × ${itemPrice.toFixed(2)}</p>
-                                   </div>
-                                   <span className="text-xs sm:text-sm font-mono text-gold">${itemTotal.toFixed(2)}</span>
-                                 </Link>
-                               );
-                             })}
-                           </div>
-                           
-                            <div className="pt-4 border-t border-gold/10">
-                              <button 
-                                onClick={() => downloadInvoice(order)}
-                                className="w-full flex items-center justify-center gap-2 py-3 sm:py-4 bg-gold hover:bg-gold/90 text-black text-xs sm:text-sm font-cinzel uppercase font-bold transition-all rounded"
-                              >
-                                <Download size={16} /> Download Invoice
-                              </button>
+                    ) : (
+                      <div className="space-y-4">
+                        {orders.map((order) => {
+                          const statusInfo = STATUS_CONFIG[order.status] || STATUS_CONFIG.PENDING;
+                          const StatusIcon = statusInfo.icon;
+                          
+                          return (
+                            <div key={order.id} className="p-6 bg-surface border border-gold/10 hover:border-gold/20 transition-all">
+                              {/* Order Header */}
+                              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 pb-4 border-b border-gold/10">
+                                <div className="flex-1">
+                                  <div className="flex items-center gap-3 mb-2">
+                                    <p className="text-[10px] text-ivory/40 uppercase tracking-widest">Order</p>
+                                    <span className="font-mono text-gold font-bold">#{order.orderNumber}</span>
+                                  </div>
+                                  <div className="flex items-center gap-2">
+                                    <span className={`px-3 py-1.5 text-[10px] font-cinzel font-bold uppercase border ${statusInfo.color}`}>
+                                      <StatusIcon size={12} className="inline mr-1" />
+                                      {statusInfo.label}
+                                    </span>
+                                    <span className="text-[10px] text-ivory/40">
+                                      {new Date(order.createdAt).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })}
+                                    </span>
+                                  </div>
+                                </div>
+                                <div className="text-right">
+                                  <p className="text-[10px] text-ivory/40 uppercase tracking-widest mb-1">Total</p>
+                                  <p className="text-2xl font-mono font-bold text-gold">${Number(order.totalAmount).toFixed(2)}</p>
+                                  {order.discountAmount > 0 && (
+                                    <p className="text-[10px] text-emerald-400 mt-1">You saved ${Number(order.discountAmount).toFixed(2)}!</p>
+                                  )}
+                                </div>
+                              </div>
+
+                              {/* Order Progress Bar */}
+                              <div className="mb-6">
+                                <div className="flex justify-between mb-2">
+                                  {['PENDING', 'PROCESSING', 'SHIPPED', 'DELIVERED'].map((step, index) => {
+                                    const stepIndex = ['PENDING', 'PROCESSING', 'SHIPPED', 'DELIVERED'].indexOf(order.status);
+                                    const isCompleted = index <= stepIndex;
+                                    const isCurrent = step === order.status;
+                                    return (
+                                      <div key={step} className="flex-1 text-center relative">
+                                        <div className={`w-6 h-6 mx-auto rounded-full flex items-center justify-center ${
+                                          isCompleted ? 'bg-gold text-black' : 'bg-surface border border-gold/20'
+                                        }`}>
+                                          {isCompleted ? <Check size={12} /> : <span className="text-[8px]">{index + 1}</span>}
+                                        </div>
+                                        <p className={`text-[8px] uppercase tracking-widest mt-2 ${isCurrent ? 'text-gold' : 'text-ivory/30'}`}>
+                                          {step}
+                                        </p>
+                                        {index < 3 && (
+                                          <div className={`absolute top-3 left-0 right-0 h-[2px] ${isCompleted && index < stepIndex ? 'bg-gold' : 'bg-gold/10'}`} />
+                                        )}
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+
+                              {/* Tracking Info */}
+                              {order.trackingNumber && (
+                                <div className="mb-4 p-3 bg-black/30 border border-gold/10 rounded">
+                                  <div className="flex items-center justify-between">
+                                    <div>
+                                      <p className="text-[10px] text-gold uppercase tracking-widest mb-1">Tracking Number</p>
+                                      <p className="font-mono text-ivory">{order.trackingNumber}</p>
+                                    </div>
+                                    <Truck size={18} className="text-gold" />
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* Coupon Applied */}
+                              {order.couponCode && (
+                                <div className="mb-4 p-3 bg-emerald-900/20 border border-emerald-500/20 rounded flex items-center justify-between">
+                                  <div className="flex items-center gap-2">
+                                    <Ticket size={14} className="text-emerald-400" />
+                                    <div>
+                                      <p className="text-[10px] text-emerald-400 uppercase tracking-widest">Coupon Applied</p>
+                                      <p className="font-mono text-ivory font-bold">{order.couponCode}</p>
+                                    </div>
+                                  </div>
+                                  <p className="text-emerald-400 font-mono font-bold">-${Number(order.discountAmount).toFixed(2)}</p>
+                                </div>
+                              )}
+
+                              {/* Order Items */}
+                              <div className="space-y-3 mb-4">
+                                {order.orderItems?.map((item) => {
+                                  const itemPrice = parseFloat(item.price || 0);
+                                  const itemTotal = itemPrice * (item.quantity || 1);
+                                  return (
+                                    <Link 
+                                      key={item.id} 
+                                      to={`/product/${item.product?.slug || item.productId}`}
+                                      className="flex items-center gap-4 p-3 hover:bg-gold/5 transition-colors rounded border border-transparent hover:border-gold/10"
+                                    >
+                                      <div className="w-16 h-16 bg-black border border-gold/10 flex-shrink-0 overflow-hidden">
+                                        {item.product?.images?.[0] ? (
+                                          <img 
+                                            src={typeof item.product.images[0] === 'string' ? item.product.images[0] : item.product.images[0]?.url} 
+                                            alt={item.product?.name}
+                                            className="w-full h-full object-cover"
+                                          />
+                                        ) : (
+                                          <Package size={20} className="text-gold/40 m-auto" />
+                                        )}
+                                      </div>
+                                      <div className="flex-1 min-w-0">
+                                        <p className="text-xs text-ivory font-bold uppercase truncate">{item.product?.name || 'Championship Ring'}</p>
+                                        <p className="text-[10px] text-ivory/40 uppercase">Qty: {item.quantity} × ${itemPrice.toFixed(2)}</p>
+                                      </div>
+                                      <span className="text-sm font-mono text-gold">${itemTotal.toFixed(2)}</span>
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+
+                              {/* Order Actions */}
+                              <div className="pt-4 border-t border-gold/10 flex flex-wrap gap-3">
+                                <button 
+                                  onClick={() => downloadInvoice(order)}
+                                  className="flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 bg-gold hover:bg-gold/90 text-black text-[10px] font-cinzel uppercase font-bold transition-all rounded"
+                                >
+                                  <Download size={14} /> Download Invoice
+                                </button>
+                                {order.trackingNumber && (
+                                  <a 
+                                    href={`https://auspost.com.au/track/${order.trackingNumber}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 bg-gold/10 hover:bg-gold/20 border border-gold/30 text-gold text-[10px] font-cinzel uppercase font-bold transition-all rounded"
+                                  >
+                                    <Truck size={14} /> Track Package
+                                  </a>
+                                )}
+                              </div>
                             </div>
-                         </div>
-                       ))
-                     )}
+                          );
+                        })}
+                      </div>
+                    )}
                   </div>
                 )}
 
