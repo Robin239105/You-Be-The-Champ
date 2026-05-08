@@ -114,7 +114,7 @@ const ProductDetail = () => {
       });
 
       if (response.data.success) {
-        setCouponSuccess(`Coupon applied! You save $${response.data.data.discountAmount.toFixed(2)}`);
+        setCouponSuccess(`Coupon applied! You save $${Number(response.data.data.discountAmount).toFixed(2)}`);
         setCouponCode('');
         setShowCouponSection(false);
       } else {

@@ -158,7 +158,7 @@ const Checkout = () => {
       });
 
       if (response.data.success) {
-        setAppliedCoupon(response.data.data.code, response.data.data.discountAmount);
+        setAppliedCoupon(response.data.data.code, Number(response.data.data.discountAmount));
         setCouponCode('');
       } else {
         setCouponError(response.data.message || 'Invalid coupon');

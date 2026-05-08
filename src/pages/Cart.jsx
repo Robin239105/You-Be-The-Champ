@@ -37,8 +37,8 @@ const Cart = () => {
       });
 
       if (response.data.success) {
-        setAppliedCoupon(response.data.data.code, response.data.data.discountAmount);
-        setCouponSuccess(`Coupon applied! You saved $${response.data.data.discountAmount.toFixed(2)}`);
+        setAppliedCoupon(response.data.data.code, Number(response.data.data.discountAmount));
+        setCouponSuccess(`Coupon applied! You saved $${Number(response.data.data.discountAmount).toFixed(2)}`);
         setCouponCode('');
       } else {
         setCouponError(response.data.message || 'Invalid coupon');

@@ -1,15 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Plus, Minus, ShoppingBag } from 'lucide-react';
+import { X, Plus, Minus, ShoppingBag, Ticket, Check, AlertCircle, Loader2 } from 'lucide-react';
 import { useCartStore } from '../store/useCartStore';
 import { Link } from 'react-router-dom';
+import api from '../utils/api';
 import Button from './Button';
 
 const CartDrawer = ({ isOpen, onClose }) => {
-  const { items, removeItem, updateQty, getTotal, appliedCoupon, discountAmount } = useCartStore();
+  const { items, removeItem, updateQty, getTotal, appliedCoupon, discountAmount, setAppliedCoupon, removeCoupon } = useCartStore();
+  const [couponCode, setCouponCode] = useState('');
+  const [couponError, setCouponError] = useState('');
+  const [couponLoading, setCouponLoading] = useState(false);
+  const [showCouponInput, setShowCouponInput] = useState(false);
   
   const subtotal = getTotal();
-  const finalTotal = subtotal - discountAmount;
+  const finalTotal = subtotal - (Number(discountAmount) || 0);
+
+  const handleApplyCoupon = async () => {
+    if (!couponCode.trim()) {
+      setCouponError('Please enter a coupon code');
+      return;
+    }
+    setCouponLoading(true);
+    setCouponError('');
+    try {
+      const response = await api.post('/coupons/validate', {
+        code: couponCode.toUpperCase(),
+        cartItems: items
+      });
+      if (response.data.success) {
+        setAppliedCoupon(response.data.data.code, Number(response.data.data.discountAmount));
+        setCouponCode('');
+        setShowCouponInput(false);
+      } else {
+        setCouponError(response.data.message || 'Invalid coupon');
+      }
+    } catch (error) {
+      setCouponError(error.response?.data?.message || 'Failed to apply coupon');
+    } finally {
+      setCouponLoading(false);
+    }
+  };
+
+  const handleRemoveCoupon = () => {
+    removeCoupon();
+    setCouponError('');
+  };
 
   return (
     <AnimatePresence>
@@ -105,6 +141,46 @@ const CartDrawer = ({ isOpen, onClose }) => {
             {/* Footer */}
             {items.length > 0 && (
               <div className="p-6 bg-card-alt border-t border-gold/20 space-y-4">
+                
+                {/* Coupon Section in Cart Drawer */}
+                {appliedCoupon && (
+                  <div className="bg-emerald-900/20 border border-emerald-500/30 rounded p-3 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Check size={14} className="text-emerald-400" />
+                      <span className="text-xs text-emerald-400 font-cinzel font-bold uppercase">{appliedCoupon}</span>
+                    </div>
+                    <button onClick={handleRemoveCoupon} className="text-[10px] text-ivory/50 hover:text-crimson uppercase underline">Remove</button>
+                  </div>
+                )}
+                
+                {!appliedCoupon && (
+                  <div>
+                    {showCouponInput ? (
+                      <div className="space-y-2">
+                        <input
+                          type="text"
+                          value={couponCode}
+                          onChange={(e) => { setCouponCode(e.target.value.toUpperCase()); setCouponError(''); }}
+                          placeholder="Enter code"
+                          className="w-full bg-black border border-gold/20 px-3 py-2 text-xs text-ivory font-mono uppercase placeholder:text-ivory/20 focus:border-gold outline-none"
+                          onKeyPress={(e) => e.key === 'Enter' && handleApplyCoupon()}
+                        />
+                        <div className="flex gap-2">
+                          <button onClick={handleApplyCoupon} disabled={couponLoading} className="flex-1 py-2 bg-gold/20 border border-gold/40 text-gold text-[10px] font-cinzel uppercase font-bold flex items-center justify-center gap-1">
+                            {couponLoading ? <Loader2 size={10} className="animate-spin" /> : 'Apply'}
+                          </button>
+                          <button onClick={() => setShowCouponInput(false)} className="px-3 py-2 border border-gold/20 text-ivory/40 text-xs">✕</button>
+                        </div>
+                        {couponError && <p className="text-[10px] text-crimson">{couponError}</p>}
+                      </div>
+                    ) : (
+                      <button onClick={() => setShowCouponInput(true)} className="flex items-center gap-2 text-gold/60 hover:text-gold text-xs font-cinzel uppercase tracking-widest w-full justify-center">
+                        <Ticket size={12} /> Have a Coupon?
+                      </button>
+                    )}
+                  </div>
+                )}
+
                 <div className="space-y-2">
                   <div className="flex justify-between items-center px-2">
                     <span className="font-cinzel text-sm text-ivory/60 uppercase tracking-widest">Subtotal</span>
@@ -113,7 +189,7 @@ const CartDrawer = ({ isOpen, onClose }) => {
                   {discountAmount > 0 && (
                     <div className="flex justify-between items-center px-2 text-emerald-400">
                       <span className="font-cinzel text-sm uppercase tracking-widest">Discount</span>
-                      <span className="font-mono font-bold">-${discountAmount.toFixed(2)}</span>
+                      <span className="font-mono font-bold">-${Number(discountAmount).toFixed(2)}</span>
                     </div>
                   )}
                   <div className="flex justify-between items-center px-2 pt-2 border-t border-gold/10">
