@@ -51,22 +51,6 @@ const SLIDES = [
     glowColor: GOLD_GLOW,
   },
   {
-    id: 1.1,
-    tag: "NBA · New Arrival 2026",
-    headline: "OKC",
-    sub: "THUNDER",
-    label: "NBA Finals Champions",
-    description: "Bring it home to Oklahoma City Shai Gilgeous-Alexander: The NBA 2025 reigning MVP, Finals MVP, and CHAMPION.!",
-    cta: "Grab Yours",
-    ctaLink: "/category/Champions%20By%20Year%20%3E%202025",
-    cta2: "Browse All Thunder Rings",
-    cta2Link: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
-    sport: "NBA",
-    ringImage: "/Slider 3.jpg",
-    accentColor: GOLD,
-    glowColor: GOLD_GLOW,
-  },
-  {
     id: 2,
     tag: "NFL · Hail the New Champions",
     headline: "SEATTLE",
@@ -161,8 +145,8 @@ const SLIDES = [
     ringImage: "/Slider 7.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
-   },
-  ];
+  },
+];
 
 const LEAGUES = [
   { name: "NFL", icon: NFLLogo, label: "National Football League", path: "League > NFL - National Football League", color: "#013369" },
@@ -322,13 +306,13 @@ const Home = () => {
               transition={{ duration: 0.35, delay: 0.05 }}
               className="flex items-center gap-3 mb-8"
             >
-              <span className="font-cinzel text-[9px] font-black uppercase tracking-[5px] px-3 py-1.5 border border-gold/70 text-gold bg-gold/8">
-                {slide.sport}
-              </span>
-              <div className="flex items-center gap-2">
-                <span className="w-5 h-px bg-gold/40" />
-                <span className="font-cinzel text-white/40 text-[9px] uppercase tracking-[4px]">{slide.tag}</span>
-              </div>
+              <span className="font-cinzel text-[18px] font-black uppercase tracking-[10px] px-6 py-3 border border-gold/70 text-gold bg-gold/8">
+                 {slide.sport}
+               </span>
+               <div className="flex items-center gap-4">
+                 <span className="w-10 h-px bg-gold/40" />
+                 <span className="font-cinzel text-white/40 text-[18px] uppercase tracking-[8px]">{slide.tag}</span>
+               </div>
             </motion.div>
 
             {/* Headline block */}
