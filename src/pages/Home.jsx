@@ -78,7 +78,7 @@ const SLIDES = [
     cta2: "Browse All NBA Rings",
     cta2Link: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
     sport: "NBA",
-    ringImage: "/Slider 3_New.jpg",
+    ringImage: "/Slider 3.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -306,12 +306,12 @@ const Home = () => {
               transition={{ duration: 0.35, delay: 0.05 }}
               className="flex items-center gap-3 mb-8"
             >
-              <span className="font-cinzel text-[18px] font-black uppercase tracking-[10px] px-6 py-3 border border-gold/70 text-gold bg-gold/8">
+              <span className="font-cinzel text-[12px] font-black uppercase tracking-[6px] px-4 py-2 border border-gold/70 text-gold bg-gold/8">
                  {slide.sport}
                </span>
-               <div className="flex items-center gap-4">
-                 <span className="w-10 h-px bg-gold/40" />
-                 <span className="font-cinzel text-white/40 text-[18px] uppercase tracking-[8px]">{slide.tag}</span>
+               <div className="flex items-center gap-3">
+                 <span className="w-8 h-px bg-gold/40" />
+                 <span className="font-cinzel text-white/40 text-[12px] uppercase tracking-[5px]">{slide.tag}</span>
                </div>
             </motion.div>
 
