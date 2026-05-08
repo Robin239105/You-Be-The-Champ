@@ -38,7 +38,7 @@ const Login = () => {
     <div className="bg-black min-h-screen flex flex-col">
       <Header />
       
-      <main className="flex-1 flex items-center justify-center p-8 pt-40 pb-24 relative overflow-hidden">
+      <main className="flex-1 flex items-center justify-center p-8 pt-52 pb-24 relative overflow-hidden">
         {/* Glow BG */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gold/5 blur-[80px] rounded-full" />
         
