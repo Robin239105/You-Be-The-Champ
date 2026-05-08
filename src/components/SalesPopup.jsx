@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingBag, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -8,54 +8,95 @@ const CITIES = [
   'Sydney, NSW', 'Melbourne, VIC', 'Brisbane, QLD', 'Perth, WA', 
   'Adelaide, SA', 'Gold Coast, QLD', 'Canberra, ACT', 'Newcastle, NSW',
   'Wollongong, NSW', 'Geelong, VIC', 'Hobart, TAS', 'Townsville, QLD',
-  'Cairns, QLD', 'Darwin, NT', 'Toowoomba, QLD', 'Ballarat, VIC'
+  'Cairns, QLD', 'Darwin, NT', 'Toowoomba, QLD', 'Ballarat, VIC',
+  'Los Angeles, CA', 'New York, NY', 'Chicago, IL', 'Houston, TX',
+  'Miami, FL', 'Seattle, WA', 'Denver, CO', 'Boston, MA'
+];
+
+const FIRST_NAMES = [
+  'James', 'Emma', 'Michael', 'Sarah', 'David', 'Lisa', 'Robert', 'Jennifer',
+  'Chris', 'Amanda', 'Daniel', 'Jessica', 'Mark', 'Ashley', 'John', 'Nicole'
 ];
 
 const TIMES = [
-  'Just now', '2 minutes ago', '5 minutes ago', '12 minutes ago', '24 minutes ago', 
-  '45 minutes ago', 'an hour ago', '3 hours ago'
+  'Just now', '1 minute ago', '3 minutes ago', '5 minutes ago', 
+  '12 minutes ago', '18 minutes ago', '23 minutes ago', '35 minutes ago',
+  '42 minutes ago', '1 hour ago', '2 hours ago'
 ];
 
 const SalesPopup = ({ products = [] }) => {
   const [currentProduct, setCurrentProduct] = useState(null);
   const [currentCity, setCurrentCity] = useState('');
   const [currentTime, setCurrentTime] = useState('');
+  const [currentName, setCurrentName] = useState('');
   const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    // Initial delay before first popup
-    const initialDelay = setTimeout(() => {
-      showRandomPopup();
-    }, 8000); 
-
-    const interval = setInterval(() => {
-      showRandomPopup();
-    }, 35000); 
-
-    return () => {
-      clearTimeout(initialDelay);
-      clearInterval(interval);
-    };
+  
+  const availableProducts = useMemo(() => {
+    return products.filter(p => p && (p.images?.[0]?.url || p.images?.[0] || p.image) && p.name);
   }, [products]);
 
-  const showRandomPopup = () => {
-    if (!products || products.length === 0) return;
+  const isActiveHours = () => {
+    const hour = new Date().getHours();
+    return hour >= 9 && hour <= 22;
+  };
 
-    const randomProduct = products[Math.floor(Math.random() * products.length)];
+  useEffect(() => {
+    if (availableProducts.length === 0) return;
+
+    let timeoutId;
+    let intervalId;
+    let hasShownInitial = false;
+
+    const scheduleNext = () => {
+      const baseDelay = 25000 + Math.random() * 25000;
+      timeoutId = setTimeout(() => {
+        if (isActiveHours()) {
+          showRandomPopup();
+          hasShownInitial = true;
+        }
+        scheduleNext();
+      }, baseDelay);
+    };
+
+    if (!hasShownInitial) {
+      const initialDelay = 12000 + Math.random() * 8000;
+      timeoutId = setTimeout(() => {
+        if (isActiveHours() && availableProducts.length > 0) {
+          showRandomPopup();
+          hasShownInitial = true;
+        }
+        scheduleNext();
+      }, initialDelay);
+    } else {
+      scheduleNext();
+    }
+
+    return () => {
+      clearTimeout(timeoutId);
+      clearInterval(intervalId);
+    };
+  }, [availableProducts]);
+
+  const showRandomPopup = () => {
+    if (availableProducts.length === 0) return;
+
+    const randomProduct = availableProducts[Math.floor(Math.random() * availableProducts.length)];
     const randomCity = CITIES[Math.floor(Math.random() * CITIES.length)];
     const randomTime = TIMES[Math.floor(Math.random() * TIMES.length)];
+    const randomName = FIRST_NAMES[Math.floor(Math.random() * FIRST_NAMES.length)];
 
     setCurrentProduct(randomProduct);
     setCurrentCity(randomCity);
     setCurrentTime(randomTime);
+    setCurrentName(randomName);
     setIsVisible(true);
 
-    // Auto-hide after 7 seconds
     setTimeout(() => {
       setIsVisible(false);
     }, 7000);
   };
 
+  if (availableProducts.length === 0) return null;
   if (!currentProduct) return null;
 
   return (
@@ -93,8 +134,8 @@ const SalesPopup = ({ products = [] }) => {
             </div>
             
             <p className="text-[12px] text-ivory/90 leading-snug mb-1">
-              Someone in <span className="text-white font-bold inline-flex items-center gap-1">
-                {currentCity} <img src="https://flagcdn.com/w20/au.png" alt="AU Flag" className="w-3 h-2.5 rounded-[1px]" />
+              <span className="text-white font-bold">{currentName}</span> from <span className="text-white font-bold inline-flex items-center gap-1">
+                {currentCity} <img src={currentCity.includes(', CA') || currentCity.includes(', NY') || currentCity.includes(', IL') || currentCity.includes(', TX') || currentCity.includes(', FL') || currentCity.includes(', WA') || currentCity.includes(', CO') || currentCity.includes(', MA') ? "https://flagcdn.com/w20/us.png" : "https://flagcdn.com/w20/au.png"} alt="Flag" className="w-3 h-2 rounded-[1px]" />
               </span> just purchased
             </p>
             
