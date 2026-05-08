@@ -25,39 +25,80 @@ async function generateOrderNumber() {
 }
 
 const createOrder = async (req, res) => {
-  const { cartItems, totalAmount, shippingAddress, paymentMethod, couponCode, affiliateCode } = req.body;
+  const { cartItems, shippingAddress, paymentMethod, couponCode, affiliateCode } = req.body;
 
   console.log('📦 Create Order Request:', {
     userId: req.user.id,
     cartItems: cartItems.length,
-    totalAmount,
     affiliateCode
   });
 
   try {
     const orderNumber = await generateOrderNumber();
     
+    // SECURITY FIX: Recalculate EVERYTHING on the server
+    let subtotal = 0;
+    const orderItemsData = [];
+
+    for (const item of cartItems) {
+      const product = await prisma.product.findUnique({ where: { id: item.id } });
+      if (!product) throw new Error(`Product ${item.id} not found`);
+      
+      const itemPrice = parseFloat(product.price);
+      const quantity = parseInt(item.quantity);
+      
+      subtotal += (itemPrice * quantity);
+      orderItemsData.push({
+        productId: item.id,
+        quantity: quantity,
+        price: itemPrice
+      });
+    }
+
+    // Shipping Cost (Mirroring frontend logic)
+    const shippingMethod = req.body.shippingMethod || 'standard';
+    const shippingCost = shippingMethod === 'express' ? 25 : 0;
+
+    let totalAmount = subtotal + shippingCost;
+
+    // Apply Coupon if provided
+    let appliedCouponData = null;
+    if (couponCode) {
+      const coupon = await prisma.coupon.findUnique({ where: { code: couponCode.toUpperCase() } });
+      if (coupon && coupon.isActive) {
+        // Validate min amount against server-calculated subtotal
+        if (!coupon.minOrderAmount || subtotal >= parseFloat(coupon.minOrderAmount)) {
+          let discount = 0;
+          if (coupon.type === 'PERCENTAGE') {
+            discount = (subtotal * parseFloat(coupon.value)) / 100;
+          } else {
+            discount = parseFloat(coupon.value);
+          }
+          // Cap discount at subtotal
+          discount = Math.min(discount, subtotal);
+          totalAmount -= discount;
+          appliedCouponData = { code: coupon.code, discountAmount: discount };
+        }
+      }
+    }
+
     const order = await prisma.order.create({
       data: {
         orderNumber,
         userId: req.user.id,
-        totalAmount: parseFloat(totalAmount),
+        totalAmount: parseFloat(totalAmount.toFixed(2)),
         shippingAddress: typeof shippingAddress === 'string' ? JSON.parse(shippingAddress) : shippingAddress,
         paymentMethod,
-        couponCode,
+        couponCode: couponCode || null,
         affiliateCode: affiliateCode || null,
         orderItems: {
-          create: cartItems.map(item => ({
-            productId: item.id,
-            quantity: item.quantity,
-            price: parseFloat(item.price)
-          }))
+          create: orderItemsData
         }
       },
       include: { orderItems: { include: { product: { select: { name: true, images: true } } } } }
     });
 
-    console.log('✅ Order Created Successfully:', order.orderNumber);
+    console.log('✅ Order Created Successfully:', order.orderNumber, 'Total:', order.totalAmount);
     res.status(201).json({ success: true, data: order });
   } catch (error) {
     console.error('❌ Order Creation Failed:', error.message);
@@ -125,7 +166,7 @@ const getOrderById = async (req, res) => {
     if (order.userId !== req.user.id && req.user.role !== 'ADMIN') {
       return res.status(403).json({ success: false, message: 'Not authorized' });
     }
-
+    
     res.json({ success: true, data: order });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
@@ -200,7 +241,7 @@ const getDashboardStats = async (req, res) => {
       orderBy: { createdAt: 'desc' },
       include: { user: true }
     });
-
+    
     const topProducts = await prisma.product.findMany({
       take: 5,
       include: { 
@@ -214,7 +255,7 @@ const getDashboardStats = async (req, res) => {
         }
       }
     });
-
+    
     res.json({
       success: true,
       data: {

@@ -70,7 +70,7 @@ const Header = () => {
         <div className="flex-shrink-0 lg:mr-4">
           <Link to="/" className="flex items-center group">
             <div className={`relative transition-all duration-500 group-hover:scale-110 ${
-              isScrolled ? 'w-16 h-16 sm:w-20 sm:h-20' : 'w-20 h-20 sm:w-24 sm:h-24'
+              isScrolled ? 'w-24 h-24 sm:w-28 sm:h-28' : 'w-28 h-28 sm:w-36 sm:h-36'
             }`}>
               <img 
                 src="/logo.png" 
@@ -78,6 +78,8 @@ const Header = () => {
                 className="w-full h-full object-contain"
               />
             </div>
+          </Link>
+        </div>
           </Link>
         </div>
 
@@ -185,7 +187,7 @@ const Header = () => {
                   )}
                   <Link to="/contact" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
                     <ShoppingBag size={16} className="flex-shrink-0" />
-                    <span className="truncate">Support</span>
+                    <span className="truncate">Ask The Coach</span>
                   </Link>
                 </div>
               </div>

@@ -154,7 +154,7 @@ const Checkout = () => {
     try {
       const response = await api.post('/coupons/validate', {
         code: couponCode.toUpperCase(),
-        cartTotal: getTotal() + shippingCost
+        cartItems: items // Sending items instead of total for security
       });
 
       if (response.data.success) {
@@ -163,6 +163,11 @@ const Checkout = () => {
       } else {
         setCouponError(response.data.message || 'Invalid coupon');
       }
+    } catch (error) {
+      setCouponError(error.response?.data?.message || 'Failed to apply coupon');
+    } finally {
+      setCouponLoading(false);
+    }
     } catch (error) {
       setCouponError(error.response?.data?.message || 'Failed to apply coupon');
     } finally {
@@ -541,61 +546,63 @@ const Checkout = () => {
                            setIsLoading(true);
                            try {
                              const storedRef = localStorage.getItem('affiliateRef');
-                            console.log('🚀 Initiating order placement...', {
-                              cartItemsCount: items.length,
-                              total: finalTotal
-                            });
-                            const response = await api.post('/orders', {
-                              cartItems: items.map(i => ({ id: i.id, quantity: i.quantity, price: Number(i.price) })),
-                              totalAmount: finalTotal,
-                              shippingAddress: JSON.stringify({
-                                street: formData.address,
-                                city: formData.city,
-                                state: formData.state,
-                                zip: formData.zip,
-                                country: 'Australia',
-                                name: `${formData.firstName} ${formData.lastName}`,
-                                phone: formData.phone,
-                                email: formData.email
-                              }),
-                              paymentMethod: 'Credit Card (Mock)',
-                              couponCode: appliedCoupon || null,
-                              affiliateCode: storedRef || null,
-                            });
-                            
-                            console.log('✅ API Response:', response.data);
-                            
-                            if (response.data.success) {
-                              console.log('🎉 Order successful, navigating to confirmation');
-                              // Make a copy of items before clearing (in case we need them)
-                              const orderItems = [...items];
-                              localStorage.removeItem('affiliateRef');
-                              navigate('/order-confirmation', { 
-                                state: { 
-                                  formData, 
-                                  items: orderItems, 
-                                  shippingMethod, 
-                                  finalTotal, 
-                                  orderId: response.data.data.orderNumber || response.data.data.id 
-                                },
-                                replace: true
-                              });
-                              // Clear cart AFTER navigation to avoid triggering redirect
-                              setTimeout(() => clearCart(), 100);
-                            } else {
-                              setError('Order failed. Please try again.');
-                            }
+                             console.log('🚀 Initiating order placement...', {
+                               cartItemsCount: items.length,
+                               total: finalTotal
+                             });
+                             const orderData = {
+                               cartItems: items.map(i => ({ id: i.id, quantity: i.quantity })),
+                               shippingAddress: JSON.stringify({
+                                 street: formData.address,
+                                 city: formData.city,
+                                 state: formData.state,
+                                 zip: formData.zip,
+                                 country: 'Australia',
+                                 name: `${formData.firstName} ${formData.lastName}`,
+                                 phone: formData.phone,
+                                 email: formData.email
+                               }),
+                               shippingMethod,
+                               paymentMethod: 'Credit Card (Mock)',
+                               couponCode: appliedCoupon || null,
+                               affiliateCode: storedRef || null,
+                             };
+
+                             const response = await api.post('/orders', orderData);
+                             
+                             console.log('✅ API Response:', response.data);
+                             
+                             if (response.data.success) {
+                               console.log('🎉 Order successful, navigating to confirmation');
+                               // Make a copy of items before clearing (in case we need them)
+                               const orderItems = [...items];
+                               localStorage.removeItem('affiliateRef');
+                               navigate('/order-confirmation', { 
+                                 state: { 
+                                   formData, 
+                                   items: orderItems, 
+                                   shippingMethod, 
+                                   finalTotal, 
+                                   orderId: response.data.data.orderNumber || response.data.data.id 
+                                 },
+                                 replace: true
+                               });
+                               // Clear cart AFTER navigation to avoid triggering redirect
+                               setTimeout(() => clearCart(), 100);
+                             } else {
+                               setError('Order failed. Please try again.');
+                             }
                            } catch (error) {
-                            console.error('❌ Order submission error:', error);
-                            setError(error.response?.data?.message || 'Failed to place order');
+                             console.error('❌ Order submission error:', error);
+                             setError(error.response?.data?.message || 'Failed to place order');
                            } finally {
-                            setIsLoading(false);
+                             setIsLoading(false);
                            }
                         }}
                         className="flex-1 py-4 uppercase tracking-[2px] text-xs font-bold"
                        >
-                        {isLoading ? <Loader2 size={18} className="animate-spin inline mr-2" /> : <Lock size={16} className="inline mr-2" />}
-                        {isLoading ? 'Processing...' : `Complete Purchase — $${Number(finalTotal || 0).toFixed(2)} AUD`}
+                         {isLoading ? <Loader2 size={18} className="animate-spin inline mr-2" /> : <Lock size={16} className="inline mr-2" />}
+                         {isLoading ? 'Processing...' : `Complete Purchase — $${Number(finalTotal || 0).toFixed(2)} AUD`}
                        </Button>
                     )}
                   </div>

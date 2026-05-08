@@ -208,7 +208,7 @@ export const navigationData = [
 
   // 8. SPECIAL RELEASE — direct to shop with special release category
   {
-    label: "Special",
+    label: "Special Releases",
     slug: "special-release",
     path: "/category/Special%20Release%20Champion%20Players%20Rings",
     layout: "direct",
@@ -224,7 +224,7 @@ export const navigationData = [
 
   // 10. CONTACT — direct link
   {
-    label: "Contact",
+    label: "Ask The Coach",
     slug: "contact",
     path: "/contact",
     layout: "direct",

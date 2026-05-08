@@ -33,7 +33,7 @@ const Cart = () => {
     try {
       const response = await api.post('/coupons/validate', {
         code: couponCode.toUpperCase(),
-        cartTotal: subtotal
+        cartItems: items // Sending items instead of total for security
       });
 
       if (response.data.success) {
@@ -48,6 +48,13 @@ const Cart = () => {
     } finally {
       setCouponLoading(false);
     }
+  };
+
+  const handleRemoveCoupon = () => {
+    removeCoupon();
+    setCouponCode('');
+    setCouponError('');
+    setCouponSuccess('');
   };
 
   const handleRemoveCoupon = () => {

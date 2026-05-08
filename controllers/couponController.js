@@ -1,10 +1,10 @@
 const prisma = require('../utils/prisma');
 
 const validateCoupon = async (req, res) => {
-  const { code, cartTotal } = req.body;
+  const { code, cartItems } = req.body;
 
   try {
-    const coupon = await prisma.coupon.findUnique({ where: { code } });
+    const coupon = await prisma.coupon.findUnique({ where: { code: code.toUpperCase() } });
 
     if (!coupon || !coupon.isActive) {
       return res.status(400).json({ success: false, message: 'Invalid or inactive coupon' });
@@ -18,18 +18,34 @@ const validateCoupon = async (req, res) => {
       return res.status(400).json({ success: false, message: 'Coupon usage limit reached' });
     }
 
-    if (coupon.minOrderAmount && parseFloat(cartTotal) < parseFloat(coupon.minOrderAmount)) {
+    // SECURITY FIX: Re-calculate subtotal on the server instead of trusting the client
+    let serverSubtotal = 0;
+    if (cartItems && Array.isArray(cartItems)) {
+      for (const item of cartItems) {
+        const product = await prisma.product.findUnique({ where: { id: item.id } });
+        if (product) {
+          serverSubtotal += (Number(product.price) * item.quantity);
+        }
+      }
+    }
+
+    if (coupon.minOrderAmount && serverSubtotal < parseFloat(coupon.minOrderAmount)) {
       return res.status(400).json({ success: false, message: `Minimum order amount of $${coupon.minOrderAmount} required` });
     }
 
     let discountAmount = 0;
     if (coupon.type === 'PERCENTAGE') {
-      discountAmount = (parseFloat(cartTotal) * parseFloat(coupon.value)) / 100;
+      discountAmount = (serverSubtotal * parseFloat(coupon.value)) / 100;
     } else {
       discountAmount = parseFloat(coupon.value);
     }
 
-    res.json({ success: true, data: { discountAmount, code: coupon.code } });
+    // Cap discount at subtotal
+    if (discountAmount > serverSubtotal) {
+      discountAmount = serverSubtotal;
+    }
+
+    res.json({ success: true, data: { discountAmount, code: coupon.code, validatedSubtotal: serverSubtotal } });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
