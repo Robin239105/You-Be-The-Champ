@@ -120,48 +120,29 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Col 3 — Corporate (Hidden on mobile, shown on lg) */}
+          {/* Col 3 — Legal (Hidden on mobile, shown on lg) */}
           <div className="hidden lg:block">
-            <h4 className="font-cinzel text-gray-200 text-base font-bold uppercase tracking-widest mb-8">Corporate</h4>
+            <h4 className="font-cinzel text-gray-200 text-base font-bold uppercase tracking-widest mb-8">Legal</h4>
             <ul className="space-y-4">
               <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
               <FooterLink to="/about">About Us</FooterLink>
-              <FooterLink to="/faq">FAQs</FooterLink>
               <FooterLink to="/blog">News & Blog</FooterLink>
+              <FooterLink to="/authenticity">Authenticity</FooterLink>
               <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
               <FooterLink to="/terms-of-service">Terms of Service</FooterLink>
             </ul>
           </div>
-
-          {/* Col 4 — Additional (Hidden on mobile, shown on lg) */}
-          <div className="hidden lg:block">
-            <h4 className="font-cinzel text-gray-200 text-base font-bold uppercase tracking-widest mb-8">More</h4>
-            <ul className="space-y-4">
-              <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
-              <FooterLink to="/about">About Us</FooterLink>
-              <FooterLink to="/blog">News & Blog</FooterLink>
-              <FooterLink to="/authenticity">Authenticity</FooterLink>
-            </ul>
-          </div>
         </div>
 
-        {/* Mobile Additional Links - 2 Columns */}
+        {/* Mobile Legal Links */}
         <div className="md:hidden grid grid-cols-2 gap-6 mb-12">
-          <div>
-            <h4 className="font-cinzel text-gray-200 text-xs font-bold uppercase tracking-widest mb-4">More</h4>
-            <ul className="space-y-3">
-              <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
-              <FooterLink to="/about">About Us</FooterLink>
-              <FooterLink to="/blog">News & Blog</FooterLink>
-              <FooterLink to="/authenticity">Authenticity</FooterLink>
-            </ul>
-          </div>
           <div>
             <h4 className="font-cinzel text-gray-200 text-xs font-bold uppercase tracking-widest mb-4">Legal</h4>
             <ul className="space-y-3">
               <FooterLink to="/privacy-policy">Privacy</FooterLink>
               <FooterLink to="/terms-of-service">Terms</FooterLink>
               <FooterLink to="/return-policy">Returns</FooterLink>
+              <FooterLink to="/authenticity">Authenticity</FooterLink>
             </ul>
           </div>
         </div>
