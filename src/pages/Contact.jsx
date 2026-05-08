@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="bg-black min-h-screen text-ivory">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-6 sm:px-8 pt-40 pb-24">
+       <main className="max-w-7xl mx-auto px-6 sm:px-8 pt-52 pb-24">
         {/* Header Section */}
         <div className="text-center mb-20">
           <motion.span 

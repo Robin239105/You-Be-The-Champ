@@ -76,7 +76,7 @@ const catLink = (path) => `/category/${encodeURIComponent(path)}`;
 const CollectionsPage = () => (
   <div className="bg-black min-h-screen text-ivory">
     <Header />
-    <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+     <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
       <div className="mb-14">
         <span className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-3">Browse</span>
         <h1 className="text-5xl font-black font-cinzel text-white uppercase tracking-widest mb-2">Full collection of championship rings</h1>

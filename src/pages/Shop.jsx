@@ -272,7 +272,7 @@ const Shop = () => {
       </div>
 
       {/* Small Hero */}
-      <div className="pt-40 pb-20 px-8 text-center bg-surface relative overflow-hidden">
+       <div className="pt-52 pb-20 px-8 text-center bg-surface relative overflow-hidden">
         <div className="absolute inset-0 gold-glow opacity-30" />
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}

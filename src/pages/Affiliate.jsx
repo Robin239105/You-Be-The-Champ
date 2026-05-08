@@ -55,7 +55,7 @@ const Affiliate = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="pt-40 pb-24 px-8">
+       <main className="pt-52 pb-24 px-8">
         {/* Hero Section */}
         <section className="max-w-7xl mx-auto text-center mb-32">
           <motion.div

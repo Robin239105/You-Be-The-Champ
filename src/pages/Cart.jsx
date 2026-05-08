@@ -57,18 +57,11 @@ const Cart = () => {
     setCouponSuccess('');
   };
 
-  const handleRemoveCoupon = () => {
-    removeCoupon();
-    setCouponCode('');
-    setCouponError('');
-    setCouponSuccess('');
-  };
-
   return (
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+       <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
         <h1 className="text-4xl font-black font-cinzel text-gold tracking-widest uppercase mb-12">Shopping Collection</h1>
 
         {items.length === 0 ? (

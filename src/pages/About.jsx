@@ -11,7 +11,7 @@ const About = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+       <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
         <div className="max-w-4xl mx-auto text-center mb-24">
           <Breadcrumb items={[{ name: 'About Us', path: '/about' }]} />
           <h1 className="text-4xl md:text-6xl font-black font-cinzel text-gold tracking-widest uppercase mb-8">Our Legacy</h1>

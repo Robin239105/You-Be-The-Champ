@@ -62,7 +62,7 @@ const FINALS = [
 const ChampionshipFinalsPage = () => (
   <div className="bg-black min-h-screen text-ivory">
     <Header />
-    <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+     <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
       <Breadcrumb items={[{ name: "Championship / Finals", path: "/championship-finals" }]} />
 
       {/* Hero header */}

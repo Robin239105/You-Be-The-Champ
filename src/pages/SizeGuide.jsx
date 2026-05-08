@@ -20,7 +20,7 @@ const SizeGuide = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-4xl mx-auto px-8 pt-40 pb-24">
+       <main className="max-w-4xl mx-auto px-8 pt-52 pb-24">
         <Breadcrumb items={[{ name: 'Size Guide', path: '/size-guide' }]} />
         
         <h1 className="text-4xl md:text-5xl font-black font-cinzel text-gold tracking-widest uppercase mb-12">Championship Sizing</h1>

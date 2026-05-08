@@ -35,7 +35,7 @@ const Search = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+       <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
         <div className="max-w-3xl mx-auto mb-20">
            <div className="relative">
               <input 

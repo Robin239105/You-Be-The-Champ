@@ -26,7 +26,7 @@ const BlogPost = () => {
     <div className="bg-black min-h-screen">
       <Header />
 
-      <main className="max-w-4xl mx-auto px-8 pt-40 pb-24">
+       <main className="max-w-4xl mx-auto px-8 pt-52 pb-24">
         {isLoading ? (
           <div className="flex items-center justify-center py-40">
             <Loader2 size={40} className="text-gold animate-spin" />

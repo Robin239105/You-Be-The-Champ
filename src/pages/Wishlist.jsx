@@ -14,7 +14,7 @@ const Wishlist = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+       <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
         <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
            <div>
               <Breadcrumb items={[{ name: 'Wishlist', path: '/wishlist' }]} />

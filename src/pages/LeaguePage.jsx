@@ -62,7 +62,7 @@ const LEAGUES = [
 const LeaguePage = () => (
   <div className="bg-black min-h-screen text-ivory">
     <Header />
-    <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+     <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
       <Breadcrumb items={[{ name: "League", path: "/league" }]} />
 
       <div className="text-center py-16 border border-gold/10 bg-white/[0.02] relative overflow-hidden mb-16">

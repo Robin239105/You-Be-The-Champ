@@ -25,7 +25,7 @@ const Blog = () => {
     <div className="bg-black min-h-screen">
       <Header />
       
-      <main className="max-w-7xl mx-auto px-8 pt-40 pb-24">
+       <main className="max-w-7xl mx-auto px-8 pt-52 pb-24">
         <Breadcrumb items={[{ name: 'Locker Room', path: '/blog' }]} />
         
         <div className="mb-20">

@@ -80,8 +80,6 @@ const Header = () => {
             </div>
           </Link>
         </div>
-          </Link>
-        </div>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center justify-center gap-x-3 xl:gap-x-5">

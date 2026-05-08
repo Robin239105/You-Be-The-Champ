@@ -168,11 +168,6 @@ const Checkout = () => {
     } finally {
       setCouponLoading(false);
     }
-    } catch (error) {
-      setCouponError(error.response?.data?.message || 'Failed to apply coupon');
-    } finally {
-      setCouponLoading(false);
-    }
   };
 
   const handleRemoveCoupon = () => {

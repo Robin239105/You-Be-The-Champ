@@ -30,7 +30,7 @@ const CITIES = [
 const CitiesPage = () => (
   <div className="bg-black min-h-screen">
     <Header />
-    <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-40 pb-24">
+     <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-52 pb-24">
       <Breadcrumb items={[{ name: 'Cities', path: '/cities' }]} />
 
       <div className="mb-16 text-center py-16 bg-surface border border-gold/10 relative overflow-hidden">
