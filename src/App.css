@@ -51,7 +51,7 @@
     top: 107px;
     height: 26px;
     width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+    transform: perspective(2000px) rotateZ(40deg) rotateY(39deg)
       scale(0.8);
   }
 }
@@ -181,4 +181,22 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+/* Custom Gold Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A84C;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b0933d;
 }

@@ -51,6 +51,22 @@ const SLIDES = [
     glowColor: GOLD_GLOW,
   },
   {
+    id: 1.1,
+    tag: "NBA · New Arrival 2026",
+    headline: "OKC",
+    sub: "THUNDER",
+    label: "NBA Finals Champions",
+    description: "Bring it home to Oklahoma City Shai Gilgeous-Alexander: The NBA 2025 reigning MVP, Finals MVP, and CHAMPION.!",
+    cta: "Grab Yours",
+    ctaLink: "/category/Champions%20By%20Year%20%3E%202025",
+    cta2: "Browse All Thunder Rings",
+    cta2Link: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
+    sport: "NBA",
+    ringImage: "/Slider 3.jpg",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
+  },
+  {
     id: 2,
     tag: "NFL · Hail the New Champions",
     headline: "SEATTLE",
@@ -59,7 +75,7 @@ const SLIDES = [
     description: "From domination to Champions - Seattle Seahawks are Superbowl Champions Again..",
     cta: "Pre Release Purchase",
     ctaLink: "/category/Champions%20By%20Year%20%3E%202014",
-    cta2: "Browse All Seahawks Rings",
+    cta2: "Buy Concept Ring",
     cta2Link: "/category/Teams%20%3E%20Seattle%20Seahawks%20(NFL)",
     sport: "NFL",
     ringImage: "/Slider 2.jpg",
@@ -75,10 +91,10 @@ const SLIDES = [
     description: "Bring it home to Oklahoma City Shai Gilgeous-Alexander: The NBA 2025 reigning MVP, Finals MVP, and CHAMPION.!",
     cta: "Grab Yours",
     ctaLink: "/category/Champions%20By%20Year%20%3E%202025",
-    cta2: "Browse All Thunder Rings",
+    cta2: "Browse All NBA Rings",
     cta2Link: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
     sport: "NBA",
-    ringImage: "/Slider 3.jpg",
+    ringImage: "/Slider 3_New.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
@@ -89,9 +105,9 @@ const SLIDES = [
     sub: "PANTHERS",
     label: "Stanley Cup Triumph",
     description: "On the Ice back to back champions in the Florida Heat; the start of a dynasty.",
-    cta: "Secure Both Rings",
+    cta: "Secure yours now",
     ctaLink: "/category/Champions%20By%20Year%20%3E%202025",
-    cta2: "Browse All Panthers Rings",
+    cta2: "Buy the Back to Back Rings",
     cta2Link: "/category/Teams%20%3E%20Florida%20Panthers%20(NHL)",
     sport: "NHL",
     ringImage: "/Slider 4.jpg",
@@ -104,10 +120,10 @@ const SLIDES = [
     headline: "MICHAEL",
     sub: "JORDAN",
     label: "6 Time NBA Finals Champion",
-    description: "The Undisputed GOAT; Two 3peats, 6 time NBA Finals champ, 6 NBA Finals MVP's, 5 NBA MVP's. Own the Icon collection.",
-    cta: "Grab Yours",
+    description: "The Undisputed GOAT; 6 x NBA Finals Champion, Two 3peats, 6 NBA Finals MVP. 5 x NBA MVP, 5 x NBA Scoring Titles, 2 x Defensive Player of the Year…….. Drop the Mic Mike.",
+    cta: "The Michael Jordan Collection",
     ctaLink: "/category/All%20Time%20Greats%20%3E%20Michael%20Jordan%20(NBA)",
-    cta2: "Browse All MJ Rings",
+    cta2: "Other Iconic Legends Collections",
     cta2Link: "/category/All%20Time%20Greats%20%3E%20Michael%20Jordan%20(NBA)",
     sport: "NBA",
     ringImage: "/Slider 5.jpg",
@@ -116,21 +132,37 @@ const SLIDES = [
   },
   {
     id: 6,
-    tag: "Shop All · Global Collection",
-    headline: "YOU BE",
-    sub: "THE CHAMP",
-    label: "One Collection",
-    description: "Every ring. Every legend. Every sport. The world's largest championship ring catalog.",
+    tag: "YOU - NFL, NBA, MLB, NHL",
+    headline: "OWN THE",
+    sub: "MOMENT",
+    label: "Get your championship ring",
+    description: "Every Ring., Every Legend. Every Sport. With a huge Championship Ring catalogue, now, you can relive the moment, but this time YOU BE THE CHAMP!",
     cta: "Shop All Rings",
     ctaLink: "/shop",
-    cta2: "Collector Sets",
+    cta2: "Browse Categories",
     cta2Link: "/category/Complete%20Team%20Sets%20-%20All%20Teams%20-%20NFL",
     sport: "ALL",
     ringImage: "/Slider 6.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
-];
+  {
+    id: 7,
+    tag: "ALL - Championship Gift",
+    headline: "MY YEAR,",
+    sub: "MY GIFT BOX",
+    label: "Premium gift ideas",
+    description: "Available now; Complete sets of all 4 Championship Rings from the 4 leagues from each year. The perfect gift for any sports lover; the 4 years from their year of birth.",
+    cta: "Select Year",
+    ctaLink: "/your-year-gift",
+    cta2: "Check out more rings",
+    cta2Link: "/shop",
+    sport: "ALL",
+    ringImage: "/Slider 7.jpg",
+    accentColor: GOLD,
+    glowColor: GOLD_GLOW,
+  },
+];;
 
 const LEAGUES = [
   { name: "NFL", icon: NFLLogo, label: "National Football League", path: "League > NFL - National Football League", color: "#013369" },
@@ -244,24 +276,22 @@ const Home = () => {
             <motion.div
               className="absolute right-0 lg:right-[2%] top-20 bottom-0 w-full lg:w-[50%] flex items-center justify-center py-8 opacity-25 lg:opacity-100"
             >
-              <motion.img
-                src={slide.ringImage.startsWith('http') ? optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' }) : slide.ringImage}
-                alt={`${slide.headline} ${slide.sub} Championship Ring`}
-                animate={{ y: [0, -15, 0] }}
-                transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-                className="w-full h-auto object-contain max-w-full"
-                style={{
-                  maxHeight: 'calc(100vh - 160px)',
-                  filter: `drop-shadow(0 30px 80px ${slide.glowColor}) drop-shadow(0 0 50px rgba(201,168,76,0.3)) drop-shadow(0 6px 25px rgba(0,0,0,0.8))`,
-                }}
-                fetchpriority={currentSlide === 0 ? "high" : "auto"}
-                loading={currentSlide === 0 ? "eager" : "lazy"}
-                decoding="async"
-              />
+               <motion.img
+                 src={slide.ringImage.startsWith('http') ? optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' }) : slide.ringImage}
+                 alt={`${slide.headline} ${slide.sub} Championship Ring`}
+                 className="w-full h-auto object-contain max-w-full"
+                 style={{
+                   maxHeight: 'calc(100vh - 160px)',
+                   filter: `drop-shadow(0 30px 80px ${slide.glowColor}) drop-shadow(0 0 50px rgba(201,168,76,0.3)) drop-shadow(0 6px 25px rgba(0,0,0,0.8))`,
+                 }}
+                 fetchpriority={currentSlide === 0 ? "high" : "auto"}
+                 loading={currentSlide === 0 ? "eager" : "lazy"}
+                 decoding="async"
+               />
             </motion.div>
             {/* Gradient mask — smoother blend from black to image area */}
-            <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, black 35%, rgba(0,0,0,0.85) 45%, rgba(0,0,0,0.4) 55%, transparent 65%)' }} />
-            <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.95) 100%)' }} />
+             <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, black 35%, rgba(0,0,0,0.9) 45%, rgba(0,0,0,0.7) 55%, transparent 65%)' }} />
+            <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.95) 100%)' }} />
           </motion.div>
         </AnimatePresence>
 
@@ -392,7 +422,7 @@ const Home = () => {
                 {SLIDES.map((_, i) => (
                   <button key={i} onClick={() => goTo(i)}>
                     <span className={`block transition-all duration-300 ${
-                      i === currentSlide ? 'w-6 h-[3px] bg-gold' : 'w-[3px] h-[3px] rounded-full bg-white/20 hover:bg-white/50'
+                      i === currentSlide ? 'w-6 h-[3px] bg-gold' : 'w-[3px] h-[3px] rounded-full bg-white/50 hover:bg-white/80'
                     }`} />
                   </button>
                 ))}

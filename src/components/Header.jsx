@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Heart, User, ShoppingBag, Menu, X, ChevronRight, ChevronDown } from 'lucide-react';
+import { Search, Heart, User, ShoppingCart, Menu, X, ChevronRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
@@ -114,7 +114,7 @@ const Header = () => {
             onClick={() => setIsCartOpen(true)}
             className="relative hover:scale-110 transition-transform p-1"
           >
-            <ShoppingBag size={20} />
+            <ShoppingCart size={20} />
             {itemCount > 0 && (
               <span className="absolute -top-1 -right-1 bg-gold text-black text-[9px] font-black w-4 h-4 flex items-center justify-center rounded-full">
                 {itemCount}
@@ -184,7 +184,7 @@ const Header = () => {
                     </Link>
                   )}
                   <Link to="/contact" className="flex items-center gap-2 text-ivory/60 hover:text-gold transition-colors font-cinzel text-[10px] tracking-[2px] uppercase" onClick={() => setIsMobileMenuOpen(false)}>
-                    <ShoppingBag size={16} className="flex-shrink-0" />
+                    <ShoppingCart size={16} className="flex-shrink-0" />
                     <span className="truncate">Ask The Coach</span>
                   </Link>
                 </div>
