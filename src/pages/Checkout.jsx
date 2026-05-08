@@ -449,25 +449,25 @@ const Checkout = () => {
                          </div>
                        </div>
 
-                        {/* Coupon Section */}
-                         <div className="bg-gold/5 border border-gold/20 p-4 rounded-lg space-y-3">
-                           {appliedCoupon && (
-                             <div className="flex items-center justify-between pb-3 border-b border-gold/20">
-                               <div className="flex items-center gap-2">
-                                 <Check size={14} className="text-emerald-400" />
-                                 <div>
-                                   <span className="text-xs font-cinzel font-bold text-gold uppercase block">Coupon Applied</span>
-                                   <p className="text-sm font-mono font-bold text-ivory">{appliedCoupon}</p>
-                                 </div>
-                               </div>
-                               <button
-                                 onClick={handleRemoveCoupon}
-                                 className="text-[10px] text-ivory/50 hover:text-crimson transition-colors underline uppercase font-cinzel"
-                               >
-                                 Remove
-                               </button>
-                             </div>
-                           )}
+{/* Coupon Section */}
+                          <div className="bg-gold/5 border border-gold/20 p-4 rounded-lg space-y-3">
+                            {appliedCoupon && (
+                              <div className="flex items-center justify-between pb-3 border-b border-gold/20">
+                                <div className="flex items-center gap-2">
+                                  <Check size={14} className="text-emerald-400" />
+                                  <div>
+                                    <span className="text-xs font-cinzel font-bold text-emerald-400 uppercase block">You save ${(Number(discountAmount) || 0).toFixed(2)}!</span>
+                                    <p className="text-sm font-mono font-bold text-ivory">{appliedCoupon}</p>
+                                  </div>
+                                </div>
+                                <button
+                                  onClick={handleRemoveCoupon}
+                                  className="text-[10px] text-ivory/50 hover:text-crimson transition-colors underline uppercase font-cinzel"
+                                >
+                                  Remove
+                                </button>
+                              </div>
+                            )}
                            
                            {!appliedCoupon && (
                              <div className="space-y-2">

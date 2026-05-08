@@ -16,6 +16,7 @@ const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const addItem = useCartStore(state => state.addItem);
+  const { appliedCoupon, discountAmount, setAppliedCoupon, removeCoupon } = useCartStore();
   const { toggleWishlist, isWishlisted } = useWishlistStore();
   
   const [product, setProduct] = useState(null);
@@ -114,7 +115,9 @@ const ProductDetail = () => {
       });
 
       if (response.data.success) {
-        setCouponSuccess(`Coupon applied! You save $${Number(response.data.data.discountAmount).toFixed(2)}`);
+        const discountAmount = Number(response.data.data.discountAmount);
+        setAppliedCoupon(response.data.data.code, discountAmount);
+        setCouponSuccess(`You save $${discountAmount.toFixed(2)}!`);
         setCouponCode('');
         setShowCouponSection(false);
       } else {
@@ -126,6 +129,12 @@ const ProductDetail = () => {
       setCouponLoading(false);
     }
   };
+
+  // Calculate product total with discount
+  const productPrice = onSale && salePrice > 0 ? salePrice : price;
+  const productSubtotal = productPrice * quantity;
+  const productDiscount = appliedCoupon ? Math.min(Number(discountAmount) || 0, productSubtotal) : 0;
+  const productTotal = productSubtotal - productDiscount;
 
   const images = product.images?.length > 0 ? product.images.map(img => img.url) : [product.image];
 
@@ -203,23 +212,26 @@ const ProductDetail = () => {
                  {product.name}
                </h1>
 
-               <div className="flex items-center gap-6">
-                 {price === 0 ? (
-                   <span className="text-3xl font-cinzel font-bold text-gold tracking-widest uppercase">Coming Soon</span>
-                 ) : (
-                   <>
-                     <span className="text-4xl font-mono font-bold text-gold">${price.toFixed(2)} AUD</span>
-                     {onSale && (
-                       <span className="text-xl text-ivory/30 line-through font-mono">${salePrice.toFixed(2)} AUD</span>
-                     )}
-                   </>
-                 )}
-                 {price > 0 && (
-                   <Badge variant={isOutOfStock ? 'crimson' : isLowStock ? 'gold' : 'sport'}>
-                     {isOutOfStock ? 'Out of Stock' : isLowStock ? `Only ${stock} left` : 'In Stock'}
-                   </Badge>
-                 )}
-               </div>
+<div className="flex items-center gap-6">
+                  {price === 0 ? (
+                    <span className="text-3xl font-cinzel font-bold text-gold tracking-widest uppercase">Coming Soon</span>
+                  ) : (
+                    <>
+                      <span className="text-4xl font-mono font-bold text-gold">${productTotal.toFixed(2)} AUD</span>
+                      {appliedCoupon && (
+                        <span className="text-xl text-ivory/30 line-through font-mono">${productSubtotal.toFixed(2)}</span>
+                      )}
+                      {!appliedCoupon && onSale && (
+                        <span className="text-xl text-ivory/30 line-through font-mono">${salePrice.toFixed(2)} AUD</span>
+                      )}
+                    </>
+                  )}
+                  {price > 0 && (
+                    <Badge variant={isOutOfStock ? 'crimson' : isLowStock ? 'gold' : 'sport'}>
+                      {isOutOfStock ? 'Out of Stock' : isLowStock ? `Only ${stock} left` : 'In Stock'}
+                    </Badge>
+                  )}
+                </div>
             </div>
 
             <div className="space-y-10">
@@ -237,56 +249,70 @@ const ProductDetail = () => {
 
               {/* Coupon Section */}
               <div className="bg-gold/5 border border-gold/20 rounded-lg p-5 space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Ticket size={16} className="text-gold" />
-                    <span className="font-cinzel text-xs text-gold uppercase tracking-widest font-bold">Have a Coupon?</span>
+                {appliedCoupon ? (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Check size={16} className="text-emerald-400" />
+                      <span className="font-cinzel text-xs text-emerald-400 uppercase tracking-widest font-bold">You save ${(Number(discountAmount) || 0).toFixed(2)}!</span>
+                    </div>
+                    <button
+                      onClick={() => {
+                        removeCoupon();
+                        setCouponError('');
+                        setCouponSuccess('');
+                      }}
+                      className="text-[10px] text-ivory/50 hover:text-crimson uppercase tracking-widest font-cinzel underline"
+                    >
+                      Remove
+                    </button>
                   </div>
-                  <button
-                    onClick={() => setShowCouponSection(!showCouponSection)}
-                    className="text-[10px] text-gold/60 hover:text-gold uppercase tracking-widest font-cinzel underline"
-                  >
-                    {showCouponSection ? 'Hide' : 'Apply'}
-                  </button>
-                </div>
-
-                {showCouponSection && (
-                  <div className="space-y-3">
-                    <div className="flex gap-2">
-                      <input
-                        type="text"
-                        value={couponCode}
-                        onChange={(e) => {
-                          setCouponCode(e.target.value.toUpperCase());
-                          setCouponError('');
-                        }}
-                        placeholder="Enter coupon code"
-                        className="flex-1 bg-black border border-gold/20 px-4 py-2 text-xs text-ivory font-mono uppercase placeholder:text-ivory/20 focus:border-gold outline-none transition-colors"
-                        onKeyPress={(e) => e.key === 'Enter' && handleApplyCoupon()}
-                      />
+                ) : (
+                  <>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Ticket size={16} className="text-gold" />
+                        <span className="font-cinzel text-xs text-gold uppercase tracking-widest font-bold">Have a Coupon?</span>
+                      </div>
                       <button
-                        onClick={handleApplyCoupon}
-                        disabled={couponLoading}
-                        className="px-4 py-2 bg-gold/20 hover:bg-gold/30 border border-gold/40 text-gold text-[10px] font-cinzel uppercase font-bold transition-all disabled:opacity-50 flex items-center gap-1"
+                        onClick={() => setShowCouponSection(!showCouponSection)}
+                        className="text-[10px] text-gold/60 hover:text-gold uppercase tracking-widest font-cinzel underline"
                       >
-                        {couponLoading ? <Loader2 size={12} className="animate-spin" /> : 'Apply'}
+                        {showCouponSection ? 'Hide' : 'Apply'}
                       </button>
                     </div>
 
-                    {couponError && (
-                      <div className="bg-crimson/10 border border-crimson/30 rounded p-3 flex items-center gap-2">
-                        <AlertCircle size={14} className="text-crimson flex-shrink-0" />
-                        <p className="text-[10px] text-crimson uppercase font-cinzel">{couponError}</p>
-                      </div>
-                    )}
+                    {showCouponSection && (
+                      <div className="space-y-3">
+                        <div className="flex gap-2">
+                          <input
+                            type="text"
+                            value={couponCode}
+                            onChange={(e) => {
+                              setCouponCode(e.target.value.toUpperCase());
+                              setCouponError('');
+                            }}
+                            placeholder="Enter coupon code"
+                            className="flex-1 bg-black border border-gold/20 px-4 py-2 text-xs text-ivory font-mono uppercase placeholder:text-ivory/20 focus:border-gold outline-none transition-colors"
+                            onKeyPress={(e) => e.key === 'Enter' && handleApplyCoupon()}
+                          />
+                          <button
+                            onClick={handleApplyCoupon}
+                            disabled={couponLoading}
+                            className="px-4 py-2 bg-gold/20 hover:bg-gold/30 border border-gold/40 text-gold text-[10px] font-cinzel uppercase font-bold transition-all disabled:opacity-50 flex items-center gap-1"
+                          >
+                            {couponLoading ? <Loader2 size={12} className="animate-spin" /> : 'Apply'}
+                          </button>
+                        </div>
 
-                    {couponSuccess && (
-                      <div className="bg-emerald-900/20 border border-emerald-500/40 rounded p-3 flex items-center gap-2">
-                        <Check size={14} className="text-emerald-400 flex-shrink-0" />
-                        <p className="text-[10px] text-emerald-400 uppercase font-cinzel">{couponSuccess}</p>
+                        {couponError && (
+                          <div className="bg-crimson/10 border border-crimson/30 rounded p-3 flex items-center gap-2">
+                            <AlertCircle size={14} className="text-crimson flex-shrink-0" />
+                            <p className="text-[10px] text-crimson uppercase font-cinzel">{couponError}</p>
+                          </div>
+                        )}
                       </div>
                     )}
-                  </div>
+                  </>
                 )}
               </div>
 

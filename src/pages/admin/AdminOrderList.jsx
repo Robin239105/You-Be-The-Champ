@@ -109,6 +109,7 @@ const AdminOrderList = () => {
                   <th className="px-6 py-4">Order ID</th>
                   <th className="px-6 py-4">Customer</th>
                   <th className="px-6 py-4">Total</th>
+                  <th className="px-6 py-4">Coupon</th>
                   <th className="px-6 py-4">Status</th>
                   <th className="px-6 py-4">Tracking</th>
                   <th className="px-6 py-4">Date</th>
@@ -121,6 +122,18 @@ const AdminOrderList = () => {
                     <td className="px-6 py-4 font-mono text-gold text-xs">{order.id.slice(0, 8)}…</td>
                     <td className="px-6 py-4 text-white font-bold">{order.user?.firstName} {order.user?.lastName}</td>
                     <td className="px-6 py-4 font-bold">${Number(order.totalAmount || 0).toFixed(2)}</td>
+                    <td className="px-6 py-4">
+                      {order.couponCode ? (
+                        <div className="space-y-0.5">
+                          <span className="px-2 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-mono font-bold rounded">{order.couponCode}</span>
+                          {order.discountAmount > 0 && (
+                            <p className="text-[9px] text-crimson">-${Number(order.discountAmount).toFixed(2)}</p>
+                          )}
+                        </div>
+                      ) : (
+                        <span className="text-ivory/30 text-xs">—</span>
+                      )}
+                    </td>
                     <td className="px-6 py-4">
                       <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase ${STATUS_COLORS[order.status] || 'bg-ivory/10 text-ivory/40'}`}>
                         {order.status}
@@ -230,9 +243,22 @@ const AdminOrderList = () => {
               </div>
 
               {/* Summary */}
-              <div className="bg-black/30 rounded-xl p-4 flex justify-between items-center">
-                <p className="text-[10px] uppercase tracking-widest text-ivory/40">Order Total</p>
-                <p className="font-cinzel text-xl font-bold text-gold">${Number(selectedOrder.totalAmount).toFixed(2)}</p>
+              <div className="bg-black/30 rounded-xl p-4 space-y-2">
+                <p className="text-[10px] uppercase tracking-widest text-ivory/40 mb-3">Order Summary</p>
+                <div className="flex justify-between items-center">
+                  <p className="text-[10px] uppercase tracking-widest text-ivory/40">Subtotal</p>
+                  <p className="text-sm font-mono text-ivory">${(Number(selectedOrder.totalAmount) + (Number(selectedOrder.discountAmount) || 0)).toFixed(2)}</p>
+                </div>
+                {selectedOrder.discountAmount > 0 && (
+                  <div className="flex justify-between items-center">
+                    <p className="text-[10px] uppercase tracking-widest text-emerald-400">Discount ({selectedOrder.couponCode})</p>
+                    <p className="text-sm font-mono text-emerald-400">-${Number(selectedOrder.discountAmount).toFixed(2)}</p>
+                  </div>
+                )}
+                <div className="flex justify-between items-center pt-2 border-t border-white/10">
+                  <p className="text-[10px] uppercase tracking-widest text-ivory/40">Total</p>
+                  <p className="font-cinzel text-xl font-bold text-gold">${Number(selectedOrder.totalAmount).toFixed(2)}</p>
+                </div>
               </div>
             </div>
           </div>

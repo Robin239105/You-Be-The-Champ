@@ -78,6 +78,12 @@ const createOrder = async (req, res) => {
           discount = Math.min(discount, subtotal);
           totalAmount -= discount;
           appliedCouponData = { code: coupon.code, discountAmount: discount };
+          
+          // Increment coupon used count
+          await prisma.coupon.update({
+            where: { id: coupon.id },
+            data: { usedCount: { increment: 1 } }
+          });
         }
       }
     }
@@ -89,7 +95,8 @@ const createOrder = async (req, res) => {
         totalAmount: parseFloat(totalAmount.toFixed(2)),
         shippingAddress: typeof shippingAddress === 'string' ? JSON.parse(shippingAddress) : shippingAddress,
         paymentMethod,
-        couponCode: couponCode || null,
+        couponCode: appliedCouponData?.code || null,
+        discountAmount: appliedCouponData?.discountAmount ? parseFloat(appliedCouponData.discountAmount.toFixed(2)) : null,
         affiliateCode: affiliateCode || null,
         orderItems: {
           create: orderItemsData
