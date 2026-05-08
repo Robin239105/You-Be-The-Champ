@@ -399,22 +399,22 @@ const Home = () => {
 
             {/* Slide controls */}
             <div className="flex items-center gap-3">
-              <button onClick={prevSlide} className="w-8 h-8 border border-white/10 hover:border-gold/50 flex items-center justify-center text-white/30 hover:text-gold transition-all">
-                <ChevronLeft size={14} />
-              </button>
-              <div className="flex items-center gap-1.5">
-                {SLIDES.map((_, i) => (
-                  <button key={i} onClick={() => goTo(i)}>
-                    <span className={`block transition-all duration-300 ${
-                      i === currentSlide ? 'w-6 h-[3px] bg-gold' : 'w-[3px] h-[3px] rounded-full bg-white/80 hover:bg-white'
-                    }`} />
-                  </button>
-                ))}
-              </div>
-              <button onClick={nextSlide} className="w-8 h-8 border border-white/10 hover:border-gold/50 flex items-center justify-center text-white/30 hover:text-gold transition-all">
-                <ChevronRight size={14} />
-              </button>
-              <span className="font-cinzel text-[9px] text-white/20 tracking-[3px] ml-1 hidden sm:block">0{currentSlide + 1}/0{SLIDES.length}</span>
+              <button onClick={prevSlide} className="w-10 h-10 border border-white/20 hover:border-gold/70 flex items-center justify-center text-white/50 hover:text-gold hover:bg-white/5 transition-all">
+                 <ChevronLeft size={18} />
+               </button>
+                <div className="flex items-center gap-2">
+                 {SLIDES.map((_, i) => (
+                   <button key={i} onClick={() => goTo(i)} className="p-1.5 hover:bg-white/10 rounded transition-colors">
+                     <span className={`block transition-all duration-300 ${
+                       i === currentSlide ? 'w-8 h-[3px] bg-gold shadow-[0_0_8px_rgba(201,168,76,0.6)]' : 'w-[3px] h-[3px] rounded-full bg-white hover:bg-white shadow-[0_0_4px_rgba(255,255,255,0.3)]'
+                     }`} />
+                   </button>
+                 ))}
+               </div>
+              <button onClick={nextSlide} className="w-10 h-10 border border-white/20 hover:border-gold/70 flex items-center justify-center text-white/50 hover:text-gold hover:bg-white/5 transition-all">
+                 <ChevronRight size={18} />
+               </button>
+               <span className="font-cinzel text-[11px] text-white/60 tracking-[3px] ml-2 hidden sm:block">0{currentSlide + 1}/0{SLIDES.length}</span>
             </div>
           </div>
 
