@@ -186,7 +186,7 @@ const Checkout = () => {
     <div className="bg-black min-h-screen flex flex-col">
       <Header />
       
-      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-40 pb-16 sm:pb-20 lg:pb-24">
+       <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-52 sm:pt-52 lg:pt-52 pb-16 sm:pb-20 lg:pb-24">
         {/* Progress Stepper */}
         <div className="max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20 flex items-center justify-between relative">
           <div className="absolute top-1/2 left-0 right-0 h-1 bg-gold/10 -translate-y-1/2 z-0" />
