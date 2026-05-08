@@ -161,8 +161,8 @@ const SLIDES = [
     ringImage: "/Slider 7.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
-  },
-];;
+   },
+  ];
 
 const LEAGUES = [
   { name: "NFL", icon: NFLLogo, label: "National Football League", path: "League > NFL - National Football League", color: "#013369" },
@@ -273,10 +273,10 @@ const Home = () => {
             <div className="absolute right-0 top-24 bottom-0 w-full lg:w-[55%] opacity-40 lg:opacity-100"
               style={{ background: `radial-gradient(ellipse 80% 80% at 70% 55%, ${slide.glowColor} 0%, transparent 75%)` }} />
             {/* Ring image — centered right on desktop; background-style on mobile */}
-            <motion.div
+            <div
               className="absolute right-0 lg:right-[2%] top-20 bottom-0 w-full lg:w-[50%] flex items-center justify-center py-8 opacity-25 lg:opacity-100"
             >
-               <motion.img
+               <img
                  src={slide.ringImage.startsWith('http') ? optimizeImage(slide.ringImage, { w: 1200, q: 85, fit: 'contain' }) : slide.ringImage}
                  alt={`${slide.headline} ${slide.sub} Championship Ring`}
                  className="w-full h-auto object-contain max-w-full"
@@ -288,10 +288,10 @@ const Home = () => {
                  loading={currentSlide === 0 ? "eager" : "lazy"}
                  decoding="async"
                />
-            </motion.div>
-            {/* Gradient mask — smoother blend from black to image area */}
-             <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, black 35%, rgba(0,0,0,0.9) 45%, rgba(0,0,0,0.7) 55%, transparent 65%)' }} />
-            <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.95) 100%)' }} />
+            </div>
+{/* Gradient mask — smoother blend from black to image area */}
+             <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, black 40%, rgba(0,0,0,0.95) 50%, rgba(0,0,0,0.8) 60%, transparent 70%)' }} />
+             <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.9) 100%)' }} />
           </motion.div>
         </AnimatePresence>
 
@@ -422,7 +422,7 @@ const Home = () => {
                 {SLIDES.map((_, i) => (
                   <button key={i} onClick={() => goTo(i)}>
                     <span className={`block transition-all duration-300 ${
-                      i === currentSlide ? 'w-6 h-[3px] bg-gold' : 'w-[3px] h-[3px] rounded-full bg-white/50 hover:bg-white/80'
+                      i === currentSlide ? 'w-6 h-[3px] bg-gold' : 'w-[3px] h-[3px] rounded-full bg-white/80 hover:bg-white'
                     }`} />
                   </button>
                 ))}
