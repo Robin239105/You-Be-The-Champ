@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShoppingBag, Heart, Share2, Star, ShieldCheck, Truck, RotateCcw, Minus, Plus, ChevronRight, Loader2 } from 'lucide-react';
+import { ShoppingBag, Heart, Share2, Star, ShieldCheck, Truck, RotateCcw, Minus, Plus, ChevronRight, Loader2, Ticket, Check, AlertCircle } from 'lucide-react';
 import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
 import Header from '../components/Header';
@@ -23,6 +23,11 @@ const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('description');
   const [selectedImage, setSelectedImage] = useState(0);
+  const [couponCode, setCouponCode] = useState('');
+  const [couponError, setCouponError] = useState('');
+  const [couponLoading, setCouponLoading] = useState(false);
+  const [couponSuccess, setCouponSuccess] = useState('');
+  const [showCouponSection, setShowCouponSection] = useState(false);
 
   useEffect(() => {
     let mounted = true;
@@ -90,6 +95,38 @@ const ProductDetail = () => {
     addItem({ ...product, quantity });
     navigate('/checkout');
   };
+
+  const handleApplyCoupon = async () => {
+    if (!couponCode.trim()) {
+      setCouponError('Please enter a coupon code');
+      return;
+    }
+
+    setCouponLoading(true);
+    setCouponError('');
+    setCouponSuccess('');
+
+    try {
+      const singleItem = [{ id: product.id, price: onSale && salePrice > 0 ? salePrice : price, quantity }];
+      const response = await api.post('/coupons/validate', {
+        code: couponCode.toUpperCase(),
+        cartItems: singleItem
+      });
+
+      if (response.data.success) {
+        setCouponSuccess(`Coupon applied! You save $${response.data.data.discountAmount.toFixed(2)}`);
+        setCouponCode('');
+        setShowCouponSection(false);
+      } else {
+        setCouponError(response.data.message || 'Invalid coupon');
+      }
+    } catch (error) {
+      setCouponError(error.response?.data?.message || 'Failed to apply coupon');
+    } finally {
+      setCouponLoading(false);
+    }
+  };
+
   const images = product.images?.length > 0 ? product.images.map(img => img.url) : [product.image];
 
   return (
@@ -197,6 +234,61 @@ const ProductDetail = () => {
                   ⚡ Low stock — only {stock} remaining. Order soon!
                 </div>
               )}
+
+              {/* Coupon Section */}
+              <div className="bg-gold/5 border border-gold/20 rounded-lg p-5 space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Ticket size={16} className="text-gold" />
+                    <span className="font-cinzel text-xs text-gold uppercase tracking-widest font-bold">Have a Coupon?</span>
+                  </div>
+                  <button
+                    onClick={() => setShowCouponSection(!showCouponSection)}
+                    className="text-[10px] text-gold/60 hover:text-gold uppercase tracking-widest font-cinzel underline"
+                  >
+                    {showCouponSection ? 'Hide' : 'Apply'}
+                  </button>
+                </div>
+
+                {showCouponSection && (
+                  <div className="space-y-3">
+                    <div className="flex gap-2">
+                      <input
+                        type="text"
+                        value={couponCode}
+                        onChange={(e) => {
+                          setCouponCode(e.target.value.toUpperCase());
+                          setCouponError('');
+                        }}
+                        placeholder="Enter coupon code"
+                        className="flex-1 bg-black border border-gold/20 px-4 py-2 text-xs text-ivory font-mono uppercase placeholder:text-ivory/20 focus:border-gold outline-none transition-colors"
+                        onKeyPress={(e) => e.key === 'Enter' && handleApplyCoupon()}
+                      />
+                      <button
+                        onClick={handleApplyCoupon}
+                        disabled={couponLoading}
+                        className="px-4 py-2 bg-gold/20 hover:bg-gold/30 border border-gold/40 text-gold text-[10px] font-cinzel uppercase font-bold transition-all disabled:opacity-50 flex items-center gap-1"
+                      >
+                        {couponLoading ? <Loader2 size={12} className="animate-spin" /> : 'Apply'}
+                      </button>
+                    </div>
+
+                    {couponError && (
+                      <div className="bg-crimson/10 border border-crimson/30 rounded p-3 flex items-center gap-2">
+                        <AlertCircle size={14} className="text-crimson flex-shrink-0" />
+                        <p className="text-[10px] text-crimson uppercase font-cinzel">{couponError}</p>
+                      </div>
+                    )}
+
+                    {couponSuccess && (
+                      <div className="bg-emerald-900/20 border border-emerald-500/40 rounded p-3 flex items-center gap-2">
+                        <Check size={14} className="text-emerald-400 flex-shrink-0" />
+                        <p className="text-[10px] text-emerald-400 uppercase font-cinzel">{couponSuccess}</p>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
 
               {/* Short Description */}
               {(product.shortDescription || product.description) && (
