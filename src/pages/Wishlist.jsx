@@ -1,14 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
 import { useWishlistStore } from '../store/useWishlistStore';
-import { Share2, Heart, ShoppingBag } from 'lucide-react';
+import { Share2, Heart, ShoppingBag, Check } from 'lucide-react';
 import Button from '../components/Button';
 
 const Wishlist = () => {
   const { items } = useWishlistStore();
+  const [copied, setCopied] = useState(false);
+
+  const handleShare = async () => {
+    const shareUrl = window.location.origin + '/wishlist';
+    const shareText = `Check out my championship ring collection! ${items.length} rings saved in my vault at You Be The Champ.`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'My Wishlist - You Be The Champ',
+          text: shareText,
+          url: shareUrl,
+        });
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          await copyToClipboard(shareUrl);
+        }
+      }
+    } else {
+      await copyToClipboard(shareUrl);
+    }
+  };
+
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   return (
     <div className="bg-black min-h-screen">
@@ -21,11 +60,15 @@ const Wishlist = () => {
               <h1 className="text-4xl font-black font-cinzel text-gold tracking-widest uppercase">The Vault</h1>
               <p className="text-[10px] text-ivory/40 uppercase tracking-[2px] mt-2">Your Saved Championship Rings</p>
            </div>
-           {items.length > 0 && (
-             <button className="flex items-center gap-2 text-gold text-[10px] font-cinzel border border-gold/20 px-4 py-2 hover:bg-gold hover:text-black transition-all uppercase tracking-widest">
-                <Share2 size={14} /> Share Wishlist
-             </button>
-           )}
+{items.length > 0 && (
+              <button
+                onClick={handleShare}
+                className="flex items-center gap-2 text-gold text-[10px] font-cinzel border border-gold/20 px-4 py-2 hover:bg-gold hover:text-black transition-all uppercase tracking-widest"
+              >
+                {copied ? <Check size={14} /> : <Share2 size={14} />}
+                {copied ? 'Copied!' : 'Share Wishlist'}
+              </button>
+            )}
         </div>
 
         {items.length === 0 ? (
