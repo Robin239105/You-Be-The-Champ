@@ -70,7 +70,7 @@ const Header = () => {
         <div className="flex-shrink-0 lg:mr-4">
           <Link to="/" className="flex items-center group">
             <div className={`relative transition-all duration-500 group-hover:scale-110 ${
-              isScrolled ? 'w-24 h-24 sm:w-28 sm:h-28' : 'w-28 h-28 sm:w-36 sm:h-36'
+              isScrolled ? 'w-24 h-24 sm:w-28 sm:h-28' : 'w-28 h-28 sm:w-[132px] sm:h-[132px]'
             }`}>
               <img 
                 src="/logo.png" 
