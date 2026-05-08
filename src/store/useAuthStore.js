@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import api from '../utils/api';
+import { signInWithGoogle, signUpWithGoogle } from '../utils/firebase';
 
 export const useAuthStore = create(
   persist(
@@ -68,7 +69,77 @@ export const useAuthStore = create(
         user: { ...state.user, ...userData }
       })),
 
-      clearError: () => set({ error: null })
+      clearError: () => set({ error: null }),
+
+      loginWithGoogle: async () => {
+        set({ isLoading: true, error: null });
+        try {
+          const result = await signInWithGoogle();
+          if (result.success) {
+            const { user: googleUser } = result;
+            
+            const response = await api.post('/auth/google-login', {
+              email: googleUser.email,
+              uid: googleUser.uid,
+              firstName: googleUser.firstName,
+              lastName: googleUser.lastName,
+              provider: 'google'
+            });
+            
+            if (response.data.success) {
+              const { accessToken, ...userData } = response.data.data;
+              set({
+                user: userData,
+                token: accessToken,
+                isAuthenticated: true,
+                isLoading: false
+              });
+              return { success: true, user: userData };
+            }
+          }
+          set({ isLoading: false });
+          return { success: false, message: result.message || 'Google login failed' };
+        } catch (error) {
+          const message = error.response?.data?.message || 'Google login failed';
+          set({ error: message, isLoading: false });
+          return { success: false, message };
+        }
+      },
+
+      registerWithGoogle: async () => {
+        set({ isLoading: true, error: null });
+        try {
+          const result = await signUpWithGoogle();
+          if (result.success) {
+            const { user: googleUser } = result;
+            
+            const response = await api.post('/auth/register', {
+              firstName: googleUser.firstName,
+              lastName: googleUser.lastName,
+              email: googleUser.email,
+              password: googleUser.uid,
+              provider: 'google'
+            });
+            
+            if (response.data.success) {
+              const { accessToken, ...userData } = response.data.data;
+              set({
+                user: userData,
+                token: accessToken,
+                isAuthenticated: true,
+                isLoading: false
+              });
+              return { success: true };
+            }
+          }
+          set({ isLoading: false });
+          return { success: false, message: result.message || 'Google registration failed' };
+        } catch (error) {
+          const message = error.response?.data?.message || 'Google registration failed';
+          set({ error: message, isLoading: false });
+          return { success: false, message };
+        }
+      }
     }),
     {
       name: 'auth-storage',
