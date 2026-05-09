@@ -8,9 +8,7 @@ const CITIES = [
   'Sydney, NSW', 'Melbourne, VIC', 'Brisbane, QLD', 'Perth, WA', 
   'Adelaide, SA', 'Gold Coast, QLD', 'Canberra, ACT', 'Newcastle, NSW',
   'Wollongong, NSW', 'Geelong, VIC', 'Hobart, TAS', 'Townsville, QLD',
-  'Cairns, QLD', 'Darwin, NT', 'Toowoomba, QLD', 'Ballarat, VIC',
-  'Los Angeles, CA', 'New York, NY', 'Chicago, IL', 'Houston, TX',
-  'Miami, FL', 'Seattle, WA', 'Denver, CO', 'Boston, MA'
+  'Cairns, QLD', 'Darwin, NT', 'Toowoomba, QLD', 'Ballarat, VIC'
 ];
 
 const FIRST_NAMES = [
@@ -93,7 +91,7 @@ const SalesPopup = ({ products = [] }) => {
 
     setTimeout(() => {
       setIsVisible(false);
-    }, 7000);
+    }, 3000);
   };
 
   if (availableProducts.length === 0) return null;
@@ -135,7 +133,7 @@ const SalesPopup = ({ products = [] }) => {
             
             <p className="text-[12px] text-ivory/90 leading-snug mb-1">
               <span className="text-white font-bold">{currentName}</span> from <span className="text-white font-bold inline-flex items-center gap-1">
-                {currentCity} <img src={currentCity.includes(', CA') || currentCity.includes(', NY') || currentCity.includes(', IL') || currentCity.includes(', TX') || currentCity.includes(', FL') || currentCity.includes(', WA') || currentCity.includes(', CO') || currentCity.includes(', MA') ? "https://flagcdn.com/w20/us.png" : "https://flagcdn.com/w20/au.png"} alt="Flag" className="w-3 h-2 rounded-[1px]" />
+                {currentCity} <img src="https://flagcdn.com/w20/au.png" alt="AU Flag" className="w-3 h-2 rounded-[1px]" />
               </span> just purchased
             </p>
             
@@ -162,7 +160,7 @@ const SalesPopup = ({ products = [] }) => {
           <motion.div 
             initial={{ scaleX: 1 }}
             animate={{ scaleX: 0 }}
-            transition={{ duration: 7, ease: "linear" }}
+            transition={{ duration: 3, ease: "linear" }}
             className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/20 via-gold to-gold/20 origin-left shadow-[0_-2px_10px_rgba(201,168,76,0.3)]"
           />
         </motion.div>
