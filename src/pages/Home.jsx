@@ -78,7 +78,7 @@ const SLIDES = [
     cta2: "Browse All NBA Rings",
     cta2Link: "/category/Teams%20%3E%20Oklahoma%20City%20Thunder%20(NBA)",
     sport: "NBA",
-    ringImage: "/Slider 3.jpg",
+    ringImage: "/Slider 3 Main.jpg",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
