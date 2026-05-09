@@ -296,8 +296,8 @@ const Home = () => {
             animate="center"
             exit="exit"
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute left-0 top-0 bottom-[72px] w-full lg:w-[50%] flex flex-col justify-center px-5 sm:px-8 lg:px-16 xl:px-20"
-            style={{ paddingTop: '120px' }}
+            className="absolute left-0 top-0 bottom-[72px] w-full lg:w-[50%] flex flex-col justify-center px-5 sm:px-8 lg:px-16 xl:px-20 pt-32"
+            style={{}}
           >
             {/* Tag row */}
             <motion.div
