@@ -36,7 +36,7 @@ const NHLLogo = () => (
 const SLIDES = [
   {
     id: 1,
-    tag: "MLB · New Arrival 2026",
+    tag: "New Arrival 2026",
     headline: "LOS ANGELES",
     sub: "DODGERS",
     label: "World Series Ring",
@@ -52,7 +52,7 @@ const SLIDES = [
   },
   {
     id: 2,
-    tag: "NFL · Hail the New Champions",
+    tag: "Hail the New Champions",
     headline: "SEATTLE",
     sub: "SEAHAWKS",
     label: "Superbowl Champions",
@@ -68,7 +68,7 @@ const SLIDES = [
   },
   {
     id: 3,
-    tag: "NBA · Just Dropped 2026",
+    tag: "Just Dropped 2026",
     headline: "OKC",
     sub: "THUNDER",
     label: "NBA Finals Champions",
@@ -84,7 +84,7 @@ const SLIDES = [
   },
   {
     id: 4,
-    tag: "NHL · Back 2 Back",
+    tag: "Back 2 Back",
     headline: "FLORIDA",
     sub: "PANTHERS",
     label: "Stanley Cup Triumph",
@@ -100,7 +100,7 @@ const SLIDES = [
   },
   {
     id: 5,
-    tag: "NBA · Icon Collection",
+    tag: "Icon Collection",
     headline: "MICHAEL",
     sub: "JORDAN",
     label: "6 Time NBA Finals Champion",
@@ -116,7 +116,7 @@ const SLIDES = [
   },
   {
     id: 6,
-    tag: "YOU - NFL, NBA, MLB, NHL",
+    tag: "NFL · NBA · MLB · NHL",
     headline: "OWN THE",
     sub: "MOMENT",
     label: "Get your championship ring",
@@ -132,13 +132,13 @@ const SLIDES = [
   },
   {
     id: 7,
-    tag: "ALL - Championship Gift",
+    tag: "Championship Gift",
     headline: "MY YEAR,",
     sub: "MY GIFT BOX",
     label: "Premium gift ideas",
     description: "Available now; Complete sets of all 4 Championship Rings from the 4 leagues from each year. The perfect gift for any sports lover; the 4 years from their year of birth.",
     cta: "Select Year",
-    ctaLink: "/your-year-gift",
+    ctaLink: "/championship-by-year",
     cta2: "Check out more rings",
     cta2Link: "/shop",
     sport: "ALL",
