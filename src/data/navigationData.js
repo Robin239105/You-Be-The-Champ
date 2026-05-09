@@ -206,15 +206,7 @@ export const navigationData = [
     layout: "direct",
   },
 
-  // 8. YOUR YEAR GIFT BOX — 4-league bundle sets
-  {
-    label: "Your Year Gift Box",
-    slug: "your-year-gift-box",
-    path: "/your-year-gift-box",
-    layout: "direct",
-  },
-
-  // 9. SPECIAL RELEASE — direct to shop with special release category
+  // 7. YOUR YEAR GIFT BOX — removed from nav (no space), accessible via /your-year-gift-box and slider
   {
     label: "Special Releases",
     slug: "special-release",
