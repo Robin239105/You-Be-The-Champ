@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import { motion } from 'framer-motion';
-import { products } from '../data/productsData';
+import { productsData } from '../data/productsData';
 
 const START = 1903;
 const END = 2025;
@@ -13,7 +13,7 @@ for (let y = END; y >= START; y--) years.push(y);
 
 const YourYearGiftBox = () => {
   const giftBoxProducts = useMemo(() => {
-    return products.filter(p => p.categories && p.categories.includes('Your Year Gift Box'));
+    return productsData.filter(p => p.categories && p.categories.includes('Your Year Gift Box'));
   }, []);
 
   const getProductByYear = (year) => {
