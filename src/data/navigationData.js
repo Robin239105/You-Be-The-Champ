@@ -198,7 +198,7 @@ export const navigationData = [
     layout: "direct",
   },
 
-  // 7. YOUR YEAR GIFT BOX — direct link
+  // 7. CHAMPIONSHIP BY YEAR — all years with individual rings
   {
     label: "Championship By Year",
     slug: "championship-by-year",
@@ -206,7 +206,15 @@ export const navigationData = [
     layout: "direct",
   },
 
-  // 8. SPECIAL RELEASE — direct to shop with special release category
+  // 8. YOUR YEAR GIFT BOX — 4-league bundle sets
+  {
+    label: "Your Year Gift Box",
+    slug: "your-year-gift-box",
+    path: "/your-year-gift-box",
+    layout: "direct",
+  },
+
+  // 9. SPECIAL RELEASE — direct to shop with special release category
   {
     label: "Special Releases",
     slug: "special-release",

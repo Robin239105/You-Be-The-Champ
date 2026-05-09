@@ -10,6 +10,7 @@ import PlayerEditions from './pages/PlayerEditions';
 import ChampionsByYear from './pages/ChampionsByYear';
 import TeamsPage from './pages/TeamsPage';
 import CitiesPage from './pages/CitiesPage';
+import YourYearGiftBox from './pages/YourYearGiftBox';
 import YourYearGift from './pages/YourYearGift';
 import IWantThemAll from './pages/IWantThemAll';
 import CollectionsPage from './pages/CollectionsPage';
@@ -76,6 +77,7 @@ function App() {
           <Route path="/teams" element={<TeamsPage />} />
           <Route path="/cities" element={<CitiesPage />} />
           <Route path="/championship-by-year" element={<YourYearGift />} />
+          <Route path="/your-year-gift-box" element={<YourYearGiftBox />} />
           <Route path="/i-want-them-all" element={<IWantThemAll />} />
           <Route path="/collections" element={<CollectionsPage />} />
           <Route path="/all-time-greats" element={<AllTimeGreatsPage />} />

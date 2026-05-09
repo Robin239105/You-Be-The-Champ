@@ -138,7 +138,7 @@ const SLIDES = [
     label: "Premium gift ideas",
     description: "Available now; Complete sets of all 4 Championship Rings from the 4 leagues from each year. The perfect gift for any sports lover; the 4 years from their year of birth.",
     cta: "Select Year",
-    ctaLink: "/championship-by-year",
+    ctaLink: "/your-year-gift-box",
     cta2: "Check out more rings",
     cta2Link: "/shop",
     sport: "ALL",
