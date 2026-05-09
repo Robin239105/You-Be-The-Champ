@@ -14,12 +14,12 @@ const YourYearGift = () => (
   <div className="bg-black min-h-screen">
     <Header />
      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-52 pb-24">
-      <Breadcrumb items={[{ name: 'Your Year Gift', path: '/your-year-gift' }]} />
+      <Breadcrumb items={[{ name: 'Championship By Year', path: '/your-year-gift' }]} />
 
       <div className="mb-16 text-center py-16 bg-surface border border-gold/10 relative overflow-hidden">
         <div className="absolute inset-0 gold-glow opacity-10" />
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="relative z-10">
-          <h1 className="text-4xl md:text-6xl font-black font-cinzel text-gold tracking-widest uppercase mb-4">Your Year Gift Box</h1>
+          <h1 className="text-4xl md:text-6xl font-black font-cinzel text-gold tracking-widest uppercase mb-4">Championship By Year</h1>
           <p className="text-ivory/50 font-raleway uppercase tracking-[3px] text-xs">Find the perfect championship ring from your special year</p>
         </motion.div>
       </div>
