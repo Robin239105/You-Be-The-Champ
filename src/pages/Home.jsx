@@ -142,7 +142,7 @@ const SLIDES = [
     cta2: "Check out more rings",
     cta2Link: "/shop",
     sport: "ALL",
-    ringImage: "/Slider 7.jpg",
+    ringImage: "/Slider 7.png",
     accentColor: GOLD,
     glowColor: GOLD_GLOW,
   },
