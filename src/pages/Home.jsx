@@ -60,7 +60,7 @@ const SLIDES = [
     cta: "Pre Release Purchase",
     ctaLink: "/category/Champions%20By%20Year%20%3E%202014",
     cta2: "Buy Concept Ring",
-    cta2Link: "/category/Teams%20%3E%20Seattle%20Seahawks%20(NFL)",
+    cta2Link: "/product/d46e6c37-da26-4721-9a76-fbe7bcfea584",
     sport: "NFL",
     ringImage: "/Slider 2.jpg",
     accentColor: GOLD,
