@@ -8,18 +8,31 @@ const CITIES = [
   'Sydney, NSW', 'Melbourne, VIC', 'Brisbane, QLD', 'Perth, WA', 
   'Adelaide, SA', 'Gold Coast, QLD', 'Canberra, ACT', 'Newcastle, NSW',
   'Wollongong, NSW', 'Geelong, VIC', 'Hobart, TAS', 'Townsville, QLD',
-  'Cairns, QLD', 'Darwin, NT', 'Toowoomba, QLD', 'Ballarat, VIC'
+  'Cairns, QLD', 'Darwin, NT', 'Toowoomba, QLD', 'Ballarat, VIC',
+  'Wagga Wagga, NSW', 'Port Macquarie, NSW', 'Sunshine Coast, QLD',
+  'Hobart, TAS', 'Launceston, TAS', 'Bendigo, VIC', 'Albury, NSW',
+  'Mackay, QLD', 'Rockhampton, QLD', 'Bundaberg, QLD', 'Hervey Bay, QLD',
+  'Wollongong, NSW', 'Tamworth, NSW', 'Orange, NSW', 'Dubbo, NSW'
 ];
 
 const FIRST_NAMES = [
   'James', 'Emma', 'Michael', 'Sarah', 'David', 'Lisa', 'Robert', 'Jennifer',
-  'Chris', 'Amanda', 'Daniel', 'Jessica', 'Mark', 'Ashley', 'John', 'Nicole'
+  'Chris', 'Amanda', 'Daniel', 'Jessica', 'Mark', 'Ashley', 'John', 'Nicole',
+  'Matthew', 'Olivia', 'Daniel', 'Sophia', 'Andrew', 'Emily', 'Joshua', 'Mia',
+  'Ryan', 'Charlotte', 'Brandon', 'Amelia', 'Tyler', 'Harper', 'Nathan', 'Evelyn',
+  'Justin', 'Abigail', 'Aaron', 'Ella', 'Adam', 'Alyssa', 'Kevin', 'Lillian',
+  'Jason', 'Natalie', 'Benjamin', 'Grace', 'Zachary', 'Chloe', 'Mason', 'Victoria',
+  'Ethan', 'Camila', 'Alexander', 'Aria', 'Jacob', 'Scarlett', 'Logan', 'Madison',
+  'Jackson', 'Layla', 'Sebastian', 'Penelope', 'Aiden', 'Riley', 'Owen', 'Zoey',
+  'William', 'Grace', 'Liam', 'Ava', 'Noah', 'Isabella', 'Mia', 'Oliver',
+  'Lucas', 'Sophia', 'Henry', 'Isabella', 'Alex', 'Mia', 'Ben', 'Emma',
+  'Tom', 'Lily', 'Sam', 'Ruby', 'Jake', 'Jade', 'Max', 'Stella'
 ];
 
 const TIMES = [
   'Just now', '1 minute ago', '3 minutes ago', '5 minutes ago', 
   '12 minutes ago', '18 minutes ago', '23 minutes ago', '35 minutes ago',
-  '42 minutes ago', '1 hour ago', '2 hours ago'
+  '42 minutes ago', '1 hour ago', '2 hours ago', '3 hours ago'
 ];
 
 const SalesPopup = ({ products = [] }) => {
@@ -42,13 +55,12 @@ const SalesPopup = ({ products = [] }) => {
     if (availableProducts.length === 0) return;
 
     let timeoutId;
-    let intervalId;
     let hasShownInitial = false;
 
     const scheduleNext = () => {
-      const baseDelay = 25000 + Math.random() * 25000;
+      const baseDelay = 30000 + Math.random() * 90000;
       timeoutId = setTimeout(() => {
-        if (isActiveHours()) {
+        if (isActiveHours() && availableProducts.length > 0) {
           showRandomPopup();
           hasShownInitial = true;
         }
@@ -56,23 +68,16 @@ const SalesPopup = ({ products = [] }) => {
       }, baseDelay);
     };
 
-    if (!hasShownInitial) {
-      const initialDelay = 12000 + Math.random() * 8000;
-      timeoutId = setTimeout(() => {
-        if (isActiveHours() && availableProducts.length > 0) {
-          showRandomPopup();
-          hasShownInitial = true;
-        }
-        scheduleNext();
-      }, initialDelay);
-    } else {
+    const initialDelay = 10000 + Math.random() * 20000;
+    timeoutId = setTimeout(() => {
+      if (isActiveHours() && availableProducts.length > 0) {
+        showRandomPopup();
+        hasShownInitial = true;
+      }
       scheduleNext();
-    }
+    }, initialDelay);
 
-    return () => {
-      clearTimeout(timeoutId);
-      clearInterval(intervalId);
-    };
+    return () => clearTimeout(timeoutId);
   }, [availableProducts]);
 
   const showRandomPopup = () => {
@@ -107,7 +112,6 @@ const SalesPopup = ({ products = [] }) => {
           transition={{ type: 'spring', damping: 20, stiffness: 100 }}
           className="fixed bottom-6 left-6 z-[100] w-full max-w-[340px] bg-black/95 backdrop-blur-2xl border border-gold/40 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.8),0_0_30px_rgba(201,168,76,0.15)] p-4 flex items-center gap-4"
         >
-          {/* Product Image */}
           <div className="relative w-20 h-20 flex-shrink-0 bg-surface rounded-xl overflow-hidden border border-gold/20 shadow-inner group">
             <img 
               src={optimizeImage(currentProduct.images?.[0]?.url || currentProduct.images?.[0] || currentProduct.image, { w: 160, h: 160 })} 
@@ -117,7 +121,6 @@ const SalesPopup = ({ products = [] }) => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
           </div>
 
-          {/* Content */}
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between mb-1.5">
               <span className="flex items-center gap-1.5 text-[10px] font-cinzel text-gold uppercase tracking-[2px] font-black">
@@ -156,7 +159,6 @@ const SalesPopup = ({ products = [] }) => {
             </div>
           </div>
 
-          {/* Progress Bar (Timer) */}
           <motion.div 
             initial={{ scaleX: 1 }}
             animate={{ scaleX: 0 }}
