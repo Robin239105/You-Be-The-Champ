@@ -75,7 +75,7 @@ function App() {
           <Route path="/championship-finals" element={<ChampionshipFinalsPage />} />
           <Route path="/teams" element={<TeamsPage />} />
           <Route path="/cities" element={<CitiesPage />} />
-          <Route path="/your-year-gift" element={<YourYearGift />} />
+          <Route path="/championship-by-year" element={<YourYearGift />} />
           <Route path="/i-want-them-all" element={<IWantThemAll />} />
           <Route path="/collections" element={<CollectionsPage />} />
           <Route path="/all-time-greats" element={<AllTimeGreatsPage />} />

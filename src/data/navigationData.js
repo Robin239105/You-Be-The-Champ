@@ -201,8 +201,8 @@ export const navigationData = [
   // 7. YOUR YEAR GIFT BOX — direct link
   {
     label: "Championship By Year",
-    slug: "your-year-gift",
-    path: "/your-year-gift",
+    slug: "championship-by-year",
+    path: "/championship-by-year",
     layout: "direct",
   },
 

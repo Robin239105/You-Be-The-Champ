@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import { motion } from 'framer-motion';
 
-const START = 1950;
+const START = 1903;
 const END = 2025;
 const years = [];
 for (let y = END; y >= START; y--) years.push(y);
