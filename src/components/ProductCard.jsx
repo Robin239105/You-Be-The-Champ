@@ -42,7 +42,6 @@ const ProductCard = ({ product }) => {
       >
       {/* Badges */}
       <div className="absolute top-4 left-4 z-10 flex flex-col gap-2">
-        <Badge variant="sport">{sport}</Badge>
         {product.badge && <Badge variant={product.badge === 'VINTAGE' ? 'crimson' : 'gold'}>{product.badge}</Badge>}
       </div>
 
