@@ -15,9 +15,9 @@ const CategoryPage = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [categoryDescription, setCategoryDescription] = useState('');
+  const [categoryImage, setCategoryImage] = useState('');
   
   const decodedPath = decodeURIComponent(categoryPath || '');
-  const thumbnail = getCategoryThumbnail(decodedPath);
   const pathParts = decodedPath.split(' > ');
   const categoryTitle = pathParts[pathParts.length - 1];
 
@@ -25,6 +25,7 @@ const CategoryPage = () => {
     const fetchData = async () => {
       setIsLoading(true);
       setCategoryDescription('');
+      setCategoryImage('');
       try {
         const [productsRes, catRes] = await Promise.allSettled([
           api.get('/products?limit=1000&status=PUBLISHED'),
@@ -33,8 +34,14 @@ const CategoryPage = () => {
         if (productsRes.status === 'fulfilled' && productsRes.value.data.success) {
           setProducts(productsRes.value.data.data);
         }
-        if (catRes.status === 'fulfilled' && catRes.value.data.success && catRes.value.data.data?.description) {
-          setCategoryDescription(catRes.value.data.data.description);
+        if (catRes.status === 'fulfilled' && catRes.value.data.success && catRes.value.data.data) {
+          const categoryData = catRes.value.data.data;
+          if (categoryData.description) {
+            setCategoryDescription(categoryData.description);
+          }
+          if (categoryData.image) {
+            setCategoryImage(categoryData.image);
+          }
         }
       } catch (error) {
         console.error('Failed to fetch category data:', error);
@@ -83,10 +90,10 @@ const CategoryPage = () => {
         <Breadcrumb items={getBreadcrumbs()} />
 
         <div className="mb-12 relative overflow-hidden mt-8 border border-gold/10" style={{ minHeight: 200 }}>
-          {thumbnail && (
+          {(categoryImage || thumbnail) && (
             <div className="absolute inset-0">
               <img 
-                src={optimizeImage(thumbnail, { w: 1920, h: 400 })} 
+                src={optimizeImage(categoryImage || thumbnail, { w: 1920, h: 400 })} 
                 alt={categoryTitle} 
                 className="w-full h-full object-cover object-center opacity-25" 
                 fetchpriority="high"
@@ -95,7 +102,7 @@ const CategoryPage = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/60" />
             </div>
           )}
-          {!thumbnail && <div className="absolute inset-0 gold-glow opacity-10" />}
+          {!categoryImage && !thumbnail && <div className="absolute inset-0 gold-glow opacity-10" />}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

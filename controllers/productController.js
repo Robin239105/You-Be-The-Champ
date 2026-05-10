@@ -104,24 +104,29 @@ const createProduct = async (req, res) => {
         },
         tags: {
           connect: tags ? tags.map(id => ({ id })) : []
-        },
-        images: {
-          create: images ? images.map(img => ({ url: img.url, isPrimary: img.isPrimary })) : []
         }
       },
       include: { categories: true, images: true }
     });
+    
+    // Handle images separately to avoid duplication
     if (images && images.length > 0) {
       await prisma.productImage.createMany({
-        data: images.map((url, idx) => ({
-          url,
+        data: images.map((img, idx) => ({
+          url: typeof img === 'string' ? img : img.url,
           productId: product.id,
-          isPrimary: idx === 0
+          isPrimary: img.isPrimary || idx === 0
         }))
       });
     }
 
-    res.status(201).json({ success: true, data: product });
+    // Fetch final product with images
+    const finalProduct = await prisma.product.findUnique({
+      where: { id: product.id },
+      include: { categories: true, images: true }
+    });
+
+    res.status(201).json({ success: true, data: finalProduct });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
@@ -151,7 +156,8 @@ const updateProduct = async (req, res) => {
         tags: {
           set: tags ? tags.map(tagId => ({ id: tagId })) : []
         }
-      }
+      },
+      include: { categories: true, images: true }
     });
 
     // Handle Images Update
@@ -161,16 +167,22 @@ const updateProduct = async (req, res) => {
       
       if (images.length > 0) {
         await prisma.productImage.createMany({
-          data: images.map((url, idx) => ({
-            url,
+          data: images.map((img, idx) => ({
+            url: typeof img === 'string' ? img : img.url,
             productId: id,
-            isPrimary: idx === 0
+            isPrimary: img.isPrimary || idx === 0
           }))
         });
       }
     }
 
-    res.json({ success: true, data: product });
+    // Fetch final product with updated images
+    const finalProduct = await prisma.product.findUnique({
+      where: { id },
+      include: { categories: true, images: true }
+    });
+
+    res.json({ success: true, data: finalProduct });
   } catch (error) {
     console.error('UpdateProduct Error:', error);
     res.status(500).json({ success: false, message: error.message });
@@ -348,12 +360,12 @@ const bulkDeleteProducts = async (req, res) => {
 };
 
 const bulkUpdateStatus = async (req, res) => {
-  const { ids, isActive } = req.body;
-  if (!Array.isArray(ids) || ids.length === 0 || isActive === undefined) {
-    return res.status(400).json({ success: false, message: 'ids array and isActive required' });
+  const { ids, status } = req.body;
+  if (!Array.isArray(ids) || ids.length === 0 || status === undefined) {
+    return res.status(400).json({ success: false, message: 'ids array and status required' });
   }
   try {
-    const result = await prisma.product.updateMany({ where: { id: { in: ids } }, data: { isActive } });
+    const result = await prisma.product.updateMany({ where: { id: { in: ids } }, data: { status } });
     res.json({ success: true, message: `${result.count} products updated` });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
