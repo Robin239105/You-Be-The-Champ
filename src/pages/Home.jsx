@@ -166,7 +166,8 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
-  const [products, setProducts] = useState([]);
+  const [latestRings, setLatestRings] = useState([]);
+  const [randomRings, setRandomRings] = useState([]);
   const [blogPosts, setBlogPosts] = useState([]);
   const heroRef = useRef(null);
 
@@ -211,10 +212,41 @@ const Home = () => {
 
 
   useEffect(() => {
-    // Randomize 6 items from the 523 products on every page load
+    // Fetch latest rings (2024-2026) and random rings
     if (productsData && productsData.length > 0) {
-      const shuffled = [...productsData].sort(() => 0.5 - Math.random());
-      setProducts(shuffled.slice(0, 6));
+      try {
+        // Filter for latest rings (2024-2026)
+        const latestProducts = productsData.filter(product => {
+          if (!product.categories || product.categories.length === 0) return false;
+          return product.categories.some(cat => {
+            const catStr = typeof cat === 'string' ? cat : cat.name || '';
+            return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
+          });
+        });
+        
+        // Randomize latest rings and take 3 for first row
+        const shuffledLatest = [...latestProducts].sort(() => 0.5 - Math.random());
+        setLatestRings(shuffledLatest.slice(0, 3));
+        
+        // Get all other products (excluding latest ones) for random selection
+        const otherProducts = productsData.filter(product => {
+          if (!product.categories || product.categories.length === 0) return true;
+          return !product.categories.some(cat => {
+            const catStr = typeof cat === 'string' ? cat : cat.name || '';
+            return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
+          });
+        });
+        
+        // Randomize other products and take 3 for second row
+        const shuffledRandom = [...otherProducts].sort(() => 0.5 - Math.random());
+        setRandomRings(shuffledRandom.slice(0, 3));
+      } catch (error) {
+        console.error('Error processing products:', error);
+        // Fallback to original behavior if there's an error
+        const shuffled = [...productsData].sort(() => 0.5 - Math.random());
+        setLatestRings(shuffled.slice(0, 3));
+        setRandomRings(shuffled.slice(3, 6));
+      }
     }
 
     // Fetch blog posts separately
@@ -465,11 +497,45 @@ const Home = () => {
             <h2 className="text-2xl sm:text-4xl font-black font-cinzel tracking-widest text-white uppercase">Championship Collection</h2>
             <div className="w-20 h-[2px] bg-gold mx-auto mt-5" />
           </div>
-          {products.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map(product => (
-                <ProductCard key={product.id} product={product} />
-              ))}
+          {(latestRings.length > 0 || randomRings.length > 0) ? (
+            <div className="space-y-12">
+              {/* First Row - Latest Rings (2024-2026) */}
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="text-lg font-cinzel text-gold uppercase tracking-widest">Latest Championship Rings (2024-2026)</h3>
+                  <span className="text-xs text-ivory/40 font-raleway">Newest Arrivals</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {latestRings.length > 0 ? (
+                    latestRings.map(product => (
+                      <ProductCard key={`latest-${product.id}`} product={product} />
+                    ))
+                  ) : (
+                    [...Array(3)].map((_, i) => (
+                      <div key={`latest-skeleton-${i}`} className="aspect-square bg-white/[0.03] border border-gold/5 animate-pulse" />
+                    ))
+                  )}
+                </div>
+              </div>
+
+              {/* Second Row - Random Rings */}
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="text-lg font-cinzel text-gold uppercase tracking-widest">Championship Collection Classics</h3>
+                  <span className="text-xs text-ivory/40 font-raleway">Random Selection</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {randomRings.length > 0 ? (
+                    randomRings.map(product => (
+                      <ProductCard key={`random-${product.id}`} product={product} />
+                    ))
+                  ) : (
+                    [...Array(3)].map((_, i) => (
+                      <div key={`random-skeleton-${i}`} className="aspect-square bg-white/[0.03] border border-gold/5 animate-pulse" />
+                    ))
+                  )}
+                </div>
+              </div>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
