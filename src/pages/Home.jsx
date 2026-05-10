@@ -500,41 +500,29 @@ const Home = () => {
           {(latestRings.length > 0 || randomRings.length > 0) ? (
             <div className="space-y-12">
               {/* First Row - Latest Rings (2024-2026) */}
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-lg font-cinzel text-gold uppercase tracking-widest">Latest Championship Rings (2024-2026)</h3>
-                  <span className="text-xs text-ivory/40 font-raleway">Newest Arrivals</span>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {latestRings.length > 0 ? (
-                    latestRings.map(product => (
-                      <ProductCard key={`latest-${product.id}`} product={product} />
-                    ))
-                  ) : (
-                    [...Array(3)].map((_, i) => (
-                      <div key={`latest-skeleton-${i}`} className="aspect-square bg-white/[0.03] border border-gold/5 animate-pulse" />
-                    ))
-                  )}
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {latestRings.length > 0 ? (
+                  latestRings.map(product => (
+                    <ProductCard key={`latest-${product.id}`} product={product} />
+                  ))
+                ) : (
+                  [...Array(3)].map((_, i) => (
+                    <div key={`latest-skeleton-${i}`} className="aspect-square bg-white/[0.03] border border-gold/5 animate-pulse" />
+                  ))
+                )}
               </div>
 
               {/* Second Row - Random Rings */}
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-lg font-cinzel text-gold uppercase tracking-widest">Championship Collection Classics</h3>
-                  <span className="text-xs text-ivory/40 font-raleway">Random Selection</span>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {randomRings.length > 0 ? (
-                    randomRings.map(product => (
-                      <ProductCard key={`random-${product.id}`} product={product} />
-                    ))
-                  ) : (
-                    [...Array(3)].map((_, i) => (
-                      <div key={`random-skeleton-${i}`} className="aspect-square bg-white/[0.03] border border-gold/5 animate-pulse" />
-                    ))
-                  )}
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {randomRings.length > 0 ? (
+                  randomRings.map(product => (
+                    <ProductCard key={`random-${product.id}`} product={product} />
+                  ))
+                ) : (
+                  [...Array(3)].map((_, i) => (
+                    <div key={`random-skeleton-${i}`} className="aspect-square bg-white/[0.03] border border-gold/5 animate-pulse" />
+                  ))
+                )}
               </div>
             </div>
           ) : (
