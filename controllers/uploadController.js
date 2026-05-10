@@ -36,7 +36,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage, limits: { fileSize: 5 * 1024 * 1024 } });
 const uploadMemory = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
 
-// Upload to Cloudinary (for categories)
+// Upload to Cloudinary (for categories and blog)
 const uploadImage = async (req, res) => {
   try {
     if (!req.file) {
@@ -49,9 +49,12 @@ const uploadImage = async (req, res) => {
       });
     }
 
+    // Determine folder based on route
+    const folder = req.originalUrl.includes('/blog') ? 'ybtc/blog' : 'ybtc/categories';
+
     const result = await new Promise((resolve, reject) => {
       const stream = cloudinary.uploader.upload_stream(
-        { folder: 'ybtc/categories', resource_type: 'image' },
+        { folder, resource_type: 'image' },
         (error, result) => (error ? reject(error) : resolve(result))
       );
       stream.end(req.file.buffer);

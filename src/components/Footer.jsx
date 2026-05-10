@@ -8,6 +8,13 @@ const FacebookIcon = () => (
   </svg>
 );
 
+// X (Twitter) Icon SVG
+const XIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+);
+
 // Instagram Icon SVG
 const InstagramIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -49,16 +56,19 @@ const Footer = () => {
         {/* Mobile Brand Section - Centered */}
         <div className="md:hidden mb-12 text-center">
           <Link to="/" className="flex items-center justify-center group mb-6">
-            <div className="relative w-28 h-28 transition-all duration-500 group-hover:scale-105">
+            <div className="relative w-40 h-40 transition-all duration-500 group-hover:scale-105">
               <img src="/logo.png" alt="You Be The Champ Logo" className="w-full h-full object-contain" />
             </div>
           </Link>
           <p className="text-gray-400 font-raleway text-xs leading-relaxed uppercase tracking-wider mb-6 px-2">
-            Handcrafting the largest collection of championship replica rings in the world.
+            Now, you can relive the moment, celebrate the victories, and wear the glory of your favorite team and iconic legends. This time though, YOU BE THE CHAMP!
           </p>
           <div className="flex gap-3 justify-center">
             <SocialIcon href="https://facebook.com/youbethechamp">
               <FacebookIcon />
+            </SocialIcon>
+            <SocialIcon href="https://x.com/youbethechamp">
+              <XIcon />
             </SocialIcon>
             <SocialIcon href="https://instagram.com/youbethechamp">
               <InstagramIcon />
@@ -70,21 +80,24 @@ const Footer = () => {
         </div>
 
         {/* Main Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 lg:gap-16 mb-12 md:mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16 mb-12 md:mb-20">
 
           {/* Desktop Brand Section - Left */}
-          <div className="hidden md:block md:col-span-1 space-y-6">
+          <div className="hidden lg:block lg:col-span-1 space-y-6">
             <Link to="/" className="flex items-center group">
-              <div className="relative w-28 h-28 transition-all duration-500 group-hover:scale-105">
+              <div className="relative w-40 h-40 transition-all duration-500 group-hover:scale-105">
                 <img src="/logo.png" alt="You Be The Champ Logo" className="w-full h-full object-contain" />
               </div>
             </Link>
             <p className="text-gray-400 font-raleway text-xs leading-relaxed uppercase tracking-wider">
-              Handcrafting the largest collection of championship replica rings in the world. Wear the glory of your favorite legends.
+              Now, you can relive the moment, celebrate the victories, and wear the glory of your favorite team and iconic legends. This time though, YOU BE THE CHAMP!
             </p>
             <div className="flex gap-3">
               <SocialIcon href="https://facebook.com/youbethechamp">
                 <FacebookIcon />
+              </SocialIcon>
+              <SocialIcon href="https://x.com/youbethechamp">
+                <XIcon />
               </SocialIcon>
               <SocialIcon href="https://instagram.com/youbethechamp">
                 <InstagramIcon />
@@ -96,10 +109,10 @@ const Footer = () => {
           </div>
 
           {/* Col 1 — Shop */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="font-cinzel text-gray-200 text-sm md:text-base font-bold uppercase tracking-widest mb-6 md:mb-8">Shop</h4>
             <ul className="space-y-3 md:space-y-4">
-              <FooterLink to="/category/All%20Time%20Greats" bold>All Time Greats</FooterLink>
+              <FooterLink to="/category/All%20Time%20Greats">All Time Greats</FooterLink>
               <FooterLink to="/category/League%20%3E%20NFL%20-%20National%20Football%20League">NFL</FooterLink>
               <FooterLink to="/category/League%20%3E%20NBA%20-%20National%20Basketball%20Association">NBA</FooterLink>
               <FooterLink to="/category/League%20%3E%20MLB%20-%20Major%20League%20Baseball">MLB</FooterLink>
@@ -109,7 +122,7 @@ const Footer = () => {
           </div>
 
           {/* Col 2 — Support */}
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="font-cinzel text-gray-200 text-sm md:text-base font-bold uppercase tracking-widest mb-6 md:mb-8">Support</h4>
             <ul className="space-y-3 md:space-y-4">
               <FooterLink to="/contact">Contact Us</FooterLink>
@@ -121,7 +134,7 @@ const Footer = () => {
           </div>
 
           {/* Col 3 — Legal (Hidden on mobile, shown on lg) */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block lg:col-span-1">
             <h4 className="font-cinzel text-gray-200 text-base font-bold uppercase tracking-widest mb-8">Legal</h4>
             <ul className="space-y-4">
               <FooterLink to="/affiliate" bold>Affiliates</FooterLink>
@@ -148,15 +161,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="max-w-7xl mx-auto pt-6 md:pt-12 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
-          <p className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] text-center md:text-left leading-relaxed">
-            © {new Date().getFullYear()} YOU BE THE CHAMP<br className="md:hidden" /> NON-OFFICIALLY LICENSED
+        <div className="max-w-7xl mx-auto pt-6 md:pt-12 border-t border-gray-700 flex justify-center items-center">
+          <p className="text-xs md:text-sm text-gray-400 uppercase tracking-[1px] md:tracking-[2px] text-center leading-relaxed">
+            © {new Date().getFullYear()} You Be The Champ
           </p>
-          <div className="flex gap-4 md:gap-8 text-[8px] md:text-[10px] text-gray-500 uppercase tracking-[1px] md:tracking-[2px] flex-wrap justify-center md:justify-end">
-            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
-            <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
-            <Link to="/authenticity" className="hover:text-white transition-colors">Authenticity</Link>
-          </div>
         </div>
       </div>
     </footer>

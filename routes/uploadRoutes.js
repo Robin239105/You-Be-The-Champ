@@ -10,4 +10,7 @@ router.post('/', protect, admin, uploadMemory.single('image'), uploadImage);
 // Local disk upload for products
 router.post('/local', protect, admin, upload.single('image'), uploadLocalImage);
 
+// Cloudinary upload for blog images (Vercel compatible)
+router.post('/blog', protect, admin, uploadMemory.single('image'), uploadImage);
+
 module.exports = router;

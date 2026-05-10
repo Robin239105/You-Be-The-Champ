@@ -12,20 +12,13 @@ const Contact = () => {
        <main className="max-w-7xl mx-auto px-6 sm:px-8 pt-52 pb-24">
         {/* Header Section */}
         <div className="text-center mb-20">
-          <motion.span 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-gold font-cinzel text-[10px] tracking-[4px] uppercase block mb-4"
-          >
-            Concierge Services
-          </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-black font-cinzel text-white tracking-widest uppercase"
           >
-            Contact The Vault
+            Ask The Coach
           </motion.h1>
           <div className="w-24 h-1 bg-gold mx-auto mt-8" />
         </div>
@@ -39,34 +32,10 @@ const Contact = () => {
             className="space-y-12"
           >
             <div>
-              <h2 className="text-2xl font-cinzel text-gold font-bold uppercase tracking-widest mb-6">Direct Support</h2>
+              <h2 className="text-2xl font-cinzel text-gold font-bold uppercase tracking-widest mb-6">Check The Playbook</h2>
               <p className="text-ivory/60 font-raleway leading-relaxed mb-10 max-w-md">
-                Have questions about a specific ring, bulk orders, or your delivery? Our curation experts are available 24/7 to assist with your championship needs.
+                Do you have questions about a specific ring, bulk orders, delivery times or anything else; please fill in this form and one of our championship team will get back to you with your needs.
               </p>
-              
-              <div className="space-y-8">
-                <div className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 bg-gold/10 border border-gold/20 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-black transition-all">
-                    <Mail size={20} />
-                  </div>
-                  <div>
-                    <p className="text-[10px] text-gold font-cinzel tracking-widest uppercase mb-1">Email Us</p>
-                    <p className="text-lg font-cinzel text-white">info@youbethechamp.com.au</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Trust Points */}
-            <div className="grid grid-cols-2 gap-6 pt-10 border-t border-gold/10">
-               <div className="flex items-center gap-3">
-                  <ShieldCheck className="text-gold" size={20} />
-                  <span className="text-[10px] text-ivory/40 uppercase tracking-widest font-cinzel">Lifetime Warranty</span>
-               </div>
-               <div className="flex items-center gap-3">
-                  <Clock className="text-gold" size={20} />
-                  <span className="text-[10px] text-ivory/40 uppercase tracking-widest font-cinzel">24/7 Response</span>
-               </div>
             </div>
           </motion.div>
 
@@ -110,7 +79,7 @@ const Contact = () => {
               </div>
 
               <button className="w-full bg-gold text-black py-5 font-cinzel font-black text-xs tracking-[4px] uppercase hover:bg-white transition-all active:scale-95 shadow-[0_0_20px_rgba(201,168,76,0.2)]">
-                Send Message To Vault
+                Ask The Coach
               </button>
             </form>
           </motion.div>

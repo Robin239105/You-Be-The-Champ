@@ -60,35 +60,91 @@ const AdminBlogList = () => {
 
   const openNew = () => { setForm(EMPTY_FORM); setEditingId(null); setPreviewMode(false); setShowForm(true); };
   const openEdit = (post) => {
-    setForm({ title: post.title, excerpt: post.excerpt || '', content: post.content, coverImage: post.coverImage || '', category: post.category || '', author: post.author || 'Admin', isPublished: post.isPublished });
+    setForm({ 
+      title: post.title || '', 
+      excerpt: post.excerpt || '', 
+      content: post.content || '', 
+      coverImage: post.coverImage || '', 
+      category: post.category || '', 
+      author: post.author || 'Admin', 
+      isPublished: post.isPublished 
+    });
     setEditingId(post.id);
     setPreviewMode(false);
     setShowForm(true);
   };
 
   const handleSave = async () => {
-    if (!form.title.trim() || !form.content.trim()) return alert('Title and content are required.');
+    console.log('Save button clicked, form data:', form);
+    
+    if (!form.title.trim() || !form.content.trim()) {
+      console.log('Validation failed - Title:', !!form.title.trim(), 'Content:', !!form.content.trim());
+      return alert('Title and content are required.');
+    }
+    
     setSaving(true);
     try {
+      console.log('Attempting to save post...', { editingId, form });
+      
       if (editingId) {
+        console.log('Updating existing post:', editingId);
         const res = await api.put(`/blog/${editingId}`, form);
-        if (res.data.success) setPosts(prev => prev.map(p => p.id === editingId ? { ...p, ...res.data.data } : p));
+        console.log('Update response:', res.data);
+        if (res.data.success) {
+          setPosts(prev => prev.map(p => p.id === editingId ? { ...p, ...res.data.data } : p));
+          setShowForm(false);
+        } else {
+          alert('Update failed: ' + (res.data.message || 'Unknown error'));
+        }
       } else {
+        console.log('Creating new post');
         const res = await api.post('/blog', form);
-        if (res.data.success) setPosts(prev => [res.data.data, ...prev]);
+        console.log('Create response:', res.data);
+        if (res.data.success) {
+          setPosts(prev => [res.data.data, ...prev]);
+          setShowForm(false);
+        } else {
+          alert('Create failed: ' + (res.data.message || 'Unknown error'));
+        }
       }
-      setShowForm(false);
-    } catch (err) { alert(err.response?.data?.message || 'Save failed'); } finally { setSaving(false); }
+    } catch (err) {
+      console.error('Save error:', err);
+      console.error('Error response:', err.response?.data);
+      alert(err.response?.data?.message || err.message || 'Save failed');
+    } finally {
+      setSaving(false);
+    }
   };
 
-  // Image file → base64 (stored as data URL in coverImage field)
-  const handleImageFile = (e) => {
+  // Image file → upload to server
+  const handleImageFile = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
+    
     setImageUploading(true);
-    const reader = new FileReader();
-    reader.onload = (ev) => { setForm(f => ({ ...f, coverImage: ev.target.result })); setImageUploading(false); };
-    reader.readAsDataURL(file);
+    
+    try {
+      const formData = new FormData();
+      formData.append('image', file);
+      
+      const res = await api.post('/upload/blog', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      
+      if (res.data.success) {
+        setForm(f => ({ ...f, coverImage: res.data.url }));
+        console.log('Image uploaded successfully:', res.data.url);
+      } else {
+        alert('Image upload failed');
+      }
+    } catch (error) {
+      console.error('Upload error:', error);
+      alert('Image upload failed: ' + (error.response?.data?.message || error.message));
+    } finally {
+      setImageUploading(false);
+    }
   };
 
   // HTML toolbar: wrap selection or insert tag at cursor
