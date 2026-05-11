@@ -3,15 +3,32 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
-import { productsData } from '../data/productsData';
-import { motion } from 'framer-motion';
+import api from '../utils/api';
 
 const Vintage90s = () => {
-  const vintageProducts = productsData.filter(p => {
-    // Extract year from name or description to filter for the 90s
-    const yearMatch = p.name.match(/199[0-9]/);
-    return yearMatch !== null || p.badge === 'VINTAGE';
-  });
+  const [vintageProducts, setVintageProducts] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await api.get('/products?limit=100&status=PUBLISHED');
+        if (response.data.success) {
+          const products = response.data.data;
+          const filtered = products.filter(p => {
+            const yearMatch = p.name.match(/199[0-9]/);
+            return yearMatch !== null || p.badge === 'VINTAGE';
+          });
+          setVintageProducts(filtered);
+        }
+      } catch (err) {
+        console.error('Failed to fetch vintage products:', err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   return (
     <div className="bg-black min-h-screen">
@@ -56,11 +73,15 @@ const Vintage90s = () => {
            </p>
         </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {vintageProducts.map(product => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {isLoading ? (
+          <div className="col-span-full py-20 text-center text-gold font-cinzel animate-pulse uppercase tracking-[4px]">Accessing Vintage Archive...</div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {vintageProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
       </main>
 
       <Footer />

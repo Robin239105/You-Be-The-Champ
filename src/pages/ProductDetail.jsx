@@ -12,10 +12,12 @@ import Badge from '../components/Badge';
 import api from '../utils/api';
 import { optimizeImage } from '../utils/imageOptimizer';
 
+
 const ProductDetail = () => {
-  const { id } = useParams();
+  const { slug } = useParams(); // This is actually the ID, not slug
   const navigate = useNavigate();
   const addItem = useCartStore(state => state.addItem);
+  const addItemWithoutCart = useCartStore(state => state.addItemWithoutCart);
   const { appliedCoupon, discountAmount, setAppliedCoupon, removeCoupon } = useCartStore();
   const { toggleWishlist, isWishlisted } = useWishlistStore();
   
@@ -35,7 +37,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       setIsLoading(true);
       try {
-        const response = await api.get(`/products/${id}`);
+        const response = await api.get(`/products/${slug}`);
         if (mounted && response.data.success) {
           setProduct(response.data.data);
         }
@@ -47,7 +49,7 @@ const ProductDetail = () => {
     };
     fetchProduct();
     return () => { mounted = false; };
-  }, [id]);
+  }, [slug]);
 
   if (isLoading) {
     return (
@@ -93,7 +95,7 @@ const ProductDetail = () => {
 
   const handleBuyNow = () => {
     if (isOutOfStock) return;
-    addItem({ ...product, quantity });
+    addItemWithoutCart({ ...product, quantity });
     navigate('/checkout');
   };
 
@@ -145,7 +147,7 @@ const ProductDetail = () => {
        <main className="max-w-7xl mx-auto px-6 sm:px-8 pt-52 pb-24">
         <Breadcrumb items={[
           { name: 'Shop', path: '/shop' },
-          { name: product.name, path: `/product/${product.id}` }
+          { name: product.name, path: `/product/${product.slug}` }
         ]} />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-12">

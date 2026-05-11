@@ -4,11 +4,33 @@ import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
 import SectionDivider from '../components/SectionDivider';
-import { productsData } from '../data/productsData';
-import { motion } from 'framer-motion';
+import api from '../utils/api';
 
 const PlayerEditions = () => {
-  const playerProducts = productsData.slice(0, 12); // Fallback for now, can be improved with specific category logic
+  const [playerProducts, setPlayerProducts] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await api.get('/products?limit=100&status=PUBLISHED');
+        if (response.data.success) {
+          // Fallback logic to find player-related rings
+          const products = response.data.data;
+          const filtered = products.filter(p => 
+            p.categories?.some(cat => cat.name.toLowerCase().includes('player')) ||
+            p.name.toLowerCase().includes('edition')
+          );
+          setPlayerProducts(filtered.length > 0 ? filtered : products.slice(0, 12));
+        }
+      } catch (err) {
+        console.error('Failed to fetch player editions:', err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   const legends = [
     { name: 'Michael Jordan', team: 'Chicago Bulls', sport: 'NBA' },
@@ -61,12 +83,15 @@ const PlayerEditions = () => {
 
         <SectionDivider />
 
-        <h2 className="text-xl font-cinzel text-gold font-bold uppercase tracking-widest mb-12">All Player Editions</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {playerProducts.map(product => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {isLoading ? (
+          <div className="col-span-full py-20 text-center text-gold font-cinzel animate-pulse uppercase tracking-[4px]">Fetching Legends...</div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {playerProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
       </main>
 
       <Footer />

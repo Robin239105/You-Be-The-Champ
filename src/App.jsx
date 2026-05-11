@@ -55,7 +55,7 @@ import AdminAffiliateList from './pages/admin/AdminAffiliateList';
 
 import SalesPopup from './components/SalesPopup';
 import ScrollToTop from './components/ScrollToTop';
-import { productsData } from './data/productsData';
+
 
 function App() {
   const location = useLocation();
@@ -85,7 +85,7 @@ function App() {
           <Route path="/league/:league" element={<LeagueStandingsPage />} />
           <Route path="/vintage-90s" element={<Vintage90s />} />
           <Route path="/affiliate" element={<Affiliate />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/product/:slug" element={<ProductDetail />} />
           
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
@@ -130,7 +130,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
-      {!location.pathname.startsWith('/admin') && <SalesPopup products={productsData} />}
+      {!location.pathname.startsWith('/admin') && <SalesPopup />}
     </>
   );
 }

@@ -69,7 +69,7 @@ const Cart = () => {
             <ShoppingBag className="text-gold/20 mx-auto mb-6" size={64} />
             <h2 className="text-xl font-cinzel text-ivory mb-4 uppercase tracking-widest">Your collection is empty</h2>
             <Link to="/shop">
-              <Button>Browse All Rings</Button>
+              <Button>Browse Products</Button>
             </Link>
           </div>
         ) : (

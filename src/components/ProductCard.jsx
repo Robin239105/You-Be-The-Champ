@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
   const sport = product.sport || (categoryName ? categoryName.split(' > ')[0] : 'Leagues');
 
   return (
-    <Link to={`/product/${product.id}`} className="block h-full">
+    <Link to={`/product/${product.slug}`} className="block h-full">
       <motion.div 
         whileHover={{ y: -8 }}
         className="group bg-card border border-gold/10 hover:border-gold/50 transition-all duration-300 shadow-xl overflow-hidden relative flex flex-col h-full"

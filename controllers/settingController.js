@@ -83,18 +83,28 @@ const resetSettings = async (req, res) => {
   try {
     // Define default settings
     const defaultSettings = {
+      'stripe_enabled': 'true',
+      'paypal_enabled': 'false',
+      'cod_enabled': 'true',
       'store_name': 'You Be The Champ',
       'store_email': 'info@youbethechamp.com.au',
       'store_phone': '+1-555-0123',
       'store_address': '123 Championship Lane, Victory City, VC 12345',
-      'currency': 'USD',
-      'tax_rate': '0.10',
-      'shipping_cost': '9.99',
-      'free_shipping_threshold': '100',
+      'currency': 'AUD',
+      'tax_rate': '10',
+      'maintenance_mode': 'false',
+      'enable_reviews': 'true',
+      'enable_wishlist': 'true',
+      'enable_guest_checkout': 'true',
+      'show_stock_quantity': 'true',
+      'show_product_badges': 'true',
+      'enable_quick_view': 'true',
+      'products_per_page': '12',
+      'enable_dark_mode': 'true',
+      'show_breadcrumbs': 'true',
       'social_facebook': 'https://facebook.com/youbethechamp',
       'social_twitter': 'https://twitter.com/youbethechamp',
-      'social_instagram': 'https://instagram.com/youbethechamp',
-      'maintenance_mode': 'false'
+      'social_instagram': 'https://instagram.com/youbethechamp'
     };
     
     // Clear existing settings and set defaults

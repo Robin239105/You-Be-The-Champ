@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingBag, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { optimizeImage } from '../utils/imageOptimizer';
+import api from '../utils/api';
 
 const CITIES_BY_COUNTRY = [
   { city: 'Sydney, NSW', country: 'au', name: 'Australia' },
@@ -137,7 +138,8 @@ const TIMES = [
   '42 minutes ago', '1 hour ago', '2 hours ago', '3 hours ago'
 ];
 
-const SalesPopup = ({ products = [] }) => {
+const SalesPopup = () => {
+  const [products, setProducts] = useState([]);
   const [currentProduct, setCurrentProduct] = useState(null);
   const [currentCity, setCurrentCity] = useState('');
   const [currentCountry, setCurrentCountry] = useState('');
@@ -153,6 +155,20 @@ const SalesPopup = ({ products = [] }) => {
     const hour = new Date().getHours();
     return hour >= 9 && hour <= 22;
   };
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await api.get('/products?limit=50&status=PUBLISHED');
+        if (response.data.success) {
+          setProducts(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch products for popup:', err);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   useEffect(() => {
     if (availableProducts.length === 0) return;

@@ -1,17 +1,32 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductCard from '../components/ProductCard';
 import { motion, AnimatePresence } from 'framer-motion';
-import { productsData } from '../data/productsData';
+import api from '../utils/api';
 
 const YourYearGiftBox = () => {
+  const [giftBoxProducts, setGiftBoxProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(24);
 
-  const giftBoxProducts = useMemo(() => {
-    return productsData.filter(p => p.categories && p.categories.includes('Your Year Gift Box'));
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        // Fetch with category slug for gift box
+        const response = await api.get('/products?limit=100&status=PUBLISHED&category=your-year-gift-box');
+        if (response.data.success) {
+          setGiftBoxProducts(response.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch gift boxes:', err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchProducts();
   }, []);
 
   const visibleProducts = giftBoxProducts.slice(0, visibleCount);
@@ -32,15 +47,19 @@ const YourYearGiftBox = () => {
 
         <p className="text-ivory/40 text-sm mb-8">{giftBoxProducts.length} products</p>
 
-        <motion.div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          <AnimatePresence>
-            {visibleProducts.map((product, i) => (
-              <motion.div key={product.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ delay: i * 0.03 }}>
-                <ProductCard product={product} />
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
+        {isLoading ? (
+          <div className="col-span-full py-20 text-center text-gold font-cinzel animate-pulse">FETCHING GIFT SETS...</div>
+        ) : (
+          <motion.div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <AnimatePresence>
+              {visibleProducts.map((product, i) => (
+                <motion.div key={product.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ delay: i * 0.03 }}>
+                  <ProductCard product={product} />
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        )}
 
         {visibleCount < giftBoxProducts.length && (
           <div className="flex justify-center mt-12">

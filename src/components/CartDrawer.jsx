@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import api from '../utils/api';
 import Button from './Button';
 
-const CartDrawer = ({ isOpen, onClose }) => {
-  const { items, removeItem, updateQty, getTotal, appliedCoupon, discountAmount, setAppliedCoupon, removeCoupon } = useCartStore();
+const CartDrawer = ({ isOpen }) => {
+  const { items, removeItem, updateQty, getTotal, appliedCoupon, discountAmount, setAppliedCoupon, removeCoupon, closeCart } = useCartStore();
   const [couponCode, setCouponCode] = useState('');
   const [couponError, setCouponError] = useState('');
   const [couponLoading, setCouponLoading] = useState(false);
@@ -56,7 +56,7 @@ const CartDrawer = ({ isOpen, onClose }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={onClose}
+            onClick={closeCart}
             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100]"
           />
           
@@ -77,7 +77,7 @@ const CartDrawer = ({ isOpen, onClose }) => {
                   {items.length} Items
                 </span>
               </div>
-              <button onClick={onClose} className="text-ivory/60 hover:text-gold transition-colors">
+              <button onClick={closeCart} className="text-ivory/60 hover:text-gold transition-colors">
                 <X size={24} />
               </button>
             </div>
@@ -90,7 +90,7 @@ const CartDrawer = ({ isOpen, onClose }) => {
                     <ShoppingBag className="text-gold/20" size={32} />
                   </div>
                   <p className="font-cinzel text-sm text-ivory/40 uppercase tracking-widest">Your cart is empty</p>
-                  <Link to="/shop" onClick={onClose}>
+                  <Link to="/shop" onClick={closeCart}>
                     <Button variant="outline">Browse Rings</Button>
                   </Link>
                 </div>
@@ -197,10 +197,10 @@ const CartDrawer = ({ isOpen, onClose }) => {
                     <span className="font-mono text-xl text-gold font-bold">${finalTotal.toFixed(2)}</span>
                   </div>
                 </div>
-                <Link to="/cart" onClick={onClose} className="block w-full">
+                <Link to="/cart" onClick={closeCart} className="block w-full">
                   <Button variant="outline" className="w-full text-[10px]">View Cart & Apply Coupon</Button>
                 </Link>
-                <Link to="/checkout" className="block w-full">
+                <Link to="/checkout" onClick={closeCart} className="block w-full">
                   <Button className="w-full">Secure Checkout</Button>
                 </Link>
                 <p className="text-[10px] text-center text-ivory/40 uppercase tracking-[1px]">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ShieldCheck, Truck, CreditCard, ChevronRight, Lock, Loader2, AlertCircle, CheckCircle2, MapPin, Ticket, Check } from 'lucide-react';
+import { ShieldCheck, Truck, CreditCard, ChevronRight, Lock, Loader2, AlertCircle, CheckCircle2, MapPin, Ticket, Check, ShoppingBag } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -35,12 +35,7 @@ const Checkout = () => {
   // Version check
   console.log('💳 Checkout page loaded - Coupon System v1.0 ACTIVE');
 
-  // Check if cart is empty on mount only
-  useEffect(() => {
-    if (items.length === 0) {
-      navigate('/cart', { replace: true });
-    }
-  }, []); // Empty dependency - only runs on mount
+  // Removed redirect for empty cart - will show empty state instead
 
   // Load checkout state from localStorage (after returning from login)
   useEffect(() => {
@@ -200,7 +195,23 @@ const Checkout = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Empty Cart State */}
+        {items.length === 0 ? (
+          <div className="max-w-2xl mx-auto py-24 text-center bg-card border border-gold/10 p-12">
+            <ShoppingBag className="text-gold/20 mx-auto mb-6" size={64} />
+            <h2 className="text-2xl font-cinzel text-ivory mb-4 uppercase tracking-widest">Your collection is empty</h2>
+            <p className="text-ivory/60 mb-8">Add some championship rings to proceed with checkout</p>
+            <div className="flex gap-4 justify-center">
+              <Link to="/shop">
+                <Button>Browse All Rings</Button>
+              </Link>
+              <Link to="/cart">
+                <Button variant="outline">View Cart</Button>
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Main Content Area */}
           <div className="lg:col-span-2">
             <AnimatePresence mode="wait">
@@ -659,7 +670,8 @@ const Checkout = () => {
                 </div>
              </div>
           </div>
-        </div>
+          </div>
+        )}
       </main>
 
       <Footer />

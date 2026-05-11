@@ -27,12 +27,11 @@ const MobileNavItem = ({ node, onClose }) => {
 
 const Header = () => {
   const { user, isAuthenticated } = useAuthStore();
+  const { getItemCount, isOpen: isCartOpen, openCart, closeCart } = useCartStore();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false);
-  
-  const itemCount = useCartStore(state => state.getItemCount() || 0);
   const wishlistCount = useWishlistStore(state => (state.items && state.items.length) || 0);
+  const itemCount = getItemCount();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -111,7 +110,7 @@ const Header = () => {
             )}
           </Link>
           <button 
-            onClick={() => setIsCartOpen(true)}
+            onClick={openCart}
             className="relative hover:scale-110 transition-transform p-1"
           >
             <ShoppingCart size={20} />
@@ -126,7 +125,7 @@ const Header = () => {
       </nav>
 
         {/* Cart Drawer */}
-      <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+      <CartDrawer isOpen={isCartOpen} />
 
         {/* Mobile Menu Drawer */}
       <AnimatePresence>

@@ -16,26 +16,39 @@ const CategoryPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [categoryDescription, setCategoryDescription] = useState('');
   const [categoryImage, setCategoryImage] = useState('');
+  const [categoryData, setCategoryData] = useState(null);
   
   const decodedPath = decodeURIComponent(categoryPath || '');
   const pathParts = decodedPath.split(' > ');
   const categoryTitle = pathParts[pathParts.length - 1];
+  const thumbnail = getCategoryThumbnail(categoryTitle);
 
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       setCategoryDescription('');
       setCategoryImage('');
+      
+      // Generate the slug the same way the backend does
+      const categorySlug = decodedPath.toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
+
       try {
         const [productsRes, catRes] = await Promise.allSettled([
-          api.get('/products?limit=1000&status=PUBLISHED'),
+          api.get(`/products?limit=1000&status=PUBLISHED&category=${encodeURIComponent(categorySlug)}`),
           api.get(`/categories/by-name/${encodeURIComponent(categoryTitle)}`),
         ]);
+
         if (productsRes.status === 'fulfilled' && productsRes.value.data.success) {
           setProducts(productsRes.value.data.data);
         }
+        
         if (catRes.status === 'fulfilled' && catRes.value.data.success && catRes.value.data.data) {
           const categoryData = catRes.value.data.data;
+          setCategoryData(categoryData);
           if (categoryData.description) {
             setCategoryDescription(categoryData.description);
           }
@@ -58,19 +71,11 @@ const CategoryPage = () => {
   // 2. Starts with the path (child of this category), OR
   // 3. The path starts with the category name (this category is a parent)
   const filteredProducts = useMemo(() => {
-    const lowerPath = decodedPath.toLowerCase().trim();
-    return products.filter(p => {
-      if (!p.categories || p.categories.length === 0) return false;
-      return p.categories.some(cat => {
-        const catName = (typeof cat === 'object' ? cat.name : cat || '').toLowerCase().trim();
-        return (
-          catName === lowerPath ||
-          catName.startsWith(lowerPath) ||
-          lowerPath.startsWith(catName)
-        );
-      });
-    });
-  }, [products, decodedPath]);
+    // If we already filtered via API, just return all products
+    // Otherwise apply fallback filtering
+    if (products.length > 0) return products;
+    return [];
+  }, [products]);
 
   const getBreadcrumbs = () => {
     return pathParts.map((part, index) => {

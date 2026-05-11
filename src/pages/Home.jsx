@@ -11,7 +11,7 @@ import StatsBanner from '../components/StatsBanner';
 import NewsletterSection from '../components/NewsletterSection';
 import api from '../utils/api';
 import { optimizeImage } from '../utils/imageOptimizer';
-import { productsData } from '../data/productsData';
+
 
 const GOLD = '#C9A84C';
 const GOLD_GLOW = 'rgba(201,168,76,0.22)';
@@ -213,41 +213,44 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch latest rings (2024-2026) and random rings
-    if (productsData && productsData.length > 0) {
+    const fetchProducts = async () => {
       try {
-        // Filter for latest rings (2024-2026)
-        const latestProducts = productsData.filter(product => {
-          if (!product.categories || product.categories.length === 0) return false;
-          return product.categories.some(cat => {
-            const catStr = typeof cat === 'string' ? cat : cat.name || '';
-            return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
+        const response = await api.get('/products?limit=100&status=PUBLISHED');
+        if (response.data.success) {
+          const allProducts = response.data.data;
+          
+          // Filter for latest rings (2024-2026)
+          const latestProducts = allProducts.filter(product => {
+            if (!product.categories || product.categories.length === 0) return false;
+            return product.categories.some(cat => {
+              const catStr = typeof cat === 'string' ? cat : cat.name || '';
+              return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
+            });
           });
-        });
-        
-        // Randomize latest rings and take 3 for first row
-        const shuffledLatest = [...latestProducts].sort(() => 0.5 - Math.random());
-        setLatestRings(shuffledLatest.slice(0, 3));
-        
-        // Get all other products (excluding latest ones) for random selection
-        const otherProducts = productsData.filter(product => {
-          if (!product.categories || product.categories.length === 0) return true;
-          return !product.categories.some(cat => {
-            const catStr = typeof cat === 'string' ? cat : cat.name || '';
-            return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
+          
+          // Randomize latest rings and take 3 for first row
+          const shuffledLatest = [...latestProducts].sort(() => 0.5 - Math.random());
+          setLatestRings(shuffledLatest.slice(0, 3));
+          
+          // Get all other products (excluding latest ones) for random selection
+          const otherProducts = allProducts.filter(product => {
+            if (!product.categories || product.categories.length === 0) return true;
+            return !product.categories.some(cat => {
+              const catStr = typeof cat === 'string' ? cat : cat.name || '';
+              return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
+            });
           });
-        });
-        
-        // Randomize other products and take 3 for second row
-        const shuffledRandom = [...otherProducts].sort(() => 0.5 - Math.random());
-        setRandomRings(shuffledRandom.slice(0, 3));
+          
+          // Randomize other products and take 3 for second row
+          const shuffledRandom = [...otherProducts].sort(() => 0.5 - Math.random());
+          setRandomRings(shuffledRandom.slice(0, 3));
+        }
       } catch (error) {
-        console.error('Error processing products:', error);
-        // Fallback to original behavior if there's an error
-        const shuffled = [...productsData].sort(() => 0.5 - Math.random());
-        setLatestRings(shuffled.slice(0, 3));
-        setRandomRings(shuffled.slice(3, 6));
+        console.error('Error fetching products for home page:', error);
       }
-    }
+    };
+
+    fetchProducts();
 
     // Fetch blog posts separately
     api.get('/blog?published=true&limit=3').then(res => {
