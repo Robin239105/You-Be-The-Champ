@@ -222,7 +222,11 @@ const Home = () => {
           
           // Filter for latest rings (2024-2026)
           const latestProducts = allProducts.filter(product => {
-            const searchStr = `${product.name} ${product.sku} ${product.categories?.map(c => typeof c === 'string' ? c : c.name).join(' ')}`.toLowerCase();
+            const catStr = product.categories?.map(c => {
+              if (typeof c === 'string') return c;
+              return c?.name || '';
+            }).join(' ') || '';
+            const searchStr = `${product.name} ${product.sku} ${catStr}`.toLowerCase();
             return searchStr.includes('2024') || searchStr.includes('2025') || searchStr.includes('2026');
           });
           
