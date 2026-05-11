@@ -13,7 +13,7 @@ const PlayerEditions = () => {
   React.useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await api.get('/products?limit=1000&status=PUBLISHED');
+        const response = await api.get('/products?limit=200&status=PUBLISHED');
         if (response.data.success) {
           // Fallback logic to find player-related rings
           const products = response.data.data;

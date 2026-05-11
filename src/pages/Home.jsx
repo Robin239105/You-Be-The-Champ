@@ -216,7 +216,7 @@ const Home = () => {
     const fetchProducts = async () => {
       try {
         // Increase limit to 1000 to catch everything from the database
-        const response = await api.get('/products?limit=1000&status=PUBLISHED');
+        const response = await api.get('/products?limit=200&status=PUBLISHED');
         if (response.data.success) {
           const allProducts = response.data.data;
           
