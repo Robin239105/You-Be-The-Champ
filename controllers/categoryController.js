@@ -11,6 +11,30 @@ function htmlDecode(str) {
     .replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, ' ').trim();
 }
 
+const getCategoryBySlug = async (req, res) => {
+  const slug = req.params.slug;
+  if (!slug) return res.status(400).json({ success: false, message: 'Slug required' });
+
+  try {
+    const category = await prisma.category.findUnique({
+      where: { slug },
+      include: {
+        products: {
+          where: { isActive: true },
+          orderBy: { createdAt: 'desc' },
+          take: 50
+        }
+      }
+    });
+    if (!category) {
+      return res.status(404).json({ success: false, message: 'Category not found' });
+    }
+    res.json({ success: true, data: category });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
 const getCategoryByName = async (req, res) => {
   const name = decodeURIComponent(req.params.name || '').trim();
   if (!name) return res.status(400).json({ success: false, message: 'Name required' });
@@ -224,6 +248,7 @@ const deleteCategory = async (req, res) => {
 
 module.exports = {
   getCategories,
+  getCategoryBySlug,
   getCategoryTree,
   getCategoryByName,
   importDescriptions,

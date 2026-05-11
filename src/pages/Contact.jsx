@@ -37,6 +37,18 @@ const Contact = () => {
                 Do you have questions about a specific ring, bulk orders, delivery times or anything else; please fill in this form and one of our championship team will get back to you with your needs.
               </p>
             </div>
+
+            {/* Trust Points */}
+            <div className="grid grid-cols-2 gap-6 pt-10 border-t border-gold/10">
+               <div className="flex items-center gap-3">
+                  <ShieldCheck className="text-gold" size={20} />
+                  <span className="text-[10px] text-ivory/40 uppercase tracking-widest font-cinzel">Lifetime Warranty</span>
+               </div>
+               <div className="flex items-center gap-3">
+                  <Clock className="text-gold" size={20} />
+                  <span className="text-[10px] text-ivory/40 uppercase tracking-widest font-cinzel">24/7 Response</span>
+               </div>
+            </div>
           </motion.div>
 
           {/* Right: Contact Form */}

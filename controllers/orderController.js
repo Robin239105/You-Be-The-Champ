@@ -279,4 +279,73 @@ const getDashboardStats = async (req, res) => {
   }
 };
 
-module.exports = { createOrder, getMyOrders, getOrderById, getAllOrders, updateOrderStatus, updateOrderTracking, getDashboardStats };
+const deleteOrder = async (req, res) => {
+  try {
+    await prisma.orderItem.deleteMany({ where: { orderId: req.params.id } });
+    await prisma.order.delete({ where: { id: req.params.id } });
+    res.json({ success: true, message: 'Order deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const getOrderStats = async (req, res) => {
+  try {
+    const { period = '30' } = req.query;
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - parseInt(period));
+    
+    const orders = await prisma.order.findMany({
+      where: { createdAt: { gte: startDate } },
+      select: { totalAmount: true, status: true, createdAt: true }
+    });
+
+    const stats = {
+      totalOrders: orders.length,
+      totalRevenue: orders.reduce((sum, order) => sum + parseFloat(order.totalAmount), 0),
+      ordersByStatus: {}
+    };
+
+    orders.forEach(order => {
+      stats.ordersByStatus[order.status] = (stats.ordersByStatus[order.status] || 0) + 1;
+    });
+
+    res.json({ success: true, data: stats });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+const getOrderStatsSummary = async (req, res) => {
+  try {
+    const totalOrders = await prisma.order.count();
+    const totalRevenue = await prisma.order.aggregate({ _sum: { totalAmount: true } });
+    const pendingOrders = await prisma.order.count({ where: { status: 'PENDING' } });
+    const completedOrders = await prisma.order.count({ where: { status: 'COMPLETED' } });
+
+    res.json({
+      success: true,
+      data: {
+        totalOrders,
+        totalRevenue: totalRevenue._sum.totalAmount || 0,
+        pendingOrders,
+        completedOrders
+      }
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+module.exports = { 
+  createOrder, 
+  getOrders: getAllOrders, 
+  getOrderById, 
+  updateOrderStatus, 
+  updateTracking: updateOrderTracking, 
+  deleteOrder,
+  getOrderStats,
+  getOrderStatsSummary,
+  getMyOrders,
+  getDashboardStats 
+};
