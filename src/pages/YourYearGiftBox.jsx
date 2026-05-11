@@ -16,7 +16,7 @@ const YourYearGiftBox = () => {
     const fetchProducts = async () => {
       try {
         // Fetch with category slug for gift box
-        const response = await api.get('/products?limit=100&status=PUBLISHED&category=your-year-gift-box');
+        const response = await api.get('/products?limit=1000&status=PUBLISHED&category=your-year-gift-box');
         if (response.data.success) {
           setGiftBoxProducts(response.data.data);
         }

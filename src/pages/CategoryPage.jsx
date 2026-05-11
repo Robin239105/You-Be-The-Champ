@@ -28,8 +28,9 @@ const CategoryPage = () => {
       setIsLoading(true);
       setCategoryDescription('');
       setCategoryImage('');
+      setCategoryData(null);
       
-      // Generate the slug the same way the backend does
+      // Generate the slug for initial fallback
       const categorySlug = decodedPath.toLowerCase()
         .replace(/[^\w\s-]/g, '')
         .trim()
@@ -37,25 +38,42 @@ const CategoryPage = () => {
         .replace(/-+/g, '-');
 
       try {
-        const [productsRes, catRes] = await Promise.allSettled([
-          api.get(`/products?limit=1000&status=PUBLISHED&category=${encodeURIComponent(categorySlug)}`),
-          api.get(`/categories/by-name/${encodeURIComponent(categoryTitle)}`),
+        // Fetch all categories to find the correct one by name or slug
+        const [categoriesRes, productsInitialRes] = await Promise.allSettled([
+          api.get('/categories'),
+          api.get(`/products?limit=1000&status=PUBLISHED&category=${encodeURIComponent(categorySlug)}`)
         ]);
 
-        if (productsRes.status === 'fulfilled' && productsRes.value.data.success) {
-          setProducts(productsRes.value.data.data);
+        let finalProducts = [];
+        if (productsInitialRes.status === 'fulfilled' && productsInitialRes.value.data.success) {
+          finalProducts = productsInitialRes.value.data.data;
+        }
+
+        if (categoriesRes.status === 'fulfilled' && categoriesRes.value.data.success) {
+          const allCats = categoriesRes.value.data.data;
+          
+          // Match by name (exact) or by generated slug
+          const currentCat = allCats.find(c => 
+            c.name.toLowerCase() === decodedPath.toLowerCase() || 
+            c.slug === categorySlug
+          );
+          
+          if (currentCat) {
+            setCategoryData(currentCat);
+            setCategoryDescription(currentCat.description || '');
+            setCategoryImage(currentCat.image || '');
+            
+            // If the matched category has a different slug than our generated one, re-fetch products
+            if (currentCat.slug !== categorySlug) {
+              const prodRes = await api.get(`/products?limit=1000&status=PUBLISHED&category=${currentCat.slug}`);
+              if (prodRes.data.success) {
+                finalProducts = prodRes.data.data;
+              }
+            }
+          }
         }
         
-        if (catRes.status === 'fulfilled' && catRes.value.data.success && catRes.value.data.data) {
-          const categoryData = catRes.value.data.data;
-          setCategoryData(categoryData);
-          if (categoryData.description) {
-            setCategoryDescription(categoryData.description);
-          }
-          if (categoryData.image) {
-            setCategoryImage(categoryData.image);
-          }
-        }
+        setProducts(finalProducts);
       } catch (error) {
         console.error('Failed to fetch category data:', error);
       } finally {
@@ -63,7 +81,7 @@ const CategoryPage = () => {
       }
     };
     fetchData();
-  }, [decodedPath, categoryTitle]);
+  }, [decodedPath]);
 
   // Filtering: match product categories against the decoded path
   // A product matches if any of its category names:

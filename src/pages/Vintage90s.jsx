@@ -12,7 +12,7 @@ const Vintage90s = () => {
   React.useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await api.get('/products?limit=100&status=PUBLISHED');
+        const response = await api.get('/products?limit=1000&status=PUBLISHED');
         if (response.data.success) {
           const products = response.data.data;
           const filtered = products.filter(p => {
