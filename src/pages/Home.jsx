@@ -212,36 +212,26 @@ const Home = () => {
 
 
   useEffect(() => {
-    // Fetch latest rings (2024-2026) and random rings
+    // Fetch products and prioritize 2024-2026 for the first row
     const fetchProducts = async () => {
       try {
-        const response = await api.get('/products?limit=100&status=PUBLISHED');
+        // Increase limit to 1000 to catch everything from the database
+        const response = await api.get('/products?limit=1000&status=PUBLISHED');
         if (response.data.success) {
           const allProducts = response.data.data;
           
           // Filter for latest rings (2024-2026)
           const latestProducts = allProducts.filter(product => {
-            if (!product.categories || product.categories.length === 0) return false;
-            return product.categories.some(cat => {
-              const catStr = typeof cat === 'string' ? cat : cat.name || '';
-              return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
-            });
+            const searchStr = `${product.name} ${product.sku} ${product.categories?.map(c => typeof c === 'string' ? c : c.name).join(' ')}`.toLowerCase();
+            return searchStr.includes('2024') || searchStr.includes('2025') || searchStr.includes('2026');
           });
           
-          // Randomize latest rings and take 3 for first row
+          // Randomize latest rings and take 3 for the priority display
           const shuffledLatest = [...latestProducts].sort(() => 0.5 - Math.random());
           setLatestRings(shuffledLatest.slice(0, 3));
           
-          // Get all other products (excluding latest ones) for random selection
-          const otherProducts = allProducts.filter(product => {
-            if (!product.categories || product.categories.length === 0) return true;
-            return !product.categories.some(cat => {
-              const catStr = typeof cat === 'string' ? cat : cat.name || '';
-              return catStr.includes('2024') || catStr.includes('2025') || catStr.includes('2026');
-            });
-          });
-          
-          // Randomize other products and take 3 for second row
+          // Get other products for variety in the second row
+          const otherProducts = allProducts.filter(p => !shuffledLatest.slice(0, 3).some(l => l.id === p.id));
           const shuffledRandom = [...otherProducts].sort(() => 0.5 - Math.random());
           setRandomRings(shuffledRandom.slice(0, 3));
         }
@@ -252,7 +242,7 @@ const Home = () => {
 
     fetchProducts();
 
-    // Fetch blog posts separately
+    // Fetch blog posts
     api.get('/blog?published=true&limit=3').then(res => {
       if (res.data.success) setBlogPosts(res.data.data);
     }).catch(() => {});
